@@ -4,7 +4,17 @@
 <meta property="og:image" content="https://www.progma.co.in/assets/og.png"><meta property="og:type" content="article">
 <link rel="icon" href="/assets/favicon-48.png">
 <link rel="stylesheet" href="/assets/style.css"><style>
-.wrap{max-width:680px}
+.wrap{max-width:680px;margin:0 auto;padding:0 clamp(22px,5vw,40px) 8px}
+article{padding-bottom:24px}
+.q{background:#F6F5FB;border-left:3px solid #4B2FE8;border-radius:0 12px 12px 0;padding:20px 24px;margin:28px 0}
+.qlabel{font-family:Mono;font-size:10.5px;letter-spacing:2.2px;color:#7B61FF}
+.qtext{font-family:SG;font-weight:700;font-size:19px;line-height:1.45;margin-top:8px}
+.pull{border-top:1px solid #E7E5F2;border-bottom:1px solid #E7E5F2;padding:26px 0;margin:36px 0}
+.pull div{font-family:SG;font-weight:700;font-size:21px;line-height:1.45;color:#0B0C10}
+.pull div::before{content:"";display:block;width:44px;height:3px;background:linear-gradient(90deg,#4B2FE8,#7B61FF);margin-bottom:16px}
+.test{background:#0A0714;border-radius:14px;padding:30px 30px 26px;margin-top:48px}
+.backlink{font-family:Mono;font-size:10.5px;letter-spacing:2px;margin:40px 0 0 0}
+.backlink a{color:#7B61FF;text-decoration:none}
 .meta{font-family:Mono;font-size:11px;letter-spacing:2px;color:#7B61FF;margin:44px 0 16px 0}
 h1{font-size:clamp(30px,5vw,40px);line-height:1.12}
 .layer{font-family:Mono;font-size:11px;letter-spacing:2.2px;color:#4B2FE8;margin:44px 0 4px 0}
@@ -22,11 +32,12 @@ p{margin:18px 0}
 em{font-style:normal;background:linear-gradient(transparent 62%, #E4DEFF 62%)}
 </style></head><body>
 <div class="strip"></div>
-<header>
+<header><div class="hwrap">
 <a href="/"><img class="logo" src="/assets/lockup-light.svg" alt="Progma"></a>
 <nav><a href="/#premise">THE PREMISE</a><a href="/#work">WHAT WE DO</a><a href="/#notes">FIELD NOTES</a><a href="/#founders">FOUNDERS</a><a href="/#read">RUN A WORKFLOW</a></nav>
-</header>
+</div></header>
 <div class="wrap">
+<div class="backlink" style="margin:34px 0 0 0"><a href="/#notes">&#8592;&nbsp;ALL FIELD NOTES</a></div>
 <div class="meta">VIMARSHA · FIELD NOTE 04 · CAPABILITY DESIGN · 5 MIN</div>
 <h1>Teach engineers to sense, or product folks to vibe code?</h1>
 <div class="q"><div class="qlabel">THE QUESTION THIS NOTE SITS WITH</div><div class="qtext">&#8220;Should our PMs learn to build — or our engineers learn the customer?&#8221;</div></div>
@@ -72,7 +83,16 @@ em{font-style:normal;background:linear-gradient(transparent 62%, #E4DEFF 62%)}
 <div class="s">Send one workflow — or one decision that bothers you. A one-page read comes back in 48 hours.</div>
 <a class="btn" href="/#read">RUN ONE WORKFLOW THROUGH THE MODEL</a>
 </div>
+<div style="background:#F4F3FB;border-radius:10px;padding:20px 22px;margin-top:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+<div>
+<div style="font-family:SG;font-weight:700;font-size:16px;color:#0B0C10">Vimarsha — field notes from the decision layer</div>
+<div style="font-family:Plex;font-size:12.5px;color:#666;margin-top:3px">One note a week. Real decisions, real workflows. No filler.</div>
 </div>
-<footer><div>Progma Consulting and Management Services LLP · Bengaluru · © 2026</div>
-<div><a href="mailto:mukundhan@progma.co.in" style="color:#777">mukundhan@progma.co.in</a> · <a href="mailto:gowri@progma.co.in" style="color:#777">gowri@progma.co.in</a></div></footer>
+<form action="https://formspree.io/f/mrenplyg" method="POST" style="display:flex;gap:8px;flex-wrap:wrap">
+<input type="email" name="email" required placeholder="you@company.com" style="min-width:200px;width:auto">
+<button class="btn" type="submit">SUBSCRIBE</button></form>
+</div>
+</div>
+<footer><div class="fwrap"><div>Progma Consulting and Management Services LLP · Bengaluru · © 2026</div>
+<div><a href="mailto:mukundhan@progma.co.in" style="color:#777">mukundhan@progma.co.in</a> · <a href="mailto:gowri@progma.co.in" style="color:#777">gowri@progma.co.in</a></div></div></footer>
 </body></html>
