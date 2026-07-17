@@ -1,0 +1,61 @@
+@font-face{font-family:SG;src:url(/assets/sg-500.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:SG;src:url(/assets/sg-700.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Plex;src:url(/assets/plex-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Plex;src:url(/assets/plex-500.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:Mono;src:url(/assets/mono-500.woff2) format('woff2');font-weight:500;font-display:swap}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#FFFFFF;color:#0B0C10;font-family:Plex,system-ui,sans-serif}
+a{color:#4B2FE8}
+.strip{height:8px;background:linear-gradient(90deg,#1A0B3E 0%,#2A1170 18%,#4B2FE8 40%,#12081F 62%,#7B61FF 82%,#1A0B3E 100%)}
+header{position:sticky;top:0;background:#FFFFFF;z-index:50;border-bottom:1px solid #E7E5F2}
+.hwrap{max-width:1080px;margin:0 auto;padding:16px clamp(22px,5vw,48px);display:flex;justify-content:space-between;align-items:center}
+.logo{height:30px;display:block}
+nav{font-family:Mono;font-size:10px;letter-spacing:1.5px}
+nav a{color:#0B0C10;text-decoration:none;margin-left:22px}
+nav a:hover{color:#4B2FE8}
+/* ONE GRID: every section uses .container; every text block hangs off the same left edge */
+.container{max-width:1080px;margin:0 auto;padding:0 clamp(22px,5vw,48px)}
+section{padding:104px 0}
+.sec-head{margin-bottom:44px}
+.mono-label{font-family:Mono;font-size:11px;letter-spacing:2.2px;color:#7B61FF}
+.sec-head h2{margin-top:12px}
+h1{font-family:SG;font-weight:700;font-size:clamp(32px,4.6vw,52px);line-height:1.1}
+h2{font-family:SG;font-weight:700;font-size:clamp(26px,3.2vw,34px);line-height:1.2}
+h3{font-family:SG;font-weight:700;font-size:20px;line-height:1.3}
+p{font-size:17px;line-height:1.7}
+.measure{max-width:70ch}
+.vio{color:#4B2FE8}
+.btn{display:inline-block;background:#4B2FE8;color:#fff;font-family:Mono;font-size:11.5px;letter-spacing:1.4px;padding:13px 22px;border-radius:6px;text-decoration:none;border:none;cursor:pointer}
+.btn2{display:inline-block;border:1.5px solid #0B0C10;color:#0B0C10;font-family:Mono;font-size:11.5px;letter-spacing:1.4px;padding:13px 22px;border-radius:6px;text-decoration:none}
+.dark{background:#0A0714;color:#fff}
+.dark p{color:#C9C4E4}
+.dark h2,.dark h3{color:#fff}
+.tint{background:#F6F5FB}
+/* editorial rows for What we do */
+.row{display:grid;grid-template-columns:minmax(200px,300px) 1fr;gap:28px;padding:34px 0;border-top:1px solid #E7E5F2}
+.row:last-of-type{border-bottom:1px solid #E7E5F2}
+.row .num{font-family:Mono;font-size:12px;letter-spacing:2px;color:#7B61FF}
+.row h3{margin-top:6px}
+.row p{font-size:16px}
+/* land blocks */
+.land{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:8px}
+.land .blk{border-left:3px solid #4B2FE8;padding-left:22px}
+.land p{font-size:15.5px}
+/* note cards */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.notecard{background:#FFFFFF;border:1px solid #E7E5F2;border-radius:12px;padding:26px;text-decoration:none;color:#0B0C10;display:block;transition:border-color .15s}
+.notecard:hover{border-color:#4B2FE8}
+/* founders */
+.founder{display:grid;grid-template-columns:120px 1fr;gap:28px;align-items:start;padding:34px 0;border-top:1px solid #E7E5F2}
+.founder:last-of-type{border-bottom:1px solid #E7E5F2}
+.founder img{width:110px;height:110px;border-radius:50%;object-fit:cover}
+.founder p{font-size:15.5px;margin-top:8px}
+/* form */
+input,textarea,select{width:100%;border:1px solid #C9C4E4;border-radius:6px;padding:12px 14px;font-family:Plex;font-size:15px;background:#fff;color:#0B0C10}
+label{font-family:SG;font-weight:500;font-size:14.5px;display:block;margin:18px 0 4px 0}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 22px}
+.subband{background:#FFFFFF;border:1px solid #E7E5F2;border-radius:10px;padding:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-top:40px}
+footer{border-top:1px solid #E7E5F2;padding:28px 0;font-size:13px;color:#777}
+.fwrap{max-width:1080px;margin:0 auto;padding:0 clamp(22px,5vw,48px);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:760px){nav{display:none}section{padding:64px 0}.row{grid-template-columns:1fr;gap:8px}.land{grid-template-columns:1fr;gap:28px}.founder{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}}
