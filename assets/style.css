@@ -181,3 +181,46 @@ footer{border-top:1px solid var(--line);padding:30px 0;background:#fff}
 .form-error{margin-top:16px;font-size:14.5px;line-height:1.6;color:#B3261E}
 .form-error a{color:#B3261E}
 @media(max-width:620px){.confirm-meta{grid-template-columns:1fr;gap:4px 0}.confirm-meta dd{margin-bottom:10px}}
+
+/* ---------- field note article pages ---------- */
+.wrap{max-width:740px;margin:0 auto;padding:72px clamp(22px,5vw,48px) 96px}
+.wrap .meta{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--violet);margin-bottom:18px}
+.wrap h1{letter-spacing:-.02em}
+.wrap h2{font-size:23px;margin-top:6px}
+.wrap p{margin:18px 0;font-size:16.5px;line-height:1.8}
+.wrap p a{color:var(--violet)}
+.wrap b,.wrap strong{color:var(--ink);font-weight:600}
+.wrap em{font-style:normal;background:linear-gradient(transparent 62%,#E4DEFF 62%)}
+
+/* the question the note opens with */
+.q{margin-top:28px;padding:22px 26px;background:var(--tint);border-left:3px solid var(--violet);border-radius:0 10px 10px 0}
+.qlabel{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--violet)}
+.qtext{margin-top:10px;font-size:18px;line-height:1.6;color:var(--ink)}
+
+/* section label */
+.layer{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--violet);margin:52px 0 6px}
+
+/* pull quote */
+.pull{margin:36px 0;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pull div{font-size:20px;line-height:1.5;font-weight:500;letter-spacing:-.01em;color:var(--ink)}
+
+/* the numbered test block */
+.test{margin-top:44px;padding:28px 30px;background:var(--tint);border:1px solid var(--line);border-radius:var(--radius)}
+.test .tl{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--violet)}
+.test p{margin:12px 0 0;font-size:15px;line-height:1.7}
+.test .item{display:flex;gap:14px;margin-top:18px}
+.test .n{flex:none;width:26px;height:26px;border-radius:50%;background:var(--violet);color:#fff;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.test .t{font-size:15px;line-height:1.7;color:var(--muted)}
+
+/* closing call to action */
+.cta{margin-top:44px;padding:30px 28px;border:1px solid var(--line);border-radius:var(--radius);text-align:center}
+.cta .l{font-size:19px;font-weight:600;color:var(--ink)}
+.cta .s{margin-top:8px;font-size:15px;color:var(--muted)}
+.cta .btn{margin-top:20px}
+
+/* share row under a note */
+.note-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.note-foot a{color:var(--violet);text-decoration:none}
+.note-foot a:hover{text-decoration:underline}
+.note-share{display:flex;align-items:center;gap:14px;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
+@media(max-width:760px){.wrap{padding-top:48px;padding-bottom:64px}.test,.cta{padding:24px 22px}}
