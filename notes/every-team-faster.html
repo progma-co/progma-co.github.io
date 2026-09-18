@@ -5,29 +5,12 @@
 <link rel="icon" href="/assets/favicon-48.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css"><style>
-.wrap{max-width:680px}
-.meta{font-family:var(--font);font-weight:600;font-size:11px;letter-spacing:2px;color:#7B61FF;margin:44px 0 16px 0}
-h1{font-size:clamp(30px,5vw,40px);line-height:1.12}
-.layer{font-family:var(--font);font-weight:600;font-size:11px;letter-spacing:2.2px;color:#4B2FE8;margin:44px 0 4px 0}
-h2{font-size:24px;line-height:1.25;margin:4px 0 6px 0}
-p{margin:18px 0}
-.test .tl{font-family:var(--font);font-weight:600;font-size:11px;letter-spacing:2.2px;color:#7B61FF}
-.test p{color:#C9C4E4;font-size:15.5px;margin:12px 0 0 0}
-.test .item{display:flex;gap:14px;margin-top:16px}
-.test .n{font-family:var(--font);font-weight:600;color:#7B61FF;font-size:18px;min-width:22px}
-.test .t{font-family:var(--font);color:#fff;font-size:16px;line-height:1.55}
-.test .t b{font-family:var(--font)}
-.cta{border:1.5px solid #E7E5F2;border-radius:12px;padding:24px;margin-top:40px;text-align:center}
-.cta .l{font-family:var(--font);font-weight:600;font-size:19px}
-.cta .s{font-family:var(--font);font-size:14px;color:#555;margin-top:6px}
-em{font-style:normal;background:linear-gradient(transparent 62%, #E4DEFF 62%)}
-</style></head><body>
+<link rel="stylesheet" href="/assets/style.css"></head><body>
 <div class="strip"></div>
-<header>
+<header><div class="hwrap">
 <a href="/"><img class="logo" src="/assets/lockup-light.svg" alt="Progma"></a>
 <nav><a href="/#notes">Field notes</a><a href="/#founders">Founders</a><a href="/#read">Get in touch</a></nav>
-</header>
+</div></header>
 <div class="wrap">
 <div class="meta">VIMARSHA · FIELD NOTE 03 · POST-MERGER TECH ORG · 5 MIN</div>
 <h1>Faster teams, flat P&amp;L</h1>
@@ -73,10 +56,31 @@ em{font-style:normal;background:linear-gradient(transparent 62%, #E4DEFF 62%)}
 
 <div class="cta">
 <div class="l">Recognize the solving-alone pattern?</div>
-<div class="s">Send one workflow — or one decision that bothers you. A one-page read comes back in 48 hours.</div>
-<a class="btn" href="/#read">RUN ONE WORKFLOW THROUGH THE MODEL</a>
+<div class="s">Tell us where you are and what you need. We come back with the next step.</div>
+<a class="btn" href="/#read">Start a conversation</a>
 </div>
+
+<div class="note-foot">
+<div class="note-share">Share
+<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fprogma.co.in%2Fnotes%2Fevery-team-faster.html" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fprogma.co.in%2Fnotes%2Fevery-team-faster.html" target="_blank" rel="noopener">X</a>
+<a href="#" data-copy>Copy link</a></div>
+<div>Questions on this one? <a href="/#read">Get in touch</a></div>
 </div>
-<footer><div>Progma Consulting and Management Services LLP · Bengaluru · © 2026</div>
-<div><a href="mailto:mukundhan@progma.co.in" style="color:#777">mukundhan@progma.co.in</a> · <a href="mailto:gowri@progma.co.in" style="color:#777">gowri@progma.co.in</a></div></footer>
+
+<div class="subband">
+<div><h4><span class="vim">Vimarsha</span> — field notes from Progma</h4>
+<div class="cap">One note a week. Real decisions, real workflows. No filler, no content calendar.</div></div>
+<form action="https://formspree.io/f/mrenplyg" method="POST" class="inline-form">
+<input type="email" name="email" required placeholder="you@company.com">
+<button class="btn" type="submit">Subscribe</button></form></div>
+</div>
+
+<footer><div class="fwrap"><div>Progma Consulting and Management Services LLP · Bengaluru · © 2026</div>
+<div><a href="mailto:mukundhan@progma.co.in">mukundhan@progma.co.in</a> · <a href="mailto:gowri@progma.co.in">gowri@progma.co.in</a></div></div></footer>
+<script>
+var cp=document.querySelector('[data-copy]');
+if(cp)cp.addEventListener('click',function(e){e.preventDefault();var b=this;
+navigator.clipboard.writeText(location.href).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy link';},1600);});});
+</script>
 </body></html>
