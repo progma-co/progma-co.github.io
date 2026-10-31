@@ -448,7 +448,8 @@ footer p{max-width:100ch;margin:0 0 8px}
 
 <footer class="wrap"><div class="in"><div>
   <p><b>Method.</b> The taxonomy runs top-down from the physical stack to demand and was stress-tested link by link for missing segments. Companies, open projects and investors are researched against company sites, filings, repositories and news; each listing carries a source. Status reflects deals announced through the date above. Funding stage is the latest disclosed round only. Tags such as performance and cost describe what an offering mainly does; they are not ratings. Inclusion is not endorsement, and listings are never paid for.</p>
-  <p>Progma Consulting and Management Services LLP · Bengaluru · progma.co.in · Atlas data CC BY 4.0</p></div></div></footer>
+  <p>Progma Consulting and Management Services LLP · Bengaluru · progma.co.in · Atlas data CC BY 4.0</p>
+  <p>We count visits, searches and clicks on this page to see which parts of the map are useful. No cookies, no personal data (GoatCounter).</p></div></div></footer>
 
 <aside class="drawer" id="drawer" hidden aria-label="Details"><button type="button" class="x" id="dx">CLOSE</button><header id="dh"></header><div class="body" id="db"></div></aside>
 
@@ -470,12 +471,19 @@ async function loadData() {
   const nodeFiles = await Promise.all(taxonomy.nodes.map(n => get("nodes/" + n.id + ".json").catch(() => ({entries: [], notes: {}}))));
   const players = [], notes = {};
   nodeFiles.forEach(f => { players.push(...(f.entries || [])); Object.assign(notes, f.notes || {}); });
-  return {asof: meta.asof, personas: meta.personas, changelog: meta.changelog || [], taxonomy, players, cross: cross.cross || [], investors: investors.investors || [], notes, stacks: stacks.stacks || [], types: rel.types, links: rel.links};
+  return {analytics: meta.analytics || {}, asof: meta.asof, personas: meta.personas, changelog: meta.changelog || [], taxonomy, players, cross: cross.cross || [], investors: investors.investors || [], notes, stacks: stacks.stacks || [], types: rel.types, links: rel.links};
 }
 
 loadData().then(start).catch(e => { $("#board").innerHTML = `<p class="empty">The atlas data did not load (${esc(e.message)}). Refresh, or open the data on GitHub.</p>`; });
 
+/* ---------- analytics (GoatCounter: no cookies, no personal data) ---------- */
+function track(path, title) { try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({path: "atlas/" + path, title: title || path, event: true}); } catch (e) {} }
+function loadAnalytics(cfg) {
+  if (!cfg || !cfg.goatcounter || window.goatcounter) return;
+  const sc = document.createElement("script"); sc.async = true; sc.src = "https://gc.zgo.at/count.js"; sc.dataset.goatcounter = cfg.goatcounter; document.head.appendChild(sc);
+}
 function start(DATA) {
+loadAnalytics(DATA.analytics);
 const T = DATA.taxonomy, P = DATA.players, X = DATA.cross, INV = DATA.investors;
 const LAYERS = T.layers, NODES = T.nodes;
 const SEG = {}; NODES.forEach(n => n.subsegments.forEach(s => SEG[s.id] = {...s, node: n}));
@@ -652,6 +660,7 @@ function playerHTML(p) {
 }
 let segTab = "all";
 function showSeg(id) {
+  if (SEG[id]) track("segment/" + id, "Opened segment: " + SEG[id].name);
   const s = SEG[id], l = LAYERS.find(x => x.id === s.layer), all = bySeg[id], list = all.filter(passes);
   if (id.startsWith("n11.") && !all.length) {
     const pid = {"n11.ent": "enterprise", "n11.dev": "dev", "n11.startup": "aiproduct"}[id], per = PERSONAS.find(p => p.id === pid);
@@ -704,7 +713,7 @@ $("#xn").innerHTML = `<h3>Companies across the chain</h3>${pills(X)}<h3>Investor
 $("#log").innerHTML = (DATA.changelog || []).map(c => `<li><span class="d">${esc(c.date)}</span><span>${esc(c.text)}</span></li>`).join("") || `<li><span class="d">—</span><span>No changes yet.</span></li>`;
 $("#stacks").innerHTML = (DATA.stacks || []).length ? DATA.stacks.map((s, i) => `<div class="s"><div><b>${esc(s.title)}</b><br><span class="meta">${esc(s.by || "")} · ${s.items.length} listings</span></div><button type="button" class="btn2" data-gallery="${i}">Open on map</button></div>`).join("") : `<p class="empty">No community stacks yet. Build yours and submit it to be the first.</p>`;
 
-function focusTrace() { const tr = traceTarget(); if (tr && st.view === "guided") { const first = NODES.find(n => n.subsegments.some(s => tr.roles.has(s.id))); if (first && !NODES.find(n => n.id === st.node).subsegments.some(s => tr.roles.has(s.id))) st.node = first.id; } update(); (st.view === "guided" ? $("#guided") : $("#scroll")).scrollIntoView({behavior: "smooth", block: "start"}); }
+function focusTrace() { if (st.trace) track("trace/" + st.trace, "Traced: " + st.trace); const tr = traceTarget(); if (tr && st.view === "guided") { const first = NODES.find(n => n.subsegments.some(s => tr.roles.has(s.id))); if (first && !NODES.find(n => n.id === st.node).subsegments.some(s => tr.roles.has(s.id))) st.node = first.id; } update(); (st.view === "guided" ? $("#guided") : $("#scroll")).scrollIntoView({behavior: "smooth", block: "start"}); }
 /* ---------- relationships (typed graph) ---------- */
 const TYPES = DATA.types || {}, LINKS = DATA.links || [];
 const OUT = {}, IN = {}; Object.keys(SEG).forEach(id => { OUT[id] = []; IN[id] = []; });
@@ -848,11 +857,13 @@ function findCompany(q) {
   setMode("company");
   if (!p && !x && inv) return renderInvestor(inv);
   if (!p && !x) {
+    track("search-miss/" + q, "Searched, not listed: " + q);
     const req = issueURL("atlas-suggest.yml", `[Atlas] Add: ${q}`, `Name: ${q}\nWebsite:\nWhich box:\nWhat it sells (one line):\nSource:\n`);
     $("#fit").innerHTML = `<div class="fh"><div><div class="label">Not listed yet</div><h3>${esc(q)}</h3><p>This company is not in the atlas yet. Request a listing and it will be reviewed in the next fortnightly pass. Say what it sells and link a source. Listings are free and never paid for.</p></div></div>
       <div class="notfound"><p><a class="btn" href="${esc(req)}" target="_blank" rel="noopener">Request a listing for ${esc(q)}</a></p><p>No GitHub account? Email <span style="user-select:all">mukundhan@progma.co.in</span> with the company name, website, what it sells in one line, and where you think it fits.</p></div>`;
     return;
   }
+  track("search/" + ((x || p).name), "Searched company: " + (x || p).name);
   const segs = new Set(); if (p) p.subsegments.forEach(s => segs.add(s)); if (x) x.roles.forEach(r => SEG[r.subsegment] && segs.add(r.subsegment));
   // gather the same company's product listings, e.g. "GMI Cloud" + "GMI Cloud Inference Engine", "Crusoe" + "Crusoe Managed Inference"
   const base = keyOf(((x || p).name).replace(/\s*\(.*\)/, "")), fam = [];
@@ -865,12 +876,14 @@ function findCompany(q) {
   st.persona = ""; $("#persona").value = "";
 }
 function renderInvestor(inv) {
+  track("investor/" + inv.name, "Viewed investor: " + inv.name);
   $("#fit").innerHTML = `<div class="fh"><div><div class="label">Investor</div><h3>${esc(inv.name)}</h3><p>${esc(inv.summary || "")}</p></div><div class="fact"><button type="button" class="x2" data-trace="${esc(inv.name)}">See its footprint on the map</button></div></div>
    <div class="fgrid"><div class="fcol wide"><div class="label">Where it invests</div><ul>${inv.roles.map(r => segLine(r.subsegment, "", "Backs " + esc(r.portfolio))).join("")}</ul></div></div>`;
   st.fitSubject = {name: inv.name, trace: true};
 }
 function personaFit(pid) {
   const per = PERSONAS.find(p => p.id === pid); if (!per) return;
+  track("persona/" + pid, "Picked persona: " + per.name);
   setMode("company"); st.persona = pid;
   renderFit({name: per.name, key: "", segs: per.self.filter(s => SEG[s]), oneLiner: per.blurb.charAt(0).toUpperCase() + per.blurb.slice(1), persona: true});
 }
@@ -891,6 +904,7 @@ function renderSegList() {
 
 /* ---------- modes ---------- */
 function setMode(m) {
+  if (st.mode !== m) track("mode/" + m, "Mode: " + m);
   st.mode = m;
   document.querySelectorAll("[data-mode]").forEach(b => b.setAttribute("aria-pressed", b.dataset.mode === m));
   ["map", "segment", "company"].forEach(x => $("#mode-" + x).hidden = x !== m);
@@ -901,12 +915,19 @@ $("#findForm").addEventListener("submit", e => { e.preventDefault(); findCompany
 $("#segIn").addEventListener("input", renderSegList);
 
 
+document.addEventListener("click", e => {
+  const a = e.target.closest("a[href]"); if (!a) return;
+  let u; try { u = new URL(a.href, location.href); } catch (x) { return; }
+  if (u.hostname === location.hostname) return;
+  if (u.hostname.endsWith("github.com")) track("github/" + (u.searchParams.get("template") || u.pathname.split("/").slice(3, 5).join("/") || "repo"), "Opened GitHub: " + (u.searchParams.get("title") || u.pathname));
+  else track("out/" + u.hostname.replace(/^www\./, ""), "Visited company site: " + u.hostname.replace(/^www\./, ""));
+}, true);
 /* events */
 document.addEventListener("click", e => {
   const t = e.target;
-  const ec = t.closest(".ecard"); if (ec) { const w = ec.closest(".egowrap"); renderEgo(w, {title: SEG[ec.dataset.ego].name, sub: SEG[ec.dataset.ego].desc, segs: [ec.dataset.ego]}); w.scrollIntoView({behavior: "smooth", block: "start"}); return; }
+  const ec = t.closest(".ecard"); if (ec) { track("ecosystem/" + ec.dataset.ego, "Re-centred diagram on: " + SEG[ec.dataset.ego].name); const w = ec.closest(".egowrap"); renderEgo(w, {title: SEG[ec.dataset.ego].name, sub: SEG[ec.dataset.ego].desc, segs: [ec.dataset.ego]}); w.scrollIntoView({behavior: "smooth", block: "start"}); return; }
   const eb = t.closest("[data-egoback]"); if (eb) { const w = eb.closest(".egowrap"), s2 = egoState[w.id]; s2.trail = s2.trail.slice(0, +eb.dataset.egoback + 1); drawEgo(w); return; }
-  const sr = t.closest(".srow"); if (sr) { const w = $("#segEgo"); w.hidden = false; renderEgo(w, {title: SEG[sr.dataset.seg].name, sub: SEG[sr.dataset.seg].desc, segs: [sr.dataset.seg], root: true}); w.scrollIntoView({behavior: "smooth", block: "start"}); return; }
+  const sr = t.closest(".srow"); if (sr) { track("segment/" + sr.dataset.seg, "Opened segment: " + SEG[sr.dataset.seg].name); const w = $("#segEgo"); w.hidden = false; renderEgo(w, {title: SEG[sr.dataset.seg].name, sub: SEG[sr.dataset.seg].desc, segs: [sr.dataset.seg], root: true}); w.scrollIntoView({behavior: "smooth", block: "start"}); return; }
   const md = t.closest("[data-mode]"); if (md) { setMode(md.dataset.mode); return; }
   const iv = t.closest("[data-inv]"); if (iv) { const inv = INV.find(i => i.name === iv.dataset.inv); if (inv) { renderInvestor(inv); $("#fit").scrollIntoView({behavior: "smooth", block: "start"}); } return; }
   const gn = t.closest("[data-gonode]"); if (gn) { st.node = gn.dataset.gonode; if (st.fitSubject && !st.fitSubject.persona) st.trace = st.fitSubject.name, $("#trace").value = st.trace; setMode("map"); $("#guided").scrollIntoView({behavior: "smooth", block: "start"}); return; }
@@ -914,7 +935,7 @@ document.addEventListener("click", e => {
   const ws = t.closest(".where [data-seg], .fcol [data-seg], .rel [data-seg], .ecl"); if (ws) { segTab = "all"; return showSeg(ws.dataset.seg); }
   const fd = t.closest("[data-find]"); if (fd) { $("#findIn").value = fd.dataset.find; findCompany(fd.dataset.find); $("#fit").scrollIntoView({behavior: "smooth", block: "start"}); return; }
   const box = t.closest(".box,.scard"); if (box) { segTab = "all"; return showSeg(box.dataset.seg); }
-  const nb = t.closest("[data-node]"); if (nb) { st.node = nb.dataset.node; update(); if (nb.closest(".nvnav")) $("#nodeview").scrollIntoView({behavior: "smooth", block: "start"}); return; }
+  const nb = t.closest("[data-node]"); if (nb) { track("link/" + nb.dataset.node, "Opened link: " + (NODES.find(n => n.id === nb.dataset.node) || {}).name); st.node = nb.dataset.node; update(); if (nb.closest(".nvnav")) $("#nodeview").scrollIntoView({behavior: "smooth", block: "start"}); return; }
   const vb = t.closest("[data-view]"); if (vb) { st.view = vb.dataset.view; document.querySelectorAll("[data-view]").forEach(b => b.setAttribute("aria-pressed", b === vb)); $("#guided").hidden = st.view !== "guided"; $("#matrix").hidden = st.view !== "matrix"; $("#densityCtl").hidden = st.view !== "matrix"; $("#viewTitle").textContent = st.view === "matrix" ? "Every link and layer at once" : "Twelve links from power to people"; update(); return; }
   const tab = t.closest("[data-tab]"); if (tab) { segTab = tab.dataset.tab; return showSeg($("#drawer").dataset.seg); }
   const tb = t.closest(".tbtn"); if (tb) return showTransitions(tb.dataset.tr);
