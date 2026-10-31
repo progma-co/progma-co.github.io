@@ -12,7 +12,7 @@
   "n0.water": "Fragmented treatment market led by Ecolab, Veolia and Xylem; water rights increasingly gate permits",
   "n0.storage": "Bridge power is mostly gas (gensets, turbines, fuel cells) with batteries smoothing AI load swings",
   "n0.fuel": "Gas pipelines feed behind-the-meter plants; HALEU supply (Centrus) gates advanced SMR fuel",
-  "n0.land": "Powered-land developers (Cloverleaf, Tract) pre-secure grid interconnects before selling to builders"
+  "n0.land": "Alongside brokers, market-data platforms (DC Byte, datacenterHawk), procurement marketplaces (Inflect) and grid-capacity software (GridCARE) shape site selection."
  },
  "entries": [
   {
@@ -93,6 +93,23 @@
    "source": "https://aecom.com"
   },
   {
+   "name": "Africa Data Centres",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "ZA",
+   "region": "Africa",
+   "status": "private",
+   "parent": "Cassava Technologies",
+   "one_liner": "Pan-African data-centre operator hosting Cassava AI factory GPUs",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.africadatacentres.com",
+   "source": "https://developingtelecoms.com/telecom-technology/data-centres-networks/18234-africa-s-first-ai-factory-on-the-way-says-cassava.html"
+  },
+  {
    "name": "AI Infrastructure Partnership (AIP)",
    "kind": "company",
    "subsegments": [
@@ -147,6 +164,20 @@
    "one_liner": "Builds and leases high-density AI DC campuses in North Dakota",
    "url": "https://www.applieddigital.com",
    "source": "https://www.applieddigital.com"
+  },
+  {
+   "name": "Ascenty",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "private",
+   "parent": "Digital Realty / Brookfield JV",
+   "one_liner": "Brazil-based data-centre operator across Latin America",
+   "url": "https://ascenty.com",
+   "source": "https://www.spheron.network/blog/gpu-cloud-brazil-mexico-latin-america-2026/"
   },
   {
    "name": "Asia Vital Components (AVC)",
@@ -281,9 +312,13 @@
   },
   {
    "name": "Brookfield Asset Management",
+   "aka": [
+    "Brookfield"
+   ],
    "kind": "company",
    "subsegments": [
-    "n0.capital"
+    "n0.capital",
+    "n4.finance"
    ],
    "hq": "CA",
    "region": "North America",
@@ -305,23 +340,6 @@
    "one_liner": "Hydro, wind and solar platform with multi-GW hyperscaler framework PPAs",
    "url": "https://bep.brookfield.com",
    "source": "https://bep.brookfield.com"
-  },
-  {
-   "name": "Cadence Reality DC (Future Facilities)",
-   "kind": "company",
-   "subsegments": [
-    "n0.opt"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Cadence",
-   "one_liner": "DC digital twin for thermal and power capacity planning",
-   "tags": [
-    "cost"
-   ],
-   "url": "https://www.cadence.com",
-   "source": "https://www.cadence.com"
   },
   {
    "name": "Cameco",
@@ -409,6 +427,40 @@
    "tags": [],
    "url": "https://www.cbre.com",
    "source": "https://www.cbre.com"
+  },
+  {
+   "name": "CDC Data Centres",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Australian government-grade hyperscale data-centre operator",
+   "tags": [
+    "sovereign",
+    "security"
+   ],
+   "url": "https://www.cdcdatacentres.com.au",
+   "source": "https://www.cdcdatacentres.com.au"
+  },
+  {
+   "name": "center3",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "SA",
+   "region": "Middle East",
+   "status": "private",
+   "parent": "stc Group",
+   "one_liner": "stc Group data-centre and connectivity company building AI-ready capacity in Saudi Arabia",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://center3.com",
+   "source": "https://center3.com"
   },
   {
    "name": "Centrus Energy",
@@ -527,6 +579,22 @@
    "note": "Closed $16.4B Calpine acquisition (~55 GW combined fleet); Crane (TMI-1) restart contracted to Microsoft"
   },
   {
+   "name": "Coolgradient",
+   "kind": "company",
+   "subsegments": [
+    "n0.opt"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI software optimising data-centre cooling setpoints to cut energy use",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.coolgradient.com",
+   "source": "https://www.dutchdatacenters.nl/nieuws/coolgradient-delivers-14000-mwh-in-energy-savings/"
+  },
+  {
    "name": "CoolIT Systems",
    "kind": "company",
    "subsegments": [
@@ -561,10 +629,15 @@
   },
   {
    "name": "Crusoe",
+   "aka": [
+    "Crusoe Managed Inference"
+   ],
    "kind": "company",
    "subsegments": [
     "n0.dcdev",
-    "n4.neo"
+    "n4.neo",
+    "n7.api",
+    "n0.modular"
    ],
    "hq": "US",
    "region": "North America",
@@ -646,6 +719,35 @@
    "source": "https://www.daikinapplied.com"
   },
   {
+   "name": "Damac Edgnex",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "AE",
+   "region": "Middle East",
+   "status": "private",
+   "parent": "DAMAC Group",
+   "one_liner": "Dubai-based Damac data-centre arm developing AI-ready sites across MEA, Asia and Europe",
+   "url": "https://edgnex.com",
+   "source": "https://edgnex.com"
+  },
+  {
+   "name": "datacenterHawk",
+   "kind": "company",
+   "subsegments": [
+    "n0.land",
+    "n0.intel"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Data-centre market data and listings platform covering capacity, absorption and pricing",
+   "tags": [],
+   "url": "https://datacenterhawk.com",
+   "source": "https://datacenterhawk.com/list-your-site"
+  },
+  {
    "name": "DataVolt",
    "kind": "company",
    "subsegments": [
@@ -673,6 +775,19 @@
    "one_liner": "Former GDS International; DCs in Malaysia (Johor), Indonesia, Thailand",
    "url": "https://www.dayonedc.com",
    "source": "https://www.dayonedc.com"
+  },
+  {
+   "name": "DC Byte",
+   "kind": "company",
+   "subsegments": [
+    "n0.land",
+    "n0.intel"
+   ],
+   "status": "private",
+   "one_liner": "Data-centre market intelligence: global supply, pipeline and pricing data for developers and investors",
+   "tags": [],
+   "url": "https://www.dcbyte.com",
+   "source": "https://dcbyte.com"
   },
   {
    "name": "Deep Green",
@@ -846,7 +961,8 @@
    "name": "Emerald AI",
    "kind": "company",
    "subsegments": [
-    "n0.opt"
+    "n0.opt",
+    "n0.ttp"
    ],
    "hq": "US",
    "region": "North America",
@@ -927,6 +1043,23 @@
    ],
    "url": "https://www.equinix.com",
    "source": "https://www.equinix.com"
+  },
+  {
+   "name": "Etalytics",
+   "kind": "company",
+   "subsegments": [
+    "n0.opt"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI energy-management software that optimises data-centre cooling and plant in real time",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.etalytics.com",
+   "source": "https://www.implicator.ai/microsoft-backs-german-ai-firm-etalytics-as-datacenter-power-costs-bite/",
+   "note": "Microsoft-backed"
   },
   {
    "name": "Fervo Energy",
@@ -1083,6 +1216,25 @@
    "source": "https://www.grcooling.com"
   },
   {
+   "name": "GridCARE",
+   "kind": "company",
+   "subsegments": [
+    "n0.land",
+    "n0.opt",
+    "n0.ttp"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI grid-planning software that finds latent utility capacity to cut data-centre time-to-power",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.gridcare.ai",
+   "source": "https://www.datacenterdynamics.com/en/news/gridcare-raises-64m-in-series-a-funding-round/",
+   "note": "$64M Series A (May 2026); deals with Portland General Electric and National Grid"
+  },
+  {
    "name": "Hammond Power Solutions",
    "kind": "company",
    "subsegments": [
@@ -1184,10 +1336,14 @@
   },
   {
    "name": "HUMAIN",
+   "aka": [
+    "HUMAIN (ALLaM)"
+   ],
    "kind": "company",
    "subsegments": [
     "n0.dcdev",
-    "n4.sovereign"
+    "n4.sovereign",
+    "n6.sovereign"
    ],
    "hq": "SA",
    "region": "Middle East",
@@ -1260,6 +1416,23 @@
    "note": "Raised $26M (May 2026)"
   },
   {
+   "name": "Inflect",
+   "kind": "company",
+   "subsegments": [
+    "n0.land",
+    "n0.intel"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Online marketplace to compare, price and buy colocation, bare metal and connectivity",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://inflect.com",
+   "source": "https://inflect.com"
+  },
+  {
    "name": "IREN",
    "kind": "company",
    "subsegments": [
@@ -1291,6 +1464,19 @@
    "one_liner": "Colocation operator; owns Web Werks JV in India",
    "url": "https://www.ironmountain.com/data-centers",
    "source": "https://www.ironmountain.com/data-centers"
+  },
+  {
+   "name": "iXAfrica",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "KE",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "Nairobi hyperscale colocation campus",
+   "url": "https://www.ixafrica.co.ke",
+   "source": "https://www.ixafrica.co.ke"
   },
   {
    "name": "Jacobs",
@@ -1434,6 +1620,23 @@
    "one_liner": "Water treatment chemicals, ultrapure water and cooling-water services for fabs and data centres",
    "url": "https://www.kurita.co.jp/english/",
    "source": "https://www.kurita.co.jp/english/"
+  },
+  {
+   "name": "L&T Vyoma",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Larsen & Toubro",
+   "one_liner": "L&T data-centre business building a 100MW Navi Mumbai campus for AI/neocloud workloads",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.larsentoubro.com",
+   "source": "https://inc42.com/features/indias-neocloud-players-ride-the-sovereign-ai-wave/"
   },
   {
    "name": "Lancium",
@@ -1610,6 +1813,22 @@
    "source": "https://themachinemaker.com/news/schneider-electric-expands-leadership-in-data-center-cooling-with-acquisition-of-motivair-corporation/"
   },
   {
+   "name": "NEXTDC",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Australian colocation operator hosting AI/GPU deployments",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.nextdc.com",
+   "source": "https://www.nextdc.com/blog/sharonai-and-nextdc-launching-gpu-as-a-service-at-scale"
+  },
+  {
    "name": "NextEra Energy",
    "kind": "company",
    "subsegments": [
@@ -1662,6 +1881,9 @@
    "hq": "GB",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$2B Series C at $14.6B valuation, Mar 2026, led by Aker",
+   "round_source": "https://tech.eu/2026/03/09/nvidia-backed-nscale-raises-2bn-appoints-sheryl-sandberg-nick-clegg-to-board/",
    "one_liner": "UK AI hyperscaler building GPU DCs in Norway, UK and Portugal",
    "tags": [
     "sovereign"
@@ -1739,6 +1961,37 @@
    "one_liner": "Airtel's DC arm; one of India's largest operators by footprint",
    "url": "https://www.nxtra.in",
    "source": "https://www.nxtra.in"
+  },
+  {
+   "name": "OctaiPipe",
+   "kind": "company",
+   "subsegments": [
+    "n0.opt"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Federated-learning AI that optimises data-centre cooling across sites",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://octaipipe.ai",
+   "source": "https://evertiq.com/summary/2025-12-04-abb-investerar-i-octaipipe-for-ai-optimerad-datacenterkylning",
+   "note": "ABB invested (Dec 2025)"
+  },
+  {
+   "name": "ODATA",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "acquired",
+   "parent": "Aligned Data Centers",
+   "one_liner": "Latin American hyperscale data-centre operator",
+   "url": "https://odatacolocation.com",
+   "source": "https://www.spheron.network/blog/gpu-cloud-brazil-mexico-latin-america-2026/"
   },
   {
    "name": "Oklo",
@@ -1844,6 +2097,19 @@
    "source": "https://www.quantaservices.com"
   },
   {
+   "name": "Rack Centre",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "NG",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "Lagos carrier-neutral data-centre operator",
+   "url": "https://rack-centre.com",
+   "source": "https://rack-centre.com/?p=43224"
+  },
+  {
    "name": "RackBank",
    "kind": "company",
    "subsegments": [
@@ -1857,21 +2123,21 @@
    "source": "https://www.rackbank.com"
   },
   {
-   "name": "Reliance Jio (Jamnagar AI DC)",
+   "name": "Raxio",
    "kind": "company",
    "subsegments": [
     "n0.dcdev"
    ],
-   "hq": "IN",
-   "region": "India",
-   "status": "public",
-   "parent": "Reliance Industries",
-   "one_liner": "GW-scale AI DC campus in Jamnagar powered by Reliance renewables",
+   "hq": "MU",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "Carrier-neutral data centres across East and Central Africa",
    "tags": [
     "sovereign"
    ],
-   "url": "https://www.ril.com",
-   "source": "https://enterpriseam.com/mena-india/2026/04/29/reliance-industries-usd-17-bn-data-centre-opens-investment-window-for-gulf-investors/"
+   "url": "https://raxiogroup.com",
+   "source": "https://www.connectingafrica.com/data-centers/raxio-raises-more-capital-as-africa-data-center-demand-surges",
+   "note": "Committed capital above $380M (2026)"
   },
   {
    "name": "ReNew",
@@ -1918,6 +2184,23 @@
    "source": "https://www.rolls-royce-smr.com"
   },
   {
+   "name": "Scala Data Centers",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "private",
+   "parent": "DigitalBridge",
+   "one_liner": "Latin American hyperscale developer building the \"AI City\" campus in Rio Grande do Sul",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://scaladatacenters.com",
+   "source": "https://www.spheron.network/blog/gpu-cloud-brazil-mexico-latin-america-2026/"
+  },
+  {
    "name": "Schneider Electric",
    "kind": "company",
    "subsegments": [
@@ -1926,7 +2209,8 @@
     "n0.opt",
     "n0.ops",
     "n0.build",
-    "n3.rackpower"
+    "n3.rackpower",
+    "n0.modular"
    ],
    "hq": "FR",
    "region": "Europe",
@@ -2203,22 +2487,18 @@
    "source": "https://www.tatapower.com"
   },
   {
-   "name": "TCS HyperVault",
+   "name": "Teraco",
    "kind": "company",
    "subsegments": [
     "n0.dcdev"
    ],
-   "hq": "IN",
-   "region": "India",
-   "status": "private",
-   "parent": "Tata Consultancy Services / TPG",
-   "one_liner": "TCS's new GW-scale AI DC venture, TPG co-funding",
-   "tags": [
-    "sovereign"
-   ],
-   "url": "https://www.tcs.com",
-   "source": "https://www.datacenterdynamics.com/en/news/tpg-invests-in-tatas-new-hypervault-data-center-venture/",
-   "note": "Launched Nov 2025; sites incl. Visakhapatnam region, Pune"
+   "hq": "ZA",
+   "region": "Africa",
+   "status": "acquired",
+   "parent": "Digital Realty (2022)",
+   "one_liner": "Largest South African colocation operator",
+   "url": "https://www.teraco.co.za",
+   "source": "https://www.teraco.co.za"
   },
   {
    "name": "TeraWulf",
@@ -2376,7 +2656,8 @@
    "name": "Verrus",
    "kind": "company",
    "subsegments": [
-    "n0.opt"
+    "n0.opt",
+    "n0.dcdev"
    ],
    "hq": "US",
    "region": "North America",
@@ -2398,7 +2679,8 @@
     "n0.build",
     "n0.ops",
     "n3.opt",
-    "n3.rackpower"
+    "n3.rackpower",
+    "n0.modular"
    ],
    "hq": "US",
    "region": "North America",
@@ -2429,7 +2711,8 @@
    "kind": "company",
    "subsegments": [
     "n0.storage",
-    "n0.fuel"
+    "n0.fuel",
+    "n0.power"
    ],
    "hq": "US",
    "region": "North America",
@@ -2463,7 +2746,8 @@
    "name": "Williams",
    "kind": "company",
    "subsegments": [
-    "n0.fuel"
+    "n0.fuel",
+    "n0.power"
    ],
    "hq": "US",
    "region": "North America",
@@ -2477,7 +2761,8 @@
    "name": "Wärtsilä",
    "kind": "company",
    "subsegments": [
-    "n0.storage"
+    "n0.storage",
+    "n0.power"
    ],
    "hq": "FI",
    "region": "Europe",
@@ -2518,9 +2803,14 @@
   },
   {
    "name": "Yotta Data Services",
+   "aka": [
+    "Yotta Data Services (Shakti Cloud)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n0.dcdev"
+    "n0.dcdev",
+    "n4.sovereign",
+    "n4.neo"
    ],
    "hq": "IN",
    "region": "India",
@@ -2543,6 +2833,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$100M Series C, Jun 2026",
+   "round_source": "https://datacentrereview.com/2026/06/zutacore-raises-100m-to-scale-waterless-cooling-for-ai-data-centres/",
    "one_liner": "Waterless two-phase direct-on-chip cooling",
    "tags": [
     "performance"

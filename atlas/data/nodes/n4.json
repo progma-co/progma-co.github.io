@@ -7,31 +7,16 @@
   "n4.serverless": "Per-second GPU platforms serve developers; consolidation under way (Cloudflare buying Replicate).",
   "n4.onprem": "OEM 'AI factory' bundles co-engineered with NVIDIA dominate private AI.",
   "n4.market": "Mix of centralised spot/forward markets (SF Compute, Vast.ai) and crypto-based DePIN networks.",
-  "n4.finance": "GPU-backed private credit from Magnetar, Blackstone, Blue Owl, Apollo and others funds neocloud build-outs; vendor backstops (e.g. NVIDIA capacity guarantees) are common.",
-  "n4.orch": "NVIDIA now owns the two most-used schedulers (Run:ai, Slurm); Kubernetes and Ray are the open alternatives.",
+  "n4.finance": "Shift in 2026 from bilateral GPU-backed debt to market infrastructure: ICE+Ornn and CME+Silicon Data compute futures, plus on-chain lenders (USD.AI) and tokenised GPU ownership (Compute Labs).",
+  "n4.orch": "GPU virtualisation and pooling (Thunder Compute, Juice Labs, VirtAI OrionX, HAMi, Liqid) and checkpoint/migration (Cedana, MemVerge) now form a distinct cluster from schedulers.",
   "n4.finops": "Generic FinOps vendors are adding GPU and AI-API cost views; few are GPU-native yet.",
   "n4.ops": "GPU failure rates make health checks and fabric monitoring a differentiator; neocloud reliability is now rated independently (ClusterMAX).",
   "n4.offtake": "computeprices.com tracks ~$1.05T across 21 disclosed lab-cloud deals (scale indicator, not audited)",
   "n4.confidential": "Hyperscalers bundle GPU TEEs; independents being absorbed (Anthropic-OPAQUE, Oct 2026)",
-  "n4.access": "Mix of national research compute (NAIRR, AIRR, EuroHPC, IndiaAI) and vendor startup credits"
+  "n4.access": "Mix of national research compute (NAIRR, AIRR, EuroHPC, IndiaAI) and vendor startup credits",
+  "n4.stack": "Thin but growing B2B layer: Rafay, hosted·ai, Ori, Armada Bridge (ex-aarna.ml), Mirantis k0rdent, OpenNebula sell the control plane; Netris adds network multi-tenancy; Solvimon, Monetize360, Evergent, OpenMeter add metering and billing."
  },
  "entries": [
-  {
-   "name": "ABCI (AIST)",
-   "kind": "company",
-   "subsegments": [
-    "n4.access"
-   ],
-   "hq": "JP",
-   "region": "Asia-Pacific",
-   "status": "government",
-   "one_liner": "Japan national AI Bridging Cloud Infrastructure 3.0 for researchers",
-   "tags": [
-    "sovereign"
-   ],
-   "url": "https://abci.ai",
-   "source": "https://abci.ai"
-  },
   {
    "name": "Aethir",
    "kind": "company",
@@ -49,27 +34,15 @@
    "source": "https://aethir.com"
   },
   {
-   "name": "Akash Network",
-   "kind": "company",
-   "subsegments": [
-    "n4.market"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "one_liner": "Decentralised compute marketplace (DePIN) for GPUs",
-   "tags": [
-    "open-source",
-    "cost"
-   ],
-   "url": "https://akash.network",
-   "source": "https://akash.network"
-  },
-  {
    "name": "Alibaba Cloud",
+   "aka": [
+    "Alibaba Cloud Model Studio (Bailian)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.hyper"
+    "n4.hyper",
+    "n7.platform",
+    "n8.platform"
    ],
    "hq": "CN",
    "region": "China",
@@ -98,11 +71,17 @@
   },
   {
    "name": "Amazon Web Services",
+   "aka": [
+    "Amazon Bedrock"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.hyper",
     "n4.offtake",
-    "n4.confidential"
+    "n4.confidential",
+    "n6.hub",
+    "n7.platform",
+    "n7.compress"
    ],
    "hq": "US",
    "region": "North America",
@@ -118,13 +97,21 @@
   },
   {
    "name": "Anjuna Security",
+   "aka": [
+    "Anjuna"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.confidential"
+    "n4.confidential",
+    "n6.weights",
+    "n7.private"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "Series B extension tranche, Jan 2026",
+   "round_source": "https://www.cbinsights.com/company/anjuna-security/financials",
    "one_liner": "Confidential computing platform for enclaves across clouds",
    "tags": [
     "security"
@@ -134,21 +121,27 @@
   },
   {
    "name": "Anyscale (Ray)",
+   "aka": [
+    "Ray Serve / Anyscale"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.orch",
-    "n6.train"
+    "n6.train",
+    "n7.engine"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "private",
+   "status": "acquired",
+   "parent": "Nscale (Jul 2026)",
    "one_liner": "Ray distributed compute framework and managed platform for AI workloads",
    "tags": [
     "open-source",
     "performance"
    ],
    "url": "https://www.anyscale.com",
-   "source": "https://www.anyscale.com"
+   "source": "https://www.nscale.com/press-releases/nscale-acquires-anyscale",
+   "note": "Acquired by Nscale, Jul 2026"
   },
   {
    "name": "Apollo",
@@ -181,24 +174,72 @@
    "source": "https://security.apple.com/blog/private-cloud-compute/"
   },
   {
-   "name": "AWS Activate",
+   "name": "Arc Compute",
    "kind": "company",
    "subsegments": [
-    "n4.access"
+    "n4.orch",
+    "n4.virt"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "ArcHPC software that raises GPU utilisation and energy efficiency through low-level GPU scheduling",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://www.arccompute.io",
+   "source": "https://vmblog.com/bylines/arc-compute-harnesses-low-level-gpu-optimizations-to-accelerate-ai-ml-workloads-and-slash-data-center-energy-consumption/"
+  },
+  {
+   "name": "Armada",
+   "kind": "company",
+   "subsegments": [
+    "n4.stack",
+    "n0.build",
+    "n0.modular"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Modular AI data centres plus Bridge, a white-label GPU-as-a-service and multi-tenant cloud management stack",
+   "tags": [
+    "sovereign",
+    "enterprise"
+   ],
+   "url": "https://www.armada.ai",
+   "source": "https://pulse2.com/armada-230-million-series-b-raised-to-scale-modular-ai-infrastructure-and-u-s-ai-manufacturing/amp/",
+   "note": "Acquired India/US GPU cloud-management startup aarna.ml (2025), relaunched as Armada Bridge; $230M Series B (May 2026)"
+  },
+  {
+   "name": "AWS Activate",
+   "aka": [
+    "AWS Activate (open)"
+   ],
+   "kind": "company",
+   "subsegments": [
+    "n4.access",
+    "n11.startup"
    ],
    "hq": "US",
    "region": "North America",
    "status": "public",
    "parent": "Amazon",
+   "access": "Founders tier self-serve; Portfolio via Activate Provider Org ID",
    "one_liner": "AWS startup programme granting cloud credits",
    "url": "https://aws.amazon.com/activate/",
    "source": "https://aws.amazon.com/startups/credits"
   },
   {
    "name": "Baidu AI Cloud",
+   "aka": [
+    "Baidu AI Cloud Qianfan"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.hyper"
+    "n4.hyper",
+    "n7.platform",
+    "n8.platform"
    ],
    "hq": "CN",
    "region": "China",
@@ -219,6 +260,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$1.5B round at $13B valuation, Jun 2026",
+   "round_source": "https://www.baseten.co",
    "one_liner": "Inference platform with dedicated and autoscaling GPU deployments",
    "tags": [
     "performance",
@@ -246,6 +290,21 @@
    "source": "https://www.beam.cloud"
   },
   {
+   "name": "Bitdeer AI",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Bitdeer Technologies",
+   "one_liner": "AI cloud arm of Bitdeer, running GB200/GB300 clusters in Malaysia and beyond",
+   "url": "https://www.bitdeer.ai",
+   "source": "https://bitdeer.gcs-web.com/news-releases/news-release-details/bitdeer-ai-advances-ai-cloud-build-out-malaysia-and-targets",
+   "note": "Targets up to 350MW AI cloud capacity by Q1 2028"
+  },
+  {
    "name": "Bleu",
    "kind": "company",
    "subsegments": [
@@ -263,20 +322,10 @@
    "source": "https://www.bleucloud.fr"
   },
   {
-   "name": "Brookfield",
-   "kind": "company",
-   "subsegments": [
-    "n4.finance"
-   ],
-   "hq": "CA",
-   "region": "North America",
-   "status": "public",
-   "one_liner": "Infrastructure capital for AI factories and compute",
-   "url": "https://www.brookfield.com",
-   "source": "https://www.brookfield.com"
-  },
-  {
    "name": "Canada AI Compute Access Fund",
+   "aka": [
+    "Canada AI Compute Access Fund (open)"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.access"
@@ -284,6 +333,7 @@
    "hq": "CA",
    "region": "North America",
    "status": "government",
+   "access": "Canadian SMEs apply for subsidised AI compute",
    "one_liner": "Subsidises Canadian SME AI compute under Sovereign AI Compute Strategy",
    "tags": [
     "sovereign"
@@ -313,11 +363,16 @@
    "kind": "company",
    "subsegments": [
     "n4.finops",
-    "n4.orch"
+    "n4.orch",
+    "n7.route",
+    "n7.obs"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$108M Series C, Apr 2025",
+   "round_source": "https://seedtable.com/companies/cast-ai/funding-rounds/series-c-2025-04",
    "one_liner": "Automated Kubernetes and GPU rightsizing/autoscaling",
    "tags": [
     "cost"
@@ -326,38 +381,61 @@
    "source": "https://cast.ai"
   },
   {
+   "name": "Cedana",
+   "kind": "company",
+   "subsegments": [
+    "n4.orch",
+    "n4.ops",
+    "n4.virt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Checkpoint/restore and live migration of GPU workloads for failover, spot use and bin-packing",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.cedana.ai",
+   "source": "https://www.ycombinator.com/companies/cedana"
+  },
+  {
    "name": "Cerebrium",
    "kind": "company",
    "subsegments": [
-    "n4.serverless"
+    "n4.serverless",
+    "n7.api"
    ],
    "hq": "ZA",
    "region": "Africa",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$8.5M seed, Jul 2025, Gradient Ventures",
+   "round_source": "https://www.cbinsights.com/company/cerebrium/financials",
    "one_liner": "Serverless GPU infrastructure for AI apps (Cape Town/NY)",
    "tags": [
     "developer"
    ],
    "url": "https://www.cerebrium.ai",
-   "source": "https://www.cerebrium.ai"
+   "source": "https://www.cerebrium.ai",
+   "note": "Founded in Cape Town; New York presence"
   },
   {
-   "name": "Cisco Secure AI Factory",
+   "name": "Civo",
    "kind": "company",
    "subsegments": [
-    "n4.onprem"
+    "n4.neo",
+    "n4.sovereign"
    ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Cisco",
-   "one_liner": "Validated on-prem AI infrastructure (AI PODs) with NVIDIA",
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "UK cloud provider with sovereign GPU and Kubernetes services",
    "tags": [
-    "security",
-    "enterprise"
+    "sovereign",
+    "developer"
    ],
-   "url": "https://www.cisco.com",
-   "source": "https://www.cisco.com"
+   "url": "https://www.civo.com",
+   "source": "https://www.cbinsights.com/company/civo"
   },
   {
    "name": "ClearML",
@@ -394,23 +472,6 @@
    "source": "https://clockwork.io"
   },
   {
-   "name": "Cloudflare Workers AI",
-   "kind": "company",
-   "subsegments": [
-    "n4.serverless"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Cloudflare",
-   "one_liner": "Serverless GPU inference across Cloudflare's edge network",
-   "tags": [
-    "developer"
-   ],
-   "url": "https://developers.cloudflare.com/workers-ai/",
-   "source": "https://developers.cloudflare.com/workers-ai/"
-  },
-  {
    "name": "CloudZero",
    "kind": "company",
    "subsegments": [
@@ -427,6 +488,34 @@
    ],
    "url": "https://www.cloudzero.com",
    "source": "https://www.cloudzero.com"
+  },
+  {
+   "name": "CME Group",
+   "kind": "company",
+   "subsegments": [
+    "n4.finance",
+    "n4.price"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Derivatives exchange developing compute futures with Silicon Data price indices",
+   "tags": [],
+   "url": "https://www.cmegroup.com",
+   "source": "https://www.silicondata.com/use-cases/h100-gpu-market-value-trends"
+  },
+  {
+   "name": "Compute Labs",
+   "kind": "company",
+   "subsegments": [
+    "n4.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Tokenises ownership of data-centre GPUs on Solana so investors earn rental yield",
+   "url": "https://www.theblock.co/post/303398/solana-based-gpu-tokenization-protocol-compute-labs-funding-token-valuation",
+   "source": "https://www.theblock.co/post/303398/solana-based-gpu-tokenization-protocol-compute-labs-funding-token-valuation"
   },
   {
    "name": "Core42 (G42)",
@@ -466,11 +555,49 @@
    "note": "Acquired Weights & Biases (2025); $9B Core Scientific deal voted down by Core Scientific shareholders Oct 2025"
   },
   {
+   "name": "Cudo Compute",
+   "kind": "company",
+   "subsegments": [
+    "n4.market"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "GPU cloud and marketplace aggregating capacity from data-centre partners",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.cudocompute.com",
+   "source": "https://www.cudocompute.com"
+  },
+  {
+   "name": "Cyfuture AI",
+   "kind": "company",
+   "subsegments": [
+    "n4.sovereign",
+    "n4.neo"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian cloud and GPU-as-a-service provider shortlisted in IndiaAI GPU tender",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://cyfuture.ai",
+   "source": "https://inc42.com/?p=513063"
+  },
+  {
    "name": "Datadog",
+   "aka": [
+    "Datadog LLM Observability"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.finops",
-    "n4.ops"
+    "n4.ops",
+    "n7.obs",
+    "n8.eval"
    ],
    "hq": "US",
    "region": "North America",
@@ -481,23 +608,6 @@
    ],
    "url": "https://www.datadoghq.com",
    "source": "https://www.datadoghq.com"
-  },
-  {
-   "name": "Dell AI Factory",
-   "kind": "company",
-   "subsegments": [
-    "n4.onprem"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Dell Technologies",
-   "one_liner": "Turnkey on-prem AI infrastructure (PowerEdge GPU servers, storage, services) with NVIDIA",
-   "tags": [
-    "enterprise"
-   ],
-   "url": "https://www.dell.com/en-us/dt/solutions/artificial-intelligence/ai-factory.htm",
-   "source": "https://www.dell.com/en-us/dt/solutions/artificial-intelligence/ai-factory.htm"
   },
   {
    "name": "Denvr Cloud",
@@ -519,7 +629,8 @@
    "name": "Deutsche Telekom / T-Systems AI cloud",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n4.telco"
    ],
    "hq": "DE",
    "region": "Europe",
@@ -537,7 +648,9 @@
    "name": "DigitalOcean (Paperspace)",
    "kind": "company",
    "subsegments": [
-    "n4.serverless"
+    "n4.serverless",
+    "n7.api",
+    "n7.route"
    ],
    "hq": "US",
    "region": "North America",
@@ -548,30 +661,19 @@
     "cost"
    ],
    "url": "https://www.digitalocean.com",
-   "source": "https://www.digitalocean.com"
-  },
-  {
-   "name": "dstack",
-   "kind": "company",
-   "subsegments": [
-    "n4.orch"
-   ],
-   "hq": "DE",
-   "region": "Europe",
-   "status": "open-source",
-   "one_liner": "Open-source GPU orchestration alternative to Kubernetes/Slurm for AI teams",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://dstack.ai",
-   "source": "https://dstack.ai"
+   "source": "https://www.digitalocean.com",
+   "note": "Acquired Katanemo Labs, Apr 2026"
   },
   {
    "name": "E2E Networks",
+   "aka": [
+    "E2E Networks (TIR)"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.sovereign",
-    "n4.neo"
+    "n4.neo",
+    "n7.api"
    ],
    "hq": "IN",
    "region": "India",
@@ -586,9 +688,13 @@
   },
   {
    "name": "Edgeless Systems",
+   "aka": [
+    "Edgeless Systems (Privatemode)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.confidential"
+    "n4.confidential",
+    "n7.private"
    ],
    "hq": "DE",
    "region": "Europe",
@@ -602,22 +708,80 @@
    "source": "https://www.edgeless.systems"
   },
   {
+   "name": "EdgeUno",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Latin American IaaS provider deploying GPU cloud capacity across five LatAm cities with AtlasCloud",
+   "url": "https://edgeuno.com",
+   "source": "https://www.edgeir.com/edgeuno-and-atlascloud-launch-gpu-push-to-accelerate-latin-americas-ai-buildout-20251128"
+  },
+  {
+   "name": "Elice Group",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo",
+    "n0.build"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Korean GPU cloud built on its own container-based modular data centres (AI PMDC)",
+   "tags": [
+    "cost",
+    "sovereign"
+   ],
+   "url": "https://elice.io",
+   "source": "https://www.mt.co.kr/en/stock/2026/10/20/2026102013564284794",
+   "note": "Listed on KOSDAQ 20 Oct 2026 at ~1 trillion won valuation"
+  },
+  {
    "name": "EuroHPC AI Factories",
+   "aka": [
+    "EuroHPC AI Factories (open)"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.sovereign",
-    "n4.access"
+    "n4.access",
+    "n6.train",
+    "n11.startup",
+    "n11.mid",
+    "n11.public"
    ],
    "hq": "LU",
    "region": "Europe",
    "status": "government",
+   "access": "Startups, SMEs and researchers apply for compute time and support",
    "one_liner": "EU-funded supercomputer-based AI Factories giving startups and researchers compute",
    "tags": [
     "sovereign",
     "cost"
    ],
    "url": "https://eurohpc-ju.europa.eu",
-   "source": "https://eurohpc-ju.europa.eu"
+   "source": "https://eurohpc-ju.europa.eu",
+   "note": "19 AI Factories + 13 Antennas; AI Gigafactories call (up to 7) launched Jul 2026"
+  },
+  {
+   "name": "Evergent",
+   "kind": "company",
+   "subsegments": [
+    "n4.stack",
+    "n8.billing"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Subscription and usage-based billing platform marketed to neoclouds and AI-infrastructure providers",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://evergent.com",
+   "source": "https://evergent.com/blogs/usage-based-billing-ai-infrastructure/"
   },
   {
    "name": "Evroc",
@@ -656,7 +820,9 @@
    "name": "Fastweb",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n6.sovereign",
+    "n4.telco"
    ],
    "hq": "IT",
    "region": "Europe",
@@ -723,7 +889,8 @@
    "kind": "company",
    "subsegments": [
     "n4.neo",
-    "n4.offtake"
+    "n4.offtake",
+    "n0.dcdev"
    ],
    "hq": "GB",
    "region": "Europe",
@@ -756,6 +923,24 @@
    "url": "https://www.fortanix.com",
    "source": "https://www.businesswire.com/news/home/20260304380475/en/Fortanix-Showcases-Confidential-AI-Innovation-at-NVIDIA-GTC-2026",
    "note": "Mar 2026: TELUS sovereign confidential AI partnership in Canada"
+  },
+  {
+   "name": "FPT AI Factory",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo",
+    "n4.sovereign"
+   ],
+   "hq": "VN",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "FPT Corporation",
+   "one_liner": "Vietnamese GPU cloud and AI factory on NVIDIA HGX serving Vietnam and Japan",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://fptcloud.com",
+   "source": "https://www.businesswire.com/news/home/20260326685242/en/FPT-AI-Factory-Accelerates-AI-Reasoning-Capabilities-across-Southeast-Asia-and-Japan-with-NVIDIA"
   },
   {
    "name": "Gcore",
@@ -792,9 +977,13 @@
   },
   {
    "name": "GMI Cloud",
+   "aka": [
+    "GMI Cloud Inference Engine"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.neo"
+    "n4.neo",
+    "n7.api"
    ],
    "hq": "US",
    "region": "North America",
@@ -804,13 +993,38 @@
    "source": "https://www.gmicloud.ai"
   },
   {
+   "name": "GMO GPU Cloud",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "GMO Internet Group",
+   "one_liner": "GPU cloud from GMO Internet Group on NVIDIA HGX clusters",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://internet.gmo/en/news/article/26/",
+   "source": "https://internet.gmo/en/news/article/26/"
+  },
+  {
    "name": "Google Cloud",
+   "aka": [
+    "Google Vertex AI",
+    "Google Vertex AI Model Garden",
+    "Google Gemini context caching"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.hyper",
     "n4.offtake",
     "n4.confidential",
-    "n7.private"
+    "n7.private",
+    "n7.platform",
+    "n6.hub",
+    "n7.compress"
    ],
    "hq": "US",
    "region": "North America",
@@ -844,14 +1058,19 @@
   },
   {
    "name": "Google for Startups Cloud Program",
+   "aka": [
+    "Google for Startups Cloud Program (AI tier)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.access"
+    "n4.access",
+    "n11.startup"
    ],
    "hq": "US",
    "region": "North America",
    "status": "public",
    "parent": "Google",
+   "access": "Apply online; pre-seed to Series A with known investor",
    "one_liner": "Google Cloud credits incl. AI-startup tier",
    "url": "https://cloud.google.com/startup",
    "source": "https://cloud.google.com/startup"
@@ -889,63 +1108,96 @@
    "source": "https://www.harness.io"
   },
   {
-   "name": "HPE Machine Learning Development (Determined)",
+   "name": "Highreso",
    "kind": "company",
    "subsegments": [
-    "n4.orch"
+    "n4.neo"
    ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Hewlett Packard Enterprise",
-   "one_liner": "Open-source Determined training platform for GPU scheduling",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://github.com/determined-ai/determined",
-   "source": "https://github.com/determined-ai/determined"
-  },
-  {
-   "name": "HPE Private Cloud AI",
-   "kind": "company",
-   "subsegments": [
-    "n4.onprem",
-    "n7.private"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Hewlett Packard Enterprise",
-   "one_liner": "Pre-integrated private AI cloud co-engineered with NVIDIA",
-   "tags": [
-    "enterprise",
-    "sovereign"
-   ],
-   "url": "https://www.hpe.com/us/en/private-cloud-ai.html",
-   "source": "https://www.hpe.com/us/en/private-cloud-ai.html"
-  },
-  {
-   "name": "Huawei Cloud",
-   "kind": "company",
-   "subsegments": [
-    "n4.hyper"
-   ],
-   "hq": "CN",
-   "region": "China",
+   "hq": "JP",
+   "region": "Asia-Pacific",
    "status": "private",
-   "parent": "Huawei",
-   "one_liner": "Cloud built on Ascend CloudMatrix clusters",
+   "one_liner": "Japanese GPU cloud provider supported by METI compute subsidies",
    "tags": [
     "sovereign"
    ],
-   "url": "https://www.huaweicloud.com/intl/en-us/",
-   "source": "https://www.huaweicloud.com/intl/en-us/"
+   "url": "https://www.spheron.network/blog/gpu-cloud-providers-japan-2026/",
+   "source": "https://www.spheron.network/blog/gpu-cloud-providers-japan-2026/"
+  },
+  {
+   "name": "Hivenet",
+   "kind": "company",
+   "subsegments": [
+    "n4.market"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Distributed cloud using idle consumer and edge hardware for GPU compute",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.hivenet.com",
+   "source": "https://www.hivenet.com/post/future-of-cloud-sovereignty-neocloud-europe"
+  },
+  {
+   "name": "hosted·ai",
+   "kind": "company",
+   "subsegments": [
+    "n4.stack",
+    "n4.market",
+    "n4.offtake",
+    "n4.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "GPUaaS software that turns GPU fleets into cloud revenue, plus capacity-trading and offtake marketplaces",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://hosted.ai",
+   "source": "https://hosted.ai",
+   "note": "Products: GPUaaS software, GPU Mesh (capacity trading), Packet.ai, GPUaaS.com (offtake), datacenter build program"
+  },
+  {
+   "name": "Hot Aisle",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AMD Instinct-only neocloud renting MI300X/MI355X",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://hotaisle.xyz",
+   "source": "https://hotaisle.xyz"
   },
   {
    "name": "Hugging Face",
+   "aka": [
+    "Hugging Face SmolLM",
+    "Hugging Face TRL / PEFT",
+    "Hugging Face FineWeb / datasets",
+    "Hugging Face Inference Providers",
+    "Hugging Face Spaces",
+    "Hugging Face TGI"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.serverless"
+    "n4.serverless",
+    "n6.small",
+    "n6.open",
+    "n6.train",
+    "n5.web",
+    "n5.curation",
+    "n7.route",
+    "n9.store",
+    "n7.engine",
+    "n6.hub"
    ],
    "hq": "US",
    "region": "North America",
@@ -956,7 +1208,26 @@
     "developer"
    ],
    "url": "https://huggingface.co",
-   "source": "https://huggingface.co"
+   "source": "https://semafor.com/article/09/03/2026/nvidia-to-buy-hugging-face-for-nearly-13-billion",
+   "note": "NVIDIA agreed to acquire Hugging Face for about $12.9B (Sep 2026); pending close"
+  },
+  {
+   "name": "Hydra Host",
+   "kind": "company",
+   "subsegments": [
+    "n4.stack",
+    "n4.market"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Brokkr software lets data-centre owners run GPU bare-metal as a service; marketplace sells that capacity",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://hydrahost.com",
+   "source": "https://hydrahost.com/blog/news/hydra-host-raises-100m-series-a/",
+   "note": "$100M Series A with NVIDIA and Kindred Ventures (June 2026)"
   },
   {
    "name": "Hyperbolic",
@@ -968,6 +1239,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$30M Series A-1, led by Walden Catalyst",
+   "round_source": "https://letsdatascience.com/news/hyperbolic-raises-30-million-series-a-1-led-by-walden-cataly-d6c3f91f",
    "one_liner": "GPU marketplace and open-model inference",
    "tags": [
     "cost",
@@ -1009,9 +1283,13 @@
   },
   {
    "name": "IBM Cloud",
+   "aka": [
+    "IBM watsonx.ai"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.hyper"
+    "n4.hyper",
+    "n7.platform"
    ],
    "hq": "US",
    "region": "North America",
@@ -1044,28 +1322,37 @@
   },
   {
    "name": "IndiaAI Mission (compute portal)",
+   "aka": [
+    "IndiaAI Compute Portal"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.sovereign",
     "n4.market",
-    "n4.access"
+    "n4.access",
+    "n11.startup",
+    "n11.public",
+    "n11.mid"
    ],
    "hq": "IN",
    "region": "India",
    "status": "government",
+   "access": "Indian startups, researchers, academia apply via portal at subsidised rates",
    "one_liner": "Government programme subsidising GPU access via empanelled Indian cloud providers",
    "tags": [
     "sovereign",
     "cost"
    ],
    "url": "https://indiaai.gov.in",
-   "source": "https://indiaai.gov.in"
+   "source": "https://indiaai.gov.in",
+   "note": "38,000+ GPUs onboarded (MeitY statement, Mar 2026)"
   },
   {
    "name": "Indosat / Lintasarta",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n4.telco"
    ],
    "hq": "ID",
    "region": "Asia-Pacific",
@@ -1079,20 +1366,18 @@
    "source": "https://www.lintasarta.net"
   },
   {
-   "name": "Inspur",
+   "name": "Intercontinental Exchange (ICE)",
    "kind": "company",
    "subsegments": [
-    "n4.onprem"
+    "n4.finance"
    ],
-   "hq": "CN",
-   "region": "China",
+   "hq": "US",
+   "region": "North America",
    "status": "public",
-   "one_liner": "Chinese AI server and turnkey cluster supplier",
-   "tags": [
-    "sovereign"
-   ],
-   "url": "https://en.inspur.com",
-   "source": "https://en.inspur.com"
+   "one_liner": "Exchange operator launching GPU compute futures contracts with Ornn",
+   "url": "https://www.ice.com",
+   "source": "https://www.mondovisione.com/media-and-resources/news/ice-and-ornn-to-launch-gpu-compute-futures-contracts-offers-new-price-discover-2026519/",
+   "note": "Announced May 2026"
   },
   {
    "name": "io.net",
@@ -1111,6 +1396,22 @@
    "source": "https://io.net"
   },
   {
+   "name": "IONOS",
+   "kind": "company",
+   "subsegments": [
+    "n4.sovereign"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "German cloud provider offering sovereign AI model hub and GPU compute",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.ionos.com",
+   "source": "https://www.ionos.com"
+  },
+  {
    "name": "Isambard-AI",
    "kind": "company",
    "subsegments": [
@@ -1127,10 +1428,47 @@
    "source": "https://www.isambard.ac.uk"
   },
   {
-   "name": "Jio / Reliance Intelligence",
+   "name": "Ishan Technologies",
    "kind": "company",
    "subsegments": [
     "n4.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian ICT provider empanelled under IndiaAI to offer 1,000+ GPUs",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://cxotoday.com/media-coverage/ishan-technologies-empanelled-to-build-indias-ai-infrastructure-offering-1000-gpus-nationwide/",
+   "source": "https://cxotoday.com/media-coverage/ishan-technologies-empanelled-to-build-indias-ai-infrastructure-offering-1000-gpus-nationwide/"
+  },
+  {
+   "name": "Jarvislabs.ai",
+   "kind": "company",
+   "subsegments": [
+    "n4.serverless"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian developer GPU cloud with per-minute instances and notebooks",
+   "tags": [
+    "developer",
+    "cost"
+   ],
+   "url": "https://jarvislabs.ai",
+   "source": "https://indiaai.gov.in/startup/jarvislabs-ai"
+  },
+  {
+   "name": "Jio / Reliance Intelligence",
+   "aka": [
+    "Reliance Jio (Jamnagar AI DC)"
+   ],
+   "kind": "company",
+   "subsegments": [
+    "n4.sovereign",
+    "n0.dcdev"
    ],
    "hq": "IN",
    "region": "India",
@@ -1144,10 +1482,28 @@
    "source": "https://www.ril.com"
   },
   {
+   "name": "Juice Labs",
+   "kind": "company",
+   "subsegments": [
+    "n4.orch",
+    "n4.virt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "GPU-over-IP software that pools and shares GPUs across machines over the network",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://github.com/Juice-Labs/Juice-Labs",
+   "source": "https://github.com/Juice-Labs/Juice-Labs"
+  },
+  {
    "name": "KDDI",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n4.telco"
    ],
    "hq": "JP",
    "region": "Asia-Pacific",
@@ -1163,7 +1519,8 @@
    "name": "KT Cloud",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n4.telco"
    ],
    "hq": "KR",
    "region": "Asia-Pacific",
@@ -1194,21 +1551,22 @@
    "source": "https://www.kubeflow.org"
   },
   {
-   "name": "Kubernetes (Kueue, Volcano)",
+   "name": "Lablup (Backend.AI)",
    "kind": "company",
    "subsegments": [
+    "n4.stack",
     "n4.orch"
    ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "CNCF / Linux Foundation",
-   "one_liner": "CNCF container orchestration with batch/AI schedulers Kueue and Volcano",
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Backend.AI platform for GPU cluster multi-tenancy, fractional GPU sharing and AI workload scheduling",
    "tags": [
+    "performance",
     "open-source"
    ],
-   "url": "https://kubernetes.io",
-   "source": "https://kubernetes.io"
+   "url": "https://www.backend.ai",
+   "source": "https://www.backend.ai"
   },
   {
    "name": "Lambda",
@@ -1230,20 +1588,37 @@
    "note": "Preparing IPO; pre-IPO funding talks reported 2026"
   },
   {
-   "name": "Lenovo Hybrid AI",
+   "name": "Latitude.sh",
    "kind": "company",
    "subsegments": [
-    "n4.onprem"
+    "n4.neo"
    ],
-   "hq": "CN",
-   "region": "China",
-   "status": "public",
-   "one_liner": "On-prem AI factory solutions on ThinkSystem servers (HQ Hong Kong/Beijing)",
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Bare-metal and GPU cloud with locations across the Americas, Europe and Asia",
    "tags": [
-    "enterprise"
+    "developer"
    ],
-   "url": "https://www.lenovo.com/us/en/servers-storage/solutions/ai/",
-   "source": "https://www.lenovo.com/us/en/servers-storage/solutions/ai/"
+   "url": "https://www.latitude.sh",
+   "source": "https://www.latitude.sh"
+  },
+  {
+   "name": "Leafcloud",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo",
+    "n0.opt"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Distributed cloud placing servers in buildings so waste heat warms water",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.leaf.cloud",
+   "source": "https://getdeploying.com/leaf-cloud-vs-lyceum"
   },
   {
    "name": "Lightning AI",
@@ -1264,6 +1639,62 @@
    "source": "https://lightning.ai"
   },
   {
+   "name": "Liqid",
+   "kind": "company",
+   "subsegments": [
+    "n4.orch",
+    "n3.opt",
+    "n3.memory",
+    "n4.virt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Composable infrastructure software and fabrics that pool GPUs and memory and assign them to servers on demand",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://www.liqid.com",
+   "source": "https://www.liqid.com"
+  },
+  {
+   "name": "Locuz Enterprise Solutions",
+   "kind": "company",
+   "subsegments": [
+    "n4.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian IT infrastructure firm bidding GPU capacity into IndiaAI Mission",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.locuz.com",
+   "source": "https://inc42.com/?p=513063"
+  },
+  {
+   "name": "Lyceum",
+   "kind": "company",
+   "subsegments": [
+    "n4.serverless",
+    "n4.sovereign",
+    "n7.api"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Berlin sovereign GPU cloud that auto-schedules jobs onto European capacity",
+   "tags": [
+    "sovereign",
+    "developer"
+   ],
+   "url": "https://lyceum.technology",
+   "source": "https://tech.eu/2025/06/24/sovereign-by-design-lyceum-emerges-with-eur103m-to-redefine-cloud-infrastructure-in-europe/",
+   "note": "EUR10.3M pre-seed (Jun 2025)"
+  },
+  {
    "name": "Magnetar",
    "kind": "company",
    "subsegments": [
@@ -1278,6 +1709,39 @@
    ],
    "url": "https://www.magnetar.com",
    "source": "https://www.magnetar.com"
+  },
+  {
+   "name": "Massed Compute",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "US GPU cloud and bare-metal provider, NVIDIA Cloud Partner",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://massedcompute.com",
+   "source": "https://massedcompute.com"
+  },
+  {
+   "name": "MemVerge",
+   "kind": "company",
+   "subsegments": [
+    "n4.orch",
+    "n4.virt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Memory Machine software: transparent GPU checkpointing, spot-instance recovery and memory tiering for AI",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://memverge.com",
+   "source": "https://memverge.com"
   },
   {
    "name": "Meta Platforms",
@@ -1295,11 +1759,18 @@
   },
   {
    "name": "Microsoft Azure",
+   "aka": [
+    "Microsoft Foundry (Azure AI Foundry)",
+    "Microsoft Azure AI Foundry"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.hyper",
     "n4.offtake",
-    "n4.confidential"
+    "n4.confidential",
+    "n7.platform",
+    "n7.route",
+    "n6.hub"
    ],
    "hq": "US",
    "region": "North America",
@@ -1315,60 +1786,102 @@
   },
   {
    "name": "Microsoft for Startups",
+   "aka": [
+    "Microsoft for Startups (open)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.access"
+    "n4.access",
+    "n11.startup"
    ],
    "hq": "US",
    "region": "North America",
    "status": "public",
    "parent": "Microsoft",
+   "access": "$5k self-serve Azure credits; ~$100k via investor-network referral",
    "one_liner": "Azure credits and model access for startups",
    "url": "https://www.microsoft.com/en-us/startups",
-   "source": "https://www.microsoft.com/en-us/startups"
+   "source": "https://www.microsoft.com/en-us/startups",
+   "note": "July 2025: open tier cut to $5k; larger credits need an investor-network referral code"
   },
   {
-   "name": "Mistral Compute",
+   "name": "Mithril",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
-   ],
-   "hq": "FR",
-   "region": "Europe",
-   "status": "private",
-   "parent": "Mistral AI",
-   "one_liner": "Mistral AI's European AI cloud/infrastructure offering built with NVIDIA",
-   "tags": [
-    "sovereign"
-   ],
-   "url": "https://mistral.ai",
-   "source": "https://mistral.ai"
-  },
-  {
-   "name": "Modal",
-   "kind": "company",
-   "subsegments": [
-    "n4.serverless"
+    "n4.market",
+    "n4.neo"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "one_liner": "GPU cloud (formerly Foundry) selling reserved and spot compute aggregated across providers",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://mithril.ai",
+   "source": "https://mithril.ai",
+   "note": "Rebranded from Foundry in 2025"
+  },
+  {
+   "name": "Modal",
+   "aka": [
+    "Modal (Sandboxes)"
+   ],
+   "kind": "company",
+   "subsegments": [
+    "n4.serverless",
+    "n7.api",
+    "n8.sandbox"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "stage": "Series C+",
+   "last_round": "$750M Series D at $15.75B valuation (2026)",
+   "round_source": "https://runtimewire.com/article/modal-750m-series-d-1b-run-rate",
    "one_liner": "Serverless Python platform with per-second GPUs for inference, training and batch",
    "tags": [
-    "developer"
+    "developer",
+    "performance"
    ],
    "url": "https://modal.com",
-   "source": "https://modal.com"
+   "source": "https://modal.com",
+   "note": "Reported closing ~$750M round at $15.75B valuation, Sep 2026"
+  },
+  {
+   "name": "Monetize360",
+   "kind": "company",
+   "subsegments": [
+    "n4.stack",
+    "n8.billing"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Revenue-operations and billing platform integrated with Rafay for GPU cloud providers",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.monetize360.com",
+   "source": "https://rafay.co/ai-and-cloud-native-blog/rafay-and-monetize360-bring-revenue-operations-to-gpu-clouds"
   },
   {
    "name": "NAIRR",
+   "aka": [
+    "NAIRR (National AI Research Resource)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.access"
+    "n4.access",
+    "n6.train",
+    "n6.hub",
+    "n11.dev",
+    "n11.public"
    ],
    "hq": "US",
    "region": "North America",
    "status": "government",
+   "access": "US researchers and educators apply for compute, data and model allocations",
    "one_liner": "US National AI Research Resource giving researchers compute, models and data",
    "tags": [
     "sovereign"
@@ -1378,11 +1891,35 @@
    "note": "Sep 2026: NSF $35M NAIRR Operations Center led by SDSC/TACC; moves from pilot to permanent"
   },
   {
+   "name": "Nava",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "GPU-as-a-service neocloud (formerly Kluisz) rolling out clusters in India, Singapore and SE Asia",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://letsdatascience.com/news/kluisz-rebrands-as-nava-raises-22m-for-ai-neocloud-abbb1872",
+   "source": "https://letsdatascience.com/news/kluisz-rebrands-as-nava-raises-22m-for-ai-neocloud-abbb1872",
+   "note": "$21.7M Series A led by Greenoaks (Apr 2026)"
+  },
+  {
    "name": "Naver Cloud",
+   "aka": [
+    "Naver HyperCLOVA X",
+    "Naver Cloud CLOVA Studio"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.sovereign",
-    "n4.hyper"
+    "n4.hyper",
+    "n6.sovereign",
+    "n6.enterprise",
+    "n7.platform"
    ],
    "hq": "KR",
    "region": "Asia-Pacific",
@@ -1397,11 +1934,15 @@
   },
   {
    "name": "Nebius",
+   "aka": [
+    "Nebius Token Factory"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.neo",
     "n4.sovereign",
-    "n4.offtake"
+    "n4.offtake",
+    "n7.api"
    ],
    "hq": "NL",
    "region": "Europe",
@@ -1413,6 +1954,57 @@
    "url": "https://nebius.com",
    "source": "https://www.datacenterdynamics.com/en/news/nebius-signs-3bn-deal-with-meta-says-current-available-capacity-is-sold-out-as-it-targets-25gw-by-end-of-2026/",
    "note": "Multi-billion capacity deals with Microsoft (Sep 2025) and Meta (Nov 2025)"
+  },
+  {
+   "name": "Nebul",
+   "kind": "company",
+   "subsegments": [
+    "n4.sovereign"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Dutch sovereign private AI cloud on NVIDIA infrastructure",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://nebul.com",
+   "source": "https://nebul.com"
+  },
+  {
+   "name": "NeevCloud",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Bengaluru-based AI cloud offering GPU-as-a-service, orchestration and local inference",
+   "tags": [
+    "sovereign",
+    "cost"
+   ],
+   "url": "https://www.neevcloud.com",
+   "source": "https://inc42.com/features/indias-neocloud-players-ride-the-sovereign-ai-wave/"
+  },
+  {
+   "name": "Netris",
+   "kind": "company",
+   "subsegments": [
+    "n4.stack",
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Network automation and VPC-style multi-tenancy for GPU cloud operators across Ethernet, InfiniBand and BlueField DPUs",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://netris.io",
+   "source": "https://thenextweb.com/news/netris-15m-series-a-a16z-neocloud-gpu-network-automation",
+   "note": "$15M Series A led by Andreessen Horowitz (June 2026)"
   },
   {
    "name": "Neysa",
@@ -1484,7 +2076,8 @@
    "name": "Nutanix Enterprise AI",
    "kind": "company",
    "subsegments": [
-    "n4.onprem"
+    "n4.onprem",
+    "n7.private"
    ],
    "hq": "US",
    "region": "North America",
@@ -1516,10 +2109,15 @@
   },
   {
    "name": "NVIDIA DGX Cloud Lepton",
+   "aka": [
+    "Lepton AI (NVIDIA DGX Cloud Lepton)"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.market",
-    "n4.serverless"
+    "n4.serverless",
+    "n7.opt",
+    "n7.route"
    ],
    "hq": "US",
    "region": "North America",
@@ -1535,14 +2133,19 @@
   },
   {
    "name": "NVIDIA Inception",
+   "aka": [
+    "NVIDIA Inception (open)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.access"
+    "n4.access",
+    "n11.startup"
    ],
    "hq": "US",
    "region": "North America",
    "status": "public",
    "parent": "NVIDIA",
+   "access": "Free to join; incorporated, under 10 years old, working website",
    "one_liner": "NVIDIA startup programme with cloud credits and hardware discounts",
    "url": "https://www.nvidia.com/en-us/startups/",
    "source": "https://www.nvidia.com/en-us/startups/"
@@ -1562,6 +2165,24 @@
    ],
    "url": "https://nxtgen.com",
    "source": "https://nxtgen.com"
+  },
+  {
+   "name": "Ooredoo",
+   "kind": "company",
+   "subsegments": [
+    "n4.sovereign",
+    "n0.dcdev",
+    "n4.telco"
+   ],
+   "hq": "QA",
+   "region": "Middle East",
+   "status": "public",
+   "one_liner": "Qatari telco deploying NVIDIA GPUs in its MENA data centres to sell sovereign AI cloud",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.ooredoo.com",
+   "source": "https://www.telecoms.com/ai/ooredoo-to-deploy-thousands-of-nvidia-gpus-in-ai-data-centres"
   },
   {
    "name": "OPAQUE Systems",
@@ -1584,11 +2205,32 @@
    "note": "Oct 2026: Anthropic licence and acqui-hire"
   },
   {
+   "name": "OpenNebula",
+   "kind": "company",
+   "subsegments": [
+    "n4.stack"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "open-source",
+   "one_liner": "Open-source cloud management platform positioned for sovereign AI factories and GPU multi-tenancy",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://opennebula.io",
+   "source": "https://opennebula.io"
+  },
+  {
    "name": "Oracle Cloud Infrastructure",
+   "aka": [
+    "Oracle OCI Generative AI"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.hyper",
-    "n4.offtake"
+    "n4.offtake",
+    "n7.platform"
    ],
    "hq": "US",
    "region": "North America",
@@ -1603,11 +2245,50 @@
    "note": "OpenAI ~$300B / 4.5 GW (Sep 2025, reported); Meta ~$20B reported"
   },
   {
+   "name": "Ori",
+   "kind": "company",
+   "subsegments": [
+    "n4.stack",
+    "n4.neo"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "GPU cloud operator that also licenses its AI-infrastructure platform (VMs, Kubernetes, inference) to other operators",
+   "tags": [
+    "enterprise",
+    "sovereign"
+   ],
+   "url": "https://www.ori.co",
+   "source": "https://ori.co/AI-tooling",
+   "note": "Runs its own GPU cloud and sells the same control plane for private/operator clouds"
+  },
+  {
+   "name": "Ornn",
+   "kind": "company",
+   "subsegments": [
+    "n4.finance",
+    "n4.market",
+    "n4.price"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Compute derivatives exchange: GPU-hour price indices, swaps and futures for hedging compute costs",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://pulse2.com/intercontinental-exchange-and-ornn-launching-suite-of-gpu-compute-futures-contracts/",
+   "source": "https://pulse2.com/intercontinental-exchange-and-ornn-launching-suite-of-gpu-compute-futures-contracts/",
+   "note": "Partnered with ICE to launch GPU compute futures (May 2026)"
+  },
+  {
    "name": "OVHcloud",
    "kind": "company",
    "subsegments": [
     "n4.sovereign",
-    "n4.neo"
+    "n4.neo",
+    "n7.api"
    ],
    "hq": "FR",
    "region": "Europe",
@@ -1618,6 +2299,25 @@
    ],
    "url": "https://www.ovhcloud.com",
    "source": "https://www.ovhcloud.com"
+  },
+  {
+   "name": "Packet.ai",
+   "kind": "company",
+   "subsegments": [
+    "n4.market",
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "hosted·ai",
+   "one_liner": "Consumption network selling tokens and short-term GPU rentals to retail and enterprise buyers",
+   "tags": [
+    "cost",
+    "developer"
+   ],
+   "url": "https://packet.ai",
+   "source": "https://hosted.ai"
   },
   {
    "name": "Phala Network",
@@ -1638,6 +2338,24 @@
    "source": "https://phala.network"
   },
   {
+   "name": "Polarise",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo",
+    "n4.sovereign"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "German AI cloud building European AI data hubs for sovereign GPU capacity",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.macquarie.com/de/en/about/news/2026/polarise-and-macquarie-announce-up-to-117-million-euros-financing-deal-for-european-ai-ambitions.html",
+   "source": "https://www.macquarie.com/de/en/about/news/2026/polarise-and-macquarie-announce-up-to-117-million-euros-financing-deal-for-european-ai-ambitions.html",
+   "note": "Up to EUR117M Macquarie financing; further debt raise (Aug 2026)"
+  },
+  {
    "name": "Prime Intellect",
    "kind": "company",
    "subsegments": [
@@ -1649,6 +2367,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "Reported $130M Series A at $1B valuation (2026)",
+   "round_source": "https://www.primeintellect.ai",
    "one_liner": "GPU aggregator plus decentralised training protocol",
    "tags": [
     "open-source",
@@ -1658,22 +2379,6 @@
    "url": "https://www.primeintellect.ai",
    "source": "https://www.primeintellect.ai",
    "note": "Launched Environments Hub (Aug 2025); reported $130M Series A at $1B valuation (2026)"
-  },
-  {
-   "name": "Prometheus",
-   "kind": "company",
-   "subsegments": [
-    "n4.ops"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "one_liner": "CNCF metrics system, standard for scraping GPU exporter data",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://prometheus.io",
-   "source": "https://prometheus.io"
   },
   {
    "name": "ProsperOps",
@@ -1709,40 +2414,39 @@
    "source": "https://www.proteantecs.com"
   },
   {
-   "name": "Rafay",
+   "name": "QumulusAI",
    "kind": "company",
    "subsegments": [
-    "n4.orch",
-    "n3.mgmt"
+    "n4.neo"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "one_liner": "US GPU cloud financed partly through blockchain-based GPU financing",
+   "url": "https://www.qumulusai.com",
+   "source": "https://www.datacenterdynamics.com/en/news/qumulusai-raises-500m-to-expand-ai-compute-infrastructure/",
+   "note": "$500M raise"
+  },
+  {
+   "name": "Rafay",
+   "kind": "company",
+   "subsegments": [
+    "n4.orch",
+    "n3.mgmt",
+    "n4.stack"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "stage": "Series B",
+   "last_round": "Series B extension, Dec 2023 (Sixty Degree Capital)",
+   "round_source": "https://www.cbinsights.com/company/rafay-systems/financials",
    "one_liner": "GPU PaaS/Kubernetes management for neoclouds and enterprise GPU clouds",
    "tags": [
     "enterprise"
    ],
    "url": "https://rafay.co",
    "source": "https://rafay.co"
-  },
-  {
-   "name": "Red Hat OpenShift AI",
-   "kind": "company",
-   "subsegments": [
-    "n4.onprem",
-    "n4.orch"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "IBM",
-   "one_liner": "Kubernetes-based hybrid platform for training and serving models",
-   "tags": [
-    "open-source",
-    "enterprise"
-   ],
-   "url": "https://www.redhat.com/en/products/ai/openshift-ai",
-   "source": "https://www.redhat.com/en/products/ai/openshift-ai"
   },
   {
    "name": "Render Network",
@@ -1808,6 +2512,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$100M Series A at ~$1B valuation, Jun 2026, led by Summit Partners",
+   "round_source": "https://dealroom.co/news/135874-runpod-raises-100m-series-a-to-scale-developer-first-gpu-cloud/",
    "one_liner": "On-demand GPU pods, serverless endpoints and community GPU cloud",
    "tags": [
     "developer",
@@ -1838,7 +2545,8 @@
    "kind": "company",
    "subsegments": [
     "n4.neo",
-    "n4.sovereign"
+    "n4.sovereign",
+    "n7.api"
    ],
    "hq": "JP",
    "region": "Asia-Pacific",
@@ -1872,7 +2580,8 @@
    "subsegments": [
     "n4.sovereign",
     "n4.neo",
-    "n4.serverless"
+    "n4.serverless",
+    "n7.api"
    ],
    "hq": "FR",
    "region": "Europe",
@@ -1880,7 +2589,8 @@
    "parent": "Iliad Group",
    "one_liner": "French cloud with GPU clusters and serverless generative APIs",
    "tags": [
-    "sovereign"
+    "sovereign",
+    "cost"
    ],
    "url": "https://www.scaleway.com",
    "source": "https://www.scaleway.com"
@@ -1932,6 +2642,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$40M Series A",
+   "round_source": "https://sfcompute.com/news/sf-compute-series-a",
    "one_liner": "Spot and forward market for buying and reselling GPU cluster time",
    "tags": [
     "cost"
@@ -1948,6 +2661,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "Seed, Aug 2023 (Gravity Fund, Unpopular Ventures)",
+   "round_source": "https://www.cbinsights.com/company/shadeform/financials",
    "one_liner": "Unified API/marketplace for GPU capacity across many clouds",
    "tags": [
     "cost",
@@ -1955,6 +2671,41 @@
    ],
    "url": "https://www.shadeform.ai",
    "source": "https://www.shadeform.ai"
+  },
+  {
+   "name": "Sharon AI",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo",
+    "n4.sovereign"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Australian neocloud running NVIDIA clusters in NEXTDC facilities",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://sharonai.com",
+   "source": "https://www.techpartner.news/news/australian-neocloud-sharon-ai-raises-us16-billion-626927",
+   "note": "Nasdaq: SHAZ; up to $500M GPU-backed facility from USD.AI"
+  },
+  {
+   "name": "Siam.AI Cloud",
+   "kind": "company",
+   "subsegments": [
+    "n4.sovereign"
+   ],
+   "hq": "TH",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Thai NVIDIA cloud partner offering in-country GPU cloud",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://bangkokpost.com/business/general/2960476/siam-ai-to-invest-b70bn-to-expand-thailand-ai-infrastructure",
+   "source": "https://bangkokpost.com/business/general/2960476/siam-ai-to-invest-b70bn-to-expand-thailand-ai-infrastructure",
+   "note": "Plans B70bn infrastructure expansion"
   },
   {
    "name": "Sify Technologies",
@@ -1978,7 +2729,9 @@
    "subsegments": [
     "n4.market",
     "n3.refurb",
-    "n7.bench"
+    "n7.bench",
+    "n4.finance",
+    "n4.price"
    ],
    "hq": "US",
    "region": "North America",
@@ -1994,7 +2747,8 @@
    "name": "Singtel RE:AI",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n4.telco"
    ],
    "hq": "SG",
    "region": "Asia-Pacific",
@@ -2009,9 +2763,14 @@
   },
   {
    "name": "SK Telecom",
+   "aka": [
+    "SK Telecom (A.X)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n6.sovereign",
+    "n4.telco"
    ],
    "hq": "KR",
    "region": "Asia-Pacific",
@@ -2022,24 +2781,6 @@
    ],
    "url": "https://www.sktelecom.com",
    "source": "https://www.sktelecom.com"
-  },
-  {
-   "name": "SkyPilot",
-   "kind": "company",
-   "subsegments": [
-    "n4.orch",
-    "n4.finops"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "one_liner": "Runs AI jobs across clouds/Kubernetes, picking cheapest available GPUs",
-   "tags": [
-    "open-source",
-    "cost"
-   ],
-   "url": "https://skypilot.co",
-   "source": "https://skypilot.co"
   },
   {
    "name": "Slurm (SchedMD)",
@@ -2064,7 +2805,8 @@
    "name": "SoftBank Corp. AI infrastructure",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n4.telco"
    ],
    "hq": "JP",
    "region": "Asia-Pacific",
@@ -2078,10 +2820,62 @@
    "source": "https://www.softbank.jp/en/"
   },
   {
-   "name": "Swisscom",
+   "name": "Solvimon",
+   "kind": "company",
+   "subsegments": [
+    "n4.stack",
+    "n8.billing"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Usage-based billing and monetisation platform with a neocloud GPU billing offering",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.solvimon.com",
+   "source": "https://www.solvimon.com/blog/rafay-and-solvimon-are-partnering-for-neocloud-billing",
+   "note": "Partnered with Rafay for neocloud billing"
+  },
+  {
+   "name": "STACKIT",
    "kind": "company",
    "subsegments": [
     "n4.sovereign"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "parent": "Schwarz Group",
+   "one_liner": "Schwarz Group sovereign cloud with AI/GPU services for European enterprises",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.stackit.de",
+   "source": "https://www.stackit.de"
+  },
+  {
+   "name": "Stratos Lab",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo"
+   ],
+   "hq": "ZA",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "South African AI cloud launched at Digital Parks Africa data centre",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://w.media/stratos-lab-launches-ai-cloud-at-digital-parks-africa-data-center-in-south-africa/",
+   "source": "https://w.media/stratos-lab-launches-ai-cloud-at-digital-parks-africa-data-center-in-south-africa/"
+  },
+  {
+   "name": "Swisscom",
+   "kind": "company",
+   "subsegments": [
+    "n4.sovereign",
+    "n4.telco"
    ],
    "hq": "CH",
    "region": "Europe",
@@ -2097,7 +2891,8 @@
    "name": "Tata Communications",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n4.telco"
    ],
    "hq": "IN",
    "region": "India",
@@ -2114,7 +2909,8 @@
    "name": "Telenor AI Factory",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n4.telco"
    ],
    "hq": "NO",
    "region": "Europe",
@@ -2131,7 +2927,8 @@
    "name": "Telus Sovereign AI Factory",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n4.telco"
    ],
    "hq": "CA",
    "region": "North America",
@@ -2146,9 +2943,13 @@
   },
   {
    "name": "Tencent Cloud",
+   "aka": [
+    "Tencent Cloud Hunyuan / TI Platform"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.hyper"
+    "n4.hyper",
+    "n7.platform"
    ],
    "hq": "CN",
    "region": "China",
@@ -2183,6 +2984,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$350M Series B, Jun 2026 (AMD Ventures, Magnetar, Nexus Venture Partners)",
+   "round_source": "https://www.cbinsights.com/company/tensorwave/financials",
    "one_liner": "AMD Instinct-only GPU cloud",
    "tags": [
     "cost"
@@ -2191,17 +2995,44 @@
    "source": "https://tensorwave.com"
   },
   {
+   "name": "Thunder Compute",
+   "kind": "company",
+   "subsegments": [
+    "n4.orch",
+    "n4.serverless",
+    "n4.virt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Virtualises GPUs over the network so idle GPUs can be shared across machines; also runs a low-cost GPU cloud",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.thundercompute.com",
+   "source": "https://siliconangle.com/2026/08/19/thunder-compute-raises-13m-squeeze-work-idle-gpus/",
+   "note": "$13M Series A led by Matrix (Aug 2026)"
+  },
+  {
    "name": "Together AI",
+   "aka": [
+    "Together AI (fine-tuning)"
+   ],
    "kind": "company",
    "subsegments": [
     "n4.neo",
     "n4.serverless",
     "n7.api",
-    "n7.opt"
+    "n7.opt",
+    "n6.train",
+    "n6.open"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$800M Series C at $8.3B valuation, Jul 2026",
+   "round_source": "https://www.together.ai",
    "one_liner": "GPU clusters plus serverless inference and fine-tuning for open models",
    "tags": [
     "open-source",
@@ -2214,20 +3045,56 @@
    "note": "Raised $800M Series C at $8.3B valuation (Jul 2026)"
   },
   {
-   "name": "UK AI Research Resource (AIRR)",
+   "name": "Ubitus",
    "kind": "company",
    "subsegments": [
-    "n4.access"
+    "n4.neo"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Taiwan/Japan GPU cloud and cloud-streaming provider, NVIDIA cloud partner",
+   "url": "https://ubitus.net",
+   "source": "https://www.singaporetechnologyweek.com/exhibitors/ubitus"
+  },
+  {
+   "name": "UK AI Research Resource (AIRR)",
+   "aka": [
+    "UK AI Research Resource (AIRR) (open)"
+   ],
+   "kind": "company",
+   "subsegments": [
+    "n4.access",
+    "n4.sovereign"
    ],
    "hq": "GB",
    "region": "Europe",
    "status": "government",
+   "access": "UK researchers and SMEs apply; rapid-access route; compute-only awards",
    "one_liner": "UK national AI compute (Isambard-AI, Dawn) with open access calls",
    "tags": [
     "sovereign"
    ],
    "url": "https://www.gov.uk/government/publications/ai-research-resource",
-   "source": "https://www.gov.uk/government/publications/ai-research-resource/ai-open-access-call"
+   "source": "https://www.gov.uk/government/publications/ai-research-resource/ai-open-access-call",
+   "note": "Oct 2026: Dawn removed and Zenith (Cambridge) added to the rapid-access route"
+  },
+  {
+   "name": "USD.AI",
+   "kind": "company",
+   "subsegments": [
+    "n4.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "On-chain credit protocol lending stablecoin capital against GPUs to neoclouds",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://usd.ai",
+   "source": "https://www.crowdfundinsider.com/2026/09/303518-bullish-commits-100-million-to-gpu-backed-ai-loans-via-usd-ai/",
+   "note": "Up to $500M facility to Sharon AI; Bullish committed $100M (Sep 2026)"
   },
   {
    "name": "Valor Equity Partners",
@@ -2277,6 +3144,22 @@
    "source": "https://vast.ai"
   },
   {
+   "name": "Vensysco Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n4.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian systems integrator shortlisted for IndiaAI GPU compute (with AWS)",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://inc42.com/?p=513063",
+   "source": "https://inc42.com/?p=513063"
+  },
+  {
    "name": "Verda (formerly DataCrunch)",
    "kind": "company",
    "subsegments": [
@@ -2294,10 +3177,27 @@
    "source": "https://verda.com"
   },
   {
+   "name": "VirtAI Technology (OrionX)",
+   "kind": "company",
+   "subsegments": [
+    "n4.orch"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "OrionX software-defined GPU pooling and virtualisation for Chinese data centres and clouds",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.virtaitech.com",
+   "source": "https://app.dealroom.co/companies/virtai_technology"
+  },
+  {
    "name": "VMware Private AI Foundation",
    "kind": "company",
    "subsegments": [
-    "n4.onprem"
+    "n4.onprem",
+    "n7.private"
    ],
    "hq": "US",
    "region": "North America",
@@ -2312,9 +3212,13 @@
   },
   {
    "name": "Volcano Engine",
+   "aka": [
+    "Volcano Engine Ark"
+   ],
    "kind": "company",
    "subsegments": [
-    "n4.hyper"
+    "n4.hyper",
+    "n7.platform"
    ],
    "hq": "CN",
    "region": "China",
@@ -2358,24 +3262,42 @@
    "source": "https://www.vultr.com"
   },
   {
-   "name": "Yotta Data Services (Shakti Cloud)",
+   "name": "WhiteFiber",
    "kind": "company",
    "subsegments": [
-    "n4.sovereign",
     "n4.neo"
    ],
-   "hq": "IN",
-   "region": "India",
-   "status": "private",
-   "one_liner": "Indian GPU cloud (Shakti Cloud) and data centres; IndiaAI Mission compute provider",
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "AI infrastructure provider: GPU cloud plus owned data centres",
+   "url": "https://www.whitefiber.com",
+   "source": "https://www.whitefiber.com",
+   "note": "NASDAQ: WYFI (IPO Aug 2025)"
+  },
+  {
+   "name": "YTL AI Cloud",
+   "kind": "company",
+   "subsegments": [
+    "n4.neo",
+    "n4.sovereign"
+   ],
+   "hq": "MY",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "YTL Power International",
+   "one_liner": "Malaysian GPU cloud with NVIDIA Grace Blackwell supercomputers in Johor",
    "tags": [
     "sovereign"
    ],
-   "url": "https://yotta.com",
-   "source": "https://yotta.com"
+   "url": "https://www.ytlaicloud.com",
+   "source": "https://www.ytlaicloud.com/press-releases/ytl-creates-one-of-the-worlds-most-advanced-supercomputers-powered-by-nvidia-grace-blackwell-based-dgx-cloud"
   },
   {
    "name": "ABCI 3.0",
+   "aka": [
+    "ABCI (AIST)"
+   ],
    "kind": "public programme",
    "subsegments": [
     "n4.access",
@@ -2395,27 +3317,27 @@
    "source": "https://www.storagereview.com/news/japan-integrating-thousands-of-nvidia-h200s-into-ai-bridging-cloud-infrastructure-3-0"
   },
   {
-   "name": "Akash Network (open)",
+   "name": "Akash Network",
    "kind": "open-source project",
    "subsegments": [
     "n4.market"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
    "steward": "Akash Network (Overclock Labs)",
    "licence": "Apache-2.0",
    "access": "Deploy via Akash Console; pay in AKT or USDC",
    "repo": "https://github.com/akash-network/node",
    "stars": 1100,
    "archived": false,
-   "one_liner": "Decentralised marketplace for renting GPU and cloud compute from independent providers",
+   "one_liner": "Decentralised compute marketplace (DePIN) for GPUs",
    "tags": [
     "open-source",
     "cost"
    ],
    "url": "https://akash.network",
-   "source": "https://github.com/akash-network/node"
+   "source": "https://akash.network"
   },
   {
    "name": "AMD Device Metrics Exporter",
@@ -2438,27 +3360,6 @@
    ],
    "url": "https://github.com/ROCm/device-metrics-exporter",
    "source": "https://github.com/ROCm/device-metrics-exporter"
-  },
-  {
-   "name": "Canada AI Compute Access Fund (open)",
-   "kind": "public programme",
-   "subsegments": [
-    "n4.access"
-   ],
-   "hq": "CA",
-   "region": "North America",
-   "status": "open",
-   "steward": "ISED Canada (Canadian Sovereign AI Compute Strategy)",
-   "access": "Canadian SMEs apply for subsidised AI compute",
-   "one_liner": "Subsidises Canadian SMEs' AI compute costs under the Sovereign AI Compute Strategy",
-   "tags": [
-    "sovereign",
-    "cost",
-    "public-programme"
-   ],
-   "url": "https://ised-isde.canada.ca/site/ised/en/node/410",
-   "source": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/05/government-of-canada-supports-44-canadian-companies-using-ai-to-transform-industries-and-create-jobs.html",
-   "note": "May 2026: about C$66M awarded to 44 companies"
   },
   {
    "name": "Confidential Containers",
@@ -2533,51 +3434,27 @@
    "source": "https://github.com/NVIDIA/dcgm-exporter"
   },
   {
-   "name": "dstack (open)",
+   "name": "dstack",
    "kind": "open-source project",
    "subsegments": [
     "n4.orch",
     "n4.serverless"
    ],
-   "status": "open",
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open-source",
    "steward": "dstack",
    "licence": "MPL-2.0",
    "access": "pip install dstack; run on clouds, Kubernetes or on-prem",
    "repo": "https://github.com/dstackai/dstack",
    "stars": 2300,
    "archived": false,
-   "one_liner": "Open GPU orchestration alternative to Kubernetes/Slurm for AI teams",
+   "one_liner": "Open-source GPU orchestration alternative to Kubernetes/Slurm for AI teams",
    "tags": [
-    "open-source",
-    "developer"
+    "open-source"
    ],
-   "url": "https://github.com/dstackai/dstack",
-   "source": "https://github.com/dstackai/dstack"
-  },
-  {
-   "name": "EuroHPC AI Factories (open)",
-   "kind": "public programme",
-   "subsegments": [
-    "n4.access",
-    "n4.sovereign",
-    "n6.train",
-    "n11.startup",
-    "n11.mid",
-    "n11.public"
-   ],
-   "hq": "LU",
-   "region": "Europe",
-   "status": "open",
-   "steward": "EuroHPC Joint Undertaking",
-   "access": "Startups, SMEs and researchers apply for compute time and support",
-   "one_liner": "EU network of AI-optimised supercomputers offering compute access, prioritising startups and SMEs",
-   "tags": [
-    "sovereign",
-    "public-programme"
-   ],
-   "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-factories",
-   "source": "https://digital-strategy.ec.europa.eu/en/policies/ai-factories",
-   "note": "19 AI Factories + 13 Antennas; AI Gigafactories call (up to 7) launched Jul 2026"
+   "url": "https://dstack.ai",
+   "source": "https://dstack.ai"
   },
   {
    "name": "FOCUS (FinOps Open Cost & Usage Specification)",
@@ -2644,49 +3521,26 @@
    "name": "HAMi",
    "kind": "open-source project",
    "subsegments": [
-    "n4.orch"
+    "n4.orch",
+    "n4.virt"
    ],
    "hq": "CN",
    "region": "China",
-   "status": "open",
+   "status": "open-source",
    "steward": "CNCF (incubating)",
    "licence": "Apache-2.0",
    "access": "Helm install; supports NVIDIA and Chinese accelerators",
    "repo": "https://github.com/Project-HAMi/HAMi",
    "stars": 4400,
    "archived": false,
-   "one_liner": "Heterogeneous GPU/NPU virtualisation and sharing middleware for Kubernetes",
+   "one_liner": "CNCF sandbox project for heterogeneous GPU/NPU sharing and virtualisation on Kubernetes",
    "tags": [
     "open-source",
     "cost"
    ],
-   "url": "https://github.com/Project-HAMi/HAMi",
-   "source": "https://github.com/Project-HAMi/HAMi"
-  },
-  {
-   "name": "IndiaAI Compute Portal",
-   "kind": "public programme",
-   "subsegments": [
-    "n4.access",
-    "n4.sovereign",
-    "n11.startup",
-    "n11.public",
-    "n11.mid"
-   ],
-   "hq": "IN",
-   "region": "India",
-   "status": "open",
-   "steward": "IndiaAI Mission (MeitY)",
-   "access": "Indian startups, researchers, academia apply via portal at subsidised rates",
-   "one_liner": "Government-subsidised GPU access pooled from empanelled Indian cloud providers",
-   "tags": [
-    "sovereign",
-    "cost",
-    "public-programme"
-   ],
-   "url": "https://indiaai.gov.in",
-   "source": "https://telecomtalk.info/?p=1005751",
-   "note": "38,000+ GPUs onboarded (MeitY statement, Mar 2026)"
+   "url": "https://project-hami.io",
+   "source": "https://github.com/Project-HAMi/HAMi",
+   "note": "Backed by Dynamia AI"
   },
   {
    "name": "KAI Scheduler",
@@ -2762,12 +3616,13 @@
   },
   {
    "name": "Kubernetes",
+   "aka": [
+    "Kubernetes (Kueue, Volcano)"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n4.orch",
-    "n4.hyper",
-    "n4.onprem",
-    "n4.neo"
+    "n4.onprem"
    ],
    "hq": "US",
    "region": "North America",
@@ -2808,29 +3663,6 @@
    ],
    "url": "https://github.com/kubernetes-sigs/kueue",
    "source": "https://github.com/kubernetes-sigs/kueue"
-  },
-  {
-   "name": "NAIRR (National AI Research Resource)",
-   "kind": "public programme",
-   "subsegments": [
-    "n4.access",
-    "n6.train",
-    "n6.hub",
-    "n11.dev",
-    "n11.public"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
-   "steward": "US National Science Foundation",
-   "access": "US researchers and educators apply for compute, data and model allocations",
-   "one_liner": "US national programme brokering research access to compute, datasets and models",
-   "tags": [
-    "public-programme"
-   ],
-   "url": "https://nairrpilot.org",
-   "source": "https://www.sdsc.edu/news/2026/PR20260901-NAIRR-OC.html",
-   "note": "Sep 2026: $35M NAIRR Operations Center awarded to SDSC with TACC; pilot served ~900 teams"
   },
   {
    "name": "NVIDIA DCGM",
@@ -2953,7 +3785,7 @@
    "subsegments": [
     "n4.sovereign",
     "n4.onprem",
-    "n4.neo"
+    "n4.stack"
    ],
    "hq": "US",
    "region": "North America",
@@ -2974,19 +3806,19 @@
    "source": "https://github.com/openstack/nova"
   },
   {
-   "name": "Prometheus (open)",
+   "name": "Prometheus",
    "kind": "open-source project",
    "subsegments": [
     "n4.ops"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
    "steward": "CNCF (graduated)",
    "licence": "Apache-2.0",
    "access": "Self-host; de facto metrics backend for GPU exporters",
    "repo": "https://github.com/prometheus/prometheus",
-   "one_liner": "Time-series monitoring system collecting GPU, node and cluster metrics",
+   "one_liner": "CNCF metrics system, standard for scraping GPU exporter data",
    "tags": [
     "open-source"
    ],
@@ -3018,7 +3850,7 @@
    "note": "Donated by Anyscale to the PyTorch Foundation Oct 2025"
   },
   {
-   "name": "SkyPilot (open)",
+   "name": "SkyPilot",
    "kind": "open-source project",
    "subsegments": [
     "n4.orch",
@@ -3027,20 +3859,20 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
    "steward": "SkyPilot project (UC Berkeley Sky Computing Lab origin)",
    "licence": "Apache-2.0",
    "access": "pip install skypilot; launch on many clouds and Kubernetes",
    "repo": "https://github.com/skypilot-org/skypilot",
    "stars": 10700,
    "archived": false,
-   "one_liner": "Runs AI jobs across clouds, neoclouds and Kubernetes, picking the cheapest available GPUs",
+   "one_liner": "Runs AI jobs across clouds/Kubernetes, picking cheapest available GPUs",
    "tags": [
     "open-source",
     "cost"
    ],
-   "url": "https://github.com/skypilot-org/skypilot",
-   "source": "https://github.com/skypilot-org/skypilot"
+   "url": "https://skypilot.co",
+   "source": "https://skypilot.co"
   },
   {
    "name": "Slurm",
@@ -3070,7 +3902,8 @@
    "name": "Sovereign Cloud Stack (SCS)",
    "kind": "standard",
    "subsegments": [
-    "n4.sovereign"
+    "n4.sovereign",
+    "n4.stack"
    ],
    "hq": "DE",
    "region": "Europe",
@@ -3085,27 +3918,6 @@
    "url": "https://docs.scs.community/standards",
    "source": "https://scs.community/2024/10/23/osba-forum-scs-standards",
    "note": "Federally funded build phase ended (final report Apr 2025); standards continue under the OSBA forum"
-  },
-  {
-   "name": "UK AI Research Resource (AIRR) (open)",
-   "kind": "public programme",
-   "subsegments": [
-    "n4.access",
-    "n4.sovereign"
-   ],
-   "hq": "GB",
-   "region": "Europe",
-   "status": "open",
-   "steward": "DSIT / UKRI",
-   "access": "UK researchers and SMEs apply; rapid-access route; compute-only awards",
-   "one_liner": "UK national AI supercomputers (Isambard-AI, Zenith) allocated to researchers and SMEs",
-   "tags": [
-    "sovereign",
-    "public-programme"
-   ],
-   "url": "https://www.ukri.org/opportunity/isambard-ai-and-zenith-airr-supercomputers-rapid-access-route/",
-   "source": "https://www.ukri.org/opportunity/isambard-ai-and-zenith-airr-supercomputers-rapid-access-route/",
-   "note": "Oct 2026: Dawn removed and Zenith (Cambridge) added to the rapid-access route"
   },
   {
    "name": "Volcano",

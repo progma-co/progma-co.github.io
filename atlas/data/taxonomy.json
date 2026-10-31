@@ -104,6 +104,24 @@
      "layer": "distribution",
      "name": "Powered land & capacity brokerage",
      "desc": "Powered-land developers, site brokers and marketplaces for powered shells"
+    },
+    {
+     "id": "n0.modular",
+     "layer": "core",
+     "name": "Modular & edge AI data centres",
+     "desc": "Prefabricated and containerised AI data centres sold as units, including edge sites"
+    },
+    {
+     "id": "n0.ttp",
+     "layer": "optimisation",
+     "name": "Time-to-power & grid interconnection software",
+     "desc": "Software that finds grid capacity and speeds up connection for new campuses"
+    },
+    {
+     "id": "n0.intel",
+     "layer": "distribution",
+     "name": "Data-centre market intelligence & procurement",
+     "desc": "Market data, capacity listings and procurement platforms for data-centre space"
     }
    ]
   },
@@ -308,6 +326,18 @@
      "layer": "distribution",
      "name": "Refurbished & secondary GPU hardware",
      "desc": "Used GPU trading, refurbishment and IT asset disposition"
+    },
+    {
+     "id": "n3.memory",
+     "layer": "core",
+     "name": "Memory pooling & CXL",
+     "desc": "Disaggregated and pooled memory over CXL, a tier between HBM and storage"
+    },
+    {
+     "id": "n3.validate",
+     "layer": "ops",
+     "name": "Cluster acceptance & benchmarking",
+     "desc": "Burn-in, acceptance testing and third-party ratings of GPU clusters"
     }
    ]
   },
@@ -346,6 +376,12 @@
      "layer": "core",
      "name": "On-prem / private AI factories",
      "desc": "Turnkey private AI infrastructure for enterprises"
+    },
+    {
+     "id": "n4.stack",
+     "layer": "inputs",
+     "name": "GPU-cloud operating stacks",
+     "desc": "Software that lets telcos, CSPs, hosts and data-centre owners run GPUs as a cloud business: virtualisation, multi-tenancy, billing, self-service"
     },
     {
      "id": "n4.market",
@@ -394,6 +430,24 @@
      "layer": "distribution",
      "name": "Compute access programmes & credits",
      "desc": "Startup credits, national research compute, academic access"
+    },
+    {
+     "id": "n4.virt",
+     "layer": "optimisation",
+     "name": "GPU virtualisation & pooling",
+     "desc": "Slicing, pooling, composing and migrating GPUs at the hardware and driver level"
+    },
+    {
+     "id": "n4.price",
+     "layer": "distribution",
+     "name": "Compute price indices & futures",
+     "desc": "GPU-hour price indices, exchange-traded futures and hedging"
+    },
+    {
+     "id": "n4.telco",
+     "layer": "core",
+     "name": "Telco & edge AI grids",
+     "desc": "Telecom operators selling GPU capacity and inference from their network edge"
     }
    ]
   },
@@ -541,7 +595,7 @@
      "id": "n6.opt",
      "layer": "optimisation",
      "name": "Model compression & efficiency",
-     "desc": "Quantisation, distillation, pruning, sparsity, efficient architectures"
+     "desc": "Making the model itself smaller and faster: quantisation, distillation, pruning, sparsity, and vendors of compressed models"
     },
     {
      "id": "n6.safety",
@@ -603,13 +657,13 @@
      "id": "n7.opt",
      "layer": "optimisation",
      "name": "Inference optimisation",
-     "desc": "Speculative decoding, KV-cache management, kernel tuning, disaggregated serving"
+     "desc": "Serving the same model more efficiently at runtime: speculative decoding, KV-cache management, batching, kernel tuning, disaggregated serving"
     },
     {
      "id": "n7.compress",
      "layer": "optimisation",
      "name": "Token & context compression",
-     "desc": "Prompt/context compression, memory-based context reduction, prompt caching"
+     "desc": "Sending fewer tokens per request: prompt and context compression, context distillation, prompt and KV caching"
     },
     {
      "id": "n7.route",
@@ -738,6 +792,30 @@
      "layer": "ops",
      "name": "Agent identity & authorisation",
      "desc": "Identity, credentials and access control for AI agents"
+    },
+    {
+     "id": "n8.realtime",
+     "layer": "core",
+     "name": "Real-time voice & multimodal agent infrastructure",
+     "desc": "Streaming audio and video transport and pipelines for live agents"
+    },
+    {
+     "id": "n8.durable",
+     "layer": "core",
+     "name": "Durable execution & agent runtimes",
+     "desc": "Workflow engines that keep long-running agents reliable across failures"
+    },
+    {
+     "id": "n8.billing",
+     "layer": "inputs",
+     "name": "AI usage billing & monetisation",
+     "desc": "Metering, pricing and invoicing for products sold per token, call or outcome"
+    },
+    {
+     "id": "n8.mcpgw",
+     "layer": "ops",
+     "name": "MCP gateways & tool governance",
+     "desc": "Gateways that control, log and secure which tools agents can call"
     }
    ]
   },
@@ -908,6 +986,24 @@
      "layer": "core",
      "name": "Logistics, supply chain & agriculture AI",
      "desc": "Freight, procurement, supply-chain planning, agritech AI"
+    },
+    {
+     "id": "n9.messaging",
+     "layer": "distribution",
+     "name": "Conversational messaging & WhatsApp commerce",
+     "desc": "Messaging platforms through which AI agents reach customers, dominant in India, LatAm, SEA and MENA"
+    },
+    {
+     "id": "n9.geo",
+     "layer": "core",
+     "name": "AI search visibility (GEO)",
+     "desc": "Tools that track and improve how brands appear in AI answers"
+    },
+    {
+     "id": "n9.regtech",
+     "layer": "core",
+     "name": "Compliance & financial-crime AI",
+     "desc": "KYC, AML, fraud, regulatory and pharmacovigilance AI"
     }
    ]
   },
@@ -982,6 +1078,30 @@
      "layer": "distribution",
      "name": "Partner ecosystems & channels",
      "desc": "Hyperscaler and lab partner programmes, resellers, marketplace-led services"
+    },
+    {
+     "id": "n10.outcome",
+     "layer": "core",
+     "name": "Services-as-software firms",
+     "desc": "AI-native firms that sell an outcome (legal, accounting, operations) instead of a tool"
+    },
+    {
+     "id": "n10.gcc",
+     "layer": "core",
+     "name": "GCC & AI centre-of-excellence advisory",
+     "desc": "Setting up global capability centres and AI CoEs, mainly in India"
+    },
+    {
+     "id": "n10.analyst",
+     "layer": "distribution",
+     "name": "Industry analysts & advisory",
+     "desc": "Analyst firms whose ratings and advice steer enterprise buying"
+    },
+    {
+     "id": "n10.talent",
+     "layer": "inputs",
+     "name": "AI talent marketplaces",
+     "desc": "Marketplaces for vetted AI engineers and fractional AI teams"
     }
    ]
   },
@@ -1102,6 +1222,44 @@
    "to": "n11",
    "name": "Direct product-led adoption",
    "needs": "Self-serve onboarding, freemium, bottom-up developer and prosumer pull"
+  }
+ ],
+ "phases": [
+  {
+   "name": "Physical foundation",
+   "desc": "Power, silicon and racks",
+   "nodes": [
+    "n0",
+    "n1",
+    "n2",
+    "n3"
+   ]
+  },
+  {
+   "name": "Capacity & raw material",
+   "desc": "Compute to rent, data to learn from",
+   "nodes": [
+    "n4",
+    "n5"
+   ]
+  },
+  {
+   "name": "Intelligence",
+   "desc": "Models, served and made buildable",
+   "nodes": [
+    "n6",
+    "n7",
+    "n8"
+   ]
+  },
+  {
+   "name": "Value",
+   "desc": "Products, adoption, outcomes",
+   "nodes": [
+    "n9",
+    "n10",
+    "n11"
+   ]
   }
  ]
 }

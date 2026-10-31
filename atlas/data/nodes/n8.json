@@ -11,7 +11,7 @@
   "n8.lowcode": "Crowded: open-source builders (n8n at US$2.5B, Oct 2025; Dify; Flowise and Langflow now owned by Workday and IBM) vs. suite builders (Copilot Studio, OpenAI Agent Builder, Gemini Enterprise, Agentforce) and automation incumbents (Zapier, Make, UiPath, Workato).",
   "n8.payments": "Protocol race in 2025-26: OpenAI/Stripe ACP (Sep 2025), Google AP2 (Sep 2025) and UCP (Jan 2026), Visa Trusted Agent Protocol, Mastercard Agent Pay and Coinbase/Cloudflare x402; agent identity is being absorbed by IAM incumbents (Okta, Microsoft Entra, Twilio-Stytch, PANW-CyberArk).",
   "n8.cache": "Thin as a standalone market: semantic caching is mostly a feature of gateways and databases (Redis LangCache, Cloudflare, Portkey, GPTCache) and prompt optimisation is led by open-source DSPy.",
-  "n8.eval": "Heavy consolidation 2025-26: W&B to CoreWeave, Langfuse to ClickHouse, Helicone to Mintlify, Traceloop to ServiceNow, Galileo to Cisco, Humanloop team to Anthropic; Arize and Braintrust (US$800M, Feb 2026) remain the largest independents.",
+  "n8.eval": "Voice-agent evaluation (Coval, Hamming, Cekura) has emerged as a distinct sub-niche.",
   "n8.security": "Fastest-consolidating sub-segment: in about 15 months, Palo Alto (Protect AI), Check Point (Lakera), SentinelOne (Prompt Security), F5 (CalypsoAI), Cato (Aim), CrowdStrike (Pangea), Zscaler (SPLX), Snyk (Invariant), Tenable (Apex), Proofpoint (Acuvity) and OpenAI (Promptfoo) bought startups; agent-security independents (Zenity, Noma, HiddenLayer) raised US$100M+ rounds.",
   "n8.gov": "Pure-play AI governance vendors (Credo AI, Holistic AI, Saidot, Trustible) compete with GRC/privacy suites (OneTrust, Securiti-Veeam, Collibra) and platform-embedded governance (IBM watsonx.governance, ServiceNow AI Control Tower); demand is driven by EU AI Act and ISO 42001.",
   "n8.orch": "Control-plane race among enterprise platforms (Microsoft Agent 365, Salesforce, ServiceNow, Workday, IBM, AWS); open registries via MCP Registry and A2A Agent Cards.",
@@ -19,22 +19,6 @@
   "n8.identity": "Incumbent IAM is buying in (Palo Alto-CyberArk, Cisco-Astrix, Twilio-Stytch) while Okta and Microsoft ship agent-native identity; Israeli NHI startups prominent."
  },
  "entries": [
-  {
-   "name": "Activepieces",
-   "kind": "company",
-   "subsegments": [
-    "n8.lowcode"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Open-source automation builder with AI agents and MCP servers",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://www.activepieces.com",
-   "source": "https://www.activepieces.com"
-  },
   {
    "name": "Acuvity",
    "kind": "company",
@@ -58,12 +42,14 @@
    "name": "Aembit",
    "kind": "company",
    "subsegments": [
-    "n8.payments",
     "n8.identity"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$25M Series A, Jul 2024 (Acrew Capital, Ballistic Ventures, CrowdStrike Falcon Fund)",
+   "round_source": "https://www.cbinsights.com/company/aembit/financials",
    "one_liner": "Workload and AI agent identity and access management",
    "tags": [
     "security"
@@ -89,25 +75,6 @@
    "source": "https://ag2.ai"
   },
   {
-   "name": "Agent2Agent Protocol (A2A)",
-   "kind": "company",
-   "subsegments": [
-    "n8.tools",
-    "n8.orch"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "non-profit",
-   "parent": "Linux Foundation",
-   "one_liner": "Open protocol for agent-to-agent communication, hosted by the Linux Foundation",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://a2a-protocol.org",
-   "source": "https://a2a-protocol.org",
-   "note": "Contributed by Google to Linux Foundation (Jun 2025)"
-  },
-  {
    "name": "Agenta",
    "kind": "company",
    "subsegments": [
@@ -125,22 +92,20 @@
    "source": "https://agenta.ai"
   },
   {
-   "name": "Agentic Commerce Protocol (ACP)",
+   "name": "AgentOps",
    "kind": "company",
    "subsegments": [
-    "n8.payments"
+    "n8.eval"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open-source",
-   "parent": "OpenAI & Stripe",
-   "one_liner": "Open standard for agents to complete purchases with merchants, maintained by OpenAI and Stripe",
+   "status": "private",
+   "one_liner": "Observability and replay for AI agents",
    "tags": [
-    "open-source"
+    "developer"
    ],
-   "url": "https://www.agenticcommerce.dev",
-   "source": "https://www.agenticcommerce.dev",
-   "note": "Launched Sep 2025 with ChatGPT Instant Checkout"
+   "url": "https://www.agentops.ai",
+   "source": "https://presenc.ai/research/ai-agent-infrastructure-startups-2026"
   },
   {
    "name": "AgentScope (Alibaba)",
@@ -178,6 +143,18 @@
    "source": "https://www.agno.com"
   },
   {
+   "name": "Agora",
+   "kind": "company",
+   "subsegments": [
+    "n8.realtime"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "one_liner": "Real-time voice and video SDKs and conversational AI engine for live agents",
+   "url": "https://www.agora.io",
+   "source": "https://www.agora.io"
+  },
+  {
    "name": "Aim Security",
    "kind": "company",
    "subsegments": [
@@ -194,6 +171,38 @@
    "url": "https://www.aim.security",
    "source": "https://softwarestrategiesblog.com/2026/03/28/agentic-ai-security-startups-funding-mna-rsac-2026/",
    "note": "Acquired by Cato Networks (Sep 2025)"
+  },
+  {
+   "name": "Airbyte",
+   "kind": "company",
+   "subsegments": [
+    "n8.ingest"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Open-source data movement with connectors feeding AI/vector stores",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://airbyte.com",
+   "source": "https://airbyte.com"
+  },
+  {
+   "name": "Akto",
+   "kind": "company",
+   "subsegments": [
+    "n8.security"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "API and MCP security testing for agentic AI",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.akto.io",
+   "source": "https://www.akto.io"
   },
   {
    "name": "Alipay / Ant Group (AI Pay)",
@@ -218,7 +227,9 @@
     "n8.tools",
     "n8.platform",
     "n8.payments",
-    "n8.orch"
+    "n8.orch",
+    "n8.identity",
+    "n8.mcpgw"
    ],
    "hq": "US",
    "region": "North America",
@@ -289,7 +300,6 @@
    "kind": "company",
    "subsegments": [
     "n8.tools",
-    "n8.payments",
     "n8.identity"
    ],
    "hq": "US",
@@ -302,24 +312,6 @@
    ],
    "url": "https://www.arcade.dev",
    "source": "https://www.arcade.dev"
-  },
-  {
-   "name": "Arize AI (Phoenix)",
-   "kind": "company",
-   "subsegments": [
-    "n8.eval"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "AI observability and evaluation platform; open-source Phoenix tracing",
-   "tags": [
-    "open-source",
-    "enterprise"
-   ],
-   "url": "https://arize.com",
-   "source": "https://arize.com/blog/arize-ai-raises-70m-series-c-to-build-the-gold-standard-for-ai-evaluation-observability",
-   "note": "Raised $70M Series C (Feb 2025)"
   },
   {
    "name": "Armilla AI",
@@ -360,7 +352,6 @@
    "name": "Astrix Security",
    "kind": "company",
    "subsegments": [
-    "n8.payments",
     "n8.security",
     "n8.identity"
    ],
@@ -374,6 +365,23 @@
    "url": "https://astrix.security",
    "source": "https://astrix.security",
    "note": "Cisco agreed to acquire (May 2026, ~$400M reported)"
+  },
+  {
+   "name": "Atla AI",
+   "kind": "company",
+   "subsegments": [
+    "n8.eval",
+    "n6.safety"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Evaluator models and tooling to find agent failure modes",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.atla-ai.com",
+   "source": "https://www.atla-ai.com"
   },
   {
    "name": "Azure AI Document Intelligence",
@@ -450,6 +458,9 @@
    "hq": "CA",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$25M Series B, Jun 2025, Framework Venture Partners",
+   "round_source": "https://www.cbinsights.com/company/botpress/financials",
    "one_liner": "Platform for building conversational AI agents",
    "tags": [
     "developer"
@@ -466,6 +477,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$80M Series B at $800M valuation, Feb 2026, led by ICONIQ",
+   "round_source": "https://finder.techleap.nl/news/feed/braintrust-raises-80m-to-monitor-ai-models-and-agents-in-production",
    "one_liner": "Evals, logging and prompt playground for AI products",
    "tags": [
     "developer"
@@ -493,24 +507,6 @@
    "source": "https://brave.com/search/api/"
   },
   {
-   "name": "Browser Use",
-   "kind": "company",
-   "subsegments": [
-    "n8.sandbox",
-    "n8.framework"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Open-source library and cloud for LLM-driven browser automation",
-   "tags": [
-    "open-source",
-    "developer"
-   ],
-   "url": "https://browser-use.com",
-   "source": "https://browser-use.com"
-  },
-  {
    "name": "C3 AI",
    "kind": "company",
    "subsegments": [
@@ -535,6 +531,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$30M Series A extension, May 2026 (a16z crypto, General Catalyst)",
+   "round_source": "https://www.cbinsights.com/company/catena-labs/financials",
    "one_liner": "Building a regulated AI-native financial institution and open Agent Commerce Kit",
    "tags": [
     "open-source"
@@ -543,40 +542,20 @@
    "source": "https://catenalabs.com"
   },
   {
-   "name": "Chroma",
+   "name": "Cekura",
    "kind": "company",
    "subsegments": [
-    "n8.vector"
+    "n8.eval"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
-   "one_liner": "Open-source embedding/vector database and Chroma Cloud",
+   "one_liner": "Testing and observability for voice and chat agents",
    "tags": [
-    "open-source",
-    "developer"
+    "performance"
    ],
-   "url": "https://www.trychroma.com",
-   "source": "https://www.trychroma.com"
-  },
-  {
-   "name": "Cisco AI Defense (Robust Intelligence)",
-   "kind": "company",
-   "subsegments": [
-    "n8.security"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Cisco",
-   "one_liner": "AI model validation, runtime guardrails and AI asset discovery",
-   "tags": [
-    "security",
-    "enterprise"
-   ],
-   "url": "https://www.cisco.com/site/us/en/products/security/ai-defense/index.html",
-   "source": "https://www.cisco.com/site/us/en/products/security/ai-defense/index.html",
-   "note": "Built on Robust Intelligence (acquired 2024); Galileo deal announced Apr 2026"
+   "url": "https://www.cekura.ai",
+   "source": "https://www.cekura.ai"
   },
   {
    "name": "Citadel AI",
@@ -609,80 +588,6 @@
    "url": "https://docs.claude.com/en/api/agent-sdk/overview",
    "source": "https://docs.claude.com/en/api/agent-sdk/overview",
    "note": "Hired Humanloop team (Aug 2025)"
-  },
-  {
-   "name": "Cloudflare (Agents SDK, Browser Rendering, AI Gateway)",
-   "kind": "company",
-   "subsegments": [
-    "n8.tools",
-    "n8.sandbox",
-    "n8.cache",
-    "n8.payments"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "one_liner": "Edge platform for remote MCP servers, agent runtimes, headless browsers, AI caching, bot auth and x402",
-   "tags": [
-    "developer",
-    "performance"
-   ],
-   "url": "https://agents.cloudflare.com",
-   "source": "https://agents.cloudflare.com",
-   "note": "Co-founded x402 Foundation with Coinbase (Sep 2025)"
-  },
-  {
-   "name": "Cognee",
-   "kind": "company",
-   "subsegments": [
-    "n8.memory"
-   ],
-   "hq": "DE",
-   "region": "Europe",
-   "status": "private",
-   "one_liner": "Open-source semantic memory engine combining graphs and vectors for agents",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://www.cognee.ai",
-   "source": "https://www.cognee.ai"
-  },
-  {
-   "name": "Cohere (Embed, Rerank, North)",
-   "kind": "company",
-   "subsegments": [
-    "n8.vector",
-    "n8.platform"
-   ],
-   "hq": "CA",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Embedding and rerank models for retrieval plus North enterprise agent platform",
-   "tags": [
-    "enterprise",
-    "sovereign"
-   ],
-   "url": "https://cohere.com",
-   "source": "https://cohere.com"
-  },
-  {
-   "name": "Coinbase x402",
-   "kind": "company",
-   "subsegments": [
-    "n8.payments"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Coinbase",
-   "one_liner": "HTTP 402-based open protocol for stablecoin micropayments by agents and APIs",
-   "tags": [
-    "open-source",
-    "cost"
-   ],
-   "url": "https://www.x402.org",
-   "source": "https://www.x402.org",
-   "note": "x402 Foundation formed with Cloudflare (Sep 2025)"
   },
   {
    "name": "Collibra AI Governance",
@@ -725,6 +630,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$25M Series A, Apr 2025, Lightspeed (with Elevation, Together Fund)",
+   "round_source": "https://www.cbinsights.com/company/composio/financials",
    "one_liner": "Tool-integration and auth layer giving agents access to 250+ apps via SDK and MCP",
    "tags": [
     "developer"
@@ -747,6 +655,23 @@
    ],
    "url": "https://www.confident-ai.com",
    "source": "https://www.confident-ai.com"
+  },
+  {
+   "name": "Coval",
+   "kind": "company",
+   "subsegments": [
+    "n8.eval"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Simulation and evaluation platform for voice and chat agents",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.coval.dev",
+   "source": "https://www.tryfundable.ai/blog/top-agent-observability-deals",
+   "note": "$28M Series A 2026"
   },
   {
    "name": "Coze (ByteDance)",
@@ -778,6 +703,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "~$20M Series B, Jul 2026 (SYN Ventures, Titanium Ventures)",
+   "round_source": "https://www.cbinsights.com/company/cranium/financials",
    "one_liner": "AI security and governance: AI inventory, AI BOM and compliance",
    "tags": [
     "security"
@@ -802,25 +730,6 @@
    "source": "https://www.credo.ai"
   },
   {
-   "name": "CrewAI",
-   "kind": "company",
-   "subsegments": [
-    "n8.framework",
-    "n8.lowcode"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Open-source multi-agent orchestration framework plus enterprise agent management platform",
-   "tags": [
-    "developer",
-    "open-source",
-    "enterprise"
-   ],
-   "url": "https://www.crewai.com",
-   "source": "https://www.crewai.com"
-  },
-  {
    "name": "Crossmint",
    "kind": "company",
    "subsegments": [
@@ -841,7 +750,6 @@
    "kind": "company",
    "subsegments": [
     "n8.security",
-    "n8.payments",
     "n8.identity"
    ],
    "hq": "US",
@@ -859,16 +767,28 @@
   },
   {
    "name": "Databricks (Agent Bricks, Mosaic AI, MLflow)",
+   "aka": [
+    "Databricks Mosaic AI",
+    "Databricks Mosaic AI Model Serving & AI Gateway"
+   ],
    "kind": "company",
    "subsegments": [
     "n8.platform",
     "n8.eval",
     "n8.vector",
-    "n9.analytics"
+    "n9.analytics",
+    "n6.enterprise",
+    "n6.train",
+    "n7.platform",
+    "n7.route",
+    "n8.gov"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$5B Series L extension, Aug 2026 (Coatue, a16z, Blackstone)",
+   "round_source": "https://www.cbinsights.com/company/databricks/financials",
    "one_liner": "Data intelligence platform for building, evaluating and governing agents on enterprise data",
    "tags": [
     "enterprise"
@@ -928,6 +848,24 @@
    "source": "https://www.datarobot.com"
   },
   {
+   "name": "DataStax",
+   "kind": "company",
+   "subsegments": [
+    "n8.vector",
+    "n8.lowcode"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "IBM (2025)",
+   "one_liner": "Astra DB vector database and Langflow (Cassandra-based)",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.datastax.com",
+   "source": "https://www.datastax.com"
+  },
+  {
    "name": "Daytona",
    "kind": "company",
    "subsegments": [
@@ -936,6 +874,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$60M Series B, Aug 2026 (FirstMark, Bain Capital Ventures, Samsung NEXT, Qualcomm Ventures)",
+   "round_source": "https://www.cbinsights.com/company/daytona/financials",
    "one_liner": "Fast-start secure sandbox infrastructure for AI-generated code",
    "tags": [
     "performance"
@@ -944,15 +885,49 @@
    "source": "https://www.daytona.io"
   },
   {
+   "name": "Deepchecks",
+   "kind": "company",
+   "subsegments": [
+    "n8.eval"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "LLM evaluation and monitoring with open-source testing core",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.deepchecks.com",
+   "source": "https://www.deepchecks.com"
+  },
+  {
+   "name": "DeepKeep",
+   "kind": "company",
+   "subsegments": [
+    "n8.security"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "AI-native security and trustworthiness platform for models and agents",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.deepkeep.ai",
+   "source": "https://www.deepkeep.ai"
+  },
+  {
    "name": "Descope",
    "kind": "company",
    "subsegments": [
-    "n8.payments",
     "n8.identity"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$35M seed extension, Sep 2025 (Notable Capital, Lightspeed)",
+   "round_source": "https://www.cbinsights.com/company/descope/financials",
    "one_liner": "Customer identity platform with agentic identity and MCP auth",
    "tags": [
     "security",
@@ -960,22 +935,6 @@
    ],
    "url": "https://www.descope.com",
    "source": "https://www.descope.com"
-  },
-  {
-   "name": "Dify",
-   "kind": "company",
-   "subsegments": [
-    "n8.lowcode"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Open-source LLM app and agentic workflow builder (LangGenius)",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://dify.ai",
-   "source": "https://dify.ai"
   },
   {
    "name": "Docker MCP Catalog & Toolkit",
@@ -996,23 +955,6 @@
    "source": "https://www.docker.com/products/mcp-catalog-and-toolkit/"
   },
   {
-   "name": "Docling (IBM)",
-   "kind": "company",
-   "subsegments": [
-    "n8.ingest"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "IBM",
-   "one_liner": "Open-source document conversion toolkit from IBM Research, hosted at LF AI & Data",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://github.com/docling-project/docling",
-   "source": "https://github.com/docling-project/docling"
-  },
-  {
    "name": "Domino Data Lab",
    "kind": "company",
    "subsegments": [
@@ -1030,46 +972,17 @@
    "source": "https://domino.ai"
   },
   {
-   "name": "DSPy",
-   "kind": "company",
-   "subsegments": [
-    "n8.framework",
-    "n8.cache"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "one_liner": "Stanford-originated framework for programming LMs with automatic prompt and weight optimisation",
-   "tags": [
-    "open-source",
-    "performance"
-   ],
-   "url": "https://dspy.ai",
-   "source": "https://dspy.ai"
-  },
-  {
-   "name": "E2B",
-   "kind": "company",
-   "subsegments": [
-    "n8.sandbox"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Open-source cloud sandboxes (Firecracker microVMs) for running AI-generated code",
-   "tags": [
-    "open-source",
-    "security"
-   ],
-   "url": "https://e2b.dev",
-   "source": "https://e2b.dev"
-  },
-  {
    "name": "Elastic (Elasticsearch, Jina AI)",
+   "aka": [
+    "Jina AI"
+   ],
    "kind": "company",
    "subsegments": [
     "n8.vector",
-    "n8.ingest"
+    "n8.ingest",
+    "n6.embed",
+    "n5.web",
+    "n8.search"
    ],
    "hq": "US",
    "region": "North America",
@@ -1111,6 +1024,20 @@
    "one_liner": "AI governance and EU AI Act compliance platform",
    "url": "https://www.enz.ai",
    "source": "https://www.enz.ai"
+  },
+  {
+   "name": "Evidently AI",
+   "kind": "company",
+   "subsegments": [
+    "n8.eval"
+   ],
+   "status": "private",
+   "one_liner": "Open-source ML/LLM evaluation and monitoring",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.evidentlyai.com",
+   "source": "https://www.evidentlyai.com"
   },
   {
    "name": "Extend",
@@ -1155,6 +1082,24 @@
    "source": "https://fairnow.ai"
   },
   {
+   "name": "FalkorDB",
+   "kind": "company",
+   "subsegments": [
+    "n8.vector",
+    "n8.memory"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Low-latency graph database for GraphRAG and agent memory",
+   "tags": [
+    "performance",
+    "open-source"
+   ],
+   "url": "https://www.falkordb.com",
+   "source": "https://www.falkordb.com"
+  },
+  {
    "name": "Fiddler AI",
    "kind": "company",
    "subsegments": [
@@ -1172,22 +1117,20 @@
    "source": "https://www.fiddler.ai"
   },
   {
-   "name": "Flowise",
+   "name": "Future AGI",
    "kind": "company",
    "subsegments": [
-    "n8.lowcode"
+    "n8.eval"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "acquired",
-   "parent": "Workday (2025)",
-   "one_liner": "Open-source visual builder for LLM agents and flows",
+   "status": "private",
+   "one_liner": "Evaluation, observability and synthetic test data for agents (Indian founders)",
    "tags": [
-    "open-source"
+    "developer"
    ],
-   "url": "https://flowiseai.com",
-   "source": "https://flowiseai.com",
-   "note": "Acquired by Workday (Aug 2025)"
+   "url": "https://futureagi.com",
+   "source": "https://news.ventureintelligence.com/private-equity/ai-infra-startup-future-agi-raises-$1.6-m-led-by-powerhouse-ventures,-snow-leopard"
   },
   {
    "name": "Galileo",
@@ -1300,11 +1243,17 @@
   },
   {
    "name": "Google Gemini Enterprise & Vertex AI",
+   "aka": [
+    "Gemini Enterprise (Google)"
+   ],
    "kind": "company",
    "subsegments": [
     "n8.platform",
     "n8.lowcode",
-    "n8.orch"
+    "n8.orch",
+    "n9.knowledge",
+    "n7.platform",
+    "n6.hub"
    ],
    "hq": "US",
    "region": "North America",
@@ -1318,23 +1267,6 @@
    "source": "https://cloud.google.com/gemini-enterprise"
   },
   {
-   "name": "Guardrails AI",
-   "kind": "company",
-   "subsegments": [
-    "n8.security"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Open-source framework and hub of validators for LLM output guardrails",
-   "tags": [
-    "open-source",
-    "security"
-   ],
-   "url": "https://www.guardrailsai.com",
-   "source": "https://www.guardrailsai.com"
-  },
-  {
    "name": "Gumloop",
    "kind": "company",
    "subsegments": [
@@ -1343,6 +1275,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$50M Series B, Benchmark",
+   "round_source": "https://www.tamradar.com/funding-rounds/gumloop-series-b-50m",
    "one_liner": "No-code AI workflow automation builder",
    "url": "https://www.gumloop.com",
    "source": "https://www.gumloop.com"
@@ -1351,7 +1286,8 @@
    "name": "H2O.ai",
    "kind": "company",
    "subsegments": [
-    "n8.platform"
+    "n8.platform",
+    "n7.private"
    ],
    "hq": "US",
    "region": "North America",
@@ -1365,6 +1301,22 @@
    "source": "https://h2o.ai"
   },
   {
+   "name": "Hamming AI",
+   "kind": "company",
+   "subsegments": [
+    "n8.eval"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Automated testing and monitoring of voice AI agents",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://hamming.ai",
+   "source": "https://hamming.ai"
+  },
+  {
    "name": "Harmonic Security",
    "kind": "company",
    "subsegments": [
@@ -1373,6 +1325,9 @@
    "hq": "GB",
    "region": "Europe",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$50M Series B, Oct 2026, Crosspoint Capital Partners",
+   "round_source": "https://www.cbinsights.com/company/harmonic-security/financials",
    "one_liner": "Prevents sensitive data leakage to GenAI tools",
    "tags": [
     "security"
@@ -1408,6 +1363,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$100M Series B, Sep 2026",
+   "round_source": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/",
    "one_liner": "Security platform protecting models, agents and AI workflows",
    "tags": [
     "security"
@@ -1425,6 +1383,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$5.5M seed, Apr 2025, Insight Partners",
+   "round_source": "https://www.cbinsights.com/company/honeyhive/financials",
    "one_liner": "Agent observability and evaluation platform",
    "tags": [
     "enterprise"
@@ -1470,7 +1431,8 @@
     "n8.platform",
     "n8.gov",
     "n8.lowcode",
-    "n8.orch"
+    "n8.orch",
+    "n7.platform"
    ],
    "hq": "US",
    "region": "North America",
@@ -1483,6 +1445,23 @@
    "url": "https://www.ibm.com/watsonx",
    "source": "https://www.ibm.com/watsonx",
    "note": "Owns Langflow via DataStax acquisition (closed May 2025)"
+  },
+  {
+   "name": "Inngest",
+   "kind": "company",
+   "subsegments": [
+    "n8.orch",
+    "n8.durable"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Durable workflow engine and AgentKit for agent orchestration",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.inngest.com",
+   "source": "https://presenc.ai/research/ai-agent-infrastructure-startups-2026"
   },
   {
    "name": "Invariant Labs",
@@ -1522,7 +1501,6 @@
    "name": "Keycard",
    "kind": "company",
    "subsegments": [
-    "n8.payments",
     "n8.identity"
    ],
    "hq": "US",
@@ -1546,6 +1524,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$18M Series A, Sep 2025, led by PayPal Ventures and General Catalyst",
+   "round_source": "https://gokite.ai",
    "one_liner": "Blockchain-based identity and payment layer for autonomous agents",
    "url": "https://gokite.ai",
    "source": "https://gokite.ai",
@@ -1568,6 +1549,22 @@
    "source": "https://www.klavis.ai"
   },
   {
+   "name": "Knostic",
+   "kind": "company",
+   "subsegments": [
+    "n8.security"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Need-to-know access controls for enterprise AI assistants",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.knostic.ai",
+   "source": "https://www.knostic.ai"
+  },
+  {
    "name": "Kore.ai",
    "kind": "company",
    "subsegments": [
@@ -1588,21 +1585,36 @@
    "source": "https://www.kore.ai"
   },
   {
-   "name": "LanceDB",
+   "name": "Lago",
    "kind": "company",
    "subsegments": [
-    "n8.vector"
+    "n8.billing"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "one_liner": "Open-source metering and usage-based billing",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.getlago.com",
+   "source": "https://www.getlago.com"
+  },
+  {
+   "name": "Laminar",
+   "kind": "company",
+   "subsegments": [
+    "n8.eval"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
-   "one_liner": "Open-source multimodal vector database built on the Lance columnar format",
+   "one_liner": "Open-source agent observability and debugging",
    "tags": [
-    "open-source",
-    "developer"
+    "open-source"
    ],
-   "url": "https://lancedb.com",
-   "source": "https://lancedb.com"
+   "url": "https://www.lmnr.ai",
+   "source": "https://www.tryfundable.ai/blog/top-agent-observability-deals",
+   "note": "$3M seed 2026"
   },
   {
    "name": "LandingAI (Agentic Document Extraction)",
@@ -1622,11 +1634,15 @@
   },
   {
    "name": "LangChain (LangChain, LangGraph, LangSmith)",
+   "aka": [
+    "LangSmith"
+   ],
    "kind": "company",
    "subsegments": [
     "n8.framework",
     "n8.eval",
-    "n8.memory"
+    "n8.memory",
+    "n7.obs"
    ],
    "hq": "US",
    "region": "North America",
@@ -1641,21 +1657,20 @@
    "note": "Raised $125M at $1.25B valuation (Oct 2025)"
   },
   {
-   "name": "Langflow",
+   "name": "LangWatch",
    "kind": "company",
    "subsegments": [
-    "n8.lowcode"
+    "n8.eval"
    ],
-   "hq": "US",
-   "region": "North America",
-   "status": "acquired",
-   "parent": "IBM (via DataStax, 2025)",
-   "one_liner": "Open-source visual builder for agents and RAG apps",
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Agent testing via simulations, evals and LLM observability",
    "tags": [
-    "open-source"
+    "developer"
    ],
-   "url": "https://www.langflow.org",
-   "source": "https://www.langflow.org"
+   "url": "https://langwatch.ai",
+   "source": "https://langwatch.ai"
   },
   {
    "name": "Lasso Security",
@@ -1675,24 +1690,6 @@
    "note": "Reported $30M raise (Sep 2026)"
   },
   {
-   "name": "Letta",
-   "kind": "company",
-   "subsegments": [
-    "n8.memory",
-    "n8.framework"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Stateful agent platform from the MemGPT creators with persistent memory",
-   "tags": [
-    "open-source",
-    "developer"
-   ],
-   "url": "https://www.letta.com",
-   "source": "https://www.letta.com"
-  },
-  {
    "name": "Lightpanda",
    "kind": "company",
    "subsegments": [
@@ -1701,6 +1698,9 @@
    "hq": "FR",
    "region": "Europe",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "Pre-seed, Jun 2025 (ISAI, Factorial Capital, Kima Ventures)",
+   "round_source": "https://www.cbinsights.com/company/lightpanda/financials",
    "one_liner": "Open-source headless browser built from scratch for AI and automation",
    "tags": [
     "open-source",
@@ -1741,22 +1741,24 @@
    "source": "https://www.linkup.so"
   },
   {
-   "name": "LlamaIndex",
+   "name": "LiveKit",
    "kind": "company",
    "subsegments": [
     "n8.framework",
-    "n8.ingest"
+    "n8.sandbox",
+    "n8.realtime"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
-   "one_liner": "Open-source framework for agents over enterprise data; LlamaParse/LlamaCloud document parsing",
+   "one_liner": "Open-source real-time media stack and Agents framework for voice AI",
    "tags": [
-    "developer",
-    "open-source"
+    "open-source",
+    "performance"
    ],
-   "url": "https://www.llamaindex.ai",
-   "source": "https://www.llamaindex.ai"
+   "url": "https://livekit.io",
+   "source": "https://siliconangle.com/2026/01/22/livekit-raises-100m-1b-valuation-scale-real-time-ai-media-platform/",
+   "note": "$100M Series C at $1B, Jan 2026"
   },
   {
    "name": "Lumenova AI",
@@ -1770,6 +1772,23 @@
    "one_liner": "Responsible AI governance and risk management platform",
    "url": "https://www.lumenova.ai",
    "source": "https://www.lumenova.ai"
+  },
+  {
+   "name": "Lyzr",
+   "kind": "company",
+   "subsegments": [
+    "n8.lowcode",
+    "n8.framework"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Enterprise agent-building platform with Indian engineering base",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.lyzr.ai",
+   "source": "https://www.lyzr.ai"
   },
   {
    "name": "Make",
@@ -1789,6 +1808,23 @@
    "source": "https://www.make.com"
   },
   {
+   "name": "Marqo",
+   "kind": "company",
+   "subsegments": [
+    "n8.vector",
+    "n6.embed"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Multimodal vector search and fine-tuned embedding models for e-commerce",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.marqo.ai",
+   "source": "https://www.capitalbrief.com/briefing/melbourne-startup-marqo-closes-series-a-funding-at-194m-1fdb9203-afaf-4c94-bd2f-ac6249eb43a3/"
+  },
+  {
    "name": "Mastercard Agent Pay",
    "kind": "company",
    "subsegments": [
@@ -1805,23 +1841,6 @@
    "source": "https://www.mastercard.com"
   },
   {
-   "name": "Mastra",
-   "kind": "company",
-   "subsegments": [
-    "n8.framework"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Open-source TypeScript framework for agents, workflows, RAG and evals",
-   "tags": [
-    "developer",
-    "open-source"
-   ],
-   "url": "https://mastra.ai",
-   "source": "https://mastra.ai"
-  },
-  {
    "name": "Maxim AI",
    "kind": "company",
    "subsegments": [
@@ -1830,27 +1849,28 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$3M seed, Jun 2024, Elevation Capital",
+   "round_source": "https://www.cbinsights.com/company/maxim-ai/financials",
    "one_liner": "Agent simulation, evaluation and observability platform (US/India team)",
    "url": "https://www.getmaxim.ai",
    "source": "https://www.getmaxim.ai"
   },
   {
-   "name": "Mem0",
+   "name": "Meilisearch",
    "kind": "company",
    "subsegments": [
-    "n8.memory"
+    "n8.vector"
    ],
-   "hq": "US",
-   "region": "North America",
+   "hq": "FR",
+   "region": "Europe",
    "status": "private",
-   "one_liner": "Open-source and hosted memory layer for AI agents",
+   "one_liner": "Open-source hybrid (keyword + vector) search engine",
    "tags": [
-    "open-source",
-    "cost"
+    "open-source"
    ],
-   "url": "https://mem0.ai",
-   "source": "https://mem0.ai",
-   "note": "Raised $24M Seed+Series A (Oct 2025)"
+   "url": "https://www.meilisearch.com",
+   "source": "https://www.meilisearch.com"
   },
   {
    "name": "MemOS (MemTensor)",
@@ -1885,24 +1905,6 @@
    "source": "https://www.merge.dev"
   },
   {
-   "name": "Meta Llama Guard & LlamaFirewall",
-   "kind": "company",
-   "subsegments": [
-    "n8.security"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Meta",
-   "one_liner": "Open safety classifiers and agent guardrail framework",
-   "tags": [
-    "open-source",
-    "security"
-   ],
-   "url": "https://www.llama.com/llama-protections/",
-   "source": "https://www.llama.com/llama-protections/"
-  },
-  {
    "name": "MetaGPT (DeepWisdom)",
    "kind": "company",
    "subsegments": [
@@ -1919,23 +1921,16 @@
    "source": "https://github.com/FoundationAgents/MetaGPT"
   },
   {
-   "name": "Microsoft Agent Framework (AutoGen + Semantic Kernel)",
+   "name": "Metronome",
    "kind": "company",
    "subsegments": [
-    "n8.framework"
+    "n8.billing"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "public",
-   "parent": "Microsoft",
-   "one_liner": "Open-source SDK unifying AutoGen and Semantic Kernel for building multi-agent apps in .NET/Python",
-   "tags": [
-    "developer",
-    "open-source"
-   ],
-   "url": "https://github.com/microsoft/agent-framework",
-   "source": "https://github.com/microsoft/agent-framework",
-   "note": "Announced Oct 2025 as successor to AutoGen and Semantic Kernel"
+   "one_liner": "Usage-based billing and metering for AI and infrastructure companies",
+   "url": "https://metronome.com",
+   "source": "https://metronome.com"
   },
   {
    "name": "Microsoft Entra Agent ID",
@@ -1962,8 +1957,11 @@
    "subsegments": [
     "n8.platform",
     "n8.lowcode",
-    "n8.payments",
-    "n8.orch"
+    "n8.orch",
+    "n7.platform",
+    "n7.route",
+    "n6.hub",
+    "n8.identity"
    ],
    "hq": "US",
    "region": "North America",
@@ -1986,82 +1984,15 @@
    "hq": "GB",
    "region": "Europe",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$30M Series A, Aug 2026 (Album VC, .406 Ventures, Lakestar)",
+   "round_source": "https://www.cbinsights.com/company/mindgard/financials",
    "one_liner": "Automated AI red teaming and security testing (Lancaster University spin-out)",
    "tags": [
     "security"
    ],
    "url": "https://mindgard.ai",
    "source": "https://mindgard.ai"
-  },
-  {
-   "name": "Mistral AI Studio",
-   "kind": "company",
-   "subsegments": [
-    "n8.platform"
-   ],
-   "hq": "FR",
-   "region": "Europe",
-   "status": "private",
-   "parent": "Mistral AI",
-   "one_liner": "Enterprise platform to build, observe and deploy agents on Mistral models",
-   "tags": [
-    "sovereign",
-    "enterprise"
-   ],
-   "url": "https://mistral.ai/products/ai-studio",
-   "source": "https://mistral.ai/products/ai-studio"
-  },
-  {
-   "name": "Mistral OCR / Document AI",
-   "kind": "company",
-   "subsegments": [
-    "n8.ingest"
-   ],
-   "hq": "FR",
-   "region": "Europe",
-   "status": "private",
-   "parent": "Mistral AI",
-   "one_liner": "Document understanding OCR model and API",
-   "tags": [
-    "sovereign"
-   ],
-   "url": "https://mistral.ai/news/mistral-ocr",
-   "source": "https://mistral.ai/news/mistral-ocr"
-  },
-  {
-   "name": "Modal (Sandboxes)",
-   "kind": "company",
-   "subsegments": [
-    "n8.sandbox"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Serverless compute with secure sandboxes for agent code execution",
-   "tags": [
-    "developer",
-    "performance"
-   ],
-   "url": "https://modal.com/products/sandboxes",
-   "source": "https://modal.com/products/sandboxes"
-  },
-  {
-   "name": "Model Context Protocol (Agentic AI Foundation)",
-   "kind": "company",
-   "subsegments": [
-    "n8.tools"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "non-profit",
-   "parent": "Linux Foundation",
-   "one_liner": "Open protocol connecting LLM apps to tools and data; governed under the Linux Foundation's Agentic AI Foundation",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://modelcontextprotocol.io",
-   "source": "https://modelcontextprotocol.io",
-   "note": "Anthropic donated MCP to the new Agentic AI Foundation (Dec 2025)"
   },
   {
    "name": "ModelOp",
@@ -2081,9 +2012,13 @@
   },
   {
    "name": "MongoDB Atlas Vector Search (Voyage AI)",
+   "aka": [
+    "Voyage AI"
+   ],
    "kind": "company",
    "subsegments": [
-    "n8.vector"
+    "n8.vector",
+    "n6.embed"
    ],
    "hq": "US",
    "region": "North America",
@@ -2113,22 +2048,37 @@
    "source": "https://www.monitaur.ai"
   },
   {
-   "name": "n8n",
+   "name": "Nango",
    "kind": "company",
    "subsegments": [
-    "n8.lowcode"
+    "n8.tools"
    ],
-   "hq": "DE",
-   "region": "Europe",
+   "hq": "US",
+   "region": "North America",
    "status": "private",
-   "one_liner": "Fair-code workflow automation platform with AI agent nodes, self-hostable",
+   "one_liner": "Open-source integrations and auth for agent tool calls across 500+ APIs",
    "tags": [
-    "developer",
-    "open-source"
+    "open-source",
+    "developer"
    ],
-   "url": "https://n8n.io",
-   "source": "https://n8n.io",
-   "note": "Raised $180M Series C at $2.5B (Oct 2025)"
+   "url": "https://www.nango.dev",
+   "source": "https://www.nango.dev"
+  },
+  {
+   "name": "Nanonets",
+   "kind": "company",
+   "subsegments": [
+    "n8.ingest"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Document extraction and OCR models (Nanonets-OCR) with Indian engineering",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://nanonets.com",
+   "source": "https://nanonets.com"
   },
   {
    "name": "Nekuda",
@@ -2147,6 +2097,42 @@
    "source": "https://nekuda.ai"
   },
   {
+   "name": "Neo4j",
+   "kind": "company",
+   "subsegments": [
+    "n8.vector",
+    "n8.memory"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Graph database used for GraphRAG and agent knowledge graphs",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://neo4j.com",
+   "source": "https://neo4j.com"
+  },
+  {
+   "name": "NeuralTrust",
+   "kind": "company",
+   "subsegments": [
+    "n8.security",
+    "n8.tools",
+    "n8.mcpgw"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "TrustGate AI/MCP gateway with inline security engine",
+   "tags": [
+    "security"
+   ],
+   "url": "https://neuraltrust.ai",
+   "source": "https://neuraltrust.ai/blog/best-mcp-gateways",
+   "note": "Raised $20M (per company)"
+  },
+  {
    "name": "Noma Security",
    "kind": "company",
    "subsegments": [
@@ -2156,6 +2142,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$100M Series B, Jul 2025",
+   "round_source": "https://drj.com/industry_news/noma-security-raises-100m-to-drive-adoption-of-ai-agent-security/",
    "one_liner": "AI and agent security posture, runtime protection and governance (Israeli-founded)",
    "tags": [
     "security"
@@ -2173,6 +2162,9 @@
    "hq": "GB",
    "region": "Europe",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$16M Series A, Nov 2024, Bain Capital Ventures",
+   "round_source": "https://www.cbinsights.com/company/northflank/financials",
    "one_liner": "Cloud platform offering microVM sandboxes and workloads for agents",
    "tags": [
     "developer"
@@ -2181,22 +2173,20 @@
    "source": "https://northflank.com"
   },
   {
-   "name": "NVIDIA NeMo Guardrails",
+   "name": "Notte",
    "kind": "company",
    "subsegments": [
-    "n8.security"
+    "n8.sandbox"
    ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "NVIDIA",
-   "one_liner": "Open-source toolkit for programmable LLM guardrails and safety NIMs",
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Browser infrastructure and web-agent framework",
    "tags": [
-    "open-source",
-    "security"
+    "developer"
    ],
-   "url": "https://github.com/NVIDIA/NeMo-Guardrails",
-   "source": "https://github.com/NVIDIA/NeMo-Guardrails"
+   "url": "https://www.notte.cc",
+   "source": "https://www.notte.cc"
   },
   {
    "name": "Oasis Security",
@@ -2207,6 +2197,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$120M Series B, Mar 2026",
+   "round_source": "https://www.securityweek.com/oasis-security-raises-120-million-for-agentic-access-management/",
    "one_liner": "Agentic access management for non-human identities and AI agents; Israeli R&D",
    "tags": [
     "security"
@@ -2216,10 +2209,27 @@
    "note": "Raised $120M Series B (Mar 2026)"
   },
   {
+   "name": "Obot AI",
+   "kind": "company",
+   "subsegments": [
+    "n8.tools",
+    "n8.orch",
+    "n8.mcpgw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Open-source enterprise MCP gateway and registry",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://obot.ai",
+   "source": "https://obot.ai/blog/update-on-the-mcp-registry-project-new-chatgpt-support-for-mcp-and-what-it-means-for-enterprise-ai/"
+  },
+  {
    "name": "Okta / Auth0 (Auth for GenAI, Cross App Access)",
    "kind": "company",
    "subsegments": [
-    "n8.payments",
     "n8.security",
     "n8.identity"
    ],
@@ -2271,6 +2281,23 @@
    "note": "AgentKit launched Oct 2025; acquired Promptfoo (Mar 2026)"
   },
   {
+   "name": "Openlayer",
+   "kind": "company",
+   "subsegments": [
+    "n8.eval",
+    "n8.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Testing, monitoring and governance for AI systems",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.openlayer.com",
+   "source": "https://www.openlayer.com"
+  },
+  {
    "name": "OpenSearch (Linux Foundation)",
    "kind": "company",
    "subsegments": [
@@ -2317,6 +2344,18 @@
    ],
    "url": "https://www.oracle.com/database/ai-vector-search/",
    "source": "https://www.oracle.com/database/ai-vector-search/"
+  },
+  {
+   "name": "Orb",
+   "kind": "company",
+   "subsegments": [
+    "n8.billing"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "one_liner": "Usage-based billing and pricing platform",
+   "url": "https://www.withorb.com",
+   "source": "https://www.withorb.com"
   },
   {
    "name": "Palantir AIP",
@@ -2390,6 +2429,23 @@
    "source": "https://www.useparagon.com"
   },
   {
+   "name": "Pathway",
+   "kind": "company",
+   "subsegments": [
+    "n8.ingest"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Live data processing framework keeping RAG indexes in sync",
+   "tags": [
+    "performance",
+    "open-source"
+   ],
+   "url": "https://pathway.com",
+   "source": "https://pathway.com"
+  },
+  {
    "name": "Payman",
    "kind": "company",
    "subsegments": [
@@ -2420,23 +2476,6 @@
    "note": "Agreed to support ACP in ChatGPT (Oct 2025)"
   },
   {
-   "name": "pgvector",
-   "kind": "company",
-   "subsegments": [
-    "n8.vector"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "one_liner": "Open-source vector similarity search extension for PostgreSQL",
-   "tags": [
-    "open-source",
-    "cost"
-   ],
-   "url": "https://github.com/pgvector/pgvector",
-   "source": "https://github.com/pgvector/pgvector"
-  },
-  {
    "name": "Pillar Security",
    "kind": "company",
    "subsegments": [
@@ -2445,6 +2484,9 @@
    "hq": "IL",
    "region": "Middle East",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$9M seed (2025)",
+   "round_source": "https://fintech.global/?p=197707",
    "one_liner": "AI security platform across the AI app lifecycle: discovery, red teaming, guardrails",
    "tags": [
     "security"
@@ -2463,6 +2505,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$100M Series B, Apr 2023 (a16z, ICONIQ Growth, Menlo, Wing)",
+   "round_source": "https://www.cbinsights.com/company/pinecone-1/financials",
    "one_liner": "Managed serverless vector database and retrieval/knowledge platform for AI apps",
    "tags": [
     "developer",
@@ -2471,6 +2516,24 @@
    "url": "https://www.pinecone.io",
    "source": "https://www.pinecone.io",
    "note": "CEO change Sep 2025 (Ash Ashutosh); Pinecone Nexus in public preview (2026)"
+  },
+  {
+   "name": "Pipecat (Daily)",
+   "kind": "company",
+   "subsegments": [
+    "n8.framework",
+    "n8.realtime"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Daily",
+   "one_liner": "Open-source framework for real-time voice and multimodal agents",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.pipecat.ai",
+   "source": "https://www.pipecat.ai"
   },
   {
    "name": "Pipedream",
@@ -2510,26 +2573,6 @@
    "note": "Acquired by SentinelOne (Aug 2025)"
   },
   {
-   "name": "Promptfoo",
-   "kind": "company",
-   "subsegments": [
-    "n8.security",
-    "n8.eval"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "acquired",
-   "parent": "OpenAI (2026)",
-   "one_liner": "Open-source LLM evals and red-teaming CLI plus enterprise AI security testing",
-   "tags": [
-    "security",
-    "open-source"
-   ],
-   "url": "https://www.promptfoo.dev",
-   "source": "https://siliconangle.com/2026/03/09/openai-acquire-promptfoo-expand-ai-application-testing-capabilities/",
-   "note": "OpenAI agreed to acquire (Mar 2026)"
-  },
-  {
    "name": "PromptLayer",
    "kind": "company",
    "subsegments": [
@@ -2547,39 +2590,86 @@
    "source": "https://www.promptlayer.com"
   },
   {
-   "name": "Pydantic AI",
+   "name": "Protecto",
    "kind": "company",
    "subsegments": [
-    "n8.framework",
-    "n8.eval"
+    "n8.security"
    ],
-   "hq": "GB",
-   "region": "Europe",
-   "status": "open-source",
-   "one_liner": "Type-safe Python agent framework; Pydantic Logfire provides observability",
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "PII masking and data-leak guardrails for LLM and agent pipelines",
    "tags": [
-    "developer",
-    "open-source"
+    "security"
    ],
-   "url": "https://ai.pydantic.dev",
-   "source": "https://ai.pydantic.dev"
+   "url": "https://www.protecto.ai",
+   "source": "https://www.protecto.ai"
   },
   {
-   "name": "Qdrant",
+   "name": "RAGFlow (InfiniFlow)",
    "kind": "company",
    "subsegments": [
+    "n8.ingest",
     "n8.vector"
    ],
-   "hq": "DE",
-   "region": "Europe",
-   "status": "private",
-   "one_liner": "Open-source Rust vector search engine with managed and hybrid cloud",
+   "hq": "CN",
+   "region": "China",
+   "status": "open-source",
+   "one_liner": "Open-source RAG engine with deep document parsing; Infinity vector DB",
    "tags": [
-    "open-source",
-    "performance"
+    "open-source"
    ],
-   "url": "https://qdrant.tech",
-   "source": "https://qdrant.tech"
+   "url": "https://ragflow.io",
+   "source": "https://ragflow.io"
+  },
+  {
+   "name": "Ragie",
+   "kind": "company",
+   "subsegments": [
+    "n8.ingest"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Managed RAG-as-a-service: ingestion, chunking and retrieval API",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.ragie.ai",
+   "source": "https://www.ragie.ai"
+  },
+  {
+   "name": "Raindrop",
+   "kind": "company",
+   "subsegments": [
+    "n8.eval"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Monitoring for AI product failures in production conversations",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.raindrop.ai",
+   "source": "https://www.raindrop.ai"
+  },
+  {
+   "name": "Rasa",
+   "kind": "company",
+   "subsegments": [
+    "n8.framework"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Conversational-agent framework (CALM) for enterprise assistants",
+   "tags": [
+    "enterprise",
+    "open-source"
+   ],
+   "url": "https://rasa.com",
+   "source": "https://rasa.com"
   },
   {
    "name": "Razorpay (Agentic Payments on UPI)",
@@ -2637,11 +2727,16 @@
    "name": "Relevance AI",
    "kind": "company",
    "subsegments": [
-    "n8.lowcode"
+    "n8.lowcode",
+    "n9.agentic",
+    "n9.gtm"
    ],
    "hq": "AU",
    "region": "Asia-Pacific",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "Series B extension, Jun 2025 (Meliora Ventures) following $24M Series B led by Bessemer",
+   "round_source": "https://www.cbinsights.com/company/relevance-ai/financials",
    "one_liner": "No-code platform to build AI agent workforces",
    "tags": [
     "enterprise"
@@ -2658,6 +2753,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$32.1M Series B, Oct 2024 (Thomvest, M12, Menlo)",
+   "round_source": "https://www.cbinsights.com/company/relyance-ai/financials",
    "one_liner": "Data and AI governance with data-flow mapping",
    "url": "https://www.relyance.ai",
    "source": "https://www.relyance.ai"
@@ -2677,6 +2775,42 @@
    ],
    "url": "https://repello.ai",
    "source": "https://repello.ai"
+  },
+  {
+   "name": "Restate",
+   "kind": "company",
+   "subsegments": [
+    "n8.orch",
+    "n8.durable"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Lightweight durable execution for agents and workflows",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://restate.dev",
+   "source": "https://presenc.ai/research/ai-agent-infrastructure-startups-2026"
+  },
+  {
+   "name": "Runlayer",
+   "kind": "company",
+   "subsegments": [
+    "n8.tools",
+    "n8.security",
+    "n8.mcpgw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Enterprise MCP gateway with identity-aware access to MCP servers",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.runlayer.com",
+   "source": "https://techcrunch.com/2025/11/17/mcp-ai-agent-security-startup-runlayer-launches-with-8-unicorns-11m-from-khoslas-keith-rabois-and-felicis",
+   "note": "$11M seed, Nov 2025"
   },
   {
    "name": "Runloop",
@@ -2835,12 +2969,47 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "Seed extension, Sep 2025, Blitzscaling Ventures",
+   "round_source": "https://www.cbinsights.com/company/skyfire/financials",
    "one_liner": "Payment and identity network (KYAPay) for AI agents",
    "tags": [
     "developer"
    ],
    "url": "https://skyfire.xyz",
    "source": "https://skyfire.xyz"
+  },
+  {
+   "name": "Skyflow",
+   "kind": "company",
+   "subsegments": [
+    "n8.security"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Data privacy vault with LLM privacy layer for sensitive data",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.skyflow.com",
+   "source": "https://www.skyflow.com"
+  },
+  {
+   "name": "Skyvern",
+   "kind": "company",
+   "subsegments": [
+    "n8.sandbox"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Open-source browser-automation agent using vision LLMs",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.skyvern.com",
+   "source": "https://www.skyvern.com"
   },
   {
    "name": "Smithery",
@@ -2859,29 +3028,20 @@
    "source": "https://smithery.ai"
   },
   {
-   "name": "smolagents (Hugging Face)",
-   "kind": "company",
-   "subsegments": [
-    "n8.framework"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Hugging Face",
-   "one_liner": "Minimal open-source library for code-writing agents",
-   "tags": [
-    "developer",
-    "open-source"
-   ],
-   "url": "https://huggingface.co/docs/smolagents",
-   "source": "https://huggingface.co/docs/smolagents"
-  },
-  {
    "name": "Snowflake (Cortex AI, Snowflake Intelligence)",
+   "aka": [
+    "Snowflake Cortex AI",
+    "Snowflake ArcticInference",
+    "Snowflake Arctic Embed"
+   ],
    "kind": "company",
    "subsegments": [
     "n8.platform",
-    "n9.analytics"
+    "n9.analytics",
+    "n7.platform",
+    "n7.opt",
+    "n6.embed",
+    "n6.open"
    ],
    "hq": "US",
    "region": "North America",
@@ -2919,13 +3079,32 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "private",
+   "status": "acquired",
+   "parent": "Asana (May 2026)",
    "one_liner": "Enterprise no-code AI agent builder",
    "tags": [
     "enterprise"
    ],
    "url": "https://www.stack-ai.com",
-   "source": "https://www.stack-ai.com"
+   "source": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
+   "note": "Acquired by Asana for $75M, May 2026"
+  },
+  {
+   "name": "Steel",
+   "kind": "company",
+   "subsegments": [
+    "n8.sandbox"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Open-source headless browser API for AI agents",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://steel.dev",
+   "source": "https://fly.io/customer-stories/steel-dev/"
   },
   {
    "name": "Straiker",
@@ -2942,24 +3121,6 @@
    ],
    "url": "https://www.straiker.ai",
    "source": "https://www.straiker.ai"
-  },
-  {
-   "name": "Strands Agents (AWS)",
-   "kind": "company",
-   "subsegments": [
-    "n8.framework"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Amazon",
-   "one_liner": "Model-driven open-source agent SDK from AWS",
-   "tags": [
-    "developer",
-    "open-source"
-   ],
-   "url": "https://strandsagents.com",
-   "source": "https://strandsagents.com"
   },
   {
    "name": "Stripe (Agentic Commerce Suite, Shared Payment Tokens)",
@@ -2982,7 +3143,6 @@
    "name": "Stytch",
    "kind": "company",
    "subsegments": [
-    "n8.payments",
     "n8.identity"
    ],
    "hq": "US",
@@ -2999,6 +3159,20 @@
    "note": "Twilio agreed to acquire Stytch (Nov 2025)"
   },
   {
+   "name": "Superlinked",
+   "kind": "company",
+   "subsegments": [
+    "n8.vector"
+   ],
+   "status": "private",
+   "one_liner": "Vector compute framework combining structured and unstructured signals for retrieval",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://superlinked.com",
+   "source": "https://superlinked.com"
+  },
+  {
    "name": "Supermemory",
    "kind": "company",
    "subsegments": [
@@ -3007,12 +3181,34 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$3M pre-seed, Susa Ventures",
+   "round_source": "https://blog.supermemory.ai/supermemory-raises-3-million-and-building-the-best-memory-engine-for-llms",
    "one_liner": "Memory and context API for AI apps",
    "tags": [
     "developer"
    ],
    "url": "https://supermemory.ai",
    "source": "https://supermemory.ai"
+  },
+  {
+   "name": "Temporal",
+   "kind": "company",
+   "subsegments": [
+    "n8.orch",
+    "n8.durable"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Durable-execution platform used to run long-lived agent workflows",
+   "tags": [
+    "enterprise",
+    "open-source"
+   ],
+   "url": "https://temporal.io",
+   "source": "https://presenc.ai/research/ai-agent-infrastructure-startups-2026",
+   "note": "$300M Series D at $5B, Feb 2026"
   },
   {
    "name": "Tencent Cloud VectorDB",
@@ -3089,6 +3285,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$4.6M seed, Jun 2025",
+   "round_source": "https://www.cbinsights.com/company/trustible/financials",
    "one_liner": "AI governance software for inventories, risk and regulatory compliance",
    "tags": [
     "enterprise"
@@ -3105,6 +3304,9 @@
    "hq": "CA",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "Seed, Dec 2025 (Thrive Capital, Lachy Groom)",
+   "round_source": "https://www.cbinsights.com/company/turbopuffer/financials",
    "one_liner": "Serverless vector and full-text search built on object storage",
    "tags": [
     "cost",
@@ -3129,6 +3331,22 @@
    ],
    "url": "https://www.uipath.com",
    "source": "https://www.uipath.com"
+  },
+  {
+   "name": "Unstract (Zipstack)",
+   "kind": "company",
+   "subsegments": [
+    "n8.ingest"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Open-source LLM-powered document extraction from unstructured files",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://unstract.com",
+   "source": "https://unstract.com"
   },
   {
    "name": "Unstructured",
@@ -3172,6 +3390,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$25M Series A, Jul 2024, FPV Ventures and Race Capital",
+   "round_source": "https://www.cbinsights.com/company/vectara/financials",
    "one_liner": "Managed RAG-as-a-service platform with retrieval, reranking and hallucination detection",
    "tags": [
     "enterprise"
@@ -3189,6 +3410,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$20M Series A, Jul 2025, Leaders Fund",
+   "round_source": "https://www.cbinsights.com/company/vellum/financials",
    "one_liner": "Platform for building, evaluating and deploying AI workflows and agents",
    "tags": [
     "developer"
@@ -3198,10 +3422,16 @@
   },
   {
    "name": "Vercel (AI SDK, Sandbox)",
+   "aka": [
+    "Vercel AI Gateway",
+    "v0 (Vercel)"
+   ],
    "kind": "company",
    "subsegments": [
     "n8.framework",
-    "n8.sandbox"
+    "n8.sandbox",
+    "n7.route",
+    "n9.coding"
    ],
    "hq": "US",
    "region": "North America",
@@ -3249,27 +3479,14 @@
    "note": "Trusted Agent Protocol released Oct 2025"
   },
   {
-   "name": "Weaviate",
-   "kind": "company",
-   "subsegments": [
-    "n8.vector"
-   ],
-   "hq": "NL",
-   "region": "Europe",
-   "status": "private",
-   "one_liner": "Open-source vector database with hybrid search and managed cloud",
-   "tags": [
-    "open-source",
-    "developer"
-   ],
-   "url": "https://weaviate.io",
-   "source": "https://weaviate.io"
-  },
-  {
    "name": "Weights & Biases (Weave)",
+   "aka": [
+    "W&B Weave"
+   ],
    "kind": "company",
    "subsegments": [
-    "n8.eval"
+    "n8.eval",
+    "n7.obs"
    ],
    "hq": "US",
    "region": "North America",
@@ -3293,6 +3510,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$58M Series B, Jan 2026",
+   "round_source": "https://softwarestrategiesblog.com/2026/03/28/agentic-ai-security-startups-funding-mna-rsac-2026/",
    "one_liner": "Visibility, policy and protection for enterprise AI use and agents",
    "tags": [
     "security"
@@ -3324,7 +3544,8 @@
    "kind": "company",
    "subsegments": [
     "n8.lowcode",
-    "n8.tools"
+    "n8.tools",
+    "n8.mcpgw"
    ],
    "hq": "US",
    "region": "North America",
@@ -3340,12 +3561,14 @@
    "name": "WorkOS",
    "kind": "company",
    "subsegments": [
-    "n8.payments",
     "n8.identity"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$100M Series C, Mar 2026, Meritech Capital and Sapphire Ventures",
+   "round_source": "https://www.cbinsights.com/company/workos/financials",
    "one_liner": "Enterprise auth APIs including MCP/agent authorization (AuthKit)",
    "tags": [
     "security",
@@ -3363,6 +3586,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$100M Series C at $1.5B valuation, Sep 2025",
+   "round_source": "https://about.you.com/resources/series-c",
    "one_liner": "Search and research APIs and enterprise AI platform, pivoted from consumer search",
    "tags": [
     "developer",
@@ -3398,6 +3624,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$125M Series C, Aug 2026",
+   "round_source": "https://www.securityweek.com/zenity-raises-125-million-in-series-c-funding/amp/",
    "one_liner": "Security and governance for AI agents across SaaS, low-code and endpoints (Israeli-founded)",
    "tags": [
     "security"
@@ -3433,6 +3662,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$60M Series B extension, Aug 2022, Prosperity7 Ventures",
+   "round_source": "https://www.cbinsights.com/company/zilliz/financials",
    "one_liner": "Creator of open-source Milvus vector DB and Zilliz Cloud; also maintains GPTCache semantic cache",
    "tags": [
     "open-source",
@@ -3443,9 +3675,13 @@
   },
   {
    "name": "A2A (Agent2Agent Protocol)",
+   "aka": [
+    "Agent2Agent Protocol (A2A)"
+   ],
    "kind": "standard",
    "subsegments": [
-    "n8.orch"
+    "n8.orch",
+    "n8.tools"
    ],
    "hq": "US",
    "region": "North America",
@@ -3467,27 +3703,26 @@
    "note": "Donated to Linux Foundation Jun 2025; IBM's Agent Communication Protocol (ACP) merged into A2A Aug 2025."
   },
   {
-   "name": "Activepieces (open)",
+   "name": "Activepieces",
    "kind": "open-source project",
    "subsegments": [
     "n8.lowcode"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
    "steward": "Activepieces",
    "licence": "MIT (Community Edition); ee/ under commercial licence",
    "access": "Docker self-host or cloud",
    "repo": "https://github.com/activepieces/activepieces",
    "stars": 25200,
    "archived": false,
-   "one_liner": "Open automation builder with AI agents and pieces exposed as MCP servers.",
+   "one_liner": "Open-source automation builder with AI agents and MCP servers",
    "tags": [
-    "open-source",
-    "automation"
+    "open-source"
    ],
-   "url": "https://github.com/activepieces/activepieces",
-   "source": "https://github.com/activepieces/activepieces"
+   "url": "https://www.activepieces.com",
+   "source": "https://www.activepieces.com"
   },
   {
    "name": "AG-UI",
@@ -3563,7 +3798,7 @@
    "source": "https://github.com/ethz-spylab/agentdojo"
   },
   {
-   "name": "Agentic Commerce Protocol (ACP) (open)",
+   "name": "Agentic Commerce Protocol (ACP)",
    "kind": "standard",
    "subsegments": [
     "n8.payments",
@@ -3571,21 +3806,21 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
+   "parent": "OpenAI & Stripe",
    "steward": "OpenAI and Stripe",
    "licence": "Apache-2.0",
-   "access": "Merchants implement spec; powers ChatGPT Instant Checkout",
+   "access": "Spec on GitHub; implement via Stripe or own checkout APIs",
    "repo": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
    "stars": 1500,
    "archived": false,
-   "one_liner": "Open spec for agent-mediated checkout between buyers, AI agents and merchants.",
+   "one_liner": "Open standard for agents to complete purchases with merchants, maintained by OpenAI and Stripe",
    "tags": [
-    "open-standard",
-    "payments",
-    "commerce"
+    "open-source"
    ],
    "url": "https://www.agenticcommerce.dev",
-   "source": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol"
+   "source": "https://www.agenticcommerce.dev",
+   "note": "Launched Sep 2025 with ChatGPT Instant Checkout"
   },
   {
    "name": "AGNTCY Agent Directory",
@@ -3639,9 +3874,13 @@
   },
   {
    "name": "AP2 (Agent Payments Protocol)",
+   "aka": [
+    "Agent Payments Protocol (AP2)"
+   ],
    "kind": "standard",
    "subsegments": [
-    "n8.payments"
+    "n8.payments",
+    "n9.commerce"
    ],
    "hq": "US",
    "region": "North America",
@@ -3713,124 +3952,108 @@
    "note": "In maintenance mode; Microsoft directs users to Microsoft Agent Framework."
   },
   {
-   "name": "Browser Use (open)",
+   "name": "Browser Use",
    "kind": "open-source project",
    "subsegments": [
     "n8.sandbox",
+    "n8.framework",
     "n9.agentic"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
-   "steward": "Browser Use",
+   "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$17M seed, Mar 2025, Felicis",
+   "round_source": "https://www.felicis.com/insight/investing-in-browser-use",
+   "steward": "Browser Use (YC)",
    "licence": "MIT",
-   "access": "pip install browser-use; drives Chromium via Playwright/CDP",
+   "access": "pip install browser-use; any LLM; optional hosted cloud",
    "repo": "https://github.com/browser-use/browser-use",
    "stars": 119200,
    "archived": false,
-   "one_liner": "Library letting AI agents navigate and act in websites.",
+   "one_liner": "Open-source library and cloud for LLM-driven browser automation",
    "tags": [
     "open-source",
-    "browser",
-    "agents"
+    "developer"
    ],
-   "url": "https://github.com/browser-use/browser-use",
-   "source": "https://github.com/browser-use/browser-use"
+   "url": "https://browser-use.com",
+   "source": "https://browser-use.com"
   },
   {
-   "name": "Chroma (open)",
+   "name": "Chroma",
    "kind": "open-source project",
    "subsegments": [
     "n8.vector"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
    "steward": "Chroma",
    "licence": "Apache-2.0",
    "access": "pip install chromadb; embedded or server",
    "repo": "https://github.com/chroma-core/chroma",
    "stars": 29100,
    "archived": false,
-   "one_liner": "Developer-first embedding database for RAG; embedded or client-server.",
+   "one_liner": "Open-source embedding/vector database and Chroma Cloud",
    "tags": [
     "open-source",
-    "retrieval"
+    "developer"
    ],
-   "url": "https://github.com/chroma-core/chroma",
-   "source": "https://github.com/chroma-core/chroma"
+   "url": "https://www.trychroma.com",
+   "source": "https://www.trychroma.com"
   },
   {
-   "name": "Cognee (open)",
+   "name": "Cognee",
    "kind": "open-source project",
    "subsegments": [
     "n8.memory"
    ],
    "hq": "DE",
    "region": "Europe",
-   "status": "open",
+   "status": "private",
+   "stage": "Series A",
+   "last_round": "$8.8M Series A, Feb 2026 (Pebblebed, 42CAP)",
+   "round_source": "https://www.cbinsights.com/company/cognee/financials",
    "steward": "Topoteretes (cognee)",
    "licence": "Apache-2.0",
    "access": "pip install cognee",
    "repo": "https://github.com/topoteretes/cognee",
    "stars": 31200,
    "archived": false,
-   "one_liner": "Memory engine building knowledge graphs plus vectors from data for agents.",
+   "one_liner": "Open-source semantic memory engine combining graphs and vectors for agents",
    "tags": [
-    "open-source",
-    "memory",
-    "knowledge-graph"
+    "open-source"
    ],
-   "url": "https://github.com/topoteretes/cognee",
-   "source": "https://github.com/topoteretes/cognee"
+   "url": "https://www.cognee.ai",
+   "source": "https://www.cognee.ai"
   },
   {
-   "name": "Crawl4AI (open)",
+   "name": "CrewAI",
    "kind": "open-source project",
    "subsegments": [
-    "n8.ingest",
-    "n8.search"
-   ],
-   "hq": "MY",
-   "region": "Asia-Pacific",
-   "status": "open",
-   "steward": "Unclecode (Kidocode)",
-   "licence": "Apache-2.0",
-   "access": "pip install crawl4ai; local async crawler",
-   "repo": "https://github.com/unclecode/crawl4ai",
-   "stars": 84600,
-   "archived": false,
-   "one_liner": "Open LLM-friendly web crawler and scraper producing Markdown and structured extractions.",
-   "tags": [
-    "open-source",
-    "web-data"
-   ],
-   "url": "https://github.com/unclecode/crawl4ai",
-   "source": "https://github.com/unclecode/crawl4ai"
-  },
-  {
-   "name": "CrewAI (open)",
-   "kind": "open-source project",
-   "subsegments": [
-    "n8.framework"
+    "n8.framework",
+    "n8.lowcode"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
+   "stage": "Series A",
+   "last_round": "$18M Series A, Oct 2024, Insight Partners",
+   "round_source": "https://www.cbinsights.com/company/crewai/financials",
    "steward": "CrewAI Inc.",
    "licence": "MIT",
    "access": "pip install crewai",
    "repo": "https://github.com/crewAIInc/crewAI",
    "stars": 60200,
    "archived": false,
-   "one_liner": "Python framework for role-based multi-agent crews and event-driven flows.",
+   "one_liner": "Open-source multi-agent orchestration framework plus enterprise agent management platform",
    "tags": [
+    "developer",
     "open-source",
-    "agents",
-    "developer"
+    "enterprise"
    ],
-   "url": "https://github.com/crewAIInc/crewAI",
-   "source": "https://github.com/crewAIInc/crewAI"
+   "url": "https://www.crewai.com",
+   "source": "https://www.crewai.com"
   },
   {
    "name": "CycloneDX ML-BOM (ECMA-424)",
@@ -3881,7 +4104,7 @@
    "source": "https://github.com/confident-ai/deepeval"
   },
   {
-   "name": "Dify (open)",
+   "name": "Dify",
    "kind": "open-source project",
    "subsegments": [
     "n8.lowcode",
@@ -3889,25 +4112,25 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
    "steward": "LangGenius",
    "licence": "Dify Open Source License (Apache-2.0 with additional conditions; source-available)",
    "access": "Docker Compose self-host or Dify Cloud",
    "repo": "https://github.com/langgenius/dify",
    "stars": 159700,
    "archived": false,
-   "one_liner": "Visual platform for building agentic workflows, RAG apps and chatbots.",
+   "one_liner": "Open-source LLM app and agentic workflow builder (LangGenius)",
    "tags": [
-    "open-source",
-    "automation",
-    "source-available"
+    "open-source"
    ],
-   "url": "https://github.com/langgenius/dify",
-   "source": "https://github.com/langgenius/dify",
-   "note": "Extra conditions restrict multi-tenant SaaS use and require keeping branding; not OSI-approved."
+   "url": "https://dify.ai",
+   "source": "https://dify.ai"
   },
   {
    "name": "Docling",
+   "aka": [
+    "Docling (IBM)"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n8.ingest"
@@ -3932,7 +4155,7 @@
    "note": "Donated by IBM to LF AI & Data Foundation in 2025."
   },
   {
-   "name": "DSPy (open)",
+   "name": "DSPy",
    "kind": "open-source project",
    "subsegments": [
     "n8.framework",
@@ -3940,45 +4163,46 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
    "steward": "Stanford NLP (community)",
    "licence": "MIT",
    "access": "pip install dspy",
    "repo": "https://github.com/stanfordnlp/dspy",
    "stars": 36700,
    "archived": false,
-   "one_liner": "Declarative framework that programs LMs and automatically optimises prompts and weights.",
+   "one_liner": "Stanford-originated framework for programming LMs with automatic prompt and weight optimisation",
    "tags": [
     "open-source",
-    "agents",
-    "developer"
+    "performance"
    ],
-   "url": "https://github.com/stanfordnlp/dspy",
-   "source": "https://github.com/stanfordnlp/dspy"
+   "url": "https://dspy.ai",
+   "source": "https://dspy.ai"
   },
   {
-   "name": "E2B (open)",
+   "name": "E2B",
    "kind": "open-source project",
    "subsegments": [
     "n8.sandbox"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
+   "stage": "Series A",
+   "last_round": "$21M Series A, Jul 2025, Insight Partners",
+   "round_source": "https://www.cbinsights.com/company/e2b/financials",
    "steward": "E2B (FoundryLabs)",
    "licence": "Apache-2.0",
    "access": "SDK to hosted sandboxes; infra repo self-hostable",
    "repo": "https://github.com/e2b-dev/E2B",
    "stars": 13400,
    "archived": false,
-   "one_liner": "Firecracker-based secure cloud sandboxes for running AI-generated code.",
+   "one_liner": "Open-source cloud sandboxes (Firecracker microVMs) for running AI-generated code",
    "tags": [
     "open-source",
-    "sandbox",
-    "agents"
+    "security"
    ],
-   "url": "https://github.com/e2b-dev/E2B",
-   "source": "https://github.com/e2b-dev/E2B"
+   "url": "https://e2b.dev",
+   "source": "https://e2b.dev"
   },
   {
    "name": "EU GPAI Code of Practice",
@@ -4051,55 +4275,28 @@
    "source": "https://github.com/firecracker-microvm/firecracker"
   },
   {
-   "name": "Firecrawl (open)",
-   "kind": "open-source project",
-   "subsegments": [
-    "n8.ingest",
-    "n8.search"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
-   "steward": "Firecrawl (Mendable)",
-   "licence": "AGPL-3.0 (SDKs and some UI MIT)",
-   "access": "Self-host with Docker or use hosted API",
-   "repo": "https://github.com/firecrawl/firecrawl",
-   "stars": 196100,
-   "archived": false,
-   "one_liner": "Crawls, scrapes and searches the web returning LLM-ready Markdown or structured JSON.",
-   "tags": [
-    "open-source",
-    "web-data",
-    "copyleft"
-   ],
-   "url": "https://github.com/firecrawl/firecrawl",
-   "source": "https://github.com/firecrawl/firecrawl",
-   "note": "Core is AGPL-3.0: network use triggers source-sharing obligations; hosted API is commercial."
-  },
-  {
-   "name": "Flowise (open)",
+   "name": "Flowise",
    "kind": "open-source project",
    "subsegments": [
     "n8.lowcode"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "acquired",
+   "parent": "Workday (2025)",
    "steward": "FlowiseAI (acquired by Workday 2025)",
    "licence": "Apache-2.0",
    "access": "Repo archived; fork or migrate",
    "repo": "https://github.com/FlowiseAI/Flowise",
    "stars": 55400,
    "archived": true,
-   "one_liner": "Drag-and-drop builder for LLM flows and agents; now end-of-life.",
+   "one_liner": "Open-source visual builder for LLM agents and flows",
    "tags": [
-    "open-source",
-    "automation",
-    "legacy"
+    "open-source"
    ],
-   "url": "https://github.com/FlowiseAI/Flowise",
-   "source": "https://flowiseai.com/sunset",
-   "note": "Wound down: code freeze 29 Jul 2026, repo archived 10 Aug 2026, EOL 31 Aug 2026; forks encouraged."
+   "url": "https://flowiseai.com",
+   "source": "https://flowiseai.com",
+   "note": "Acquired by Workday (Aug 2025)"
   },
   {
    "name": "Google Agent Development Kit (ADK)",
@@ -4196,27 +4393,29 @@
    "note": "Zep Community Edition deprecated in 2025; Graphiti remains the open-source piece."
   },
   {
-   "name": "Guardrails AI (open)",
+   "name": "Guardrails AI",
    "kind": "open-source project",
    "subsegments": [
     "n8.security"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "acquired",
+   "parent": "Harvey (Sep 2026)",
    "steward": "Guardrails AI",
    "licence": "Apache-2.0",
    "access": "pip install guardrails-ai; validators from Guardrails Hub",
    "repo": "https://github.com/guardrails-ai/guardrails",
    "stars": 7500,
    "archived": false,
-   "one_liner": "Framework of input/output validators for structured, safe LLM outputs.",
+   "one_liner": "Open-source framework and hub of validators for LLM output guardrails",
    "tags": [
     "open-source",
-    "guardrails"
+    "security"
    ],
-   "url": "https://github.com/guardrails-ai/guardrails",
-   "source": "https://github.com/guardrails-ai/guardrails"
+   "url": "https://www.guardrailsai.com",
+   "source": "https://www.harvey.ai/blog/guardrails-ai-joins-harvey",
+   "note": "Acquired by Harvey, Sep 2026"
   },
   {
    "name": "gVisor",
@@ -4316,27 +4515,30 @@
    "source": "https://github.com/kagent-dev/kagent"
   },
   {
-   "name": "LanceDB (open)",
+   "name": "LanceDB",
    "kind": "open-source project",
    "subsegments": [
     "n8.vector"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
+   "stage": "Series A",
+   "last_round": "$30M Series A, Jun 2025 (Theory Ventures, CRV, Databricks Ventures)",
+   "round_source": "https://www.cbinsights.com/company/lancedb/financials",
    "steward": "LanceDB",
    "licence": "Apache-2.0",
    "access": "pip install lancedb; embedded, files on object storage",
    "repo": "https://github.com/lancedb/lancedb",
    "stars": 11300,
    "archived": false,
-   "one_liner": "Embedded multimodal vector database on the Lance columnar format.",
+   "one_liner": "Open-source multimodal vector database built on the Lance columnar format",
    "tags": [
     "open-source",
-    "retrieval"
+    "developer"
    ],
-   "url": "https://github.com/lancedb/lancedb",
-   "source": "https://github.com/lancedb/lancedb"
+   "url": "https://lancedb.com",
+   "source": "https://lancedb.com"
   },
   {
    "name": "LangChain",
@@ -4363,52 +4565,27 @@
    "source": "https://github.com/langchain-ai/langchain"
   },
   {
-   "name": "Langflow (open)",
+   "name": "Langflow",
    "kind": "open-source project",
    "subsegments": [
     "n8.lowcode"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "acquired",
+   "parent": "IBM (via DataStax, 2025)",
    "steward": "Langflow (DataStax, acquired by IBM 2025)",
    "licence": "MIT",
    "access": "pip install langflow or Docker",
    "repo": "https://github.com/langflow-ai/langflow",
    "stars": 156100,
    "archived": false,
-   "one_liner": "Visual builder for agents and RAG flows, deployable as APIs or MCP servers.",
+   "one_liner": "Open-source visual builder for agents and RAG apps",
    "tags": [
-    "open-source",
-    "automation"
+    "open-source"
    ],
-   "url": "https://github.com/langflow-ai/langflow",
-   "source": "https://github.com/langflow-ai/langflow"
-  },
-  {
-   "name": "Langfuse (open)",
-   "kind": "open-source project",
-   "subsegments": [
-    "n8.eval"
-   ],
-   "hq": "DE",
-   "region": "Europe",
-   "status": "open",
-   "steward": "Langfuse (part of ClickHouse since Jan 2026)",
-   "licence": "MIT (except ee/ folders)",
-   "access": "Docker/Kubernetes self-host or Langfuse Cloud",
-   "repo": "https://github.com/langfuse/langfuse",
-   "stars": 36100,
-   "archived": false,
-   "one_liner": "Open LLM engineering platform: tracing, prompt management, evals, datasets.",
-   "tags": [
-    "open-source",
-    "evals",
-    "observability"
-   ],
-   "url": "https://github.com/langfuse/langfuse",
-   "source": "https://github.com/langfuse/langfuse",
-   "note": "Acquired by ClickHouse, Jan 2026."
+   "url": "https://www.langflow.org",
+   "source": "https://www.langflow.org"
   },
   {
    "name": "LangGraph",
@@ -4435,53 +4612,58 @@
    "source": "https://github.com/langchain-ai/langgraph"
   },
   {
-   "name": "Letta (open)",
+   "name": "Letta",
    "kind": "open-source project",
    "subsegments": [
-    "n8.memory"
+    "n8.memory",
+    "n8.framework"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$10M seed, Sep 2024, Felicis",
+   "round_source": "https://www.cbinsights.com/company/letta/financials",
    "steward": "Letta (ex-MemGPT, UC Berkeley)",
    "licence": "Apache-2.0",
    "access": "pip install letta or Docker server",
    "repo": "https://github.com/letta-ai/letta",
    "stars": 25300,
    "archived": false,
-   "one_liner": "Stateful agent platform with self-editing tiered memory, from the MemGPT research.",
+   "one_liner": "Stateful agent platform from the MemGPT creators with persistent memory",
    "tags": [
     "open-source",
-    "memory",
-    "agents"
+    "developer"
    ],
-   "url": "https://github.com/letta-ai/letta",
-   "source": "https://github.com/letta-ai/letta",
-   "note": "Active development shifting to letta-code."
+   "url": "https://www.letta.com",
+   "source": "https://www.letta.com"
   },
   {
-   "name": "LlamaIndex (open)",
+   "name": "LlamaIndex",
    "kind": "open-source project",
    "subsegments": [
-    "n8.framework"
+    "n8.framework",
+    "n8.ingest"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
+   "stage": "Series A",
+   "last_round": "$19M Series A, Mar 2025, Norwest Venture Partners",
+   "round_source": "https://www.llamaindex.ai/blog/announcing-our-series-a-and-llamacloud-general-availability",
    "steward": "LlamaIndex Inc.",
    "licence": "MIT",
    "access": "pip install llama-index",
    "repo": "https://github.com/run-llama/llama_index",
    "stars": 52700,
    "archived": false,
-   "one_liner": "Framework for RAG and document agents over private data, with workflows.",
+   "one_liner": "Open-source framework for agents over enterprise data; LlamaParse/LlamaCloud document parsing",
    "tags": [
-    "open-source",
-    "agents",
-    "developer"
+    "developer",
+    "open-source"
    ],
-   "url": "https://github.com/run-llama/llama_index",
-   "source": "https://github.com/run-llama/llama_index"
+   "url": "https://www.llamaindex.ai",
+   "source": "https://www.llamaindex.ai"
   },
   {
    "name": "LLM Guard",
@@ -4557,28 +4739,27 @@
    "source": "https://github.com/microsoft/markitdown"
   },
   {
-   "name": "Mastra (open)",
+   "name": "Mastra",
    "kind": "open-source project",
    "subsegments": [
     "n8.framework"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
    "steward": "Mastra (Kepler Software)",
    "licence": "Apache-2.0 core; ee/ directories under Mastra Enterprise License",
    "access": "npm create mastra",
    "repo": "https://github.com/mastra-ai/mastra",
    "stars": 27100,
    "archived": false,
-   "one_liner": "TypeScript agent framework with workflows, memory, RAG, evals and MCP.",
+   "one_liner": "Open-source TypeScript framework for agents, workflows, RAG and evals",
    "tags": [
-    "open-source",
-    "agents",
-    "developer"
+    "developer",
+    "open-source"
    ],
-   "url": "https://github.com/mastra-ai/mastra",
-   "source": "https://github.com/mastra-ai/mastra"
+   "url": "https://mastra.ai",
+   "source": "https://mastra.ai"
   },
   {
    "name": "MCP reference servers",
@@ -4605,6 +4786,9 @@
   },
   {
    "name": "MCP Registry",
+   "aka": [
+    "Official MCP Registry"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n8.tools",
@@ -4630,7 +4814,7 @@
    "source": "https://github.com/modelcontextprotocol/registry"
   },
   {
-   "name": "Mem0 (open)",
+   "name": "Mem0",
    "kind": "open-source project",
    "subsegments": [
     "n8.memory",
@@ -4638,24 +4822,30 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
+   "stage": "Series A",
+   "last_round": "$24M seed + Series A, Oct 2025",
+   "round_source": "https://mem0.ai",
    "steward": "Mem0 (Embedchain Inc.)",
    "licence": "Apache-2.0",
    "access": "pip install mem0ai; self-host or Mem0 platform",
    "repo": "https://github.com/mem0ai/mem0",
    "stars": 68100,
    "archived": false,
-   "one_liner": "Universal memory layer extracting and retrieving user/agent memories to cut context tokens.",
+   "one_liner": "Open-source and hosted memory layer for AI agents",
    "tags": [
     "open-source",
-    "memory",
-    "context"
+    "cost"
    ],
-   "url": "https://github.com/mem0ai/mem0",
-   "source": "https://github.com/mem0ai/mem0"
+   "url": "https://mem0.ai",
+   "source": "https://mem0.ai",
+   "note": "Raised $24M Seed+Series A (Oct 2025)"
   },
   {
    "name": "Microsoft Agent Framework",
+   "aka": [
+    "Microsoft Agent Framework (AutoGen + Semantic Kernel)"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n8.framework",
@@ -4776,6 +4966,9 @@
   },
   {
    "name": "Model Context Protocol (MCP)",
+   "aka": [
+    "Model Context Protocol (Agentic AI Foundation)"
+   ],
    "kind": "standard",
    "subsegments": [
     "n8.tools",
@@ -4801,56 +4994,37 @@
    "note": "Donated by Anthropic to Linux Foundation's Agentic AI Foundation, Dec 2025."
   },
   {
-   "name": "MTEB (Massive Text Embedding Benchmark)",
-   "kind": "open dataset",
-   "subsegments": [
-    "n8.vector"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
-   "steward": "MTEB community (Hugging Face-hosted)",
-   "licence": "Apache-2.0",
-   "access": "pip install mteb; leaderboard on Hugging Face",
-   "repo": "https://github.com/embeddings-benchmark/mteb",
-   "stars": 3400,
-   "archived": false,
-   "one_liner": "Benchmark and leaderboard for text-embedding models across retrieval, clustering and classification tasks.",
-   "tags": [
-    "open-source",
-    "benchmark",
-    "retrieval"
-   ],
-   "url": "https://huggingface.co/spaces/mteb/leaderboard",
-   "source": "https://github.com/embeddings-benchmark/mteb"
-  },
-  {
-   "name": "n8n (open)",
+   "name": "n8n",
    "kind": "open-source project",
    "subsegments": [
     "n8.lowcode"
    ],
    "hq": "DE",
    "region": "Europe",
-   "status": "open",
+   "status": "private",
+   "stage": "Series C+",
+   "last_round": "$180M Series C at $2.5B valuation, Oct 2025",
+   "round_source": "https://n8n.io",
    "steward": "n8n GmbH",
    "licence": "Sustainable Use License (fair-code, source-available) + n8n Enterprise License",
    "access": "Self-host via npm/Docker for internal use; n8n Cloud",
    "repo": "https://github.com/n8n-io/n8n",
    "stars": 208200,
    "archived": false,
-   "one_liner": "Workflow automation with AI agent nodes and 400+ integrations.",
+   "one_liner": "Fair-code workflow automation platform with AI agent nodes, self-hostable",
    "tags": [
-    "open-source",
-    "automation",
-    "source-available"
+    "developer",
+    "open-source"
    ],
-   "url": "https://github.com/n8n-io/n8n",
-   "source": "https://github.com/n8n-io/n8n",
-   "note": "NOT OSI open source: restricts commercial resale/hosting; enterprise features separately licensed."
+   "url": "https://n8n.io",
+   "source": "https://n8n.io",
+   "note": "Raised $180M Series C at $2.5B (Oct 2025)"
   },
   {
    "name": "NeMo Guardrails",
+   "aka": [
+    "NVIDIA NeMo Guardrails"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n8.security"
@@ -5023,10 +5197,16 @@
   },
   {
    "name": "OWASP Top 10 for LLM and GenAI Applications",
+   "aka": [
+    "OWASP Top 10 for LLM Applications"
+   ],
    "kind": "standard",
    "subsegments": [
     "n8.security",
-    "n8.gov"
+    "n8.gov",
+    "n10.change",
+    "n11.ent",
+    "n9.secops"
    ],
    "hq": "US",
    "region": "North America",
@@ -5044,47 +5224,24 @@
    "source": "https://genai.owasp.org/llm-top-10/"
   },
   {
-   "name": "Perplexica",
-   "kind": "open-source project",
-   "subsegments": [
-    "n8.search"
-   ],
-   "hq": "IN",
-   "region": "India",
-   "status": "open",
-   "steward": "ItzCrazyKns (community)",
-   "licence": "MIT",
-   "access": "Docker self-host with SearXNG and local or API models",
-   "repo": "https://github.com/ItzCrazyKns/Perplexica",
-   "stars": 37800,
-   "archived": false,
-   "one_liner": "Open answer engine that searches the web and cites sources.",
-   "tags": [
-    "open-source",
-    "search"
-   ],
-   "url": "https://github.com/ItzCrazyKns/Perplexica",
-   "source": "https://github.com/ItzCrazyKns/Perplexica"
-  },
-  {
-   "name": "pgvector (open)",
+   "name": "pgvector",
    "kind": "open-source project",
    "subsegments": [
     "n8.vector"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
    "steward": "pgvector community (Andrew Kane)",
    "licence": "PostgreSQL License",
    "access": "CREATE EXTENSION vector in Postgres; on all major clouds",
    "repo": "https://github.com/pgvector/pgvector",
    "stars": 23500,
    "archived": false,
-   "one_liner": "Postgres extension adding vector types and HNSW/IVFFlat indexes.",
+   "one_liner": "Open-source vector similarity search extension for PostgreSQL",
    "tags": [
     "open-source",
-    "retrieval"
+    "cost"
    ],
    "url": "https://github.com/pgvector/pgvector",
    "source": "https://github.com/pgvector/pgvector"
@@ -5138,7 +5295,38 @@
    "source": "https://github.com/microsoft/playwright-mcp"
   },
   {
+   "name": "Promptfoo",
+   "kind": "open-source project",
+   "subsegments": [
+    "n8.security",
+    "n8.eval",
+    "n6.safety",
+    "n10.change"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "OpenAI (2026)",
+   "steward": "OpenAI (acquired Promptfoo)",
+   "licence": "MIT",
+   "access": "npx promptfoo; CLI and CI integration",
+   "repo": "https://github.com/promptfoo/promptfoo",
+   "stars": 26500,
+   "archived": false,
+   "one_liner": "Open-source LLM evals and red-teaming CLI plus enterprise AI security testing",
+   "tags": [
+    "security",
+    "open-source"
+   ],
+   "url": "https://www.promptfoo.dev",
+   "source": "https://siliconangle.com/2026/03/09/openai-acquire-promptfoo-expand-ai-application-testing-capabilities/",
+   "note": "OpenAI agreed to acquire (Mar 2026)"
+  },
+  {
    "name": "PurpleLlama (Prompt Guard, LlamaFirewall, CodeShield, CyberSecEval)",
+   "aka": [
+    "Meta Llama Guard & LlamaFirewall"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n8.security"
@@ -5162,51 +5350,54 @@
    "source": "https://github.com/meta-llama/PurpleLlama"
   },
   {
-   "name": "Pydantic AI (open)",
+   "name": "Pydantic AI",
    "kind": "open-source project",
    "subsegments": [
-    "n8.framework"
+    "n8.framework",
+    "n8.eval"
    ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open-source",
    "steward": "Pydantic Services Inc.",
    "licence": "MIT",
    "access": "pip install pydantic-ai",
    "repo": "https://github.com/pydantic/pydantic-ai",
    "stars": 20900,
    "archived": false,
-   "one_liner": "Type-safe Python agent framework from the Pydantic team, model-agnostic, with durable execution.",
+   "one_liner": "Type-safe Python agent framework; Pydantic Logfire provides observability",
    "tags": [
-    "open-source",
-    "agents",
-    "developer"
+    "developer",
+    "open-source"
    ],
-   "url": "https://github.com/pydantic/pydantic-ai",
-   "source": "https://github.com/pydantic/pydantic-ai"
+   "url": "https://ai.pydantic.dev",
+   "source": "https://ai.pydantic.dev"
   },
   {
-   "name": "Qdrant (open)",
+   "name": "Qdrant",
    "kind": "open-source project",
    "subsegments": [
     "n8.vector"
    ],
    "hq": "DE",
    "region": "Europe",
-   "status": "open",
+   "status": "private",
+   "stage": "Series B",
+   "last_round": "$50M Series B, Mar 2026, led by Advance Venture Partners",
+   "round_source": "https://techtarget.com/searchdatamanagement/news/366640132/Qdrant-raises-50M-in-funding-to-fuel-vector-database-growth",
    "steward": "Qdrant",
    "licence": "Apache-2.0",
    "access": "Docker run or Qdrant Cloud free tier",
    "repo": "https://github.com/qdrant/qdrant",
    "stars": 34900,
    "archived": false,
-   "one_liner": "Rust vector search engine with filtering, hybrid search and quantisation.",
+   "one_liner": "Open-source Rust vector search engine with managed and hybrid cloud",
    "tags": [
     "open-source",
-    "retrieval"
+    "performance"
    ],
-   "url": "https://github.com/qdrant/qdrant",
-   "source": "https://github.com/qdrant/qdrant"
+   "url": "https://qdrant.tech",
+   "source": "https://qdrant.tech"
   },
   {
    "name": "Qwen3Guard",
@@ -5238,21 +5429,20 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
    "steward": "Vibrant Labs (ex-Exploding Gradients)",
    "licence": "Apache-2.0",
    "access": "pip install ragas",
    "repo": "https://github.com/vibrantlabsai/ragas",
    "stars": 16200,
    "archived": false,
-   "one_liner": "Evaluation toolkit for RAG and agent pipelines with LLM-judged metrics.",
+   "one_liner": "Open-source LLM/RAG evaluation library and platform",
    "tags": [
     "open-source",
-    "evals",
-    "observability"
+    "developer"
    ],
-   "url": "https://github.com/vibrantlabsai/ragas",
-   "source": "https://github.com/vibrantlabsai/ragas"
+   "url": "https://www.ragas.io",
+   "source": "https://www.ycombinator.com/companies/ragas"
   },
   {
    "name": "SearXNG",
@@ -5280,6 +5470,9 @@
   },
   {
    "name": "smolagents",
+   "aka": [
+    "smolagents (Hugging Face)"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n8.framework"
@@ -5328,6 +5521,9 @@
   },
   {
    "name": "Strands Agents",
+   "aka": [
+    "Strands Agents (AWS)"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n8.framework"
@@ -5471,27 +5667,30 @@
    "source": "https://github.com/vespa-engine/vespa"
   },
   {
-   "name": "Weaviate (open)",
+   "name": "Weaviate",
    "kind": "open-source project",
    "subsegments": [
     "n8.vector"
    ],
    "hq": "NL",
    "region": "Europe",
-   "status": "open",
+   "status": "private",
+   "stage": "Series B",
+   "last_round": "$50M Series B, Apr 2023, Index Ventures",
+   "round_source": "https://www.verdict.co.uk/weaviate-garners-50m-funding/",
    "steward": "Weaviate",
    "licence": "BSD-3-Clause",
    "access": "Docker/Kubernetes or Weaviate Cloud",
    "repo": "https://github.com/weaviate/weaviate",
    "stars": 16800,
    "archived": false,
-   "one_liner": "Vector database with hybrid search, built-in vectorisers and multi-tenancy.",
+   "one_liner": "Open-source vector database with hybrid search and managed cloud",
    "tags": [
     "open-source",
-    "retrieval"
+    "developer"
    ],
-   "url": "https://github.com/weaviate/weaviate",
-   "source": "https://github.com/weaviate/weaviate"
+   "url": "https://weaviate.io",
+   "source": "https://weaviate.io"
   },
   {
    "name": "Web Bot Auth (IETF)",
@@ -5517,6 +5716,9 @@
   },
   {
    "name": "x402",
+   "aka": [
+    "Coinbase x402"
+   ],
    "kind": "standard",
    "subsegments": [
     "n8.payments"

@@ -100,6 +100,22 @@
    "source": "https://www.nextplatform.com/connect/2026/08/10/as-ai-networks-scale-in-three-directions-so-does-arista/5285500"
   },
   {
+   "name": "Arrcus",
+   "kind": "company",
+   "subsegments": [
+    "n3.network"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "ArcOS network operating system for AI and multi-cloud networking on merchant silicon",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://arrcus.com",
+   "source": "https://arrcus.com"
+  },
+  {
    "name": "ASUS",
    "kind": "company",
    "subsegments": [
@@ -111,6 +127,24 @@
    "one_liner": "AI servers and rack systems",
    "url": "https://servers.asus.com",
    "source": "https://servers.asus.com"
+  },
+  {
+   "name": "Aviz Networks",
+   "kind": "company",
+   "subsegments": [
+    "n3.network",
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "SONiC-based open networking stack, support and fabric operations tooling for AI data centres",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://aviznetworks.com",
+   "source": "https://aviznetworks.com"
   },
   {
    "name": "Ayar Labs",
@@ -129,25 +163,6 @@
    ],
    "url": "https://ayarlabs.com",
    "source": "https://ayarlabs.com"
-  },
-  {
-   "name": "Broadcom (optics)",
-   "kind": "company",
-   "subsegments": [
-    "n3.optics",
-    "n3.opt",
-    "n2.photonic"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Broadcom",
-   "one_liner": "Optical DSPs, VCSEL/EML lasers and co-packaged optics switches",
-   "tags": [
-    "performance"
-   ],
-   "url": "https://www.broadcom.com",
-   "source": "https://www.broadcom.com"
   },
   {
    "name": "Canonical MAAS",
@@ -181,24 +196,6 @@
    "source": "https://www.celestica.com"
   },
   {
-   "name": "Ceph",
-   "kind": "company",
-   "subsegments": [
-    "n3.storage"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Ceph Foundation (Linux Foundation)",
-   "one_liner": "Open-source unified object/block/file storage",
-   "tags": [
-    "open-source",
-    "cost"
-   ],
-   "url": "https://ceph.io",
-   "source": "https://ceph.io"
-  },
-  {
    "name": "Ciena",
    "kind": "company",
    "subsegments": [
@@ -214,10 +211,18 @@
   },
   {
    "name": "Cisco",
+   "aka": [
+    "Cisco Silicon One",
+    "Cisco Secure AI Factory",
+    "Cisco AI Defense (Robust Intelligence)"
+   ],
    "kind": "company",
    "subsegments": [
     "n3.network",
-    "n3.optics"
+    "n3.optics",
+    "n2.net",
+    "n4.onprem",
+    "n8.security"
    ],
    "hq": "US",
    "region": "North America",
@@ -227,7 +232,8 @@
     "enterprise"
    ],
    "url": "https://www.cisco.com",
-   "source": "https://www.cisco.com"
+   "source": "https://www.cisco.com",
+   "note": "Built on Robust Intelligence (acquired 2024); Galileo deal announced Apr 2026"
   },
   {
    "name": "Cloudian",
@@ -259,12 +265,15 @@
    "name": "Compute Exchange",
    "kind": "company",
    "subsegments": [
-    "n3.refurb"
+    "n3.refurb",
+    "n4.market",
+    "n4.price"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
    "one_liner": "Marketplace for reserved GPU capacity plus used and refurbished GPUs",
+   "tags": [],
    "url": "https://siliconangle.com/2026/07/17/compute-exchange-opens-secondary-market-used-nvidia-h100-a100-gpus/",
    "source": "https://siliconangle.com/2026/07/17/compute-exchange-opens-secondary-market-used-nvidia-h100-a100-gpus/",
    "note": "Jul 2026: launched used/refurbished H100/A100 marketplace"
@@ -301,10 +310,14 @@
   },
   {
    "name": "Credo Technology",
+   "aka": [
+    "Credo"
+   ],
    "kind": "company",
    "subsegments": [
     "n3.optics",
-    "n3.scaleup"
+    "n3.scaleup",
+    "n2.net"
    ],
    "hq": "US",
    "region": "North America",
@@ -334,10 +347,14 @@
   },
   {
    "name": "Dell Technologies",
+   "aka": [
+    "Dell AI Factory"
+   ],
    "kind": "company",
    "subsegments": [
     "n3.servers",
-    "n3.storage"
+    "n3.storage",
+    "n4.onprem"
    ],
    "hq": "US",
    "region": "North America",
@@ -469,10 +486,14 @@
   },
   {
    "name": "Fujitsu",
+   "aka": [
+    "Fujitsu (MONAKA)"
+   ],
    "kind": "company",
    "subsegments": [
     "n3.servers",
-    "n10.si"
+    "n10.si",
+    "n2.cpu"
    ],
    "hq": "JP",
    "region": "Asia-Pacific",
@@ -497,6 +518,25 @@
    "one_liner": "GPU servers and rack-scale systems",
    "url": "https://www.gigabyte.com",
    "source": "https://www.gigabyte.com"
+  },
+  {
+   "name": "GigaIO",
+   "kind": "company",
+   "subsegments": [
+    "n3.scaleup",
+    "n3.opt",
+    "n3.memory",
+    "n4.virt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "FabreX PCIe/CXL memory fabric and SuperNODE systems that attach many GPUs to one server",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://gigaio.com",
+   "source": "https://gigaio.com"
   },
   {
    "name": "H3C",
@@ -526,6 +566,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$100M Series B (2025)",
+   "round_source": "https://nand-research.com/research-note-hammerspace-100m-series-b-to-accelerate-ai-infrastructure-growth/2/",
    "one_liner": "Global data orchestration and Tier 0 GPU-local storage",
    "tags": [
     "performance"
@@ -554,11 +597,18 @@
   },
   {
    "name": "Hewlett Packard Enterprise",
+   "aka": [
+    "HPE Private Cloud AI",
+    "HPE Machine Learning Development (Determined)"
+   ],
    "kind": "company",
    "subsegments": [
     "n3.servers",
     "n3.network",
-    "n3.storage"
+    "n3.storage",
+    "n4.onprem",
+    "n7.private",
+    "n4.orch"
    ],
    "hq": "US",
    "region": "North America",
@@ -604,13 +654,22 @@
   },
   {
    "name": "Huawei",
+   "aka": [
+    "Huawei Ascend",
+    "Huawei Cloud",
+    "Huawei Cloud ModelArts"
+   ],
    "kind": "company",
    "subsegments": [
     "n3.servers",
     "n3.network",
     "n3.storage",
     "n3.optics",
-    "n3.scaleup"
+    "n3.scaleup",
+    "n2.china",
+    "n2.sw",
+    "n4.hyper",
+    "n7.platform"
    ],
    "hq": "CN",
    "region": "China",
@@ -654,9 +713,13 @@
   },
   {
    "name": "Inspur Information",
+   "aka": [
+    "Inspur"
+   ],
    "kind": "company",
    "subsegments": [
-    "n3.servers"
+    "n3.servers",
+    "n4.onprem"
    ],
    "hq": "CN",
    "region": "China",
@@ -741,9 +804,13 @@
   },
   {
    "name": "Lenovo ISG",
+   "aka": [
+    "Lenovo Hybrid AI"
+   ],
    "kind": "company",
    "subsegments": [
-    "n3.servers"
+    "n3.servers",
+    "n4.onprem"
    ],
    "hq": "CN",
    "region": "China",
@@ -803,26 +870,6 @@
    "note": "MGX 800 VDC power rack (GTC 2026)"
   },
   {
-   "name": "LMCache",
-   "kind": "company",
-   "subsegments": [
-    "n3.opt",
-    "n7.opt"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "one_liner": "Open-source KV-cache layer for vLLM sharing caches across GPU, CPU and storage",
-   "tags": [
-    "open-source",
-    "cost",
-    "performance"
-   ],
-   "url": "https://lmcache.ai",
-   "source": "https://lmcache.ai",
-   "note": "Originated at University of Chicago; maintained with Tensormesh"
-  },
-  {
    "name": "Lumentum",
    "kind": "company",
    "subsegments": [
@@ -834,23 +881,6 @@
    "one_liner": "EML/CW lasers, transceivers and optical circuit switches",
    "url": "https://www.lumentum.com",
    "source": "https://www.lumentum.com"
-  },
-  {
-   "name": "Marvell (optical DSPs)",
-   "kind": "company",
-   "subsegments": [
-    "n3.optics"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Marvell",
-   "one_liner": "PAM4 DSPs powering 800G/1.6T optics and AECs",
-   "tags": [
-    "performance"
-   ],
-   "url": "https://www.marvell.com",
-   "source": "https://www.marvell.com"
   },
   {
    "name": "MinIO",
@@ -872,7 +902,8 @@
    "name": "Mirantis",
    "kind": "company",
    "subsegments": [
-    "n3.mgmt"
+    "n3.mgmt",
+    "n4.stack"
    ],
    "hq": "US",
    "region": "North America",
@@ -932,6 +963,42 @@
    "source": "https://netwebindia.com"
   },
   {
+   "name": "Nexthop AI",
+   "kind": "company",
+   "subsegments": [
+    "n3.network"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Custom AI data-centre switches and SONiC-based software built for hyperscalers",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://nexthop.ai",
+   "source": "https://siliconangle.com/2026/03/10/ai-networking-startup-nexthop-ai-raises-500m-launches-new-switches/",
+   "note": "$500M Series B at $4.2B valuation (Mar 2026)"
+  },
+  {
+   "name": "nEye",
+   "kind": "company",
+   "subsegments": [
+    "n3.network",
+    "n2.photonic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "MEMS-based optical circuit switches for reconfigurable AI cluster networks",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://www.neye.ai",
+   "source": "https://www.businesswire.com/news/home/20260414407496/en/nEye.ai-Secures-$80-Million-Series-C-to-Scale-Optical-Circuit-Switching-for-AI-Infrastructure",
+   "note": "$80M Series C (Apr 2026)"
+  },
+  {
    "name": "Nokia",
    "kind": "company",
    "subsegments": [
@@ -947,40 +1014,21 @@
    "note": "Completed Infinera acquisition (Feb 2025)"
   },
   {
-   "name": "NVIDIA (DGX / MGX / NVL racks)",
+   "name": "Oriole Networks",
    "kind": "company",
    "subsegments": [
-    "n3.servers",
-    "n3.network"
+    "n3.network",
+    "n2.photonic"
    ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "one_liner": "Reference rack-scale systems (GB200/GB300 NVL72) plus InfiniBand, Spectrum-X Ethernet and NVLink switches",
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Photonic networking fabric that connects GPUs optically end to end for AI clusters",
    "tags": [
     "performance"
    ],
-   "url": "https://www.nvidia.com",
-   "source": "https://www.nvidia.com"
-  },
-  {
-   "name": "NVIDIA Dynamo / ICMS",
-   "kind": "company",
-   "subsegments": [
-    "n3.opt"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "NVIDIA",
-   "one_liner": "Open-source inference framework with KV-cache tiering to NVMe (Inference Context Memory Storage)",
-   "tags": [
-    "open-source",
-    "cost"
-   ],
-   "url": "https://developer.nvidia.com/dynamo",
-   "source": "https://www.blocksandfiles.com/ai-ml/2026/01/06/nvidia-pushes-ai-inference-context-out-to-nvme-ssds/4090444",
-   "note": "ICMS platform announced Jan 2026 (BlueField-4 based)"
+   "url": "https://www.oriolenetworks.com",
+   "source": "https://www.cbinsights.com/company/oriole-networks/financials"
   },
   {
    "name": "Penguin Solutions",
@@ -1010,14 +1058,32 @@
    ],
    "hq": "IL",
    "region": "Middle East",
-   "status": "private",
+   "status": "acquired",
+   "parent": "Astera Labs (Feb 2026)",
    "one_liner": "XDP LightningAI KV-cache offload accelerator for LLM inference",
    "tags": [
     "cost",
     "performance"
    ],
    "url": "https://pliops.com",
-   "source": "https://www.blocksandfiles.com/ai-ml/2026/03/30/nvidia-and-its-partners-kv-cache-extenders/5209284"
+   "source": "https://www.storagenewsletter.com/2026/02/23/astera-labs-acquired-pliops/",
+   "note": "Acquired by Astera Labs, Feb 2026"
+  },
+  {
+   "name": "Point2 Technology",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "e-Tube RF-over-plastic waveguide cables as a low-power alternative to copper and optics in racks",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.point2tech.com",
+   "source": "https://www.point2tech.com"
   },
   {
    "name": "Prysmian",
@@ -1245,6 +1311,24 @@
    "source": "https://ualinkconsortium.org"
   },
   {
+   "name": "UnifabriX",
+   "kind": "company",
+   "subsegments": [
+    "n3.opt",
+    "n3.memory"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "CXL-based memory pooling appliances that add shared memory to AI and HPC servers",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://www.unifabrix.com",
+   "source": "https://blocksandfiles.com/2025/01/15/unifabrix-taking-cxl-external-memory-mainstream/"
+  },
+  {
    "name": "VAST Data",
    "kind": "company",
    "subsegments": [
@@ -1277,10 +1361,14 @@
   },
   {
    "name": "WEKA",
+   "aka": [
+    "WEKA (Augmented Memory Grid)"
+   ],
    "kind": "company",
    "subsegments": [
     "n3.storage",
-    "n3.opt"
+    "n3.opt",
+    "n7.opt"
    ],
    "hq": "US",
    "region": "North America",
@@ -1290,7 +1378,8 @@
     "performance"
    ],
    "url": "https://www.weka.io",
-   "source": "https://www.weka.io/blog/ai-ml/nvidia-signals-an-infrastructure-shift-for-inference-systems-at-scale/"
+   "source": "https://www.weka.io/blog/ai-ml/nvidia-signals-an-infrastructure-shift-for-inference-systems-at-scale/",
+   "note": "Integrated with NVIDIA BlueField-4 STX context memory (Mar 2026)"
   },
   {
    "name": "Wistron",
@@ -1389,27 +1478,28 @@
    "source": "https://github.com/deepseek-ai/3FS"
   },
   {
-   "name": "Ceph (open)",
+   "name": "Ceph",
    "kind": "open-source project",
    "subsegments": [
     "n3.storage"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
+   "parent": "Ceph Foundation (Linux Foundation)",
    "steward": "Ceph Foundation (Linux Foundation)",
    "licence": "LGPL-2.1 / LGPL-3.0",
    "access": "Deploy via cephadm or Rook on Kubernetes",
    "repo": "https://github.com/ceph/ceph",
    "stars": 17100,
    "archived": false,
-   "one_liner": "Unified distributed object, block and file storage",
+   "one_liner": "Open-source unified object/block/file storage",
    "tags": [
     "open-source",
     "cost"
    ],
-   "url": "https://github.com/ceph/ceph",
-   "source": "https://github.com/ceph/ceph"
+   "url": "https://ceph.io",
+   "source": "https://ceph.io"
   },
   {
    "name": "DAOS",
@@ -1479,32 +1569,32 @@
    "source": "https://github.com/juicedata/juicefs"
   },
   {
-   "name": "LMCache (open)",
+   "name": "LMCache",
    "kind": "open-source project",
    "subsegments": [
     "n3.opt",
-    "n3.storage",
     "n7.opt",
+    "n3.storage",
     "n7.compress"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
-   "steward": "PyTorch Foundation (Tensormesh-backed)",
+   "status": "open-source",
+   "steward": "LMCache project (PyTorch Foundation; TensorMesh)",
    "licence": "Apache-2.0",
-   "access": "pip install lmcache; plug into vLLM/SGLang",
+   "access": "pip install lmcache; plug into vLLM or SGLang",
    "repo": "https://github.com/LMCache/LMCache",
    "stars": 12200,
    "archived": false,
-   "one_liner": "KV-cache layer offloading and sharing LLM cache across GPU, CPU, disk and remote storage",
+   "one_liner": "Open-source KV-cache layer for vLLM sharing caches across GPU, CPU and storage",
    "tags": [
     "open-source",
-    "performance",
-    "cost"
+    "cost",
+    "performance"
    ],
-   "url": "https://github.com/LMCache/LMCache",
-   "source": "https://github.com/LMCache/LMCache",
-   "note": "Joined PyTorch Foundation Oct 2025"
+   "url": "https://lmcache.ai",
+   "source": "https://lmcache.ai",
+   "note": "Originated at University of Chicago; maintained with Tensormesh"
   },
   {
    "name": "Lustre",
@@ -1576,31 +1666,29 @@
    "note": "Repo archived 25 Apr 2026 and marked 'no longer maintained'; community binaries ended; users pointed to AIStor Free/Enterprise"
   },
   {
-   "name": "Mooncake (open)",
-   "kind": "open-source project",
+   "name": "MLPerf Inference / Training",
+   "kind": "open dataset",
    "subsegments": [
-    "n3.opt",
-    "n3.storage",
-    "n7.opt"
+    "n3.validate",
+    "n7.bench"
    ],
-   "hq": "CN",
-   "region": "China",
+   "hq": "US",
+   "region": "North America",
    "status": "open",
-   "steward": "kvcache-ai (Moonshot AI & Tsinghua University)",
+   "steward": "MLCommons",
    "licence": "Apache-2.0",
-   "access": "pip install; transfer engine for vLLM/SGLang",
-   "repo": "https://github.com/kvcache-ai/Mooncake",
-   "stars": 6500,
+   "access": "Run reference implementations; results public on mlcommons.org",
+   "repo": "https://github.com/mlcommons/inference",
+   "stars": 1600,
    "archived": false,
-   "one_liner": "KV-cache-centric disaggregated serving architecture and transfer engine behind Kimi",
+   "one_liner": "Industry-standard peer-reviewed benchmarks comparing AI chips and systems",
    "tags": [
+    "open-data",
     "open-source",
-    "performance",
-    "cost"
+    "performance"
    ],
-   "url": "https://github.com/kvcache-ai/Mooncake",
-   "source": "https://github.com/kvcache-ai/Mooncake",
-   "note": "Joined PyTorch Ecosystem Feb 2026"
+   "url": "https://mlcommons.org",
+   "source": "https://github.com/mlcommons/inference"
   },
   {
    "name": "NIXL",

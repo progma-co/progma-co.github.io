@@ -3,14 +3,14 @@
  "notes": {
   "n10.si": "Crowded and consolidating: Accenture leads; Indian majors (TCS reported ~$1.8B annualised AI revenue in FY26) are buying AI and engineering firms (Indian IT spent ~$4.5B on acquisitions in H1 2026).",
   "n10.consult": "Strategy firms are shifting to outcome-linked fees and AI-agent leverage, and are co-investing in lab-backed services firms (Bain, McKinsey and Capgemini invested in OpenAI's Deployment Company).",
-  "n10.native": "Fastest-moving segment in 2026: labs went downstream (OpenAI Deployment Company, $4B+, May 2026; Ode with Anthropic, Jul 2026) and SIs bought boutiques (Accenture-Faculty, Jan 2026).",
+  "n10.native": "A new wave of venture-backed AI-native services firms (Hang Ten, Tessera, Gruve, Brain Co., Aivar) is targeting the IT-services pool alongside lab deployment arms.",
   "n10.bpo": "Incumbent CX/BPM outsourcers are repricing around AI agents while AI-native outsourcers (Crescendo) and SI-BPO combinations (Capgemini-WNS, $3.3B, Oct 2025) compete on outcome pricing.",
   "n10.skill": "Platform consolidation (Coursera-Udemy, May 2026) alongside free vendor academies from labs and hyperscalers that double as ecosystem lock-in.",
   "n10.change": "ISO/IEC 42001 certification is becoming the baseline (BSI, Schellman accredited), and AI-specific insurance (AIUC, Armilla, Munich Re) is emerging as a new assurance layer.",
   "n10.lab": "Created in 2026: OpenAI Deployment Company (OpenAI-controlled, >$4B, May 2026) and Ode with Anthropic (Anthropic minority, launched Jul 2026), both growing by acquiring boutiques (Tomoro, Fractional AI, Casper Studios).",
   "n10.org": "Led by HR consultancies (Mercer, Korn Ferry, WTW, Aon) and the strategy firms; the work is role and work redesign rather than technology build.",
   "n10.managed": "SIs and BPOs are repackaging application and process outsourcing as ongoing agent operations, often priced on outcomes.",
-  "n10.insure": "Early market: specialist MGAs (Armilla, Testudo, AIUC) on Lloyd's or reinsurer capacity, with Munich Re's aiSure the longest-running cover.",
+  "n10.insure": "Large carriers are adding AI exclusions while specialists (Corgi, Relm, Armilla, AIUC) write affirmative AI-liability cover.",
   "n10.partner": "Lab and hyperscaler partner programmes now steer services demand; Anthropic committed $100M to its Claude Partner Network in 2026."
  },
  "entries": [
@@ -18,7 +18,8 @@
    "name": "4Paradigm",
    "kind": "company",
    "subsegments": [
-    "n10.native"
+    "n10.native",
+    "n8.platform"
    ],
    "hq": "CN",
    "region": "China",
@@ -105,6 +106,19 @@
    "source": "https://www.advai.co.uk/"
   },
   {
+   "name": "Affine",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI engineering and analytics consultancy for retail, CPG and gaming",
+   "url": "https://affine.ai",
+   "source": "https://affine.ai"
+  },
+  {
    "name": "AI Singapore",
    "kind": "company",
    "subsegments": [
@@ -129,6 +143,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$40M Series A, Sep 2026",
+   "round_source": "https://fintech.global/2026/09/17/aiuc-raises-40m-to-police-risk-in-frontier-ai-agents/",
    "one_liner": "AIUC-1 agent security standard, audits and insurance for AI agents",
    "tags": [
     "security",
@@ -137,6 +154,20 @@
    "url": "https://aiuc.com",
    "source": "https://fintech.global/2026/09/17/aiuc-raises-40m-to-police-risk-in-frontier-ai-agents/",
    "note": "Raised $40M Series A (Sep 2026)"
+  },
+  {
+   "name": "Aivar",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI engineering services with productised accelerators for agents, infra and voice",
+   "url": "https://aivar.tech",
+   "source": "https://parsers.vc/news/260114-ai-services-innovator-aivar-secures-4-6m/",
+   "note": "$4.6M seed led by Sorin with Bessemer (Jan 2026); founded by ex-AWS execs"
   },
   {
    "name": "Alorica",
@@ -153,6 +184,43 @@
    ],
    "url": "https://www.alorica.com",
    "source": "https://www.alorica.com/"
+  },
+  {
+   "name": "Analytics Vidhya",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Data science and GenAI learning community and courses",
+   "url": "https://www.analyticsvidhya.com",
+   "source": "https://www.analyticsvidhya.com"
+  },
+  {
+   "name": "Andela",
+   "kind": "company",
+   "subsegments": [
+    "n10.talent"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "one_liner": "Marketplace for vetted global engineering talent, including AI engineers",
+   "url": "https://www.andela.com",
+   "source": "https://www.andela.com"
+  },
+  {
+   "name": "ANSR",
+   "kind": "company",
+   "subsegments": [
+    "n10.gcc"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "one_liner": "Builds and operates global capability centres for enterprises, largely in India",
+   "url": "https://ansr.com",
+   "source": "https://ansr.com"
   },
   {
    "name": "Anthropic Academy",
@@ -206,6 +274,20 @@
    "source": "https://www.artefact.com/"
   },
   {
+   "name": "Ascendion",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-first engineering services firm with AAVA agentic delivery platform; large India base",
+   "url": "https://ascendion.com",
+   "source": "https://ascendion.com"
+  },
+  {
    "name": "Atos / Eviden",
    "kind": "company",
    "subsegments": [
@@ -220,6 +302,21 @@
    ],
    "url": "https://atos.net",
    "source": "https://atos.net/en/"
+  },
+  {
+   "name": "Avanade",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.partner"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Accenture / Microsoft JV",
+   "one_liner": "Microsoft-ecosystem AI and Copilot implementation",
+   "url": "https://www.avanade.com",
+   "source": "https://www.avanade.com"
   },
   {
    "name": "AWS Partner Network",
@@ -326,6 +423,33 @@
    "source": "https://www.bcg.com/x"
   },
   {
+   "name": "Brain Co.",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Deploys AI systems for large enterprises and governments with embedded engineers",
+   "url": "https://brain.co",
+   "source": "https://pulse2.com/brain-co-30-million-series-a-closed-for-enhancing-enterprise-ai-adoption",
+   "note": "Out of stealth with $30M Series A (Sep 2025)"
+  },
+  {
+   "name": "Brillio",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Digital and AI engineering services with India delivery",
+   "url": "https://www.brillio.com",
+   "source": "https://www.brillio.com"
+  },
+  {
    "name": "BSI",
    "kind": "company",
    "subsegments": [
@@ -343,7 +467,24 @@
    "note": "First UKAS/RvA-accredited ISO 42001 certifier (Nov 2025); ANAB accreditation Mar 2026"
   },
   {
+   "name": "BTS Group",
+   "kind": "company",
+   "subsegments": [
+    "n10.org",
+    "n10.skill"
+   ],
+   "hq": "SE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Strategy execution, leadership development and AI-era change programmes",
+   "url": "https://bts.com",
+   "source": "https://bts.com"
+  },
+  {
    "name": "Capgemini",
+   "aka": [
+    "WNS"
+   ],
    "kind": "company",
    "subsegments": [
     "n10.si",
@@ -362,21 +503,31 @@
    "note": "Completed $3.3B WNS acquisition Oct 2025; investor in OpenAI Deployment Company (May 2026)"
   },
   {
-   "name": "Casper Studios",
+   "name": "Caylent",
    "kind": "company",
    "subsegments": [
-    "n10.lab"
+    "n10.native",
+    "n10.partner"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "acquired",
-   "parent": "Ode with Anthropic (2026)",
-   "one_liner": "AI build studio acquired to expand Ode's corporate deployments",
-   "tags": [
-    "enterprise"
+   "status": "private",
+   "one_liner": "AWS-focused cloud and GenAI services partner",
+   "url": "https://caylent.com",
+   "source": "https://caylent.com"
+  },
+  {
+   "name": "CDW",
+   "kind": "company",
+   "subsegments": [
+    "n10.partner"
    ],
-   "url": "https://www.casperstudios.xyz",
-   "source": "https://pymnts.com/news/acquiring/2026/anthropic-backed-ode-acquires-casper-studios-to-expand-corporate-ai-deployments"
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "IT reseller and services provider for AI hardware and software",
+   "url": "https://www.cdw.com",
+   "source": "https://www.cdw.com"
   },
   {
    "name": "CGI",
@@ -464,6 +615,33 @@
    "source": "https://www.concentrix.com/"
   },
   {
+   "name": "Corgi",
+   "kind": "company",
+   "subsegments": [
+    "n10.insure"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Full-stack startup insurer with a dedicated AI liability line",
+   "url": "https://www.corgi.insure",
+   "source": "https://www.artificiallawyer.com/2026/05/05/corgi-launches-ai-liability-insurance/",
+   "note": "$108M raised (Jan 2026); AI liability launch (May 2026)"
+  },
+  {
+   "name": "Course5 Intelligence",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI-driven analytics, market research and insights services",
+   "url": "https://www.course5i.com",
+   "source": "https://www.course5i.com"
+  },
+  {
    "name": "Coursera (incl. Udemy)",
    "kind": "company",
    "subsegments": [
@@ -527,6 +705,19 @@
    ],
    "url": "https://www.deeplearning.ai",
    "source": "https://www.deeplearning.ai/"
+  },
+  {
+   "name": "deepsense.ai",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "PL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI engineering consultancy for LLM and agent projects",
+   "url": "https://deepsense.ai",
+   "source": "https://deepsense.ai"
   },
   {
    "name": "Deloitte",
@@ -598,6 +789,19 @@
    "source": "https://dxc.com/us/en/offerings/ai"
   },
   {
+   "name": "Edureka",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Online certification courses in AI, data and cloud",
+   "url": "https://www.edureka.co",
+   "source": "https://www.edureka.co"
+  },
+  {
    "name": "Ekimetrics",
    "kind": "company",
    "subsegments": [
@@ -612,23 +816,6 @@
    ],
    "url": "https://www.ekimetrics.com",
    "source": "https://www.ekimetrics.com/"
-  },
-  {
-   "name": "Elements of AI",
-   "kind": "company",
-   "subsegments": [
-    "n10.skill"
-   ],
-   "hq": "FI",
-   "region": "Europe",
-   "status": "non-profit",
-   "one_liner": "Free AI literacy course from University of Helsinki and MinnaLearn",
-   "tags": [
-    "enterprise",
-    "open-source"
-   ],
-   "url": "https://www.elementsofai.com",
-   "source": "https://www.elementsofai.com/"
   },
   {
    "name": "Emeritus",
@@ -678,6 +865,34 @@
    ],
    "url": "https://www.epam.com",
    "source": "https://www.epam.com/services/artificial-intelligence"
+  },
+  {
+   "name": "Eticas",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Algorithmic audits and AI bias assessments",
+   "url": "https://eticas.ai",
+   "source": "https://eticas.ai"
+  },
+  {
+   "name": "Everest Group",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult",
+    "n10.analyst"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Research and advisory on IT services, BPO and AI adoption",
+   "tags": [],
+   "url": "https://www.everestgrp.com",
+   "source": "https://www.everestgrp.com"
   },
   {
    "name": "EXL",
@@ -750,6 +965,31 @@
    "source": "https://www.firstsource.com/"
   },
   {
+   "name": "ForHumanity",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Independent audit criteria and certification schemes for AI systems",
+   "url": "https://forhumanity.center",
+   "source": "https://forhumanity.center"
+  },
+  {
+   "name": "Forrester",
+   "kind": "company",
+   "subsegments": [
+    "n10.analyst"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "one_liner": "Research and advisory firm whose evaluations shape enterprise technology buying",
+   "url": "https://www.forrester.com",
+   "source": "https://www.forrester.com"
+  },
+  {
    "name": "Foundever",
    "kind": "company",
    "subsegments": [
@@ -767,9 +1007,13 @@
   },
   {
    "name": "Fractal Analytics",
+   "aka": [
+    "Fractal Analytics (Fathom)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n10.native"
+    "n10.native",
+    "n6.sovereign"
    ],
    "hq": "IN",
    "region": "India",
@@ -783,21 +1027,19 @@
    "note": "Listed in India Feb 2026 (IPO ~Rs 2,834 cr)"
   },
   {
-   "name": "Fractional AI",
+   "name": "Gartner",
    "kind": "company",
    "subsegments": [
-    "n10.lab"
+    "n10.consult",
+    "n10.analyst"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "acquired",
-   "parent": "Ode with Anthropic (May 2026)",
-   "one_liner": "Applied AI engineering firm whose team became Ode's core",
-   "tags": [
-    "enterprise"
-   ],
-   "url": "https://www.fractional.ai",
-   "source": "https://www.cxodigitalpulse.com/anthropic-blackstone-and-hellman-friedman-launch-enterprise-ai-services-firm-ode/"
+   "status": "public",
+   "one_liner": "Research and advisory shaping enterprise AI buying decisions",
+   "tags": [],
+   "url": "https://www.gartner.com",
+   "source": "https://www.gartner.com"
   },
   {
    "name": "General Assembly",
@@ -903,10 +1145,84 @@
    "source": "https://www.mygreatlearning.com/"
   },
   {
-   "name": "HCLTech",
+   "name": "Grid Dynamics",
+   "kind": "company",
+   "subsegments": [
+    "n10.native",
+    "n10.si"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "AI and data engineering services (Nasdaq: GDYN)",
+   "url": "https://www.griddynamics.com",
+   "source": "https://www.griddynamics.com"
+  },
+  {
+   "name": "Gruve",
+   "kind": "company",
+   "subsegments": [
+    "n10.native",
+    "n10.managed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native IT services and managed AI infrastructure operations",
+   "url": "https://gruve.ai",
+   "source": "https://pulse2.com/gruve-50-million-funding/amp/",
+   "note": "$50M follow-on Series A"
+  },
+  {
+   "name": "GUVI",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "acquired",
+   "parent": "HCLTech",
+   "one_liner": "Vernacular tech and AI skilling platform",
+   "url": "https://www.guvi.in",
+   "source": "https://www.guvi.in"
+  },
+  {
+   "name": "Hang Ten Systems",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native enterprise services using agentic code generation, a skills library and FDEs",
+   "url": "https://hangtensystems.com",
+   "source": "https://inc42.com/buzz/ex-infosys-ceo-vishal-sikkas-new-ai-venture-hang-ten-bags-32-mn/",
+   "note": "Founded by ex-Infosys CEO Vishal Sikka; $32M seed led by Mayfield with Aramco Ventures (Jun 2026)"
+  },
+  {
+   "name": "Happiest Minds",
    "kind": "company",
    "subsegments": [
     "n10.si"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Digital and GenAI engineering services (NSE listed)",
+   "url": "https://www.happiestminds.com",
+   "source": "https://www.happiestminds.com"
+  },
+  {
+   "name": "HCLTech",
+   "aka": [
+    "HCLTech (semiconductor services)"
+   ],
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n1.design"
    ],
    "hq": "IN",
    "region": "India",
@@ -934,6 +1250,44 @@
    ],
    "url": "https://hexaware.com",
    "source": "https://hexaware.com/ai/"
+  },
+  {
+   "name": "HFS Research",
+   "kind": "company",
+   "subsegments": [
+    "n10.analyst"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "one_liner": "Research and advisory on services, operations and AI adoption",
+   "url": "https://www.hfsresearch.com",
+   "source": "https://www.hfsresearch.com"
+  },
+  {
+   "name": "Hinduja Global Solutions",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "CX and BPO services incorporating AI agents",
+   "url": "https://hgs.cx",
+   "source": "https://hgs.cx"
+  },
+  {
+   "name": "Huron Consulting",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Consulting incl. AI strategy in healthcare, education and commercial",
+   "url": "https://www.huronconsultinggroup.com",
+   "source": "https://www.huronconsultinggroup.com"
   },
   {
    "name": "IBM Consulting",
@@ -971,20 +1325,29 @@
    "source": "https://skillsbuild.org/"
   },
   {
-   "name": "IndiaAI FutureSkills",
+   "name": "IDC",
    "kind": "company",
    "subsegments": [
-    "n10.skill"
+    "n10.analyst"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "one_liner": "Market intelligence and advisory on IT and AI spending",
+   "url": "https://www.idc.com",
+   "source": "https://www.idc.com"
+  },
+  {
+   "name": "Ideas2IT",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
    ],
    "hq": "IN",
    "region": "India",
-   "status": "government",
-   "one_liner": "IndiaAI Mission pillar funding AI education and labs",
-   "tags": [
-    "sovereign"
-   ],
-   "url": "https://indiaai.gov.in",
-   "source": "https://indiaai.gov.in/"
+   "status": "private",
+   "one_liner": "AI engineering and product services firm",
+   "url": "https://www.ideas2it.com",
+   "source": "https://www.ideas2it.com"
   },
   {
    "name": "Infosys",
@@ -1022,6 +1385,20 @@
    ],
    "url": "https://www.ingrammicro.com",
    "source": "https://www.ingrammicro.com/"
+  },
+  {
+   "name": "Insight Enterprises",
+   "kind": "company",
+   "subsegments": [
+    "n10.partner",
+    "n10.si"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Solutions integrator and reseller for Microsoft, AWS and AI programmes",
+   "url": "https://www.insight.com",
+   "source": "https://www.insight.com"
   },
   {
    "name": "Kearney",
@@ -1107,6 +1484,19 @@
    "source": "https://www.latentview.com/"
   },
   {
+   "name": "Le Wagon",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Bootcamps in data science and AI software development",
+   "url": "https://www.lewagon.com",
+   "source": "https://www.lewagon.com"
+  },
+  {
    "name": "LG CNS",
    "kind": "company",
    "subsegments": [
@@ -1156,6 +1546,45 @@
    "source": "https://www.ltimindtree.com/ai/"
   },
   {
+   "name": "Masai School",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Outcome-based tech and AI training programmes",
+   "url": "https://www.masaischool.com",
+   "source": "https://www.masaischool.com"
+  },
+  {
+   "name": "MathCo",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI and analytics services plus NucliOS platform for Fortune 500 clients",
+   "url": "https://mathco.com",
+   "source": "https://mathco.com/our-company/"
+  },
+  {
+   "name": "Maven",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Cohort-based courses widely used for practitioner AI upskilling",
+   "url": "https://maven.com",
+   "source": "https://maven.com"
+  },
+  {
    "name": "McKinsey & Company (QuantumBlack)",
    "kind": "company",
    "subsegments": [
@@ -1173,6 +1602,19 @@
    "url": "https://www.mckinsey.com/capabilities/quantumblack",
    "source": "https://www.fanaticalfuturist.com/2026/04/mckinsey-now-has-60-000-employees-25-000-of-them-are-ai-agents/",
    "note": "CEO said 2026 workforce includes ~25,000 AI agents; investor in OpenAI Deployment Company"
+  },
+  {
+   "name": "Merantix Momentum",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Applied AI development studio for German industry",
+   "url": "https://www.merantix-momentum.com",
+   "source": "https://www.merantix-momentum.com"
   },
   {
    "name": "Mercer",
@@ -1242,6 +1684,19 @@
    "source": "https://www.mphasis.com/home/services/ai.html"
   },
   {
+   "name": "Mu Sigma",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Decision-science and analytics services firm, Bengaluru delivery",
+   "url": "https://www.mu-sigma.com",
+   "source": "https://www.mu-sigma.com"
+  },
+  {
    "name": "Multiverse",
    "kind": "company",
    "subsegments": [
@@ -1275,6 +1730,19 @@
    "source": "https://www.munichre.com/en/solutions/for-industry-clients/insure-ai.html"
   },
   {
+   "name": "Nagarro",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Digital engineering services with AI offerings",
+   "url": "https://www.nagarro.com",
+   "source": "https://www.nagarro.com"
+  },
+  {
    "name": "NCC Group",
    "kind": "company",
    "subsegments": [
@@ -1294,7 +1762,8 @@
    "name": "NEC",
    "kind": "company",
    "subsegments": [
-    "n10.si"
+    "n10.si",
+    "n6.sovereign"
    ],
    "hq": "JP",
    "region": "Asia-Pacific",
@@ -1305,6 +1774,32 @@
    ],
    "url": "https://www.nec.com",
    "source": "https://www.nec.com/en/global/solutions/ai/"
+  },
+  {
+   "name": "NIIT",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "IT and AI skilling, incl. corporate training (NIIT MTS)",
+   "url": "https://www.niit.com",
+   "source": "https://www.niit.com"
+  },
+  {
+   "name": "North Highland",
+   "kind": "company",
+   "subsegments": [
+    "n10.org"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Change and transformation consultancy incl. AI adoption",
+   "url": "https://www.northhighland.com",
+   "source": "https://www.northhighland.com"
   },
   {
    "name": "NTT DATA",
@@ -1359,6 +1854,10 @@
   },
   {
    "name": "Ode with Anthropic",
+   "aka": [
+    "Fractional AI",
+    "Casper Studios"
+   ],
    "kind": "company",
    "subsegments": [
     "n10.native",
@@ -1498,7 +1997,8 @@
    "name": "Presight",
    "kind": "company",
    "subsegments": [
-    "n10.native"
+    "n10.native",
+    "n9.public"
    ],
    "hq": "AE",
    "region": "Middle East",
@@ -1527,6 +2027,34 @@
    ],
    "url": "https://www.prosci.com",
    "source": "https://www.prosci.com/"
+  },
+  {
+   "name": "Provectus",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI/ML consultancy and AWS GenAI partner",
+   "url": "https://provectus.com",
+   "source": "https://provectus.com"
+  },
+  {
+   "name": "Publicis Sapient",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.consult"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Publicis Groupe",
+   "one_liner": "Digital business transformation with AI (Sapient Slingshot)",
+   "url": "https://www.publicissapient.com",
+   "source": "https://www.publicissapient.com"
   },
   {
    "name": "PwC",
@@ -1597,6 +2125,34 @@
    "source": "https://www.redingtongroup.com/"
   },
   {
+   "name": "Relm Insurance",
+   "kind": "company",
+   "subsegments": [
+    "n10.insure"
+   ],
+   "hq": "BM",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Specialty insurer with NOVAAI, PONTAAI and RESCAAI AI-liability products",
+   "url": "https://relminsurance.com",
+   "source": "https://www.reinsurancene.ws/relm-launches-new-insurance-solutions-for-ai-liability/",
+   "note": "AI suite launched Jan 2025"
+  },
+  {
+   "name": "Resaro",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Independent third-party testing and assurance of mission-critical AI systems",
+   "url": "https://resaro.ai",
+   "source": "https://www.resaro.ai/about",
+   "note": "Established by Temasek; Singapore and Germany"
+  },
+  {
    "name": "Roland Berger",
    "kind": "company",
    "subsegments": [
@@ -1616,7 +2172,8 @@
    "name": "Samsung SDS",
    "kind": "company",
    "subsegments": [
-    "n10.si"
+    "n10.si",
+    "n8.platform"
    ],
    "hq": "KR",
    "region": "Asia-Pacific",
@@ -1628,23 +2185,6 @@
    ],
    "url": "https://www.samsungsds.com",
    "source": "https://www.samsungsds.com/en/"
-  },
-  {
-   "name": "Scale AI (GenAI Platform & Public Sector)",
-   "kind": "company",
-   "subsegments": [
-    "n10.native"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Builds custom AI applications and agents for enterprises and US government",
-   "tags": [
-    "enterprise"
-   ],
-   "url": "https://scale.com",
-   "source": "https://scale.com/genai-platform",
-   "note": "Meta took 49% stake (Jun 2025)"
   },
   {
    "name": "Scaler",
@@ -1677,6 +2217,20 @@
    ],
    "url": "https://www.schellman.com",
    "source": "https://www.schellman.com/services/ai-governance/iso-42001"
+  },
+  {
+   "name": "Searce",
+   "kind": "company",
+   "subsegments": [
+    "n10.native",
+    "n10.partner"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Cloud, data and AI services firm; major Google Cloud and AWS partner",
+   "url": "https://www.searce.com",
+   "source": "https://www.searce.com"
   },
   {
    "name": "Section",
@@ -1761,6 +2315,19 @@
    "source": "https://www.slalom.com/us/en/services/artificial-intelligence"
   },
   {
+   "name": "SoftServe",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "UA",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Digital engineering and GenAI services with Eastern European delivery",
+   "url": "https://www.softserveinc.com",
+   "source": "https://www.softserveinc.com"
+  },
+  {
    "name": "Softtek",
    "kind": "company",
    "subsegments": [
@@ -1809,6 +2376,19 @@
    "source": "https://www.soprasteria.com/"
   },
   {
+   "name": "Startek",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "CX outsourcing with AI-led delivery",
+   "url": "https://www.startek.com",
+   "source": "https://www.startek.com"
+  },
+  {
    "name": "Stefanini",
    "kind": "company",
    "subsegments": [
@@ -1823,6 +2403,21 @@
    ],
    "url": "https://stefanini.com",
    "source": "https://stefanini.com/en"
+  },
+  {
+   "name": "Straive",
+   "kind": "company",
+   "subsegments": [
+    "n10.native",
+    "n10.bpo",
+    "n5.label"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Data, content and AI operations services; owns Gramener",
+   "url": "https://www.straive.com",
+   "source": "https://www.straive.com"
   },
   {
    "name": "Sutherland",
@@ -1844,7 +2439,8 @@
    "name": "TaskUs",
    "kind": "company",
    "subsegments": [
-    "n10.bpo"
+    "n10.bpo",
+    "n5.label"
    ],
    "hq": "US",
    "region": "North America",
@@ -1858,11 +2454,15 @@
   },
   {
    "name": "Tata Consultancy Services (TCS)",
+   "aka": [
+    "TCS HyperVault"
+   ],
    "kind": "company",
    "subsegments": [
     "n10.si",
     "n10.bpo",
-    "n10.managed"
+    "n10.managed",
+    "n0.dcdev"
    ],
    "hq": "IN",
    "region": "India",
@@ -1894,10 +2494,14 @@
   },
   {
    "name": "Tech Mahindra",
+   "aka": [
+    "Tech Mahindra (Project Indus)"
+   ],
    "kind": "company",
    "subsegments": [
     "n10.si",
-    "n10.bpo"
+    "n10.bpo",
+    "n6.sovereign"
    ],
    "hq": "IN",
    "region": "India",
@@ -1924,6 +2528,23 @@
    ],
    "url": "https://www.tp.com",
    "source": "https://www.tp.com/"
+  },
+  {
+   "name": "Tessera Labs",
+   "kind": "company",
+   "subsegments": [
+    "n10.native",
+    "n10.si",
+    "n10.outcome"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native ERP modernisation programmes delivered by small teams",
+   "tags": [],
+   "url": "https://tesseralabs.ai",
+   "source": "https://pulse2.com/tessera-labs-60-million-funding-raised-for-ai-powered-erp-modernization-platform/",
+   "note": "$60M led by a16z (May 2026)"
   },
   {
    "name": "Testudo",
@@ -1957,6 +2578,19 @@
    ],
    "url": "https://joshbersin.com",
    "source": "https://hrexecutive.com/the-rise-of-the-superworker-redesigning-work-jobs-and-roles-in-the-age-of-ai/"
+  },
+  {
+   "name": "The Ready",
+   "kind": "company",
+   "subsegments": [
+    "n10.org"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Organisation design and ways-of-working transformation consultancy",
+   "url": "https://www.theready.com",
+   "source": "https://www.theready.com"
   },
   {
    "name": "Thoughtworks",
@@ -2010,6 +2644,18 @@
    "source": "https://openai.com/index/openai-launches-the-deployment-company"
   },
   {
+   "name": "Toptal",
+   "kind": "company",
+   "subsegments": [
+    "n10.talent"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "one_liner": "Network of vetted freelance engineers, data scientists and AI specialists",
+   "url": "https://www.toptal.com",
+   "source": "https://www.toptal.com"
+  },
+  {
    "name": "Trail of Bits",
    "kind": "company",
    "subsegments": [
@@ -2045,7 +2691,8 @@
    "name": "Tribe AI",
    "kind": "company",
    "subsegments": [
-    "n10.native"
+    "n10.native",
+    "n10.talent"
    ],
    "hq": "US",
    "region": "North America",
@@ -2124,6 +2771,19 @@
    "source": "https://www.udacity.com/"
   },
   {
+   "name": "Unit8",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Data and AI services firm for European enterprises",
+   "url": "https://unit8.com",
+   "source": "https://unit8.com"
+  },
+  {
    "name": "upGrad",
    "kind": "company",
    "subsegments": [
@@ -2138,6 +2798,32 @@
    ],
    "url": "https://www.upgrad.com",
    "source": "https://www.upgrad.com/"
+  },
+  {
+   "name": "Warden AI",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Continuous bias auditing for HR and recruiting AI",
+   "url": "https://www.warden-ai.com",
+   "source": "https://www.warden-ai.com"
+  },
+  {
+   "name": "West Monroe",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Business and technology consultancy with AI practice",
+   "url": "https://www.westmonroe.com",
+   "source": "https://www.westmonroe.com"
   },
   {
    "name": "Wipro",
@@ -2157,27 +2843,25 @@
    "source": "https://www.wipro.com/ai/"
   },
   {
-   "name": "WNS",
+   "name": "Workera",
    "kind": "company",
    "subsegments": [
-    "n10.bpo"
+    "n10.skill"
    ],
-   "hq": "IN",
-   "region": "India",
-   "status": "acquired",
-   "parent": "Capgemini (Oct 2025)",
-   "one_liner": "BPM firm for insurance, travel and finance operations",
-   "tags": [
-    "enterprise"
-   ],
-   "url": "https://www.wns.com",
-   "source": "https://www.capgemini.com/news/press-releases/capgemini-completes-the-acquisition-of-wns-and-creates-a-global-leader-in-agentic-ai-powered-intelligent-operations/"
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-powered skills assessment and verification for workforce AI fluency",
+   "url": "https://workera.ai",
+   "source": "https://workera.ai"
   },
   {
    "name": "World Wide Technology",
    "kind": "company",
    "subsegments": [
-    "n10.si"
+    "n10.si",
+    "n4.onprem",
+    "n10.partner"
    ],
    "hq": "US",
    "region": "North America",
@@ -2206,6 +2890,62 @@
    "source": "https://www.wtwco.com/"
   },
   {
+   "name": "Xebia",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Data, AI and cloud consultancy with AI academy",
+   "url": "https://xebia.com",
+   "source": "https://xebia.com"
+  },
+  {
+   "name": "Zensar Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "parent": "RPG Group",
+   "one_liner": "IT services with AI-led engineering; RPG Group company",
+   "url": "https://www.zensar.com",
+   "source": "https://www.zensar.com"
+  },
+  {
+   "name": "Zindi",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill",
+    "n10.talent"
+   ],
+   "hq": "ZA",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "Pan-African data-science competition and talent platform",
+   "url": "https://zindi.africa",
+   "source": "https://thecondia.com/africa-ai-startups-impact/"
+  },
+  {
+   "name": "Zinnov",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult",
+    "n10.gcc"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Advisory on GCC setup, engineering and AI strategy for global firms in India",
+   "tags": [],
+   "url": "https://zinnov.com",
+   "source": "https://zinnov.com"
+  },
+  {
    "name": "ZS Associates",
    "kind": "company",
    "subsegments": [
@@ -2222,7 +2962,7 @@
    "source": "https://www.zs.com/"
   },
   {
-   "name": "Elements of AI (open)",
+   "name": "Elements of AI",
    "kind": "public programme",
    "subsegments": [
     "n10.skill",
@@ -2230,17 +2970,16 @@
    ],
    "hq": "FI",
    "region": "Europe",
-   "status": "open",
+   "status": "non-profit",
    "steward": "University of Helsinki and MinnaLearn",
    "licence": "Free course",
    "access": "Free online at elementsofai.com in many EU languages",
-   "one_liner": "Free non-technical AI literacy course taken by 2M+ people in 170+ countries",
+   "one_liner": "Free AI literacy course from University of Helsinki and MinnaLearn",
    "tags": [
-    "education",
-    "ai-literacy",
+    "enterprise",
     "open-source"
    ],
-   "url": "https://www.elementsofai.com/",
+   "url": "https://www.elementsofai.com",
    "source": "https://www.elementsofai.com/"
   },
   {
@@ -2365,6 +3104,9 @@
   },
   {
    "name": "IndiaAI FutureSkills (open)",
+   "aka": [
+    "IndiaAI FutureSkills"
+   ],
    "kind": "public programme",
    "subsegments": [
     "n10.skill",
@@ -2407,26 +3149,6 @@
    "url": "https://www.iso.org/standard/42001",
    "source": "https://www.iso.org/standard/42001",
    "note": "Included for contrast: widely used but NOT openly available"
-  },
-  {
-   "name": "MLCommons AILuminate (open)",
-   "kind": "open dataset",
-   "subsegments": [
-    "n10.change"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
-   "steward": "MLCommons",
-   "access": "Public practice prompt set; official graded runs via MLCommons",
-   "one_liner": "Standardised AI risk and reliability benchmark across 12 hazard categories",
-   "tags": [
-    "benchmark",
-    "safety",
-    "open-source"
-   ],
-   "url": "https://mlcommons.org/ailuminate/",
-   "source": "https://www.silicon.co.uk/press-release/mlcommons-releases-ailuminate-llm-v1-1-adding-french-language-capabilities-to-industry-leading-ai-safety-benchmark"
   },
   {
    "name": "Neural Networks: Zero to Hero",
@@ -2475,29 +3197,6 @@
    "url": "https://oecd.ai/en/transparency",
    "source": "https://www.oecd.org/en/about/news/press-releases/2026/05/oecd-launches-streamlined-hiroshima-ai-process-reporting-framework-to-help-small-and-medium-sized-enterprises-participate.html",
    "note": "HAIP 2.0 streamlined version launched May 2026 to let SMEs participate"
-  },
-  {
-   "name": "OWASP Top 10 for LLM Applications",
-   "kind": "standard",
-   "subsegments": [
-    "n10.change",
-    "n11.ent",
-    "n9.secops"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
-   "steward": "OWASP Gen AI Security Project (OWASP Foundation)",
-   "licence": "CC BY-SA 4.0",
-   "access": "Free at genai.owasp.org",
-   "one_liner": "Community list of top security risks for LLM apps (2025 edition)",
-   "tags": [
-    "security",
-    "governance",
-    "open-standard"
-   ],
-   "url": "https://genai.owasp.org/llm-top-10/",
-   "source": "https://genai.owasp.org/llm-top-10/"
   },
   {
    "name": "YUVA AI for ALL",

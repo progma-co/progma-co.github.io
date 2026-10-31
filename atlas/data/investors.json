@@ -1,3 +1,2289 @@
 {
- "investors": []
+ "investors": [
+  {
+   "name": "Andreessen Horowitz (a16z)",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://a16z.com",
+   "summary": "Largest multi-stage AI backer: frontier and open labs, inference engines, agent apps (support, voice, legal, finance), defence and consumer AI.",
+   "roles": [
+    {
+     "subsegment": "n9.voice",
+     "portfolio": "Decagon, ElevenLabs, Hippocratic AI"
+    },
+    {
+     "subsegment": "n6.image",
+     "portfolio": "Black Forest Labs, Ideogram, Krea"
+    },
+    {
+     "subsegment": "n8.platform",
+     "portfolio": "Mistral AI, Databricks"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Cursor, Replit"
+    },
+    {
+     "subsegment": "n9.finance",
+     "portfolio": "Hebbia, Rillet"
+    },
+    {
+     "subsegment": "n5.evaldata",
+     "portfolio": "LMArena, Vals AI"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "Hippocratic AI, Ambience Healthcare"
+    },
+    {
+     "subsegment": "n9.creative",
+     "portfolio": "Krea, Gamma"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "portfolio": "Mistral AI, Thinking Machines Lab"
+    },
+    {
+     "subsegment": "n6.audio",
+     "portfolio": "ElevenLabs, Sesame"
+    }
+   ],
+   "source": "https://a16z.com/portfolio/"
+  },
+  {
+   "name": "Sequoia Capital",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.sequoiacap.com",
+   "summary": "Early lead in OpenAI and SSI; heavy in inference, agent infrastructure and vertical agents (support, legal, health, coding).",
+   "roles": [
+    {
+     "subsegment": "n8.framework",
+     "portfolio": "OpenAI, LangChain"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Sierra, Cresta"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "OpenAI, Factory"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "portfolio": "OpenAI, Safe Superintelligence"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Fireworks AI"
+    },
+    {
+     "subsegment": "n7.route",
+     "portfolio": "Hugging Face"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "portfolio": "Parallel Web Systems"
+    },
+    {
+     "subsegment": "n9.legal",
+     "portfolio": "Harvey"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "OpenEvidence"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "portfolio": "Glean"
+    }
+   ],
+   "source": "https://www.sequoiacap.com/our-companies/"
+  },
+  {
+   "name": "Lightspeed Venture Partners",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://lsvp.com",
+   "summary": "Anchor investor in Anthropic and Mistral; broad bets across inference, robotics models, Indian sovereign AI and enterprise apps.",
+   "roles": [
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Anthropic, Mistral AI, xAI"
+    },
+    {
+     "subsegment": "n6.open",
+     "portfolio": "Mistral AI, Reflection AI, Sarvam AI"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "Qure.ai, Abridge"
+    },
+    {
+     "subsegment": "n6.audio",
+     "portfolio": "Stability AI, Cartesia"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Fireworks AI"
+    },
+    {
+     "subsegment": "n8.tools",
+     "portfolio": "Composio"
+    },
+    {
+     "subsegment": "n8.payments",
+     "portfolio": "Descope"
+    },
+    {
+     "subsegment": "n8.eval",
+     "portfolio": "Patronus AI"
+    },
+    {
+     "subsegment": "n9.physical",
+     "portfolio": "Skild AI"
+    },
+    {
+     "subsegment": "n9.consumer",
+     "portfolio": "Inworld AI"
+    }
+   ],
+   "source": "https://lsvp.com/portfolio/"
+  },
+  {
+   "name": "Accel",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.accel.com",
+   "summary": "Global early/growth investor (US, Europe, India); data labelling, speech, automation, AI app builders and Indian inference.",
+   "roles": [
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Simplismart"
+    },
+    {
+     "subsegment": "n8.lowcode",
+     "portfolio": "n8n"
+    },
+    {
+     "subsegment": "n9.creative",
+     "portfolio": "Synthesia"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Lovable"
+    },
+    {
+     "subsegment": "n6.audio",
+     "portfolio": "AssemblyAI"
+    },
+    {
+     "subsegment": "n6.sovereign",
+     "portfolio": "Sarvam AI"
+    },
+    {
+     "subsegment": "n5.label",
+     "portfolio": "Scale AI"
+    }
+   ],
+   "source": "https://www.accel.com/relationships"
+  },
+  {
+   "name": "Index Ventures",
+   "type": "venture fund",
+   "hq": "GB",
+   "region": "Europe",
+   "url": "https://www.indexventures.com",
+   "summary": "Transatlantic; strong in model labs (Cohere, Mistral), vector/search infrastructure, voice models and agentic apps.",
+   "roles": [
+    {
+     "subsegment": "n6.train",
+     "portfolio": "Fireworks AI, Lightning AI, Adaptive ML"
+    },
+    {
+     "subsegment": "n8.vector",
+     "portfolio": "Cohere, Weaviate"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Anthropic, Mistral AI"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "portfolio": "Hebbia, Granola"
+    },
+    {
+     "subsegment": "n6.open",
+     "portfolio": "Mistral AI, Physical Intelligence"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "portfolio": "Parallel Web Systems"
+    },
+    {
+     "subsegment": "n9.industrial",
+     "portfolio": "Chai Discovery"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Decagon"
+    },
+    {
+     "subsegment": "n9.secops",
+     "portfolio": "7AI"
+    },
+    {
+     "subsegment": "n9.lang",
+     "portfolio": "DeepL"
+    }
+   ],
+   "source": "https://www.indexventures.com/companies/"
+  },
+  {
+   "name": "General Catalyst",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.generalcatalyst.com",
+   "summary": "Applied AI and 'global resilience': European model labs, defence, healthcare AI and agent payments.",
+   "roles": [
+    {
+     "subsegment": "n8.payments",
+     "portfolio": "Kite AI, Catena Labs"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Mistral AI, Anthropic"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "Hippocratic AI, Commure"
+    },
+    {
+     "subsegment": "n9.industrial",
+     "portfolio": "Chai Discovery, PhysicsX"
+    },
+    {
+     "subsegment": "n9.public",
+     "portfolio": "Helsing"
+    },
+    {
+     "subsegment": "n6.image",
+     "portfolio": "Black Forest Labs"
+    },
+    {
+     "subsegment": "n6.audio",
+     "portfolio": "Cartesia"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "portfolio": "Mistral AI, Anthropic"
+    }
+   ],
+   "source": "https://www.generalcatalyst.com/portfolio"
+  },
+  {
+   "name": "Thrive Capital",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://thrivecap.com",
+   "summary": "Concentrated large cheques: OpenAI, Cursor, Databricks, Isomorphic, Physical Intelligence, plus vertical agents in health and finance.",
+   "roles": [
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "OpenAI, Cursor"
+    },
+    {
+     "subsegment": "n6.open",
+     "portfolio": "OpenAI, Physical Intelligence"
+    },
+    {
+     "subsegment": "n7.platform",
+     "portfolio": "Databricks"
+    },
+    {
+     "subsegment": "n8.vector",
+     "portfolio": "turbopuffer"
+    },
+    {
+     "subsegment": "n9.industrial",
+     "portfolio": "Isomorphic Labs"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "OpenEvidence"
+    },
+    {
+     "subsegment": "n9.finance",
+     "portfolio": "Rogo"
+    }
+   ],
+   "source": "https://www.cbinsights.com/company/turbopuffer/financials"
+  },
+  {
+   "name": "Kleiner Perkins",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.kleinerperkins.com",
+   "summary": "Vertical AI applications (legal, health, finance), inference clouds and coding agents.",
+   "roles": [
+    {
+     "subsegment": "n9.health",
+     "portfolio": "OpenEvidence, Ambience Healthcare, Hippocratic AI"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "portfolio": "Glean, Granola"
+    },
+    {
+     "subsegment": "n5.web",
+     "portfolio": "Browserbase, Parallel Web Systems"
+    },
+    {
+     "subsegment": "n9.legal",
+     "portfolio": "Harvey"
+    },
+    {
+     "subsegment": "n9.finance",
+     "portfolio": "Rogo"
+    },
+    {
+     "subsegment": "n9.creative",
+     "portfolio": "Synthesia"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Cognition"
+    },
+    {
+     "subsegment": "n6.train",
+     "portfolio": "Together AI"
+    },
+    {
+     "subsegment": "n6.audio",
+     "portfolio": "Cartesia"
+    },
+    {
+     "subsegment": "n5.label",
+     "portfolio": "Handshake AI"
+    }
+   ],
+   "source": "https://www.kleinerperkins.com/partnerships/"
+  },
+  {
+   "name": "Greylock",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://greylock.com",
+   "summary": "Early-stage AI infrastructure and enterprise agents: evals, data frameworks, compilers, contact-centre and security AI.",
+   "roles": [
+    {
+     "subsegment": "n8.framework",
+     "portfolio": "OpenAI, LlamaIndex"
+    },
+    {
+     "subsegment": "n6.code",
+     "portfolio": "Anthropic, Cognition"
+    },
+    {
+     "subsegment": "n7.engine",
+     "portfolio": "Modular"
+    },
+    {
+     "subsegment": "n8.eval",
+     "portfolio": "Braintrust"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Cresta"
+    },
+    {
+     "subsegment": "n9.secops",
+     "portfolio": "7AI"
+    },
+    {
+     "subsegment": "n5.label",
+     "portfolio": "Snorkel AI"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "OpenAI, Anthropic"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "OpenAI, Cognition"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "portfolio": "OpenAI, Anthropic"
+    }
+   ],
+   "source": "https://greylock.com/portfolio/"
+  },
+  {
+   "name": "Khosla Ventures",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.khoslaventures.com",
+   "summary": "First VC in OpenAI; contrarian bets in robotics/world models, Indian AI, legal, finance and voice agents.",
+   "roles": [
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "OpenAI, Emergent, Cognition"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Physical Intelligence, General Intuition, Field AI"
+    },
+    {
+     "subsegment": "n6.sovereign",
+     "portfolio": "Sakana AI, Sarvam AI"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "portfolio": "Parallel Web Systems"
+    },
+    {
+     "subsegment": "n9.finance",
+     "portfolio": "Basis"
+    },
+    {
+     "subsegment": "n9.legal",
+     "portfolio": "Spellbook"
+    },
+    {
+     "subsegment": "n9.voice",
+     "portfolio": "PolyAI"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "Abridge"
+    },
+    {
+     "subsegment": "n9.consumer",
+     "portfolio": "Tolan"
+    },
+    {
+     "subsegment": "n9.edu",
+     "portfolio": "Speak"
+    }
+   ],
+   "source": "https://www.khoslaventures.com/portfolio"
+  },
+  {
+   "name": "Founders Fund",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://foundersfund.com",
+   "summary": "Defence, data and frontier bets: Anduril, Scale AI, Cognition, OpenAI and Crusoe's AI campuses.",
+   "roles": [
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Cognition, OpenAI"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Crusoe"
+    },
+    {
+     "subsegment": "n9.public",
+     "portfolio": "Anduril"
+    },
+    {
+     "subsegment": "n5.label",
+     "portfolio": "Scale AI"
+    }
+   ],
+   "source": "https://foundersfund.com/portfolio/"
+  },
+  {
+   "name": "Insight Partners",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.insightpartners.com",
+   "summary": "Scale-up software investor leading Series A-C rounds in agent frameworks, sandboxes, speech AI and enterprise apps.",
+   "roles": [
+    {
+     "subsegment": "n8.framework",
+     "portfolio": "CrewAI"
+    },
+    {
+     "subsegment": "n8.sandbox",
+     "portfolio": "E2B"
+    },
+    {
+     "subsegment": "n8.platform",
+     "portfolio": "Writer"
+    },
+    {
+     "subsegment": "n8.eval",
+     "portfolio": "HoneyHive"
+    },
+    {
+     "subsegment": "n9.hr",
+     "portfolio": "Metaview"
+    },
+    {
+     "subsegment": "n9.gtm",
+     "portfolio": "Jasper"
+    },
+    {
+     "subsegment": "n6.audio",
+     "portfolio": "AssemblyAI"
+    }
+   ],
+   "source": "https://www.cbinsights.com/company/crewai/financials"
+  },
+  {
+   "name": "ICONIQ",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.iconiq.com",
+   "summary": "Growth rounds in Anthropic and enterprise AI tooling (evals, vector, agentic finance).",
+   "roles": [
+    {
+     "subsegment": "n8.eval",
+     "portfolio": "Braintrust"
+    },
+    {
+     "subsegment": "n8.platform",
+     "portfolio": "Writer"
+    },
+    {
+     "subsegment": "n8.vector",
+     "portfolio": "Pinecone"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Anthropic"
+    },
+    {
+     "subsegment": "n9.finance",
+     "portfolio": "Rillet"
+    }
+   ],
+   "source": "https://www.cbinsights.com/company/rillet/financials"
+  },
+  {
+   "name": "Coatue",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.coatue.com",
+   "summary": "Crossover growth capital into AI platforms, robotics models, model hubs and legal AI.",
+   "roles": [
+    {
+     "subsegment": "n7.platform",
+     "portfolio": "Databricks"
+    },
+    {
+     "subsegment": "n7.route",
+     "portfolio": "Hugging Face"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Cerebras"
+    },
+    {
+     "subsegment": "n9.physical",
+     "portfolio": "Skild AI"
+    },
+    {
+     "subsegment": "n9.legal",
+     "portfolio": "Harvey"
+    }
+   ],
+   "source": "https://www.cbinsights.com/company/skild-ai/financials"
+  },
+  {
+   "name": "Redpoint Ventures",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.redpoint.com",
+   "summary": "Infrastructure-heavy: serverless GPU (Modal), data-centric AI and clinical documentation.",
+   "roles": [
+    {
+     "subsegment": "n8.sandbox",
+     "portfolio": "Modal"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "Abridge"
+    },
+    {
+     "subsegment": "n5.label",
+     "portfolio": "Snorkel AI"
+    }
+   ],
+   "source": "https://dealroom.co/news/129203-modal-raises-355m-series-c-at-4-65b-valuation/"
+  },
+  {
+   "name": "Menlo Ventures",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://menlovc.com",
+   "summary": "Anthropic's largest VC backer; runs the Anthology Fund; inference, data ingestion, interpretability, music and health AI.",
+   "roles": [
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Fireworks AI"
+    },
+    {
+     "subsegment": "n8.vector",
+     "portfolio": "Pinecone"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "portfolio": "Unstructured"
+    },
+    {
+     "subsegment": "n8.gov",
+     "portfolio": "Relyance AI"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Anthropic"
+    },
+    {
+     "subsegment": "n9.creative",
+     "portfolio": "Suno"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Lovable"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "OpenEvidence"
+    },
+    {
+     "subsegment": "n9.itops",
+     "portfolio": "Aisera"
+    },
+    {
+     "subsegment": "n6.safety",
+     "portfolio": "Goodfire"
+    }
+   ],
+   "source": "https://www.menlovc.com/portfolio/"
+  },
+  {
+   "name": "Felicis",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.felicis.com",
+   "summary": "Seed-to-growth across the stack: GPU clouds, inference, search APIs, browser agents, memory, chips and expert data.",
+   "roles": [
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Crusoe, DeepInfra"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "portfolio": "Exa, Diffbot"
+    },
+    {
+     "subsegment": "n8.framework",
+     "portfolio": "Browser Use, Letta"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Runway, Skild AI"
+    },
+    {
+     "subsegment": "n9.industrial",
+     "portfolio": "Periodic Labs"
+    },
+    {
+     "subsegment": "n9.public",
+     "portfolio": "Vannevar Labs"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "portfolio": "Notion AI"
+    },
+    {
+     "subsegment": "n6.code",
+     "portfolio": "Poolside"
+    },
+    {
+     "subsegment": "n5.label",
+     "portfolio": "Mercor"
+    },
+    {
+     "subsegment": "n2.startup",
+     "portfolio": "Fractile"
+    }
+   ],
+   "source": "https://www.felicis.com/companies"
+  },
+  {
+   "name": "Radical Ventures",
+   "type": "venture fund",
+   "hq": "CA",
+   "region": "North America",
+   "url": "https://radical.vc",
+   "summary": "AI-only fund (Toronto): Cohere, World Labs, Writer; science models, AI chips, compute and power for AI.",
+   "roles": [
+    {
+     "subsegment": "n6.enterprise",
+     "portfolio": "Cohere, Writer, Reka AI"
+    },
+    {
+     "subsegment": "n6.science",
+     "portfolio": "Latent Labs, Orbital Materials, Periodic Labs"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "World Labs, Decart"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Crusoe"
+    },
+    {
+     "subsegment": "n8.search",
+     "portfolio": "You.com"
+    },
+    {
+     "subsegment": "n9.finance",
+     "portfolio": "Hebbia"
+    },
+    {
+     "subsegment": "n4.market",
+     "portfolio": "Prime Intellect"
+    },
+    {
+     "subsegment": "n2.startup",
+     "portfolio": "Etched"
+    },
+    {
+     "subsegment": "n0.opt",
+     "portfolio": "Emerald AI"
+    },
+    {
+     "subsegment": "n1.eda",
+     "portfolio": "Ricursive Intelligence"
+    }
+   ],
+   "source": "https://radical.vc/portfolio/"
+  },
+  {
+   "name": "Air Street Capital",
+   "type": "venture fund",
+   "hq": "GB",
+   "region": "Europe",
+   "url": "https://www.airstreet.com",
+   "summary": "AI-first European fund (State of AI Report); generative media, world models, bio models, code models and voice.",
+   "roles": [
+    {
+     "subsegment": "n9.voice",
+     "portfolio": "ElevenLabs, PolyAI"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Odyssey, Wayve"
+    },
+    {
+     "subsegment": "n4.neo",
+     "portfolio": "Crusoe, Lambda"
+    },
+    {
+     "subsegment": "n8.vector",
+     "portfolio": "Chroma"
+    },
+    {
+     "subsegment": "n9.creative",
+     "portfolio": "Synthesia"
+    },
+    {
+     "subsegment": "n9.insurance",
+     "portfolio": "Tractable"
+    },
+    {
+     "subsegment": "n6.image",
+     "portfolio": "Black Forest Labs"
+    },
+    {
+     "subsegment": "n6.science",
+     "portfolio": "Profluent"
+    },
+    {
+     "subsegment": "n6.code",
+     "portfolio": "Poolside"
+    },
+    {
+     "subsegment": "n6.enterprise",
+     "portfolio": "Contextual AI"
+    }
+   ],
+   "source": "https://www.airstreet.com/portfolio"
+  },
+  {
+   "name": "Conviction",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.conviction.com",
+   "summary": "Sarah Guo's AI-native fund: open-weight labs, inference platforms and agentic enterprise apps.",
+   "roles": [
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Baseten"
+    },
+    {
+     "subsegment": "n8.platform",
+     "portfolio": "Mistral AI"
+    },
+    {
+     "subsegment": "n9.legal",
+     "portfolio": "Harvey"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Sierra"
+    }
+   ],
+   "source": "https://www.aol.com/finance/35-old-investor-backed-hottest-125740716.html"
+  },
+  {
+   "name": "Elad Gil",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://eladgil.com",
+   "summary": "Solo GP writing early and growth cheques into AI search, legal, support agents, labs and defence.",
+   "roles": [
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Perplexity, Mistral AI"
+    },
+    {
+     "subsegment": "n9.legal",
+     "portfolio": "Harvey"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Decagon"
+    },
+    {
+     "subsegment": "n9.consumer",
+     "portfolio": "Character.AI"
+    },
+    {
+     "subsegment": "n9.public",
+     "portfolio": "Anduril"
+    }
+   ],
+   "source": "https://eladgil.com"
+  },
+  {
+   "name": "Benchmark",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.benchmark.com",
+   "summary": "Small-partnership early-stage leads: inference, agent frameworks, search APIs, expert data and agent builders.",
+   "roles": [
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Fireworks AI"
+    },
+    {
+     "subsegment": "n8.framework",
+     "portfolio": "LangChain"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "portfolio": "Exa"
+    },
+    {
+     "subsegment": "n8.lowcode",
+     "portfolio": "Gumloop"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Sierra"
+    },
+    {
+     "subsegment": "n5.label",
+     "portfolio": "Mercor"
+    }
+   ],
+   "source": "https://www.tamradar.com/funding-rounds/gumloop-series-b-50m"
+  },
+  {
+   "name": "Bessemer Venture Partners",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.bvp.com",
+   "summary": "Cloud/AI index investor; Indian sovereign models, agent builders and healthcare/HR AI.",
+   "roles": [
+    {
+     "subsegment": "n8.lowcode",
+     "portfolio": "Relevance AI"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "Abridge"
+    },
+    {
+     "subsegment": "n9.hr",
+     "portfolio": "Leena AI"
+    },
+    {
+     "subsegment": "n6.sovereign",
+     "portfolio": "Sarvam AI"
+    }
+   ],
+   "source": "https://www.hcltech.com/ja-jp/press-releases/sarvam-raises-234-million-first-close-300-million-series-b-15-billion-valuation"
+  },
+  {
+   "name": "Spark Capital",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.sparkcapital.com",
+   "summary": "Early backer of Anthropic; vector databases, voice models and meeting AI.",
+   "roles": [
+    {
+     "subsegment": "n8.vector",
+     "portfolio": "Qdrant"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Anthropic"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "portfolio": "Granola"
+    },
+    {
+     "subsegment": "n6.audio",
+     "portfolio": "Sesame"
+    }
+   ],
+   "source": "https://www.cbinsights.com/company/qdrant/financials"
+  },
+  {
+   "name": "Bain Capital Ventures",
+   "type": "venture fund",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://baincapitalventures.com",
+   "summary": "Developer infrastructure and agent sandboxes plus AI-native finance and support.",
+   "roles": [
+    {
+     "subsegment": "n8.sandbox",
+     "portfolio": "Northflank, Daytona"
+    },
+    {
+     "subsegment": "n9.finance",
+     "portfolio": "Rillet"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Decagon"
+    }
+   ],
+   "source": "https://www.cbinsights.com/company/northflank/financials"
+  },
+  {
+   "name": "EQT Ventures",
+   "type": "venture fund",
+   "hq": "SE",
+   "region": "Europe",
+   "url": "https://eqtgroup.com/ventures",
+   "summary": "European multi-stage fund; emotive voice AI, enterprise voice agents and world models.",
+   "roles": [
+    {
+     "subsegment": "n9.voice",
+     "portfolio": "Hume AI, Parloa"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Odyssey"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Parloa"
+    }
+   ],
+   "source": "https://neuronfeed.com/funding/2841"
+  },
+  {
+   "name": "Creandum",
+   "type": "venture fund",
+   "hq": "SE",
+   "region": "Europe",
+   "url": "https://www.creandum.com",
+   "summary": "Nordic early-stage fund; pre-seed in Lovable and AI-native accounting.",
+   "roles": [
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Lovable"
+    },
+    {
+     "subsegment": "n9.finance",
+     "portfolio": "Rillet"
+    },
+    {
+     "subsegment": "n4.stack",
+     "portfolio": "hosted·ai"
+    }
+   ],
+   "source": "https://www.cbinsights.com/company/rillet/financials"
+  },
+  {
+   "name": "Peak XV Partners",
+   "type": "venture fund",
+   "hq": "IN",
+   "region": "India",
+   "url": "https://www.peakxv.com",
+   "summary": "Ex-Sequoia India/SEA; $1.3B 2025-26 funds with AI focus; Indic models, health imaging, HR software.",
+   "roles": [
+    {
+     "subsegment": "n9.health",
+     "portfolio": "Qure.ai"
+    },
+    {
+     "subsegment": "n9.hr",
+     "portfolio": "Darwinbox"
+    },
+    {
+     "subsegment": "n6.sovereign",
+     "portfolio": "Sarvam AI"
+    }
+   ],
+   "source": "https://investing.com/news/stock-market-news/microsoftbacked-ai4bharat-set-to-raise-12-million-funding-from-peak-xv-lightspeed--sources-3121673"
+  },
+  {
+   "name": "Lightspeed India",
+   "type": "venture fund",
+   "hq": "IN",
+   "region": "India",
+   "url": "https://lsvp.com/india",
+   "summary": "India's most active AI investor: Sarvam, AI gateways, coding agents, CX and health imaging.",
+   "roles": [
+    {
+     "subsegment": "n7.route",
+     "portfolio": "Portkey"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "Qure.ai"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Yellow.ai"
+    },
+    {
+     "subsegment": "n9.hr",
+     "portfolio": "Darwinbox"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Emergent"
+    },
+    {
+     "subsegment": "n6.sovereign",
+     "portfolio": "Sarvam AI"
+    }
+   ],
+   "source": "https://investing.com/news/stock-market-news/microsoftbacked-ai4bharat-set-to-raise-12-million-funding-from-peak-xv-lightspeed--sources-3121673"
+  },
+  {
+   "name": "Elevation Capital",
+   "type": "venture fund",
+   "hq": "IN",
+   "region": "India",
+   "url": "https://elevationcapital.com",
+   "summary": "Indian early-stage; global-SaaS AI infra founders from India: tool integration and LLM evaluation.",
+   "roles": [
+    {
+     "subsegment": "n8.tools",
+     "portfolio": "Composio"
+    },
+    {
+     "subsegment": "n8.eval",
+     "portfolio": "Maxim AI"
+    }
+   ],
+   "source": "https://elevationcapital.com/portfolio"
+  },
+  {
+   "name": "Nexus Venture Partners",
+   "type": "venture fund",
+   "hq": "IN",
+   "region": "India",
+   "url": "https://nexusvp.com",
+   "summary": "India-US fund; developer AI tooling (crawling, agent builders), AMD GPU cloud and Indian AI cloud.",
+   "roles": [
+    {
+     "subsegment": "n4.neo",
+     "portfolio": "TensorWave, Neysa"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "portfolio": "Firecrawl"
+    },
+    {
+     "subsegment": "n8.lowcode",
+     "portfolio": "Gumloop"
+    }
+   ],
+   "source": "https://nexusvp.com/portfolio/"
+  },
+  {
+   "name": "Prosus Ventures",
+   "type": "corporate venture",
+   "hq": "NL",
+   "region": "Europe",
+   "url": "https://www.prosus.com",
+   "summary": "Naspers/Prosus investment arm; emerging-market AI apps, legal AI, model routing and AI for materials.",
+   "roles": [
+    {
+     "subsegment": "n7.route",
+     "portfolio": "Martian"
+    },
+    {
+     "subsegment": "n9.legal",
+     "portfolio": "SpotDraft"
+    },
+    {
+     "subsegment": "n9.industrial",
+     "portfolio": "CuspAI"
+    }
+   ],
+   "source": "https://www.prosus.com/portfolio"
+  },
+  {
+   "name": "Together Fund",
+   "type": "venture fund",
+   "hq": "IN",
+   "region": "India",
+   "url": "https://www.together.fund",
+   "summary": "Founder-led Indian fund for global AI/SaaS: agent tool integration and vibe-coding platforms.",
+   "roles": [
+    {
+     "subsegment": "n8.tools",
+     "portfolio": "Composio"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Emergent"
+    }
+   ],
+   "source": "https://www.together.fund/portfolio"
+  },
+  {
+   "name": "NVIDIA / NVentures",
+   "type": "corporate venture",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.nvidia.com/en-us/about-nvidia/nventures/",
+   "summary": "Most prolific AI strategic: labs, neoclouds, inference clouds and sovereign AI, often paired with GPU supply.",
+   "roles": [
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Crusoe, DeepInfra, Simplismart, Tensormesh"
+    },
+    {
+     "subsegment": "n6.open",
+     "portfolio": "Reflection AI, Mistral AI, Sarvam AI, EvolutionaryScale"
+    },
+    {
+     "subsegment": "n4.neo",
+     "portfolio": "Nscale, Crusoe, Lambda"
+    },
+    {
+     "subsegment": "n6.enterprise",
+     "portfolio": "Cohere, Sakana AI"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Mistral AI, Perplexity"
+    },
+    {
+     "subsegment": "n9.physical",
+     "portfolio": "Skild AI"
+    },
+    {
+     "subsegment": "n9.voice",
+     "portfolio": "PolyAI"
+    },
+    {
+     "subsegment": "n6.audio",
+     "portfolio": "Cartesia"
+    },
+    {
+     "subsegment": "n0.opt",
+     "portfolio": "Emerald AI"
+    },
+    {
+     "subsegment": "n0.land",
+     "portfolio": "Cloverleaf Infrastructure"
+    }
+   ],
+   "source": "https://techcrunch.com/2025/10/09/reflection-raises-2b-to-be-americas-open-frontier-ai-lab-challenging-deepsee"
+  },
+  {
+   "name": "Microsoft / M12",
+   "type": "corporate venture",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://m12.vc",
+   "summary": "Microsoft's venture arm plus strategic stakes: AI security, inference chips, model labs.",
+   "roles": [
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "OpenAI, Anthropic, Mistral AI"
+    },
+    {
+     "subsegment": "n8.security",
+     "portfolio": "HiddenLayer"
+    },
+    {
+     "subsegment": "n2.startup",
+     "portfolio": "d-Matrix"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "portfolio": "OpenAI, Anthropic, Mistral AI"
+    },
+    {
+     "subsegment": "n6.open",
+     "portfolio": "OpenAI, Mistral AI"
+    }
+   ],
+   "source": "https://m12.vc/portfolio/"
+  },
+  {
+   "name": "GV (Google Ventures)",
+   "type": "corporate venture",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.gv.com",
+   "summary": "Alphabet's early/mid-stage arm: vertical AI (legal, finance, health, HR), data-centric AI and AI chips.",
+   "roles": [
+    {
+     "subsegment": "n7.api",
+     "portfolio": "SambaNova, Clarifai"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "OpenEvidence, Owkin"
+    },
+    {
+     "subsegment": "n9.industrial",
+     "portfolio": "Owkin, Isomorphic Labs"
+    },
+    {
+     "subsegment": "n2.startup",
+     "portfolio": "SambaNova, Lightmatter"
+    },
+    {
+     "subsegment": "n8.security",
+     "portfolio": "WitnessAI"
+    },
+    {
+     "subsegment": "n8.framework",
+     "portfolio": "Haystack (deepset)"
+    },
+    {
+     "subsegment": "n9.legal",
+     "portfolio": "Harvey"
+    },
+    {
+     "subsegment": "n9.finance",
+     "portfolio": "Hebbia"
+    },
+    {
+     "subsegment": "n9.hr",
+     "portfolio": "Metaview"
+    },
+    {
+     "subsegment": "n9.creative",
+     "portfolio": "Synthesia"
+    }
+   ],
+   "source": "https://www.gv.com/portfolio/"
+  },
+  {
+   "name": "CapitalG",
+   "type": "corporate venture",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.capitalg.com",
+   "summary": "Alphabet's growth fund: data/AI platforms, inference, routers, agent frameworks, app builders and robotics models.",
+   "roles": [
+    {
+     "subsegment": "n8.platform",
+     "portfolio": "Databricks, Dataiku"
+    },
+    {
+     "subsegment": "n7.route",
+     "portfolio": "OpenRouter"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Baseten"
+    },
+    {
+     "subsegment": "n8.framework",
+     "portfolio": "LangChain"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Lovable"
+    },
+    {
+     "subsegment": "n9.industrial",
+     "portfolio": "Isomorphic Labs"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "Abridge"
+    },
+    {
+     "subsegment": "n9.finance",
+     "portfolio": "AlphaSense"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Physical Intelligence"
+    },
+    {
+     "subsegment": "n6.code",
+     "portfolio": "Magic"
+    }
+   ],
+   "source": "https://www.capitalg.com/portfolio/"
+  },
+  {
+   "name": "Amazon (Alexa Fund / Industrial Innovation Fund)",
+   "type": "corporate venture",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.amazon.science/industrial-innovation-fund",
+   "summary": "Strategic AI stakes (Anthropic) and robotics-focused corporate funds: humanoids, robot foundation models, bio models.",
+   "roles": [
+    {
+     "subsegment": "n9.physical",
+     "portfolio": "Figure AI, Agility Robotics, Skild AI"
+    },
+    {
+     "subsegment": "n7.route",
+     "portfolio": "Hugging Face"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Anthropic"
+    },
+    {
+     "subsegment": "n6.science",
+     "portfolio": "EvolutionaryScale"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Figure AI, Skild AI"
+    }
+   ],
+   "source": "https://www.cbinsights.com/company/evolutionaryscale/financials"
+  },
+  {
+   "name": "Salesforce Ventures",
+   "type": "corporate venture",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://salesforceventures.com",
+   "summary": "$1B+ generative-AI fund; model labs, model hubs, legal and insurance AI, enterprise agents.",
+   "roles": [
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Physical Intelligence, Runway, Skild AI, World Labs"
+    },
+    {
+     "subsegment": "n8.platform",
+     "portfolio": "Mistral AI, Writer"
+    },
+    {
+     "subsegment": "n4.serverless",
+     "portfolio": "Hugging Face, Together AI"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Anthropic, Mistral AI"
+    },
+    {
+     "subsegment": "n6.image",
+     "portfolio": "Black Forest Labs, Runway"
+    },
+    {
+     "subsegment": "n6.enterprise",
+     "portfolio": "Cohere, Writer"
+    },
+    {
+     "subsegment": "n9.voice",
+     "portfolio": "ElevenLabs"
+    },
+    {
+     "subsegment": "n9.legal",
+     "portfolio": "Legora"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Lovable"
+    },
+    {
+     "subsegment": "n9.insurance",
+     "portfolio": "Sixfold"
+    }
+   ],
+   "source": "https://salesforceventures.com/portfolio/"
+  },
+  {
+   "name": "Samsung NEXT / Samsung Catalyst",
+   "type": "corporate venture",
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "url": "https://www.samsungnext.com",
+   "summary": "Samsung's venture arms: inference clouds, agent sandboxes, small models, retrieval and AI chips.",
+   "roles": [
+    {
+     "subsegment": "n2.startup",
+     "portfolio": "Tenstorrent, Rebellions"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "DeepInfra"
+    },
+    {
+     "subsegment": "n8.sandbox",
+     "portfolio": "Daytona"
+    },
+    {
+     "subsegment": "n8.vector",
+     "portfolio": "Vectara"
+    },
+    {
+     "subsegment": "n6.open",
+     "portfolio": "Arcee AI"
+    }
+   ],
+   "source": "https://www.samsungnext.com/portfolio"
+  },
+  {
+   "name": "Intel Capital",
+   "type": "corporate venture",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.intelcapital.com",
+   "summary": "Silicon-to-app strategic: AI chips, model hubs, data labelling, gateways, generative media, robotics.",
+   "roles": [
+    {
+     "subsegment": "n7.route",
+     "portfolio": "Hugging Face, TrueFoundry AI Gateway"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Field AI, Figure AI"
+    },
+    {
+     "subsegment": "n5.rlenv",
+     "portfolio": "Prime Intellect, Scale AI"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "SambaNova"
+    },
+    {
+     "subsegment": "n8.platform",
+     "portfolio": "DataRobot"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "portfolio": "LandingAI"
+    },
+    {
+     "subsegment": "n9.creative",
+     "portfolio": "Higgsfield"
+    },
+    {
+     "subsegment": "n9.consumer",
+     "portfolio": "Inworld AI"
+    },
+    {
+     "subsegment": "n9.lang",
+     "portfolio": "Lilt"
+    },
+    {
+     "subsegment": "n6.enterprise",
+     "portfolio": "AI21 Labs"
+    }
+   ],
+   "source": "https://www.intelcapital.com/portfolio/"
+  },
+  {
+   "name": "Qualcomm Ventures",
+   "type": "corporate venture",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.qualcommventures.com",
+   "summary": "Edge and physical AI tilt: robotics, autonomy, contact-centre AI, model hubs and inference chips.",
+   "roles": [
+    {
+     "subsegment": "n9.physical",
+     "portfolio": "Figure AI, Neura Robotics, Wayve"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Cerebras"
+    },
+    {
+     "subsegment": "n7.route",
+     "portfolio": "Hugging Face"
+    },
+    {
+     "subsegment": "n8.sandbox",
+     "portfolio": "Daytona"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Anthropic"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Cresta"
+    },
+    {
+     "subsegment": "n9.secops",
+     "portfolio": "Horizon3.ai"
+    },
+    {
+     "subsegment": "n5.label",
+     "portfolio": "Scale AI"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Figure AI, Wayve"
+    }
+   ],
+   "source": "https://www.qualcommventures.com/portfolio/"
+  },
+  {
+   "name": "Databricks Ventures",
+   "type": "corporate venture",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.databricks.com/databricks-ventures",
+   "summary": "Ecosystem fund around the lakehouse: agent frameworks, vector stores, ingestion, routers, AI security and BI.",
+   "roles": [
+    {
+     "subsegment": "n8.vector",
+     "portfolio": "LanceDB, Vectara"
+    },
+    {
+     "subsegment": "n8.framework",
+     "portfolio": "LangChain, LlamaIndex"
+    },
+    {
+     "subsegment": "n9.analytics",
+     "portfolio": "Hex, Sigma Computing"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Lovable, Replit"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Mistral AI, Perplexity"
+    },
+    {
+     "subsegment": "n5.label",
+     "portfolio": "Labelbox, SuperAnnotate"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "portfolio": "LlamaIndex, Unstructured"
+    },
+    {
+     "subsegment": "n7.route",
+     "portfolio": "OpenRouter"
+    },
+    {
+     "subsegment": "n8.security",
+     "portfolio": "Noma Security"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "portfolio": "Glean"
+    }
+   ],
+   "source": "https://www.databricks.com/databricks-ventures"
+  },
+  {
+   "name": "Anthology Fund (Menlo Ventures x Anthropic)",
+   "type": "corporate venture",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://menlovc.com/anthology-fund/",
+   "summary": "$100M fund co-run with Anthropic for startups building on Claude: routers, interpretability, decentralised training, bio.",
+   "roles": [
+    {
+     "subsegment": "n7.route",
+     "portfolio": "OpenRouter"
+    },
+    {
+     "subsegment": "n9.industrial",
+     "portfolio": "Chai Discovery"
+    },
+    {
+     "subsegment": "n6.safety",
+     "portfolio": "Goodfire"
+    },
+    {
+     "subsegment": "n4.market",
+     "portfolio": "Prime Intellect"
+    }
+   ],
+   "source": "https://menlovc.com/perspective/q3-2025-anthology-fund-update/"
+  },
+  {
+   "name": "OpenAI Startup Fund",
+   "type": "corporate venture",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.openai.fund",
+   "summary": "OpenAI-affiliated fund backing apps built on its models: legal, health, education, robotics, coding.",
+   "roles": [
+    {
+     "subsegment": "n9.physical",
+     "portfolio": "Figure AI, 1X"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Figure AI, Physical Intelligence"
+    },
+    {
+     "subsegment": "n9.legal",
+     "portfolio": "Harvey"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "Ambience Healthcare"
+    },
+    {
+     "subsegment": "n9.creative",
+     "portfolio": "Descript"
+    },
+    {
+     "subsegment": "n9.edu",
+     "portfolio": "Speak"
+    },
+    {
+     "subsegment": "n9.industrial",
+     "portfolio": "Chai Discovery"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Cursor"
+    }
+   ],
+   "source": "https://www.cbinsights.com/company/chai-discovery/financials"
+  },
+  {
+   "name": "Alibaba Group",
+   "type": "corporate venture",
+   "hq": "CN",
+   "region": "China",
+   "url": "https://www.alibabagroup.com",
+   "summary": "Strategic backer of China's 'AI tigers' alongside its own Qwen models and Alibaba Cloud.",
+   "roles": [
+    {
+     "subsegment": "n6.open",
+     "portfolio": "Moonshot AI, Zhipu AI, MiniMax, StepFun"
+    },
+    {
+     "subsegment": "n6.code",
+     "portfolio": "Moonshot AI, Zhipu AI"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Moonshot AI"
+    }
+   ],
+   "source": "https://www.thestandard.com.hk/innovation/article/331387/China-AI-startup-Moonshot-AI-hits-US20-bln-valuation-after-Meituan-led-financing-round"
+  },
+  {
+   "name": "Tencent",
+   "type": "corporate venture",
+   "hq": "CN",
+   "region": "China",
+   "url": "https://www.tencent.com",
+   "summary": "Strategic investor in Chinese model labs complementing its Hunyuan models and cloud.",
+   "roles": [
+    {
+     "subsegment": "n6.open",
+     "portfolio": "Moonshot AI, Zhipu AI, MiniMax, StepFun"
+    },
+    {
+     "subsegment": "n6.code",
+     "portfolio": "Moonshot AI, Zhipu AI"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Moonshot AI"
+    }
+   ],
+   "source": "https://www.thestandard.com.hk/innovation/article/331387/China-AI-startup-Moonshot-AI-hits-US20-bln-valuation-after-Meituan-led-financing-round"
+  },
+  {
+   "name": "MGX",
+   "type": "sovereign / strategic",
+   "hq": "AE",
+   "region": "Middle East",
+   "url": "https://www.mgx.ae",
+   "summary": "Abu Dhabi AI investor (Mubadala, G42): frontier labs, Stargate and data-centre platforms via AIP.",
+   "roles": [
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "OpenAI, xAI"
+    },
+    {
+     "subsegment": "n7.platform",
+     "portfolio": "Databricks"
+    },
+    {
+     "subsegment": "n0.capital",
+     "portfolio": "AI Infrastructure Partnership (AIP)"
+    },
+    {
+     "subsegment": "n0.dcdev",
+     "portfolio": "Aligned Data Centers"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "portfolio": "OpenAI, xAI"
+    }
+   ],
+   "source": "https://www.datacenterdynamics.com/en/news/mgx-aip-and-blackrocks-gip-complete-40bn-acquisition-of-aligned-dat"
+  },
+  {
+   "name": "Public Investment Fund (PIF) / HUMAIN",
+   "type": "sovereign / strategic",
+   "hq": "SA",
+   "region": "Middle East",
+   "url": "https://www.pif.gov.sa",
+   "summary": "Saudi sovereign fund; HUMAIN builds national AI DCs/models and invests (HUMAIN Ventures) in AI labs and inference.",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "portfolio": "HUMAIN, DataVolt"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Groq"
+    },
+    {
+     "subsegment": "n6.image",
+     "portfolio": "Luma AI"
+    }
+   ],
+   "source": "https://lumalabs.ai"
+  },
+  {
+   "name": "Mubadala",
+   "type": "sovereign / strategic",
+   "hq": "AE",
+   "region": "Middle East",
+   "url": "https://www.mubadala.com",
+   "summary": "Abu Dhabi sovereign; founding partner of MGX; AI campus developers and data-centre platforms.",
+   "roles": [
+    {
+     "subsegment": "n0.capital",
+     "portfolio": "MGX, AI Infrastructure Partnership (AIP)"
+    },
+    {
+     "subsegment": "n0.dcdev",
+     "portfolio": "Crusoe, Aligned Data Centers"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Crusoe"
+    }
+   ],
+   "source": "https://www.datacenterdynamics.com/en/news/mgx-aip-and-blackrocks-gip-complete-40bn-acquisition-of-aligned-dat"
+  },
+  {
+   "name": "Qatar Investment Authority (QIA)",
+   "type": "sovereign / strategic",
+   "hq": "QA",
+   "region": "Middle East",
+   "url": "https://www.qia.qa",
+   "summary": "Gulf sovereign increasingly active in AI growth rounds: frontier labs, data platforms, contact-centre AI.",
+   "roles": [
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Anthropic, xAI"
+    },
+    {
+     "subsegment": "n7.platform",
+     "portfolio": "Databricks"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Cresta"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "portfolio": "Anthropic, xAI"
+    },
+    {
+     "subsegment": "n6.code",
+     "portfolio": "Anthropic, xAI"
+    }
+   ],
+   "source": "https://www.cbinsights.com/company/cresta/financials"
+  },
+  {
+   "name": "Temasek",
+   "type": "sovereign / strategic",
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "url": "https://www.temasek.com.sg",
+   "summary": "Singapore investor; owns regional data-centre platforms and telco AI clouds; AI chip and model stakes.",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "portfolio": "STT GDC, Princeton Digital Group"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "SambaNova"
+    },
+    {
+     "subsegment": "n9.industrial",
+     "portfolio": "PhysicsX"
+    },
+    {
+     "subsegment": "n4.sovereign",
+     "portfolio": "Singtel RE:AI"
+    }
+   ],
+   "source": "https://www.temasek.com.sg"
+  },
+  {
+   "name": "GIC",
+   "type": "sovereign / strategic",
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "url": "https://www.gic.com.sg",
+   "summary": "Singapore sovereign; late-stage AI labs and data platforms plus data-centre JVs.",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "portfolio": "Vantage Data Centers, Equinix"
+    },
+    {
+     "subsegment": "n7.platform",
+     "portfolio": "Databricks"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Anthropic"
+    }
+   ],
+   "source": "https://www.gic.com.sg"
+  },
+  {
+   "name": "SoftBank Group / Vision Fund",
+   "type": "sovereign / strategic",
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "url": "https://group.softbank",
+   "summary": "Largest single OpenAI backer (Stargate); robotics models, autonomy, AI search and Indian coding agents via Vision Fund 2.",
+   "roles": [
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "OpenAI, Perplexity"
+    },
+    {
+     "subsegment": "n9.physical",
+     "portfolio": "Skild AI, Wayve"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "OpenAI, Emergent"
+    },
+    {
+     "subsegment": "n4.sovereign",
+     "portfolio": "SoftBank Corp. AI infrastructure"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Skild AI, Wayve"
+    }
+   ],
+   "source": "https://bloomberg.com/news/articles/2026-01-14/robotics-startup-skild-valued-above-14-billion-after-softbank-led-funding-round"
+  },
+  {
+   "name": "IndiaAI Mission",
+   "type": "sovereign / strategic",
+   "hq": "IN",
+   "region": "India",
+   "url": "https://indiaai.gov.in",
+   "summary": "Rs 10,372 crore national programme: subsidised GPU portal, foundation-model grants to Indian labs, startup and data support.",
+   "roles": [
+    {
+     "subsegment": "n6.sovereign",
+     "portfolio": "Sarvam AI, Soket AI, Gnani.ai"
+    },
+    {
+     "subsegment": "n4.sovereign",
+     "portfolio": "IndiaAI Mission (compute portal), Yotta Data Services (Shakti Cloud), NxtGen"
+    },
+    {
+     "subsegment": "n6.open",
+     "portfolio": "Sarvam AI"
+    }
+   ],
+   "source": "https://indiaai.gov.in"
+  },
+  {
+   "name": "Blackstone",
+   "type": "infrastructure & debt",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.blackstone.com",
+   "summary": "World's largest data-centre owner (QTS, AirTrunk) and major GPU-backed lender; growth equity in AI platforms.",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "portfolio": "QTS Data Centers, AirTrunk"
+    },
+    {
+     "subsegment": "n7.platform",
+     "portfolio": "Databricks"
+    },
+    {
+     "subsegment": "n4.neo",
+     "portfolio": "CoreWeave"
+    }
+   ],
+   "source": "https://www.cbinsights.com/company/databricks/financials"
+  },
+  {
+   "name": "Blue Owl Capital",
+   "type": "infrastructure & debt",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.blueowl.com",
+   "summary": "Private credit/real assets financing hyperscale AI campuses (Crusoe Abilene, Meta Hyperion) and STACK data centres.",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "portfolio": "Crusoe, STACK Infrastructure"
+    },
+    {
+     "subsegment": "n4.offtake",
+     "portfolio": "Meta Platforms"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "Crusoe"
+    }
+   ],
+   "source": "https://www.blueowl.com"
+  },
+  {
+   "name": "Brookfield Asset Management",
+   "type": "infrastructure & debt",
+   "hq": "CA",
+   "region": "North America",
+   "url": "https://www.brookfield.com",
+   "summary": "Power, nuclear (Westinghouse) and data-centre platforms; dedicated AI infrastructure fund.",
+   "roles": [
+    {
+     "subsegment": "n0.power",
+     "portfolio": "Westinghouse"
+    },
+    {
+     "subsegment": "n0.build",
+     "portfolio": "Compass Datacenters"
+    },
+    {
+     "subsegment": "n0.fuel",
+     "portfolio": "Westinghouse"
+    }
+   ],
+   "source": "https://www.brookfield.com"
+  },
+  {
+   "name": "KKR",
+   "type": "infrastructure & debt",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.kkr.com",
+   "summary": "Infrastructure investor in data-centre platforms (CyrusOne, STT GDC) and AI power partnerships.",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "portfolio": "CyrusOne, STT GDC"
+    }
+   ],
+   "source": "https://www.kkr.com"
+  },
+  {
+   "name": "Apollo Global Management",
+   "type": "infrastructure & debt",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.apollo.com",
+   "summary": "Asset-backed finance for AI compute and chip fabs, including GPU lease financing for xAI.",
+   "roles": [
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "xAI"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "portfolio": "xAI"
+    },
+    {
+     "subsegment": "n6.code",
+     "portfolio": "xAI"
+    }
+   ],
+   "source": "https://www.apollo.com"
+  },
+  {
+   "name": "Magnetar",
+   "type": "infrastructure & debt",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.magnetar.com",
+   "summary": "Hedge fund turned GPU-cloud financier; early CoreWeave backer and structured compute credit.",
+   "roles": [
+    {
+     "subsegment": "n4.neo",
+     "portfolio": "CoreWeave, TensorWave"
+    },
+    {
+     "subsegment": "n4.orch",
+     "portfolio": "CoreWeave"
+    }
+   ],
+   "source": "https://www.magnetar.com"
+  },
+  {
+   "name": "Macquarie Asset Management",
+   "type": "infrastructure & debt",
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "url": "https://www.macquarie.com",
+   "summary": "Infrastructure equity and credit for AI data centres (Applied Digital) and GPU-backed loans (Lambda).",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "portfolio": "Applied Digital, AirTrunk"
+    },
+    {
+     "subsegment": "n4.neo",
+     "portfolio": "Lambda"
+    },
+    {
+     "subsegment": "n4.serverless",
+     "portfolio": "Lambda"
+    }
+   ],
+   "source": "https://www.macquarie.com"
+  },
+  {
+   "name": "TPG",
+   "type": "infrastructure & debt",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.tpg.com",
+   "summary": "Private equity anchoring AI infrastructure JVs (TCS HyperVault) and AI deployment capital (OpenAI Deployment Company).",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "portfolio": "TCS HyperVault"
+    },
+    {
+     "subsegment": "n10.native",
+     "portfolio": "OpenAI Deployment Company"
+    },
+    {
+     "subsegment": "n10.lab",
+     "portfolio": "OpenAI Deployment Company"
+    }
+   ],
+   "source": "https://www.datacenterdynamics.com/en/news/tpg-invests-in-tatas-new-hypervault-data-center-venture/"
+  },
+  {
+   "name": "Y Combinator",
+   "type": "accelerator",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.ycombinator.com",
+   "summary": "Largest AI seed pipeline; majority of recent batches are agents and AI dev tools.",
+   "roles": [
+    {
+     "subsegment": "n9.voice",
+     "portfolio": "Retell AI, Vapi, Bland AI"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "portfolio": "Firecrawl, Exa"
+    },
+    {
+     "subsegment": "n7.route",
+     "portfolio": "LiteLLM"
+    },
+    {
+     "subsegment": "n8.lowcode",
+     "portfolio": "Vellum"
+    },
+    {
+     "subsegment": "n8.vector",
+     "portfolio": "LanceDB"
+    },
+    {
+     "subsegment": "n8.sandbox",
+     "portfolio": "Browser Use"
+    },
+    {
+     "subsegment": "n8.memory",
+     "portfolio": "Mem0"
+    },
+    {
+     "subsegment": "n9.analytics",
+     "portfolio": "Julius AI"
+    },
+    {
+     "subsegment": "n5.physical",
+     "portfolio": "Human Archive"
+    },
+    {
+     "subsegment": "n5.web",
+     "portfolio": "Firecrawl, Exa"
+    }
+   ],
+   "source": "https://www.ycombinator.com/companies"
+  },
+  {
+   "name": "AI Grant",
+   "type": "accelerator",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://aigrant.com",
+   "summary": "Nat Friedman & Daniel Gross's programme for AI-native founders: agents, voice, interpretability, evals.",
+   "roles": [
+    {
+     "subsegment": "n6.safety",
+     "portfolio": "Goodfire, Artificial Analysis, Haize Labs"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "portfolio": "Granola, Dust"
+    },
+    {
+     "subsegment": "n9.voice",
+     "portfolio": "Vapi, Hume AI"
+    },
+    {
+     "subsegment": "n6.code",
+     "portfolio": "Inception Labs, Cursor"
+    },
+    {
+     "subsegment": "n8.sandbox",
+     "portfolio": "Browserbase"
+    },
+    {
+     "subsegment": "n8.lowcode",
+     "portfolio": "Lindy"
+    },
+    {
+     "subsegment": "n8.vector",
+     "portfolio": "Chroma"
+    },
+    {
+     "subsegment": "n9.analytics",
+     "portfolio": "Julius AI"
+    },
+    {
+     "subsegment": "n9.consumer",
+     "portfolio": "Tolan"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Perplexity"
+    }
+   ],
+   "source": "https://www.aigrant.com/"
+  },
+  {
+   "name": "Antler",
+   "type": "accelerator",
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "url": "https://www.antler.co",
+   "summary": "Global day-zero investor across 30 cities; pre-seed in Lovable and LLM-ops tools.",
+   "roles": [
+    {
+     "subsegment": "n8.eval",
+     "portfolio": "Agenta"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Lovable"
+    },
+    {
+     "subsegment": "n8.cache",
+     "portfolio": "Agenta"
+    }
+   ],
+   "source": "https://www.antler.co/portfolio"
+  },
+  {
+   "name": "Entrepreneur First",
+   "type": "accelerator",
+   "hq": "GB",
+   "region": "Europe",
+   "url": "https://www.joinef.com",
+   "summary": "Talent-first company builder (London, Bangalore, SF); voice agents, insurance AI, decentralised training.",
+   "roles": [
+    {
+     "subsegment": "n9.voice",
+     "portfolio": "PolyAI"
+    },
+    {
+     "subsegment": "n9.insurance",
+     "portfolio": "Tractable"
+    },
+    {
+     "subsegment": "n6.train",
+     "portfolio": "Gensyn"
+    }
+   ],
+   "source": "https://www.joinef.com/portfolio/"
+  }
+ ]
 }

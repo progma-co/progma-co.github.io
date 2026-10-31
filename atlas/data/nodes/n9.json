@@ -6,7 +6,7 @@
   "n9.agentic": "Browser and computer-use agents consolidating into big platforms: Meta bought Manus, Atlassian bought Dia, Anthropic bought Vercept, OpenAI shipped Atlas.",
   "n9.knowledge": "Suite vendors (Microsoft, Google, Atlassian) bundle work AI; Glean is the leading independent; meeting notetakers are a crowded sub-niche.",
   "n9.support": "Sierra (>$15B, May 2026) and Decagon lead AI-native players; incumbents Salesforce, Zendesk and Intercom ship their own agents.",
-  "n9.voice": "Split between developer platforms (Vapi, Retell, Bland) and enterprise voice-agent vendors (PolyAI, Parloa); ElevenLabs ($11B, Feb 2026) spans both.",
+  "n9.voice": "India has a dense cluster of Indic-language voice-agent startups (Bolna, Ringg, Navana, Nurix, Smallest.ai, Gnani, Sarvam) competing on language coverage and per-minute cost.",
   "n9.gtm": "Clay ($7.1B, 2026) leads GTM data/agents; AI-SDR startups face churn questions while CRM incumbents add agents.",
   "n9.creative": "Incumbent design suites (Canva, Adobe, Figma) vs generative-native media apps; Chinese video models (Kling) competitive globally.",
   "n9.legal": "Two-horse race at the top: Harvey (~$15.5B) and Legora ($8.8B, Oct 2026), both acquiring; legal publishers (TR, LexisNexis) defend with content.",
@@ -34,11 +34,15 @@
    "name": "11x",
    "kind": "company",
    "subsegments": [
-    "n9.gtm"
+    "n9.gtm",
+    "n9.voice"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$50M Series B, Sep 2024, a16z",
+   "round_source": "https://techcrunch.com/2024/09/30/11x-ai-a-developer-of-ai-sales-reps-has-raised-50m-series-b-led-by-a16z-sources-say",
    "one_liner": "AI SDR and phone agents for outbound sales",
    "url": "https://www.11x.ai",
    "source": "https://www.11x.ai"
@@ -81,6 +85,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$300M Series E at $5.3B valuation, Jun 2025",
+   "round_source": "https://bridgemena.com/13662",
    "one_liner": "Ambient AI clinical documentation integrated with Epic",
    "tags": [
     "enterprise"
@@ -128,6 +135,19 @@
    "source": "https://www.agilityrobotics.com"
   },
   {
+   "name": "AI Rudder",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Voice AI agents for collections and customer engagement in Asia",
+   "url": "https://www.airudder.com",
+   "source": "https://www.airudder.com"
+  },
+  {
    "name": "Aida",
    "kind": "company",
    "subsegments": [
@@ -161,7 +181,8 @@
    "name": "Aisera",
    "kind": "company",
    "subsegments": [
-    "n9.itops"
+    "n9.itops",
+    "n9.support"
    ],
    "hq": "US",
    "region": "North America",
@@ -205,7 +226,8 @@
    "name": "Algolia",
    "kind": "company",
    "subsegments": [
-    "n9.commerce"
+    "n9.commerce",
+    "n8.vector"
    ],
    "hq": "US",
    "region": "North America",
@@ -261,15 +283,32 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$243M Series C at $1.25B valuation, Jul 2025",
+   "round_source": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/ambience-healthcare-reaches-1-25b-valuation/",
    "one_liner": "Ambient AI scribe plus coding and CDI for health systems",
    "url": "https://www.ambiencehealthcare.com",
    "source": "https://fiercehealthcare.com/health-tech/ambience-banks-243m-series-c-investors-continue-bet-big-ambient-ai"
   },
   {
+   "name": "Amplemarket",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI sales copilot for prospecting data and multichannel outreach",
+   "url": "https://www.amplemarket.com",
+   "source": "https://www.amplemarket.com"
+  },
+  {
    "name": "Anduril",
    "kind": "company",
    "subsegments": [
-    "n9.public"
+    "n9.public",
+    "n9.physical"
    ],
    "hq": "US",
    "region": "North America",
@@ -280,6 +319,33 @@
    ],
    "url": "https://www.anduril.com",
    "source": "https://www.anduril.com"
+  },
+  {
+   "name": "Anterior",
+   "kind": "company",
+   "subsegments": [
+    "n9.health",
+    "n9.insurance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI for health-plan prior authorisation and clinical review",
+   "url": "https://www.anterior.com",
+   "source": "https://www.anterior.com"
+  },
+  {
+   "name": "Apollo Agriculture",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "KE",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "ML-based credit scoring and input bundles for smallholder farmers",
+   "url": "https://www.apolloagriculture.com",
+   "source": "https://www.apolloagriculture.com"
   },
   {
    "name": "Apollo.io",
@@ -293,6 +359,33 @@
    "one_liner": "B2B contact database with AI prospecting and sequencing",
    "url": "https://www.apollo.io",
    "source": "https://www.apollo.io"
+  },
+  {
+   "name": "Appier",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "AI marketing and ad-tech SaaS for customer acquisition and retention",
+   "url": "https://www.appier.com",
+   "source": "https://www.appier.com",
+   "note": "TSE: 4180"
+  },
+  {
+   "name": "Applied AI Company (AAICO)",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "AE",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "AI automation of insurance claims and document-heavy back-office work",
+   "url": "https://www.aaico.com",
+   "source": "https://www.aaico.com"
   },
   {
    "name": "Apptronik",
@@ -316,9 +409,27 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "Series A, Apr 2025",
+   "round_source": "https://startupintros.com/news/2025-04-01-artisan-ai-series-a",
    "one_liner": "AI BDR 'Ava' automating outbound prospecting",
    "url": "https://www.artisan.co",
    "source": "https://www.artisan.co"
+  },
+  {
+   "name": "Assort Health",
+   "kind": "company",
+   "subsegments": [
+    "n9.health",
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Voice AI agents for patient scheduling and calls at specialty practices",
+   "url": "https://www.assorthealth.com",
+   "source": "https://pulse2.com/assort-health-raises-120-million-series-c-to-scale-ai-agents-for-patient-journey/",
+   "note": "$76M Series B (Sep 2025); later $120M Series C reported"
   },
   {
    "name": "Atlassian Rovo",
@@ -338,6 +449,23 @@
    ],
    "url": "https://www.atlassian.com/software/rovo",
    "source": "https://www.atlassian.com/software/rovo"
+  },
+  {
+   "name": "Atomicwork",
+   "kind": "company",
+   "subsegments": [
+    "n9.itops"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Agentic IT and employee service management platform, alternative to legacy ITSM",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.atomicwork.com",
+   "source": "https://entrackr.com/news/atomicwork-raises-25-mn-in-series-a-led-by-khosla-ventures-8662955",
+   "note": "$25M Series A led by Khosla Ventures and Z47 (Jan 2025); India/US"
   },
   {
    "name": "Attio",
@@ -364,6 +492,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$227M Series B at $977M post-money, Apr 2024",
+   "round_source": "https://www.glynncapital.com/news/2024/10/31/augment-raises-227-million-series-b",
    "one_liner": "Coding agent with deep codebase context for large enterprise repos",
    "tags": [
     "enterprise",
@@ -371,6 +502,21 @@
    ],
    "url": "https://www.augmentcode.com",
    "source": "https://www.augmentcode.com"
+  },
+  {
+   "name": "Avaamo",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Conversational AI agents for healthcare, banking and employee service",
+   "url": "https://avaamo.ai",
+   "source": "https://inc42.com/lists/top-20-funded-ai-startups-in-india-2026/",
+   "note": "About $27.5M raised (Inc42 Datalabs)"
   },
   {
    "name": "AWS Marketplace AI Agents & Tools",
@@ -446,24 +592,6 @@
    "source": "https://www.bee.computer"
   },
   {
-   "name": "Bhashini",
-   "kind": "company",
-   "subsegments": [
-    "n9.lang"
-   ],
-   "hq": "IN",
-   "region": "India",
-   "status": "government",
-   "parent": "MeitY, Government of India",
-   "one_liner": "Indian government National Language Translation Mission platform and APIs for 22 languages",
-   "tags": [
-    "sovereign",
-    "open-source"
-   ],
-   "url": "https://bhashini.gov.in",
-   "source": "https://bhashini.gov.in"
-  },
-  {
    "name": "Bland AI",
    "kind": "company",
    "subsegments": [
@@ -475,6 +603,22 @@
    "one_liner": "Phone-call AI agent platform for enterprises",
    "url": "https://www.bland.ai",
    "source": "https://www.bland.ai"
+  },
+  {
+   "name": "Blip",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.commerce",
+    "n9.messaging"
+   ],
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Conversational platform and AI agents for WhatsApp customer journeys",
+   "tags": [],
+   "url": "https://www.blip.ai",
+   "source": "https://www.blip.ai"
   },
   {
    "name": "Bloomberg (Terminal AI)",
@@ -539,6 +683,23 @@
    "source": "https://www.bmc.com/it-solutions/bmc-helix.html"
   },
   {
+   "name": "Bolna",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Orchestration platform for building multilingual voice agents for Indian enterprises",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.bolna.ai",
+   "source": "https://techcrunch.com/2026/01/20/bolna-nabs-6-3-million-from-general-catalyst-for-its-india-focused-voice-orchestration-platform/",
+   "note": "$6.3M seed led by General Catalyst (Jan 2026)"
+  },
+  {
    "name": "Bolt.new (StackBlitz)",
    "kind": "company",
    "subsegments": [
@@ -550,6 +711,20 @@
    "one_liner": "In-browser AI app builder running full-stack apps via WebContainers",
    "url": "https://bolt.new",
    "source": "https://bolt.new"
+  },
+  {
+   "name": "Brahma AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative",
+    "n9.lang"
+   ],
+   "status": "private",
+   "parent": "Prime Focus / DNEG (minority voting)",
+   "one_liner": "AI-native OS for enterprise video, digital humans and multilingual lip-sync localisation",
+   "url": "https://www.brahma.ai",
+   "source": "https://www.businesstoday.in/technology/artificial-intelligence/story/prime-focus-ai-venture-brahma-ai-reaches-2-billion-valuation-with-rs1437-crore-fund-raise-558065-2026-09-27",
+   "note": "$150M led by Multiples at $2B valuation (Sep 2026); Prime Focus/DNEG-backed, HQ not confirmed HQ not confirmed."
   },
   {
    "name": "Brilliant Labs",
@@ -679,6 +854,10 @@
   },
   {
    "name": "ChatGPT (OpenAI)",
+   "aka": [
+    "ChatGPT Atlas",
+    "ChatGPT Apps directory / GPT Store"
+   ],
    "kind": "company",
    "subsegments": [
     "n9.assistant",
@@ -699,42 +878,17 @@
    "note": "OpenAI made ~10 acquisitions in 2026 (e.g. Torch Health, OpenClaw creator acqui-hire, Promptfoo, Astral) per Crunchbase"
   },
   {
-   "name": "ChatGPT Apps directory / GPT Store",
-   "kind": "company",
-   "subsegments": [
-    "n9.store"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "parent": "OpenAI",
-   "one_liner": "Directory of third-party apps and custom GPTs inside ChatGPT",
-   "url": "https://chatgpt.com/apps",
-   "source": "https://chatgpt.com/apps"
-  },
-  {
-   "name": "ChatGPT Atlas",
-   "kind": "company",
-   "subsegments": [
-    "n9.agentic"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "parent": "OpenAI",
-   "one_liner": "OpenAI's Chromium browser with built-in ChatGPT agent mode",
-   "url": "https://chatgpt.com/atlas",
-   "source": "https://chatgpt.com/atlas",
-   "note": "Launched Oct 2025"
-  },
-  {
    "name": "Claude (Anthropic)",
+   "aka": [
+    "Claude connectors directory"
+   ],
    "kind": "company",
    "subsegments": [
     "n9.assistant",
     "n9.coding",
     "n9.agentic",
-    "n9.knowledge"
+    "n9.knowledge",
+    "n9.store"
    ],
    "hq": "US",
    "region": "North America",
@@ -749,20 +903,6 @@
    "note": "Acquired Vercept (computer-use agents) Feb 2026"
   },
   {
-   "name": "Claude connectors directory",
-   "kind": "company",
-   "subsegments": [
-    "n9.store"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "parent": "Anthropic",
-   "one_liner": "Directory of MCP connectors and tools for Claude",
-   "url": "https://claude.ai/directory",
-   "source": "https://claude.ai/directory"
-  },
-  {
    "name": "Clay",
    "kind": "company",
    "subsegments": [
@@ -771,10 +911,26 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$115M Series D at $7.1B valuation (2026)",
+   "round_source": "https://thenextweb.com/news/clay-raises-115m-series-d-7-1bn-valuation-wellington",
    "one_liner": "GTM data enrichment and AI research agents for outbound sales",
    "url": "https://www.clay.com",
    "source": "https://thenextweb.com/news/clay-raises-115m-series-d-7-1bn-valuation-wellington",
    "note": "Raised $115M at $7.1B valuation (2026)"
+  },
+  {
+   "name": "CleverTap",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI-powered customer engagement and retention platform for consumer apps",
+   "url": "https://clevertap.com",
+   "source": "https://clevertap.com"
   },
   {
    "name": "Clio (with vLex Vincent)",
@@ -806,6 +962,25 @@
    "source": "https://legal.thomsonreuters.com/en/products/cocounsel"
   },
   {
+   "name": "Cognigy",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.voice"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "NICE (2025)",
+   "one_liner": "Enterprise conversational and voice AI agents for contact centres",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.cognigy.com",
+   "source": "https://www.cognigy.com",
+   "note": "Acquired by NICE (2025)"
+  },
+  {
    "name": "Cognite",
    "kind": "company",
    "subsegments": [
@@ -820,13 +995,20 @@
   },
   {
    "name": "Cognition (Devin + Windsurf)",
+   "aka": [
+    "Cognition (SWE-1.5)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n9.coding"
+    "n9.coding",
+    "n6.code"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": ">$2B Series E at $48B valuation, Sep 2026",
+   "round_source": "https://runtimewire.com/article/cognition-series-e-48-billion-valuation-scott-wu",
    "one_liner": "Devin autonomous software engineer and Windsurf AI IDE",
    "tags": [
     "developer",
@@ -837,18 +1019,17 @@
    "note": "Acquired Windsurf July 2025; raised >$2B at $48B valuation (Sep 2026)"
   },
   {
-   "name": "Comet (Perplexity)",
+   "name": "Common Room",
    "kind": "company",
    "subsegments": [
-    "n9.agentic"
+    "n9.gtm"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
-   "parent": "Perplexity",
-   "one_liner": "Agentic web browser that browses and completes tasks",
-   "url": "https://www.perplexity.ai/comet",
-   "source": "https://yourstory.com/ai-story/perplexity-ai-comet-browser-free-worldwide"
+   "one_liner": "Buyer-signal intelligence and AI agents for prospecting",
+   "url": "https://www.commonroom.io",
+   "source": "https://www.commonroom.io"
   },
   {
    "name": "Commure",
@@ -880,6 +1061,35 @@
    "source": "https://constructor.com"
   },
   {
+   "name": "Convin",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.voice"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Contact-centre conversation intelligence, QA and voicebots for Indian enterprises",
+   "url": "https://convin.ai",
+   "source": "https://convin.ai"
+  },
+  {
+   "name": "Corti",
+   "kind": "company",
+   "subsegments": [
+    "n9.health",
+    "n6.domain",
+    "n6.audio"
+   ],
+   "hq": "DK",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Healthcare-specific speech and language AI for documentation and coding",
+   "url": "https://www.corti.ai",
+   "source": "https://www.corti.ai"
+  },
+  {
    "name": "Crescendo",
    "kind": "company",
    "subsegments": [
@@ -907,6 +1117,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$125M Series D, Nov 2024, WiL and QIA",
+   "round_source": "https://www.cbinsights.com/company/cresta/financials",
    "one_liner": "AI agents and real-time agent assist for contact centres",
    "tags": [
     "enterprise"
@@ -928,6 +1141,23 @@
    "source": "https://www.cropin.com"
   },
   {
+   "name": "Crosby",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal",
+    "n10.native",
+    "n10.outcome"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native law firm that reviews and negotiates commercial contracts",
+   "tags": [],
+   "url": "https://crosby.ai",
+   "source": "https://www.bvp.com/atlas/the-rise-of-vertical-ai-native-services-in-india",
+   "note": "Service-as-software: lawyers plus AI"
+  },
+  {
    "name": "CrowdStrike Charlotte AI",
    "kind": "company",
    "subsegments": [
@@ -945,10 +1175,27 @@
    "source": "https://www.crowdstrike.com/platform/charlotte-ai/"
   },
   {
-   "name": "Cursor (Anysphere)",
+   "name": "Curacel",
    "kind": "company",
    "subsegments": [
-    "n9.coding"
+    "n9.insurance"
+   ],
+   "hq": "NG",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "AI claims automation and fraud detection for African insurers",
+   "url": "https://www.curacel.co",
+   "source": "https://thecondia.com/africa-ai-startups-impact/"
+  },
+  {
+   "name": "Cursor (Anysphere)",
+   "aka": [
+    "Anysphere (Cursor Composer)"
+   ],
+   "kind": "company",
+   "subsegments": [
+    "n9.coding",
+    "n6.code"
    ],
    "hq": "US",
    "region": "North America",
@@ -981,6 +1228,21 @@
    "note": "Acquired by Applied Systems (Sep 2025)"
   },
   {
+   "name": "Darwin AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.gtm"
+   ],
+   "hq": "AR",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "AI agents that handle sales and service conversations for LatAm SMBs",
+   "url": "https://getdarwin.ai",
+   "source": "https://latamlist.com/darwin-ai-raises-4-5m-seed-round-led-by-base10-partners/",
+   "note": "$4.5M seed led by Base10 (Aug 2025)"
+  },
+  {
    "name": "Darwinbox",
    "kind": "company",
    "subsegments": [
@@ -994,6 +1256,34 @@
    "source": "https://darwinbox.com"
   },
   {
+   "name": "DataProphet",
+   "kind": "company",
+   "subsegments": [
+    "n9.industrial"
+   ],
+   "hq": "ZA",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "AI process optimisation for manufacturing to cut defects and scrap",
+   "url": "https://dataprophet.com",
+   "source": "https://thecondia.com/africa-ai-startups-impact/"
+  },
+  {
+   "name": "Day.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.sor",
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native CRM (CRMx) that builds records from conversations for agent-first sales teams",
+   "url": "https://day.ai",
+   "source": "https://pulse2.com/day-ai-20-million-series-a/",
+   "note": "$20M Series A led by Sequoia"
+  },
+  {
    "name": "Daydream",
    "kind": "company",
    "subsegments": [
@@ -1002,6 +1292,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$50M seed",
+   "round_source": "https://retailboss.co/daydream-raises-50-million-to-launch-as-ai-powered-fashion-shopping-agent/",
    "one_liner": "Conversational AI fashion shopping agent across thousands of brands",
    "url": "https://daydream.ing",
    "source": "https://retailboss.co/daydream-raises-50-million-to-launch-as-ai-powered-fashion-shopping-agent/",
@@ -1017,10 +1310,26 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$250M Series D at $4.5B valuation, Jan 2026",
+   "round_source": "https://dealroom.co/news/125039-decagon-raises-250m-at-4-5b-valuation-to-automate-customer-support",
    "one_liner": "Conversational AI agents for customer support across chat, email and voice",
    "url": "https://decagon.ai",
    "source": "https://news.bloomberglaw.com/artificial-intelligence/ai-customer-support-startup-decagon-valued-at-4-5-billion",
    "note": "Valued at $4.5B (2025)"
+  },
+  {
+   "name": "DeepJudge",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI knowledge search over law firms' own document repositories",
+   "url": "https://www.deepjudge.ai",
+   "source": "https://www.deepjudge.ai"
   },
   {
    "name": "DeepL",
@@ -1040,23 +1349,6 @@
    "note": "Reported weighing ~$5B US IPO (Oct 2025)"
   },
   {
-   "name": "DeepSeek app",
-   "kind": "company",
-   "subsegments": [
-    "n9.assistant"
-   ],
-   "hq": "CN",
-   "region": "China",
-   "status": "private",
-   "one_liner": "Free chat assistant built on DeepSeek's open-weight models",
-   "tags": [
-    "open-source",
-    "cost"
-   ],
-   "url": "https://chat.deepseek.com",
-   "source": "https://chat.deepseek.com"
-  },
-  {
    "name": "Descript",
    "kind": "company",
    "subsegments": [
@@ -1068,6 +1360,19 @@
    "one_liner": "Text-based audio/video editor with AI agent Underlord",
    "url": "https://www.descript.com",
    "source": "https://www.descript.com"
+  },
+  {
+   "name": "Devnagri",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI translation and localisation for Indian languages",
+   "url": "https://devnagri.com",
+   "source": "https://devnagri.com"
   },
   {
    "name": "DevRev",
@@ -1127,6 +1432,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$37M Series B, Jul 2025, Theory Ventures",
+   "round_source": "https://www.cbinsights.com/company/dropzone-ai/financials",
    "one_liner": "Autonomous AI SOC analyst for alert investigation",
    "tags": [
     "security"
@@ -1180,6 +1488,19 @@
    "source": "https://eightfold.ai"
   },
   {
+   "name": "Eka Care",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Personal health records platform with EkaScribe AI clinical documentation",
+   "url": "https://www.eka.care",
+   "source": "https://www.eka.care"
+  },
+  {
    "name": "EliseAI",
    "kind": "company",
    "subsegments": [
@@ -1188,6 +1509,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$350M at $4B valuation (2026)",
+   "round_source": "https://www.fiercehealthcare.com/finance/eliseai-banks-350m-hits-4b-valuation-accelerated-new-product-development",
    "one_liner": "AI agents for property management leasing, maintenance and resident communication",
    "tags": [
     "enterprise"
@@ -1195,6 +1519,24 @@
    "url": "https://www.eliseai.com",
    "source": "https://www.fiercehealthcare.com/finance/eliseai-banks-350m-hits-4b-valuation-accelerated-new-product-development",
    "note": "Raised $350M at $4B valuation (2026)"
+  },
+  {
+   "name": "Ema",
+   "kind": "company",
+   "subsegments": [
+    "n9.agentic",
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "\"Universal AI employee\" platform of agents for enterprise support, HR, sales and operations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.ema.co",
+   "source": "https://inc42.com/lists/top-20-funded-ai-startups-in-india-2026/",
+   "note": "About $138M raised (Inc42 Datalabs); Indian-founded, large Bengaluru team"
   },
   {
    "name": "Emergent",
@@ -1205,6 +1547,9 @@
    "hq": "IN",
    "region": "India",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$130M Series C at $1.5B valuation (2026)",
+   "round_source": "https://thenextweb.com/news/emergent-130m-series-c-vibe-coding-unicorn",
    "one_liner": "Indian-founded agentic vibe-coding platform for building full-stack apps",
    "url": "https://emergent.sh",
    "source": "https://emergent.sh"
@@ -1241,6 +1586,20 @@
    "source": "https://www.eudia.com"
   },
   {
+   "name": "Eve",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI platform for plaintiff law firms: case intake, discovery and drafting",
+   "url": "https://www.eve.legal",
+   "source": "https://legaltechnology.com/2025/09/30/plaintiff-legal-ai-startup-eve-raises-103m-series-b-at-a-1bn-valuation",
+   "note": "$103M Series B at $1B (Sep 2025)"
+  },
+  {
    "name": "Even Realities",
    "kind": "company",
    "subsegments": [
@@ -1262,6 +1621,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$150M Series E at $2B valuation, Oct 2025",
+   "round_source": "https://news.bloombergtax.com/tech-and-telecom-law/ai-legal-tech-evenup-raises-150-million-at-2-billion-valuation",
    "one_liner": "AI for personal-injury demand letters and case preparation",
    "url": "https://www.evenuplaw.com",
    "source": "https://www.evenuplaw.com"
@@ -1283,6 +1645,21 @@
    "source": "https://www.exaforce.com"
   },
   {
+   "name": "Exotel",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice",
+    "n9.messaging"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Cloud telephony and contact-centre platform with voice AI agents",
+   "tags": [],
+   "url": "https://exotel.com",
+   "source": "https://exotel.com"
+  },
+  {
    "name": "Factory",
    "kind": "company",
    "subsegments": [
@@ -1291,6 +1668,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$50M Series B at $300M valuation, Sep 2025",
+   "round_source": "https://factory.ai/news/series-b",
    "one_liner": "Enterprise coding agents ('Droids') for migration, review and incident work",
    "tags": [
     "enterprise",
@@ -1298,6 +1678,19 @@
    ],
    "url": "https://factory.ai",
    "source": "https://factory.ai"
+  },
+  {
+   "name": "Fasal",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "IoT plus AI advisory for horticulture farmers",
+   "url": "https://fasal.co",
+   "source": "https://fasal.co"
   },
   {
    "name": "Federato",
@@ -1357,9 +1750,13 @@
   },
   {
    "name": "Figure AI",
+   "aka": [
+    "Figure AI (Helix)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n9.physical"
+    "n9.physical",
+    "n6.world"
    ],
    "hq": "US",
    "region": "North America",
@@ -1395,6 +1792,19 @@
    "source": "https://www.flexport.com"
   },
   {
+   "name": "Forethought",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI agents for support triage, resolution and agent assist",
+   "url": "https://forethought.ai",
+   "source": "https://forethought.ai"
+  },
+  {
    "name": "FourKites",
    "kind": "company",
    "subsegments": [
@@ -1409,6 +1819,19 @@
    ],
    "url": "https://www.fourkites.com",
    "source": "https://www.fourkites.com"
+  },
+  {
+   "name": "Freed",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Ambient AI scribe for independent clinicians",
+   "url": "https://www.getfreed.ai",
+   "source": "https://www.getfreed.ai"
   },
   {
    "name": "Freepik",
@@ -1427,7 +1850,8 @@
    "name": "Freshworks (Freddy AI)",
    "kind": "company",
    "subsegments": [
-    "n9.itops"
+    "n9.itops",
+    "n9.support"
    ],
    "hq": "US",
    "region": "North America",
@@ -1462,6 +1886,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$68M Series B at $2.1B valuation, Nov 2025",
+   "round_source": "https://secure.businesswire.com/news/home/20251110805751/en/Gamma-Surpasses-%24100M-ARR-Raises-at-%242.1B-Valuation-as-It-Replaces-PowerPoint-for-the-AI-Era",
    "one_liner": "AI presentation, document and website generator",
    "url": "https://gamma.app",
    "source": "https://gamma.app"
@@ -1481,23 +1908,6 @@
    "source": "https://www.gauthmath.com"
   },
   {
-   "name": "Gemini Enterprise (Google)",
-   "kind": "company",
-   "subsegments": [
-    "n9.knowledge"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Alphabet",
-   "one_liner": "Google's enterprise agent platform and work assistant (successor to Agentspace)",
-   "tags": [
-    "enterprise"
-   ],
-   "url": "https://cloud.google.com/gemini-enterprise",
-   "source": "https://cloud.google.com/gemini-enterprise"
-  },
-  {
    "name": "Genspark",
    "kind": "company",
    "subsegments": [
@@ -1507,9 +1917,30 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "Series B extended to $385M at ~$2.6B valuation, Mar 2026",
+   "round_source": "https://raising.fi/news/genspark-ai-series-b-march-2026",
    "one_liner": "AI agent workspace producing slides, sheets, research and calls",
    "url": "https://www.genspark.ai",
    "source": "https://www.genspark.ai"
+  },
+  {
+   "name": "Giga",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Enterprise voice and chat support agents; DoorDash is an anchor customer",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://giga.ai",
+   "source": "https://fortune.com/2025/11/05/voice-ai-giga-raise-61-million-customer-service-series-a/",
+   "note": "$61M Series A led by Redpoint (Nov 2025); Indian-founded"
   },
   {
    "name": "GitHub Copilot",
@@ -1538,6 +1969,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$150M Series F at $7.2B valuation, Jun 2025",
+   "round_source": "https://glean.com/press/glean-raises-150m-series-f-at-7-2b-valuation-to-accelerate-enterprise-ai-agent-innovation-globally",
    "one_liner": "Enterprise search and work-AI assistant over company data",
    "tags": [
     "enterprise"
@@ -1665,9 +2099,29 @@
    "hq": "GB",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$125M Series C, Mar 2026",
+   "round_source": "https://raising.fi/news/granola-series-c-march-2026-1",
    "one_liner": "AI meeting notepad that enhances user notes from transcripts",
    "url": "https://www.granola.ai",
    "source": "https://www.granola.ai"
+  },
+  {
+   "name": "Graph AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.health",
+    "n9.industrial",
+    "n9.regtech"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI-native pharmacovigilance: case intake through safety reports to FDA and EMA",
+   "tags": [],
+   "url": "https://www.graphai.com",
+   "source": "https://yourstory.com/2026/09/graph-ai-raises-133-million-in-series-a",
+   "note": "$13.3M Series A (Sep 2026); seed from Bessemer"
   },
   {
    "name": "Grok (xAI)",
@@ -1686,20 +2140,70 @@
    "note": "SpaceX-xAI merger finalised Feb 2026"
   },
   {
+   "name": "Gupshup",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.gtm",
+    "n9.messaging"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Conversational messaging and AI agents on WhatsApp/RCS for marketing, commerce and support",
+   "tags": [],
+   "url": "https://www.gupshup.io",
+   "source": "https://www.gupshup.io",
+   "note": "Indian-founded; major WhatsApp BSP in India and emerging markets"
+  },
+  {
    "name": "H Company",
    "kind": "company",
    "subsegments": [
-    "n9.agentic"
+    "n9.agentic",
+    "n6.open"
    ],
    "hq": "FR",
    "region": "Europe",
    "status": "private",
    "one_liner": "French developer of computer-use agents (Surfer, Runner)",
    "tags": [
-    "sovereign"
+    "sovereign",
+    "open-source"
    ],
    "url": "https://www.hcompany.ai",
    "source": "https://www.hcompany.ai"
+  },
+  {
+   "name": "Haptik",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.voice"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "acquired",
+   "parent": "Jio Platforms (2019)",
+   "one_liner": "Conversational AI agents for WhatsApp, web and voice customer journeys",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.haptik.ai",
+   "source": "https://www.ringg.ai/blog/best-ai-voice-agent-companies"
+  },
+  {
+   "name": "Harrison.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Radiology and pathology AI for clinical decision support",
+   "url": "https://harrison.ai",
+   "source": "https://harrison.ai"
   },
   {
    "name": "Harvey",
@@ -1710,6 +2214,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "Round at ~$15.5B valuation, Sep 2026",
+   "round_source": "https://www.artificiallawyer.com/2026/10/21/legora-vs-harvey-the-multi-billion-ai-battle/",
    "one_liner": "Legal AI platform for law firms and in-house teams",
    "tags": [
     "enterprise"
@@ -1728,6 +2235,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$130M Series B, Jul 2024, a16z",
+   "round_source": "https://news.crunchbase.com/ai/ai-hebbia-venture-a16z-gv-thiel/",
    "one_liner": "Multi-agent document analysis for finance and legal professionals",
    "url": "https://www.hebbia.com",
    "source": "https://www.hebbia.com"
@@ -1741,6 +2251,9 @@
    "hq": "AU",
    "region": "Asia-Pacific",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$100M Series C, Sep 2026 (Blackbird, Headline, Point72 Ventures)",
+   "round_source": "https://www.cbinsights.com/company/heidi-health/financials",
    "one_liner": "AI medical scribe used by clinicians across many countries",
    "url": "https://www.heidihealth.com",
    "source": "https://www.heidihealth.com"
@@ -1749,11 +2262,15 @@
    "name": "Helsing",
    "kind": "company",
    "subsegments": [
-    "n9.public"
+    "n9.public",
+    "n9.physical"
    ],
    "hq": "DE",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$1.8B Series E at ~$18B valuation (2026)",
+   "round_source": "https://helsing.ai/newsroom/helsing-raises-1-8bn-in-series-e",
    "one_liner": "European defence AI: battlefield software, AI-enabled strike drones and uncrewed systems",
    "tags": [
     "sovereign"
@@ -1802,6 +2319,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$400M Series B at $5.4B valuation, Aug 2026",
+   "round_source": "https://www.businesstoday.com.my/2026/08/26/higgsfield-secures-us400-million-series-b-at-us5-4-billion-valuation/",
    "one_liner": "AI video generation app with cinematic camera controls",
    "url": "https://higgsfield.ai",
    "source": "https://higgsfield.ai"
@@ -1817,6 +2337,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$126M at $3.5B valuation, Nov 2025",
+   "round_source": "https://www.hippocraticai.com",
    "one_liner": "Safety-focused healthcare voice agents for non-diagnostic patient tasks",
    "tags": [
     "enterprise"
@@ -1871,23 +2394,6 @@
    "source": "https://www.hubspot.com/products/artificial-intelligence"
   },
   {
-   "name": "Hugging Face Spaces",
-   "kind": "company",
-   "subsegments": [
-    "n9.store"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Hosting and discovery for AI demo apps",
-   "tags": [
-    "open-source",
-    "developer"
-   ],
-   "url": "https://huggingface.co/spaces",
-   "source": "https://huggingface.co/spaces"
-  },
-  {
    "name": "Humane",
    "kind": "company",
    "subsegments": [
@@ -1919,11 +2425,28 @@
    "source": "https://www.hyperexponential.com"
   },
   {
+   "name": "IDfy",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance",
+    "n9.regtech"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Identity verification, background checks and fraud prevention using AI",
+   "tags": [],
+   "url": "https://www.idfy.com",
+   "source": "https://www.idfy.com"
+  },
+  {
    "name": "iFlytek",
    "kind": "company",
    "subsegments": [
     "n9.public",
-    "n9.lang"
+    "n9.lang",
+    "n6.audio",
+    "n6.sovereign"
    ],
    "hq": "CN",
    "region": "China",
@@ -1934,6 +2457,52 @@
    ],
    "url": "https://www.iflytek.com/en/",
    "source": "https://www.iflytek.com/en/"
+  },
+  {
+   "name": "Infinitus",
+   "kind": "company",
+   "subsegments": [
+    "n9.health",
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Voice AI agents for payer calls, benefits verification and prior auth",
+   "url": "https://www.infinitus.ai",
+   "source": "https://www.infinitus.ai"
+  },
+  {
+   "name": "Inner AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant",
+    "n9.agentic"
+   ],
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Multi-model AI workspace plus Squad agents for sales, finance and marketing",
+   "url": "https://innerai.com",
+   "source": "https://www.techloy.com/latin-americas-biggest-startup-funding-rounds-in-week-16-led-by-inner-ai-with-big-bets-on-ai-and-fintech.md",
+   "note": "$6M seed at a reported $100M valuation (2026)"
+  },
+  {
+   "name": "Innovaccer",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Healthcare data platform with AI agents for care management and provider operations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://innovaccer.com",
+   "source": "https://innovaccer.com",
+   "note": "Indian-founded; large Noida engineering base"
   },
   {
    "name": "Insilico Medicine",
@@ -1950,6 +2519,21 @@
    "note": "Hong Kong IPO Dec 2025"
   },
   {
+   "name": "Intella",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice",
+    "n9.lang"
+   ],
+   "hq": "EG",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "Arabic speech recognition and conversation analytics for contact centres",
+   "url": "https://intella.ai",
+   "source": "https://enterpriseam.com/ksa/2025/09/03/intella-raises-usd-12-5-mn-to-scale-its-arabic-first-ai-platform/",
+   "note": "$12.5M Series A (Sep 2025); Egypt/Saudi"
+  },
+  {
    "name": "Intercom Fin",
    "kind": "company",
    "subsegments": [
@@ -1962,6 +2546,22 @@
    "one_liner": "AI support agent resolving customer queries across channels",
    "url": "https://fin.ai",
    "source": "https://fin.ai"
+  },
+  {
+   "name": "Intron Health",
+   "kind": "company",
+   "subsegments": [
+    "n9.health",
+    "n9.lang",
+    "n9.voice"
+   ],
+   "hq": "NG",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "African-accent speech recognition (Sahara) for clinical documentation and voice apps",
+   "url": "https://www.intron.io",
+   "source": "https://techcabal.com/2026/03/05/intron-expands-sahara-to-57-languages/",
+   "note": "Sahara expanded to 57 African languages (Mar 2026)"
   },
   {
    "name": "Intuit Assist",
@@ -1981,7 +2581,8 @@
    "name": "Inworld AI",
    "kind": "company",
    "subsegments": [
-    "n9.consumer"
+    "n9.consumer",
+    "n6.audio"
    ],
    "hq": "US",
    "region": "North America",
@@ -2008,6 +2609,19 @@
    ],
    "url": "https://ironcladapp.com",
    "source": "https://ironcladapp.com"
+  },
+  {
+   "name": "Jacaranda Health",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "KE",
+   "region": "Africa",
+   "status": "non-profit",
+   "one_liner": "AI-assisted SMS helpdesk for expectant and new mothers in East Africa",
+   "url": "https://jacarandahealth.org",
+   "source": "https://jacarandahealth.org"
   },
   {
    "name": "Janitor AI",
@@ -2037,9 +2651,15 @@
   },
   {
    "name": "JetBrains Junie",
+   "aka": [
+    "JetBrains Mellum"
+   ],
    "kind": "company",
    "subsegments": [
-    "n9.coding"
+    "n9.coding",
+    "n6.code",
+    "n6.open",
+    "n6.small"
    ],
    "hq": "CZ",
    "region": "Europe",
@@ -2087,6 +2707,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$10M seed, Jul 2025",
+   "round_source": "https://techcrunch.com/2025/07/28/ai-data-analyst-startup-julius-nabs-10m-seed-round/",
    "one_liner": "AI data analyst that analyses files and databases via natural language",
    "tags": [
     "developer"
@@ -2094,6 +2717,59 @@
    "url": "https://julius.ai",
    "source": "https://techcrunch.com/2025/07/28/ai-data-analyst-startup-julius-nabs-10m-seed-round/",
    "note": "Raised $10M seed (Jul 2025)"
+  },
+  {
+   "name": "Jurisphere",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI legal research and drafting for Indian lawyers",
+   "url": "https://jurisphere.ai",
+   "source": "https://www.thesaasnews.com/news/jurisphere-ai-raises-2-2-million-in-funding/",
+   "note": "$2.2M raised"
+  },
+  {
+   "name": "Juro",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI-native contract management for in-house legal teams",
+   "url": "https://juro.com",
+   "source": "https://juro.com"
+  },
+  {
+   "name": "Jusbrasil",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Brazilian legal database with Jus IA research assistant",
+   "url": "https://www.jusbrasil.com.br",
+   "source": "https://www.jusbrasil.com.br"
+  },
+  {
+   "name": "Kapture CX",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI-led customer-support platform for B2C enterprises in India, MEA and SEA",
+   "url": "https://www.kapturecx.com",
+   "source": "https://www.kapturecx.com"
   },
   {
    "name": "Khanmigo (Khan Academy)",
@@ -2107,22 +2783,6 @@
    "one_liner": "AI tutor and teaching assistant",
    "url": "https://www.khanmigo.ai",
    "source": "https://www.khanmigo.ai"
-  },
-  {
-   "name": "Kimi (Moonshot AI)",
-   "kind": "company",
-   "subsegments": [
-    "n9.assistant"
-   ],
-   "hq": "CN",
-   "region": "China",
-   "status": "private",
-   "one_liner": "Long-context chat assistant and agent from Moonshot AI",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://www.kimi.com",
-   "source": "https://www.kimi.com"
   },
   {
    "name": "Kinaxis",
@@ -2139,6 +2799,19 @@
    ],
    "url": "https://www.kinaxis.com",
    "source": "https://www.kinaxis.com"
+  },
+  {
+   "name": "Kintsugi",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Automated sales-tax compliance: monitoring, calculation, filing and remittance",
+   "url": "https://trykintsugi.com",
+   "source": "https://www.bvp.com/atlas/the-rise-of-vertical-ai-native-services-in-india"
   },
   {
    "name": "Kiro (AWS)",
@@ -2159,9 +2832,13 @@
   },
   {
    "name": "Kling AI (Kuaishou)",
+   "aka": [
+    "Kuaishou Kling"
+   ],
    "kind": "company",
    "subsegments": [
-    "n9.creative"
+    "n9.creative",
+    "n6.image"
    ],
    "hq": "CN",
    "region": "China",
@@ -2172,37 +2849,35 @@
    "source": "https://klingai.com"
   },
   {
-   "name": "Krutrim (Ola)",
+   "name": "Langdock",
    "kind": "company",
    "subsegments": [
-    "n9.assistant"
+    "n9.knowledge"
    ],
-   "hq": "IN",
-   "region": "India",
+   "hq": "DE",
+   "region": "Europe",
    "status": "private",
-   "one_liner": "Indian AI assistant supporting Indic languages, from Ola's AI unit",
+   "one_liner": "Model-agnostic enterprise AI workspace and assistants for European companies",
    "tags": [
     "sovereign"
    ],
-   "url": "https://www.olakrutrim.com",
-   "source": "https://www.olakrutrim.com"
+   "url": "https://www.langdock.com",
+   "source": "https://www.langdock.com"
   },
   {
-   "name": "Le Chat (Mistral AI)",
+   "name": "LayerX",
    "kind": "company",
    "subsegments": [
-    "n9.assistant"
+    "n9.finance",
+    "n9.sor"
    ],
-   "hq": "FR",
-   "region": "Europe",
+   "hq": "JP",
+   "region": "Asia-Pacific",
    "status": "private",
-   "one_liner": "Mistral's chat assistant for consumers and enterprises, positioned as a European alternative",
-   "tags": [
-    "sovereign",
-    "enterprise"
-   ],
-   "url": "https://chat.mistral.ai",
-   "source": "https://chat.mistral.ai"
+   "one_liner": "Bakuraku back-office AI SaaS and Ai Workforce agents for Japanese enterprises",
+   "url": "https://layerx.co.jp",
+   "source": "https://techcrunch.com/2025/09/01/layerx-uses-ai-to-cut-enterprise-back-office-workload-scores-100m-in-series-b/",
+   "note": "$100M Series B (Sep 2025), a Japan record; MUFG partnership"
   },
   {
    "name": "Leena AI",
@@ -2230,6 +2905,9 @@
    "hq": "SE",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$550M Series E at $8.8B valuation, Oct 2026",
+   "round_source": "https://www.artificiallawyer.com/2026/10/21/legora-vs-harvey-the-multi-billion-ai-battle/",
    "one_liner": "Collaborative legal AI workspace for law firms",
    "tags": [
     "enterprise"
@@ -2251,6 +2929,21 @@
    "one_liner": "Legal research and drafting AI on LexisNexis content",
    "url": "https://www.lexisnexis.com/en-us/products/protege.page",
    "source": "https://www.lexisnexis.com/en-us/products/protege.page"
+  },
+  {
+   "name": "Lightfield",
+   "kind": "company",
+   "subsegments": [
+    "n9.sor",
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native CRM built by the Tome team",
+   "url": "https://lightfield.app",
+   "source": "https://www.unite.ai/lightfield-raises-47m-series-a-led-by-a16z-to-accelerate-growth",
+   "note": "$47M Series A led by a16z (Sep 2026)"
   },
   {
    "name": "Lilt",
@@ -2283,6 +2976,19 @@
    "source": "https://www.limitless.ai"
   },
   {
+   "name": "Locus",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI route planning and dispatch for last-mile logistics",
+   "url": "https://locus.sh",
+   "source": "https://locus.sh"
+  },
+  {
    "name": "Looker (Google Cloud)",
    "kind": "company",
    "subsegments": [
@@ -2300,6 +3006,19 @@
    "source": "https://cloud.google.com/looker"
   },
   {
+   "name": "Lorikeet",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "AI customer-support concierge for complex, regulated support",
+   "url": "https://www.lorikeetcx.ai",
+   "source": "https://www.lorikeetcx.ai"
+  },
+  {
    "name": "Lovable",
    "kind": "company",
    "subsegments": [
@@ -2308,10 +3027,27 @@
    "hq": "SE",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$400M at $13.3B valuation (2026)",
+   "round_source": "https://dealroom.co/news/144597-lovable-raises-400m-at-13-3b-valuation-eyes-600m-revenue-run-rate/",
    "one_liner": "Prompt-to-app builder for full-stack web apps",
    "url": "https://lovable.dev",
    "source": "https://dealroom.co/news/144597-lovable-raises-400m-at-13-3b-valuation-eyes-600m-revenue-run-rate/",
    "note": "Raised $400M at $13.3B valuation (2026)"
+  },
+  {
+   "name": "Lucidya",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "SA",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Arabic-first CX analytics and AI agents for customer experience",
+   "url": "https://lucidya.com",
+   "source": "https://www.wamda.com/index.php/ar/2025/07/lucidya-secures-30-million-series-b-setting-mena-ai-funding-record-arabic",
+   "note": "$30M Series B (Jul 2025), a MENA AI record at the time"
   },
   {
    "name": "Luminance",
@@ -2325,6 +3061,34 @@
    "one_liner": "Legal-grade AI for contract negotiation and review",
    "url": "https://www.luminance.com",
    "source": "https://www.luminance.com"
+  },
+  {
+   "name": "Lumiq",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Data and AI platform for banks, insurers and lenders",
+   "url": "https://lumiq.ai",
+   "source": "https://techstory.in/bajaj-finserv-ventures-leads-%e2%82%b950-crore-series-b-in-bfsi-ai-startup-lumiq-after-four-year-funding-gap",
+   "note": "INR 50 Cr Series B led by Bajaj Finserv Ventures (2026)"
+  },
+  {
+   "name": "Lunit",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "AI for cancer screening in radiology and pathology",
+   "url": "https://www.lunit.io",
+   "source": "https://www.lunit.io",
+   "note": "KOSDAQ listed"
   },
   {
    "name": "MagicSchool",
@@ -2355,6 +3119,19 @@
    "note": "Meta agreed to acquire for ~$2B+, Dec 2025 (Chinese-origin team, Singapore HQ)"
   },
   {
+   "name": "Maven AGI",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Enterprise AI agents for customer support resolution",
+   "url": "https://www.mavenagi.com",
+   "source": "https://www.mavenagi.com"
+  },
+  {
    "name": "Meta AI",
    "kind": "company",
    "subsegments": [
@@ -2377,6 +3154,9 @@
    "hq": "GB",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$60M Series C, Sep 2026 (Insight Partners, GV)",
+   "round_source": "https://www.cbinsights.com/company/metaview/financials",
    "one_liner": "AI notetaker and recruiting agents for interviews",
    "url": "https://www.metaview.ai",
    "source": "https://www.metaview.ai"
@@ -2493,6 +3273,32 @@
    "source": "https://www.microsoft.com/security/business/ai-machine-learning/microsoft-security-copilot"
   },
   {
+   "name": "Mihup.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Conversation intelligence and agent assist for contact centres and in-car voice",
+   "url": "https://www.mihup.ai",
+   "source": "https://www.ringg.ai/blog/best-ai-voice-agent-companies"
+  },
+  {
+   "name": "MoEngage",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Customer-engagement platform with AI agents for marketing personalisation",
+   "url": "https://www.moengage.com",
+   "source": "https://www.moengage.com"
+  },
+  {
    "name": "Moveworks",
    "kind": "company",
    "subsegments": [
@@ -2511,6 +3317,21 @@
    "url": "https://www.moveworks.com",
    "source": "https://www.moveworks.com",
    "note": "Acquired by ServiceNow (closed Dec 2025)"
+  },
+  {
+   "name": "Murf AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative",
+    "n9.lang",
+    "n6.audio"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI voice generation and dubbing for content, training and product voice-overs",
+   "url": "https://murf.ai",
+   "source": "https://murf.ai"
   },
   {
    "name": "Nabla",
@@ -2540,6 +3361,19 @@
    "source": "https://ir.youdao.com"
   },
   {
+   "name": "Netomi",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Agentic customer-service platform for large consumer brands",
+   "url": "https://www.netomi.com",
+   "source": "https://www.netomi.com"
+  },
+  {
    "name": "Neura Robotics",
    "kind": "company",
    "subsegments": [
@@ -2566,6 +3400,19 @@
    "source": "https://www.neuralconcept.com"
   },
   {
+   "name": "Niramai",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI thermal imaging for early breast-cancer screening",
+   "url": "https://www.niramai.com",
+   "source": "https://www.niramai.com"
+  },
+  {
    "name": "Nomi",
    "kind": "company",
    "subsegments": [
@@ -2577,6 +3424,47 @@
    "one_liner": "AI companion app with memory",
    "url": "https://nomi.ai",
    "source": "https://nomi.ai"
+  },
+  {
+   "name": "Nooks",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm",
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI sales-calling workspace: parallel dialer, call analysis and coaching",
+   "url": "https://www.nooks.ai",
+   "source": "https://forbes.it/2024/10/25/nooks-raccoglie-43-milioni-automatizzare-lavoro-venditori",
+   "note": "$43M Series B (Oct 2024)"
+  },
+  {
+   "name": "Notable",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI agents automating health-system administrative workflows",
+   "url": "https://www.notablehealth.com",
+   "source": "https://www.notablehealth.com"
+  },
+  {
+   "name": "NotCo",
+   "kind": "company",
+   "subsegments": [
+    "n9.industrial"
+   ],
+   "hq": "CL",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "AI (Giuseppe) for food formulation, licensed to CPG companies",
+   "url": "https://notco.com",
+   "source": "https://notco.com"
   },
   {
    "name": "Notion AI",
@@ -2605,6 +3493,52 @@
    "source": "https://www.numeric.io"
   },
   {
+   "name": "Nurix AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.voice"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Custom enterprise voice and chat agents for sales and service, founded by Mukesh Bansal",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.nurix.ai",
+   "source": "https://inc42.com/buzz/prosus-joins-mukesh-bansal-led-nurix-ais-cap-table-with-fresh-capital-infusion/",
+   "note": "$27.5M seed (Accel, General Catalyst, 2024); Prosus joined cap table (2026)"
+  },
+  {
+   "name": "NyAI",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Legal research and drafting AI for Indian law",
+   "url": "https://nyai.in",
+   "source": "https://raising.fi/news/nyai-seed-august-2026",
+   "note": "$1.5M seed (Aug 2026)"
+  },
+  {
+   "name": "Nyayanidhi",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Litigation operating system for Indian law firms and legal teams",
+   "url": "https://nyayanidhi.com",
+   "source": "https://entrackr.com/snippets/legal-tech-startup-nyayanidhi-raises-2-mn-led-by-3one4-capital-10650103",
+   "note": "$2M seed led by 3one4 Capital"
+  },
+  {
    "name": "o9 Solutions",
    "kind": "company",
    "subsegments": [
@@ -2621,22 +3555,34 @@
    "source": "https://o9solutions.com"
   },
   {
-   "name": "Official MCP Registry",
+   "name": "Observe.AI",
    "kind": "company",
    "subsegments": [
-    "n9.store",
-    "n8.orch"
+    "n9.support",
+    "n9.voice"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open-source",
-   "one_liner": "Open registry of Model Context Protocol servers",
-   "tags": [
-    "open-source",
-    "developer"
+   "status": "private",
+   "one_liner": "Contact-centre AI: voice agents, QA automation and agent assist; large India engineering base",
+   "url": "https://www.observe.ai",
+   "source": "https://www.observe.ai"
+  },
+  {
+   "name": "OnFinance AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance",
+    "n9.regtech"
    ],
-   "url": "https://registry.modelcontextprotocol.io",
-   "source": "https://registry.modelcontextprotocol.io"
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Compliance and research AI agents for BFSI institutions",
+   "tags": [],
+   "url": "https://onfinance.ai",
+   "source": "https://inc42.com/buzz/bfsi-focussed-ai-startup-onfinance-raises-4-2-mn",
+   "note": "$4.2M led by Peak XV Surge"
   },
   {
    "name": "OpenAI Codex",
@@ -2697,6 +3643,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$250M at $15B valuation (2026)",
+   "round_source": "https://aiweekly.co/alerts/openevidence-raises-250m-at-15b-25-above-januarys-12b-mark-and-weighing-sale",
    "one_liner": "Medical evidence search and clinical decision support for physicians",
    "url": "https://www.openevidence.com",
    "source": "https://www.openevidence.com"
@@ -2784,6 +3733,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$54M Series C (2025)",
+   "round_source": "https://pactum.com/news-pactum-secures-54-million-in-series-c-funding-to-scale-agentic-ai-in-procurement/",
    "one_liner": "Autonomous AI negotiation agents for procurement; Estonian-founded",
    "tags": [
     "cost",
@@ -2825,6 +3777,19 @@
    "source": "https://www.paradox.ai"
   },
   {
+   "name": "Paraform",
+   "kind": "company",
+   "subsegments": [
+    "n9.hr"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Recruiting marketplace using AI to match roles with independent recruiters",
+   "url": "https://www.paraform.com",
+   "source": "https://www.paraform.com"
+  },
+  {
    "name": "Parloa",
    "kind": "company",
    "subsegments": [
@@ -2834,12 +3799,30 @@
    "hq": "DE",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "Series D extension, May 2026, SAP",
+   "round_source": "https://www.cbinsights.com/company/parloa/financials",
    "one_liner": "Voice-first AI agent platform for enterprise contact centres",
    "tags": [
     "enterprise"
    ],
    "url": "https://www.parloa.com",
    "source": "https://www.parloa.com"
+  },
+  {
+   "name": "Peec AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm",
+    "n9.geo"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Tracks brand visibility in AI search answers (generative engine optimisation)",
+   "tags": [],
+   "url": "https://peec.ai",
+   "source": "https://peec.ai"
   },
   {
    "name": "Pentera",
@@ -2858,7 +3841,24 @@
    "source": "https://pentera.io"
   },
   {
+   "name": "Perfios",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance",
+    "n9.regtech"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Credit decisioning, underwriting and fraud analytics for banks and lenders",
+   "url": "https://www.perfios.com",
+   "source": "https://www.perfios.com"
+  },
+  {
    "name": "Perplexity",
+   "aka": [
+    "Comet (Perplexity)"
+   ],
    "kind": "company",
    "subsegments": [
     "n9.assistant",
@@ -2900,6 +3900,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$35M Series A, Jan 2026",
+   "round_source": "https://fashionunited.com/news/business/phia-secures-35-million-dollars-in-series-a-funding-to-scale-ai-shopping-platform/2026012970299",
    "one_liner": "AI shopping agent/browser extension comparing prices across new and resale",
    "url": "https://phia.com",
    "source": "https://fashionunited.com/news/business/phia-secures-35-million-dollars-in-series-a-funding-to-scale-ai-shopping-platform/2026012970299",
@@ -2944,12 +3947,28 @@
    "hq": "GB",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$300M Series C, Jun 2026 (Temasek, General Catalyst, Atomico, NVIDIA, Siemens)",
+   "round_source": "https://www.cbinsights.com/company/physicsx/financials",
    "one_liner": "AI engineering platform for simulation-driven design",
    "tags": [
     "performance"
    ],
    "url": "https://www.physicsx.ai",
    "source": "https://www.physicsx.ai"
+  },
+  {
+   "name": "Pigment",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI planning and FP&A platform with planning agents",
+   "url": "https://www.pigment.com",
+   "source": "https://www.pigment.com"
   },
   {
    "name": "Plaud",
@@ -2989,6 +4008,9 @@
    "hq": "GB",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$86M Series D, Dec 2025, Georgian, Hedosophia and Khosla Ventures",
+   "round_source": "https://www.cbinsights.com/company/polyai/financials",
    "one_liner": "Enterprise voice agents for customer-service phone lines",
    "tags": [
     "enterprise"
@@ -3040,6 +4062,21 @@
    "source": "https://www.procore.com/ai"
   },
   {
+   "name": "Profound",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm",
+    "n9.geo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI search visibility analytics for brands across ChatGPT, Perplexity and others",
+   "tags": [],
+   "url": "https://www.tryprofound.com",
+   "source": "https://www.tryprofound.com"
+  },
+  {
    "name": "project44",
    "kind": "company",
    "subsegments": [
@@ -3070,6 +4107,20 @@
    ],
    "url": "https://www.prophetsecurity.ai",
    "source": "https://pulse2.com/prophet-security-strategic-investment-from-amex-ventures-and-citi-ventures-to-advance-agentic-ai-soc-platform"
+  },
+  {
+   "name": "Pylon",
+   "kind": "company",
+   "subsegments": [
+    "n9.sor",
+    "n9.support"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native B2B customer-support platform across Slack, email and chat",
+   "url": "https://usepylon.com",
+   "source": "https://usepylon.com"
   },
   {
    "name": "Pyramid Analytics",
@@ -3176,6 +4227,20 @@
    "source": "https://www.rabbit.tech"
   },
   {
+   "name": "RapidCanvas",
+   "kind": "company",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI agents that build data-science and analytics apps for business teams",
+   "url": "https://www.rapidcanvas.ai",
+   "source": "https://inc42.com/lists/top-20-funded-ai-startups-in-india-2026/",
+   "note": "About $92M raised (Inc42 Datalabs)"
+  },
+  {
    "name": "Rask AI",
    "kind": "company",
    "subsegments": [
@@ -3237,10 +4302,29 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "Round at ~$9B valuation, Jan 2026",
+   "round_source": "https://www.bloomberg.com/news/articles/2026-01-15/ai-coding-startup-replit-nears-funding-at-9-billion-valuation",
    "one_liner": "Browser-based vibe-coding platform with Replit Agent for building and deploying apps",
    "url": "https://replit.com",
    "source": "https://www.bloomberg.com/news/articles/2026-01-15/ai-coding-startup-replit-nears-funding-at-9-billion-valuation",
    "note": "Valued at ~$9B in 2026 round"
+  },
+  {
+   "name": "respond.io",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.gtm",
+    "n9.messaging"
+   ],
+   "hq": "MY",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "AI-powered customer conversation management across messaging channels",
+   "tags": [],
+   "url": "https://respond.io",
+   "source": "https://respond.io"
   },
   {
    "name": "Retell AI",
@@ -3251,12 +4335,28 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$4.6M seed, Aug 2024 (Y Combinator, Alt Capital)",
+   "round_source": "https://www.cbinsights.com/company/retell-ai/financials",
    "one_liner": "Platform to build, test and deploy AI phone agents",
    "tags": [
     "developer"
    ],
    "url": "https://www.retellai.com",
    "source": "https://www.retellai.com"
+  },
+  {
+   "name": "Reverie Language Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian-language translation, speech and localisation APIs for enterprises and government",
+   "url": "https://reverieinc.com",
+   "source": "https://reverieinc.com"
   },
   {
    "name": "Rezolve.ai",
@@ -3275,6 +4375,19 @@
    "source": "https://www.rezolve.ai/press-release/rezolve-ai-raises-11m-series-a-led-by-sig-venture-capital"
   },
   {
+   "name": "Riiid",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "AI tutoring and test-prep platform (Santa)",
+   "url": "https://riiid.com",
+   "source": "https://riiid.com"
+  },
+  {
    "name": "Rillet",
    "kind": "company",
    "subsegments": [
@@ -3283,9 +4396,29 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$100M Series C, Aug 2026 (ICONIQ, a16z, Sequoia)",
+   "round_source": "https://www.cbinsights.com/company/rillet/financials",
    "one_liner": "AI-native general ledger and ERP for mid-market companies",
    "url": "https://www.rillet.com",
    "source": "https://www.rillet.com"
+  },
+  {
+   "name": "Ringg AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "No-code enterprise voice agents for inbound and outbound calls in Indian languages",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.ringg.ai",
+   "source": "https://inc42.com/buzz/voice-ai-startup-ringg-bags-5-5-mn-from-arkam-ventures/",
+   "note": "Series A extended to $15.5M (2026)"
   },
   {
    "name": "Rogo",
@@ -3296,6 +4429,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$160M Series D at $2B valuation, led by Kleiner Perkins (2026)",
+   "round_source": "https://news.bensbites.co/posts/65455-rogo-which-uses-ai-to-help-lighten-junior-bankers-workloads-raised-a-160m-series-d-led-by-kleiner-perkins-at-a-2b-valuation-up-from-750m-in-january",
    "one_liner": "AI analyst for investment banks and investment firms",
    "url": "https://rogo.ai",
    "source": "https://rogo.ai"
@@ -3330,7 +4466,9 @@
    "name": "RWS (Language Weaver)",
    "kind": "company",
    "subsegments": [
-    "n9.lang"
+    "n9.lang",
+    "n5.label",
+    "n5.license"
    ],
    "hq": "GB",
    "region": "Europe",
@@ -3363,11 +4501,15 @@
    "name": "Shield AI",
    "kind": "company",
    "subsegments": [
-    "n9.public"
+    "n9.public",
+    "n9.physical"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$2B at $12.7B valuation, Mar 2026",
+   "round_source": "https://bloomberg.com/news/articles/2026-03-26/defense-startup-shield-ai-nabs-2-billion-at-12-7-billion-value",
    "one_liner": "Hivemind AI pilot autonomy software and military aircraft",
    "tags": [
     "sovereign"
@@ -3414,11 +4556,15 @@
    "name": "Sierra",
    "kind": "company",
    "subsegments": [
-    "n9.support"
+    "n9.support",
+    "n9.voice"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$950M at >$15B valuation, May 2026",
+   "round_source": "https://www.vktr.com/customer-experience/sierra-raises-950m-at-15b-valuation-eyes-transformation-beyond-customer-support/",
    "one_liner": "AI customer service agents for consumer brands, priced on outcomes",
    "tags": [
     "enterprise"
@@ -3444,6 +4590,21 @@
    "source": "https://www.sigmacomputing.com"
   },
   {
+   "name": "Signzy",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance",
+    "n9.regtech"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI-driven digital onboarding, KYC and risk checks for financial institutions",
+   "tags": [],
+   "url": "https://www.signzy.com",
+   "source": "https://www.signzy.com"
+  },
+  {
    "name": "Sixfold",
    "kind": "company",
    "subsegments": [
@@ -3458,6 +4619,36 @@
    ],
    "url": "https://www.sixfold.ai",
    "source": "https://www.sixfold.ai"
+  },
+  {
+   "name": "Skit.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice",
+    "n9.finance"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Voice agents for debt collections and accounts receivable, started as Vernacular.ai",
+   "url": "https://skit.ai",
+   "source": "https://skit.ai"
+  },
+  {
+   "name": "SleekFlow",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.commerce",
+    "n9.messaging"
+   ],
+   "hq": "HK",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Omnichannel conversation suite with AI agents for commerce and service",
+   "tags": [],
+   "url": "https://sleekflow.io",
+   "source": "https://sleekflow.io"
   },
   {
    "name": "Smartling",
@@ -3498,6 +4689,9 @@
    "hq": "CA",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$50M Series B, Oct 2025, Khosla Ventures",
+   "round_source": "https://betakit.com/spellbook-raises-50-million-usd-series-b-led-by-khosla-ventures/",
    "one_liner": "AI contract drafting and review in Microsoft Word",
    "url": "https://www.spellbook.legal",
    "source": "https://www.spellbook.legal"
@@ -3514,6 +4708,39 @@
    "one_liner": "AI contract management for in-house legal teams",
    "url": "https://www.spotdraft.com",
    "source": "https://www.spotdraft.com"
+  },
+  {
+   "name": "Sprinklr",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Unified CX platform with AI agents for service, marketing and social listening",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.sprinklr.com",
+   "source": "https://www.sprinklr.com",
+   "note": "NYSE: CXM; large India operations"
+  },
+  {
+   "name": "SquadStack",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice",
+    "n9.gtm",
+    "n10.bpo"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI voice agents plus managed human callers for sales, lead qualification and collections",
+   "url": "https://squadstack.ai",
+   "source": "https://www.ringg.ai/blog/best-ai-voice-agent-companies"
   },
   {
    "name": "Squirrel AI",
@@ -3556,6 +4783,20 @@
    "note": "Grammarly acquired Superhuman (2025) and adopted its name (Oct 2025)"
   },
   {
+   "name": "Supio",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI case analysis for personal-injury and mass-tort plaintiff firms",
+   "url": "https://www.supio.com",
+   "source": "https://techcrunch.com/2025/04/30/supio-an-ai-powered-legal-platform-lands-60m-in-fresh-capital",
+   "note": "$60M (Apr 2025)"
+  },
+  {
    "name": "Synthesia",
    "kind": "company",
    "subsegments": [
@@ -3564,6 +4805,9 @@
    "hq": "GB",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$200M Series E at $4B valuation, Jan 2026",
+   "round_source": "https://letsdatascience.com/news/synthesia-raises-200-million-series-e-d2097cb0",
    "one_liner": "AI avatar video generation for corporate training and communications",
    "tags": [
     "enterprise"
@@ -3580,6 +4824,9 @@
    "hq": "DE",
    "region": "Europe",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$20M Series A, Jun 2025",
+   "round_source": "https://www.trysignalbase.com/news/funding/synthflow-ai-raises-20m-series-a-to-democratize-no-code-ai-development",
    "one_liner": "No-code voice AI agents for phone calls",
    "url": "https://synthflow.ai",
    "source": "https://synthflow.ai"
@@ -3634,6 +4881,45 @@
    "note": "MiniMax listed in Hong Kong Jan 2026"
   },
   {
+   "name": "Tandem Health",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "SE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Ambient AI scribe for European clinicians",
+   "url": "https://tandemhealth.ai",
+   "source": "https://tandemhealth.ai"
+  },
+  {
+   "name": "TechWolf",
+   "kind": "company",
+   "subsegments": [
+    "n9.hr"
+   ],
+   "hq": "BE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI skills intelligence inferring workforce skills from work data",
+   "url": "https://techwolf.ai",
+   "source": "https://techwolf.ai"
+  },
+  {
+   "name": "Telli",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Voice agents for high-volume customer calls in European languages",
+   "url": "https://www.telli.com",
+   "source": "https://www.telli.com"
+  },
+  {
    "name": "Tempus AI",
    "kind": "company",
    "subsegments": [
@@ -3667,6 +4953,19 @@
    "source": "https://yuanbao.tencent.com"
   },
   {
+   "name": "Tennr",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI for referral intake and patient-document processing",
+   "url": "https://www.tennr.com",
+   "source": "https://www.tennr.com"
+  },
+  {
    "name": "Tesla (FSD, Robotaxi, Optimus)",
    "kind": "company",
    "subsegments": [
@@ -3694,6 +4993,32 @@
    ],
    "url": "https://www.thoughtspot.com",
    "source": "https://techtarget.com/searchbusinessanalytics/news/366636078/ThoughtSpot-automates-full-platform-with-new-Spotter-agents"
+  },
+  {
+   "name": "Tidio",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "PL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Support platform for SMBs with Lyro AI agent",
+   "url": "https://www.tidio.com",
+   "source": "https://www.tidio.com"
+  },
+  {
+   "name": "Tines",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "IE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Security and IT workflow automation with AI agents",
+   "url": "https://www.tines.com",
+   "source": "https://www.tines.com"
   },
   {
    "name": "Tolan (Portola)",
@@ -3742,6 +5067,20 @@
    "source": "https://tractable.ai"
   },
   {
+   "name": "Tractian",
+   "kind": "company",
+   "subsegments": [
+    "n9.industrial"
+   ],
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Sensors plus AI for predictive maintenance and asset monitoring in factories",
+   "url": "https://tractian.com",
+   "source": "https://www.bloomberglinea.com.br/startups/tractian-capta-us-130-milhoes-e-se-torna-o-mais-novo-unicornio-de-ia-brasileiro/",
+   "note": "$130M Series D, unicorn (~$1.4B)"
+  },
+  {
    "name": "Trae (ByteDance)",
    "kind": "company",
    "subsegments": [
@@ -3763,7 +5102,8 @@
    "name": "TransPerfect",
    "kind": "company",
    "subsegments": [
-    "n9.lang"
+    "n9.lang",
+    "n5.label"
    ],
    "hq": "US",
    "region": "North America",
@@ -3797,6 +5137,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$40M Series B (2025)",
+   "round_source": "https://coverager.com/trunk-tools-raises-40-million/",
    "one_liner": "AI agents that read construction documents and answer field questions",
    "tags": [
     "enterprise"
@@ -3804,6 +5147,35 @@
    "url": "https://trunktools.com",
    "source": "https://coverager.com/trunk-tools-raises-40-million/",
    "note": "Raised $40M Series B (2025)"
+  },
+  {
+   "name": "Truora",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance",
+    "n9.support",
+    "n9.regtech",
+    "n9.messaging"
+   ],
+   "hq": "CO",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Identity verification and WhatsApp AI agents for onboarding in LatAm",
+   "url": "https://www.truora.com",
+   "source": "https://www.truora.com"
+  },
+  {
+   "name": "Ubie",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "AI symptom checker and hospital workflow tools in Japan and US",
+   "url": "https://ubie.life",
+   "source": "https://ubie.life"
   },
   {
    "name": "UBTech",
@@ -3835,6 +5207,39 @@
    "source": "https://unbabel.com"
   },
   {
+   "name": "Unify",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI agents for warm outbound prospecting and pipeline generation",
+   "url": "https://www.unifygtm.com",
+   "source": "https://businesswire.com/news/home/20250714813159/en/Unify-Raises-$40-Million-Series-B-to-Transform-Go-To-Market-with-AI",
+   "note": "$40M Series B (Jul 2025)"
+  },
+  {
+   "name": "Uniphore",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.voice",
+    "n8.platform"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Business AI platform for contact-centre automation, conversation analytics and agents; Chennai roots",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.uniphore.com",
+   "source": "https://www.uniphore.com",
+   "note": "Raised Series F backed by NVIDIA, AMD, Snowflake and Databricks (Oct 2025)"
+  },
+  {
    "name": "Unitree Robotics",
    "kind": "company",
    "subsegments": [
@@ -3849,21 +5254,35 @@
    "note": "Shanghai STAR Market IPO Aug 2026 at ~$9B valuation"
   },
   {
-   "name": "v0 (Vercel)",
+   "name": "Valence",
    "kind": "company",
    "subsegments": [
-    "n9.coding"
+    "n9.hr",
+    "n10.org"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
-   "parent": "Vercel",
-   "one_liner": "Generative UI and app builder tied to Vercel deployment",
-   "tags": [
-    "developer"
+   "one_liner": "AI leadership coach (Nadia) deployed to managers in large enterprises",
+   "url": "https://www.valence.co",
+   "source": "https://www.valence.co"
+  },
+  {
+   "name": "Vambe",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.gtm",
+    "n9.messaging"
    ],
-   "url": "https://v0.app",
-   "source": "https://v0.app"
+   "hq": "CL",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Conversational AI agents for B2C sales and support across LatAm",
+   "tags": [],
+   "url": "https://www.vambe.ai",
+   "source": "https://latamlist.com/vambe-raises-14m-series-a/",
+   "note": "$14M Series A led by Monashees; expanding to Brazil (2026)"
   },
   {
    "name": "Vannevar Labs",
@@ -3890,12 +5309,57 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$50M Series B",
+   "round_source": "https://vapi.ai/library/vapi-ai-vs-bland-ai-comparison-which-ai-calling-platform-is-better",
    "one_liner": "Developer platform for building voice AI agents",
    "tags": [
     "developer"
    ],
    "url": "https://vapi.ai",
    "source": "https://vapi.ai"
+  },
+  {
+   "name": "Velents",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice",
+    "n9.support"
+   ],
+   "hq": "SA",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Agent.sa, an Arabic-speaking AI employee for customer conversations",
+   "url": "https://www.velents.com",
+   "source": "https://www.wamda.com/en/2025/10/velents-raises-1-5-million-investment-propel-launching-agentsa",
+   "note": "$1.5M (Oct 2025)"
+  },
+  {
+   "name": "Verloop.io",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Customer-support automation across chat, social and voice for consumer brands",
+   "url": "https://www.verloop.io",
+   "source": "https://www.ringg.ai/blog/best-ai-voice-agent-companies"
+  },
+  {
+   "name": "VUNO",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Medical AI for imaging and vital-sign deterioration prediction",
+   "url": "https://www.vuno.co",
+   "source": "https://www.vuno.co",
+   "note": "KOSDAQ listed"
   },
   {
    "name": "Waymo",
@@ -3923,6 +5387,52 @@
    "one_liner": "Autonomous robotaxis, robobuses and robovans",
    "url": "https://www.weride.ai",
    "source": "https://www.weride.ai"
+  },
+  {
+   "name": "Wispr Flow",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI voice dictation that writes across apps on desktop and mobile",
+   "url": "https://wisprflow.ai",
+   "source": "https://inc42.com/lists/top-20-funded-ai-startups-in-india-2026/",
+   "note": "About $362M raised (Inc42 Datalabs)"
+  },
+  {
+   "name": "WIZ.AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Voice agents for SEA enterprises in local languages",
+   "url": "https://www.wiz.ai",
+   "source": "https://www.jtc.gov.sg/about-jtc/news-and-stories/industry-news/wiz-ai-raises-tens-of-millions-in-series-b",
+   "note": "Series B (\"tens of millions\")"
+  },
+  {
+   "name": "Wonderful",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.voice"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Enterprise AI agent OS, started with customer-service agents for non-English markets; FDE-led",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://wonderful.ai",
+   "source": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/",
+   "note": "$550M Series C at $5B led by Insight (Sep 2026), after $150M Series B (Mar 2026); Israeli-Dutch"
   },
   {
    "name": "Workday Illuminate / Sana",
@@ -3958,6 +5468,19 @@
    "one_liner": "Korean consumer AI super-app combining chat, search and character features",
    "url": "https://wrtn.ai",
    "source": "https://wrtn.ai"
+  },
+  {
+   "name": "Wysa",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI mental-health support app used by employers and health systems",
+   "url": "https://www.wysa.com",
+   "source": "https://www.wysa.com"
   },
   {
    "name": "Xaira Therapeutics",
@@ -4003,6 +5526,22 @@
    "source": "https://www.mi.com"
   },
   {
+   "name": "Yalo",
+   "kind": "company",
+   "subsegments": [
+    "n9.commerce",
+    "n9.support",
+    "n9.messaging"
+   ],
+   "hq": "MX",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Conversational commerce agents on WhatsApp for consumer brands",
+   "tags": [],
+   "url": "https://www.yalo.com",
+   "source": "https://www.yalo.com"
+  },
+  {
    "name": "Yellow.ai",
    "kind": "company",
    "subsegments": [
@@ -4015,24 +5554,6 @@
    "one_liner": "Multilingual AI agents for customer and employee service",
    "url": "https://yellow.ai",
    "source": "https://yellow.ai"
-  },
-  {
-   "name": "Z.ai / ChatGLM (Zhipu)",
-   "kind": "company",
-   "subsegments": [
-    "n9.assistant",
-    "n9.agentic"
-   ],
-   "hq": "CN",
-   "region": "China",
-   "status": "public",
-   "one_liner": "Zhipu's chat assistant and AutoGLM phone/browser agent on GLM models",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://chat.z.ai",
-   "source": "https://chat.z.ai",
-   "note": "Listed in Hong Kong Jan 2026"
   },
   {
    "name": "Zalando",
@@ -4066,6 +5587,23 @@
    "source": "https://www.zendesk.com/service/ai/"
   },
   {
+   "name": "Zenvia",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.gtm",
+    "n9.messaging"
+   ],
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "public",
+   "one_liner": "Customer-communication cloud with AI agents for LatAm businesses",
+   "tags": [],
+   "url": "https://www.zenvia.com",
+   "source": "https://www.zenvia.com",
+   "note": "Nasdaq: ZENV"
+  },
+  {
    "name": "Zip",
    "kind": "company",
    "subsegments": [
@@ -4082,6 +5620,20 @@
    "source": "https://ziphq.com"
   },
   {
+   "name": "Zoho (Zia)",
+   "kind": "company",
+   "subsegments": [
+    "n9.sor"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Bootstrapped suite of CRM, ERP, HR and support apps with built-in Zia AI agents",
+   "url": "https://www.zoho.com",
+   "source": "https://www.zoho.com/zia/",
+   "note": "Chennai-headquartered; one of the largest non-US SaaS suites"
+  },
+  {
    "name": "Zoox",
    "kind": "company",
    "subsegments": [
@@ -4094,30 +5646,6 @@
    "one_liner": "Purpose-built robotaxi",
    "url": "https://zoox.com",
    "source": "https://zoox.com"
-  },
-  {
-   "name": "Agent Payments Protocol (AP2)",
-   "kind": "standard",
-   "subsegments": [
-    "n9.commerce"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
-   "steward": "Google (with payments partners)",
-   "licence": "Apache-2.0",
-   "access": "Spec and samples on GitHub; extends A2A and MCP",
-   "repo": "https://github.com/google-agentic-commerce/AP2",
-   "stars": 3300,
-   "archived": false,
-   "one_liner": "Open protocol for secure, verifiable agent-initiated payments",
-   "tags": [
-    "payments",
-    "agentic-commerce",
-    "open-standard"
-   ],
-   "url": "https://github.com/google-agentic-commerce/AP2",
-   "source": "https://github.com/google-agentic-commerce/AP2"
   },
   {
    "name": "Aider",
@@ -4218,28 +5746,28 @@
    "source": "https://github.com/autowarefoundation/autoware"
   },
   {
-   "name": "Bhashini (open)",
+   "name": "Bhashini",
    "kind": "public programme",
    "subsegments": [
     "n9.lang",
+    "n5.license",
     "n9.public",
     "n11.public"
    ],
    "hq": "IN",
    "region": "India",
-   "status": "open",
+   "status": "government",
+   "parent": "MeitY, Government of India",
    "steward": "Digital India Bhashini Division, MeitY",
    "licence": "Open APIs and public model repository (per-model terms)",
    "access": "Register at bhashini.gov.in for ASR, translation and TTS API keys",
-   "one_liner": "India's national language-AI platform for speech and translation across 22 languages",
+   "one_liner": "Indian government National Language Translation Mission platform and APIs for 22 languages",
    "tags": [
-    "indic",
     "sovereign",
-    "public-good",
     "open-source"
    ],
    "url": "https://bhashini.gov.in",
-   "source": "https://anantamias.com/bhashini-bhasha-interface-for-india/"
+   "source": "https://bhashini.gov.in"
   },
   {
    "name": "bolt.new (open-source)",
@@ -4652,7 +6180,8 @@
    "name": "Isaac GR00T",
    "kind": "open-weight model",
    "subsegments": [
-    "n9.physical"
+    "n9.physical",
+    "n6.world"
    ],
    "hq": "US",
    "region": "North America",
@@ -4696,31 +6225,6 @@
    ],
    "url": "https://github.com/isaac-sim/IsaacLab",
    "source": "https://github.com/isaac-sim/IsaacLab"
-  },
-  {
-   "name": "Jan (open)",
-   "kind": "open-source project",
-   "subsegments": [
-    "n9.assistant",
-    "n11.consumer"
-   ],
-   "hq": "SG",
-   "region": "Asia-Pacific",
-   "status": "open",
-   "steward": "Menlo Research (Jan HQ)",
-   "licence": "Apache-2.0",
-   "access": "Desktop download; runs open models fully offline",
-   "repo": "https://github.com/janhq/jan",
-   "stars": 45100,
-   "archived": false,
-   "one_liner": "Offline desktop ChatGPT alternative running local models",
-   "tags": [
-    "local",
-    "privacy",
-    "open-source"
-   ],
-   "url": "https://github.com/janhq/jan",
-   "source": "https://github.com/janhq/jan"
   },
   {
    "name": "K8sGPT",
@@ -4892,7 +6396,8 @@
    "name": "LiveKit Agents",
    "kind": "open-source project",
    "subsegments": [
-    "n9.voice"
+    "n9.voice",
+    "n8.realtime"
    ],
    "hq": "US",
    "region": "North America",
@@ -5149,7 +6654,8 @@
    "name": "openpi (pi0, pi0-FAST, pi0.5)",
    "kind": "open-weight model",
    "subsegments": [
-    "n9.physical"
+    "n9.physical",
+    "n6.world"
    ],
    "hq": "US",
    "region": "North America",
@@ -5288,7 +6794,8 @@
    "name": "Pipecat",
    "kind": "open-source project",
    "subsegments": [
-    "n9.voice"
+    "n9.voice",
+    "n8.realtime"
    ],
    "hq": "US",
    "region": "North America",
@@ -5545,9 +7052,13 @@
   },
   {
    "name": "Vane (formerly Perplexica)",
+   "aka": [
+    "Perplexica"
+   ],
    "kind": "open-source project",
    "subsegments": [
-    "n9.assistant"
+    "n9.assistant",
+    "n8.search"
    ],
    "status": "open",
    "steward": "ItzCrazyKns (community)",

@@ -15,6 +15,22 @@
  },
  "entries": [
   {
+   "name": "Agrani Labs",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian startup developing AI inference chips",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
+   "source": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/"
+  },
+  {
    "name": "Alibaba T-Head",
    "kind": "company",
    "subsegments": [
@@ -68,7 +84,8 @@
     "n2.net",
     "n2.sw",
     "n2.edge",
-    "n3.scaleup"
+    "n3.scaleup",
+    "n3.servers"
    ],
    "hq": "US",
    "region": "North America",
@@ -115,22 +132,6 @@
    "note": "NVIDIA 800 VDC silicon partner"
   },
   {
-   "name": "Apache TVM",
-   "kind": "company",
-   "subsegments": [
-    "n2.sw"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "one_liner": "Open deep-learning compiler for diverse hardware backends",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://tvm.apache.org",
-   "source": "https://tvm.apache.org"
-  },
-  {
    "name": "Apple silicon (Neural Engine)",
    "kind": "company",
    "subsegments": [
@@ -148,21 +149,21 @@
    "source": "https://www.apple.com"
   },
   {
-   "name": "Arm (Neoverse)",
+   "name": "Arago",
    "kind": "company",
    "subsegments": [
-    "n2.cpu"
+    "n2.photonic",
+    "n2.startup"
    ],
-   "hq": "GB",
+   "hq": "FR",
    "region": "Europe",
-   "status": "public",
-   "parent": "SoftBank Group (majority)",
-   "one_liner": "Licensed Neoverse CPU designs underpinning Grace, Graviton, Cobalt, Axion",
+   "status": "private",
+   "one_liner": "Photonic-electronic AI accelerator for energy-efficient inference",
    "tags": [
     "cost"
    ],
-   "url": "https://www.arm.com",
-   "source": "https://www.arm.com"
+   "url": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in",
+   "source": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in"
   },
   {
    "name": "Astera Labs",
@@ -180,6 +181,23 @@
    ],
    "url": "https://www.asteralabs.com",
    "source": "https://www.asteralabs.com"
+  },
+  {
+   "name": "Avicena",
+   "kind": "company",
+   "subsegments": [
+    "n2.photonic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "MicroLED-based parallel optical interconnect for chip-to-chip links",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://avicena.tech",
+   "source": "https://avicena.tech"
   },
   {
    "name": "AWS Trainium & Inferentia (Annapurna Labs)",
@@ -219,6 +237,39 @@
    "note": "Raised >$250M Feb 2026, largest EU chip round to date"
   },
   {
+   "name": "Axera",
+   "kind": "company",
+   "subsegments": [
+    "n2.china",
+    "n2.edge"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Edge AI vision SoCs with integrated NPUs for cameras, robotics and automotive",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.axera-tech.com",
+   "source": "https://www.axera-tech.com"
+  },
+  {
+   "name": "BigEndian Semiconductors",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian fabless startup designing vision and surveillance SoCs",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
+   "source": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/"
+  },
+  {
    "name": "Biren Technology",
    "kind": "company",
    "subsegments": [
@@ -234,6 +285,22 @@
    "url": "https://www.birentech.com",
    "source": "https://www.scmp.com/business/banking-finance/article/3338447/biren-shares-soar-hong-kong-investors-seize-chinas-first-gpu-start-list",
    "note": "Hong Kong IPO Jan 2026, first Chinese GPU start-up listed there"
+  },
+  {
+   "name": "Black Semiconductor",
+   "kind": "company",
+   "subsegments": [
+    "n2.photonic"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Graphene-based photonic interconnect integrated onto CMOS chips",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.blacksemiconductor.com",
+   "source": "https://www.blacksemiconductor.com"
   },
   {
    "name": "Black Sesame Technologies",
@@ -280,11 +347,18 @@
   },
   {
    "name": "Broadcom",
+   "aka": [
+    "Broadcom (custom ASIC)",
+    "Broadcom (optics)"
+   ],
    "kind": "company",
    "subsegments": [
     "n2.net",
-    "n2.custom",
-    "n3.scaleup"
+    "n3.scaleup",
+    "n1.design",
+    "n3.optics",
+    "n3.opt",
+    "n2.photonic"
    ],
    "hq": "US",
    "region": "North America",
@@ -296,6 +370,39 @@
    "url": "https://www.broadcom.com",
    "source": "https://www.broadcom.com",
    "note": "Shipping Tomahawk Ultra since Jul 2025"
+  },
+  {
+   "name": "C2i Semiconductors",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Power-management silicon for AI data-centre racks",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
+   "source": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
+   "note": "Raised >$10M in Jan-May 2026"
+  },
+  {
+   "name": "Calligo Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Posit-arithmetic accelerators for HPC and AI",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
+   "source": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/"
   },
   {
    "name": "Cambricon",
@@ -334,11 +441,15 @@
   },
   {
    "name": "Cerebras",
+   "aka": [
+    "Cerebras (Cerebras Inference)"
+   ],
    "kind": "company",
    "subsegments": [
     "n2.startup",
     "n4.neo",
-    "n4.offtake"
+    "n4.offtake",
+    "n7.api"
    ],
    "hq": "US",
    "region": "North America",
@@ -350,36 +461,6 @@
    "url": "https://www.cerebras.ai",
    "source": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang",
    "note": "Nasdaq IPO May 2026 raised ~$5.5B, largest US IPO of 2026 to that date"
-  },
-  {
-   "name": "Cisco Silicon One",
-   "kind": "company",
-   "subsegments": [
-    "n2.net"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Cisco",
-   "one_liner": "Programmable switch/router ASICs used in AI Ethernet fabrics",
-   "url": "https://www.cisco.com/site/us/en/solutions/silicon-one/index.html",
-   "source": "https://www.cisco.com/site/us/en/solutions/silicon-one/index.html"
-  },
-  {
-   "name": "Credo",
-   "kind": "company",
-   "subsegments": [
-    "n2.net"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "one_liner": "SerDes, active electrical cables and optical DSPs for AI interconnect",
-   "tags": [
-    "performance"
-   ],
-   "url": "https://credosemi.com",
-   "source": "https://credosemi.com"
   },
   {
    "name": "CUDA",
@@ -407,6 +488,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$275M Series C at ~$2B valuation, Nov 2025",
+   "round_source": "https://ecvc.wsgr.com/news/wilson-sonsini-advises-d-matrix-on-oversubscribed-dollar275-million-series-c-funding",
    "one_liner": "Corsair digital in-memory-compute inference accelerators",
    "tags": [
     "cost",
@@ -431,6 +515,22 @@
    ],
    "url": "https://deepx.ai",
    "source": "https://deepx.ai"
+  },
+  {
+   "name": "Denglin Technology",
+   "kind": "company",
+   "subsegments": [
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Chinese GPGPU accelerators compatible with CUDA-style programming for AI inference",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.denglinai.com",
+   "source": "https://www.denglinai.com"
   },
   {
    "name": "Descartes Systems Group (Visual Compliance)",
@@ -458,6 +558,22 @@
    "one_liner": "Global trade compliance and supply-chain software (ex-Amber Road)",
    "url": "https://www.e2open.com",
    "source": "https://www.e2open.com"
+  },
+  {
+   "name": "EdgeCortix",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "SAKURA edge AI accelerators and MERA compiler for low-power generative AI",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.edgecortix.com",
+   "source": "https://www.edgecortix.com"
   },
   {
    "name": "EnCharge AI",
@@ -511,6 +627,24 @@
    "note": "Raised $500M Jan 2026; further raises at higher valuations reported mid-2026"
   },
   {
+   "name": "Euclyd",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "European inference accelerator startup building multi-chiplet systems for token-efficient inference",
+   "tags": [
+    "performance",
+    "sovereign"
+   ],
+   "url": "https://dealroom.co/news/150767-samsung-backs-nvidia-rival-euclyd-in-230m-series-a/",
+   "source": "https://dealroom.co/news/150767-samsung-backs-nvidia-rival-euclyd-in-230m-series-a/",
+   "note": "~$230M Series A with Samsung participating (Sep 2026)"
+  },
+  {
    "name": "Extropic",
    "kind": "company",
    "subsegments": [
@@ -541,22 +675,6 @@
    ],
    "url": "https://www.fractile.ai",
    "source": "https://www.fractile.ai"
-  },
-  {
-   "name": "Fujitsu (MONAKA)",
-   "kind": "company",
-   "subsegments": [
-    "n2.cpu"
-   ],
-   "hq": "JP",
-   "region": "Asia-Pacific",
-   "status": "public",
-   "one_liner": "Arm-based MONAKA data-centre CPU for AI/HPC",
-   "tags": [
-    "sovereign"
-   ],
-   "url": "https://www.fujitsu.com",
-   "source": "https://www.fujitsu.com"
   },
   {
    "name": "FuriosaAI",
@@ -631,14 +749,20 @@
   },
   {
    "name": "Groq",
+   "aka": [
+    "Groq (GroqCloud)"
+   ],
    "kind": "company",
    "subsegments": [
     "n2.startup",
-    "n4.neo"
+    "n7.api"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "~$650M raise, May 2026 (after NVIDIA licensing deal, Dec 2025)",
+   "round_source": "https://noqta.tn/en/news/groq-650-million-neocloud-nvidia-inference-2026",
    "one_liner": "LPU inference chips; now primarily GroqCloud inference service",
    "tags": [
     "performance",
@@ -682,23 +806,21 @@
    "source": "https://en.horizon.auto"
   },
   {
-   "name": "Huawei Ascend",
+   "name": "Houmo AI",
    "kind": "company",
    "subsegments": [
-    "n2.china",
-    "n2.sw",
-    "n4.hyper"
+    "n2.china"
    ],
    "hq": "CN",
    "region": "China",
    "status": "private",
-   "parent": "Huawei",
-   "one_liner": "Ascend 910-series AI accelerators, CloudMatrix superpods, CANN software; also Huawei Cloud",
+   "one_liner": "Compute-in-memory AI chips for edge and automotive inference",
    "tags": [
-    "sovereign"
+    "sovereign",
+    "cost"
    ],
-   "url": "https://www.huawei.com/en/ascend",
-   "source": "https://www.huawei.com/en/ascend"
+   "url": "https://www.houmo.ai",
+   "source": "https://www.houmo.ai"
   },
   {
    "name": "Hygon",
@@ -716,6 +838,23 @@
    ],
    "url": "https://www.hygon.cn",
    "source": "https://www.hygon.cn"
+  },
+  {
+   "name": "HyperAccel",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "LLM-inference processor (LPU) and servers optimised for memory-bandwidth-bound generation",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://hyperaccel.ai",
+   "source": "https://hyperaccel.ai"
   },
   {
    "name": "Iluvatar CoreX",
@@ -749,6 +888,22 @@
    "note": "NVIDIA 800 VDC silicon partner"
   },
   {
+   "name": "Innatera",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Neuromorphic microcontrollers for always-on sensor AI at the edge",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://innatera.com",
+   "source": "https://innatera.com"
+  },
+  {
    "name": "Innoscience",
    "kind": "company",
    "subsegments": [
@@ -764,12 +919,20 @@
   },
   {
    "name": "Intel",
+   "aka": [
+    "Intel oneAPI / OpenVINO",
+    "Intel OpenVINO / NNCF",
+    "Intel OpenVINO"
+   ],
    "kind": "company",
    "subsegments": [
     "n2.merchant",
     "n2.cpu",
     "n2.edge",
-    "n2.sw"
+    "n2.sw",
+    "n6.opt",
+    "n7.local",
+    "n7.engine"
    ],
    "hq": "US",
    "region": "North America",
@@ -781,23 +944,6 @@
    "url": "https://www.intel.com",
    "source": "https://www.jonpeddie.com/news/ok-no-wedding-but-can-we-still-date/",
    "note": "Talks to buy SambaNova collapsed Jan 2026; instead multiyear partnership plus $350M investment Feb 2026"
-  },
-  {
-   "name": "Intel oneAPI / OpenVINO",
-   "kind": "company",
-   "subsegments": [
-    "n2.sw"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Intel",
-   "one_liner": "Cross-architecture programming model and inference toolkit for Intel hardware",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html",
-   "source": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html"
   },
   {
    "name": "iPronics",
@@ -832,6 +978,22 @@
    "note": "Filed for Hong Kong IPO 2026"
   },
   {
+   "name": "Lisuan Technology",
+   "kind": "company",
+   "subsegments": [
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Chinese domestic GPU designer (7G100 series) for graphics and AI",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.lisuantech.com",
+   "source": "https://www.lisuantech.com"
+  },
+  {
    "name": "Lumai",
    "kind": "company",
    "subsegments": [
@@ -846,12 +1008,17 @@
   },
   {
    "name": "Marvell",
+   "aka": [
+    "Marvell Technology (custom)",
+    "Marvell (optical DSPs)"
+   ],
    "kind": "company",
    "subsegments": [
     "n2.net",
-    "n2.custom",
     "n2.cpu",
-    "n3.scaleup"
+    "n3.scaleup",
+    "n1.design",
+    "n3.optics"
    ],
    "hq": "US",
    "region": "North America",
@@ -882,10 +1049,13 @@
   },
   {
    "name": "MediaTek",
+   "aka": [
+    "MediaTek (ASIC)"
+   ],
    "kind": "company",
    "subsegments": [
     "n2.edge",
-    "n2.custom"
+    "n1.design"
    ],
    "hq": "TW",
    "region": "Asia-Pacific",
@@ -964,6 +1134,23 @@
    "source": "https://azure.microsoft.com"
   },
   {
+   "name": "Mindgrove Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "RISC-V microcontroller and IoT SoCs designed in India",
+   "tags": [
+    "sovereign",
+    "cost"
+   ],
+   "url": "https://www.mindgrovetech.in",
+   "source": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/"
+  },
+  {
    "name": "Mobileye",
    "kind": "company",
    "subsegments": [
@@ -982,10 +1169,27 @@
    "source": "https://www.mobileye.com"
   },
   {
+   "name": "Mobilint",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Edge NPUs and accelerator cards for on-premise and embedded AI inference",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.mobilint.com",
+   "source": "https://www.mobilint.com"
+  },
+  {
    "name": "Modular",
    "kind": "company",
    "subsegments": [
-    "n2.sw"
+    "n2.sw",
+    "n7.engine"
    ],
    "hq": "US",
    "region": "North America",
@@ -1044,6 +1248,23 @@
    "note": "NVIDIA 800 VDC collaboration (2025-26)"
   },
   {
+   "name": "Netrasemi",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Edge AI SoCs for vision, surveillance and smart devices",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://apacnewsnetwork.com/2025/07/chip-design-startups-gain-momentum-netrasemi-secures-rs-107-cr-investment/amp",
+   "source": "https://apacnewsnetwork.com/2025/07/chip-design-startups-gain-momentum-netrasemi-secures-rs-107-cr-investment/amp",
+   "note": "Rs 107 crore raise (Jul 2025)"
+  },
+  {
    "name": "NeuReality",
    "kind": "company",
    "subsegments": [
@@ -1059,6 +1280,58 @@
    ],
    "url": "https://www.neureality.ai",
    "source": "https://www.neureality.ai"
+  },
+  {
+   "name": "Neurophos",
+   "kind": "company",
+   "subsegments": [
+    "n2.photonic",
+    "n2.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Metamaterial optical processing unit for inference",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://www.neurophos.com",
+   "source": "https://thefacts.com/ap_news/business/neurophos-secures-110-million-series-a-to-launch-exaflop-scale-photonic-ai-chips/article_3588fb93-f598-5e97-80d1-ec968c279d55.html",
+   "note": "$110M Series A led by Gates Frontier (Jan 2026)"
+  },
+  {
+   "name": "NextSilicon",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Maverick-2 runtime-reconfigurable dataflow accelerator for HPC and AI",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.nextsilicon.com",
+   "source": "https://www.nextsilicon.com"
+  },
+  {
+   "name": "Normal Computing",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup",
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Thermodynamic/probabilistic computing chips plus AI tools for chip verification",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.normalcomputing.com",
+   "source": "https://www.normalcomputing.com"
   },
   {
    "name": "Nubis Communications",
@@ -1077,6 +1350,10 @@
   },
   {
    "name": "NVIDIA",
+   "aka": [
+    "NVIDIA (DGX / MGX / NVL racks)",
+    "NVIDIA (CentML)"
+   ],
    "kind": "company",
    "subsegments": [
     "n2.merchant",
@@ -1093,7 +1370,11 @@
     "n3.scaleup",
     "n4.confidential",
     "n4.access",
-    "n5.physical"
+    "n5.physical",
+    "n3.servers",
+    "n3.network",
+    "n7.opt",
+    "n3.optics"
    ],
    "hq": "US",
    "region": "North America",
@@ -1119,6 +1400,23 @@
    "url": "https://www.nxp.com",
    "source": "https://www.nxp.com",
    "note": "Acquired edge-AI chip startup Kinara (announced Feb 2025)"
+  },
+  {
+   "name": "Olix Computing",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "UK AI chip startup (formerly Flux Computing) building accelerators for AI workloads",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in",
+   "source": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in",
+   "note": "Rebranded from Flux Computing and raised $220M (Jan 2026)"
   },
   {
    "name": "onsemi",
@@ -1152,22 +1450,55 @@
    "source": "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/"
   },
   {
-   "name": "OpenXLA / JAX",
+   "name": "OpenLight",
    "kind": "company",
    "subsegments": [
-    "n2.sw"
+    "n2.photonic"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open-source",
-   "parent": "Google-led",
-   "one_liner": "XLA compiler and JAX framework targeting TPUs, GPUs and CPUs",
+   "status": "private",
+   "one_liner": "Silicon photonics PIC design platform with integrated lasers, offered via foundry PDKs",
    "tags": [
-    "open-source",
     "performance"
    ],
-   "url": "https://openxla.org",
-   "source": "https://openxla.org"
+   "url": "https://openlightphotonics.com",
+   "source": "https://openlightphotonics.com"
+  },
+  {
+   "name": "Optalysys",
+   "kind": "company",
+   "subsegments": [
+    "n2.photonic"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Optical computing hardware for fully homomorphic encryption and secure AI workloads",
+   "tags": [
+    "security"
+   ],
+   "url": "https://optalysys.com",
+   "source": "https://optalysys.com"
+  },
+  {
+   "name": "Panmnesia",
+   "kind": "company",
+   "subsegments": [
+    "n2.net",
+    "n1.ip",
+    "n3.memory"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "CXL 3.x switch and controller IP for memory pooling and GPU-memory expansion in AI clusters",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://panmnesia.com",
+   "source": "https://www.eenewseurope.com/en/panmnesia-raises-12-5m-for-cxl3-0-memory-ip-stack/"
   },
   {
    "name": "Positron",
@@ -1178,6 +1509,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$230M Series B at >$1B valuation, Feb 2026",
+   "round_source": "https://www.businesswire.com/news/home/20260204250472/en/Positron-AI-Raises-%24230-Million-Series-B-at-Over-%241-Billion-Valuation-to-Scale-Energy-Efficient-AI-Inference",
    "one_liner": "Energy-efficient transformer inference appliances (Atlas) built on FPGA/ASIC",
    "tags": [
     "cost"
@@ -1201,39 +1535,6 @@
    "note": "NVIDIA 800 VDC silicon partner"
   },
   {
-   "name": "Preferred Networks (MN-Core)",
-   "kind": "company",
-   "subsegments": [
-    "n2.startup"
-   ],
-   "hq": "JP",
-   "region": "Asia-Pacific",
-   "status": "private",
-   "one_liner": "MN-Core AI accelerators alongside its own models and supercomputers",
-   "tags": [
-    "sovereign"
-   ],
-   "url": "https://www.preferred.jp/en/",
-   "source": "https://www.preferred.jp/en/"
-  },
-  {
-   "name": "PyTorch",
-   "kind": "company",
-   "subsegments": [
-    "n2.sw"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Linux Foundation",
-   "one_liner": "Dominant deep-learning framework with torch.compile, run by the PyTorch Foundation",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://pytorch.org",
-   "source": "https://pytorch.org"
-  },
-  {
    "name": "Q.ANT",
    "kind": "company",
    "subsegments": [
@@ -1252,12 +1553,19 @@
   },
   {
    "name": "Qualcomm",
+   "aka": [
+    "Qualcomm AI Hub (Edge Impulse)",
+    "Qualcomm AI Hub & AI Engine Direct"
+   ],
    "kind": "company",
    "subsegments": [
     "n2.merchant",
     "n2.edge",
     "n2.net",
-    "n2.cpu"
+    "n2.cpu",
+    "n6.opt",
+    "n6.hub",
+    "n7.local"
    ],
    "hq": "US",
    "region": "North America",
@@ -1269,6 +1577,23 @@
    "url": "https://www.qualcomm.com",
    "source": "https://itpro.com/business/acquisition/qualcomm-the-data-center-with-usd2-4-billion-alphawave-semi-acquisition",
    "note": "Completed $2.4B Alphawave Semi (connectivity IP) acquisition Dec 2025; acquired RISC-V CPU designer Ventana Micro Dec 2025"
+  },
+  {
+   "name": "Ranovus",
+   "kind": "company",
+   "subsegments": [
+    "n2.photonic",
+    "n3.optics"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Co-packaged optical engines for AI switches and accelerators",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://ranovus.com",
+   "source": "https://ranovus.com"
   },
   {
    "name": "Rebellions",
@@ -1303,23 +1628,6 @@
    "note": "NVIDIA 800 VDC silicon partner"
   },
   {
-   "name": "ROCm",
-   "kind": "company",
-   "subsegments": [
-    "n2.sw"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "AMD",
-   "one_liner": "AMD's open-source GPU software stack for Instinct accelerators",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://rocm.docs.amd.com",
-   "source": "https://rocm.docs.amd.com"
-  },
-  {
    "name": "ROHM",
    "kind": "company",
    "subsegments": [
@@ -1334,14 +1642,40 @@
    "note": "NVIDIA 800 VDC silicon partner"
   },
   {
-   "name": "SambaNova",
+   "name": "Salience Labs",
    "kind": "company",
    "subsegments": [
-    "n2.startup"
+    "n2.photonic",
+    "n3.network"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Photonic switching chips and systems for AI data-centre networks",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.salience-labs.com",
+   "source": "https://www.datacenterdynamics.com/en/news/optical-switching-startup-salience-labs-raises-125m-with-amd-and-intel-participating-in-round/",
+   "note": "$125M Series B with AMD and Intel participating (2026)"
+  },
+  {
+   "name": "SambaNova",
+   "aka": [
+    "SambaNova Cloud"
+   ],
+   "kind": "company",
+   "subsegments": [
+    "n2.startup",
+    "n7.api",
+    "n4.onprem"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$1B Series F first close at ~$11B valuation, Jul 2026",
+   "round_source": "https://dealroom.co/news/137657-sambanova-banks-1b-series-f-first-close-at-11b-valuation/",
    "one_liner": "Reconfigurable dataflow unit (RDU) chips and SambaCloud/on-prem inference systems",
    "tags": [
     "performance"
@@ -1392,6 +1726,22 @@
    "source": "https://sayari.com"
   },
   {
+   "name": "Scintil Photonics",
+   "kind": "company",
+   "subsegments": [
+    "n2.photonic"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Integrated laser-on-silicon photonic ICs for DWDM co-packaged optics",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.scintil-photonics.com",
+   "source": "https://www.scintil-photonics.com"
+  },
+  {
    "name": "SiMa.ai",
    "kind": "company",
    "subsegments": [
@@ -1424,6 +1774,22 @@
    "source": "https://sipearl.com"
   },
   {
+   "name": "Sophgo",
+   "kind": "company",
+   "subsegments": [
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Chinese TPU and RISC-V server chips for AI inference and edge",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.sophgo.com",
+   "source": "https://www.sophgo.com"
+  },
+  {
    "name": "Spectral Compute (SCALE)",
    "kind": "company",
    "subsegments": [
@@ -1438,6 +1804,22 @@
    ],
    "url": "https://scale-lang.com",
    "source": "https://scale-lang.com"
+  },
+  {
+   "name": "SpiNNcloud",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Neuromorphic SpiNNaker2-based supercomputer systems for energy-efficient AI",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://spinncloud.com",
+   "source": "https://spinncloud.com"
   },
   {
    "name": "STMicroelectronics",
@@ -1468,6 +1850,23 @@
    ],
    "url": "https://taalas.com",
    "source": "https://taalas.com"
+  },
+  {
+   "name": "Teramount",
+   "kind": "company",
+   "subsegments": [
+    "n2.photonic",
+    "n3.optics"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Detachable fibre-to-chip connectivity for co-packaged optics and silicon photonics",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.teramount.com",
+   "source": "https://www.teramount.com"
   },
   {
    "name": "Tesla AI silicon",
@@ -1520,7 +1919,8 @@
    "name": "tinygrad (tiny corp)",
    "kind": "company",
    "subsegments": [
-    "n2.sw"
+    "n2.sw",
+    "n3.servers"
    ],
    "hq": "US",
    "region": "North America",
@@ -1534,22 +1934,21 @@
    "source": "https://tinygrad.org"
   },
   {
-   "name": "Triton",
+   "name": "Unconventional AI",
    "kind": "company",
    "subsegments": [
-    "n2.sw"
+    "n2.startup"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open-source",
-   "parent": "OpenAI-led",
-   "one_liner": "Python-based GPU kernel language and compiler started by OpenAI",
+   "status": "private",
+   "one_liner": "Naveen Rao startup designing new analog/physics-based compute hardware for AI efficiency",
    "tags": [
-    "open-source",
-    "performance"
+    "cost"
    ],
-   "url": "https://triton-lang.org",
-   "source": "https://triton-lang.org"
+   "url": "https://unconv.ai",
+   "source": "https://unconv.ai",
+   "note": "Large seed round in late 2025"
   },
   {
    "name": "Upscale AI",
@@ -1586,6 +1985,38 @@
    "note": "Rescinded AI Diffusion Rule (May 2025) and issued new chip guidance"
   },
   {
+   "name": "Vaire Computing",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Reversible (near-zero-energy) computing chips aimed at AI inference efficiency",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in",
+   "source": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in"
+  },
+  {
+   "name": "Vastai Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Chinese GPGPU and inference accelerators for cloud video and AI",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.vastaitech.com",
+   "source": "https://www.vastaitech.com"
+  },
+  {
    "name": "VSORA",
    "kind": "company",
    "subsegments": [
@@ -1601,6 +2032,23 @@
    ],
    "url": "https://vsora.com",
    "source": "https://vsora.com"
+  },
+  {
+   "name": "XConn Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n2.net",
+    "n3.memory"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "CXL and PCIe switch silicon for memory pooling and composable servers",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.xconn-tech.com",
+   "source": "https://www.cbinsights.com/company/xconn-technologies/financials"
   },
   {
    "name": "Xscape Photonics",
@@ -1633,7 +2081,7 @@
    "source": "https://xsightlabs.com"
   },
   {
-   "name": "Apache TVM (open)",
+   "name": "Apache TVM",
    "kind": "open-source project",
    "subsegments": [
     "n2.sw",
@@ -1641,20 +2089,19 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
    "steward": "Apache Software Foundation",
    "licence": "Apache-2.0",
    "access": "pip install; compile models for CPUs, GPUs and NPUs",
    "repo": "https://github.com/apache/tvm",
    "stars": 13900,
    "archived": false,
-   "one_liner": "Open deep-learning compiler stack for diverse hardware backends",
+   "one_liner": "Open deep-learning compiler for diverse hardware backends",
    "tags": [
-    "open-source",
-    "performance"
+    "open-source"
    ],
-   "url": "https://github.com/apache/tvm",
-   "source": "https://github.com/apache/tvm"
+   "url": "https://tvm.apache.org",
+   "source": "https://tvm.apache.org"
   },
   {
    "name": "Caliptra",
@@ -1754,30 +2201,6 @@
    "source": "https://github.com/DPDK/dpdk"
   },
   {
-   "name": "ExecuTorch (open)",
-   "kind": "open-source project",
-   "subsegments": [
-    "n2.edge",
-    "n7.local"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
-   "steward": "PyTorch (Meta-led)",
-   "licence": "BSD",
-   "access": "pip install executorch; deploy to phone and embedded NPUs",
-   "repo": "https://github.com/pytorch/executorch",
-   "stars": 4900,
-   "archived": false,
-   "one_liner": "On-device PyTorch runtime with delegates for Apple, Qualcomm, Arm and MediaTek NPUs",
-   "tags": [
-    "open-source",
-    "performance"
-   ],
-   "url": "https://github.com/pytorch/executorch",
-   "source": "https://github.com/pytorch/executorch"
-  },
-  {
    "name": "FlagGems / FlagOS",
    "kind": "open-source project",
    "subsegments": [
@@ -1822,34 +2245,6 @@
    "url": "https://www.huawei.com/en/news/2025/9/hc-shengten-opensource",
    "source": "https://www.huawei.com/en/news/2025/9/hc-shengten-opensource",
    "note": "Operators open-sourced on GitCode Sep 2025; GE, Ascend C and MindIE committed for Dec 2025"
-  },
-  {
-   "name": "InferenceX (formerly InferenceMAX)",
-   "kind": "open dataset",
-   "subsegments": [
-    "n2.merchant",
-    "n4.neo",
-    "n7.bench"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
-   "steward": "SemiAnalysis",
-   "licence": "Apache-2.0",
-   "access": "Public dashboard; clone repo to reproduce runs",
-   "repo": "https://github.com/SemiAnalysisAI/InferenceX",
-   "stars": 1400,
-   "archived": false,
-   "one_liner": "Continuously updated open inference benchmark comparing NVIDIA, AMD and other hardware",
-   "tags": [
-    "open-data",
-    "open-source",
-    "performance",
-    "cost"
-   ],
-   "url": "https://inferencex.semianalysis.com/about",
-   "source": "https://github.com/SemiAnalysisAI/InferenceX",
-   "note": "Launched Oct 2025 as InferenceMAX; renamed InferenceX"
   },
   {
    "name": "IREE",
@@ -1993,32 +2388,6 @@
    ],
    "url": "https://mlir.llvm.org",
    "source": "https://github.com/llvm/llvm-project"
-  },
-  {
-   "name": "MLPerf Inference / Training",
-   "kind": "open dataset",
-   "subsegments": [
-    "n2.merchant",
-    "n2.startup",
-    "n3.servers"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
-   "steward": "MLCommons",
-   "licence": "Apache-2.0",
-   "access": "Run reference implementations; results public on mlcommons.org",
-   "repo": "https://github.com/mlcommons/inference",
-   "stars": 1600,
-   "archived": false,
-   "one_liner": "Industry-standard peer-reviewed benchmarks comparing AI chips and systems",
-   "tags": [
-    "open-data",
-    "open-source",
-    "performance"
-   ],
-   "url": "https://mlcommons.org",
-   "source": "https://github.com/mlcommons/inference"
   },
   {
    "name": "Mojo / MAX (Modular Platform)",
@@ -2169,6 +2538,9 @@
   },
   {
    "name": "OpenXLA (XLA)",
+   "aka": [
+    "OpenXLA / JAX"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n2.sw",
@@ -2192,7 +2564,34 @@
    "source": "https://github.com/openxla/xla"
   },
   {
-   "name": "ROCm (open)",
+   "name": "PyTorch",
+   "aka": [
+    "PyTorch (PyTorch Foundation)"
+   ],
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw",
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Linux Foundation",
+   "steward": "PyTorch Foundation (Linux Foundation)",
+   "licence": "BSD-3-Clause",
+   "access": "pip install torch",
+   "repo": "https://github.com/pytorch/pytorch",
+   "stars": 102000,
+   "archived": false,
+   "one_liner": "Dominant deep-learning framework with torch.compile, run by the PyTorch Foundation",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://pytorch.org",
+   "source": "https://pytorch.org"
+  },
+  {
+   "name": "ROCm",
    "kind": "open-source project",
    "subsegments": [
     "n2.sw",
@@ -2200,22 +2599,20 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
+   "parent": "AMD",
    "steward": "AMD",
    "licence": "MIT (meta-repo; components under mixed permissive licences)",
    "access": "Install packages or build via TheRock on AMD Instinct/Radeon GPUs",
    "repo": "https://github.com/ROCm/TheRock",
    "stars": 1400,
    "archived": false,
-   "one_liner": "AMD's open GPU compute stack (HIP, libraries, compilers); the main CUDA alternative",
+   "one_liner": "AMD's open-source GPU software stack for Instinct accelerators",
    "tags": [
-    "open-source",
-    "performance",
-    "cost"
+    "open-source"
    ],
-   "url": "https://github.com/ROCm/TheRock",
-   "source": "https://github.com/ROCm/ROCm",
-   "note": "ROCm/ROCm repo (6.8k stars) archived 19 Oct 2026; since ROCm 7.14 built and released via TheRock"
+   "url": "https://rocm.docs.amd.com",
+   "source": "https://rocm.docs.amd.com"
   },
   {
    "name": "SYCL",
@@ -2260,28 +2657,28 @@
    "source": "https://github.com/tile-ai/tilelang"
   },
   {
-   "name": "Triton (open)",
+   "name": "Triton",
    "kind": "open-source project",
    "subsegments": [
     "n2.sw"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
+   "parent": "OpenAI-led",
    "steward": "triton-lang community (OpenAI-led)",
    "licence": "MIT",
    "access": "pip install triton; write GPU kernels in Python",
    "repo": "https://github.com/triton-lang/triton",
    "stars": 20300,
    "archived": false,
-   "one_liner": "Python DSL and compiler for GPU kernels with NVIDIA, AMD and other backends",
+   "one_liner": "Python-based GPU kernel language and compiler started by OpenAI",
    "tags": [
     "open-source",
-    "performance",
-    "developer"
+    "performance"
    ],
-   "url": "https://github.com/triton-lang/triton",
-   "source": "https://github.com/triton-lang/triton"
+   "url": "https://triton-lang.org",
+   "source": "https://triton-lang.org"
   },
   {
    "name": "TT-Metalium / TT-NN",

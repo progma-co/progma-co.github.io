@@ -2,7 +2,7 @@
 
 Live at **https://www.progma.co.in/atlas/** · maintained by [Progma](https://www.progma.co.in) · data licensed CC BY 4.0
 
-Who does what across the AI value chain, from power and silicon through models, inference and tooling to applications, services and users. Columns are the 12 value-chain nodes; rows are the five support layers around each node (core offering, critical inputs, optimisation, ops & governance, distribution).
+Who does what across the AI value chain, from power and silicon through models, inference and tooling to applications, services and users. Columns are the 12 links in the chain; rows are the five support layers around each node (core offering, critical inputs, optimisation, ops & governance, distribution).
 
 ## How to contribute
 
@@ -21,7 +21,7 @@ Every change needs a source link and is reviewed before it goes live. Listings a
 ```
 atlas/data/
   taxonomy.json        nodes, sub-segments, layers, transitions
-  nodes/n0.json … n11.json   one file per node: {"entries": [...], "notes": {...}}
+  nodes/n0.json … n11.json   one file per link in the chain: {"entries": [...], "notes": {...}}
   cross.json           companies that span several nodes, with what they offer in each box
   investors.json       investors and the boxes their AI portfolio sits in
   stacks.json          community stacks

@@ -14,6 +14,19 @@
  },
  "entries": [
   {
+   "name": "ADTechnology",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Korean ASIC design house for Samsung Foundry advanced-node AI chips",
+   "url": "https://www.adtek.co.kr",
+   "source": "https://www.adtek.co.kr"
+  },
+  {
    "name": "Advantest",
    "kind": "company",
    "subsegments": [
@@ -66,6 +79,23 @@
    "one_liner": "ABF build-up film, the standard dielectric for AI package substrates",
    "url": "https://www.ajinomoto.com",
    "source": "https://www.ajinomoto.com"
+  },
+  {
+   "name": "Akeana",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "High-performance RISC-V CPU IP for data-centre, automotive and edge chips",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.akeana.com",
+   "source": "https://www.datacenterdynamics.com/en/news/risc-v-startup-akeana-raises-100m-exits-stealth-mode-and-launches-processor-and-ip-portfolios/",
+   "note": "$100M raised on exiting stealth"
   },
   {
    "name": "Alchip Technologies",
@@ -159,10 +189,31 @@
    "source": "https://www.appliedmaterials.com"
   },
   {
-   "name": "Arm",
+   "name": "Architect Labs",
    "kind": "company",
    "subsegments": [
-    "n1.ip"
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI system that designs and verifies custom chips from workload spec to silicon",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://synaptic.com/resources/tip-offs/agentic-design-automation-startups-and-founders",
+   "source": "https://synaptic.com/resources/tip-offs/agentic-design-automation-startups-and-founders",
+   "note": "$24M seed (Jun 2026)"
+  },
+  {
+   "name": "Arm",
+   "aka": [
+    "Arm (Neoverse)"
+   ],
+   "kind": "company",
+   "subsegments": [
+    "n1.ip",
+    "n2.cpu"
    ],
    "hq": "GB",
    "region": "Europe",
@@ -239,6 +290,23 @@
    "source": "https://www.asmpt.com"
   },
   {
+   "name": "Axiomatic AI",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI models with formal verification for photonics and electronics design",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://synaptic.com/resources/tip-offs/agentic-design-automation-startups-and-founders",
+   "source": "https://synaptic.com/resources/tip-offs/agentic-design-automation-startups-and-founders",
+   "note": "$18M seed (Mar 2026)"
+  },
+  {
    "name": "Baya Systems",
    "kind": "company",
    "subsegments": [
@@ -272,28 +340,31 @@
    "source": "https://www.besi.com"
   },
   {
-   "name": "Broadcom (custom ASIC)",
+   "name": "Bronco AI",
    "kind": "company",
    "subsegments": [
-    "n1.design"
+    "n1.eda"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "public",
-   "parent": "Broadcom",
-   "one_liner": "Largest custom AI accelerator (XPU) partner: Google TPU, Meta, OpenAI",
+   "status": "private",
+   "one_liner": "Design-verification agents that debug waveforms, simulation logs, RTL and UVM testbenches",
    "tags": [
     "performance"
    ],
-   "url": "https://www.broadcom.com",
-   "source": "https://www.broadcom.com"
+   "url": "https://synaptic.com/resources/tip-offs/agentic-design-automation-startups-and-founders",
+   "source": "https://synaptic.com/resources/tip-offs/agentic-design-automation-startups-and-founders"
   },
   {
    "name": "Cadence Design Systems",
+   "aka": [
+    "Cadence Reality DC (Future Facilities)"
+   ],
    "kind": "company",
    "subsegments": [
     "n1.eda",
-    "n1.ip"
+    "n1.ip",
+    "n0.opt"
    ],
    "hq": "US",
    "region": "North America",
@@ -358,6 +429,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$21M Series A, Oct 2025",
+   "round_source": "https://convergedigest.com/chipagents-raises-21m-to-bring-agentic-ai-to-chip-design/",
    "one_liner": "Agentic AI for RTL design and verification",
    "tags": [
     "performance",
@@ -368,6 +442,57 @@
    "note": "Raised $21M Series A (Oct 2025); later round reported 2026"
   },
   {
+   "name": "Chipmind",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Design-aware AI agents that plug into existing EDA tools to automate verification work",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://synaptic.com/resources/tip-offs/agentic-design-automation-startups-and-founders",
+   "source": "https://synaptic.com/resources/tip-offs/agentic-design-automation-startups-and-founders",
+   "note": "$2.5M pre-seed (Oct 2025)"
+  },
+  {
+   "name": "ChipStack",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Cadence Design Systems",
+   "one_liner": "AI agents for chip design verification",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.chipstack.ai",
+   "source": "https://synaptic.com/resources/tip-offs/agentic-design-automation-startups-and-founders",
+   "note": "Acquired by Cadence"
+  },
+  {
+   "name": "Codasip",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "CZ",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Customisable RISC-V processor IP and design tools",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://codasip.com",
+   "source": "https://www.cbinsights.com/company/codasip/financials"
+  },
+  {
    "name": "Cognichip",
    "kind": "company",
    "subsegments": [
@@ -376,6 +501,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$60M Series A",
+   "round_source": "https://www.tamradar.com/funding-rounds/cognichip-series-a-60m",
    "one_liner": "Physics-informed AI foundation model for chip design",
    "tags": [
     "performance"
@@ -415,6 +543,20 @@
    "url": "https://www.cxmt.com",
    "source": "https://borecraft.com/2026/01/05/china-memory-makers-ipo-line-up-cxmt-seeks-us4-2-billion-ymtc-prepares-filing/",
    "note": "Pursuing Shanghai IPO in 2026"
+  },
+  {
+   "name": "Cyient Semiconductors",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Cyient",
+   "one_liner": "Cyient subsidiary offering turnkey ASIC design and supply to fabless customers",
+   "url": "https://www.cyient.com",
+   "source": "https://www.angelone.in/news/share-market/cyient-launches-cyient-semiconductors-to-scale-asic-turnkey-solutions"
   },
   {
    "name": "Dai Nippon Printing (DNP)",
@@ -477,6 +619,19 @@
    "source": "https://www.empyrean-tech.com"
   },
   {
+   "name": "EnSilica",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "UK mixed-signal ASIC design and supply company",
+   "url": "https://www.ensilica.com",
+   "source": "https://www.ensilica.com"
+  },
+  {
    "name": "Entegris",
    "kind": "company",
    "subsegments": [
@@ -488,6 +643,23 @@
    "one_liner": "Specialty chemicals, filtration and materials handling",
    "url": "https://www.entegris.com",
    "source": "https://www.entegris.com"
+  },
+  {
+   "name": "Expedera",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Origin NPU semiconductor IP for edge and on-device inference",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.expedera.com",
+   "source": "https://convergedigest.com/tag/expedera/",
+   "note": "$20M Series B"
   },
   {
    "name": "Faraday Technology",
@@ -502,6 +674,19 @@
    "one_liner": "ASIC design services and IP",
    "url": "https://www.faraday-tech.com",
    "source": "https://www.faraday-tech.com"
+  },
+  {
+   "name": "Gaonchips",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Samsung Foundry design-solution partner building AI and automotive ASICs",
+   "url": "https://www.gaonchips.com",
+   "source": "https://www.gaonchips.com"
   },
   {
    "name": "Global Unichip (GUC)",
@@ -519,30 +704,20 @@
   },
   {
    "name": "GlobalFoundries",
+   "aka": [
+    "GlobalFoundries ARC IP (ex-Synopsys)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n1.foundry"
+    "n1.foundry",
+    "n1.ip"
    ],
    "hq": "US",
    "region": "North America",
    "status": "public",
    "one_liner": "Specialty and mature-node foundry incl. silicon photonics",
    "url": "https://gf.com",
-   "source": "https://gf.com"
-  },
-  {
-   "name": "GlobalFoundries ARC IP (ex-Synopsys)",
-   "kind": "company",
-   "subsegments": [
-    "n1.ip"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "acquired",
-   "parent": "GlobalFoundries (2026)",
-   "one_liner": "ARC processor IP portfolio moved from Synopsys to GF",
-   "url": "https://gf.com",
-   "source": "https://evertiq.com/design/2026-06-04-gf-completes-acquisition-of-synopsys-arc-processor-ip-business",
+   "source": "https://gf.com",
    "note": "Deal closed Jun 2026"
   },
   {
@@ -571,20 +746,6 @@
    "one_liner": "Thermo-compression bonders for HBM stacking",
    "url": "https://www.hanmisemi.com",
    "source": "https://www.hanmisemi.com"
-  },
-  {
-   "name": "HCLTech (semiconductor services)",
-   "kind": "company",
-   "subsegments": [
-    "n1.design"
-   ],
-   "hq": "IN",
-   "region": "India",
-   "status": "public",
-   "parent": "HCLTech",
-   "one_liner": "VLSI design and verification services for chip companies",
-   "url": "https://www.hcltech.com",
-   "source": "https://www.hcltech.com"
   },
   {
    "name": "Hitachi High-Tech",
@@ -656,6 +817,22 @@
    "one_liner": "GPU and AI compute IP",
    "url": "https://www.imaginationtech.com",
    "source": "https://www.imaginationtech.com"
+  },
+  {
+   "name": "InCore Semiconductors",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "RISC-V processor IP cores and SoC generator platform",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://incoresemi.com",
+   "source": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/"
   },
   {
    "name": "Intel Foundry",
@@ -853,35 +1030,6 @@
    "source": "https://www.linde.com"
   },
   {
-   "name": "Marvell Technology (custom)",
-   "kind": "company",
-   "subsegments": [
-    "n1.design"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Marvell",
-   "one_liner": "Custom XPU/ASIC design for AWS and Microsoft; added Celestial AI photonic fabric",
-   "url": "https://www.marvell.com",
-   "source": "https://www.marvell.com/company/newsroom/marvell-completes-acquisition-of-celestial-ai.html",
-   "note": "Completed Celestial AI acquisition (Feb 2026)"
-  },
-  {
-   "name": "MediaTek (ASIC)",
-   "kind": "company",
-   "subsegments": [
-    "n1.design"
-   ],
-   "hq": "TW",
-   "region": "Asia-Pacific",
-   "status": "public",
-   "parent": "MediaTek",
-   "one_liner": "Custom data-centre ASIC services, incl. Google TPU work",
-   "url": "https://www.mediatek.com",
-   "source": "https://www.mediatek.com"
-  },
-  {
    "name": "Merck KGaA (EMD Electronics)",
    "kind": "company",
    "subsegments": [
@@ -895,25 +1043,14 @@
    "source": "https://www.emdgroup.com"
   },
   {
-   "name": "Micron India (Sanand ATMP)",
-   "kind": "company",
-   "subsegments": [
-    "n1.packaging",
-    "n1.memory"
-   ],
-   "hq": "IN",
-   "region": "India",
-   "status": "public",
-   "parent": "Micron",
-   "one_liner": "Memory assembly and test facility in Gujarat",
-   "url": "https://www.micron.com",
-   "source": "https://www.micron.com"
-  },
-  {
    "name": "Micron Technology",
+   "aka": [
+    "Micron India (Sanand ATMP)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n1.memory"
+    "n1.memory",
+    "n1.packaging"
    ],
    "hq": "US",
    "region": "North America",
@@ -935,6 +1072,19 @@
    "one_liner": "RISC-V CPU IP for automotive and data-centre",
    "url": "https://mips.com",
    "source": "https://mips.com"
+  },
+  {
+   "name": "MosChip Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian semiconductor and system design services, ASIC turnkey and IP",
+   "url": "https://moschip.com",
+   "source": "https://secondsource.substack.com/p/moschip-technologies-indias-semiconductor"
   },
   {
    "name": "Nanya Technology",
@@ -1091,6 +1241,23 @@
    "source": "https://www.psmc.com.tw"
   },
   {
+   "name": "Quadric",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip",
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Licensable Chimera GPNPU processor IP for on-device AI",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://quadric.io",
+   "source": "https://www.cbinsights.com/company/quadricio/financials"
+  },
+  {
    "name": "Rambus",
    "kind": "company",
    "subsegments": [
@@ -1145,6 +1312,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$300M Series A",
+   "round_source": "https://convergedigest.com/ricursive-intelligence-raises-300m-series-a-for-ai-driven-chip-design/",
    "one_liner": "AI-driven chip design startup",
    "tags": [
     "performance"
@@ -1220,6 +1390,35 @@
    "one_liner": "Wafer cleaning equipment",
    "url": "https://www.screen.co.jp",
    "source": "https://www.screen.co.jp"
+  },
+  {
+   "name": "Semidynamics",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "RISC-V CPU, vector and tensor IP combined into licensable AI processing elements",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://semidynamics.com",
+   "source": "https://semidynamics.com"
+  },
+  {
+   "name": "Semifive",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "one_liner": "Korean custom AI ASIC design platform and services on Samsung Foundry",
+   "url": "https://www.semifive.com",
+   "source": "https://en.startuprecipe.co.kr/archives/pr-newswire/semifive-submits-securities-registration-for-kosdaq-listing",
+   "note": "KOSDAQ listing process (preliminary approval and securities registration, 2025)"
   },
   {
    "name": "Shin-Etsu Chemical",

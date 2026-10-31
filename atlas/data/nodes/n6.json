@@ -10,7 +10,7 @@
   "n6.code": "Frontier general models dominate coding; tool makers (Cursor, Cognition) now train their own models, and open coders (Qwen-Coder, Kimi, Devstral) compete on cost.",
   "n6.science": "Mix of Alphabet/NVIDIA/Microsoft platforms and heavily funded startups; 2025-26 trend is 'AI scientist' labs pairing models with autonomous wet labs (Periodic, Lila).",
   "n6.world": "Pre-commercial but heavily funded: robotics foundation models (Physical Intelligence, Skild) and world models (World Labs, AMI Labs $1.03B seed Mar 2026, Genie, Cosmos).",
-  "n6.sovereign": "Government-backed programmes in India (IndiaAI Mission), Korea (national foundation-model teams), UAE, Saudi, Japan, Switzerland and the EU fund local-language models; India's Sarvam open-sourced 30B/105B models in Feb 2026.",
+  "n6.sovereign": "India's IndiaAI Mission funds 12 builders; BharatGen gets Rs 1,058.52 crore, 4x the next (Medianama, Apr 2026).",
   "n6.embed": "Consolidated into data platforms: Voyage to MongoDB and Jina to Elastic (2025); Cohere, OpenAI, Google and open Qwen/BGE models dominate.",
   "n6.train": "Open-source frameworks (PyTorch, JAX, Megatron, TRL, verl) are the base; fine-tuning-as-a-service is being absorbed by clouds (OpenPipe to CoreWeave, Predibase to Rubrik) while Thinking Machines' Tinker targets RL fine-tuning.",
   "n6.opt": "Compression startups are being acquired by chip/platform owners (Neural Magic to Red Hat, Deci to NVIDIA, Edge Impulse to Qualcomm); independent players are Multiverse, Pruna, Nota, Embedl.",
@@ -139,6 +139,9 @@
    "hq": "IL",
    "region": "Middle East",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$300M Series D, May 2025 (Google, NVIDIA)",
+   "round_source": "https://www.cbinsights.com/company/ai21-labs/financials",
    "one_liner": "Jamba hybrid SSM-Transformer models and Maestro enterprise agent system",
    "tags": [
     "enterprise"
@@ -148,14 +151,19 @@
   },
   {
    "name": "AIKosh (IndiaAI)",
+   "aka": [
+    "AIKosh (IndiaAI Datasets Platform)"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.hub",
-    "n5.license"
+    "n5.license",
+    "n6.sovereign"
    ],
    "hq": "IN",
    "region": "India",
    "status": "government",
+   "access": "Register at aikosh.indiaai.gov.in; download datasets and models",
    "one_liner": "India's government platform for datasets and models under IndiaAI Mission",
    "tags": [
     "sovereign"
@@ -168,7 +176,8 @@
    "kind": "company",
    "subsegments": [
     "n6.enterprise",
-    "n6.sovereign"
+    "n6.sovereign",
+    "n7.private"
    ],
    "hq": "DE",
    "region": "Europe",
@@ -207,25 +216,6 @@
    "source": "https://qwen.ai"
   },
   {
-   "name": "Amazon Bedrock",
-   "kind": "company",
-   "subsegments": [
-    "n6.hub",
-    "n7.platform",
-    "n7.compress"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Amazon",
-   "one_liner": "Managed catalogue of first- and third-party foundation models on AWS",
-   "tags": [
-    "enterprise"
-   ],
-   "url": "https://aws.amazon.com/bedrock/",
-   "source": "https://aws.amazon.com/bedrock/"
-  },
-  {
    "name": "Amazon Nova (AGI SF / Amazon AGI)",
    "kind": "company",
    "subsegments": [
@@ -255,30 +245,19 @@
    "hq": "FR",
    "region": "Europe",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$1.03B seed at ~$3.5B valuation, Mar 2026",
+   "round_source": "https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/",
    "one_liner": "Yann LeCun's lab building JEPA-style world models for robotics and industry",
    "url": "https://amilabs.xyz",
    "source": "https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/",
    "note": "Raised $1.03B seed at ~$3.5B (Mar 2026)"
   },
   {
-   "name": "Anjuna",
-   "kind": "company",
-   "subsegments": [
-    "n6.weights",
-    "n7.private"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Confidential computing platform to run AI workloads and models in secure enclaves",
-   "tags": [
-    "security"
-   ],
-   "url": "https://www.anjuna.io",
-   "source": "https://www.anjuna.io"
-  },
-  {
    "name": "Anthropic",
+   "aka": [
+    "Anthropic prompt caching"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.frontier",
@@ -287,7 +266,8 @@
     "n4.offtake",
     "n6.weights",
     "n10.lab",
-    "n10.partner"
+    "n10.partner",
+    "n7.compress"
    ],
    "hq": "US",
    "region": "North America",
@@ -301,23 +281,6 @@
    "url": "https://www.anthropic.com",
    "source": "https://www.anthropic.com",
    "note": "Azure $30B/1 GW (Nov 2025); Google TPUs up to 1 GW (Oct 2025); xAI/SpaceX >$40B (May 2026); Nscale $45B, Lambda $35B (Aug 2026, reported)"
-  },
-  {
-   "name": "Anysphere (Cursor Composer)",
-   "kind": "company",
-   "subsegments": [
-    "n6.code"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Cursor IDE maker training in-house agentic coding models (Composer)",
-   "tags": [
-    "performance"
-   ],
-   "url": "https://cursor.com",
-   "source": "https://cursor.com",
-   "note": "Launched Composer model (Oct 2025)"
   },
   {
    "name": "Apollo Research",
@@ -337,10 +300,13 @@
   },
   {
    "name": "Apple Foundation Models",
+   "aka": [
+    "Apple MLX & Foundation Models framework"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.small",
-    "n7.private"
+    "n7.local"
    ],
    "hq": "US",
    "region": "North America",
@@ -353,6 +319,24 @@
    "url": "https://developer.apple.com/documentation/foundationmodels",
    "source": "https://developer.apple.com/documentation/foundationmodels",
    "note": "Framework opened to developers (Jun 2025)"
+  },
+  {
+   "name": "Arabic.AI (Tarjama)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.enterprise"
+   ],
+   "hq": "AE",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Arabic-first LLM and enterprise AI platform",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://arabic.ai",
+   "source": "https://enterpriseam.com/uae/2025/05/22/tarjama-secures-usd-15-mn-in-series-a-round-to-expand-arabic-ai/",
+   "note": "$15M Series A, May 2025"
   },
   {
    "name": "Arc Institute (Evo 2)",
@@ -402,6 +386,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$0.25M convertible note, Sep 2024, AI Grant",
+   "round_source": "https://www.cbinsights.com/company/artificial-analysis/financials",
    "one_liner": "Independent benchmarking of model intelligence, speed and price",
    "tags": [
     "performance",
@@ -419,6 +406,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$50M Series C, Dec 2023 (Accel, Insight Partners, Smith Point)",
+   "round_source": "https://www.cbinsights.com/company/assemblyai/financials",
    "one_liner": "Speech recognition and audio understanding APIs",
    "tags": [
     "developer"
@@ -427,20 +417,38 @@
    "source": "https://www.assemblyai.com"
   },
   {
-   "name": "Axolotl",
+   "name": "Avataar.ai",
    "kind": "company",
    "subsegments": [
-    "n6.train"
+    "n6.sovereign"
    ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "one_liner": "Open-source config-driven LLM fine-tuning toolkit",
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian-language avatar models for agriculture and governance (IndiaAI)",
    "tags": [
-    "open-source"
+    "sovereign"
    ],
-   "url": "https://axolotl.ai",
-   "source": "https://axolotl.ai"
+   "url": "https://avataar.ai",
+   "source": "https://www.medianama.com/2026/04/223-centre-funds-12-ai-projects-sovereign-models-bharatgen-4x-next-highest-allocation-rs-1000-crore/"
+  },
+  {
+   "name": "Awarri (N-ATLaS)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "NG",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "Built Nigeria's N-ATLaS LLM for Yoruba, Hausa, Igbo and Nigerian English",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://awarri.com",
+   "source": "https://huggingface.co/NCAIR1/N-ATLaS",
+   "note": "Released with Nigeria's NCAIR"
   },
   {
    "name": "BAAI (BGE)",
@@ -572,23 +580,6 @@
    "source": "https://seed.bytedance.com"
   },
   {
-   "name": "ByteDance verl",
-   "kind": "company",
-   "subsegments": [
-    "n6.train"
-   ],
-   "hq": "CN",
-   "region": "China",
-   "status": "open-source",
-   "parent": "ByteDance",
-   "one_liner": "Open-source RL post-training framework for LLMs",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://github.com/volcengine/verl",
-   "source": "https://github.com/volcengine/verl"
-  },
-  {
    "name": "CalypsoAI",
    "kind": "company",
    "subsegments": [
@@ -617,6 +608,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$100M Series A extension, Oct 2025 (Index Ventures, Kleiner Perkins, Lightspeed, NVIDIA)",
+   "round_source": "https://www.cbinsights.com/company/cartesia/financials",
    "one_liner": "Low-latency state-space-model voice (Sonic) for real-time agents",
    "tags": [
     "performance"
@@ -634,6 +628,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$400M Series C, Jun 2026 (Index, General Catalyst, OpenAI, Sequoia)",
+   "round_source": "https://www.cbinsights.com/company/chai-discovery/financials",
    "one_liner": "Chai models for molecular structure and de novo antibody design",
    "tags": [],
    "url": "https://www.chaidiscovery.com",
@@ -656,24 +653,24 @@
    "source": "https://civitai.com"
   },
   {
-   "name": "Cognition (SWE-1.5)",
+   "name": "CLIKA",
    "kind": "company",
    "subsegments": [
-    "n6.code"
+    "n6.opt"
    ],
-   "hq": "US",
-   "region": "North America",
    "status": "private",
-   "one_liner": "Devin and Windsurf maker training SWE-series coding models",
+   "one_liner": "Automated hardware-aware model compression toolkit",
    "tags": [
-    "performance"
+    "cost"
    ],
-   "url": "https://cognition.ai",
-   "source": "https://cognition.ai",
-   "note": "Acquired Windsurf (Jul 2025)"
+   "url": "https://www.clika.io",
+   "source": "https://yourstory.com/2025/01/clikas-automated-hardware-aware-ai-compression-toolkit"
   },
   {
    "name": "Cohere",
+   "aka": [
+    "Cohere (Embed, Rerank, North)"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.enterprise",
@@ -681,7 +678,9 @@
     "n6.sovereign",
     "n7.private",
     "n9.public",
-    "n10.lab"
+    "n10.lab",
+    "n8.vector",
+    "n8.platform"
    ],
    "hq": "CA",
    "region": "North America",
@@ -712,13 +711,16 @@
     "enterprise"
    ],
    "url": "https://contextual.ai",
-   "source": "https://contextual.ai"
+   "source": "https://news.bloomberglaw.com/antitrust/google-hires-staff-from-ai-startup-contextual-in-licensing-deal",
+   "note": "Google DeepMind hired staff in a licensing deal (May 2026)"
   },
   {
    "name": "CoRover (BharatGPT)",
    "kind": "company",
    "subsegments": [
-    "n6.sovereign"
+    "n6.sovereign",
+    "n9.support",
+    "n9.public"
    ],
    "hq": "IN",
    "region": "India",
@@ -746,24 +748,6 @@
    "source": "https://www.cusp.ai"
   },
   {
-   "name": "Databricks Mosaic AI",
-   "kind": "company",
-   "subsegments": [
-    "n6.enterprise",
-    "n6.train"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "parent": "Databricks",
-   "one_liner": "Enterprise model training, fine-tuning and serving on the Databricks platform",
-   "tags": [
-    "enterprise"
-   ],
-   "url": "https://www.databricks.com/product/artificial-intelligence",
-   "source": "https://www.databricks.com/product/artificial-intelligence"
-  },
-  {
    "name": "Decart",
    "kind": "company",
    "subsegments": [
@@ -773,6 +757,9 @@
    "hq": "IL",
    "region": "Middle East",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "Series C, Mar 2026 (Amazon acquisition rumoured Aug 2026)",
+   "round_source": "https://www.cbinsights.com/company/decart/financials",
    "one_liner": "Real-time interactive video and world generation models",
    "tags": [
     "performance"
@@ -800,11 +787,15 @@
    "name": "Deepgram",
    "kind": "company",
    "subsegments": [
-    "n6.audio"
+    "n6.audio",
+    "n9.voice"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$130M Series C at $1.3B valuation, Jan 2026",
+   "round_source": "https://finance.yahoo.com/news/deepgram-raises-130m-1-3bn-155254615.html",
    "one_liner": "Speech-to-text, text-to-speech and voice-agent APIs",
    "tags": [
     "enterprise"
@@ -814,10 +805,16 @@
   },
   {
    "name": "DeepSeek",
+   "aka": [
+    "DeepSeek context caching",
+    "DeepSeek app"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.open",
-    "n6.code"
+    "n6.code",
+    "n7.compress",
+    "n9.assistant"
    ],
    "hq": "CN",
    "region": "China",
@@ -832,10 +829,28 @@
    "note": "Reported IPO preparation for 2027 and large 2026 funding (secondary source, unconfirmed)"
   },
   {
+   "name": "Distil Labs",
+   "kind": "company",
+   "subsegments": [
+    "n6.train",
+    "n6.opt"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Platform that distils task-specific small models from a few examples",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.distillabs.ai",
+   "source": "https://f4.fund/startups/distillabs"
+  },
+  {
    "name": "Docker Model Runner / Hub",
    "kind": "company",
    "subsegments": [
-    "n6.hub"
+    "n6.hub",
+    "n7.local"
    ],
    "hq": "US",
    "region": "North America",
@@ -853,11 +868,16 @@
    "subsegments": [
     "n6.opt",
     "n7.engine",
-    "n7.opt"
+    "n7.opt",
+    "n7.private",
+    "n7.api"
    ],
    "hq": "GB",
    "region": "Europe",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$12M Series A, May 2025",
+   "round_source": "https://www.doubleword.ai",
    "one_liner": "Self-hosted inference optimisation for enterprises",
    "tags": [
     "cost",
@@ -872,7 +892,8 @@
    "name": "Edison Scientific (FutureHouse)",
    "kind": "company",
    "subsegments": [
-    "n6.science"
+    "n6.science",
+    "n9.industrial"
    ],
    "hq": "US",
    "region": "North America",
@@ -899,6 +920,24 @@
    "url": "https://elevenlabs.io",
    "source": "https://elevenlabs.io",
    "note": "Valuation ~$6.6B (2025 tender); larger 2026 round reported"
+  },
+  {
+   "name": "ELYZA",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.enterprise"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "acquired",
+   "parent": "KDDI (2024)",
+   "one_liner": "Japanese-language LLMs and enterprise deployments",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://elyza.ai",
+   "source": "https://pdpspectra.com/blog/japan-llms-elyza-sakana-rinna-2026"
   },
   {
    "name": "Embedl",
@@ -961,12 +1000,32 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "Seed extension ($102M tranche), Jun 2024 (Lux, Nat Friedman & Daniel Gross, AWS, NVentures)",
+   "round_source": "https://www.cbinsights.com/company/evolutionaryscale/financials",
    "one_liner": "ESM protein language models for protein design",
    "tags": [
     "open-source"
    ],
    "url": "https://www.evolutionaryscale.ai",
    "source": "https://www.evolutionaryscale.ai"
+  },
+  {
+   "name": "Fanar (QCRI)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "QA",
+   "region": "Middle East",
+   "status": "government",
+   "parent": "Qatar Computing Research Institute (HBKU)",
+   "one_liner": "Qatar's Arabic-centric LLM stack; Fanar 2.0 (27B) released 2026",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://fanar.qa",
+   "source": "https://www.middleeastainews.com/p/qatar-announces-fanar-20-arabic-ai"
   },
   {
    "name": "FAR.AI",
@@ -988,7 +1047,8 @@
    "name": "Field AI",
    "kind": "company",
    "subsegments": [
-    "n6.world"
+    "n6.world",
+    "n9.physical"
    ],
    "hq": "US",
    "region": "North America",
@@ -996,35 +1056,6 @@
    "one_liner": "Field Foundation Models for autonomous robots in unstructured environments",
    "url": "https://fieldai.com",
    "source": "https://fieldai.com"
-  },
-  {
-   "name": "Figure AI (Helix)",
-   "kind": "company",
-   "subsegments": [
-    "n6.world"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Humanoid robot maker with in-house Helix vision-language-action model",
-   "url": "https://www.figure.ai",
-   "source": "https://www.figure.ai"
-  },
-  {
-   "name": "Fireworks AI (RFT)",
-   "kind": "company",
-   "subsegments": [
-    "n6.train"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Supervised and reinforcement fine-tuning service on its inference platform",
-   "tags": [
-    "developer"
-   ],
-   "url": "https://fireworks.ai",
-   "source": "https://fireworks.ai"
   },
   {
    "name": "Fish Audio",
@@ -1044,20 +1075,22 @@
    "source": "https://fish.audio"
   },
   {
-   "name": "Fractal Analytics (Fathom)",
+   "name": "Flower Labs",
    "kind": "company",
    "subsegments": [
-    "n6.sovereign"
+    "n6.train",
+    "n7.private"
    ],
-   "hq": "IN",
-   "region": "India",
-   "status": "public",
-   "one_liner": "Indian reasoning models (Fathom-R1); IndiaAI Mission phase 2 grantee",
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Open-source federated learning framework for training on distributed private data",
    "tags": [
-    "sovereign"
+    "open-source",
+    "security"
    ],
-   "url": "https://fractal.ai",
-   "source": "https://analyticsindiamag.com/ai-news-updates/bharatgen-tech-mahindra-and-fractal-selected-for-phase-2-of-indiaai-mission/"
+   "url": "https://flower.ai",
+   "source": "https://flower.ai"
   },
   {
    "name": "G42 / Inception (Jais)",
@@ -1082,7 +1115,8 @@
    "name": "Galbot",
    "kind": "company",
    "subsegments": [
-    "n6.world"
+    "n6.world",
+    "n9.physical"
    ],
    "hq": "CN",
    "region": "China",
@@ -1090,6 +1124,23 @@
    "one_liner": "Generalist humanoid robots with embodied VLA models",
    "url": "https://www.galbot.com",
    "source": "https://www.galbot.com"
+  },
+  {
+   "name": "Gan.ai",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio",
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "70B multilingual model focused on Indian-language text-to-speech (IndiaAI)",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://gan.ai",
+   "source": "https://www.medianama.com/2026/04/223-centre-funds-12-ai-projects-sovereign-models-bharatgen-4x-next-highest-allocation-rs-1000-crore/"
   },
   {
    "name": "General Intuition",
@@ -1100,6 +1151,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$133.7M seed, Oct 2025",
+   "round_source": "https://www.generalintuition.com",
    "one_liner": "Agents and world models trained on gameplay video",
    "url": "https://www.generalintuition.com",
    "source": "https://www.generalintuition.com",
@@ -1109,7 +1163,8 @@
    "name": "Generate Biomedicines",
    "kind": "company",
    "subsegments": [
-    "n6.science"
+    "n6.science",
+    "n9.industrial"
    ],
    "hq": "US",
    "region": "North America",
@@ -1127,10 +1182,31 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$105M seed, Jul 2025",
+   "round_source": "https://genesis-ai.company",
    "one_liner": "Physics simulation and robotics foundation models",
    "url": "https://genesis-ai.company",
    "source": "https://genesis-ai.company",
    "note": "$105M seed (Jul 2025)"
+  },
+  {
+   "name": "Genloop",
+   "kind": "company",
+   "subsegments": [
+    "n6.small",
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "2B small language models for all 22 scheduled Indian languages (IndiaAI)",
+   "tags": [
+    "sovereign",
+    "cost"
+   ],
+   "url": "https://genloop.ai",
+   "source": "https://www.medianama.com/2026/04/223-centre-funds-12-ai-projects-sovereign-models-bharatgen-4x-next-highest-allocation-rs-1000-crore/"
   },
   {
    "name": "Genmo",
@@ -1259,23 +1335,6 @@
    "source": "https://deepmind.google"
   },
   {
-   "name": "Google Vertex AI Model Garden",
-   "kind": "company",
-   "subsegments": [
-    "n6.hub"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Alphabet",
-   "one_liner": "Catalogue of Google, partner and open models on Google Cloud",
-   "tags": [
-    "enterprise"
-   ],
-   "url": "https://cloud.google.com/model-garden",
-   "source": "https://cloud.google.com/model-garden"
-  },
-  {
    "name": "GoTo / Indosat (Sahabat-AI)",
    "kind": "company",
    "subsegments": [
@@ -1344,79 +1403,6 @@
    "source": "https://www.holisticai.com"
   },
   {
-   "name": "Hugging Face Hub",
-   "kind": "company",
-   "subsegments": [
-    "n6.hub",
-    "n5.web",
-    "n6.weights"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Largest public hub of open model weights, datasets and Spaces",
-   "tags": [
-    "open-source",
-    "developer"
-   ],
-   "url": "https://huggingface.co",
-   "source": "https://huggingface.co"
-  },
-  {
-   "name": "Hugging Face SmolLM",
-   "kind": "company",
-   "subsegments": [
-    "n6.small",
-    "n6.open"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Hugging Face",
-   "one_liner": "Fully open small language and vision models (SmolLM, SmolVLM)",
-   "tags": [
-    "open-source",
-    "cost"
-   ],
-   "url": "https://huggingface.co/HuggingFaceTB",
-   "source": "https://huggingface.co/HuggingFaceTB"
-  },
-  {
-   "name": "Hugging Face TRL / PEFT",
-   "kind": "company",
-   "subsegments": [
-    "n6.train"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Hugging Face",
-   "one_liner": "Open libraries for SFT, preference optimisation, RL and parameter-efficient fine-tuning",
-   "tags": [
-    "open-source",
-    "developer"
-   ],
-   "url": "https://huggingface.co/docs/trl",
-   "source": "https://huggingface.co/docs/trl"
-  },
-  {
-   "name": "HUMAIN (ALLaM)",
-   "kind": "company",
-   "subsegments": [
-    "n6.sovereign"
-   ],
-   "hq": "SA",
-   "region": "Middle East",
-   "status": "government",
-   "parent": "Public Investment Fund",
-   "one_liner": "Saudi PIF-owned AI company with Arabic ALLaM models and HUMAIN Chat",
-   "tags": [
-    "sovereign"
-   ],
-   "url": "https://www.humain.ai",
-   "source": "https://www.humain.ai"
-  },
-  {
    "name": "Hume AI",
    "kind": "company",
    "subsegments": [
@@ -1426,6 +1412,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$50M Series B",
+   "round_source": "https://neuronfeed.com/funding/2841",
    "one_liner": "Emotionally expressive voice models (EVI, Octave)",
    "tags": [
     "developer"
@@ -1468,6 +1457,23 @@
    "source": "https://ideogram.ai"
   },
   {
+   "name": "ILMU (YTL AI Labs)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "MY",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "YTL Corporation",
+   "one_liner": "Malaysia's first homegrown LLM, launched Aug 2025",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://ilmu.ai",
+   "source": "https://w.media/ilmu-deep-dive-into-malaysias-first-homegrown-llm-with-prof-chan/"
+  },
+  {
    "name": "Inception Labs",
    "kind": "company",
    "subsegments": [
@@ -1504,22 +1510,20 @@
    "source": "https://www.instadeep.com"
   },
   {
-   "name": "Intel OpenVINO / NNCF",
+   "name": "Intellihealth",
    "kind": "company",
    "subsegments": [
-    "n6.opt"
+    "n6.domain"
    ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Intel",
-   "one_liner": "Open toolkit for model compression and optimised inference on Intel hardware",
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Proposed 20B model for EEG analysis and neurological screening (IndiaAI)",
    "tags": [
-    "open-source",
-    "cost"
+    "sovereign"
    ],
-   "url": "https://github.com/openvinotoolkit/nncf",
-   "source": "https://github.com/openvinotoolkit/nncf"
+   "url": "https://www.medianama.com/2026/04/223-centre-funds-12-ai-projects-sovereign-models-bharatgen-4x-next-highest-allocation-rs-1000-crore/",
+   "source": "https://www.medianama.com/2026/04/223-centre-funds-12-ai-projects-sovereign-models-bharatgen-4x-next-highest-allocation-rs-1000-crore/"
   },
   {
    "name": "Irregular (ex-Pattern Labs)",
@@ -1592,67 +1596,6 @@
    "source": "https://issai.nu.edu.kz"
   },
   {
-   "name": "JAX / XLA",
-   "kind": "company",
-   "subsegments": [
-    "n6.train"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Alphabet",
-   "one_liner": "Google's accelerator-native training framework (with MaxText)",
-   "tags": [
-    "open-source",
-    "performance"
-   ],
-   "url": "https://github.com/jax-ml/jax",
-   "source": "https://github.com/jax-ml/jax"
-  },
-  {
-   "name": "JetBrains Mellum",
-   "kind": "company",
-   "subsegments": [
-    "n6.code",
-    "n6.open",
-    "n6.small"
-   ],
-   "hq": "CZ",
-   "region": "Europe",
-   "status": "private",
-   "parent": "JetBrains",
-   "one_liner": "Small focused code-completion LLM, open-sourced",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://www.jetbrains.com/mellum/",
-   "source": "https://www.jetbrains.com/mellum/"
-  },
-  {
-   "name": "Jina AI",
-   "kind": "company",
-   "subsegments": [
-    "n6.embed",
-    "n5.web",
-    "n8.vector",
-    "n8.ingest",
-    "n8.search"
-   ],
-   "hq": "DE",
-   "region": "Europe",
-   "status": "acquired",
-   "parent": "Elastic (2025)",
-   "one_liner": "Multilingual embedding, reranker and Reader web-to-text models",
-   "tags": [
-    "open-source",
-    "performance",
-    "developer"
-   ],
-   "url": "https://jina.ai",
-   "source": "https://jina.ai",
-   "note": "Acquired by Elastic (Oct 2025)"
-  },
-  {
    "name": "Kaggle Models",
    "kind": "company",
    "subsegments": [
@@ -1668,6 +1611,24 @@
    ],
    "url": "https://www.kaggle.com/models",
    "source": "https://www.kaggle.com/models"
+  },
+  {
+   "name": "Kakao (Kanana)",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.sovereign"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Kanana Korean LLM family, partly released as open weights",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://www.kakaocorp.com",
+   "source": "https://www.kakaocorp.com"
   },
   {
    "name": "Krea",
@@ -1686,9 +1647,15 @@
   },
   {
    "name": "Krutrim",
+   "aka": [
+    "Krutrim Cloud",
+    "Krutrim (Ola)"
+   ],
    "kind": "company",
    "subsegments": [
-    "n6.sovereign"
+    "n6.sovereign",
+    "n7.api",
+    "n9.assistant"
    ],
    "hq": "IN",
    "region": "India",
@@ -1702,18 +1669,21 @@
    "source": "https://www.olakrutrim.com"
   },
   {
-   "name": "Kuaishou Kling",
+   "name": "KT (Mi:dm)",
    "kind": "company",
    "subsegments": [
-    "n6.image"
+    "n6.sovereign",
+    "n6.open"
    ],
-   "hq": "CN",
-   "region": "China",
+   "hq": "KR",
+   "region": "Asia-Pacific",
    "status": "public",
-   "parent": "Kuaishou",
-   "one_liner": "Kling text- and image-to-video generation models",
-   "url": "https://klingai.com",
-   "source": "https://klingai.com"
+   "one_liner": "Mi:dm Korean LLMs from telecom operator KT",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.kt.com",
+   "source": "https://www.kt.com"
   },
   {
    "name": "Kyutai",
@@ -1803,7 +1773,8 @@
    "kind": "company",
    "subsegments": [
     "n6.sovereign",
-    "n6.small"
+    "n6.small",
+    "n9.lang"
    ],
    "hq": "ZA",
    "region": "Africa",
@@ -1836,6 +1807,25 @@
    "source": "https://www.lgresearch.ai"
   },
   {
+   "name": "LightOn",
+   "kind": "company",
+   "subsegments": [
+    "n6.embed",
+    "n7.private"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Paradigm on-prem GenAI platform and open retrieval models (ModernColBERT)",
+   "tags": [
+    "sovereign",
+    "enterprise"
+   ],
+   "url": "https://www.lighton.ai",
+   "source": "https://en.wikipedia.org/wiki/LightOn",
+   "note": "Listed on Euronext Growth Paris (ALTAI)"
+  },
+  {
    "name": "Lightricks LTX",
    "kind": "company",
    "subsegments": [
@@ -1862,6 +1852,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "Series B, Jul 2026 (amount undisclosed)",
+   "round_source": "https://www.cbinsights.com/company/lila-sciences/financials",
    "one_liner": "Scientific superintelligence with autonomous labs for life and materials science",
    "tags": [],
    "url": "https://www.lila.ai",
@@ -1869,15 +1862,22 @@
   },
   {
    "name": "Liquid AI",
+   "aka": [
+    "Liquid AI LEAP"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.small",
     "n6.opt",
-    "n6.open"
+    "n6.open",
+    "n7.local"
    ],
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series A",
+   "last_round": "$250M Series A led by AMD, Dec 2024",
+   "round_source": "https://www.liquid.ai",
    "one_liner": "Liquid Foundation Models (LFM2) efficient non-transformer models for on-device use",
    "tags": [
     "cost",
@@ -1888,44 +1888,10 @@
    "note": "$250M Series A led by AMD (Dec 2024)"
   },
   {
-   "name": "LLaMA-Factory",
-   "kind": "company",
-   "subsegments": [
-    "n6.train"
-   ],
-   "hq": "CN",
-   "region": "China",
-   "status": "open-source",
-   "one_liner": "Popular open-source unified fine-tuning framework for 100+ LLMs",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://github.com/hiyouga/LLaMA-Factory",
-   "source": "https://github.com/hiyouga/LLaMA-Factory"
-  },
-  {
-   "name": "llama.cpp / ggml",
-   "kind": "company",
-   "subsegments": [
-    "n6.opt",
-    "n6.hub",
-    "n7.local"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Hugging Face (ggml.ai team joined Feb 2026)",
-   "one_liner": "GGUF quantisation and CPU/edge inference library behind local LLM tools",
-   "tags": [
-    "open-source",
-    "cost"
-   ],
-   "url": "https://github.com/ggml-org/llama.cpp",
-   "source": "https://github.com/ggml-org/llama.cpp",
-   "note": "ggml.ai team joined Hugging Face (Feb 2026)"
-  },
-  {
    "name": "LM Studio",
+   "aka": [
+    "LM Studio (app) + lms CLI"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.hub",
@@ -1934,12 +1900,16 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "licence": "App proprietary freeware (free incl. work use); lms CLI and SDKs MIT",
+   "access": "Download desktop app free; lms CLI scripts it",
+   "repo": "https://github.com/lmstudio-ai/lms",
    "one_liner": "Desktop app to discover, download and run local models",
    "tags": [
     "developer"
    ],
    "url": "https://lmstudio.ai",
-   "source": "https://lmstudio.ai"
+   "source": "https://lmstudio.ai",
+   "note": "NOT open source: app is closed-source; July 2025 dropped separate commercial licence, now free for work."
   },
   {
    "name": "LMArena",
@@ -1952,6 +1922,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$100M seed, May 2025",
+   "round_source": "https://lmarena.ai",
    "one_liner": "Crowdsourced head-to-head model leaderboard and evaluation service",
    "tags": [
     "performance"
@@ -1970,6 +1943,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$900M Series C led by HUMAIN, Nov 2025",
+   "round_source": "https://lumalabs.ai",
    "one_liner": "Ray video and multimodal world models",
    "url": "https://lumalabs.ai",
    "source": "https://lumalabs.ai",
@@ -1990,6 +1966,23 @@
    ],
    "url": "https://magic.dev",
    "source": "https://magic.dev"
+  },
+  {
+   "name": "Maritaca AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.enterprise"
+   ],
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Sabiá family of Portuguese-first LLMs sold via API",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.maritaca.ai",
+   "source": "https://fastcompanybrasil.com/ia/maritaca-conheca-ia-brasileira-compete-gigantes-setor/"
   },
   {
    "name": "MBZUAI (K2)",
@@ -2069,7 +2062,8 @@
     "n6.frontier",
     "n6.small",
     "n6.audio",
-    "n6.science"
+    "n6.science",
+    "n6.image"
    ],
    "hq": "US",
    "region": "North America",
@@ -2082,41 +2076,6 @@
    "url": "https://microsoft.ai",
    "source": "https://microsoft.ai",
    "note": "Launched MAI-1 and MAI-Voice-1 (Aug 2025) and a superintelligence team (Nov 2025)"
-  },
-  {
-   "name": "Microsoft Azure AI Foundry",
-   "kind": "company",
-   "subsegments": [
-    "n6.hub"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Microsoft",
-   "one_liner": "Model catalogue of 11,000+ models with enterprise deployment",
-   "tags": [
-    "enterprise"
-   ],
-   "url": "https://ai.azure.com",
-   "source": "https://ai.azure.com"
-  },
-  {
-   "name": "Microsoft DeepSpeed",
-   "kind": "company",
-   "subsegments": [
-    "n6.train",
-    "n6.opt"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "one_liner": "Distributed training and memory optimisation library (ZeRO)",
-   "tags": [
-    "open-source",
-    "cost"
-   ],
-   "url": "https://www.deepspeed.ai",
-   "source": "https://www.deepspeed.ai"
   },
   {
    "name": "Midjourney",
@@ -2156,6 +2115,12 @@
   },
   {
    "name": "Mistral AI",
+   "aka": [
+    "Mistral Compute",
+    "Mistral AI Studio",
+    "Mistral OCR / Document AI",
+    "Le Chat (Mistral AI)"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.open",
@@ -2168,11 +2133,18 @@
     "n6.train",
     "n7.private",
     "n9.public",
-    "n10.lab"
+    "n10.lab",
+    "n4.sovereign",
+    "n8.platform",
+    "n8.ingest",
+    "n9.assistant"
    ],
    "hq": "FR",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "EUR1.7B Series C led by ASML at EUR11.7B valuation, Sep 2025",
+   "round_source": "https://mistral.ai",
    "one_liner": "European open-weight and commercial LLMs, coding, voice and on-prem enterprise deployments",
    "tags": [
     "open-source",
@@ -2200,51 +2172,22 @@
    "source": "https://www.mixedbread.com"
   },
   {
-   "name": "MLCommons (AILuminate)",
-   "kind": "company",
-   "subsegments": [
-    "n6.safety",
-    "n5.evaldata",
-    "n7.bench"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "non-profit",
-   "one_liner": "Industry consortium for AI benchmarks incl. AILuminate safety benchmark",
-   "tags": [
-    "open-source",
-    "performance"
-   ],
-   "url": "https://mlcommons.org",
-   "source": "https://mlcommons.org"
-  },
-  {
-   "name": "ModelScope",
-   "kind": "company",
-   "subsegments": [
-    "n6.hub"
-   ],
-   "hq": "CN",
-   "region": "China",
-   "status": "public",
-   "parent": "Alibaba",
-   "one_liner": "Alibaba's Chinese open-model hub and community",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://www.modelscope.cn",
-   "source": "https://www.modelscope.cn"
-  },
-  {
    "name": "Moonshot AI (Kimi)",
+   "aka": [
+    "Kimi (Moonshot AI)"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.open",
-    "n6.code"
+    "n6.code",
+    "n9.assistant"
    ],
    "hq": "CN",
    "region": "China",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$2B round at >$20B valuation led by Meituan (2026)",
+   "round_source": "https://www.thestandard.com.hk/innovation/article/331387/China-AI-startup-Moonshot-AI-hits-US20-bln-valuation-after-Meituan-led-financing-round",
    "one_liner": "Kimi open-weight trillion-parameter MoE models strong at agents and coding",
    "tags": [
     "open-source"
@@ -2270,40 +2213,101 @@
    "source": "https://www.moonvalley.com"
   },
   {
+   "name": "Motif Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.sovereign"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Korean open-weight LLMs; consortium joined national foundation model project Feb 2026",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://motiftech.io",
+   "source": "https://www.koreatimes.co.kr/amp/business/tech-science/20260220/motif-led-consortium-joins-national-ai-foundation-model-project"
+  },
+  {
+   "name": "Mozn",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.enterprise",
+    "n9.finance",
+    "n9.regtech"
+   ],
+   "hq": "SA",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Saudi enterprise AI firm building Arabic language models",
+   "tags": [
+    "sovereign",
+    "enterprise"
+   ],
+   "url": "https://www.mozn.sa",
+   "source": "https://mozn.sa/blog/saudi-arabias-ai-powerhouse-mozn-to-build-worlds-largest-most-effective-arabic-ai-language-models"
+  },
+  {
    "name": "Multiverse Computing",
    "kind": "company",
    "subsegments": [
     "n6.opt",
-    "n6.small"
+    "n6.small",
+    "n7.api"
    ],
    "hq": "ES",
    "region": "Europe",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$215M round, Jun 2025; Series C of up to $570M announced Jul 2026",
+   "round_source": "https://multiversecomputing.com",
    "one_liner": "CompactifAI tensor-network compression shrinking LLMs for cheaper, on-device inference",
    "tags": [
-    "cost"
+    "cost",
+    "performance"
    ],
    "url": "https://multiversecomputing.com",
    "source": "https://multiversecomputing.com",
    "note": "Raised $215M (Jun 2025)"
   },
   {
-   "name": "Naver HyperCLOVA X",
+   "name": "Navana.ai",
    "kind": "company",
    "subsegments": [
-    "n6.sovereign",
-    "n6.enterprise"
+    "n6.audio",
+    "n9.voice",
+    "n9.lang"
    ],
-   "hq": "KR",
-   "region": "Asia-Pacific",
-   "status": "public",
-   "parent": "Naver",
-   "one_liner": "Korean-centric LLMs for Naver services and enterprises; national foundation-model team",
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Speech recognition and voice AI for Indian languages",
    "tags": [
     "sovereign"
    ],
-   "url": "https://clova.ai/hyperclova",
-   "source": "https://clova.ai/hyperclova"
+   "url": "https://navana.ai",
+   "source": "https://digitalterminal.in/amp/story/startup/voice-ai-startup-navanaai-raises-40-crore-in-series-a-round-led-by-ronnie-screwvala",
+   "note": "INR 40 Cr Series A (2026)"
+  },
+  {
+   "name": "NC AI (VARCO)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "NCSoft",
+   "one_liner": "Korean foundation models; selected for national AI model project in 2025",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://ncai.ai",
+   "source": "https://view.asiae.co.kr/en/article/2025080415483599833"
   },
   {
    "name": "Nexa AI",
@@ -2347,10 +2351,14 @@
   },
   {
    "name": "Nous Research",
+   "aka": [
+    "Nous Research Atropos"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.open",
-    "n6.train"
+    "n6.train",
+    "n5.rlenv"
    ],
    "hq": "US",
    "region": "North America",
@@ -2475,24 +2483,6 @@
    "source": "https://build.nvidia.com"
   },
   {
-   "name": "NVIDIA TensorRT Model Optimizer",
-   "kind": "company",
-   "subsegments": [
-    "n6.opt"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "NVIDIA",
-   "one_liner": "Quantisation, pruning, distillation and sparsity toolkit (incl. ex-Deci tech)",
-   "tags": [
-    "performance",
-    "cost"
-   ],
-   "url": "https://github.com/NVIDIA/TensorRT-Model-Optimizer",
-   "source": "https://github.com/NVIDIA/TensorRT-Model-Optimizer"
-  },
-  {
    "name": "Odyssey",
    "kind": "company",
    "subsegments": [
@@ -2504,24 +2494,6 @@
    "one_liner": "Interactive generative world models for video",
    "url": "https://odyssey.world",
    "source": "https://odyssey.world"
-  },
-  {
-   "name": "Ollama",
-   "kind": "company",
-   "subsegments": [
-    "n6.hub",
-    "n7.local"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Local model runner and model library for open-weight LLMs",
-   "tags": [
-    "open-source",
-    "developer"
-   ],
-   "url": "https://ollama.com",
-   "source": "https://ollama.com"
   },
   {
    "name": "Open Source Initiative",
@@ -2541,6 +2513,9 @@
   },
   {
    "name": "OpenAI",
+   "aka": [
+    "OpenAI prompt caching"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.frontier",
@@ -2551,7 +2526,8 @@
     "n6.embed",
     "n6.train",
     "n4.offtake",
-    "n6.weights"
+    "n6.weights",
+    "n7.compress"
    ],
    "hq": "US",
    "region": "North America",
@@ -2614,6 +2590,9 @@
    "region": "North America",
    "status": "private",
    "parent": "Stripe (agreed Aug 2026)",
+   "stage": "Series B",
+   "last_round": "$113M Series B at $1.3B valuation, May 2026 (Stripe agreed to acquire, Aug 2026)",
+   "round_source": "https://openrouter.ai",
    "one_liner": "Unified API and marketplace routing to hundreds of models",
    "tags": [
     "developer",
@@ -2641,6 +2620,24 @@
    "source": "https://www.orbitalmaterials.com"
   },
   {
+   "name": "Oumi",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Open-source platform and commercial service for building custom models",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://oumi.ai",
+   "source": "https://www.geekwire.com/2026/ai-startup-oumi-from-microsoft-and-google-vets-launches-commercial-platform-for-custom-ai-models/",
+   "note": "Commercial platform launched 2026; $10M seed"
+  },
+  {
    "name": "Patronus AI",
    "kind": "company",
    "subsegments": [
@@ -2650,6 +2647,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$50M Series B, Jun 2026, led by Lightspeed",
+   "round_source": "https://www.cbinsights.com/company/patronus-ai/financials",
    "one_liner": "LLM evaluation and hallucination detection for enterprises",
    "tags": [
     "enterprise",
@@ -2668,6 +2668,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$300M seed, Sep 2025",
+   "round_source": "https://periodic.com",
    "one_liner": "AI scientist models with autonomous labs for materials and physics discovery",
    "tags": [],
    "url": "https://periodic.com",
@@ -2707,6 +2710,24 @@
    "source": "https://pika.art"
   },
   {
+   "name": "Pleias",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.small"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Small open models trained only on openly licensed data (Common Corpus)",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://pleias.fr",
+   "source": "https://pleias.fr"
+  },
+  {
    "name": "Poolside",
    "kind": "company",
    "subsegments": [
@@ -2742,10 +2763,14 @@
   },
   {
    "name": "Preferred Networks (PLaMo)",
+   "aka": [
+    "Preferred Networks (MN-Core)"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.sovereign",
-    "n6.small"
+    "n6.small",
+    "n2.startup"
    ],
    "hq": "JP",
    "region": "Asia-Pacific",
@@ -2805,6 +2830,9 @@
    "hq": "DE",
    "region": "Europe",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$6.5M seed (2025)",
+   "round_source": "https://www.pruna.ai",
    "one_liner": "Model optimisation engine combining quantisation, pruning and caching; open-sourced",
    "tags": [
     "cost",
@@ -2814,42 +2842,6 @@
    "url": "https://www.pruna.ai",
    "source": "https://www.pruna.ai",
    "note": "Open-sourced framework Mar 2025; $6.5M seed"
-  },
-  {
-   "name": "PyTorch (PyTorch Foundation)",
-   "kind": "company",
-   "subsegments": [
-    "n6.train"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open-source",
-   "parent": "Linux Foundation",
-   "one_liner": "Dominant deep-learning framework with distributed training (FSDP, TorchTitan)",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://pytorch.org",
-   "source": "https://pytorch.org"
-  },
-  {
-   "name": "Qualcomm AI Hub (Edge Impulse)",
-   "kind": "company",
-   "subsegments": [
-    "n6.opt",
-    "n6.hub"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Qualcomm",
-   "one_liner": "Optimised on-device models and quantisation/compilation tools for Snapdragon and edge",
-   "tags": [
-    "cost"
-   ],
-   "url": "https://aihub.qualcomm.com",
-   "source": "https://aihub.qualcomm.com",
-   "note": "Edge Impulse acquired by Qualcomm (2025)"
   },
   {
    "name": "Recraft",
@@ -2866,9 +2858,18 @@
   },
   {
    "name": "Red Hat AI (Neural Magic)",
+   "aka": [
+    "Red Hat OpenShift AI",
+    "Red Hat AI Inference Server"
+   ],
    "kind": "company",
    "subsegments": [
-    "n6.opt"
+    "n6.opt",
+    "n4.onprem",
+    "n4.orch",
+    "n7.engine",
+    "n7.opt",
+    "n7.private"
    ],
    "hq": "US",
    "region": "North America",
@@ -2880,7 +2881,8 @@
     "cost"
    ],
    "url": "https://www.redhat.com/en/products/ai",
-   "source": "https://www.redhat.com/en/products/ai"
+   "source": "https://www.redhat.com/en/products/ai",
+   "note": "Red Hat completed Neural Magic acquisition Jan 2025"
   },
   {
    "name": "Reflection AI",
@@ -2935,6 +2937,23 @@
    "source": "https://www.resemble.ai"
   },
   {
+   "name": "rinna",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Japanese open-weight language and speech models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://rinna.co.jp",
+   "source": "https://pdpspectra.com/blog/japan-llms-elyza-sakana-rinna-2026"
+  },
+  {
    "name": "RLWRLD",
    "kind": "company",
    "subsegments": [
@@ -2958,6 +2977,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$315M Series E, Feb 2026",
+   "round_source": "https://letsdatascience.com/news/runway-raises-315-million-series-e-d3bea230",
    "one_liner": "Gen video generation models and General World Models for media and robotics",
    "tags": [],
    "url": "https://runwayml.com",
@@ -3008,11 +3030,15 @@
     "n6.audio",
     "n9.voice",
     "n9.assistant",
-    "n9.lang"
+    "n9.lang",
+    "n7.api"
    ],
    "hq": "IN",
    "region": "India",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$234M first close of $300M Series B at $1.5B valuation, 2026 (led by HCLTech; Bessemer, NVIDIA)",
+   "round_source": "https://www.hcltech.com/ja-jp/press-releases/sarvam-raises-234-million-first-close-300-million-series-b-15-billion-valuation",
    "one_liner": "Indian full-stack sovereign LLMs and Indic speech models built under IndiaAI Mission",
    "tags": [
     "sovereign",
@@ -3031,6 +3057,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series B",
+   "last_round": "$250M Series B, Oct 2025",
+   "round_source": "https://www.sesame.com",
    "one_liner": "Conversational speech models and voice companion hardware",
    "url": "https://www.sesame.com",
    "source": "https://www.sesame.com",
@@ -3048,6 +3077,22 @@
    "one_liner": "Vidu video generation models built with Tsinghua researchers",
    "url": "https://www.vidu.com",
    "source": "https://www.vidu.com"
+  },
+  {
+   "name": "Shodh AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.science"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "7B model for materials discovery and experimental workflows (IndiaAI)",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.medianama.com/2026/04/223-centre-funds-12-ai-projects-sovereign-models-bharatgen-4x-next-highest-allocation-rs-1000-crore/",
+   "source": "https://www.medianama.com/2026/04/223-centre-funds-12-ai-projects-sovereign-models-bharatgen-4x-next-highest-allocation-rs-1000-crore/"
   },
   {
    "name": "Silo AI (Viking/Poro)",
@@ -3069,23 +3114,6 @@
    "source": "https://www.silo.ai"
   },
   {
-   "name": "SK Telecom (A.X)",
-   "kind": "company",
-   "subsegments": [
-    "n6.sovereign"
-   ],
-   "hq": "KR",
-   "region": "Asia-Pacific",
-   "status": "public",
-   "parent": "SK Group",
-   "one_liner": "A.X Korean LLMs; Korean national foundation-model team",
-   "tags": [
-    "sovereign"
-   ],
-   "url": "https://www.sktelecom.com",
-   "source": "https://www.sktelecom.com"
-  },
-  {
    "name": "Skild AI",
    "kind": "company",
    "subsegments": [
@@ -3095,6 +3123,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$1.4B Series C at >$14B valuation, Jan 2026, led by SoftBank",
+   "round_source": "https://bloomberg.com/news/articles/2026-01-14/robotics-startup-skild-valued-above-14-billion-after-softbank-led-funding-round",
    "one_liner": "Skild Brain general robot foundation model across embodiments",
    "tags": [],
    "url": "https://www.skild.ai",
@@ -3105,7 +3136,8 @@
    "kind": "company",
    "subsegments": [
     "n6.audio",
-    "n6.small"
+    "n6.small",
+    "n9.voice"
    ],
    "hq": "IN",
    "region": "India",
@@ -3116,24 +3148,6 @@
    ],
    "url": "https://smallest.ai",
    "source": "https://smallest.ai"
-  },
-  {
-   "name": "Snowflake Arctic Embed",
-   "kind": "company",
-   "subsegments": [
-    "n6.embed",
-    "n6.open"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "public",
-   "parent": "Snowflake",
-   "one_liner": "Open text-embedding models from Snowflake",
-   "tags": [
-    "open-source"
-   ],
-   "url": "https://www.snowflake.com/en/engineering-blog/",
-   "source": "https://www.snowflake.com/en/engineering-blog/"
   },
   {
    "name": "SoftBank SB Intuitions (Sarashina)",
@@ -3186,6 +3200,24 @@
    "source": "https://www.speechmatics.com"
   },
   {
+   "name": "Squeezebits",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt",
+    "n7.opt"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "LLM quantisation and inference optimisation tooling",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://squeezebits.com",
+   "source": "https://amp.kedglobal.com/newsAmp/ked202405290008"
+  },
+  {
    "name": "Stability AI",
    "kind": "company",
    "subsegments": [
@@ -3220,6 +3252,23 @@
    ],
    "url": "https://www.stepfun.com",
    "source": "https://www.stepfun.com"
+  },
+  {
+   "name": "Stockmark",
+   "kind": "company",
+   "subsegments": [
+    "n6.domain",
+    "n6.sovereign"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Japanese business-domain LLMs for corporate intelligence",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://stockmark.co.jp",
+   "source": "https://pdpspectra.com/blog/japan-llms-elyza-sakana-rinna-2026"
   },
   {
    "name": "Suno",
@@ -3275,23 +3324,6 @@
    "source": "https://taide.tw"
   },
   {
-   "name": "Tech Mahindra (Project Indus)",
-   "kind": "company",
-   "subsegments": [
-    "n6.sovereign"
-   ],
-   "hq": "IN",
-   "region": "India",
-   "status": "public",
-   "parent": "Tech Mahindra",
-   "one_liner": "Hindi and Indic-dialect LLMs; IndiaAI Mission phase 2 grantee",
-   "tags": [
-    "sovereign"
-   ],
-   "url": "https://www.techmahindra.com",
-   "source": "https://analyticsindiamag.com/ai-news-updates/bharatgen-tech-mahindra-and-fractal-selected-for-phase-2-of-indiaai-mission/"
-  },
-  {
    "name": "Tencent Hunyuan",
    "kind": "company",
    "subsegments": [
@@ -3311,6 +3343,22 @@
    "source": "https://hunyuan.tencent.com"
   },
   {
+   "name": "TheStage AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt",
+    "n7.opt"
+   ],
+   "status": "private",
+   "one_liner": "Automated neural-network compression and acceleration (ANNA)",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://thestage.ai",
+   "source": "https://www.unite.ai/kirill-solodskih-co-founder-and-ceo-of-thestage-ai-interview-series/"
+  },
+  {
    "name": "Thinking Machines Lab",
    "kind": "company",
    "subsegments": [
@@ -3320,6 +3368,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$2B seed at $12B valuation, Jul 2025 (talks at >$40B reported Sep 2026)",
+   "round_source": "https://runtimewire.com/article/thinking-machines-1b-funding-talks-40b-valuation",
    "one_liner": "Mira Murati's lab; Tinker fine-tuning API and in-house models",
    "tags": [
     "developer"
@@ -3349,23 +3400,6 @@
    "source": "https://falconllm.tii.ae"
   },
   {
-   "name": "Together AI (fine-tuning)",
-   "kind": "company",
-   "subsegments": [
-    "n6.train",
-    "n6.open"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Fine-tuning and training clusters for open models; releases open research models",
-   "tags": [
-    "cost"
-   ],
-   "url": "https://www.together.ai",
-   "source": "https://www.together.ai"
-  },
-  {
    "name": "Transluce",
    "kind": "company",
    "subsegments": [
@@ -3380,6 +3414,42 @@
    ],
    "url": "https://transluce.org",
    "source": "https://transluce.org"
+  },
+  {
+   "name": "Twelve Labs",
+   "kind": "company",
+   "subsegments": [
+    "n6.embed",
+    "n6.image"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Video-understanding foundation models (Marengo embeddings, Pegasus)",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.twelvelabs.io",
+   "source": "https://www.twelvelabs.io"
+  },
+  {
+   "name": "Typhoon (SCB 10X)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "TH",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "SCBX",
+   "one_liner": "Open Thai-optimised LLM family",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://opentyphoon.ai",
+   "source": "https://scbx.com/en/?p=17193"
   },
   {
    "name": "Udio",
@@ -3413,34 +3483,20 @@
    "source": "https://www.aisi.gov.uk"
   },
   {
-   "name": "Unsloth",
-   "kind": "company",
-   "subsegments": [
-    "n6.train",
-    "n6.opt"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "private",
-   "one_liner": "Open-source fast, low-memory fine-tuning and dynamic quantised model releases",
-   "tags": [
-    "open-source",
-    "cost"
-   ],
-   "url": "https://unsloth.ai",
-   "source": "https://unsloth.ai"
-  },
-  {
    "name": "Upstage",
    "kind": "company",
    "subsegments": [
     "n6.enterprise",
     "n6.sovereign",
-    "n6.small"
+    "n6.small",
+    "n8.ingest"
    ],
    "hq": "KR",
    "region": "Asia-Pacific",
    "status": "private",
+   "stage": "Series C+",
+   "last_round": "$381M Series C extension, May 2026, Korea Development Bank",
+   "round_source": "https://www.cbinsights.com/company/upstage/financials",
    "one_liner": "Solar LLMs and document AI for enterprises; Korean sovereign-model team",
    "tags": [
     "enterprise",
@@ -3466,24 +3522,6 @@
    "source": "https://www.nist.gov/caisi"
   },
   {
-   "name": "Voyage AI",
-   "kind": "company",
-   "subsegments": [
-    "n6.embed"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "acquired",
-   "parent": "MongoDB (2025)",
-   "one_liner": "Embedding and reranking models for retrieval",
-   "tags": [
-    "performance"
-   ],
-   "url": "https://www.voyageai.com",
-   "source": "https://www.voyageai.com",
-   "note": "Acquired by MongoDB (Feb 2025)"
-  },
-  {
    "name": "Wayve",
    "kind": "company",
    "subsegments": [
@@ -3497,6 +3535,22 @@
    "tags": [],
    "url": "https://wayve.ai",
    "source": "https://wayve.ai"
+  },
+  {
+   "name": "WideLabs (Amazônia IA)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Brazilian sovereign LLM platform hosted with Ascenty",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://widelabs.com.br",
+   "source": "https://www.datacenterdynamics.com/br/not%C3%ADcias/ascenty-e-widelabs-apresentam-plataforma-de-ia-brasileira/"
   },
   {
    "name": "World Labs",
@@ -3538,7 +3592,8 @@
    "subsegments": [
     "n6.frontier",
     "n6.code",
-    "n4.offtake"
+    "n4.offtake",
+    "n6.image"
    ],
    "hq": "US",
    "region": "North America",
@@ -3571,6 +3626,23 @@
    "source": "https://github.com/XiaomiMiMo"
   },
   {
+   "name": "Zenteiq (BrahmAI)",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Multimodal model for engineering and scientific computing (IndiaAI)",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://zenteiq.ai",
+   "source": "https://www.medianama.com/2026/04/223-centre-funds-12-ai-projects-sovereign-models-bharatgen-4x-next-highest-allocation-rs-1000-crore/"
+  },
+  {
    "name": "ZeroEntropy",
    "kind": "company",
    "subsegments": [
@@ -3588,11 +3660,17 @@
   },
   {
    "name": "Zhipu AI (Z.ai)",
+   "aka": [
+    "Z.ai / ChatGLM (Zhipu)"
+   ],
    "kind": "company",
    "subsegments": [
     "n6.open",
     "n6.code",
-    "n6.sovereign"
+    "n6.sovereign",
+    "n6.image",
+    "n9.assistant",
+    "n9.agentic"
    ],
    "hq": "CN",
    "region": "China",
@@ -3718,27 +3796,26 @@
    "note": "Deprecated and archived 11 May 2025; AWQ support moved to vLLM LLM Compressor"
   },
   {
-   "name": "Axolotl (open)",
+   "name": "Axolotl",
    "kind": "open-source project",
    "subsegments": [
     "n6.train"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "open-source",
    "steward": "Axolotl AI",
    "licence": "Apache-2.0",
    "access": "pip install axolotl; YAML configs",
    "repo": "https://github.com/axolotl-ai-cloud/axolotl",
    "stars": 12600,
    "archived": false,
-   "one_liner": "Config-driven fine-tuning framework for many model families",
+   "one_liner": "Open-source config-driven LLM fine-tuning toolkit",
    "tags": [
-    "training",
     "open-source"
    ],
-   "url": "https://github.com/axolotl-ai-cloud/axolotl",
-   "source": "https://github.com/axolotl-ai-cloud/axolotl"
+   "url": "https://axolotl.ai",
+   "source": "https://axolotl.ai"
   },
   {
    "name": "BGE-M3",
@@ -3898,6 +3975,9 @@
   },
   {
    "name": "DeepSpeed",
+   "aka": [
+    "Microsoft DeepSpeed"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n6.train",
@@ -4236,27 +4316,29 @@
    "note": "Entered maintenance mode 1 Jun 2026"
   },
   {
-   "name": "Hugging Face Hub (open)",
+   "name": "Hugging Face Hub",
    "kind": "open-source project",
    "subsegments": [
-    "n6.hub"
+    "n6.hub",
+    "n5.web",
+    "n6.weights"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
    "steward": "Hugging Face",
    "licence": "Apache-2.0 (client library); hosted service",
    "access": "pip install huggingface_hub; free public hosting",
    "repo": "https://github.com/huggingface/huggingface_hub",
    "stars": 3900,
    "archived": false,
-   "one_liner": "Default hub for open weights, datasets and model cards",
+   "one_liner": "Largest public hub of open model weights, datasets and Spaces",
    "tags": [
-    "distribution",
-    "open-source"
+    "open-source",
+    "developer"
    ],
-   "url": "https://github.com/huggingface/huggingface_hub",
-   "source": "https://github.com/huggingface/huggingface_hub"
+   "url": "https://huggingface.co",
+   "source": "https://huggingface.co"
   },
   {
    "name": "HunyuanVideo 1.5",
@@ -4351,6 +4433,9 @@
   },
   {
    "name": "JAX",
+   "aka": [
+    "JAX / XLA"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n6.train"
@@ -4525,23 +4610,22 @@
    "source": "https://huggingface.co/meta-llama/Llama-Guard-4-12B"
   },
   {
-   "name": "LLaMA-Factory (open)",
+   "name": "LLaMA-Factory",
    "kind": "open-source project",
    "subsegments": [
     "n6.train"
    ],
    "hq": "CN",
    "region": "China",
-   "status": "open",
+   "status": "open-source",
    "steward": "hiyouga (community, Beihang University origin)",
    "licence": "Apache-2.0",
    "access": "pip install; web UI or CLI",
    "repo": "https://github.com/hiyouga/LLaMA-Factory",
    "stars": 75700,
    "archived": false,
-   "one_liner": "Unified no-code fine-tuning for 100+ LLMs and VLMs",
+   "one_liner": "Popular open-source unified fine-tuning framework for 100+ LLMs",
    "tags": [
-    "training",
     "open-source"
    ],
    "url": "https://github.com/hiyouga/LLaMA-Factory",
@@ -4549,12 +4633,16 @@
   },
   {
    "name": "llama.cpp / GGUF",
+   "aka": [
+    "llama.cpp / ggml"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n6.opt",
     "n6.small",
     "n7.local",
-    "n7.private"
+    "n7.private",
+    "n6.hub"
    ],
    "hq": "US",
    "region": "North America",
@@ -4735,27 +4823,75 @@
    "note": "New custom licence, not Apache-2.0 as used for Mistral Large 3 / Small releases"
   },
   {
-   "name": "ModelScope (open)",
+   "name": "MLCommons (AILuminate)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.safety",
+    "n5.evaldata",
+    "n7.bench",
+    "n3.validate",
+    "n10.change"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "steward": "MLCommons",
+   "access": "Public practice prompt set; official graded runs via MLCommons",
+   "one_liner": "Industry consortium for AI benchmarks incl. AILuminate safety benchmark",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://mlcommons.org",
+   "source": "https://mlcommons.org"
+  },
+  {
+   "name": "ModelScope",
    "kind": "open-source project",
    "subsegments": [
     "n6.hub"
    ],
    "hq": "CN",
    "region": "China",
-   "status": "open",
+   "status": "public",
+   "parent": "Alibaba",
    "steward": "Alibaba",
    "licence": "Apache-2.0",
    "access": "pip install modelscope; modelscope.cn",
    "repo": "https://github.com/modelscope/modelscope",
    "stars": 9200,
    "archived": false,
-   "one_liner": "China's main model hub and SDK",
+   "one_liner": "Alibaba's Chinese open-model hub and community",
    "tags": [
-    "distribution",
     "open-source"
    ],
-   "url": "https://github.com/modelscope/modelscope",
-   "source": "https://github.com/modelscope/modelscope"
+   "url": "https://www.modelscope.cn",
+   "source": "https://www.modelscope.cn"
+  },
+  {
+   "name": "MTEB (Massive Text Embedding Benchmark)",
+   "kind": "open dataset",
+   "subsegments": [
+    "n6.embed",
+    "n5.evaldata"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "MTEB community (Hugging Face-hosted)",
+   "licence": "Apache-2.0",
+   "access": "pip install mteb; leaderboard on Hugging Face",
+   "repo": "https://github.com/embeddings-benchmark/mteb",
+   "stars": 3400,
+   "archived": false,
+   "one_liner": "Benchmark and leaderboard for text-embedding models across retrieval, clustering and classification tasks.",
+   "tags": [
+    "open-source",
+    "benchmark",
+    "retrieval"
+   ],
+   "url": "https://huggingface.co/spaces/mteb/leaderboard",
+   "source": "https://github.com/embeddings-benchmark/mteb"
   },
   {
    "name": "Nemotron 3 / 3.5",
@@ -4825,6 +4961,9 @@
   },
   {
    "name": "NVIDIA Model Optimizer",
+   "aka": [
+    "NVIDIA TensorRT Model Optimizer"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n6.opt",
@@ -4850,31 +4989,33 @@
    "note": "Renamed from TensorRT Model Optimizer (Dec 2025)"
   },
   {
-   "name": "Ollama (open)",
+   "name": "Ollama",
    "kind": "open-source project",
    "subsegments": [
     "n6.hub",
-    "n6.small",
     "n7.local",
+    "n6.small",
     "n7.private"
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
-   "steward": "Ollama",
+   "status": "private",
+   "stage": "Series B",
+   "last_round": "$65M Series B, Jul 2026 (Theory Ventures, Benchmark, 8VC)",
+   "round_source": "https://www.cbinsights.com/company/ollama/financials",
+   "steward": "Ollama Inc.",
    "licence": "MIT",
-   "access": "Install app; ollama pull <model>",
+   "access": "Install desktop/CLI; 'ollama run <model>'; local OpenAI-compatible API",
    "repo": "https://github.com/ollama/ollama",
    "stars": 184700,
    "archived": false,
-   "one_liner": "Local model runner with public model library",
+   "one_liner": "Local model runner and model library for open-weight LLMs",
    "tags": [
-    "distribution",
-    "on-device",
-    "open-source"
+    "open-source",
+    "developer"
    ],
-   "url": "https://github.com/ollama/ollama",
-   "source": "https://github.com/ollama/ollama"
+   "url": "https://ollama.com",
+   "source": "https://ollama.com"
   },
   {
    "name": "OLMo 3.1",
@@ -5030,33 +5171,6 @@
    "source": "https://huggingface.co/microsoft/phi-4"
   },
   {
-   "name": "promptfoo (open)",
-   "kind": "open-source project",
-   "subsegments": [
-    "n6.safety",
-    "n8.eval",
-    "n10.change"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
-   "steward": "OpenAI (acquired Promptfoo)",
-   "licence": "MIT",
-   "access": "npx promptfoo; CLI and CI",
-   "repo": "https://github.com/promptfoo/promptfoo",
-   "stars": 26500,
-   "archived": false,
-   "one_liner": "Eval and red-teaming CLI for prompts, agents and RAG",
-   "tags": [
-    "red-teaming",
-    "evaluation",
-    "open-source"
-   ],
-   "url": "https://github.com/promptfoo/promptfoo",
-   "source": "https://github.com/promptfoo/promptfoo",
-   "note": "Promptfoo is now part of OpenAI; remains MIT open source"
-  },
-  {
    "name": "PyRIT",
    "kind": "open-source project",
    "subsegments": [
@@ -5077,29 +5191,6 @@
    "url": "https://github.com/microsoft/PyRIT",
    "source": "https://github.com/microsoft/PyRIT",
    "note": "Azure/PyRIT archived 27 Mar 2026; project continues at microsoft/PyRIT"
-  },
-  {
-   "name": "PyTorch (open)",
-   "kind": "open-source project",
-   "subsegments": [
-    "n6.train"
-   ],
-   "hq": "US",
-   "region": "North America",
-   "status": "open",
-   "steward": "PyTorch Foundation (Linux Foundation)",
-   "licence": "BSD-3-Clause",
-   "access": "pip install torch",
-   "repo": "https://github.com/pytorch/pytorch",
-   "stars": 102000,
-   "archived": false,
-   "one_liner": "Dominant deep-learning framework for training and research",
-   "tags": [
-    "training",
-    "open-source"
-   ],
-   "url": "https://github.com/pytorch/pytorch",
-   "source": "https://github.com/pytorch/pytorch"
   },
   {
    "name": "Qwen-Image 2.1",
@@ -5385,7 +5476,7 @@
    "source": "https://github.com/huggingface/trl"
   },
   {
-   "name": "Unsloth (open)",
+   "name": "Unsloth",
    "kind": "open-source project",
    "subsegments": [
     "n6.train",
@@ -5393,21 +5484,20 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "open",
+   "status": "private",
    "steward": "Unsloth AI",
    "licence": "Apache-2.0 (core); AGPL-3.0 (Studio UI)",
    "access": "pip install unsloth; single-GPU fine-tuning",
    "repo": "https://github.com/unslothai/unsloth",
    "stars": 78700,
    "archived": false,
-   "one_liner": "Fast, memory-efficient fine-tuning and RL for open models",
+   "one_liner": "Open-source fast, low-memory fine-tuning and dynamic quantised model releases",
    "tags": [
-    "training",
-    "cost",
-    "open-source"
+    "open-source",
+    "cost"
    ],
-   "url": "https://github.com/unslothai/unsloth",
-   "source": "https://github.com/unslothai/unsloth"
+   "url": "https://unsloth.ai",
+   "source": "https://unsloth.ai"
   },
   {
    "name": "V-JEPA 2",
@@ -5434,6 +5524,9 @@
   },
   {
    "name": "verl",
+   "aka": [
+    "ByteDance verl"
+   ],
    "kind": "open-source project",
    "subsegments": [
     "n6.train"

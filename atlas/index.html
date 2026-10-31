@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
-/* Layout: a schematic board on the Progma grid. Columns = value-chain nodes, rows = support layers; traces in violet. Light-only, per the Progma site. */
+/* Layout: a schematic board on the Progma grid. Columns = links in the chain, rows = support layers; traces in violet. Light-only, per the Progma site. */
 @font-face{font-family:Plex;src:url(/assets/plex-400.woff2) format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:Plex;src:url(/assets/plex-500.woff2) format('woff2');font-weight:500;font-display:swap}
 :root{
@@ -44,7 +44,7 @@ h1{font-family:var(--f-head);font-weight:600;font-size:clamp(30px,3.6vw,44px);li
 .btn2{display:inline-block;border:1.5px solid var(--ink);background:transparent;color:var(--ink);font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:8px;text-decoration:none;cursor:pointer}
 
 /* Controls */
-.controls{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--white);border-block:1px solid var(--line);padding-block:10px}
+.controls{background:var(--white);border-block:1px solid var(--line);padding-block:12px;margin:0 auto 22px;max-width:1440px}
 .controls .in{max-width:1440px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
 .ctl{display:flex;align-items:center;gap:8px;min-width:0}
 .ctl>label,.ctl>.lb{font-family:var(--f-mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
@@ -57,7 +57,7 @@ input[type=search]{width:220px}
 .reset{border:1px solid var(--line2);background:transparent;border-radius:6px;padding:5px 10px;cursor:pointer;font-size:13px}
 .mystack{border:1.5px solid var(--violet);color:var(--violet);background:var(--white);border-radius:6px;padding:4px 10px;cursor:pointer;font-size:13px;font-weight:600}
 .mystack[aria-pressed="true"]{background:var(--violet);color:#fff}
-.slice-note{flex-basis:100%;font-size:13px;color:var(--muted);min-height:1.2em}
+.slice-note{flex-basis:100%;font-size:13px;color:var(--muted);min-height:1.2em;max-width:110ch}
 .slice-note b{color:var(--ink)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--white)}
 
@@ -101,6 +101,194 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 svg.traces{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:visible}
 svg.traces path{fill:none;stroke:var(--violet);stroke-width:1.3;opacity:.45}
 svg.traces circle{fill:var(--violet)}
+
+/* Guided view */
+#guided,#matrix{scroll-margin-top:16px}
+.views{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;max-width:1440px;margin:36px auto 18px}
+.views h2{font-family:var(--f-head);font-weight:600;font-size:clamp(22px,2.4vw,28px);letter-spacing:-.015em;margin:8px 0 0}
+.vtabs{display:flex;border:1px solid var(--line2);border-radius:8px;overflow:hidden}
+.vtabs button{border:0;background:var(--white);padding:8px 14px;font-size:13px;font-weight:500;cursor:pointer}
+.vtabs button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.chainwrap{max-width:1440px;margin:0 auto;overflow-x:auto;padding-bottom:6px}
+.chainrow{display:grid;grid-template-columns:repeat(12,minmax(104px,1fr));gap:0;min-width:1180px;position:relative}
+.phase{grid-row:1;padding:0 6px 10px;border-bottom:2px solid var(--line);margin:0 4px 12px}
+.phase b{display:block;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--violet)}
+.phase span{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.tile{grid-row:2;position:relative;margin:0 4px;text-align:left;border:1px solid var(--line);background:var(--white);border-radius:12px;padding:12px 12px 14px;cursor:pointer;transition:border-color .15s,background .15s,opacity .15s;min-height:128px;display:flex;flex-direction:column;gap:6px}
+.tile:hover{border-color:var(--violet)}
+.tile .ix{font-size:11px;font-weight:600;color:var(--peri);font-variant-numeric:tabular-nums}
+.tile .tn{font-weight:600;font-size:14px;line-height:1.25;text-wrap:balance}
+.tile .tc{margin-top:auto;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tile .tb{position:absolute;top:10px;right:10px;font-size:10.5px;font-weight:600;border-radius:999px;padding:1px 7px;background:var(--violet);color:#fff}
+.tile[aria-current="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.tile[aria-current="true"] .tc,.tile[aria-current="true"] .ix{color:#C9C4E4}
+.tile.dim{opacity:.35}
+.tile.you{box-shadow:inset 0 0 0 2px var(--violet)}
+.tile+.tile::before{content:"";position:absolute;left:-9px;top:50%;width:10px;height:2px;background:var(--line2)}
+.nodeview{max-width:1440px;margin:26px auto 0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.nvhead{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;padding:26px 28px;background:var(--tint);border-bottom:1px solid var(--line)}
+.nvhead h3{font-family:var(--f-head);font-weight:600;font-size:clamp(24px,2.6vw,30px);letter-spacing:-.015em;margin:6px 0 8px;line-height:1.2}
+.nvhead p{margin:0;font-size:15.5px;line-height:1.65;max-width:62ch}
+.hand{font-size:13.5px;line-height:1.55;display:grid;gap:12px;align-content:start}
+.hand div b{display:block;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.hand .none{color:var(--fine)}
+.nvnav{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.nvnav button{border:1px solid var(--line2);background:var(--white);border-radius:8px;padding:7px 12px;font-size:13px;cursor:pointer}
+.nvnav button:hover{border-color:var(--violet);color:var(--violet)}
+.lrow{display:grid;grid-template-columns:210px minmax(0,1fr);gap:20px;padding:20px 28px;border-top:1px solid var(--line)}
+.lrow:first-of-type{border-top:0}
+.lrow .lk{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--peri)}
+.lrow h4{margin:4px 0 4px;font-size:16px;font-weight:600}
+.lrow .ld{font-size:12.5px;color:var(--muted);line-height:1.45;margin:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;align-content:start}
+.scard{position:relative;text-align:left;border:1px solid var(--line);background:var(--white);border-radius:12px;padding:13px 14px;cursor:pointer;transition:border-color .15s,opacity .15s;display:flex;flex-direction:column;gap:5px}
+.scard:hover{border-color:var(--violet)}
+.scard .sn{font-weight:600;font-size:14px;line-height:1.3;padding-right:36px}
+.scard .sc{position:absolute;right:13px;top:12px;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink)}
+.scard .sp{font-size:12px;color:var(--muted);line-height:1.45}
+.scard .sp i{font-style:normal;color:var(--violet);font-weight:500}
+.scard .sx{font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--violet)}
+.scard .so{font-size:12px;background:var(--vsoft);border-radius:6px;padding:5px 7px;line-height:1.35}
+.scard.off{opacity:.3}
+.scard.buy{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.scard.self{background:var(--deep);border-color:var(--deep)}.scard.self .sn,.scard.self .sc{color:#fff}.scard.self .sp{color:#C9C4E4}.scard.self .sx{color:var(--peri)}
+.scard.traced{border-color:var(--violet);box-shadow:inset 0 0 0 2px var(--violet)}
+.scard .mine{position:absolute;left:-4px;top:-4px;width:10px;height:10px;border-radius:50%;background:var(--violet);border:2px solid var(--white);display:none}
+.scard.has-mine .mine{display:block}
+.lrow .emptyl{font-size:13px;color:var(--fine);padding-top:4px}
+@media (max-width:900px){
+  .chainrow{grid-template-columns:repeat(2,minmax(0,1fr));min-width:0;gap:8px}
+  .phase{grid-row:auto;grid-column:1 / -1 !important;margin:10px 0 0}
+  .tile{grid-row:auto;grid-column:auto !important;margin:0;min-height:0}
+  .tile+.tile::before{display:none}
+  .nvhead{grid-template-columns:1fr;padding:20px}
+  .lrow{grid-template-columns:1fr;padding:16px 20px;gap:10px}
+}
+
+/* Find your place */
+.find{margin-top:0;display:flex;gap:8px;flex-wrap:wrap;max-width:620px}
+.find input{flex:1;min-width:0;font-size:16px;padding:12px 14px;border:1.5px solid var(--ink);border-radius:8px;background:var(--white)}
+.fit{max-width:1440px;margin:8px auto 30px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.fit .fh{padding:22px 26px;background:var(--deep);color:#fff;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:start}
+.fit .fh h3{font-weight:600;font-size:26px;letter-spacing:-.015em;margin:6px 0 6px}
+.fit .fh p{margin:0;color:#C9C4E4;font-size:15px;max-width:70ch}
+.fit .fh .label{color:var(--peri)}
+.fit .fh .x2{border:1px solid #fff;background:transparent;color:#fff;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:13px}
+.fit .where{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.fit .where button{border:1px solid #3a3160;background:#151026;color:#fff;border-radius:999px;padding:5px 12px;font-size:12.5px;cursor:pointer}
+.fit .where button:hover{border-color:var(--peri)}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:0}
+.fcol{padding:20px 26px;border-top:1px solid var(--line);border-right:1px solid var(--line)}
+.fcol h4{margin:4px 0 2px;font-size:16px;font-weight:600}
+.fcol .fd{margin:0 0 10px;font-size:12.5px;color:var(--muted)}
+.fcol ul{list-style:none;margin:0;padding:0}
+.fcol li{padding:8px 0;border-top:1px solid var(--line)}
+.fcol li button.slh{border:0;background:none;padding:0;text-align:left;cursor:pointer;font:inherit;color:var(--ink);width:100%}
+.fcol li .cos{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.fcol li .cos button{border:1px solid var(--line2);background:var(--white);border-radius:999px;padding:1px 8px;font-size:11.5px;cursor:pointer;color:var(--ink)}
+.fcol li .cos button:hover{border-color:var(--violet);color:var(--violet)}
+.fcol li .cos .more{border-style:dashed;color:var(--muted)}
+.fcol li b{font-size:13.5px;font-weight:600;display:block}
+.fcol li span{font-size:12px;color:var(--muted)}
+.fcol li button.slh:hover b{color:var(--violet)}
+.peers{display:flex;flex-wrap:wrap;gap:6px}
+.peers button{border:1px solid var(--line2);background:var(--white);border-radius:999px;padding:3px 10px;font-size:12.5px;cursor:pointer}
+.peers button:hover{border-color:var(--violet);color:var(--violet)}
+.notfound{padding:24px 26px;display:grid;gap:12px;max-width:760px}
+.notfound p{margin:0;font-size:15px}
+
+.fcol li .rt,.rt{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border-radius:4px;padding:1px 6px;margin-right:4px;vertical-align:1px;background:var(--white);border:1px solid var(--line2);color:var(--ink)}
+.fcol li .rt-sells,.rt-sells{background:var(--ink);border-color:var(--ink);color:#fff}.fcol li .rt-optimises,.rt-optimises{background:var(--violet);border-color:var(--violet);color:#fff}.fcol li .rt-secures,.fcol li .rt-implements,.fcol li .rt-finances,.fcol li .rt-complements{color:var(--ink)}.fcol li .rt-channels{color:var(--violet)}.rt-owns{border-color:var(--muted);background:var(--tint)}.rt-secures{border-color:var(--ink)}
+.rt-channels{border-color:var(--peri);color:var(--violet)}.rt-implements{background:var(--tint)}.rt-finances{background:var(--vsoft)}.rt-complements{border-style:dashed}
+/* Ecosystem diagram */
+.egowrap{padding:22px 26px 18px;border-bottom:1px solid var(--line);scroll-margin-top:16px}
+.segego{border:1px solid var(--line);border-radius:14px;max-width:1440px;margin:0 auto 26px}
+.ecrumbs{font-size:13px;color:var(--muted);margin-bottom:12px}
+.ecrumbs button{border:0;background:none;color:var(--violet);cursor:pointer;padding:0;font:inherit;text-decoration:underline}
+.ego{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,300px) minmax(0,1fr);grid-template-areas:"top top top" "left center right" "bottom bottom bottom";gap:44px 56px;padding:26px;border-radius:14px;background-color:var(--tint);background-image:radial-gradient(var(--line2) 1px,transparent 1px);background-size:18px 18px}
+.elines{position:absolute;inset:0;pointer-events:none;overflow:visible;z-index:0}
+.elines path{fill:none;stroke-width:1.4;opacity:.55;transition:opacity .15s,stroke-width .15s}
+.elines circle{fill:var(--ink)}
+.ego.focus .elines path{opacity:.12}.ego.focus .elines path.on{opacity:1;stroke-width:2.4}
+.etop{grid-area:top}.eleft{grid-area:left}.eright{grid-area:right}.ebottom{grid-area:bottom}.ecenter{grid-area:center;display:flex;align-items:center}
+.etop,.eleft,.eright,.ebottom{position:relative;z-index:1;display:grid;gap:16px;align-content:start}
+.etop .ecards,.ebottom .ecards{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.eleft .ecards,.eright .ecards{display:grid;gap:8px}
+.eleft .eh,.eright .eh{text-align:left}
+.eh{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;margin-bottom:8px}
+.eh span{color:var(--peri)}
+.ecard{position:relative;z-index:1;text-align:left;border:1px solid var(--line);background:var(--white);border-radius:10px;padding:9px 11px;cursor:pointer;display:grid;gap:2px;min-width:170px;max-width:240px;box-shadow:0 1px 2px rgba(11,12,16,.05);transition:border-color .15s,box-shadow .15s,opacity .15s}
+.ecard:hover,.ecard.on{border-color:var(--violet);box-shadow:0 6px 18px rgba(75,47,232,.14)}
+.ego.focus .ecard:not(.on){opacity:.55}
+.ecard .en{font-weight:600;font-size:13px;line-height:1.25}
+.ecard .em{font-size:11px;color:var(--muted)}
+.ecard .et{display:flex;gap:3px;flex-wrap:wrap;margin-top:3px}
+.ecard .et .rt{font-style:normal;font-size:9px;padding:0 5px}
+.emore{font-size:12px;color:var(--fine);align-self:center}
+.ecc{position:relative;z-index:1;width:100%;background:var(--deep);color:#fff;border-radius:14px;padding:18px 18px 16px;box-shadow:0 12px 34px rgba(11,12,16,.16)}
+.ecc .label{color:var(--peri)}
+.ecc b{display:block;font-size:20px;font-weight:600;letter-spacing:-.01em;margin:6px 0 4px}
+.ecc p{margin:0 0 8px;font-size:12.5px;color:#C9C4E4;line-height:1.45}
+.ecb{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}.ecb span{font-size:11px;border:1px solid #3a3160;border-radius:999px;padding:2px 8px;color:#fff}
+.ecl{margin-top:8px;border:1px solid #fff;background:transparent;color:#fff;border-radius:8px;padding:6px 10px;font-size:12.5px;cursor:pointer}
+.elegend{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;margin-top:12px;font-size:12px;color:var(--muted)}
+.elegend span{display:inline-flex;align-items:center;gap:6px}
+.elegend .ehint{flex-basis:100%;color:var(--ink);font-size:12.5px;min-height:2.8em;line-height:1.5}.elegend .ecos{color:var(--muted)}
+@media (max-width:900px){
+  .ego{grid-template-columns:1fr;grid-template-areas:"center" "top" "left" "right" "bottom";gap:22px;padding:16px}
+  .elines{display:none}.etop .ecards,.ebottom .ecards{justify-content:flex-start}.eh{text-align:left}.ecard{max-width:none}
+  .egowrap{padding:16px}
+}
+.fit .fh a.x2.web{display:inline-flex;align-items:center;text-decoration:none;background:#fff;color:var(--deep);font-weight:600}
+.eweb{display:inline-block;margin:2px 0 8px;font-size:12.5px;color:#fff;border-bottom:1px solid var(--peri);text-decoration:none}
+.eweb:hover{color:var(--peri)}
+.pl .links a.site{font-weight:600}
+/* Modes */
+.modes{max-width:1440px;margin:6px auto 34px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.modes button{text-align:left;border:1px solid var(--line);background:var(--white);border-radius:12px;padding:18px 20px;cursor:pointer;display:grid;gap:4px;transition:border-color .15s}
+.modes button:hover{border-color:var(--violet)}
+.modes button[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.modes .mk{font-size:11px;font-weight:600;color:var(--peri);letter-spacing:.1em}
+.modes b{font-size:18px;font-weight:600;letter-spacing:-.01em}
+.modes button>span:last-child{font-size:13.5px;color:var(--muted);line-height:1.5}
+.mode{scroll-margin-top:16px}
+.panelhead{max-width:1440px;margin:0 auto 18px;display:flex;gap:16px 28px;flex-wrap:wrap;align-items:end}
+.panelhead .find{margin-top:0;flex:1 1 420px}
+.orpick{display:grid;gap:6px;flex:0 1 320px}
+.orpick select{font-size:15px;padding:11px 12px;border-radius:8px}
+.fitempty{padding:30px 28px;color:var(--muted);font-size:15.5px;line-height:1.7;max-width:80ch}
+.fit .fact{display:flex;gap:8px;flex-wrap:wrap}
+.strip2{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:4px;padding:14px 26px 10px;border-bottom:1px solid var(--line);background:var(--tint)}
+.mc{border:1px solid var(--line2);background:var(--white);border-radius:6px;padding:6px 4px;font-size:10.5px;line-height:1.2;cursor:pointer;min-height:36px;color:var(--muted)}
+.mc.you{background:var(--deep);border-color:var(--deep);color:#fff}
+.mc.sell{background:var(--violet);border-color:var(--violet);color:#fff}
+.mc.up{border-color:var(--ink);color:var(--ink)}
+.legend{grid-column:1 / -1;display:flex;gap:16px;font-size:11.5px;color:var(--muted);margin-top:6px}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px;border:1px solid var(--ink)}
+.legend .you::before{background:var(--deep)}.legend .sell::before{background:var(--violet);border-color:var(--violet)}.legend .up::before{background:var(--white)}
+.fcol.wide{grid-column:1 / -1}
+.fcol.wide ul{columns:2 360px;column-gap:28px}
+.fcol.wide li{break-inside:avoid}
+.fcol li em{display:block;font-style:normal;font-size:12px;margin-top:4px;color:var(--ink);background:var(--vsoft);border-radius:6px;padding:4px 7px}
+.fcol li em .via,.fcol li b.via{display:inline;font-weight:600;font-size:12px}
+.peers.backers button{border-color:var(--violet);color:var(--violet)}
+.seglist{max-width:1440px;margin:0 auto;display:grid;gap:22px}
+.sgh{display:flex;gap:10px;align-items:baseline;border-bottom:2px solid var(--line);padding-bottom:6px;margin-bottom:10px}
+.sgh .ix{font-size:11px;font-weight:600;color:var(--peri)}
+.sgh b{font-size:17px;font-weight:600}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
+.srow{text-align:left;border:1px solid var(--line);background:var(--white);border-radius:10px;padding:10px 12px;cursor:pointer;display:grid;gap:3px}
+.srow:hover{border-color:var(--violet)}
+.srow .sl{font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--peri)}
+.srow b{font-size:14px;font-weight:600}
+.srow .sd{font-size:12px;color:var(--muted);line-height:1.4}
+.rel{display:grid;gap:8px;margin-top:12px}
+.rel div{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.rel b{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.rel button{border:1px solid var(--line2);background:var(--white);border-radius:999px;padding:2px 9px;font-size:12px;cursor:pointer}
+.rel button:hover{border-color:var(--violet);color:var(--violet)}
+.rel span{font-size:12px;color:var(--fine)}
+@media (max-width:900px){.modes{grid-template-columns:1fr}.strip2{grid-template-columns:repeat(6,minmax(0,1fr));padding:12px 16px}}
 
 /* Drawer */
 .drawer{position:fixed;top:0;right:0;bottom:0;width:min(500px,100%);background:var(--white);border-left:1px solid var(--line2);z-index:50;display:flex;flex-direction:column;box-shadow:0 12px 34px rgba(11,12,16,.16);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-right:env(safe-area-inset-right,0px)}
@@ -188,34 +376,59 @@ footer p{max-width:100ch;margin:0 0 8px}
   <div>
     <div class="label">Progma · AI Value Chain Atlas · updated <span id="asof">…</span></div>
     <h1>Who does what in AI, from power to people.</h1>
-    <p class="lede">Columns are the value chain. Rows are the support layers around each node: what it sells, what it needs, what makes it faster or cheaper, what keeps it safe, and how it reaches buyers. Click a box to see the companies and open projects in it. Trace any company or investor to see every box it touches. <em>Everything here is sourced, open, and corrected in public.</em></p>
-    <div class="ctas"><a class="btn" href="#contribute">Contribute or claim a listing</a><button type="button" class="btn2" id="openStack">Build my stack</button></div>
+    <p class="lede">AI runs on a chain of twelve links, from the power that feeds a data centre to the people who use what it produces. Each link has a core business and four layers around it: what it depends on, what makes it faster or cheaper, what keeps it safe, and how it reaches buyers. <em>Everything here is sourced, open, and corrected in public.</em></p>
   </div>
   <div class="stats" id="stats"></div>
-</header></div>
+</header>
+<nav class="modes" aria-label="Ways to use the atlas">
+  <button type="button" data-mode="map" aria-pressed="true"><span class="mk">01</span><b>See the full map</b><span>Twelve links and five layers, with every company and open project.</span></button>
+  <button type="button" data-mode="segment" aria-pressed="false"><span class="mk">02</span><b>Explore a segment</b><span>Find a box, such as cooling, compression or legal AI. See who is in it, who it sells to, and what it buys.</span></button>
+  <button type="button" data-mode="company" aria-pressed="false"><span class="mk">03</span><b>Find a company</b><span>See who it sells to and with what, its peers, its partners and the investors in its space.</span></button>
+</nav></div>
 
-<div class="controls wrap" role="region" aria-label="Slices"><div class="in">
+<div class="wrap mode" id="mode-company" hidden>
+  <div class="panelhead">
+    <form class="find" id="findForm" role="search"><label for="findIn" class="label" style="flex-basis:100%">Find a company</label><input id="findIn" list="names" placeholder="Type a company, e.g. Tileward" autocomplete="off"><button class="btn" type="submit">Find</button></form>
+    <div class="orpick"><label for="persona" class="label">Or pick what you are</label><select id="persona"></select></div>
+  </div>
+  <section class="fit" id="fit" aria-live="polite"><div class="fitempty">Type a company or pick what you are. You will see only what matters to you: who you sell to and what you offer them, your peers, your partners and marketplaces, what you build on, and the investors active in your space.</div></section>
+</div>
+
+<div class="wrap mode" id="mode-segment" hidden>
+  <div class="panelhead"><div class="find" style="margin-top:0"><label for="segIn" class="label" style="flex-basis:100%">Find a segment</label><input id="segIn" type="search" placeholder="Try compression, cooling, legal, GPU cloud, or a company name" autocomplete="off"></div></div>
+  <div class="egowrap segego" id="segEgo" hidden></div>
+  <div class="seglist" id="seglist"></div>
+</div>
+
+<div class="mode" id="mode-map">
+<div class="wrap">
+  <div class="views"><div><div class="label">The chain</div><h2 id="viewTitle">Twelve links from power to people</h2></div>
+    <div class="vtabs" role="group" aria-label="View"><button type="button" data-view="guided" aria-pressed="true">Chain</button><button type="button" data-view="matrix" aria-pressed="false">Full matrix</button></div></div>
+<div class="controls" role="region" aria-label="Slices"><div class="in">
   <div class="ctl"><span class="lb" id="lensLb">Lens</span><div class="seg" id="lens" role="group" aria-labelledby="lensLb"></div></div>
-  <div class="ctl"><label for="persona">I am</label><select id="persona"></select></div>
   <div class="ctl"><label for="region">Region</label><select id="region"></select></div>
   <div class="ctl"><label for="stage">Stage</label><select id="stage"></select></div>
   <div class="ctl"><label for="trace">Trace</label><input type="search" id="trace" list="names" placeholder="Company or investor"><datalist id="names"></datalist></div>
-  <div class="ctl"><span class="lb" id="viewLb">View</span><div class="seg" id="density" role="group" aria-labelledby="viewLb"><button type="button" data-v="detail" aria-pressed="true">Detail</button><button type="button" data-v="dense" aria-pressed="false">Overview</button></div></div>
+  <div class="ctl" id="densityCtl" hidden><span class="lb" id="viewLb">Density</span><div class="seg" id="density" role="group" aria-labelledby="viewLb"><button type="button" data-v="detail" aria-pressed="true">Detail</button><button type="button" data-v="dense" aria-pressed="false">Overview</button></div></div>
   <button type="button" class="mystack" id="stackBtn" aria-pressed="false">My stack · <span id="stackN">0</span></button>
-  <button type="button" class="reset" id="reset">Clear slices</button>
+  <button type="button" class="reset" id="reset">Clear</button>
   <div class="slice-note" id="note" aria-live="polite"></div>
 </div></div>
-
-<div class="wrap"><div class="board-scroll" id="scroll"><div class="board" id="board"><p class="empty" style="padding:40px 0">Loading the atlas…</p></div></div></div>
+  <div id="guided">
+    <div class="chainwrap"><div class="chainrow" id="chainrow"><p class="empty">Loading the atlas…</p></div></div>
+    <div class="nodeview" id="nodeview"></div>
+  </div>
+  <div id="matrix" hidden><div class="board-scroll" id="scroll"><div class="board" id="board"></div></div></div>
+</div>
 
 <div class="wrap"><section class="lower">
-  <div><div class="label">Transitions</div><h2>What it takes to move along the chain</h2><p class="sub">Each hand-off between nodes, and the capability, capital or constraint that sits on it.</p><ol class="chain" id="chain"></ol></div>
-  <div><div class="label">Footprints</div><h2>Who spans the chain, and who funds it</h2><p class="sub">Select one to draw its footprint across the board. The number is how many boxes it touches.</p><div class="xn" id="xn"></div></div>
+  <div><div class="label">Footprints</div><h2>Who spans the chain, and who funds it</h2><p class="sub">Select one to draw its footprint across the chain. The number is how many boxes it touches.</p><div class="xn" id="xn"></div></div>
 </section></div>
+</div>
 
 <section class="band" id="contribute"><div class="in wrap">
   <div><div class="label">Contribute</div><h2>This map is corrected in public.</h2>
-    <p>The data lives in Progma's public GitHub repository, one file per value-chain node. Anyone can suggest a change; every change is reviewed before it goes live. The atlas is re-scanned every fortnight against what was suggested and what moved in the market.</p>
+    <p>The data lives in Progma's public GitHub repository, one file per link in the chain. Anyone can suggest a change; every change is reviewed before it goes live. The atlas is re-scanned every fortnight against what was suggested and what moved in the market.</p>
     <a class="btn" id="ghIssue" href="#">Suggest a company or correction</a><a class="btn2" id="ghRepo" href="#">See the data on GitHub</a></div>
   <div><div class="label">How it works</div><ol>
     <li>Use “Suggest” on any box or listing. It opens a short form on GitHub.</li>
@@ -234,7 +447,7 @@ footer p{max-width:100ch;margin:0 0 8px}
 </section></div>
 
 <footer class="wrap"><div class="in"><div>
-  <p><b>Method.</b> The taxonomy runs top-down from the physical stack to demand and was stress-tested node by node for missing elements. Companies, open projects and investors are researched against company sites, filings, repositories and news; each listing carries a source. Status reflects deals announced through the date above. Funding stage is the latest disclosed round only. Tags such as performance and cost describe what an offering mainly does; they are not ratings. Inclusion is not endorsement, and listings are never paid for.</p>
+  <p><b>Method.</b> The taxonomy runs top-down from the physical stack to demand and was stress-tested link by link for missing segments. Companies, open projects and investors are researched against company sites, filings, repositories and news; each listing carries a source. Status reflects deals announced through the date above. Funding stage is the latest disclosed round only. Tags such as performance and cost describe what an offering mainly does; they are not ratings. Inclusion is not endorsement, and listings are never paid for.</p>
   <p>Progma Consulting and Management Services LLP · Bengaluru · progma.co.in · Atlas data CC BY 4.0</p></div></div></footer>
 
 <aside class="drawer" id="drawer" hidden aria-label="Details"><button type="button" class="x" id="dx">CLOSE</button><header id="dh"></header><div class="body" id="db"></div></aside>
@@ -253,11 +466,11 @@ function issueURL(template, title, body) {
 async function loadData() {
   if (INLINE) return INLINE;
   const get = p => fetch("data/" + p, {cache: "no-cache"}).then(r => { if (!r.ok) throw new Error(p); return r.json(); });
-  const [meta, taxonomy, cross, investors, stacks] = await Promise.all([get("meta.json"), get("taxonomy.json"), get("cross.json"), get("investors.json"), get("stacks.json").catch(() => ({stacks: []}))]);
+  const [meta, taxonomy, cross, investors, stacks, rel] = await Promise.all([get("meta.json"), get("taxonomy.json"), get("cross.json"), get("investors.json"), get("stacks.json").catch(() => ({stacks: []})), get("links.json").catch(() => ({types: {}, links: []}))]);
   const nodeFiles = await Promise.all(taxonomy.nodes.map(n => get("nodes/" + n.id + ".json").catch(() => ({entries: [], notes: {}}))));
   const players = [], notes = {};
   nodeFiles.forEach(f => { players.push(...(f.entries || [])); Object.assign(notes, f.notes || {}); });
-  return {asof: meta.asof, personas: meta.personas, changelog: meta.changelog || [], taxonomy, players, cross: cross.cross || [], investors: investors.investors || [], notes, stacks: stacks.stacks || []};
+  return {asof: meta.asof, personas: meta.personas, changelog: meta.changelog || [], taxonomy, players, cross: cross.cross || [], investors: investors.investors || [], notes, stacks: stacks.stacks || [], types: rel.types, links: rel.links};
 }
 
 loadData().then(start).catch(e => { $("#board").innerHTML = `<p class="empty">The atlas data did not load (${esc(e.message)}). Refresh, or open the data on GitHub.</p>`; });
@@ -269,13 +482,18 @@ const SEG = {}; NODES.forEach(n => n.subsegments.forEach(s => SEG[s.id] = {...s,
 const bySeg = {}; Object.keys(SEG).forEach(k => bySeg[k] = []);
 P.forEach(p => { p.kind = p.kind || "company"; (p.subsegments || []).forEach(s => bySeg[s] && bySeg[s].push(p)); });
 const isOpen = p => p.kind !== "company";
-const BYKEY = {}; P.forEach(p => BYKEY[keyOf(p.name)] = p);
+const BYKEY = {}; P.forEach(p => { BYKEY[keyOf(p.name)] = p; (p.aka || []).forEach(a => { if (!BYKEY[keyOf(a)]) BYKEY[keyOf(a)] = p; }); });
 
 const LENSES = [{id: "all", name: "All"}, {id: "performance", name: "Performance"}, {id: "cost", name: "Cost"}, {id: "open", name: "Open"}, {id: "security", name: "Security"}, {id: "sovereign", name: "Sovereign"}];
 const STAGES = ["Any stage", "Pre-seed/Seed", "Series A", "Series B", "Series C+", "Public", "Acquired"];
 const PERSONAS = DATA.personas;
 const REGIONS = ["All regions", ...[...new Set(P.map(p => p.region).filter(Boolean))].sort()];
-const st = {lens: "all", persona: "", region: "All regions", stage: "Any stage", trace: "", dense: false, stack: new Set()};
+const st = {lens: "all", persona: "", region: "All regions", stage: "Any stage", trace: "", dense: false, stack: new Set(), node: NODES[0].id, view: "guided", mode: "map", fitSubject: null};
+const PHASES = T.phases || [
+  {name: "Physical foundation", desc: "Power, silicon and racks", nodes: ["n0", "n1", "n2", "n3"]},
+  {name: "Capacity and raw material", desc: "Compute to rent, data to learn from", nodes: ["n4", "n5"]},
+  {name: "Intelligence", desc: "Models, served and made buildable", nodes: ["n6", "n7", "n8"]},
+  {name: "Value", desc: "Products, adoption, outcomes", nodes: ["n9", "n10", "n11"]}];
 const stageOf = p => p.status === "public" ? "Public" : p.status === "acquired" ? "Acquired" : (p.stage || "");
 const tagOK = p => st.lens === "all" || (st.lens === "open" ? (isOpen(p) || (p.tags || []).includes("open-source")) : (p.tags || []).includes(st.lens));
 const passes = p => (st.region === "All regions" || p.region === st.region) && tagOK(p) && (st.stage === "Any stage" || stageOf(p) === st.stage);
@@ -283,7 +501,7 @@ const passes = p => (st.region === "All regions" || p.region === st.region) && t
 /* header */
 $("#asof").textContent = DATA.asof;
 const nCo = P.filter(p => !isOpen(p)).length, nOpen = P.length - nCo;
-$("#stats").innerHTML = [[NODES.length, "nodes"], [Object.keys(SEG).length, "sub-segments"], [nCo, "companies"], [nOpen, "open projects"], [INV.length, "investors"]].filter(([n]) => n > 0).map(([n, l]) => `<div class="stat"><b>${n.toLocaleString()}</b><span>${l}</span></div>`).join("");
+$("#stats").innerHTML = [[NODES.length, "links in the chain"], [Object.keys(SEG).length, "segments"], [nCo, "companies"], [nOpen, "open projects"], [INV.length, "investors"]].filter(([n]) => n > 0).map(([n, l]) => `<div class="stat"><b>${n.toLocaleString()}</b><span>${l}</span></div>`).join("");
 $("#ghRepo").href = REPO + "/tree/main/atlas";
 $("#ghIssue").href = issueURL("atlas-suggest.yml", "[Atlas] ");
 
@@ -292,7 +510,7 @@ $("#lens").innerHTML = LENSES.map(l => `<button type="button" data-v="${l.id}" a
 $("#persona").innerHTML = `<option value="">Anyone</option>` + PERSONAS.map(p => `<option value="${p.id}">${esc(p.name)}</option>`).join("");
 $("#region").innerHTML = REGIONS.map(r => `<option>${esc(r)}</option>`).join("");
 $("#stage").innerHTML = STAGES.map(r => `<option>${esc(r)}</option>`).join("");
-const traceNames = [...new Set([...X.map(x => x.name), ...INV.map(i => i.name), ...P.map(p => p.name)])];
+const traceNames = [...new Set([...X.map(x => x.name), ...INV.map(i => i.name), ...P.map(p => p.name), ...P.flatMap(p => p.aka || [])])];
 $("#names").innerHTML = traceNames.map(n => `<option value="${esc(n)}"></option>`).join("");
 
 /* board */
@@ -345,7 +563,46 @@ function update() {
   document.querySelectorAll("#lens button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === st.lens));
   document.querySelectorAll("#xn button").forEach(b => b.setAttribute("aria-pressed", !!tr && b.dataset.n === tr.name));
   $("#stackN").textContent = st.stack.size; $("#stackBtn").setAttribute("aria-pressed", st.stack.size > 0);
-  noteText(per, tr); writeHash(); requestAnimationFrame(drawTraces);
+  noteText(per, tr); renderGuided(per, tr, mineSegs); writeHash(); if (st.view === "matrix") requestAnimationFrame(drawTraces);
+}
+function nodeEntries(n) { const set = new Set(); n.subsegments.forEach(s => bySeg[s.id].filter(passes).forEach(p => set.add(p))); return [...set]; }
+function renderGuided(per, tr, mineSegs) {
+  const filtered = st.lens !== "all" || st.region !== "All regions" || st.stage !== "Any stage";
+  let row = "";
+  const tileHTML = {};
+  NODES.forEach((n, i) => {
+    const es = nodeEntries(n), op = es.filter(isOpen).length;
+    const tHits = tr ? n.subsegments.filter(s => tr.roles.has(s.id)).length : 0;
+    const pHits = per ? n.subsegments.filter(s => per.self.includes(s.id) || per.buys.includes(s.id)).length : 0;
+    const dim = (tr && !tHits) || (per && !pHits) || (filtered && !es.length && n.id !== "n11");
+    const you = per && n.subsegments.some(s => per.self.includes(s.id));
+    const badge = tr && tHits ? tHits : per && pHits ? pHits : "";
+    tileHTML[n.id] = `<button type="button" class="tile${dim ? " dim" : ""}${you ? " you" : ""}" data-node="${n.id}" aria-current="${st.node === n.id}" style="grid-column:${i + 1}">
+      <span class="ix">${String(i + 1).padStart(2, "0")}</span><span class="tn">${esc(n.name)}</span>
+      <span class="tc">${n.id === "n11" ? "Who buys" : `${(es.length - op).toLocaleString()} companies`}${op ? `<br>${op} open` : ""}</span>${badge ? `<span class="tb">${badge}</span>` : ""}</button>`;
+  });
+  PHASES.forEach(ph => { const i0 = NODES.findIndex(n => n.id === ph.nodes[0]); row += `<div class="phase" style="grid-column:${i0 + 1} / span ${ph.nodes.length}"><b>${esc(ph.name)}</b><span>${esc(ph.desc)}</span></div>` + ph.nodes.map(id => tileHTML[id] || "").join(""); });
+  $("#chainrow").innerHTML = row;
+  const n = NODES.find(x => x.id === st.node), idx = NODES.indexOf(n), nm = id => NODES.find(x => x.id === id).name;
+  const inb = T.transitions.filter(t => t.to === n.id), outb = T.transitions.filter(t => t.from === n.id);
+  const hand = (lst, dir) => lst.length ? lst.map(t => `<div><b>${dir === "in" ? "Gets here from " + esc(nm(t.from)) : "Hands on to " + esc(nm(t.to))}</b>${esc(t.name)}: ${esc(t.needs)}</div>`).join("") : "";
+  let h = `<div class="nvhead"><div><div class="label">Link ${String(idx + 1).padStart(2, "0")} of ${NODES.length} · ${esc((PHASES.find(p => p.nodes.includes(n.id)) || {}).name || "")}</div><h3>${esc(n.name)}</h3><p>${esc(n.desc)}</p>
+    <div class="nvnav">${idx > 0 ? `<button type="button" data-node="${NODES[idx - 1].id}">← ${esc(NODES[idx - 1].name)}</button>` : ""}${idx < NODES.length - 1 ? `<button type="button" data-node="${NODES[idx + 1].id}">${esc(NODES[idx + 1].name)} →</button>` : ""}</div></div>
+    <div class="hand">${hand(inb, "in") + hand(outb, "out") || `<div class="none">The start of the chain.</div>`}</div></div>`;
+  LAYERS.forEach((l, li) => {
+    const segs = n.subsegments.filter(s => s.layer === l.id);
+    h += `<div class="lrow"><div><div class="lk">Layer ${li + 1}</div><h4>${esc(l.name)}</h4><p class="ld">${esc(l.desc)}</p></div>`;
+    if (!segs.length) { h += `<div class="emptyl">No distinct segment here yet. <a href="${esc(issueURL("atlas-suggest.yml", "[Atlas] New segment in " + n.name + " / " + l.name))}" target="_blank" rel="noopener">Suggest one</a></div></div>`; return; }
+    h += `<div class="cards">` + segs.map(s => {
+      const list = bySeg[s.id].filter(passes), op = list.filter(isOpen).length, demand = s.id.startsWith("n11.") && !bySeg[s.id].length;
+      const isSelf = per && per.self.includes(s.id), isBuy = per && per.buys.includes(s.id), t = tr && tr.roles.get(s.id);
+      const off = (filtered && !list.length && !demand) || (per && !isSelf && !isBuy) || (tr && !t);
+      const cls = ["scard", off ? "off" : "", isSelf ? "self" : isBuy ? "buy" : "", t ? "traced" : "", mineSegs.has(s.id) ? "has-mine" : ""].join(" ");
+      const names = demand ? esc(s.desc) : (op ? `<i>${op} open · </i>` : "") + esc(list.slice(0, 3).map(p => p.name).join(" · ") + (list.length > 3 ? " …" : ""));
+      return `<button type="button" class="${cls}" data-seg="${s.id}"><span class="mine"></span><span class="sn">${esc(s.name)}</span>${demand ? "" : `<span class="sc">${list.length}</span>`}<span class="sp">${names}</span>${isSelf ? `<span class="sx">You are here</span>` : isBuy ? `<span class="sx">In your stack</span>` : ""}${t ? `<span class="so">${esc(t)}</span>` : ""}</button>`;
+    }).join("") + `</div></div>`;
+  });
+  $("#nodeview").innerHTML = h;
 }
 function noteText(per, tr) {
   const bits = [], lensName = LENSES.find(l => l.id === st.lens).name.toLowerCase();
@@ -355,7 +612,7 @@ function noteText(per, tr) {
   if (st.stage !== "Any stage") bits.push(`Stage: <b>${esc(st.stage)}</b> (latest disclosed round only).`);
   if (tr) bits.push(`<b>${esc(tr.name)}</b> ${tr.investor ? "backs companies in" : "touches"} ${tr.roles.size} boxes${tr.summary ? ". " + esc(tr.summary) : "."}`);
   if (per && (st.lens !== "all" || st.region !== "All regions")) { const n = new Set(); per.buys.forEach(s => (bySeg[s] || []).filter(passes).forEach(p => n.add(p.name))); bits.push(`<b>${n.size}</b> options in this slice of your stack.`); }
-  $("#note").innerHTML = bits.join(" ") || "Pick a lens, a persona, a region or a stage. They combine: an inference provider's cost stack in India, for example.";
+  $("#note").innerHTML = bits.join(" ") || "Slice by lens, region or stage, or trace a company or investor. They combine: open-source cost tools in India, for example.";
 }
 function drawTraces() {
   const svg = $("#svg"), lane = $("#lane"), board = $("#board"); if (!svg) return;
@@ -389,7 +646,7 @@ function playerHTML(p) {
   <p>${esc(p.one_liner)}</p>${open && p.access ? `<div class="acc">${esc(p.access)}</div>` : ""}${!open && p.last_round ? `<div class="chg">${esc(p.last_round)}</div>` : ""}${p.note ? `<div class="chg">${esc(p.note)}</div>` : ""}
   <div class="tags">${stg}${tags}</div>
   <div class="links"><button type="button" class="add" data-add="${esc(k)}" aria-pressed="${st.stack.has(k)}">${st.stack.has(k) ? "In my stack" : "+ My stack"}</button>
-  ${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">Site</a>` : ""}${p.repo ? `<a href="${esc(p.repo)}" target="_blank" rel="noopener">Repo</a>` : ""}${p.source ? `<a href="${esc(p.source)}" target="_blank" rel="noopener">Source</a>` : ""}
+  ${p.url ? `<a class="site" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(hostOf(p.url) || "Website")} ↗</a>` : ""}${p.repo ? `<a href="${esc(p.repo)}" target="_blank" rel="noopener">Repo</a>` : ""}${p.source ? `<a href="${esc(p.source)}" target="_blank" rel="noopener">Source</a>` : ""}
   ${multi ? `<button type="button" class="linkbtn" data-trace="${esc(p.name)}">Trace ${p.subsegments.length} boxes</button>` : ""}
   <a href="${esc(sug)}" target="_blank" rel="noopener">Suggest edit</a>${open ? "" : `<a href="${esc(claim)}" target="_blank" rel="noopener">Claim</a>`}</div></div>`;
 }
@@ -404,6 +661,7 @@ function showSeg(id) {
   const shown = segTab === "open" ? op : segTab === "co" ? co : list;
   const add = issueURL("atlas-suggest.yml", `[Atlas] Add to ${s.name}`, `Box: ${s.name} (${id})\nCompany or project:\nWebsite:\nOne line on what it sells:\nSource:\n`);
   const head = `<div class="label">${esc(s.node.name)} · ${esc(l.name)}</div><h3>${esc(s.name)}</h3><p class="desc">${esc(s.desc)}</p>${DATA.notes[id] ? `<p class="note">${esc(DATA.notes[id])}</p>` : ""}
+  <div class="rel">${["out", "in"].map(side => { const ls = side === "out" ? OUT[id] : IN[id].filter(l => l.type !== "complements"); const by = {}; ls.forEach(l => (by[l.type] = by[l.type] || new Set()).add(side === "out" ? l.to : l.from)); return Object.entries(by).map(([t, set]) => { const ids = [...set].sort(bySegOrder); return `<div><b>${esc(side === "out" ? TYPES[t].label : TYPES[t].inverse)}</b>${ids.slice(0, 8).map(c => `<button type="button" data-seg="${c}">${esc(SEG[c].name)}</button>`).join("")}${ids.length > 8 ? `<span>+${ids.length - 8} more</span>` : ""}</div>`; }).join(""); }).join("")}</div>
   <div class="subtabs" role="group" aria-label="Show"><button type="button" data-tab="all" aria-pressed="${segTab === "all"}">All ${list.length}</button><button type="button" data-tab="co" aria-pressed="${segTab === "co"}">Companies ${co.length}</button><button type="button" data-tab="open" aria-pressed="${segTab === "open"}">Open ${op.length}</button></div>
   <div class="acts"><a class="btn2" href="${esc(add)}" target="_blank" rel="noopener">Suggest an addition</a></div>`;
   const filt = list.length !== all.length ? `<p class="empty">Showing ${list.length} of ${all.length} after slices.</p>` : "";
@@ -426,46 +684,256 @@ function showStack() {
 
 /* hash: #seg=…, #trace=…, #stack=… */
 function writeHash() {
-  const parts = []; if (st.trace) parts.push("trace=" + encodeURIComponent(st.trace)); if (st.stack.size) parts.push("stack=" + [...st.stack].map(encodeURIComponent).join(","));
-  const h = parts.length ? "#" + parts.join("&") : ""; if (location.hash !== h) try { history.replaceState(null, "", h || location.pathname + location.search); } catch (e) {}
+  const parts = []; if (st.mode && st.mode !== "map") parts.push("mode=" + st.mode); if (st.mode === "company" && st.fitSubject) parts.push(st.fitSubject.persona ? "as=" + st.persona : "find=" + encodeURIComponent(st.fitSubject.name)); if (st.mode === "map" && st.node !== NODES[0].id) parts.push("node=" + st.node); if (st.mode === "map" && st.trace) parts.push("trace=" + encodeURIComponent(st.trace)); if (st.stack.size) parts.push("stack=" + [...st.stack].map(encodeURIComponent).join(","));
+  const h = parts.length ? "#" + parts.join("&") : ""; if ((location.hash || "") !== h) try { history.replaceState(null, "", h || location.pathname + location.search); } catch (e) {}
 }
 function readHash() {
   const h = new URLSearchParams(location.hash.slice(1));
+  if (h.get("find")) setTimeout(() => { $("#findIn").value = h.get("find"); findCompany(h.get("find")); }, 60);
+  else if (h.get("as")) setTimeout(() => { $("#persona").value = h.get("as"); personaFit(h.get("as")); }, 60);
+  else if (h.get("mode") === "segment") setTimeout(() => setMode("segment"), 60);
+  if (h.get("node") && NODES.some(n => n.id === h.get("node"))) st.node = h.get("node");
   if (h.get("trace")) { st.trace = h.get("trace"); $("#trace").value = st.trace; }
   if (h.get("stack")) h.get("stack").split(",").map(decodeURIComponent).forEach(k => BYKEY[k] && st.stack.add(k));
   if (h.get("seg") && SEG[h.get("seg")]) setTimeout(() => showSeg(h.get("seg")), 50);
 }
 
 /* lower sections */
-$("#chain").innerHTML = T.transitions.map(t => { const a = NODES.find(x => x.id === t.from), b = NODES.find(x => x.id === t.to); return `<li><span class="ft">${esc(a.short).toUpperCase()} → ${esc(b.short).toUpperCase()}</span><b>${esc(t.name)}</b><p>${esc(t.needs)}</p></li>`; }).join("");
 const pills = arr => arr.slice().sort((a, b) => b.roles.length - a.roles.length).map(x => `<button type="button" data-n="${esc(x.name)}" aria-pressed="false">${esc(x.name)}<small>${x.roles.length}</small></button>`).join("");
 $("#xn").innerHTML = `<h3>Companies across the chain</h3>${pills(X)}<h3>Investors</h3>${INV.length ? pills(INV) : `<span class="sub">Investor footprints are being added.</span>`}`;
 $("#log").innerHTML = (DATA.changelog || []).map(c => `<li><span class="d">${esc(c.date)}</span><span>${esc(c.text)}</span></li>`).join("") || `<li><span class="d">—</span><span>No changes yet.</span></li>`;
 $("#stacks").innerHTML = (DATA.stacks || []).length ? DATA.stacks.map((s, i) => `<div class="s"><div><b>${esc(s.title)}</b><br><span class="meta">${esc(s.by || "")} · ${s.items.length} listings</span></div><button type="button" class="btn2" data-gallery="${i}">Open on map</button></div>`).join("") : `<p class="empty">No community stacks yet. Build yours and submit it to be the first.</p>`;
 
+function focusTrace() { const tr = traceTarget(); if (tr && st.view === "guided") { const first = NODES.find(n => n.subsegments.some(s => tr.roles.has(s.id))); if (first && !NODES.find(n => n.id === st.node).subsegments.some(s => tr.roles.has(s.id))) st.node = first.id; } update(); (st.view === "guided" ? $("#guided") : $("#scroll")).scrollIntoView({behavior: "smooth", block: "start"}); }
+/* ---------- relationships (typed graph) ---------- */
+const TYPES = DATA.types || {}, LINKS = DATA.links || [];
+const OUT = {}, IN = {}; Object.keys(SEG).forEach(id => { OUT[id] = []; IN[id] = []; });
+LINKS.forEach(l => { if (!SEG[l.from] || !SEG[l.to]) return; OUT[l.from].push(l); IN[l.to].push(l); if (l.type === "complements") { OUT[l.to].push({...l, from: l.to, to: l.from}); IN[l.from].push({...l, from: l.to, to: l.from}); } });
+const nodeIdx = id => NODES.findIndex(n => n.id === SEG[id].node.id);
+const bySegOrder = (a, b) => nodeIdx(a) - nodeIdx(b);
+const nearTo = segs => { const idx = segs.map(s => nodeIdx(s)); return (a, b) => Math.min(...idx.map(i => Math.abs(nodeIdx(a) - i))) - Math.min(...idx.map(i => Math.abs(nodeIdx(b) - i))) || bySegOrder(a, b); };
+const TAG = {sells: "Sells", optimises: "Optimises", secures: "Secures", channels: "Distributes", implements: "Implements", finances: "Funds", complements: "Partners", owns: "Owns"};
+function topNames(id, excl, n = 3) { return bySeg[id].filter(p => keyOf(p.name) !== excl).slice(0, n).map(p => p.name).join(" · "); }
+function segLine(id, excl, extra) {
+  const s = SEG[id], list = bySeg[id].filter(p => keyOf(p.name) !== excl), c = list.length, max = 10;
+  return `<li><button type="button" class="slh" data-seg="${id}"><b>${esc(s.name)}</b><span>${esc(s.node.name)}${c ? ` · ${c} listed` : " · " + esc(s.desc)}</span></button>${extra ? `<em>${extra}</em>` : ""}${c ? `<div class="cos">${list.slice(0, max).map(p => `<button type="button" data-find="${esc(p.name)}">${esc(p.name)}</button>`).join("")}${c > max ? `<button type="button" class="more" data-seg="${id}">+${c - max} more</button>` : ""}</div>` : ""}</li>`; }
+function chips(list, attr) { return list.map(o => `<button type="button" ${attr}="${esc(o.name)}">${esc(o.name)}</button>`).join(""); }
+function groupLinks(links, side) { const m = new Map(); links.forEach(l => { const k = side === "out" ? l.to : l.from; if (!m.has(k)) m.set(k, []); if (!m.get(k).some(x => x.type === l.type && x.flow === l.flow)) m.get(k).push(l); }); return m; }
+function linkNote(ls, own) { return ls.map(l => `<span class="rt rt-${l.type}">${TAG[l.type]}</span> ${own && own.size > 1 && own.has(l.from) ? `<b class="via">${esc(SEG[l.from].name)}:</b> ` : ""}${esc(l.flow)}`).join("<br>"); }
+function hostOf(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return ""; } }
+function renderFit(sub) {
+  const own = new Set(sub.segs), kk = sub.key || "";
+  const outs = sub.segs.flatMap(s => OUT[s]).filter(l => !own.has(l.to));
+  const ins = sub.segs.flatMap(s => IN[s]).filter(l => !own.has(l.from));
+  const sellTypes = ["sells", "optimises", "secures", "implements", "channels", "finances"];
+  const custMap = groupLinks(outs.filter(l => sellTypes.includes(l.type)), "out");
+  const custIds = [...custMap.keys()].sort((a, b) => bySegOrder(a, b));
+  const near = nearTo(sub.segs);
+  const inBy = t => [...groupLinks(ins.filter(l => l.type === t), "in").entries()].sort((a, b) => near(a[0], b[0]));
+  const partners = [...groupLinks(outs.filter(l => l.type === "complements"), "out").entries()];
+  const seen = new Set([kk]), peers = []; sub.segs.forEach(s => bySeg[s].forEach(o => { const k = keyOf(o.name); if (!seen.has(k)) { seen.add(k); peers.push(o); } }));
+  const nm = sub.name.toLowerCase().replace(/\s*\(.*\)/, "").trim();
+  const backers = sub.persona ? [] : INV.filter(i => i.roles.some(r => (r.portfolio || "").toLowerCase().split(/[,;]\s*/).some(x => x.replace(/\s*\(.*\)/, "").trim() === nm)));
+  const active = INV.map(i => ({i, n: i.roles.filter(r => own.has(r.subsegment)).length})).filter(x => x.n && !backers.includes(x.i)).sort((a, b) => b.n - a.n).slice(0, 10).map(x => x.i);
+  const funders = inBy("finances");
+  const myNodes = new Set(sub.segs.map(s => SEG[s].node.id)), custNodes = new Set(custIds.map(c => SEG[c].node.id)), upNodes = new Set(ins.filter(l => l.type === "sells").map(l => SEG[l.from].node.id));
+  const strip = NODES.map(n => { const c = myNodes.has(n.id) ? "you" : custNodes.has(n.id) ? "sell" : upNodes.has(n.id) ? "up" : ""; return `<button type="button" class="mc ${c}" data-gonode="${n.id}" title="${esc(n.name)}"><span>${esc(n.short)}</span></button>`; }).join("");
+  const list = (pairs, max) => pairs.length ? `<ul>${pairs.slice(0, max).map(([id, ls]) => segLine(id, kk, linkNote(ls, own))).join("")}</ul>${pairs.length > max ? `<p class="fd">+${pairs.length - max} more</p>` : ""}` : "";
+  const sec = (title, desc, body, wide) => body ? `<div class="fcol${wide ? " wide" : ""}"><div class="label">${title}</div>${desc ? `<p class="fd">${desc}</p>` : ""}${body}</div>` : "";
+  const who = sub.persona ? "you" : esc(sub.name);
+  $("#fit").innerHTML = `<div class="fh"><div><div class="label">${sub.persona ? "Your view" : "Where it fits"}</div><h3>${esc(sub.name)}</h3>${sub.oneLiner ? `<p>${esc(sub.oneLiner)}</p>` : ""}
+      <div class="where">${sub.segs.map(s => `<button type="button" data-seg="${s}">${esc(SEG[s].node.name)} · ${esc(SEG[s].name)}</button>`).join("")}</div></div>
+      <div class="fact">${sub.url ? `<a class="x2 web" href="${esc(sub.url)}" target="_blank" rel="noopener">Visit ${esc(sub.host)} ↗</a>` : ""}<button type="button" class="x2" data-showmap>See it on the full map</button></div></div>
+    <div class="strip2" aria-label="Where this sits in the chain">${strip}<div class="legend"><span class="you">${sub.persona ? "You" : "Its boxes"}</span><span class="sell">Who it sells to or serves</span><span class="up">What it builds on</span></div></div>
+    <div class="egowrap" id="fitEgo"></div>
+    <div class="fgrid">
+      ${sec("Who " + (sub.persona ? "you sell" : "it sells") + " to, and with what", "Each buyer box, the relationship, and what flows to it. The companies already in each box are the prospects.", list(custIds.map(c => [c, custMap.get(c)]), 16), true)}
+      ${sec("Peers", `${peers.length} others in the same boxes: competitors, alternatives, possible partners.`, peers.length ? `<div class="peers">${chips(peers.slice(0, 30), "data-find")}</div>` : "")}
+      ${sec("Partners", "Boxes it integrates or co-sells with.", list(partners, 8))}
+      ${sec("Ownership", "Captive units: boxes it owns, or the parent box it is part of.", list([...groupLinks(outs.filter(l => l.type === "owns"), "out").entries(), ...inBy("owns")], 6))}
+      ${sec("Sold through", "Marketplaces, aggregators, partner programmes and channels for this kind of offering.", list(inBy("channels"), 8))}
+      ${sec("Implemented by", "Services firms that deploy this kind of offering.", list(inBy("implements"), 6))}
+      ${sec("What " + (sub.persona ? "you build" : who + " builds") + " on", "Suppliers of the products, capacity, models and data it depends on.", list(inBy("sells"), 12))}
+      ${sec("What makes " + who + " faster or cheaper", "Optimisation vendors aimed at its boxes, nearest in the chain first.", list(inBy("optimises"), 20))}
+      ${sec("What keeps " + who + " safe and compliant", "Security, monitoring, evaluation and governance aimed at its boxes, nearest first.", list(inBy("secures"), 20))}
+      ${sec("Capital", backers.length ? "Backers named in public portfolios, then investors active in its boxes." : "Investors with portfolio companies in its boxes, and other sources of capital.", (backers.length || active.length || funders.length) ? `${backers.length ? `<div class="peers backers">${chips(backers, "data-inv")}</div>` : ""}${active.length ? `<div class="peers">${chips(active, "data-inv")}</div>` : ""}${funders.length ? list(funders, 4) : ""}` : "")}
+    </div>
+    ${sub.persona ? "" : `<div class="notfound" style="padding-top:14px"><p style="font-size:13px;color:var(--muted)">Is this wrong or out of date? <a href="${esc(issueURL("atlas-correct.yml", "[Atlas] Correction: " + sub.name))}" target="_blank" rel="noopener">Suggest a correction</a> or <a href="${esc(issueURL("atlas-claim.yml", "[Atlas] Claim: " + sub.name))}" target="_blank" rel="noopener">claim this listing</a>.</p></div>`}`;
+  st.fitSubject = sub;
+  renderEgo($("#fitEgo"), {title: sub.name, sub: "", segs: sub.segs, root: true, url: sub.url});
+}
+/* ---------- ecosystem diagram ---------- */
+const EGO_STYLE = {sells: {c: "var(--ink)", d: ""}, optimises: {c: "var(--violet)", d: ""}, secures: {c: "var(--ink)", d: "5 4"}, channels: {c: "var(--peri)", d: ""}, implements: {c: "var(--muted)", d: "2 3"}, complements: {c: "var(--fine)", d: "2 3"}, finances: {c: "var(--peri)", d: "6 3"}, owns: {c: "var(--muted)", d: ""}};
+const egoState = {};
+function egoGroups(segs) {
+  const own = new Set(segs);
+  const outs = segs.flatMap(s => OUT[s]).filter(l => !own.has(l.to)), ins = segs.flatMap(s => IN[s]).filter(l => !own.has(l.from));
+  const near = nearTo(segs), g = (ls, side) => [...groupLinks(ls, side).entries()].sort((a, b) => near(a[0], b[0]));
+  return {
+    top: [["Builds on", g(ins.filter(l => l.type === "sells" || l.type === "finances"), "in")]],
+    left: [["Made faster or cheaper by", g(ins.filter(l => l.type === "optimises"), "in")], ["Kept safe and compliant by", g(ins.filter(l => l.type === "secures"), "in")]],
+    right: [["Partners", g(outs.filter(l => l.type === "complements"), "out")], ["Sold through", g(ins.filter(l => l.type === "channels"), "in")], ["Implemented by", g(ins.filter(l => l.type === "implements"), "in")], ["Ownership", g([...outs.filter(l => l.type === "owns")], "out").concat(g(ins.filter(l => l.type === "owns"), "in"))]],
+    bottom: [["Sells to and serves", g(outs.filter(l => !["complements", "owns"].includes(l.type)), "out")]],
+  };
+}
+function egoCard(id, ls, max) {
+  const s = SEG[id], types = [...new Set(ls.map(l => l.type))];
+  return `<button type="button" class="ecard" data-ego="${id}" data-types="${types.join(" ")}" data-flow="${esc(ls.map(l => TAG[l.type] + ": " + l.flow).join(" · "))}" data-cos="${esc(bySeg[id].slice(0, 10).map(p => p.name).join(", ") + (bySeg[id].length > 10 ? ` and ${bySeg[id].length - 10} more` : ""))}">
+    <span class="en">${esc(s.name)}</span><span class="em">${esc(s.node.short)}${bySeg[id].length ? " · " + bySeg[id].length : ""}</span>
+    <span class="et">${types.map(t => `<i class="rt rt-${t}">${TAG[t]}</i>`).join("")}</span></button>`;
+}
+function egoGroupHTML(title, pairs, max) {
+  if (!pairs.length) return "";
+  return `<div class="egrp"><div class="eh">${esc(title)} <span>${pairs.length}</span></div><div class="ecards">${pairs.slice(0, max).map(([id, ls]) => egoCard(id, ls)).join("")}${pairs.length > max ? `<span class="emore">+${pairs.length - max} more in the lists below</span>` : ""}</div></div>`;
+}
+function renderEgo(el, center) {
+  // center = {key, title, sub, segs, root}
+  const st2 = egoState[el.id] = egoState[el.id] || {trail: []};
+  if (center.root) st2.trail = [center]; else st2.trail.push(center);
+  drawEgo(el);
+}
+function drawEgo(el) {
+  const st2 = egoState[el.id], c = st2.trail[st2.trail.length - 1], G = egoGroups(c.segs);
+  const sideHTML = (groups, max) => groups.map(([t, p]) => egoGroupHTML(t, p, max)).join("");
+  const crumbs = st2.trail.length > 1 ? `<div class="ecrumbs">${st2.trail.map((x, i) => i < st2.trail.length - 1 ? `<button type="button" data-egoback="${i}">${esc(x.title)}</button> → ` : `<b>${esc(x.title)}</b>`).join("")}</div>` : "";
+  el.innerHTML = `${crumbs}<div class="ego">
+    <svg class="elines" aria-hidden="true"></svg>
+    <div class="etop">${sideHTML(G.top, 6)}</div>
+    <div class="eleft">${sideHTML(G.left, 10)}</div>
+    <div class="ecenter"><div class="ecc" data-center><div class="label">${c.segs.length > 1 ? "Company" : esc(SEG[c.segs[0]].node.name)}</div><b>${esc(c.title)}</b>${c.sub ? `<p>${esc(c.sub)}</p>` : ""}
+      ${c.url ? `<a class="eweb" href="${esc(c.url)}" target="_blank" rel="noopener">${esc(hostOf(c.url))} ↗</a>` : ""}${c.segs.length > 1 ? `<div class="ecb">${c.segs.map(s => `<span>${esc(SEG[s].name)}</span>`).join("")}</div>` : `<button type="button" class="ecl" data-seg="${c.segs[0]}">See the ${bySeg[c.segs[0]].length} listings</button>`}</div></div>
+    <div class="eright">${sideHTML(G.right, 5)}</div>
+    <div class="ebottom">${sideHTML(G.bottom, 8)}</div>
+  </div>
+  <div class="elegend">${["sells", "optimises", "secures", "channels", "complements", "implements"].map(t => `<span><svg width="26" height="8"><line x1="0" y1="4" x2="26" y2="4" stroke="${EGO_STYLE[t].c}" stroke-width="2" stroke-dasharray="${EGO_STYLE[t].d}"/></svg>${TAG[t]}</span>`).join("")}<span class="ehint" data-einfo>Hover a card to see what flows and who is in it. Click one to re-centre on it.</span></div>`;
+  requestAnimationFrame(() => egoLines(el));
+}
+function egoLines(el) {
+  const ego = el.querySelector(".ego"); if (!ego) return;
+  const svg = ego.querySelector(".elines"), box = ego.getBoundingClientRect(), cc = ego.querySelector(".ecc");
+  if (!cc || getComputedStyle(svg).display === "none") return;
+  const C = cc.getBoundingClientRect(); svg.setAttribute("width", box.width); svg.setAttribute("height", box.height);
+  const rel = r => ({l: r.left - box.left, r: r.right - box.left, t: r.top - box.top, b: r.bottom - box.top, cx: r.left - box.left + r.width / 2, cy: r.top - box.top + r.height / 2});
+  const c = rel(C); let out = "";
+  ego.querySelectorAll(".ecard").forEach(card => {
+    const r = rel(card.getBoundingClientRect()), zone = card.closest(".etop,.eleft,.eright,.ebottom").className, t = card.dataset.types.split(" ")[0], s = EGO_STYLE[t] || EGO_STYLE.sells;
+    let x1, y1, x2, y2, d;
+    if (zone === "etop") { x1 = r.cx; y1 = r.b; x2 = c.cx; y2 = c.t; const my = (y1 + y2) / 2; d = `M${x1},${y1} C${x1},${my} ${x2},${my} ${x2},${y2}`; }
+    else if (zone === "ebottom") { x1 = c.cx; y1 = c.b; x2 = r.cx; y2 = r.t; const my = (y1 + y2) / 2; d = `M${x1},${y1} C${x1},${my} ${x2},${my} ${x2},${y2}`; }
+    else if (zone === "eleft") { x1 = r.r; y1 = r.cy; x2 = c.l; y2 = c.cy; const mx = (x1 + x2) / 2; d = `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`; }
+    else { x1 = c.r; y1 = c.cy; x2 = r.l; y2 = r.cy; const mx = (x1 + x2) / 2; d = `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`; }
+    out += `<path data-for="${card.dataset.ego}" d="${d}" stroke="${s.c}" stroke-dasharray="${s.d}"/>`;
+  });
+  svg.innerHTML = out + `<circle cx="${c.cx}" cy="${c.t}" r="3"/><circle cx="${c.cx}" cy="${c.b}" r="3"/>`;
+}
+function egoHover(card, on) {
+  const ego = card.closest(".ego"), wrap = ego.parentElement;
+  ego.classList.toggle("focus", on);
+  ego.querySelectorAll(`path[data-for="${card.dataset.ego}"]`).forEach(p => p.classList.toggle("on", on));
+  card.classList.toggle("on", on);
+  const info = wrap.querySelector("[data-einfo]"); if (info) info.innerHTML = on ? `<b>${esc(SEG[card.dataset.ego].name)}</b>: ${esc(card.dataset.flow)}${card.dataset.cos ? `<br><span class="ecos">Companies: ${esc(card.dataset.cos)}</span>` : ""}` : "Hover a card to see what flows and who is in it. Click one to re-centre on it.";
+}
+document.addEventListener("mouseover", e => { const c = e.target.closest(".ecard"); if (c && !c.contains(e.relatedTarget)) egoHover(c, true); });
+document.addEventListener("mouseout", e => { const c = e.target.closest(".ecard"); if (c && !c.contains(e.relatedTarget)) egoHover(c, false); });
+document.addEventListener("focusin", e => { const c = e.target.closest(".ecard"); if (c) egoHover(c, true); });
+document.addEventListener("focusout", e => { const c = e.target.closest(".ecard"); if (c) egoHover(c, false); });
+window.addEventListener("resize", () => document.querySelectorAll(".egowrap").forEach(el => egoLines(el)));
+
+function findCompany(q) {
+  const k = keyOf(q); if (!k) return;
+  const p = BYKEY[k] || P.find(x => keyOf(x.name).startsWith(k)) || P.find(x => keyOf(x.name).includes(k));
+  const x = X.find(c => keyOf(c.name) === k) || (p && X.find(c => keyOf(c.name) === keyOf(p.name)));
+  const inv = INV.find(c => keyOf(c.name) === k);
+  setMode("company");
+  if (!p && !x && inv) return renderInvestor(inv);
+  if (!p && !x) {
+    const req = issueURL("atlas-suggest.yml", `[Atlas] Add: ${q}`, `Name: ${q}\nWebsite:\nWhich box:\nWhat it sells (one line):\nSource:\n`);
+    $("#fit").innerHTML = `<div class="fh"><div><div class="label">Not listed yet</div><h3>${esc(q)}</h3><p>This company is not in the atlas yet. Request a listing and it will be reviewed in the next fortnightly pass. Say what it sells and link a source. Listings are free and never paid for.</p></div></div>
+      <div class="notfound"><p><a class="btn" href="${esc(req)}" target="_blank" rel="noopener">Request a listing for ${esc(q)}</a></p><p>No GitHub account? Email <span style="user-select:all">mukundhan@progma.co.in</span> with the company name, website, what it sells in one line, and where you think it fits.</p></div>`;
+    return;
+  }
+  const segs = new Set(); if (p) p.subsegments.forEach(s => segs.add(s)); if (x) x.roles.forEach(r => SEG[r.subsegment] && segs.add(r.subsegment));
+  // gather the same company's product listings, e.g. "GMI Cloud" + "GMI Cloud Inference Engine", "Crusoe" + "Crusoe Managed Inference"
+  const base = keyOf(((x || p).name).replace(/\s*\(.*\)/, "")), fam = [];
+  if (base.length >= 4) P.forEach(e => { const ek = keyOf(e.name); if (e !== p && (ek.startsWith(base) || (e.parent && keyOf(e.parent).startsWith(base)))) { fam.push(e); e.subsegments.forEach(s => segs.add(s)); } });
+  const name = (x || p).name, role = s => { const r = x && x.roles.find(r => r.subsegment === s); return r ? r.offering : (p ? p.one_liner : ""); };
+  const akas = [...new Set([...((p && p.aka) || []), ...fam.map(e => e.name)])];
+  const one = (p ? p.one_liner : x.summary) + (akas.length ? ` Includes: ${akas.join(", ")}.` : "");
+  const url = (p && p.url) || (x && x.url) || "";
+  renderFit({name, key: keyOf(name), segs: [...segs].sort(bySegOrder), oneLiner: one, persona: false, url, host: hostOf(url)});
+  st.persona = ""; $("#persona").value = "";
+}
+function renderInvestor(inv) {
+  $("#fit").innerHTML = `<div class="fh"><div><div class="label">Investor</div><h3>${esc(inv.name)}</h3><p>${esc(inv.summary || "")}</p></div><div class="fact"><button type="button" class="x2" data-trace="${esc(inv.name)}">See its footprint on the map</button></div></div>
+   <div class="fgrid"><div class="fcol wide"><div class="label">Where it invests</div><ul>${inv.roles.map(r => segLine(r.subsegment, "", "Backs " + esc(r.portfolio))).join("")}</ul></div></div>`;
+  st.fitSubject = {name: inv.name, trace: true};
+}
+function personaFit(pid) {
+  const per = PERSONAS.find(p => p.id === pid); if (!per) return;
+  setMode("company"); st.persona = pid;
+  renderFit({name: per.name, key: "", segs: per.self.filter(s => SEG[s]), oneLiner: per.blurb.charAt(0).toUpperCase() + per.blurb.slice(1), persona: true});
+}
+
+/* ---------- segment explorer ---------- */
+function renderSegList() {
+  const q = ($("#segIn").value || "").trim().toLowerCase();
+  const match = s => !q || s.name.toLowerCase().includes(q) || s.desc.toLowerCase().includes(q) || s.node.name.toLowerCase().includes(q) || bySeg[s.id].some(p => p.name.toLowerCase().includes(q));
+  const LN = Object.fromEntries(LAYERS.map(l => [l.id, l.name]));
+  let h = "", total = 0;
+  NODES.forEach((n, i) => {
+    const segs = n.subsegments.filter(s => match({...s, node: n})); if (!segs.length) return; total += segs.length;
+    h += `<div class="sgroup"><div class="sgh"><span class="ix">${String(i + 1).padStart(2, "0")}</span><b>${esc(n.name)}</b></div><div class="sgrid">` +
+      segs.map(s => `<button type="button" class="srow" data-seg="${s.id}"><span class="sl">${esc(LN[s.layer])}</span><b>${esc(s.name)}</b><span class="sd">${bySeg[s.id].length ? bySeg[s.id].length + " listed · " + esc(topNames(s.id, "", 3)) : esc(s.desc)}</span></button>`).join("") + `</div></div>`;
+  });
+  $("#seglist").innerHTML = h || `<p class="empty">No segment matches “${esc(q)}”. <a href="${esc(issueURL("atlas-suggest.yml", "[Atlas] New segment: " + q))}" target="_blank" rel="noopener">Suggest it as a new segment</a>.</p>`;
+}
+
+/* ---------- modes ---------- */
+function setMode(m) {
+  st.mode = m;
+  document.querySelectorAll("[data-mode]").forEach(b => b.setAttribute("aria-pressed", b.dataset.mode === m));
+  ["map", "segment", "company"].forEach(x => $("#mode-" + x).hidden = x !== m);
+  if (m === "segment") renderSegList();
+  if (m === "map") update(); else writeHash();
+}
+$("#findForm").addEventListener("submit", e => { e.preventDefault(); findCompany($("#findIn").value.trim()); });
+$("#segIn").addEventListener("input", renderSegList);
+
+
 /* events */
 document.addEventListener("click", e => {
   const t = e.target;
-  const box = t.closest(".box"); if (box) { segTab = "all"; return showSeg(box.dataset.seg); }
+  const ec = t.closest(".ecard"); if (ec) { const w = ec.closest(".egowrap"); renderEgo(w, {title: SEG[ec.dataset.ego].name, sub: SEG[ec.dataset.ego].desc, segs: [ec.dataset.ego]}); w.scrollIntoView({behavior: "smooth", block: "start"}); return; }
+  const eb = t.closest("[data-egoback]"); if (eb) { const w = eb.closest(".egowrap"), s2 = egoState[w.id]; s2.trail = s2.trail.slice(0, +eb.dataset.egoback + 1); drawEgo(w); return; }
+  const sr = t.closest(".srow"); if (sr) { const w = $("#segEgo"); w.hidden = false; renderEgo(w, {title: SEG[sr.dataset.seg].name, sub: SEG[sr.dataset.seg].desc, segs: [sr.dataset.seg], root: true}); w.scrollIntoView({behavior: "smooth", block: "start"}); return; }
+  const md = t.closest("[data-mode]"); if (md) { setMode(md.dataset.mode); return; }
+  const iv = t.closest("[data-inv]"); if (iv) { const inv = INV.find(i => i.name === iv.dataset.inv); if (inv) { renderInvestor(inv); $("#fit").scrollIntoView({behavior: "smooth", block: "start"}); } return; }
+  const gn = t.closest("[data-gonode]"); if (gn) { st.node = gn.dataset.gonode; if (st.fitSubject && !st.fitSubject.persona) st.trace = st.fitSubject.name, $("#trace").value = st.trace; setMode("map"); $("#guided").scrollIntoView({behavior: "smooth", block: "start"}); return; }
+  if (t.closest("[data-showmap]")) { const sub = st.fitSubject; if (sub && !sub.persona) { st.trace = sub.name; $("#trace").value = sub.name; } if (sub && sub.segs && sub.segs.length) st.node = SEG[sub.segs[0]].node.id; setMode("map"); focusTrace(); return; }
+  const ws = t.closest(".where [data-seg], .fcol [data-seg], .rel [data-seg], .ecl"); if (ws) { segTab = "all"; return showSeg(ws.dataset.seg); }
+  const fd = t.closest("[data-find]"); if (fd) { $("#findIn").value = fd.dataset.find; findCompany(fd.dataset.find); $("#fit").scrollIntoView({behavior: "smooth", block: "start"}); return; }
+  const box = t.closest(".box,.scard"); if (box) { segTab = "all"; return showSeg(box.dataset.seg); }
+  const nb = t.closest("[data-node]"); if (nb) { st.node = nb.dataset.node; update(); if (nb.closest(".nvnav")) $("#nodeview").scrollIntoView({behavior: "smooth", block: "start"}); return; }
+  const vb = t.closest("[data-view]"); if (vb) { st.view = vb.dataset.view; document.querySelectorAll("[data-view]").forEach(b => b.setAttribute("aria-pressed", b === vb)); $("#guided").hidden = st.view !== "guided"; $("#matrix").hidden = st.view !== "matrix"; $("#densityCtl").hidden = st.view !== "matrix"; $("#viewTitle").textContent = st.view === "matrix" ? "Every link and layer at once" : "Twelve links from power to people"; update(); return; }
   const tab = t.closest("[data-tab]"); if (tab) { segTab = tab.dataset.tab; return showSeg($("#drawer").dataset.seg); }
   const tb = t.closest(".tbtn"); if (tb) return showTransitions(tb.dataset.tr);
   const lb = t.closest("#lens button"); if (lb) { st.lens = lb.dataset.v; return update(); }
   const db = t.closest("#density button"); if (db) { st.dense = db.dataset.v === "dense"; document.querySelectorAll("#density button").forEach(b => b.setAttribute("aria-pressed", b === db)); return buildBoard(); }
-  const xb = t.closest("#xn button"); if (xb) { st.trace = st.trace === xb.dataset.n ? "" : xb.dataset.n; $("#trace").value = st.trace; update(); $("#scroll").scrollIntoView({behavior: "smooth", block: "start"}); return; }
-  const tm = t.closest("[data-trace]"); if (tm) { st.trace = tm.dataset.trace; $("#trace").value = st.trace; closeDrawer(); update(); $("#scroll").scrollIntoView({behavior: "smooth", block: "start"}); return; }
+  const xb = t.closest("#xn button"); if (xb) { st.trace = st.trace === xb.dataset.n ? "" : xb.dataset.n; $("#trace").value = st.trace; focusTrace(); return; }
+  const tm = t.closest("[data-trace]"); if (tm) { st.trace = tm.dataset.trace; $("#trace").value = st.trace; closeDrawer(); focusTrace(); return; }
   const pb = t.closest("[data-persona]"); if (pb) { st.persona = pb.dataset.persona; $("#persona").value = st.persona; closeDrawer(); return update(); }
   const ad = t.closest("[data-add]"); if (ad) { const k = ad.dataset.add; st.stack.has(k) ? st.stack.delete(k) : st.stack.add(k); ad.setAttribute("aria-pressed", st.stack.has(k)); ad.textContent = st.stack.has(k) ? "In my stack" : "+ My stack"; return update(); }
   if (t.closest("#stackBtn,#openStack,#openStack2")) return showStack();
   if (t.closest("#clearStack")) { st.stack.clear(); update(); return showStack(); }
   if (t.closest("#copyStack")) { writeHash(); const url = location.href, btn = t.closest("#copyStack"); (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(() => btn.textContent = "Copied", () => { btn.textContent = "Copy from address bar"; }); return; }
-  const gb = t.closest("[data-gallery]"); if (gb) { const s = DATA.stacks[+gb.dataset.gallery]; st.stack = new Set(s.items.map(keyOf).filter(k => BYKEY[k])); update(); $("#scroll").scrollIntoView({behavior: "smooth"}); return; }
+  const gb = t.closest("[data-gallery]"); if (gb) { const s = DATA.stacks[+gb.dataset.gallery]; st.stack = new Set(s.items.map(keyOf).filter(k => BYKEY[k])); update(); $("#guided").scrollIntoView({behavior: "smooth"}); return; }
 });
 $("#dx").onclick = closeDrawer;
 document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#drawer").hidden) closeDrawer(); });
-$("#persona").onchange = e => { st.persona = e.target.value; update(); };
+$("#persona").onchange = e => { if (e.target.value) personaFit(e.target.value); else { st.persona = ""; update(); } };
 $("#region").onchange = e => { st.region = e.target.value; update(); };
 $("#stage").onchange = e => { st.stage = e.target.value; update(); };
-$("#trace").addEventListener("input", e => { const v = e.target.value.trim(); if (!v || traceNames.some(n => keyOf(n) === keyOf(v))) { st.trace = v; update(); } });
+$("#trace").addEventListener("input", e => { const v = e.target.value.trim(); if (!v || traceNames.some(n => keyOf(n) === keyOf(v))) { st.trace = v; v ? focusTrace() : update(); } });
 $("#reset").onclick = () => { Object.assign(st, {lens: "all", persona: "", region: "All regions", stage: "Any stage", trace: ""}); $("#persona").value = ""; $("#region").value = "All regions"; $("#stage").value = "Any stage"; $("#trace").value = ""; update(); };
 window.addEventListener("resize", () => requestAnimationFrame(drawTraces));
 if (document.fonts) document.fonts.ready.then(() => requestAnimationFrame(drawTraces));
