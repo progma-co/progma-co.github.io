@@ -1,0 +1,2896 @@
+{
+ "node": "n0",
+ "notes": {
+  "n0.power": "Utilities/IPPs with nuclear fleets (Constellation, Vistra, Talen) dominate near-term supply; SMR and fusion startups sell long-dated offtakes (Meta signed up to 6.6 GW of nuclear deals with Vistra, Oklo and TerraPower in Jan 2026); gas turbines are supply-constrained.",
+  "n0.dcdev": "Hyperscale development is financed by infra/PE and sovereign capital (Aligned sold for $40B to AIP/MGX/GIP in 2026); ex-bitcoin miners and neoclouds (Crusoe, Core Scientific, IREN) are a fast-growing AI-only tier; India adds new GW-scale entrants (TCS HyperVault, Reliance Jamnagar, AdaniConneX-Google Vizag).",
+  "n0.grid": "Concentrated among Schneider, Eaton, Vertiv, ABB, Siemens and GE Vernova; transformers and gas turbines have multi-year lead times, opening room for Korean transformer makers.",
+  "n0.cooling": "Rapid consolidation in 2025-26: Schneider-Motivair, Eaton-Boyd ($9.5B), Trane-LiquidStack, Ecolab-CoolIT ($4.75B); remaining independents are mostly two-phase/immersion startups.",
+  "n0.build": "US general contractors (Turner, DPR, Holder) and electrical/mechanical specialists capture most spend; prefab power/cooling modules from Vertiv and Schneider shorten builds.",
+  "n0.capital": "Private infra, PE and Gulf sovereign capital (MGX, PIF) fund most campuses; SoftBank took DigitalBridge private (Sep 2026).",
+  "n0.opt": "Early-stage; grid-flexibility software (Emerald AI, $150M raise in 2026) is the newest category, alongside AI-driven cooling control and digital twins.",
+  "n0.ops": "DCIM is mature and fragmented; incumbents are electrical/HVAC majors' software arms plus specialist vendors and FM outsourcers.",
+  "n0.water": "Fragmented treatment market led by Ecolab, Veolia and Xylem; water rights increasingly gate permits",
+  "n0.storage": "Bridge power is mostly gas (gensets, turbines, fuel cells) with batteries smoothing AI load swings",
+  "n0.fuel": "Gas pipelines feed behind-the-meter plants; HALEU supply (Centrus) gates advanced SMR fuel",
+  "n0.land": "Powered-land developers (Cloverleaf, Tract) pre-secure grid interconnects before selling to builders"
+ },
+ "entries": [
+  {
+   "name": "ABB",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Switchgear, UPS, transformers and electrification for data centres",
+   "url": "https://www.abb.com",
+   "source": "https://www.abb.com"
+  },
+  {
+   "name": "Accelsius",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling",
+    "n3.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Two-phase direct-to-chip liquid cooling",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://accelsius.com",
+   "source": "https://accelsius.com"
+  },
+  {
+   "name": "Adani Green Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "parent": "Adani Group",
+   "one_liner": "India's largest renewables developer, supplying Adani and partner DC campuses",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.adanigreenenergy.com",
+   "source": "https://www.adanigreenenergy.com"
+  },
+  {
+   "name": "AdaniConneX",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Adani Enterprises / EdgeConneX JV",
+   "one_liner": "Indian hyperscale DC JV targeting GW-scale; partner on Google's Visakhapatnam AI hub",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.adaniconnex.com",
+   "source": "https://container-news.com/adani-and-google-partner-to-build-data-centre-in-visakhapatnam"
+  },
+  {
+   "name": "AECOM",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Engineering, design and construction management for DC campuses",
+   "url": "https://aecom.com",
+   "source": "https://aecom.com"
+  },
+  {
+   "name": "AI Infrastructure Partnership (AIP)",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "BlackRock, GIP, MGX, Microsoft, NVIDIA",
+   "one_liner": "Investment partnership funding AI DCs and energy",
+   "url": "https://www.blackrock.com",
+   "source": "https://www.datacenterdynamics.com/en/news/mgx-aip-and-blackrocks-gip-complete-40bn-acquisition-of-aligned-data-centers/"
+  },
+  {
+   "name": "AirTrunk",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "Blackstone / CPP Investments",
+   "one_liner": "Hyperscale DC developer across Australia, Japan and Southeast Asia",
+   "url": "https://airtrunk.com",
+   "source": "https://airtrunk.com"
+  },
+  {
+   "name": "Aligned Data Centers",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "AIP / MGX / BlackRock GIP (2026)",
+   "one_liner": "Hyperscale and AI-ready DC developer in the US and Latin America",
+   "url": "https://aligneddc.com",
+   "source": "https://aligneddc.com/press-release/aip-mgx-and-blackrocks-gip-close-acquisition-of-aligned-data-centers/",
+   "note": "$40B acquisition by AI Infrastructure Partnership, MGX and GIP closed 2026"
+  },
+  {
+   "name": "Applied Digital",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Builds and leases high-density AI DC campuses in North Dakota",
+   "url": "https://www.applieddigital.com",
+   "source": "https://www.applieddigital.com"
+  },
+  {
+   "name": "Asia Vital Components (AVC)",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Taiwanese thermal modules, cold plates and liquid cooling for AI servers",
+   "url": "https://www.avc.co",
+   "source": "https://www.avc.co"
+  },
+  {
+   "name": "atNorth",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IS",
+   "region": "Europe",
+   "status": "private",
+   "parent": "Partners Group",
+   "one_liner": "Nordic DC operator for HPC/AI in Iceland, Sweden, Finland, Denmark",
+   "url": "https://www.atnorth.com",
+   "source": "https://www.atnorth.com"
+  },
+  {
+   "name": "Auras Technology",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Taiwanese cold plates and liquid-cooling components for GPU servers",
+   "url": "https://www.auras.com.tw",
+   "source": "https://www.auras.com.tw"
+  },
+  {
+   "name": "Bechtel",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "EPC for power plants and GW-scale campus infrastructure",
+   "url": "https://www.bechtel.com",
+   "source": "https://www.bechtel.com"
+  },
+  {
+   "name": "Black & Veatch",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Engineering for DC power, substations and grid interconnects",
+   "url": "https://www.bv.com",
+   "source": "https://www.bv.com"
+  },
+  {
+   "name": "Blackstone",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital",
+    "n4.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Largest DC investor; owns QTS and AirTrunk",
+   "tags": [],
+   "url": "https://www.blackstone.com",
+   "source": "https://www.blackstone.com"
+  },
+  {
+   "name": "Bloom Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power",
+    "n0.grid",
+    "n0.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Solid-oxide fuel cells for on-site, behind-the-meter data-centre power",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.bloomenergy.com",
+   "source": "https://www.bloomenergy.com"
+  },
+  {
+   "name": "Blue Owl Capital",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital",
+    "n4.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Private capital backing Crusoe Abilene and Meta Hyperion JV",
+   "tags": [],
+   "url": "https://www.blueowl.com",
+   "source": "https://www.blueowl.com"
+  },
+  {
+   "name": "Boyd Thermal",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Eaton (2026)",
+   "one_liner": "Cold plates, CDUs and liquid-cooling loops for AI servers",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.boydcorp.com",
+   "source": "https://datacentrereview.com/2026/03/eaton-completes-boyd-thermal-acquisition-as-it-bolsters-liquid-cooling-offering/"
+  },
+  {
+   "name": "Brookfield Asset Management",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Infra investor in DCs (Compass, Data4, Digital Connexion) and power",
+   "url": "https://www.brookfield.com",
+   "source": "https://www.brookfield.com"
+  },
+  {
+   "name": "Brookfield Renewable",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "public",
+   "parent": "Brookfield",
+   "one_liner": "Hydro, wind and solar platform with multi-GW hyperscaler framework PPAs",
+   "url": "https://bep.brookfield.com",
+   "source": "https://bep.brookfield.com"
+  },
+  {
+   "name": "Cadence Reality DC (Future Facilities)",
+   "kind": "company",
+   "subsegments": [
+    "n0.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Cadence",
+   "one_liner": "DC digital twin for thermal and power capacity planning",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.cadence.com",
+   "source": "https://www.cadence.com"
+  },
+  {
+   "name": "Cameco",
+   "kind": "company",
+   "subsegments": [
+    "n0.fuel"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Uranium mining, conversion and fuel services; co-owner of Westinghouse",
+   "url": "https://www.cameco.com",
+   "source": "https://www.cameco.com/sites/default/files/documents/2025-10-28-USG-Brookfield-Cameco-news-release.pdf",
+   "note": "Oct 2025: partnership with US government and Brookfield for at least $80B of Westinghouse reactors"
+  },
+  {
+   "name": "CapitaLand (data centres)",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "CapitaLand",
+   "one_liner": "Developing DC campuses in Navi Mumbai, Chennai and Hyderabad",
+   "url": "https://www.capitaland.com",
+   "source": "https://www.capitaland.com"
+  },
+  {
+   "name": "Carrier",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling",
+    "n0.ops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Chillers, CRAH units and Nlyte DCIM software",
+   "url": "https://www.carrier.com",
+   "source": "https://www.carrier.com"
+  },
+  {
+   "name": "Caterpillar",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid",
+    "n0.power",
+    "n0.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Diesel/gas gensets and gas turbines (Solar Turbines) for backup and prime DC power",
+   "tags": [],
+   "url": "https://www.cat.com",
+   "source": "https://www.cat.com"
+  },
+  {
+   "name": "CATL",
+   "kind": "company",
+   "subsegments": [
+    "n0.storage"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Largest lithium battery maker; TENER grid-storage systems",
+   "url": "https://www.catl.com/en/",
+   "source": "https://www.catl.com/en/"
+  },
+  {
+   "name": "CBRE Data Center Solutions",
+   "kind": "company",
+   "subsegments": [
+    "n0.ops",
+    "n0.land"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "CBRE",
+   "one_liner": "Outsourced critical facilities management for DCs",
+   "tags": [],
+   "url": "https://www.cbre.com",
+   "source": "https://www.cbre.com"
+  },
+  {
+   "name": "Centrus Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.fuel"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Only US producer of HALEU; enrichment for advanced reactors",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.centrusenergy.com",
+   "source": "https://www.powermag.com/centrus-completes-900-kg-haleu-delivery-to-doe-in-u-s-nuclear-fuel-enrichment-milestone/",
+   "note": "Completed 900 kg HALEU delivery to DOE (Jun 2025); DOE contract extended; Ohio enrichment expansion"
+  },
+  {
+   "name": "Chindata Group",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "parent": "Bain Capital",
+   "one_liner": "Chinese hyperscale DC operator focused on ByteDance demand",
+   "url": "https://www.chindatagroup.com",
+   "source": "https://www.chindatagroup.com"
+  },
+  {
+   "name": "Cipher Mining",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Bitcoin miner leasing powered sites for AI/HPC tenants",
+   "url": "https://www.ciphermining.com",
+   "source": "https://www.ciphermining.com"
+  },
+  {
+   "name": "Cloverleaf Infrastructure",
+   "kind": "company",
+   "subsegments": [
+    "n0.land"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Powered-land developer securing utility power and land for AI data-centre campuses",
+   "url": "https://www.datacenterdynamics.com/en/news/nvidia-backs-data-center-powered-land-company-cloverleaf/",
+   "source": "https://www.datacenterdynamics.com/en/news/nvidia-backs-data-center-powered-land-company-cloverleaf/",
+   "note": "NVIDIA invested (2026); ~$300M raised; sites in Wisconsin, Oklahoma, Missouri"
+  },
+  {
+   "name": "Comfort Systems USA",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Mechanical/electrical contractor with modular build for data centres",
+   "url": "https://comfortsystemsusa.com",
+   "source": "https://comfortsystemsusa.com"
+  },
+  {
+   "name": "Commonwealth Fusion Systems",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Tokamak fusion developer; Google signed 200 MW offtake from ARC plant",
+   "url": "https://cfs.energy",
+   "source": "https://cfs.energy"
+  },
+  {
+   "name": "Compass Datacenters",
+   "kind": "company",
+   "subsegments": [
+    "n0.build",
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Brookfield / Ontario Teachers'",
+   "one_liner": "Hyperscale developer using standardised prefab building designs",
+   "url": "https://www.compassdatacenters.com",
+   "source": "https://www.compassdatacenters.com"
+  },
+  {
+   "name": "Constellation Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Largest US nuclear fleet operator; sells 24/7 carbon-free power PPAs to hyperscalers",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.constellationenergy.com",
+   "source": "https://www.powermag.com/constellation-completes-acquisition-of-calpine-groups-have-55-gw-of-generation-capacity-2/",
+   "note": "Closed $16.4B Calpine acquisition (~55 GW combined fleet); Crane (TMI-1) restart contracted to Microsoft"
+  },
+  {
+   "name": "CoolIT Systems",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling",
+    "n3.opt"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Ecolab (2026)",
+   "one_liner": "Direct-liquid-cooling cold plates and CDUs for AI servers",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.coolitsystems.com",
+   "source": "https://itbrief.co.uk/story/ecolab-completes-usd-4-75-billion-coolit-takeover",
+   "note": "Ecolab completed $4.75B acquisition from KKR (2026)"
+  },
+  {
+   "name": "Core Scientific",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Former bitcoin miner converting sites to high-density AI colocation, mainly for CoreWeave",
+   "url": "https://corescientific.com",
+   "source": "https://www.datacenterdynamics.com/en/news/core-scientific-completes-acquisition-of-polaris-ds/",
+   "note": "CoreWeave takeover rejected by shareholders (Oct 2025); acquired Polaris DS (Aug 2026)"
+  },
+  {
+   "name": "Crusoe",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev",
+    "n4.neo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Vertically integrated AI data-centre developer and cloud; built Stargate Abilene campus",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://www.crusoe.ai",
+   "source": "https://www.datacenterdynamics.com/en/news/crusoe-raises-14bn-valued-at-10bn/",
+   "note": "Later round reported at ~$30B valuation (2026)"
+  },
+  {
+   "name": "CtrlS Datacenters",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian Tier IV DC operator building AI-ready hyperscale campuses",
+   "url": "https://www.ctrls.com",
+   "source": "https://www.ctrls.com"
+  },
+  {
+   "name": "Cummins",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Backup diesel and gas generator sets for data centres",
+   "url": "https://www.cummins.com",
+   "source": "https://www.cummins.com"
+  },
+  {
+   "name": "Cushman & Wakefield",
+   "kind": "company",
+   "subsegments": [
+    "n0.land"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Data-centre advisory, site selection and leasing brokerage",
+   "url": "https://www.cushmanwakefield.com",
+   "source": "https://www.cushmanwakefield.com"
+  },
+  {
+   "name": "CyrusOne",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "KKR / GIP",
+   "one_liner": "Hyperscale DC developer in US and Europe",
+   "url": "https://www.cyrusone.com",
+   "source": "https://www.cyrusone.com"
+  },
+  {
+   "name": "Daikin Applied",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Daikin",
+   "one_liner": "Chillers and air handling for hyperscale DCs",
+   "url": "https://www.daikinapplied.com",
+   "source": "https://www.daikinapplied.com"
+  },
+  {
+   "name": "DataVolt",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "SA",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Saudi developer of sustainable AI DC campuses incl. NEOM",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://datavolt.com",
+   "source": "https://w.media/humain-datavolt-to-jointly-build-multi-gigawatt-ai-data-centers-in-saudi-arabia/"
+  },
+  {
+   "name": "DayOne",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Former GDS International; DCs in Malaysia (Johor), Indonesia, Thailand",
+   "url": "https://www.dayonedc.com",
+   "source": "https://www.dayonedc.com"
+  },
+  {
+   "name": "Deep Green",
+   "kind": "company",
+   "subsegments": [
+    "n0.opt"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Edge DCs that reuse waste heat for pools and district heating",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://deepgreen.energy",
+   "source": "https://deepgreen.energy"
+  },
+  {
+   "name": "Delta Electronics",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid",
+    "n0.cooling",
+    "n3.rackpower"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Power supplies, 800V DC power shelves, UPS and liquid-cooling CDUs",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.deltaww.com",
+   "source": "https://www.deltaww.com",
+   "note": "660 kW 800 VDC power rack with 480 kW BBUs (GTC 2026)"
+  },
+  {
+   "name": "Digital Connexion",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Reliance / Brookfield / Digital Realty JV",
+   "one_liner": "Indian hyperscale DC JV with Chennai and Mumbai campuses",
+   "url": "https://www.digitalconnexion.com",
+   "source": "https://www.digitalconnexion.com"
+  },
+  {
+   "name": "Digital Realty",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Global wholesale and colocation DC REIT",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.digitalrealty.com",
+   "source": "https://www.digitalrealty.com"
+  },
+  {
+   "name": "DigitalBridge",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "SoftBank Group (2026)",
+   "one_liner": "Digital-infrastructure investor (Vantage, Switch, DataBank)",
+   "url": "https://www.digitalbridge.com",
+   "source": "https://group.softbank/en/news/press/20260930",
+   "note": "SoftBank completed acquisition (Sep 2026)"
+  },
+  {
+   "name": "Dominion Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Utility serving Northern Virginia, world's largest data-centre market",
+   "url": "https://www.dominionenergy.com",
+   "source": "https://www.dominionenergy.com"
+  },
+  {
+   "name": "DPR Construction",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "General contractor specialising in mission-critical DC builds",
+   "url": "https://www.dpr.com",
+   "source": "https://www.dpr.com"
+  },
+  {
+   "name": "Eaton",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid",
+    "n0.cooling",
+    "n3.rackpower"
+   ],
+   "hq": "IE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "UPS, switchgear, busway; added liquid cooling via Boyd Thermal",
+   "tags": [],
+   "url": "https://www.eaton.com",
+   "source": "https://datacentrereview.com/2026/03/eaton-completes-boyd-thermal-acquisition-as-it-bolsters-liquid-cooling-offering/",
+   "note": "Closed $9.5B Boyd Thermal acquisition (Mar 2026)"
+  },
+  {
+   "name": "Ecolab",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling",
+    "n0.water"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Water treatment and, since 2026, liquid-cooling hardware via CoolIT",
+   "tags": [],
+   "url": "https://www.ecolab.com",
+   "source": "https://datacentremagazine.com/news/ecolab-closes-coolit-acquisition-to-scale-ai-cooling"
+  },
+  {
+   "name": "EkkoSense",
+   "kind": "company",
+   "subsegments": [
+    "n0.opt",
+    "n0.ops"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI thermal monitoring and cooling optimisation for DCs",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.ekkosense.com",
+   "source": "https://www.ekkosense.com"
+  },
+  {
+   "name": "EMCOR",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Electrical and mechanical contracting for data centres",
+   "url": "https://www.emcorgroup.com",
+   "source": "https://www.emcorgroup.com"
+  },
+  {
+   "name": "Emerald AI",
+   "kind": "company",
+   "subsegments": [
+    "n0.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Software making AI DCs flexible grid loads to speed interconnection",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.emeraldai.co",
+   "source": "https://thenextweb.com/news/emerald-ai-150m-funding-data-centre-grid-flexibility",
+   "note": "Raised $150M at $1.05B valuation (2026); NVIDIA-backed"
+  },
+  {
+   "name": "Energy Transfer",
+   "kind": "company",
+   "subsegments": [
+    "n0.fuel"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "US gas pipeline operator supplying gas to on-site data-centre generation",
+   "url": "https://www.energytransfer.com",
+   "source": "https://pgjonline.com/news/2025/october/energy-transfer-to-supply-voltagrid-powering-oracle-s-23-gw-ai-data-centers",
+   "note": "Oct 2025: gas supply deal for VoltaGrid/Oracle AI data centres"
+  },
+  {
+   "name": "Energy Vault",
+   "kind": "company",
+   "subsegments": [
+    "n0.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Battery and hybrid storage systems; partnering with data-centre operators on on-site storage",
+   "url": "https://www.energyvault.com",
+   "source": "https://www.datacenterdynamics.com/en/news/?tag=b-nest"
+  },
+  {
+   "name": "Entergy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Gulf South utility building gas generation for Meta's Hyperion campus in Louisiana",
+   "url": "https://www.entergy.com",
+   "source": "https://www.entergy.com"
+  },
+  {
+   "name": "Envicool",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Chinese precision air and liquid-cooling systems for DCs",
+   "url": "https://www.envicool.com",
+   "source": "https://www.envicool.com"
+  },
+  {
+   "name": "Equinix",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Largest global retail colocation and interconnection operator; xScale hyperscale JV",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.equinix.com",
+   "source": "https://www.equinix.com"
+  },
+  {
+   "name": "Fervo Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Enhanced geothermal developer supplying clean firm power, incl. Google deal",
+   "url": "https://fervoenergy.com",
+   "source": "https://fervoenergy.com"
+  },
+  {
+   "name": "Fluence",
+   "kind": "company",
+   "subsegments": [
+    "n0.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Grid-scale battery storage systems marketed to data centres as a buffer between AI load and grid",
+   "url": "https://fluenceenergy.com",
+   "source": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2026/2/fluence-exec-touts-batteries-as-shock-absorber-between-data-centers-grid-97565515",
+   "note": "2026: positioning BESS as a speed-to-power shock absorber for data centres"
+  },
+  {
+   "name": "Form Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Iron-air multi-day battery storage for utilities",
+   "url": "https://formenergy.com",
+   "source": "https://formenergy.com"
+  },
+  {
+   "name": "Galaxy Digital (Helios)",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev",
+    "n0.land"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Helios campus in Texas leased to CoreWeave for AI workloads",
+   "tags": [],
+   "url": "https://www.galaxy.com",
+   "source": "https://www.galaxy.com"
+  },
+  {
+   "name": "GDS Holdings",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Leading Chinese carrier-neutral hyperscale DC operator",
+   "url": "https://www.gds-services.com",
+   "source": "https://www.gds-services.com"
+  },
+  {
+   "name": "GE Vernova",
+   "kind": "company",
+   "subsegments": [
+    "n0.power",
+    "n0.grid"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Gas turbines, grid transformers and electrification equipment for power plants serving DCs",
+   "url": "https://www.gevernova.com",
+   "source": "https://www.gevernova.com"
+  },
+  {
+   "name": "Generac",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid",
+    "n0.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Large backup generators expanding into data-centre segment",
+   "tags": [],
+   "url": "https://www.generac.com",
+   "source": "https://www.generac.com"
+  },
+  {
+   "name": "GIC",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "government",
+   "one_liner": "Singapore sovereign fund investing in DC platforms",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.gic.com.sg",
+   "source": "https://www.gic.com.sg"
+  },
+  {
+   "name": "Global Infrastructure Partners (BlackRock)",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "BlackRock (2024)",
+   "one_liner": "Infra fund; part of consortium that acquired Aligned",
+   "url": "https://www.global-infra.com",
+   "source": "https://aligneddc.com/press-release/aip-mgx-and-blackrocks-gip-close-acquisition-of-aligned-data-centers/"
+  },
+  {
+   "name": "Gradiant",
+   "kind": "company",
+   "subsegments": [
+    "n0.water"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Industrial water treatment and reuse systems, including for hyperscale data centres",
+   "url": "https://www.gradiant.com",
+   "source": "https://datacentrenews.uk/story/gradiant-wins-data-centre-water-treatment-deal",
+   "note": "Won water-treatment contract for a UK hyperscale data centre (2026); raised funding to scale AI-era water infrastructure"
+  },
+  {
+   "name": "GRC (Green Revolution Cooling)",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Single-phase immersion cooling systems",
+   "url": "https://www.grcooling.com",
+   "source": "https://www.grcooling.com"
+  },
+  {
+   "name": "Hammond Power Solutions",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Dry-type transformers for data centres and industry",
+   "url": "https://www.hammondpowersolutions.com",
+   "source": "https://www.hammondpowersolutions.com"
+  },
+  {
+   "name": "HD Hyundai Electric",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "HD Hyundai",
+   "one_liner": "Korean high-voltage transformer maker exporting to US grid/DC projects",
+   "url": "https://www.hd-hyundaielectric.com",
+   "source": "https://www.hd-hyundaielectric.com"
+  },
+  {
+   "name": "Heata",
+   "kind": "company",
+   "subsegments": [
+    "n0.opt"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Distributed servers in homes that reuse compute heat for hot water",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.heata.co",
+   "source": "https://www.heata.co"
+  },
+  {
+   "name": "Helion Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Pulsed fusion developer with Microsoft power-purchase agreement targeting 2028",
+   "url": "https://www.helionenergy.com",
+   "source": "https://www.helionenergy.com"
+  },
+  {
+   "name": "Hitachi Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "public",
+   "parent": "Hitachi",
+   "one_liner": "Power transformers, HVDC and grid connection equipment",
+   "url": "https://www.hitachienergy.com",
+   "source": "https://www.hitachienergy.com"
+  },
+  {
+   "name": "Holder Construction",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Data-centre-focused US general contractor",
+   "url": "https://www.holder.com",
+   "source": "https://www.holder.com"
+  },
+  {
+   "name": "Honeywell Building Automation",
+   "kind": "company",
+   "subsegments": [
+    "n0.ops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Honeywell",
+   "one_liner": "Building management, fire and security systems for DCs",
+   "tags": [
+    "security"
+   ],
+   "url": "https://buildings.honeywell.com",
+   "source": "https://buildings.honeywell.com"
+  },
+  {
+   "name": "HUMAIN",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev",
+    "n4.sovereign"
+   ],
+   "hq": "SA",
+   "region": "Middle East",
+   "status": "government",
+   "parent": "PIF",
+   "one_liner": "Saudi PIF-owned AI company building multi-GW AI DCs",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.humain.com",
+   "source": "https://w.media/humain-datavolt-to-jointly-build-multi-gigawatt-ai-data-centers-in-saudi-arabia/",
+   "note": "Partnered with DataVolt and stc for GW-scale campuses"
+  },
+  {
+   "name": "Hut 8",
+   "kind": "company",
+   "subsegments": [
+    "n0.land"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Former bitcoin miner developing powered data-centre campuses for AI tenants",
+   "url": "https://hut8.com",
+   "source": "https://www.inside.com.tw/article/42258-anthropic-lambda-35b-cloud-deal-nvidia-hut8",
+   "note": "Reported as site provider behind 2026 Anthropic-Lambda capacity in Texas"
+  },
+  {
+   "name": "Hyosung Heavy Industries",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Korean power transformer and switchgear maker with US plant",
+   "url": "https://www.hyosungheavyindustries.com",
+   "source": "https://www.hyosungheavyindustries.com"
+  },
+  {
+   "name": "Hyperview",
+   "kind": "company",
+   "subsegments": [
+    "n0.ops"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Cloud-based DCIM",
+   "url": "https://www.hyperviewhq.com",
+   "source": "https://www.hyperviewhq.com"
+  },
+  {
+   "name": "Iceotope",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling",
+    "n3.opt"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Precision chassis-level liquid immersion cooling",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.iceotope.com",
+   "source": "https://datacentrereview.com/2026/05/iceotope-raises-26-million-to-scale-liquid-cooling-technology/",
+   "note": "Raised $26M (May 2026)"
+  },
+  {
+   "name": "IREN",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev",
+    "n4.neo",
+    "n4.offtake"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Australian-founded miner turned AI DC and GPU cloud operator with Texas power sites",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://iren.com",
+   "source": "https://iren.com",
+   "note": "Microsoft $9.7B / 200 MW (Nov 2025)"
+  },
+  {
+   "name": "Iron Mountain Data Centers",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Iron Mountain",
+   "one_liner": "Colocation operator; owns Web Werks JV in India",
+   "url": "https://www.ironmountain.com/data-centers",
+   "source": "https://www.ironmountain.com/data-centers"
+  },
+  {
+   "name": "Jacobs",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Engineering and design for hyperscale and advanced-manufacturing facilities",
+   "url": "https://www.jacobs.com",
+   "source": "https://www.jacobs.com"
+  },
+  {
+   "name": "JetCool",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Flex (2024)",
+   "one_liner": "Microconvective direct-to-chip liquid cooling",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://jetcool.com",
+   "source": "https://jetcool.com"
+  },
+  {
+   "name": "JLL",
+   "kind": "company",
+   "subsegments": [
+    "n0.ops",
+    "n0.land"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "DC facilities management and advisory",
+   "tags": [],
+   "url": "https://www.us.jll.com",
+   "source": "https://www.us.jll.com"
+  },
+  {
+   "name": "Johnson Controls",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling",
+    "n0.ops"
+   ],
+   "hq": "IE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "York chillers, CDUs and building management systems for DCs",
+   "url": "https://www.johnsoncontrols.com",
+   "source": "https://www.johnsoncontrols.com"
+  },
+  {
+   "name": "Kairos Power",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Fluoride-salt-cooled SMR developer; Hermes 2 to supply TVA grid for Google",
+   "url": "https://kairospower.com",
+   "source": "https://smr.nucnet.org/news/google-kairos-and-tennessee-valley-authority-sign-landmark-nuclear-power-deal-8-2-2025",
+   "note": "Aug 2025: Google-TVA-Kairos 50 MW Hermes 2 PPA, first step of 500 MW deal"
+  },
+  {
+   "name": "Kazatomprom",
+   "kind": "company",
+   "subsegments": [
+    "n0.fuel"
+   ],
+   "hq": "KZ",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "World's largest uranium producer",
+   "url": "https://www.kazatomprom.kz/en",
+   "source": "https://www.kazatomprom.kz/en"
+  },
+  {
+   "name": "Khazna Data Centers",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "AE",
+   "region": "Middle East",
+   "status": "private",
+   "parent": "G42 / MGX",
+   "one_liner": "UAE hyperscale DC developer building Stargate UAE campus",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://khazna.ae",
+   "source": "https://www.datacenterdynamics.com/en/news/khazna-enters-saudi-arabia-buys-land-in-dammam-for-200mw-data-center-campus/",
+   "note": "Expanding into Saudi Arabia (Dammam 200 MW campus)"
+  },
+  {
+   "name": "Kinder Morgan",
+   "kind": "company",
+   "subsegments": [
+    "n0.fuel"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Largest US gas pipeline network; expanding capacity for power and data-centre demand",
+   "url": "https://www.kindermorgan.com",
+   "source": "https://www.kindermorgan.com"
+  },
+  {
+   "name": "KKR",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Infra investor; co-owns CyrusOne and STT GDC",
+   "url": "https://www.kkr.com",
+   "source": "https://www.kkr.com"
+  },
+  {
+   "name": "Kurita Water Industries",
+   "kind": "company",
+   "subsegments": [
+    "n0.water"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Water treatment chemicals, ultrapure water and cooling-water services for fabs and data centres",
+   "url": "https://www.kurita.co.jp/english/",
+   "source": "https://www.kurita.co.jp/english/"
+  },
+  {
+   "name": "Lancium",
+   "kind": "company",
+   "subsegments": [
+    "n0.land"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Powered-land and campus developer; co-developed Stargate Abilene site with Crusoe",
+   "url": "https://lancium.com",
+   "source": "https://lancium.com"
+  },
+  {
+   "name": "Larsen & Toubro",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian EPC conglomerate building data centres and power infrastructure",
+   "url": "https://www.larsentoubro.com",
+   "source": "https://www.larsentoubro.com"
+  },
+  {
+   "name": "Legrand",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Rack PDUs, busway, cabling and white-space infrastructure",
+   "url": "https://www.legrand.com",
+   "source": "https://www.legrand.com"
+  },
+  {
+   "name": "LiquidStack",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling",
+    "n3.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Trane Technologies (2026)",
+   "one_liner": "Two-phase immersion and direct-to-chip CDUs",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://liquidstack.com",
+   "source": "https://seekingalpha.com/pr/20422879-trane-technologies-completes-acquisition-of-liquidstack",
+   "note": "Acquired by Trane, closed Mar 2026"
+  },
+  {
+   "name": "LS Electric",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Korean switchgear, transformers and distribution for US data centres",
+   "url": "https://www.ls-electric.com",
+   "source": "https://www.ls-electric.com"
+  },
+  {
+   "name": "Macquarie Asset Management",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital",
+    "n4.finance"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Macquarie Group",
+   "one_liner": "Infra investor in DC platforms (AirTrunk exit, Applied Digital financing)",
+   "tags": [],
+   "url": "https://www.macquarie.com",
+   "source": "https://www.macquarie.com"
+  },
+  {
+   "name": "Mercury Engineering",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "IE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Irish mechanical/electrical contractor for European hyperscale builds",
+   "url": "https://www.mercury.ie",
+   "source": "https://www.mercury.ie"
+  },
+  {
+   "name": "MGX",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "AE",
+   "region": "Middle East",
+   "status": "government",
+   "parent": "Mubadala / G42",
+   "one_liner": "Abu Dhabi AI investment vehicle; investor in Stargate and Aligned",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.mgx.ae",
+   "source": "https://www.wam.ae/en/article/c1c097j-aip-mgx-blackrocks-gip-close-40-billion"
+  },
+  {
+   "name": "Mitsubishi Power",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Mitsubishi Heavy Industries",
+   "one_liner": "Large gas turbines and power plants supplied to utilities serving data centres",
+   "url": "https://power.mhi.com",
+   "source": "https://power.mhi.com"
+  },
+  {
+   "name": "Modine",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Airedale chillers and data-centre cooling systems",
+   "url": "https://www.modine.com",
+   "source": "https://www.modine.com"
+  },
+  {
+   "name": "Modius",
+   "kind": "company",
+   "subsegments": [
+    "n0.ops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "OpenData DCIM monitoring platform",
+   "url": "https://www.modius.com",
+   "source": "https://www.modius.com"
+  },
+  {
+   "name": "Motivair",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Schneider Electric (2025)",
+   "one_liner": "CDUs, rear-door heat exchangers and cold plates",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.motivaircorp.com",
+   "source": "https://themachinemaker.com/news/schneider-electric-expands-leadership-in-data-center-cooling-with-acquisition-of-motivair-corporation/"
+  },
+  {
+   "name": "NextEra Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Largest US renewables developer and utility; signing PPAs and nuclear restarts for hyperscalers",
+   "url": "https://www.nexteraenergy.com",
+   "source": "https://www.nexteraenergy.com",
+   "note": "Duane Arnold nuclear restart agreed with Google (Oct 2025)"
+  },
+  {
+   "name": "Nlyte Software",
+   "kind": "company",
+   "subsegments": [
+    "n0.ops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Carrier",
+   "one_liner": "DCIM software for asset and capacity management",
+   "url": "https://www.nlyte.com",
+   "source": "https://www.nlyte.com"
+  },
+  {
+   "name": "NRG Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "US power generator and retailer building gas capacity for data-centre load",
+   "url": "https://www.nrg.com",
+   "source": "https://www.nrg.com"
+  },
+  {
+   "name": "Nscale",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev",
+    "n4.neo",
+    "n4.sovereign",
+    "n4.offtake"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "UK AI hyperscaler building GPU DCs in Norway, UK and Portugal",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.nscale.com",
+   "source": "https://www.nscale.com",
+   "note": "Filed registration for US IPO, Sep-Oct 2026"
+  },
+  {
+   "name": "NTPC",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "government",
+   "one_liner": "India's largest state-owned power generator, expanding nuclear and renewables",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.ntpc.co.in",
+   "source": "https://www.ntpc.co.in"
+  },
+  {
+   "name": "NTT Global Data Centers",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "NTT DATA",
+   "one_liner": "Third-largest global DC operator, incl. major India footprint",
+   "url": "https://services.global.ntt/en-us/services-and-products/global-data-centers",
+   "source": "https://services.global.ntt"
+  },
+  {
+   "name": "NuScale Power",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Light-water SMR (NRC-approved 77 MWe module) developer",
+   "url": "https://www.nuscalepower.com",
+   "source": "https://www.nuscalepower.com"
+  },
+  {
+   "name": "nVent",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Liquid-cooling CDUs, manifolds and enclosures",
+   "url": "https://www.nvent.com",
+   "source": "https://www.nvent.com"
+  },
+  {
+   "name": "Nxtra by Airtel",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Bharti Airtel",
+   "one_liner": "Airtel's DC arm; one of India's largest operators by footprint",
+   "url": "https://www.nxtra.in",
+   "source": "https://www.nxtra.in"
+  },
+  {
+   "name": "Oklo",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Developer of Aurora fast-reactor SMR powerhouses, selling power to data centres",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://oklo.com",
+   "source": "https://www.ans.org/news/2026-01-12/article-7666/meta-strikes-deals-with-vistra-oklo-terrapower/",
+   "note": "Jan 2026: 1.2 GW Ohio campus agreement with Meta; prior 12 GW framework with Switch"
+  },
+  {
+   "name": "Orano",
+   "kind": "company",
+   "subsegments": [
+    "n0.fuel"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "government",
+   "one_liner": "French state nuclear fuel-cycle group: mining, conversion, enrichment",
+   "url": "https://www.orano.group/en",
+   "source": "https://www.orano.group/en"
+  },
+  {
+   "name": "Phaidra",
+   "kind": "company",
+   "subsegments": [
+    "n0.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Reinforcement-learning control of DC cooling and power",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.phaidra.ai",
+   "source": "https://www.phaidra.ai"
+  },
+  {
+   "name": "Princeton Digital Group",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "Warburg Pincus",
+   "one_liner": "APAC DC operator in China, India, Indonesia, Japan, Singapore",
+   "url": "https://princetondg.com",
+   "source": "https://princetondg.com"
+  },
+  {
+   "name": "Public Investment Fund (PIF)",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "SA",
+   "region": "Middle East",
+   "status": "government",
+   "one_liner": "Saudi sovereign fund behind HUMAIN",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.pif.gov.sa",
+   "source": "https://www.pif.gov.sa"
+  },
+  {
+   "name": "QTS Data Centers",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Blackstone",
+   "one_liner": "Hyperscale DC developer owned by Blackstone",
+   "url": "https://qtsdatacenters.com",
+   "source": "https://qtsdatacenters.com"
+  },
+  {
+   "name": "Quanta Services",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Electrical/transmission contractor building grid connections for DCs",
+   "url": "https://www.quantaservices.com",
+   "source": "https://www.quantaservices.com"
+  },
+  {
+   "name": "RackBank",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indore-based Indian DC operator building AI-focused capacity",
+   "url": "https://www.rackbank.com",
+   "source": "https://www.rackbank.com"
+  },
+  {
+   "name": "Reliance Jio (Jamnagar AI DC)",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "parent": "Reliance Industries",
+   "one_liner": "GW-scale AI DC campus in Jamnagar powered by Reliance renewables",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.ril.com",
+   "source": "https://enterpriseam.com/mena-india/2026/04/29/reliance-industries-usd-17-bn-data-centre-opens-investment-window-for-gulf-investors/"
+  },
+  {
+   "name": "ReNew",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian renewables IPP selling round-the-clock green power to C&I and DC customers",
+   "url": "https://www.renew.com",
+   "source": "https://www.renew.com"
+  },
+  {
+   "name": "Rolls-Royce Power Systems (mtu)",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "parent": "Rolls-Royce",
+   "one_liner": "mtu backup generator sets for hyperscale data centres",
+   "url": "https://www.mtu-solutions.com",
+   "source": "https://www.mtu-solutions.com"
+  },
+  {
+   "name": "Rolls-Royce SMR",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "parent": "Rolls-Royce",
+   "one_liner": "470 MWe SMR selected for UK and Czech new-build programmes",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.rolls-royce-smr.com",
+   "source": "https://www.rolls-royce-smr.com"
+  },
+  {
+   "name": "Schneider Electric",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid",
+    "n0.cooling",
+    "n0.opt",
+    "n0.ops",
+    "n0.build",
+    "n3.rackpower"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Power distribution, UPS, prefab modules, cooling (Motivair) and EcoStruxure DCIM",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.se.com",
+   "source": "https://www.coolingpost.com/world-news/schneider-electric-buys-us-liquid-cooling-firm",
+   "note": "Owns Motivair liquid cooling (acquired 2024-25)"
+  },
+  {
+   "name": "Securitas",
+   "kind": "company",
+   "subsegments": [
+    "n0.ops"
+   ],
+   "hq": "SE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Physical security services incl. critical infrastructure and DCs",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.securitas.com",
+   "source": "https://www.securitas.com"
+  },
+  {
+   "name": "Siemens Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power",
+    "n0.grid"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Gas turbines, grid technology and transformers for power plants and DC grid connections",
+   "url": "https://www.siemens-energy.com",
+   "source": "https://www.siemens-energy.com"
+  },
+  {
+   "name": "Siemens Smart Infrastructure",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid",
+    "n0.ops"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "parent": "Siemens",
+   "one_liner": "Medium-voltage switchgear, power distribution and building management for DCs",
+   "url": "https://www.siemens.com",
+   "source": "https://www.siemens.com"
+  },
+  {
+   "name": "Sify Infinit Spaces",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Sify Technologies",
+   "one_liner": "Indian colocation operator spun out of Sify",
+   "url": "https://www.sifytechnologies.com",
+   "source": "https://www.sifytechnologies.com"
+  },
+  {
+   "name": "Silver Lake",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Tech PE co-owning Vantage Data Centers",
+   "url": "https://www.silverlake.com",
+   "source": "https://www.silverlake.com"
+  },
+  {
+   "name": "SoftBank Group",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Stargate lead financier; owns DigitalBridge",
+   "url": "https://group.softbank",
+   "source": "https://group.softbank/en/news/press/20260930"
+  },
+  {
+   "name": "STACK Infrastructure",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Blue Owl",
+   "one_liner": "Hyperscale and wholesale DC developer across Americas, EMEA, APAC",
+   "url": "https://www.stackinfra.com",
+   "source": "https://www.stackinfra.com"
+  },
+  {
+   "name": "Sterling and Wilson",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "parent": "Reliance (part)",
+   "one_liner": "Indian EPC for DC electrical, MEP and solar",
+   "url": "https://www.sterlingandwilson.com",
+   "source": "https://www.sterlingandwilson.com"
+  },
+  {
+   "name": "Sterling Infrastructure",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Site development and civil works for hyperscale campuses",
+   "url": "https://www.strlco.com",
+   "source": "https://www.strlco.com"
+  },
+  {
+   "name": "Stonepeak",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Infra fund investing in DC platforms and power",
+   "url": "https://stonepeak.com",
+   "source": "https://stonepeak.com"
+  },
+  {
+   "name": "STT GDC",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "KKR / Singtel",
+   "one_liner": "Singapore-based DC operator with large India footprint (STT GDC India)",
+   "url": "https://www.sttelemediagdc.com",
+   "source": "https://www.sttelemediagdc.com"
+  },
+  {
+   "name": "Stulz",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Precision air and liquid cooling units for data centres",
+   "url": "https://www.stulz.com",
+   "source": "https://www.stulz.com"
+  },
+  {
+   "name": "Submer",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling",
+    "n3.opt"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Single-phase immersion cooling and AI DC infrastructure",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://submer.com",
+   "source": "https://submer.com"
+  },
+  {
+   "name": "Suez",
+   "kind": "company",
+   "subsegments": [
+    "n0.water"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Water and wastewater treatment, reuse and digital water management for industrial sites",
+   "url": "https://www.suez.com",
+   "source": "https://www.suez.com"
+  },
+  {
+   "name": "Sunbird Software",
+   "kind": "company",
+   "subsegments": [
+    "n0.ops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "DCIM software for capacity, power and asset monitoring",
+   "url": "https://www.sunbirddcim.com",
+   "source": "https://www.sunbirddcim.com"
+  },
+  {
+   "name": "Sungrow",
+   "kind": "company",
+   "subsegments": [
+    "n0.storage"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Inverters and PowerTitan battery storage systems for utility and C&I sites",
+   "url": "https://en.sungrowpower.com",
+   "source": "https://en.sungrowpower.com"
+  },
+  {
+   "name": "Switch",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "DigitalBridge-led",
+   "one_liner": "Large-campus colocation operator in Nevada, Arizona, Texas, Georgia",
+   "url": "https://www.switch.com",
+   "source": "https://www.utilitydive.com/news/oklo-aurora-smr-advanced-nuclear-reactor-supply-agreement-data-center-developer-switch/735933"
+  },
+  {
+   "name": "Talen Energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "IPP owning Susquehanna nuclear plant; co-located/front-of-meter supply to AWS campus",
+   "url": "https://www.talenenergy.com",
+   "source": "https://www.talenenergy.com"
+  },
+  {
+   "name": "Tata Power",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "parent": "Tata Group",
+   "one_liner": "Indian integrated utility offering renewable PPAs incl. to data-centre operators",
+   "url": "https://www.tatapower.com",
+   "source": "https://www.tatapower.com"
+  },
+  {
+   "name": "TCS HyperVault",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Tata Consultancy Services / TPG",
+   "one_liner": "TCS's new GW-scale AI DC venture, TPG co-funding",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.tcs.com",
+   "source": "https://www.datacenterdynamics.com/en/news/tpg-invests-in-tatas-new-hypervault-data-center-venture/",
+   "note": "Launched Nov 2025; sites incl. Visakhapatnam region, Pune"
+  },
+  {
+   "name": "TeraWulf",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Miner converting zero-carbon sites to HPC colocation backed by Google",
+   "url": "https://www.terawulf.com",
+   "source": "https://www.terawulf.com"
+  },
+  {
+   "name": "TerraPower",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Natrium sodium-fast reactor developer founded by Bill Gates",
+   "url": "https://www.terrapower.com",
+   "source": "https://www.ans.org/news/2026-01-12/article-7666/meta-strikes-deals-with-vistra-oklo-terrapower/",
+   "note": "Jan 2026: Meta agreement for up to eight Natrium units"
+  },
+  {
+   "name": "Tesla Energy (Megapack)",
+   "kind": "company",
+   "subsegments": [
+    "n0.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Tesla",
+   "one_liner": "Megapack utility-scale lithium-ion battery storage, used for grid flexibility and on-site at AI campuses",
+   "url": "https://www.tesla.com/megapack",
+   "source": "https://www.tesla.com/megapack"
+  },
+  {
+   "name": "TPG",
+   "kind": "company",
+   "subsegments": [
+    "n0.capital"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "PE firm co-funding TCS HyperVault in India",
+   "url": "https://www.tpg.com",
+   "source": "https://techcrunch.com/2025/11/20/indias-tcs-gets-tpg-to-fund-half-of-2b-ai-data-center-project"
+  },
+  {
+   "name": "Tract",
+   "kind": "company",
+   "subsegments": [
+    "n0.land"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Master-planned land and infrastructure developer of data-centre parks",
+   "url": "https://www.datacenterfrontier.com/site-selection/article/55308975/scaling-up-tracts-master-planned-land-and-infrastructure-approach-to-data-center-development",
+   "source": "https://www.datacenterfrontier.com/site-selection/article/55308975/scaling-up-tracts-master-planned-land-and-infrastructure-approach-to-data-center-development"
+  },
+  {
+   "name": "Trane Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling"
+   ],
+   "hq": "IE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Chillers and HVAC; added direct-to-chip and immersion via LiquidStack",
+   "url": "https://www.tranetechnologies.com",
+   "source": "https://ir.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Acquire-LiquidStack-to-Accelerate-EndtoEnd-Data-Center-Thermal-Management-Solutions/default.aspx",
+   "note": "Completed LiquidStack acquisition (Mar 2026)"
+  },
+  {
+   "name": "Turner Construction",
+   "kind": "company",
+   "subsegments": [
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "HOCHTIEF / ACS",
+   "one_liner": "Leading US general contractor for hyperscale data centres",
+   "url": "https://www.turnerconstruction.com",
+   "source": "https://www.turnerconstruction.com"
+  },
+  {
+   "name": "Uptime Institute",
+   "kind": "company",
+   "subsegments": [
+    "n0.ops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Tier certification and operational standards for data centres",
+   "url": "https://uptimeinstitute.com",
+   "source": "https://uptimeinstitute.com"
+  },
+  {
+   "name": "Urenco",
+   "kind": "company",
+   "subsegments": [
+    "n0.fuel"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Uranium enrichment plants in UK, Netherlands, Germany and US",
+   "url": "https://www.urenco.com",
+   "source": "https://www.urenco.com"
+  },
+  {
+   "name": "Vantage Data Centers",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "DigitalBridge / Silver Lake",
+   "one_liner": "Hyperscale campus developer in Americas, EMEA and APAC; Frontier campus in Texas",
+   "url": "https://vantage-dc.com",
+   "source": "https://vantage-dc.com"
+  },
+  {
+   "name": "Veolia",
+   "kind": "company",
+   "subsegments": [
+    "n0.water"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Water treatment, reuse and reclaimed-water systems for data-centre cooling",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.veolia.com",
+   "source": "https://www.veolia.com/en/our-media/press-releases/veolia-works-amazon-develop-reclaimed-water-cooling-system-data-centers.md",
+   "note": "Apr 2026: deal with Amazon to supply reclaimed water for AWS data-centre cooling in Mississippi"
+  },
+  {
+   "name": "Verrus",
+   "kind": "company",
+   "subsegments": [
+    "n0.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Spun out of Alphabet X",
+   "one_liner": "Flexible, battery-backed DC designs to unlock grid capacity",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.verrus.com",
+   "source": "https://www.verrus.com"
+  },
+  {
+   "name": "Vertiv",
+   "kind": "company",
+   "subsegments": [
+    "n0.grid",
+    "n0.cooling",
+    "n0.build",
+    "n0.ops",
+    "n3.opt",
+    "n3.rackpower"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "UPS, power distribution, CDUs, liquid cooling and prefab modules co-designed with NVIDIA",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.vertiv.com",
+   "source": "https://www.vertiv.com"
+  },
+  {
+   "name": "Vistra",
+   "kind": "company",
+   "subsegments": [
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Texas-based IPP with nuclear and gas fleet selling power to data centres",
+   "url": "https://www.vistracorp.com",
+   "source": "https://www.ans.org/news/2026-01-12/article-7666/meta-strikes-deals-with-vistra-oklo-terrapower/",
+   "note": "Jan 2026: nuclear PPAs and uprates with Meta"
+  },
+  {
+   "name": "VoltaGrid",
+   "kind": "company",
+   "subsegments": [
+    "n0.storage",
+    "n0.fuel"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Mobile natural-gas microgrids providing bridge and prime power for AI data centres",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://voltagrid.com",
+   "source": "https://pgjonline.com/news/2025/october/energy-transfer-to-supply-voltagrid-powering-oracle-s-23-gw-ai-data-centers",
+   "note": "Oct 2025: to deliver 2.3 GW of gas-fired power for Oracle AI data centres, gas supplied by Energy Transfer"
+  },
+  {
+   "name": "Westinghouse",
+   "kind": "company",
+   "subsegments": [
+    "n0.power",
+    "n0.fuel"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Brookfield / Cameco",
+   "one_liner": "AP1000 large reactors and eVinci microreactor vendor",
+   "tags": [],
+   "url": "https://www.westinghousenuclear.com",
+   "source": "https://www.westinghousenuclear.com",
+   "note": "Oct 2025: US government partnership for at least $80B of new reactors"
+  },
+  {
+   "name": "Williams",
+   "kind": "company",
+   "subsegments": [
+    "n0.fuel"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Gas pipelines and behind-the-meter gas power projects for data centres (Socrates, for Meta in Ohio)",
+   "url": "https://www.williams.com",
+   "source": "https://www.datacenterdynamics.com/en/news/blackstone-invests-534bn-in-williams-behind-the-meter-natural-gas-power-projects-for-the-data-center-sector/",
+   "note": "Blackstone invested in Williams behind-the-meter power projects; considering buying upstream gas assets (Feb 2026)"
+  },
+  {
+   "name": "Wärtsilä",
+   "kind": "company",
+   "subsegments": [
+    "n0.storage"
+   ],
+   "hq": "FI",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Gas engine power plants and battery storage; growing orders for US data-centre power",
+   "url": "https://www.wartsila.com",
+   "source": "https://www.wartsila.com/zaf/media/news/29-06-2026-wartsila-secures-new-order-to-power-next-wave-of-ai-driven-data-center-growth-in-the-u-s--3767555",
+   "note": "Jun 2026: new US order for AI-driven data-centre power; 790 MW Texas order earlier"
+  },
+  {
+   "name": "X-energy",
+   "kind": "company",
+   "subsegments": [
+    "n0.power",
+    "n0.fuel"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Xe-100 high-temperature gas-cooled SMR developer backed by Amazon",
+   "tags": [],
+   "url": "https://x-energy.com",
+   "source": "https://www.stblaw.com/about-us/news/view/2026/04/30/x-energy-completes-upsized-$1-billion-initial-public-offering",
+   "note": "IPO completed Apr 2026 (upsized $1B)"
+  },
+  {
+   "name": "Xylem",
+   "kind": "company",
+   "subsegments": [
+    "n0.water"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Pumps, treatment and water-reuse equipment; absorbed Evoqua treatment business (2023)",
+   "url": "https://www.xylem.com",
+   "source": "https://www.xylem.com"
+  },
+  {
+   "name": "Yotta Data Services",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Hiranandani Group",
+   "one_liner": "Indian hyperscale DC operator (Navi Mumbai, Greater Noida) and Shakti GPU cloud",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://yotta.com",
+   "source": "https://yotta.com"
+  },
+  {
+   "name": "ZutaCore",
+   "kind": "company",
+   "subsegments": [
+    "n0.cooling",
+    "n3.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Waterless two-phase direct-on-chip cooling",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://zutacore.com",
+   "source": "https://datacentrereview.com/2026/06/zutacore-raises-100m-to-scale-waterless-cooling-for-ai-data-centres/",
+   "note": "Raised $100M Series C (Jun 2026)"
+  },
+  {
+   "name": "Carbon Aware SDK",
+   "kind": "open-source project",
+   "subsegments": [
+    "n0.opt",
+    "n4.orch"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Green Software Foundation (Linux Foundation)",
+   "licence": "MIT",
+   "access": "Run as WebAPI/CLI; shift jobs to low-carbon times or regions",
+   "repo": "https://github.com/Green-Software-Foundation/carbon-aware-sdk",
+   "stars": 596,
+   "archived": false,
+   "one_liner": "API/CLI forecasting grid carbon intensity so workloads can be time- or location-shifted",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/Green-Software-Foundation/carbon-aware-sdk",
+   "source": "https://github.com/Green-Software-Foundation/carbon-aware-sdk"
+  },
+  {
+   "name": "DOE AI data centre sites on federal land",
+   "kind": "public programme",
+   "subsegments": [
+    "n0.land",
+    "n0.power",
+    "n0.dcdev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "US Department of Energy",
+   "access": "Competitive solicitations for private developers to build on DOE sites",
+   "one_liner": "DOE offers Idaho NL, Oak Ridge, Paducah and Savannah River land for private AI DC and energy projects",
+   "tags": [
+    "sovereign",
+    "public-programme"
+   ],
+   "url": "https://rcrwireless.com/20250728/ai-infrastructure/doe-ai-dc",
+   "source": "https://rcrwireless.com/20250728/ai-infrastructure/doe-ai-dc",
+   "note": "Four sites selected July 2025"
+  },
+  {
+   "name": "EIA Open Data API",
+   "kind": "open dataset",
+   "subsegments": [
+    "n0.power",
+    "n0.grid",
+    "n0.fuel"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "US Energy Information Administration",
+   "licence": "Public domain (US government data)",
+   "access": "Free API key; bulk downloads",
+   "one_liner": "Free US data on generation, prices, fuel and capacity used for DC siting and power planning",
+   "tags": [
+    "open-data"
+   ],
+   "url": "https://www.eia.gov/opendata/",
+   "source": "https://www.eia.gov/opendata/"
+  },
+  {
+   "name": "Electricity Maps (open-source parsers)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n0.opt",
+    "n0.power"
+   ],
+   "hq": "DK",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Electricity Maps",
+   "licence": "AGPL-3.0",
+   "access": "Clone parsers; commercial API for production data",
+   "repo": "https://github.com/electricitymaps/electricitymaps-contrib",
+   "stars": 4000,
+   "archived": false,
+   "one_liner": "Community parsers and model behind real-time grid carbon-intensity maps used for carbon-aware compute",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/electricitymaps/electricitymaps-contrib",
+   "source": "https://github.com/electricitymaps/electricitymaps-contrib",
+   "note": "Relicensed from MIT to AGPL-3.0 from v1.5.0"
+  },
+  {
+   "name": "EnergyPlus",
+   "kind": "open-source project",
+   "subsegments": [
+    "n0.build",
+    "n0.cooling",
+    "n0.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "US DOE / National Renewable Energy Laboratory",
+   "licence": "BSD-3-like",
+   "access": "Download binaries; simulate building/DC energy and cooling",
+   "repo": "https://github.com/NREL/EnergyPlus",
+   "stars": 1600,
+   "archived": false,
+   "one_liner": "Whole-building energy simulation engine incl. data-centre IT load and cooling-plant modelling",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/NREL/EnergyPlus",
+   "source": "https://github.com/NREL/EnergyPlus"
+  },
+  {
+   "name": "GridLAB-D",
+   "kind": "open-source project",
+   "subsegments": [
+    "n0.grid"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "US DOE / Pacific Northwest National Laboratory",
+   "licence": "LGPL-2.1",
+   "access": "Download binaries or build; simulate distribution grids",
+   "repo": "https://github.com/gridlab-d/gridlab-d",
+   "stars": 217,
+   "archived": false,
+   "one_liner": "Distribution-grid simulator for load, distributed energy and demand-response studies",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/gridlab-d/gridlab-d",
+   "source": "https://github.com/gridlab-d/gridlab-d"
+  },
+  {
+   "name": "Kepler",
+   "kind": "open-source project",
+   "subsegments": [
+    "n0.opt",
+    "n4.ops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "CNCF (sandbox); Red Hat/IBM-originated",
+   "licence": "Apache-2.0",
+   "access": "Helm/operator install on Kubernetes; exports Prometheus metrics",
+   "repo": "https://github.com/sustainable-computing-io/kepler",
+   "stars": 1600,
+   "archived": false,
+   "one_liner": "eBPF-based per-pod/node energy estimation for Kubernetes, incl. GPU power via NVML",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/sustainable-computing-io/kepler",
+   "source": "https://github.com/sustainable-computing-io/kepler"
+  },
+  {
+   "name": "NetBox",
+   "kind": "open-source project",
+   "subsegments": [
+    "n0.ops",
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NetBox Labs",
+   "licence": "Apache-2.0",
+   "access": "Self-host (Docker) or NetBox Cloud; REST/GraphQL API",
+   "repo": "https://github.com/netbox-community/netbox",
+   "stars": 21800,
+   "archived": false,
+   "one_liner": "Source of truth for DC racks, power, cabling, IPAM and devices; widely used DCIM/IPAM",
+   "tags": [
+    "open-source",
+    "enterprise"
+   ],
+   "url": "https://github.com/netbox-community/netbox",
+   "source": "https://github.com/netbox-community/netbox"
+  },
+  {
+   "name": "OCP Data Center Facility specs (Advanced Cooling, OCP Ready)",
+   "kind": "standard",
+   "subsegments": [
+    "n0.cooling",
+    "n0.dcdev",
+    "n0.build"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Open Compute Project Foundation",
+   "access": "Free specs on opencompute.org; OCP Ready recognition for colo sites",
+   "one_liner": "Open specs for liquid cooling, facility design and colocation readiness for OCP/AI racks",
+   "tags": [
+    "open-standard",
+    "performance"
+   ],
+   "url": "https://www.opencompute.org/projects",
+   "source": "https://www.opencompute.org/projects"
+  },
+  {
+   "name": "OpenADR 3.0",
+   "kind": "standard",
+   "subsegments": [
+    "n0.opt",
+    "n0.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenADR Alliance",
+   "access": "Spec downloadable from OpenADR Alliance",
+   "one_liner": "Demand-response protocol letting utilities signal flexible loads such as data centres to curtail",
+   "tags": [
+    "open-standard",
+    "cost"
+   ],
+   "url": "https://www.openadr.org",
+   "source": "https://www.openadr.org"
+  },
+  {
+   "name": "openDCIM",
+   "kind": "open-source project",
+   "subsegments": [
+    "n0.ops"
+   ],
+   "status": "open",
+   "steward": "openDCIM community",
+   "licence": "GPL-3.0",
+   "access": "Self-host PHP/MySQL web app",
+   "repo": "https://github.com/opendcim/openDCIM",
+   "stars": 366,
+   "archived": false,
+   "one_liner": "Free data-centre infrastructure management: rack, power, cabling and asset inventory",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/opendcim/openDCIM",
+   "source": "https://github.com/opendcim/openDCIM",
+   "note": "README flags 'maintainer needed' as the original maintainer retires"
+  },
+  {
+   "name": "OpenEMS",
+   "kind": "open-source project",
+   "subsegments": [
+    "n0.storage",
+    "n0.opt"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "OpenEMS Association e.V.",
+   "licence": "EPL-2.0 (Edge/Backend); AGPL-3.0 (UI)",
+   "access": "Self-host Java edge + backend controlling batteries, PV and loads",
+   "repo": "https://github.com/OpenEMS/openems",
+   "stars": 1600,
+   "archived": false,
+   "one_liner": "Open energy-management system controlling battery storage, generation and flexible loads",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/OpenEMS/openems",
+   "source": "https://github.com/OpenEMS/openems"
+  },
+  {
+   "name": "PUE (ISO/IEC 30134-2)",
+   "kind": "standard",
+   "subsegments": [
+    "n0.opt",
+    "n0.ops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "The Green Grid (origin); ISO/IEC JTC 1",
+   "access": "Metric definition freely published by The Green Grid",
+   "one_liner": "Power Usage Effectiveness: total facility energy over IT energy; the baseline DC efficiency metric",
+   "tags": [
+    "open-standard",
+    "cost"
+   ],
+   "url": "https://www.thegreengrid.org",
+   "source": "https://www.thegreengrid.org"
+  },
+  {
+   "name": "PyPSA",
+   "kind": "open-source project",
+   "subsegments": [
+    "n0.grid",
+    "n0.power",
+    "n0.storage"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "PyPSA developers (TU Berlin origin; Open Energy Transition)",
+   "licence": "MIT",
+   "access": "pip install pypsa; model grid expansion and dispatch",
+   "repo": "https://github.com/PyPSA/PyPSA",
+   "stars": 2100,
+   "archived": false,
+   "one_liner": "Python power-system modelling for grid expansion, generation and storage planning",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/PyPSA/PyPSA",
+   "source": "https://github.com/PyPSA/PyPSA"
+  },
+  {
+   "name": "Scaphandre",
+   "kind": "open-source project",
+   "subsegments": [
+    "n0.opt"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Hubblo",
+   "licence": "Apache-2.0",
+   "access": "Install agent on host; Prometheus/JSON exporters",
+   "repo": "https://github.com/hubblo-org/scaphandre",
+   "stars": 2000,
+   "archived": false,
+   "one_liner": "Power-consumption metrology agent attributing server energy to processes, VMs and containers",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/hubblo-org/scaphandre",
+   "source": "https://github.com/hubblo-org/scaphandre"
+  }
+ ]
+}

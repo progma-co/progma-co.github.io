@@ -1,0 +1,154 @@
+{
+ "node": "n11",
+ "notes": {},
+ "entries": [
+  {
+   "name": "AI Playbook for the UK Government",
+   "kind": "standard",
+   "subsegments": [
+    "n11.public",
+    "n10.change"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open",
+   "steward": "UK Government Digital Service (DSIT)",
+   "licence": "Open Government Licence v3.0",
+   "access": "Free on GOV.UK",
+   "one_liner": "10 principles and guidance for safe, effective AI use across the public sector",
+   "tags": [
+    "government",
+    "governance",
+    "open-standard"
+   ],
+   "url": "https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government",
+   "source": "https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government"
+  },
+  {
+   "name": "AWS Activate (open)",
+   "kind": "public programme",
+   "subsegments": [
+    "n11.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Amazon Web Services",
+   "access": "Founders tier self-serve; Portfolio via Activate Provider Org ID",
+   "one_liner": "AWS credits up to ~$200k for startups, usable on Bedrock models",
+   "tags": [
+    "credits",
+    "startups",
+    "corporate-programme",
+    "open-source"
+   ],
+   "url": "https://aws.amazon.com/startups/credits",
+   "source": "https://www.braincuber.com/blog/how-to-get-aws-credits-for-ai-projects"
+  },
+  {
+   "name": "European Digital Innovation Hubs (EDIH)",
+   "kind": "public programme",
+   "subsegments": [
+    "n11.mid",
+    "n11.public"
+   ],
+   "hq": "BE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "European Commission (Digital Europe Programme)",
+   "access": "Contact a regional EDIH for test-before-invest, training and funding help",
+   "one_liner": "169 EU hubs helping SMEs and public bodies test and adopt AI",
+   "tags": [
+    "sme",
+    "adoption",
+    "eu",
+    "open-source"
+   ],
+   "url": "https://european-digital-innovation-hubs.ec.europa.eu",
+   "source": "https://european-digital-innovation-hubs.ec.europa.eu/system/files/2025-07/AI_infrastructure_Leaflet_web_v10.pdf"
+  },
+  {
+   "name": "Google for Startups Cloud Program (AI tier)",
+   "kind": "public programme",
+   "subsegments": [
+    "n11.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google Cloud",
+   "access": "Apply online; pre-seed to Series A with known investor",
+   "one_liner": "Up to $350k Google Cloud credits for AI startups (incl. Gemini usage)",
+   "tags": [
+    "credits",
+    "startups",
+    "corporate-programme",
+    "open-source"
+   ],
+   "url": "https://cloud.google.com/startup",
+   "source": "https://cloud.google.com/startup"
+  },
+  {
+   "name": "IndiaAI Startups Global",
+   "kind": "public programme",
+   "subsegments": [
+    "n11.startup"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "IndiaAI Mission with Station F and HEC Paris",
+   "access": "Annual application on indiaai.gov.in; 10 startups per cohort",
+   "one_liner": "Four-month Station F acceleration for Indian AI startups entering Europe",
+   "tags": [
+    "startups",
+    "india",
+    "open-source"
+   ],
+   "url": "https://indiaai.gov.in/article/indiaai-startups-global-international-acceleration-programs-for-indian-ai-startups-2026-2nd-cohort",
+   "source": "https://indiaai.gov.in/article/indiaai-startups-global-international-acceleration-programs-for-indian-ai-startups-2026-2nd-cohort"
+  },
+  {
+   "name": "Microsoft for Startups (open)",
+   "kind": "public programme",
+   "subsegments": [
+    "n11.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Microsoft",
+   "access": "$5k self-serve Azure credits; ~$100k via investor-network referral",
+   "one_liner": "Azure credits and support for startups; Founders Hub retired July 2025",
+   "tags": [
+    "credits",
+    "startups",
+    "corporate-programme",
+    "open-source"
+   ],
+   "url": "https://learn.microsoft.com/microsoft-for-startups/changes-microsoft-for-startups",
+   "source": "https://learn.microsoft.com/microsoft-for-startups/changes-microsoft-for-startups",
+   "note": "July 2025: open tier cut to $5k; larger credits need an investor-network referral code"
+  },
+  {
+   "name": "NVIDIA Inception (open)",
+   "kind": "public programme",
+   "subsegments": [
+    "n11.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "access": "Free to join; incorporated, under 10 years old, working website",
+   "one_liner": "Free startup programme with cloud credits, DLI training, hardware discounts and VC intros",
+   "tags": [
+    "startups",
+    "corporate-programme",
+    "open-source"
+   ],
+   "url": "https://www.nvidia.com/en-us/startups/",
+   "source": "https://www.nvidia.com/en-us/startups/"
+  }
+ ]
+}

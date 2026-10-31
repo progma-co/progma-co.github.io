@@ -1,0 +1,475 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AI Value Chain Atlas · Progma</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Who does what across the AI value chain, from power and silicon to models, inference, tooling, applications, services and users. Open, sourced and updated every fortnight.">
+<meta property="og:title" content="AI Value Chain Atlas · Progma"><meta property="og:description" content="Who does what across the AI value chain. Open, sourced, updated every fortnight.">
+<meta property="og:image" content="https://www.progma.co.in/assets/og.png"><meta property="og:type" content="website">
+<link rel="icon" href="/assets/favicon-48.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a schematic board on the Progma grid. Columns = value-chain nodes, rows = support layers; traces in violet. Light-only, per the Progma site. */
+@font-face{font-family:Plex;src:url(/assets/plex-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Plex;src:url(/assets/plex-500.woff2) format('woff2');font-weight:500;font-display:swap}
+:root{
+  --white:#FFFFFF; --ink:#0B0C10; --violet:#4B2FE8; --peri:#7B61FF; --deep:#0A0714; --tint:#F7F8FB;
+  --line:#E4E6EE; --line2:#CFD2DE; --muted:#55525F; --fine:#8A8799; --swipe:#E4DEFF; --vsoft:#EEEAFF;
+  --f-head:"IBM Plex Sans",Plex,system-ui,-apple-system,sans-serif; --f-body:"IBM Plex Sans",Plex,system-ui,-apple-system,sans-serif; --f-mono:"IBM Plex Sans",Plex,system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{background:var(--white);color:var(--ink)}
+body{margin:0;font-family:var(--f-body);font-size:14px;line-height:1.5}
+a{color:var(--violet)}
+button,select,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
+[hidden]{display:none!important}
+.strip{height:6px;background:linear-gradient(90deg,#1A0B3E 0%,#2A1170 18%,#4B2FE8 40%,#12081F 62%,#7B61FF 82%,#1A0B3E 100%)}
+.wrap{padding-left:max(16px,clamp(22px,5vw,48px),env(safe-area-inset-left,0px));padding-right:max(16px,clamp(22px,5vw,48px),env(safe-area-inset-right,0px))}
+.site{border-bottom:1px solid var(--line);background:rgba(255,255,255,.92)}
+.site .in{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-block:18px;max-width:1440px;margin:0 auto}
+.site svg{height:32px;width:auto;display:block}
+.site nav{display:flex;align-items:center;gap:32px;flex-wrap:wrap}
+.site nav a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;padding:6px 0;border-bottom:2px solid transparent}.site nav a:hover,.site nav a[aria-current]{color:var(--violet);border-bottom-color:var(--violet)}
+.label{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--violet)}
+.top{padding-block:44px 22px;max-width:1440px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 40px;align-items:end}
+h1{font-family:var(--f-head);font-weight:600;font-size:clamp(30px,3.6vw,44px);line-height:1.18;letter-spacing:-.02em;margin:12px 0 14px;text-wrap:balance}
+.lede{font-size:17px;line-height:1.7;max-width:70ch;margin:0;color:var(--ink)}
+.lede em{font-style:normal;background:linear-gradient(transparent 62%,var(--swipe) 62%)}
+.stats{display:flex;gap:26px;flex-wrap:wrap}
+.stat b{display:block;font-family:var(--f-head);font-size:30px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+.stat span{font-family:var(--f-mono);font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted)}
+.ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;background:var(--violet);color:#fff;border:1.5px solid var(--violet);font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:8px;text-decoration:none;border:0;cursor:pointer}
+.btn2{display:inline-block;border:1.5px solid var(--ink);background:transparent;color:var(--ink);font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:8px;text-decoration:none;cursor:pointer}
+
+/* Controls */
+.controls{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--white);border-block:1px solid var(--line);padding-block:10px}
+.controls .in{max-width:1440px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.ctl{display:flex;align-items:center;gap:8px;min-width:0}
+.ctl>label,.ctl>.lb{font-family:var(--f-mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
+.seg{display:flex;flex-wrap:wrap;border:1px solid var(--line2);border-radius:6px;overflow:hidden}
+.seg button{border:0;background:var(--white);padding:5px 10px;cursor:pointer;font-size:13px;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
+select,input[type=search]{background:var(--white);border:1px solid var(--line2);border-radius:6px;padding:5px 8px;font-size:13px;max-width:100%}
+input[type=search]{width:220px}
+.reset{border:1px solid var(--line2);background:transparent;border-radius:6px;padding:5px 10px;cursor:pointer;font-size:13px}
+.mystack{border:1.5px solid var(--violet);color:var(--violet);background:var(--white);border-radius:6px;padding:4px 10px;cursor:pointer;font-size:13px;font-weight:600}
+.mystack[aria-pressed="true"]{background:var(--violet);color:#fff}
+.slice-note{flex-basis:100%;font-size:13px;color:var(--muted);min-height:1.2em}
+.slice-note b{color:var(--ink)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--white)}
+
+/* Board */
+.board-scroll{overflow-x:auto;padding-bottom:10px;margin-top:14px}
+.board{position:relative;display:grid;grid-template-columns:118px var(--cols);width:max-content;min-width:100%}
+.lane{grid-column:1 / -1;height:62px;position:relative;border-bottom:1px dashed var(--line2)}
+.lane-hint{position:sticky;left:0;display:inline-block;padding:22px 0 0 4px;font-size:11px;letter-spacing:1px;color:var(--fine);font-family:var(--f-mono)}
+.tpill{position:absolute;top:12px;transform:translateX(-50%);background:var(--violet);color:#fff;border-radius:999px;padding:6px 14px;font-weight:600;font-size:13px;white-space:nowrap;z-index:3;cursor:pointer;border:0}
+.tpill small{font-weight:400;opacity:.85;margin-left:6px}
+.colhead{padding:12px 10px 10px;border-left:1px solid var(--line);background:var(--white)}
+.colhead .idx{font-family:var(--f-mono);font-size:10px;letter-spacing:1.2px;color:var(--peri)}
+.colhead h2{font-family:var(--f-head);font-size:17px;font-weight:600;margin:4px 0 4px;line-height:1.15;text-wrap:balance}
+.colhead p{margin:0;font-size:12px;color:var(--muted);line-height:1.4}
+.colhead .tbtn{margin-top:8px;border:1px solid var(--line2);background:transparent;border-radius:4px;font-size:10px;letter-spacing:1px;padding:3px 7px;cursor:pointer;font-family:var(--f-mono);color:var(--muted);text-transform:uppercase}
+.colhead .tbtn:hover{color:var(--violet);border-color:var(--violet)}
+.corner{position:sticky;left:0;z-index:4;background:var(--white)}
+.rowhead{position:sticky;left:0;z-index:4;padding:12px 10px 10px 2px;border-top:1px solid var(--line);background:var(--white)}
+.rowhead .k{font-family:var(--f-mono);font-size:10px;color:var(--peri);letter-spacing:1.2px}
+.rowhead b{display:block;font-family:var(--f-head);font-size:14px;margin-top:2px}
+.rowhead span{font-size:11px;color:var(--muted);line-height:1.35;display:block;margin-top:3px}
+.cell{border-top:1px solid var(--line);border-left:1px solid var(--line);padding:8px;display:grid;grid-template-columns:repeat(var(--sub,1),minmax(0,1fr));gap:6px;align-content:start;background:var(--lbg)}
+.box{position:relative;text-align:left;border:1px solid var(--line);background:var(--white);border-radius:8px;padding:8px 9px;cursor:pointer;display:block;width:100%;transition:opacity .15s,border-color .15s}
+.box:hover{border-color:var(--violet)}
+.box .bn{font-weight:600;font-size:12.5px;line-height:1.25;display:block;padding-right:34px}
+.box .bc{position:absolute;right:8px;top:7px;font-family:var(--f-mono);font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
+.box .bp i{font-style:normal;color:var(--violet);font-weight:500}
+.box .bp{display:block;margin-top:4px;font-size:11px;color:var(--muted);line-height:1.35}
+.dense .box .bp{display:none}
+.box.off{opacity:.25}
+.box.buy{border-color:var(--ink);box-shadow:0 0 0 1px var(--ink)}
+.box.self{background:var(--deep);border-color:var(--deep)}
+.box.self .bn,.box.self .bp{color:#fff}.box.self .bc,.box.self .sticker{color:var(--peri)}
+.box.traced{border-color:var(--violet);box-shadow:0 0 0 2px var(--violet);z-index:3;opacity:1}
+.box .off-tag{display:none}
+.box.traced .off-tag{display:block;margin-top:5px;font-size:11px;background:var(--vsoft);color:var(--ink);border-radius:4px;padding:3px 6px;line-height:1.3}
+.sticker{display:none;font-family:var(--f-mono);font-size:9.5px;letter-spacing:1.2px;text-transform:uppercase;margin-top:5px;color:var(--ink)}
+.box.self .sticker,.box.buy .sticker{display:block}
+.box .mine{display:none;position:absolute;left:-4px;top:-4px;width:10px;height:10px;border-radius:50%;background:var(--violet);border:2px solid var(--white)}
+.box.has-mine .mine{display:block}
+svg.traces{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:visible}
+svg.traces path{fill:none;stroke:var(--violet);stroke-width:1.3;opacity:.45}
+svg.traces circle{fill:var(--violet)}
+
+/* Drawer */
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(500px,100%);background:var(--white);border-left:1px solid var(--line2);z-index:50;display:flex;flex-direction:column;box-shadow:0 12px 34px rgba(11,12,16,.16);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-right:env(safe-area-inset-right,0px)}
+.drawer>header{padding:18px 20px 14px;border-bottom:1px solid var(--line)}
+.drawer h3{font-family:var(--f-head);font-size:24px;font-weight:600;margin:8px 0 6px;line-height:1.15;padding-right:70px}
+.drawer .desc{color:var(--muted);margin:0;font-size:13.5px}
+.drawer .note{margin:12px 0 0;font-size:13px;background:var(--tint);border-left:3px solid var(--violet);padding:9px 11px;border-radius:0 6px 6px 0}
+.drawer .x{position:absolute;right:max(16px,env(safe-area-inset-right,0px));top:calc(14px + env(safe-area-inset-top,0px));border:1.5px solid var(--ink);background:var(--white);border-radius:6px;padding:4px 10px;cursor:pointer;font-family:var(--f-mono);font-size:10px;letter-spacing:1.2px}
+.drawer .body{overflow:auto;padding:6px 20px 28px;flex:1;min-height:0}
+.drawer .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.drawer .acts a,.drawer .acts button{font-family:var(--f-mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase}
+.subtabs{display:flex;gap:6px;margin:12px 0 2px;flex-wrap:wrap}
+.subtabs button{border:1px solid var(--line2);background:var(--white);border-radius:999px;padding:3px 10px;font-size:12px;cursor:pointer}
+.subtabs button[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:#fff}
+.pl{border-bottom:1px solid var(--line);padding:12px 0}
+.pl .row1{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.pl .nm{font-weight:600;font-size:14.5px}
+.pl .meta{font-family:var(--f-mono);font-size:10.5px;color:var(--muted);letter-spacing:.4px}
+.pl p{margin:4px 0 5px;font-size:13.5px}
+.pl .acc{font-size:12.5px;background:var(--tint);border-radius:4px;padding:4px 7px;margin:4px 0 6px;font-family:var(--f-mono);letter-spacing:.2px}
+.tags{display:flex;gap:4px;flex-wrap:wrap}
+.tag{font-family:var(--f-mono);font-size:10px;padding:1px 6px;border-radius:3px;border:1px solid var(--line2);color:var(--muted)}
+.tag.hot{border-color:var(--violet);color:var(--violet)}
+.tag.kind{background:var(--deep);border-color:var(--deep);color:#fff}
+.tag.stage{border-color:var(--peri);color:var(--violet)}
+.pl .links{font-size:12px;margin-top:6px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.pl .chg{font-size:12.5px;color:var(--violet);margin-top:3px}
+.linkbtn{border:0;background:none;color:var(--violet);cursor:pointer;padding:0;font-size:12px;text-decoration:underline}
+.add{border:1px solid var(--violet);background:var(--white);color:var(--violet);border-radius:4px;padding:1px 7px;font-size:11.5px;cursor:pointer}
+.add[aria-pressed="true"]{background:var(--violet);color:#fff}
+.empty{color:var(--muted);padding:16px 0}
+.tlist{margin:0;padding:0;list-style:none}
+.tlist li{padding:12px 0;border-bottom:1px solid var(--line)}
+.tlist b{font-family:var(--f-head)}
+
+/* Lower */
+.lower{max-width:1440px;margin:0 auto;padding-block:56px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:44px}
+.lower h2{font-family:var(--f-head);font-size:clamp(22px,2.6vw,28px);font-weight:600;margin:10px 0 6px;line-height:1.2}
+.lower .sub{color:var(--muted);margin:0 0 14px;font-size:14px;max-width:62ch}
+.chain{list-style:none;margin:0;padding:0}
+.chain li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;padding:11px 0;border-top:1px solid var(--line)}
+.chain .ft{font-family:var(--f-mono);font-size:10.5px;color:var(--peri);white-space:nowrap;padding-top:3px;letter-spacing:.6px}
+.chain b{font-size:14px}
+.chain p{margin:2px 0 0;font-size:13.5px;color:var(--muted);grid-column:2}
+.xn{display:flex;flex-wrap:wrap;gap:6px}
+.xn button{border:1px solid var(--line2);background:var(--white);border-radius:999px;padding:4px 11px;cursor:pointer;font-size:12.5px}
+.xn button small{font-family:var(--f-mono);color:var(--muted);margin-left:4px}
+.xn button[aria-pressed="true"]{background:var(--violet);border-color:var(--violet);color:#fff}
+.xn button[aria-pressed="true"] small{color:#fff}
+.xn h3{flex-basis:100%;font-family:var(--f-mono);font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin:14px 0 2px;font-weight:500}
+.band{background:var(--deep);color:#fff;margin-top:56px}
+.band .in{max-width:1440px;margin:0 auto;padding-block:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:28px}
+.band .label{color:var(--peri)}
+.band h2{font-family:var(--f-head);font-size:clamp(24px,3vw,32px);margin:10px 0 10px;line-height:1.2}
+.band p{color:#C9C4E4;font-size:15px;line-height:1.7;margin:0 0 14px}
+.band ol{margin:0;padding:0;list-style:none;counter-reset:s}
+.band li{counter-increment:s;display:grid;grid-template-columns:28px 1fr;gap:8px;padding:9px 0;border-top:1px solid #241d3d;color:#fff;font-size:14.5px}
+.band li::before{content:counter(s,decimal-leading-zero);font-family:var(--f-mono);color:var(--peri);font-size:11px;padding-top:3px}
+.band .btn{margin-right:8px;margin-top:6px}
+.band .btn2{border-color:#fff;color:#fff;margin-top:6px}
+.log{list-style:none;margin:0;padding:0}
+.log li{padding:10px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:96px 1fr;gap:12px}
+.log .d{font-family:var(--f-mono);font-size:10.5px;color:var(--peri);padding-top:3px}
+.stacks{display:grid;gap:8px}
+.stacks .s{border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;justify-content:space-between;gap:10px;align-items:center}
+footer{border-top:1px solid var(--line);padding-block:28px;font-size:13px;color:#777;margin-top:30px}
+footer .in{max-width:1440px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+footer p{max-width:100ch;margin:0 0 8px}
+@media (max-width:760px){
+  .site nav{display:none}.top{grid-template-columns:1fr}
+  .controls{position:static}input[type=search]{width:100%}.ctl{flex-wrap:wrap}
+  .drawer{top:auto;height:80vh;width:100%;border-left:0;border-top:1px solid var(--line2);border-radius:14px 14px 0 0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style></head><body>
+<div class="strip"></div>
+<div class="site wrap"><div class="in">
+<a href="/" aria-label="Progma home"><svg role="img" aria-label="Progma" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4744 1280">
+<path d="M 496.87,267.35 L 526.50,270.41 L 555.64,275.81 L 584.11,283.49 L 611.73,293.38 L 638.33,305.40 L 663.75,319.44 L 687.83,335.39 L 710.44,353.12 L 731.45,372.52 L 750.73,393.43 L 768.17,415.70 L 783.69,439.17 L 797.20,463.68 L 808.64,489.06 L 817.96,515.14 L 825.11,541.73 L 830.08,568.67 L 832.86,595.77 L 833.44,622.85 L 831.86,649.75 L 828.15,676.28 L 822.34,702.28 L 814.52,727.59 L 804.74,752.05 L 793.10,775.52 L 779.68,797.84 L 764.60,818.89 L 747.98,838.55 L 729.94,856.70 L 710.61,873.25 L 690.13,888.10 L 668.66,901.19 L 646.33,912.43 L 623.32,921.79 L 599.77,929.23 L 575.84,934.71 L 551.70,938.24 L 527.50,939.80 L 503.41,939.41 L 479.57,937.10 L 456.14,932.91 L 433.27,926.89 L 411.10,919.09 L 389.77,909.60 L 369.39,898.50 L 350.11,885.88 L 332.02,871.83 L 315.22,856.48 L 299.82,839.94 L 285.90,822.33 L 273.51,803.77 L 262.74,784.42 L 253.62,764.39 L 246.19,743.84 L 240.48,722.90 L 236.50,701.71 L 234.25,680.42 L 233.74,659.17 L 234.92,638.10 L 237.78,617.33 L 242.27,597.01 L 248.34,577.27 L 255.92,558.21 L 264.95,539.96 L 275.35,522.63 L 287.02,506.31 L 299.87,491.10 L 313.80,477.08 L 328.70,464.32 L 344.46,452.90 L 360.96,442.87 L 378.09,434.26 L 395.71,427.12 L 413.72,421.47 L 431.97,417.33 L 450.35,414.69 L 468.73,413.56 L 487.00,413.91 L 505.03,415.71 L 522.71,418.95 L 539.93,423.56 L 556.57,429.50 L 572.55,436.70 L 587.76,445.10 L 602.12,454.61 L 615.54,465.17 L 627.96,476.67 L 639.30,489.04 L 649.52,502.16 L 658.55,515.94 L 666.38,530.27 L 672.95,545.06 L 678.26,560.19 L 682.28,575.55 L 685.02,591.05 L 686.49,606.57 L 686.68,622.00 L 685.64,637.25 L 683.38,652.22 L 679.95,666.82 L 675.40,680.94 L 669.76,694.51 L 663.12,707.45 L 655.52,719.67 L 647.04,731.12 L 637.76,741.73 L 627.75,751.45 L 617.10,760.22 L 605.89,768.02 L 594.21,774.80 L 582.16,780.54 L 569.81,785.23 L 557.27,788.86 L 544.61,791.42 L 531.94,792.92 L 519.34,793.38 L 506.89,792.81 L 494.67,791.25 L 482.77,788.72 L 471.26,785.27" stroke="#0B0C10" stroke-width="116.45" fill="none" stroke-linecap="round"/><circle cx="496.8727272727273" cy="640.0" r="69.87" fill="#4B2FE8"/>
+<g transform="translate(1017,1000) scale(1,-1)"><path d="M73 0V700H351Q415 700 465.5 674.5Q516 649 544.5 602.5Q573 556 573 491V478Q573 413 543.5 366.0Q514 319 464.0 294.0Q414 269 351 269H181V0ZM181 367H340Q397 367 431.0 397.0Q465 427 465 479V489Q465 542 431.0 572.0Q397 602 340 602H181Z" transform="translate(0,0)" fill="#0B0C10"/><path d="M76 0V493H177V435H193Q205 466 231.5 480.5Q258 495 297 495H356V402H293Q243 402 211.0 374.5Q179 347 179 290V0Z" transform="translate(611,0)" fill="#0B0C10"/><circle cx="1313.5" cy="239.5" r="225" fill="#FFFFFF" stroke="#0B0C10" stroke-width="58"/><path d="M 1313.5,14.5 A 225,225 0 0,1 1313.5,464.5 A 112.5,112.5 0 0,1 1313.5,239.5 A 112.5,112.5 0 0,0 1313.5,14.5 Z" fill="#4B2FE8"/><circle cx="1313.5" cy="239.5" r="225" fill="none" stroke="#0B0C10" stroke-width="58"/><path d="M52 244V259Q52 337 83.5 392.0Q115 447 167.0 477.0Q219 507 281 507Q353 507 391.5 480.0Q430 453 448 422H464V493H564V-101Q564 -146 537.5 -173.0Q511 -200 465 -200H133V-110H433Q462 -110 462 -80V77H446Q435 59 415.0 40.0Q395 21 362.5 9.0Q330 -3 281 -3Q219 -3 166.5 26.5Q114 56 83.0 111.5Q52 167 52 244ZM309 87Q376 87 419.5 129.5Q463 172 463 247V256Q463 333 420.0 374.5Q377 416 309 416Q243 416 199.5 374.5Q156 333 156 256V247Q156 172 199.5 129.5Q243 87 309 87Z" transform="translate(1629,0)" fill="#0B0C10"/><path d="M76 0V493H177V435H193Q207 461 238.0 481.0Q269 501 322 501Q377 501 410.5 478.5Q444 456 461 421H477Q494 455 526.5 478.0Q559 501 619 501Q667 501 704.0 481.5Q741 462 763.0 423.5Q785 385 785 328V0H682V320Q682 365 657.5 389.5Q633 414 588 414Q540 414 511.0 383.0Q482 352 482 294V0H379V320Q379 365 354.5 389.5Q330 414 285 414Q237 414 208.0 383.0Q179 352 179 294V0Z" transform="translate(2277,0)" fill="#0B0C10"/><path d="M229 -14Q176 -14 134.5 4.0Q93 22 68.5 57.0Q44 92 44 142Q44 193 68.5 226.5Q93 260 135.5 277.0Q178 294 232 294H382V326Q382 369 356.0 395.0Q330 421 276 421Q223 421 195.0 396.0Q167 371 158 331L62 362Q74 402 100.5 434.5Q127 467 171.0 487.0Q215 507 277 507Q373 507 428.0 458.0Q483 409 483 319V116Q483 86 511 86H553V0H476Q441 0 419.0 18.0Q397 36 397 67V70H382Q374 55 358.0 35.0Q342 15 311.0 0.5Q280 -14 229 -14ZM244 71Q306 71 344.0 106.5Q382 142 382 204V214H238Q197 214 172.0 196.5Q147 179 147 145Q147 111 173.0 91.0Q199 71 244 71Z" transform="translate(3142,0)" fill="#0B0C10"/></g></svg></a>
+<nav><a href="/#areas">What we do</a><a href="/#notes">Field notes</a><a href="/atlas/" aria-current="page">AI atlas</a><a href="/#founders">Founders</a><a href="/#read">Get in touch</a></nav>
+</div></div>
+
+<div class="wrap"><header class="top">
+  <div>
+    <div class="label">Progma · AI Value Chain Atlas · updated <span id="asof">…</span></div>
+    <h1>Who does what in AI, from power to people.</h1>
+    <p class="lede">Columns are the value chain. Rows are the support layers around each node: what it sells, what it needs, what makes it faster or cheaper, what keeps it safe, and how it reaches buyers. Click a box to see the companies and open projects in it. Trace any company or investor to see every box it touches. <em>Everything here is sourced, open, and corrected in public.</em></p>
+    <div class="ctas"><a class="btn" href="#contribute">Contribute or claim a listing</a><button type="button" class="btn2" id="openStack">Build my stack</button></div>
+  </div>
+  <div class="stats" id="stats"></div>
+</header></div>
+
+<div class="controls wrap" role="region" aria-label="Slices"><div class="in">
+  <div class="ctl"><span class="lb" id="lensLb">Lens</span><div class="seg" id="lens" role="group" aria-labelledby="lensLb"></div></div>
+  <div class="ctl"><label for="persona">I am</label><select id="persona"></select></div>
+  <div class="ctl"><label for="region">Region</label><select id="region"></select></div>
+  <div class="ctl"><label for="stage">Stage</label><select id="stage"></select></div>
+  <div class="ctl"><label for="trace">Trace</label><input type="search" id="trace" list="names" placeholder="Company or investor"><datalist id="names"></datalist></div>
+  <div class="ctl"><span class="lb" id="viewLb">View</span><div class="seg" id="density" role="group" aria-labelledby="viewLb"><button type="button" data-v="detail" aria-pressed="true">Detail</button><button type="button" data-v="dense" aria-pressed="false">Overview</button></div></div>
+  <button type="button" class="mystack" id="stackBtn" aria-pressed="false">My stack · <span id="stackN">0</span></button>
+  <button type="button" class="reset" id="reset">Clear slices</button>
+  <div class="slice-note" id="note" aria-live="polite"></div>
+</div></div>
+
+<div class="wrap"><div class="board-scroll" id="scroll"><div class="board" id="board"><p class="empty" style="padding:40px 0">Loading the atlas…</p></div></div></div>
+
+<div class="wrap"><section class="lower">
+  <div><div class="label">Transitions</div><h2>What it takes to move along the chain</h2><p class="sub">Each hand-off between nodes, and the capability, capital or constraint that sits on it.</p><ol class="chain" id="chain"></ol></div>
+  <div><div class="label">Footprints</div><h2>Who spans the chain, and who funds it</h2><p class="sub">Select one to draw its footprint across the board. The number is how many boxes it touches.</p><div class="xn" id="xn"></div></div>
+</section></div>
+
+<section class="band" id="contribute"><div class="in wrap">
+  <div><div class="label">Contribute</div><h2>This map is corrected in public.</h2>
+    <p>The data lives in Progma's public GitHub repository, one file per value-chain node. Anyone can suggest a change; every change is reviewed before it goes live. The atlas is re-scanned every fortnight against what was suggested and what moved in the market.</p>
+    <a class="btn" id="ghIssue" href="#">Suggest a company or correction</a><a class="btn2" id="ghRepo" href="#">See the data on GitHub</a></div>
+  <div><div class="label">How it works</div><ol>
+    <li>Use “Suggest” on any box or listing. It opens a short form on GitHub.</li>
+    <li>Companies can claim their listing from their organisation's GitHub account to keep it accurate.</li>
+    <li>Developers can edit the node file directly in a pull request; an automatic check validates it.</li>
+    <li>Fork the repository to run your own version. The data is CC BY 4.0: credit Progma and link back.</li>
+  </ol></div>
+  <div><div class="label">Your stack</div><h2>Fork your own stack.</h2>
+    <p>Pick the boxes and vendors you run on. You get a link you can share, and you can submit it to the community gallery below.</p>
+    <button type="button" class="btn" id="openStack2">Build my stack</button></div>
+</div></section>
+
+<div class="wrap"><section class="lower">
+  <div><div class="label">Changelog</div><h2>What moved</h2><p class="sub">Additions, acquisitions and corrections from each fortnightly pass.</p><ul class="log" id="log"></ul></div>
+  <div><div class="label">Community stacks</div><h2>Stacks people run on</h2><p class="sub">Submitted through “Build my stack” and reviewed before listing.</p><div class="stacks" id="stacks"></div></div>
+</section></div>
+
+<footer class="wrap"><div class="in"><div>
+  <p><b>Method.</b> The taxonomy runs top-down from the physical stack to demand and was stress-tested node by node for missing elements. Companies, open projects and investors are researched against company sites, filings, repositories and news; each listing carries a source. Status reflects deals announced through the date above. Funding stage is the latest disclosed round only. Tags such as performance and cost describe what an offering mainly does; they are not ratings. Inclusion is not endorsement, and listings are never paid for.</p>
+  <p>Progma Consulting and Management Services LLP · Bengaluru · progma.co.in · Atlas data CC BY 4.0</p></div></div></footer>
+
+<aside class="drawer" id="drawer" hidden aria-label="Details"><button type="button" class="x" id="dx">CLOSE</button><header id="dh"></header><div class="body" id="db"></div></aside>
+
+<script>
+const REPO = "https://github.com/progma-co/progma-co.github.io";
+const INLINE = null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const keyOf = n => String(n).toLowerCase().replace(/[^a-z0-9]/g, "");
+function issueURL(template, title, body) {
+  const u = new URL(REPO + "/issues/new");
+  u.searchParams.set("template", template); if (title) u.searchParams.set("title", title); if (body) u.searchParams.set("body", body);
+  return u.toString();
+}
+async function loadData() {
+  if (INLINE) return INLINE;
+  const get = p => fetch("data/" + p, {cache: "no-cache"}).then(r => { if (!r.ok) throw new Error(p); return r.json(); });
+  const [meta, taxonomy, cross, investors, stacks] = await Promise.all([get("meta.json"), get("taxonomy.json"), get("cross.json"), get("investors.json"), get("stacks.json").catch(() => ({stacks: []}))]);
+  const nodeFiles = await Promise.all(taxonomy.nodes.map(n => get("nodes/" + n.id + ".json").catch(() => ({entries: [], notes: {}}))));
+  const players = [], notes = {};
+  nodeFiles.forEach(f => { players.push(...(f.entries || [])); Object.assign(notes, f.notes || {}); });
+  return {asof: meta.asof, personas: meta.personas, changelog: meta.changelog || [], taxonomy, players, cross: cross.cross || [], investors: investors.investors || [], notes, stacks: stacks.stacks || []};
+}
+
+loadData().then(start).catch(e => { $("#board").innerHTML = `<p class="empty">The atlas data did not load (${esc(e.message)}). Refresh, or open the data on GitHub.</p>`; });
+
+function start(DATA) {
+const T = DATA.taxonomy, P = DATA.players, X = DATA.cross, INV = DATA.investors;
+const LAYERS = T.layers, NODES = T.nodes;
+const SEG = {}; NODES.forEach(n => n.subsegments.forEach(s => SEG[s.id] = {...s, node: n}));
+const bySeg = {}; Object.keys(SEG).forEach(k => bySeg[k] = []);
+P.forEach(p => { p.kind = p.kind || "company"; (p.subsegments || []).forEach(s => bySeg[s] && bySeg[s].push(p)); });
+const isOpen = p => p.kind !== "company";
+const BYKEY = {}; P.forEach(p => BYKEY[keyOf(p.name)] = p);
+
+const LENSES = [{id: "all", name: "All"}, {id: "performance", name: "Performance"}, {id: "cost", name: "Cost"}, {id: "open", name: "Open"}, {id: "security", name: "Security"}, {id: "sovereign", name: "Sovereign"}];
+const STAGES = ["Any stage", "Pre-seed/Seed", "Series A", "Series B", "Series C+", "Public", "Acquired"];
+const PERSONAS = DATA.personas;
+const REGIONS = ["All regions", ...[...new Set(P.map(p => p.region).filter(Boolean))].sort()];
+const st = {lens: "all", persona: "", region: "All regions", stage: "Any stage", trace: "", dense: false, stack: new Set()};
+const stageOf = p => p.status === "public" ? "Public" : p.status === "acquired" ? "Acquired" : (p.stage || "");
+const tagOK = p => st.lens === "all" || (st.lens === "open" ? (isOpen(p) || (p.tags || []).includes("open-source")) : (p.tags || []).includes(st.lens));
+const passes = p => (st.region === "All regions" || p.region === st.region) && tagOK(p) && (st.stage === "Any stage" || stageOf(p) === st.stage);
+
+/* header */
+$("#asof").textContent = DATA.asof;
+const nCo = P.filter(p => !isOpen(p)).length, nOpen = P.length - nCo;
+$("#stats").innerHTML = [[NODES.length, "nodes"], [Object.keys(SEG).length, "sub-segments"], [nCo, "companies"], [nOpen, "open projects"], [INV.length, "investors"]].filter(([n]) => n > 0).map(([n, l]) => `<div class="stat"><b>${n.toLocaleString()}</b><span>${l}</span></div>`).join("");
+$("#ghRepo").href = REPO + "/tree/main/atlas";
+$("#ghIssue").href = issueURL("atlas-suggest.yml", "[Atlas] ");
+
+/* controls */
+$("#lens").innerHTML = LENSES.map(l => `<button type="button" data-v="${l.id}" aria-pressed="${l.id === "all"}">${l.name}</button>`).join("");
+$("#persona").innerHTML = `<option value="">Anyone</option>` + PERSONAS.map(p => `<option value="${p.id}">${esc(p.name)}</option>`).join("");
+$("#region").innerHTML = REGIONS.map(r => `<option>${esc(r)}</option>`).join("");
+$("#stage").innerHTML = STAGES.map(r => `<option>${esc(r)}</option>`).join("");
+const traceNames = [...new Set([...X.map(x => x.name), ...INV.map(i => i.name), ...P.map(p => p.name)])];
+$("#names").innerHTML = traceNames.map(n => `<option value="${esc(n)}"></option>`).join("");
+
+/* board */
+NODES.forEach(n => n.sub = Math.max(...LAYERS.map(l => n.subsegments.filter(s => s.layer === l.id).length)) > 7 ? 2 : 1);
+const LBG = {core: "var(--white)", inputs: "var(--tint)", optimisation: "#F1EEFF", ops: "var(--tint)", distribution: "var(--white)"};
+function buildBoard() {
+  const w = st.dense ? 150 : 205, b = $("#board");
+  b.classList.toggle("dense", st.dense);
+  b.style.setProperty("--cols", NODES.map(n => (w * n.sub) + "px").join(" "));
+  let h = `<div class="lane" id="lane"><span class="lane-hint" id="lanehint">TRACE A COMPANY OR INVESTOR TO DRAW ITS FOOTPRINT</span></div><div class="corner"></div>`;
+  NODES.forEach((n, i) => {
+    const inbound = T.transitions.some(t => t.to === n.id);
+    h += `<div class="colhead"><div class="idx">${String(i).padStart(2, "0")} · ${n.subsegments.length} SUB-SEGMENTS</div><h2>${esc(n.name)}</h2>${st.dense ? "" : `<p>${esc(n.desc)}</p>`}${inbound ? `<button type="button" class="tbtn" data-tr="${n.id}">How to get here</button>` : ""}</div>`;
+  });
+  LAYERS.forEach((l, li) => {
+    h += `<div class="rowhead"><div class="k">LAYER ${String(li + 1).padStart(2, "0")}</div><b>${esc(l.name)}</b><span>${esc(l.desc)}</span></div>`;
+    NODES.forEach(n => {
+      const segs = n.subsegments.filter(s => s.layer === l.id);
+      h += `<div class="cell" style="--lbg:${LBG[l.id]};--sub:${segs.length > 1 ? n.sub : 1}">` + segs.map(s =>
+        `<button type="button" class="box" data-seg="${s.id}"><span class="mine"></span><span class="bn">${esc(s.name)}</span><span class="bc"></span><span class="bp"></span><span class="sticker"></span><span class="off-tag"></span></button>`).join("") + `</div>`;
+    });
+  });
+  h += `<svg class="traces" id="svg" aria-hidden="true"></svg>`;
+  b.innerHTML = h; update();
+}
+function traceTarget() {
+  if (!st.trace) return null;
+  const q = keyOf(st.trace), roles = new Map(), add = (s, t) => SEG[s] && roles.set(s, roles.has(s) ? roles.get(s) + "; " + t : t);
+  const x = X.find(c => keyOf(c.name) === q), inv = INV.find(c => keyOf(c.name) === q), p = BYKEY[q];
+  if (x) x.roles.forEach(r => add(r.subsegment, r.offering));
+  if (inv) inv.roles.forEach(r => add(r.subsegment, "Backs " + r.portfolio));
+  if (p) p.subsegments.forEach(s => { if (!roles.has(s)) add(s, p.one_liner); });
+  if (!roles.size) return null;
+  return {name: (x || inv || p).name, summary: (x || inv || {}).summary || "", investor: !!inv && !x, roles};
+}
+function update() {
+  const per = PERSONAS.find(p => p.id === st.persona), tr = traceTarget(), filtered = st.lens !== "all" || st.region !== "All regions" || st.stage !== "Any stage";
+  const mineSegs = new Set(); st.stack.forEach(k => BYKEY[k] && BYKEY[k].subsegments.forEach(s => mineSegs.add(s)));
+  document.querySelectorAll(".box").forEach(el => {
+    const id = el.dataset.seg, demand = id.startsWith("n11."), list = bySeg[id].filter(passes), op = list.filter(isOpen).length;
+    el.querySelector(".bc").textContent = demand && !list.length ? "" : list.length;
+    el.querySelector(".bp").innerHTML = demand && !list.length ? esc(SEG[id].desc) : (op ? `<i>${op} open · </i>` : "") + esc(list.slice(0, 4).map(p => p.name).join(" · ") + (list.length > 4 ? " …" : ""));
+    const isSelf = per && per.self.includes(id), isBuy = per && per.buys.includes(id);
+    el.classList.toggle("self", !!isSelf); el.classList.toggle("buy", !!isBuy && !isSelf);
+    el.querySelector(".sticker").textContent = isSelf ? "You are here" : isBuy ? "In your stack" : "";
+    el.classList.toggle("off", (filtered && !list.length && !demand) || (per && !isSelf && !isBuy) || (tr && !tr.roles.has(id)));
+    const t = tr && tr.roles.get(id); el.classList.toggle("traced", !!t); el.querySelector(".off-tag").textContent = t || "";
+    el.classList.toggle("has-mine", mineSegs.has(id));
+  });
+  document.querySelectorAll("#lens button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === st.lens));
+  document.querySelectorAll("#xn button").forEach(b => b.setAttribute("aria-pressed", !!tr && b.dataset.n === tr.name));
+  $("#stackN").textContent = st.stack.size; $("#stackBtn").setAttribute("aria-pressed", st.stack.size > 0);
+  noteText(per, tr); writeHash(); requestAnimationFrame(drawTraces);
+}
+function noteText(per, tr) {
+  const bits = [], lensName = LENSES.find(l => l.id === st.lens).name.toLowerCase();
+  if (per) bits.push(`<b>${esc(per.name)}</b>: ${esc(per.blurb)}`);
+  if (st.lens !== "all") bits.push(st.lens === "open" ? `Showing open-source projects, open weights, open standards and public programmes.` : `Showing listings tagged <b>${esc(lensName)}</b>.`);
+  if (st.region !== "All regions") bits.push(`Region: <b>${esc(st.region)}</b>.`);
+  if (st.stage !== "Any stage") bits.push(`Stage: <b>${esc(st.stage)}</b> (latest disclosed round only).`);
+  if (tr) bits.push(`<b>${esc(tr.name)}</b> ${tr.investor ? "backs companies in" : "touches"} ${tr.roles.size} boxes${tr.summary ? ". " + esc(tr.summary) : "."}`);
+  if (per && (st.lens !== "all" || st.region !== "All regions")) { const n = new Set(); per.buys.forEach(s => (bySeg[s] || []).filter(passes).forEach(p => n.add(p.name))); bits.push(`<b>${n.size}</b> options in this slice of your stack.`); }
+  $("#note").innerHTML = bits.join(" ") || "Pick a lens, a persona, a region or a stage. They combine: an inference provider's cost stack in India, for example.";
+}
+function drawTraces() {
+  const svg = $("#svg"), lane = $("#lane"), board = $("#board"); if (!svg) return;
+  lane.querySelectorAll(".tpill").forEach(e => e.remove()); svg.innerHTML = "";
+  const tr = traceTarget(); $("#lanehint").hidden = !!tr; if (!tr) return;
+  const br = board.getBoundingClientRect(); svg.setAttribute("width", board.scrollWidth); svg.setAttribute("height", board.scrollHeight);
+  const pts = []; tr.roles.forEach((_, id) => { const el = board.querySelector(`.box[data-seg="${id}"]`); if (!el) return; const r = el.getBoundingClientRect(); pts.push({x: r.left - br.left + r.width / 2, y: r.top - br.top}); });
+  if (!pts.length) return;
+  const lr = lane.getBoundingClientRect(); let cx = pts.reduce((a, p) => a + p.x, 0) / pts.length; cx = Math.max(150, Math.min(board.scrollWidth - 150, cx));
+  const pill = document.createElement("button"); pill.type = "button"; pill.className = "tpill"; pill.style.left = cx + "px";
+  pill.innerHTML = `${esc(tr.name)}<small>${tr.roles.size} boxes · clear</small>`; pill.onclick = () => { st.trace = ""; $("#trace").value = ""; update(); }; lane.appendChild(pill);
+  const y0 = lr.bottom - br.top - 18; let d = "", dots = "";
+  pts.forEach(p => { const my = (y0 + p.y) / 2; d += `M${cx},${y0} C${cx},${my} ${p.x},${my - 30} ${p.x},${p.y - 1} `; dots += `<circle cx="${p.x}" cy="${p.y - 1}" r="3.2"/>`; });
+  svg.innerHTML = `<path d="${d}"/>${dots}<circle cx="${cx}" cy="${y0}" r="3.2"/>`;
+}
+
+/* drawer */
+let lastFocus = null;
+function openDrawer(head, body) { lastFocus = document.activeElement; $("#dh").innerHTML = head; $("#db").innerHTML = body; $("#drawer").hidden = false; $("#db").scrollTop = 0; $("#dx").focus(); }
+function closeDrawer() { $("#drawer").hidden = true; if (lastFocus) lastFocus.focus(); }
+function playerHTML(p) {
+  const k = keyOf(p.name), open = isOpen(p);
+  const tags = (p.tags || []).filter(t => t !== "open-source" || !open).map(t => `<span class="tag ${t === st.lens ? "hot" : ""}">${esc(t)}</span>`).join("");
+  const status = p.status === "acquired" && p.parent ? `acquired · ${p.parent}` : (p.parent ? `${p.status || ""} · ${p.parent}` : (p.status || ""));
+  const meta = open ? [p.licence, p.steward, p.stars ? `★ ${Number(p.stars).toLocaleString()}` : "", p.archived ? "archived" : ""].filter(Boolean).join(" · ") : [p.hq, status].filter(Boolean).join(" · ");
+  const stg = !open && p.stage ? `<span class="tag stage" title="${esc(p.last_round || "")}">${esc(p.stage)}</span>` : "";
+  const multi = (p.subsegments || []).length > 1;
+  const sug = issueURL("atlas-correct.yml", `[Atlas] Correction: ${p.name}`, `Listing: ${p.name}\nBoxes: ${(p.subsegments || []).join(", ")}\n\nWhat should change:\n\nSource:\n`);
+  const claim = issueURL("atlas-claim.yml", `[Atlas] Claim: ${p.name}`);
+  return `<div class="pl"><div class="row1"><span class="nm">${esc(p.name)}</span>${open ? `<span class="tag kind">${esc(p.kind)}</span>` : ""}<span class="meta">${esc(meta)}</span></div>
+  <p>${esc(p.one_liner)}</p>${open && p.access ? `<div class="acc">${esc(p.access)}</div>` : ""}${!open && p.last_round ? `<div class="chg">${esc(p.last_round)}</div>` : ""}${p.note ? `<div class="chg">${esc(p.note)}</div>` : ""}
+  <div class="tags">${stg}${tags}</div>
+  <div class="links"><button type="button" class="add" data-add="${esc(k)}" aria-pressed="${st.stack.has(k)}">${st.stack.has(k) ? "In my stack" : "+ My stack"}</button>
+  ${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">Site</a>` : ""}${p.repo ? `<a href="${esc(p.repo)}" target="_blank" rel="noopener">Repo</a>` : ""}${p.source ? `<a href="${esc(p.source)}" target="_blank" rel="noopener">Source</a>` : ""}
+  ${multi ? `<button type="button" class="linkbtn" data-trace="${esc(p.name)}">Trace ${p.subsegments.length} boxes</button>` : ""}
+  <a href="${esc(sug)}" target="_blank" rel="noopener">Suggest edit</a>${open ? "" : `<a href="${esc(claim)}" target="_blank" rel="noopener">Claim</a>`}</div></div>`;
+}
+let segTab = "all";
+function showSeg(id) {
+  const s = SEG[id], l = LAYERS.find(x => x.id === s.layer), all = bySeg[id], list = all.filter(passes);
+  if (id.startsWith("n11.") && !all.length) {
+    const pid = {"n11.ent": "enterprise", "n11.dev": "dev", "n11.startup": "aiproduct"}[id], per = PERSONAS.find(p => p.id === pid);
+    return openDrawer(`<div class="label">Users · demand segment</div><h3>${esc(s.name)}</h3><p class="desc">${esc(s.desc)}</p>`, per ? `<p>${esc(per.name)}: ${esc(per.blurb)}</p><button type="button" class="btn" data-persona="${pid}">Show this buyer's stack</button>` : `<p class="empty">This column describes who buys AI and how.</p>`);
+  }
+  const co = list.filter(p => !isOpen(p)), op = list.filter(isOpen);
+  const shown = segTab === "open" ? op : segTab === "co" ? co : list;
+  const add = issueURL("atlas-suggest.yml", `[Atlas] Add to ${s.name}`, `Box: ${s.name} (${id})\nCompany or project:\nWebsite:\nOne line on what it sells:\nSource:\n`);
+  const head = `<div class="label">${esc(s.node.name)} · ${esc(l.name)}</div><h3>${esc(s.name)}</h3><p class="desc">${esc(s.desc)}</p>${DATA.notes[id] ? `<p class="note">${esc(DATA.notes[id])}</p>` : ""}
+  <div class="subtabs" role="group" aria-label="Show"><button type="button" data-tab="all" aria-pressed="${segTab === "all"}">All ${list.length}</button><button type="button" data-tab="co" aria-pressed="${segTab === "co"}">Companies ${co.length}</button><button type="button" data-tab="open" aria-pressed="${segTab === "open"}">Open ${op.length}</button></div>
+  <div class="acts"><a class="btn2" href="${esc(add)}" target="_blank" rel="noopener">Suggest an addition</a></div>`;
+  const filt = list.length !== all.length ? `<p class="empty">Showing ${list.length} of ${all.length} after slices.</p>` : "";
+  openDrawer(head, filt + (shown.length ? shown.map(playerHTML).join("") : `<p class="empty">Nothing here for the current slices.</p>`));
+  $("#drawer").dataset.seg = id;
+}
+function showTransitions(nid) {
+  const n = NODES.find(x => x.id === nid), nm = id => NODES.find(x => x.id === id).name;
+  openDrawer(`<div class="label">Transition into</div><h3>${esc(n.name)}</h3>`, `<ul class="tlist">${T.transitions.filter(t => t.to === nid).map(t => `<li><b>${esc(nm(t.from))} → ${esc(nm(t.to))}: ${esc(t.name)}</b><br>${esc(t.needs)}</li>`).join("")}</ul>`);
+}
+function showStack() {
+  const items = [...st.stack].map(k => BYKEY[k]).filter(Boolean);
+  const groups = {}; items.forEach(p => { const s = SEG[p.subsegments[0]]; (groups[s.node.name] = groups[s.node.name] || []).push(p); });
+  const json = JSON.stringify({title: "", items: items.map(p => p.name)}, null, 1);
+  const submit = issueURL("atlas-stack.yml", "[Atlas] Stack: ", "Stack title:\nWho runs it (optional):\n\n```json\n" + json + "\n```\n");
+  const body = items.length ? Object.entries(groups).map(([g, ps]) => `<p class="label" style="margin-top:16px">${esc(g)}</p>` + ps.map(playerHTML).join("")).join("") : `<p class="empty">Your stack is empty. Open any box and press “+ My stack” on the vendors and projects you run on. Boxes in your stack get a violet dot.</p>`;
+  openDrawer(`<div class="label">Build my stack</div><h3>My stack · ${items.length}</h3><p class="desc">The link in your address bar now carries this stack. Copy it to share, or submit it to the community gallery.</p>
+  <div class="acts"><button type="button" class="btn" id="copyStack" ${items.length ? "" : "disabled"}>Copy link</button><a class="btn2" href="${esc(submit)}" target="_blank" rel="noopener">Submit to gallery</a><button type="button" class="btn2" id="clearStack">Clear</button></div>`, body);
+}
+
+/* hash: #seg=…, #trace=…, #stack=… */
+function writeHash() {
+  const parts = []; if (st.trace) parts.push("trace=" + encodeURIComponent(st.trace)); if (st.stack.size) parts.push("stack=" + [...st.stack].map(encodeURIComponent).join(","));
+  const h = parts.length ? "#" + parts.join("&") : ""; if (location.hash !== h) try { history.replaceState(null, "", h || location.pathname + location.search); } catch (e) {}
+}
+function readHash() {
+  const h = new URLSearchParams(location.hash.slice(1));
+  if (h.get("trace")) { st.trace = h.get("trace"); $("#trace").value = st.trace; }
+  if (h.get("stack")) h.get("stack").split(",").map(decodeURIComponent).forEach(k => BYKEY[k] && st.stack.add(k));
+  if (h.get("seg") && SEG[h.get("seg")]) setTimeout(() => showSeg(h.get("seg")), 50);
+}
+
+/* lower sections */
+$("#chain").innerHTML = T.transitions.map(t => { const a = NODES.find(x => x.id === t.from), b = NODES.find(x => x.id === t.to); return `<li><span class="ft">${esc(a.short).toUpperCase()} → ${esc(b.short).toUpperCase()}</span><b>${esc(t.name)}</b><p>${esc(t.needs)}</p></li>`; }).join("");
+const pills = arr => arr.slice().sort((a, b) => b.roles.length - a.roles.length).map(x => `<button type="button" data-n="${esc(x.name)}" aria-pressed="false">${esc(x.name)}<small>${x.roles.length}</small></button>`).join("");
+$("#xn").innerHTML = `<h3>Companies across the chain</h3>${pills(X)}<h3>Investors</h3>${INV.length ? pills(INV) : `<span class="sub">Investor footprints are being added.</span>`}`;
+$("#log").innerHTML = (DATA.changelog || []).map(c => `<li><span class="d">${esc(c.date)}</span><span>${esc(c.text)}</span></li>`).join("") || `<li><span class="d">—</span><span>No changes yet.</span></li>`;
+$("#stacks").innerHTML = (DATA.stacks || []).length ? DATA.stacks.map((s, i) => `<div class="s"><div><b>${esc(s.title)}</b><br><span class="meta">${esc(s.by || "")} · ${s.items.length} listings</span></div><button type="button" class="btn2" data-gallery="${i}">Open on map</button></div>`).join("") : `<p class="empty">No community stacks yet. Build yours and submit it to be the first.</p>`;
+
+/* events */
+document.addEventListener("click", e => {
+  const t = e.target;
+  const box = t.closest(".box"); if (box) { segTab = "all"; return showSeg(box.dataset.seg); }
+  const tab = t.closest("[data-tab]"); if (tab) { segTab = tab.dataset.tab; return showSeg($("#drawer").dataset.seg); }
+  const tb = t.closest(".tbtn"); if (tb) return showTransitions(tb.dataset.tr);
+  const lb = t.closest("#lens button"); if (lb) { st.lens = lb.dataset.v; return update(); }
+  const db = t.closest("#density button"); if (db) { st.dense = db.dataset.v === "dense"; document.querySelectorAll("#density button").forEach(b => b.setAttribute("aria-pressed", b === db)); return buildBoard(); }
+  const xb = t.closest("#xn button"); if (xb) { st.trace = st.trace === xb.dataset.n ? "" : xb.dataset.n; $("#trace").value = st.trace; update(); $("#scroll").scrollIntoView({behavior: "smooth", block: "start"}); return; }
+  const tm = t.closest("[data-trace]"); if (tm) { st.trace = tm.dataset.trace; $("#trace").value = st.trace; closeDrawer(); update(); $("#scroll").scrollIntoView({behavior: "smooth", block: "start"}); return; }
+  const pb = t.closest("[data-persona]"); if (pb) { st.persona = pb.dataset.persona; $("#persona").value = st.persona; closeDrawer(); return update(); }
+  const ad = t.closest("[data-add]"); if (ad) { const k = ad.dataset.add; st.stack.has(k) ? st.stack.delete(k) : st.stack.add(k); ad.setAttribute("aria-pressed", st.stack.has(k)); ad.textContent = st.stack.has(k) ? "In my stack" : "+ My stack"; return update(); }
+  if (t.closest("#stackBtn,#openStack,#openStack2")) return showStack();
+  if (t.closest("#clearStack")) { st.stack.clear(); update(); return showStack(); }
+  if (t.closest("#copyStack")) { writeHash(); const url = location.href, btn = t.closest("#copyStack"); (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(() => btn.textContent = "Copied", () => { btn.textContent = "Copy from address bar"; }); return; }
+  const gb = t.closest("[data-gallery]"); if (gb) { const s = DATA.stacks[+gb.dataset.gallery]; st.stack = new Set(s.items.map(keyOf).filter(k => BYKEY[k])); update(); $("#scroll").scrollIntoView({behavior: "smooth"}); return; }
+});
+$("#dx").onclick = closeDrawer;
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#drawer").hidden) closeDrawer(); });
+$("#persona").onchange = e => { st.persona = e.target.value; update(); };
+$("#region").onchange = e => { st.region = e.target.value; update(); };
+$("#stage").onchange = e => { st.stage = e.target.value; update(); };
+$("#trace").addEventListener("input", e => { const v = e.target.value.trim(); if (!v || traceNames.some(n => keyOf(n) === keyOf(v))) { st.trace = v; update(); } });
+$("#reset").onclick = () => { Object.assign(st, {lens: "all", persona: "", region: "All regions", stage: "Any stage", trace: ""}); $("#persona").value = ""; $("#region").value = "All regions"; $("#stage").value = "Any stage"; $("#trace").value = ""; update(); };
+window.addEventListener("resize", () => requestAnimationFrame(drawTraces));
+if (document.fonts) document.fonts.ready.then(() => requestAnimationFrame(drawTraces));
+readHash(); buildBoard();
+}
+</script>
+</body></html>

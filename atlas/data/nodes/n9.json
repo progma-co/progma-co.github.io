@@ -1,0 +1,5642 @@
+{
+ "node": "n9",
+ "notes": {
+  "n9.assistant": "Concentrated: ChatGPT leads globally; Gemini, Meta AI and Copilot ride platform distribution; China has a separate field (Doubao, Qwen, Yuanbao, DeepSeek, Kimi).",
+  "n9.coding": "Hottest app category of 2025-26: Cursor sold to SpaceX for $60B (closed Aug 2026) and Cognition valued at $48B (Sep 2026); model labs (Claude Code, Codex) compete directly.",
+  "n9.agentic": "Browser and computer-use agents consolidating into big platforms: Meta bought Manus, Atlassian bought Dia, Anthropic bought Vercept, OpenAI shipped Atlas.",
+  "n9.knowledge": "Suite vendors (Microsoft, Google, Atlassian) bundle work AI; Glean is the leading independent; meeting notetakers are a crowded sub-niche.",
+  "n9.support": "Sierra (>$15B, May 2026) and Decagon lead AI-native players; incumbents Salesforce, Zendesk and Intercom ship their own agents.",
+  "n9.voice": "Split between developer platforms (Vapi, Retell, Bland) and enterprise voice-agent vendors (PolyAI, Parloa); ElevenLabs ($11B, Feb 2026) spans both.",
+  "n9.gtm": "Clay ($7.1B, 2026) leads GTM data/agents; AI-SDR startups face churn questions while CRM incumbents add agents.",
+  "n9.creative": "Incumbent design suites (Canva, Adobe, Figma) vs generative-native media apps; Chinese video models (Kling) competitive globally.",
+  "n9.legal": "Two-horse race at the top: Harvey (~$15.5B) and Legora ($8.8B, Oct 2026), both acquiring; legal publishers (TR, LexisNexis) defend with content.",
+  "n9.health": "Ambient scribes the fastest-adopted category (Abridge, Microsoft Dragon, Ambience); clinical search (OpenEvidence) and imaging AI mature.",
+  "n9.finance": "Research copilots (AlphaSense, Rogo, Hebbia) for investors; separate wave of AI-native accounting/ERP (Basis, Rillet, Campfire).",
+  "n9.hr": "HCM incumbents consolidating AI recruiting (Workday bought Paradox and Sana in 2025); Mercor pivoted to expert supply for AI labs.",
+  "n9.secops": "Platform vendors embed agents; dozens of AI-SOC startups (Dropzone, 7AI, Prophet, Exaforce) and AI pentesters (XBOW, Horizon3) compete.",
+  "n9.edu": "Consumer learning apps and homework helpers dominate usage; Chinese/ByteDance homework apps large globally.",
+  "n9.industrial": "AI drug discovery best funded; new 'AI scientist' labs (Lila, Periodic) and engineering-simulation AI (PhysicsX, Neural Concept).",
+  "n9.physical": "Robotaxis commercial (Waymo, Baidu, Pony, WeRide); humanoids capital-intensive and China-heavy, with Unitree's Aug 2026 Shanghai IPO the first major listing.",
+  "n9.consumer": "Companion apps under safety and monetisation pressure: Character.AI filed Chapter 11 in Oct 2026.",
+  "n9.devices": "Smart glasses (Meta-EssilorLuxottica) are the breakout form factor; early pins/pendants failed or were acquired (Humane, Limitless, Bee).",
+  "n9.store": "Distribution shifting to in-assistant app directories (ChatGPT, Claude) and cloud marketplaces selling agents to enterprises.",
+  "n9.public": "Defence AI is the most heavily funded vertical in 2026 (Anduril, Helsing, Shield AI); sovereign LLM vendors (Mistral, Cohere) win government frameworks.",
+  "n9.commerce": "Platforms own the agent (Amazon, OpenAI, Google, Perplexity) and protocols (ACP, AP2/UCP); retailers and search vendors adapt catalogues for agent buyers.",
+  "n9.itops": "ServiceNow consolidated the category by buying Moveworks (Dec 2025); remaining independents compete inside Teams/Slack.",
+  "n9.analytics": "Warehouse vendors (Snowflake, Databricks) and BI incumbents embed agents; AI-native analysts (Hex, Julius) target business users.",
+  "n9.lang": "MT is commoditising via frontier LLMs; DeepL leads specialist MT, LSPs (RWS, TransPerfect) shift to AI-first, and dubbing moves to voice-AI vendors.",
+  "n9.insurance": "Insurance AI is maturing via acquisitions (Applied-Cytora); real estate led by EliseAI ($4B); construction AI centred on site capture and document agents.",
+  "n9.supply": "Planning suites (o9, Kinaxis, Blue Yonder) add agents; agentic procurement (Pactum, Zip) and agri robotics are the growth niches.",
+  "n9.sor": "Incumbent systems of record (Salesforce, ServiceNow, SAP, Workday) are adding agent layers, while AI-native challengers rebuild the record itself around a knowledge graph."
+ },
+ "entries": [
+  {
+   "name": "11x",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI SDR and phone agents for outbound sales",
+   "url": "https://www.11x.ai",
+   "source": "https://www.11x.ai"
+  },
+  {
+   "name": "1X",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "NO",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Humanoid robots for the home (NEO)",
+   "url": "https://www.1x.tech",
+   "source": "https://www.1x.tech"
+  },
+  {
+   "name": "7AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Agentic security platform with autonomous SOC agents",
+   "tags": [
+    "security"
+   ],
+   "url": "https://7ai.com",
+   "source": "https://7ai.com"
+  },
+  {
+   "name": "Abridge",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Ambient AI clinical documentation integrated with Epic",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.abridge.com",
+   "source": "https://www.abridge.com"
+  },
+  {
+   "name": "Ada",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI customer service agent platform",
+   "url": "https://www.ada.cx",
+   "source": "https://www.ada.cx"
+  },
+  {
+   "name": "AdCreative.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI-generated ad creatives and performance scoring",
+   "url": "https://www.adcreative.ai",
+   "source": "https://www.adcreative.ai"
+  },
+  {
+   "name": "Agility Robotics",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Digit humanoid for logistics",
+   "url": "https://www.agilityrobotics.com",
+   "source": "https://www.agilityrobotics.com"
+  },
+  {
+   "name": "Aida",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI 'digital twin' for each sales rep: captures calls, email, Slack and CRM, flags deal risk, drafts follow-ups",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://getaida.com",
+   "source": "https://getaida.com",
+   "note": "Offices in Palo Alto and Gurugram"
+  },
+  {
+   "name": "Aidoc",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Clinical AI for radiology triage and care coordination",
+   "url": "https://www.aidoc.com",
+   "source": "https://www.aidoc.com"
+  },
+  {
+   "name": "Aisera",
+   "kind": "company",
+   "subsegments": [
+    "n9.itops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Agentic AI platform for IT, HR and customer service desks",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://aisera.com",
+   "source": "https://aisera.com"
+  },
+  {
+   "name": "Alef Education",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "AE",
+   "region": "Middle East",
+   "status": "public",
+   "one_liner": "AI-powered K-12 learning platform listed in Abu Dhabi",
+   "url": "https://www.alefeducation.com",
+   "source": "https://www.alefeducation.com"
+  },
+  {
+   "name": "Alexa for Shopping (Amazon)",
+   "kind": "company",
+   "subsegments": [
+    "n9.commerce"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Amazon",
+   "one_liner": "Amazon shopping agent: price watching, recurring orders, Buy for Me checkout on other sites",
+   "url": "https://www.aboutamazon.com",
+   "source": "https://letsdatascience.com/blog/amazon-retires-rufus-alexa-for-shopping-agent",
+   "note": "Replaced Rufus (May 2026)"
+  },
+  {
+   "name": "Algolia",
+   "kind": "company",
+   "subsegments": [
+    "n9.commerce"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI search and discovery APIs for retail and commerce sites",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.algolia.com",
+   "source": "https://www.algolia.com"
+  },
+  {
+   "name": "Alibaba Accio",
+   "kind": "company",
+   "subsegments": [
+    "n9.commerce",
+    "n9.supply"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Alibaba Group",
+   "one_liner": "AI B2B sourcing search and Accio Work agent for SME buyers on Alibaba.com",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.accio.com",
+   "source": "https://www.aap.com.au/aapreleases/cision20260323ae16174",
+   "note": "Accio Work enterprise agent launched (Mar 2026)"
+  },
+  {
+   "name": "AlphaSense",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Market intelligence search with generative AI over filings, broker research and expert calls",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.alpha-sense.com",
+   "source": "https://www.alpha-sense.com"
+  },
+  {
+   "name": "Ambience Healthcare",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Ambient AI scribe plus coding and CDI for health systems",
+   "url": "https://www.ambiencehealthcare.com",
+   "source": "https://fiercehealthcare.com/health-tech/ambience-banks-243m-series-c-investors-continue-bet-big-ambient-ai"
+  },
+  {
+   "name": "Anduril",
+   "kind": "company",
+   "subsegments": [
+    "n9.public"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Autonomous defence systems on the Lattice AI command-and-control software",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.anduril.com",
+   "source": "https://www.anduril.com"
+  },
+  {
+   "name": "Apollo.io",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "B2B contact database with AI prospecting and sequencing",
+   "url": "https://www.apollo.io",
+   "source": "https://www.apollo.io"
+  },
+  {
+   "name": "Apptronik",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Apollo humanoid robot",
+   "url": "https://apptronik.com",
+   "source": "https://apptronik.com"
+  },
+  {
+   "name": "Artisan",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI BDR 'Ava' automating outbound prospecting",
+   "url": "https://www.artisan.co",
+   "source": "https://www.artisan.co"
+  },
+  {
+   "name": "Atlassian Rovo",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge",
+    "n9.itops",
+    "n9.sor"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Atlassian",
+   "one_liner": "AI search, chat and agents across Jira, Confluence and third-party apps",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.atlassian.com/software/rovo",
+   "source": "https://www.atlassian.com/software/rovo"
+  },
+  {
+   "name": "Attio",
+   "kind": "company",
+   "subsegments": [
+    "n9.sor"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI-native CRM built around a flexible data model and agents",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://attio.com",
+   "source": "https://attio.com"
+  },
+  {
+   "name": "Augment Code",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Coding agent with deep codebase context for large enterprise repos",
+   "tags": [
+    "enterprise",
+    "developer"
+   ],
+   "url": "https://www.augmentcode.com",
+   "source": "https://www.augmentcode.com"
+  },
+  {
+   "name": "AWS Marketplace AI Agents & Tools",
+   "kind": "company",
+   "subsegments": [
+    "n9.store"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Amazon",
+   "one_liner": "Cloud marketplace category for buying AI agents and tools",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://aws.amazon.com/marketplace/solutions/ai-agents-and-tools",
+   "source": "https://aws.amazon.com/marketplace/solutions/ai-agents-and-tools"
+  },
+  {
+   "name": "Baidu Apollo Go",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Baidu",
+   "one_liner": "Robotaxi service in China and expanding abroad",
+   "url": "https://www.apollogo.com",
+   "source": "https://www.apollogo.com"
+  },
+  {
+   "name": "Base44",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "acquired",
+   "parent": "Wix (2025)",
+   "one_liner": "No-code AI app builder for business apps",
+   "url": "https://base44.com",
+   "source": "https://base44.com",
+   "note": "Acquired by Wix June 2025"
+  },
+  {
+   "name": "Basis",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI agents that perform accounting work for accounting firms",
+   "url": "https://www.getbasis.ai",
+   "source": "https://www.getbasis.ai"
+  },
+  {
+   "name": "Bee",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Amazon (2025)",
+   "one_liner": "Wrist wearable that records and summarises conversations",
+   "url": "https://www.bee.computer",
+   "source": "https://www.bee.computer"
+  },
+  {
+   "name": "Bhashini",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "government",
+   "parent": "MeitY, Government of India",
+   "one_liner": "Indian government National Language Translation Mission platform and APIs for 22 languages",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://bhashini.gov.in",
+   "source": "https://bhashini.gov.in"
+  },
+  {
+   "name": "Bland AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Phone-call AI agent platform for enterprises",
+   "url": "https://www.bland.ai",
+   "source": "https://www.bland.ai"
+  },
+  {
+   "name": "Bloomberg (Terminal AI)",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Generative AI summaries and document search on the Bloomberg Terminal",
+   "url": "https://www.bloomberg.com/professional/",
+   "source": "https://www.bloomberg.com/professional/"
+  },
+  {
+   "name": "Bloomreach",
+   "kind": "company",
+   "subsegments": [
+    "n9.commerce"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Commerce search, personalisation and Clarity conversational shopping agent",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.bloomreach.com",
+   "source": "https://documentation.bloomreach.com/clarity/docs/get-started-with-bloomreach-clarity"
+  },
+  {
+   "name": "Blue Yonder",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Panasonic (2021)",
+   "one_liner": "Supply-chain planning and execution with agentic AI 'cognitive' platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://blueyonder.com",
+   "source": "https://e-commerce.news/story/blue-yonder-rolls-out-agentic-ai-across-supply-chains"
+  },
+  {
+   "name": "BMC Helix",
+   "kind": "company",
+   "subsegments": [
+    "n9.itops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "ITSM and AIOps with HelixGPT agents for service and operations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.bmc.com/it-solutions/bmc-helix.html",
+   "source": "https://www.bmc.com/it-solutions/bmc-helix.html"
+  },
+  {
+   "name": "Bolt.new (StackBlitz)",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "In-browser AI app builder running full-stack apps via WebContainers",
+   "url": "https://bolt.new",
+   "source": "https://bolt.new"
+  },
+  {
+   "name": "Brilliant Labs",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Open-source AI smart glasses (Frame, Halo)",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://brilliant.xyz",
+   "source": "https://brilliant.xyz"
+  },
+  {
+   "name": "Brisk Teaching",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI teaching assistant Chrome extension",
+   "url": "https://www.briskteaching.com",
+   "source": "https://www.briskteaching.com"
+  },
+  {
+   "name": "Buildots",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "AI construction progress tracking from 360 site capture",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://buildots.com",
+   "source": "https://buildots.com"
+  },
+  {
+   "name": "Campfire",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native ERP and accounting platform",
+   "url": "https://campfire.ai",
+   "source": "https://campfire.ai"
+  },
+  {
+   "name": "Canva",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Design platform with Magic Studio AI tools and visual suite",
+   "url": "https://www.canva.com",
+   "source": "https://www.canva.com"
+  },
+  {
+   "name": "CapCut (ByteDance)",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "ByteDance",
+   "one_liner": "Video editor with AI editing and generation features",
+   "url": "https://www.capcut.com",
+   "source": "https://www.capcut.com"
+  },
+  {
+   "name": "Carbon Robotics",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI LaserWeeder robots and autonomous farm machinery",
+   "url": "https://carbonrobotics.com",
+   "source": "https://www.geekwire.com/2025/carbon-robotics-raises-20m-as-laserweeder-maker-plans-secretive-new-ai-robot-for-farms/",
+   "note": "Raised $20M (Oct 2025)"
+  },
+  {
+   "name": "Chai",
+   "kind": "company",
+   "subsegments": [
+    "n9.consumer"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Social AI chatbot app with user-made characters",
+   "url": "https://www.chai-research.com",
+   "source": "https://www.chai-research.com"
+  },
+  {
+   "name": "Character.AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.consumer"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Platform for chatting with user-created AI characters",
+   "url": "https://character.ai",
+   "source": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/",
+   "note": "Filed Chapter 11 Oct 2026; Disney bid $20M for assets and hired ex-CEO; app runs during sale"
+  },
+  {
+   "name": "ChatGPT (OpenAI)",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant",
+    "n9.agentic",
+    "n9.store",
+    "n9.commerce"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "OpenAI",
+   "one_liner": "Leading consumer and enterprise chat assistant with search, agent mode, Atlas browser and an apps directory",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://chatgpt.com",
+   "source": "https://news.crunchbase.com/ma/data-openai-2023-2026-acquisitions-open-source-astral-promptfoo/",
+   "note": "OpenAI made ~10 acquisitions in 2026 (e.g. Torch Health, OpenClaw creator acqui-hire, Promptfoo, Astral) per Crunchbase"
+  },
+  {
+   "name": "ChatGPT Apps directory / GPT Store",
+   "kind": "company",
+   "subsegments": [
+    "n9.store"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "OpenAI",
+   "one_liner": "Directory of third-party apps and custom GPTs inside ChatGPT",
+   "url": "https://chatgpt.com/apps",
+   "source": "https://chatgpt.com/apps"
+  },
+  {
+   "name": "ChatGPT Atlas",
+   "kind": "company",
+   "subsegments": [
+    "n9.agentic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "OpenAI",
+   "one_liner": "OpenAI's Chromium browser with built-in ChatGPT agent mode",
+   "url": "https://chatgpt.com/atlas",
+   "source": "https://chatgpt.com/atlas",
+   "note": "Launched Oct 2025"
+  },
+  {
+   "name": "Claude (Anthropic)",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant",
+    "n9.coding",
+    "n9.agentic",
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Chat assistant, Claude Code coding agent and desktop/browser agents for work tasks",
+   "tags": [
+    "enterprise",
+    "developer"
+   ],
+   "url": "https://claude.ai",
+   "source": "https://www.anthropic.com/news/acquires-vercept",
+   "note": "Acquired Vercept (computer-use agents) Feb 2026"
+  },
+  {
+   "name": "Claude connectors directory",
+   "kind": "company",
+   "subsegments": [
+    "n9.store"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Anthropic",
+   "one_liner": "Directory of MCP connectors and tools for Claude",
+   "url": "https://claude.ai/directory",
+   "source": "https://claude.ai/directory"
+  },
+  {
+   "name": "Clay",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "GTM data enrichment and AI research agents for outbound sales",
+   "url": "https://www.clay.com",
+   "source": "https://thenextweb.com/news/clay-raises-115m-series-d-7-1bn-valuation-wellington",
+   "note": "Raised $115M at $7.1B valuation (2026)"
+  },
+  {
+   "name": "Clio (with vLex Vincent)",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Legal practice management with vLex's Vincent AI legal research",
+   "url": "https://www.clio.com",
+   "source": "https://www.clio.com",
+   "note": "Completed $1B vLex acquisition (2025)"
+  },
+  {
+   "name": "CoCounsel (Thomson Reuters)",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal",
+    "n9.finance"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "public",
+   "parent": "Thomson Reuters",
+   "one_liner": "AI assistant for legal, tax and accounting research on Westlaw/Practical Law",
+   "url": "https://legal.thomsonreuters.com/en/products/cocounsel",
+   "source": "https://legal.thomsonreuters.com/en/products/cocounsel"
+  },
+  {
+   "name": "Cognite",
+   "kind": "company",
+   "subsegments": [
+    "n9.industrial"
+   ],
+   "hq": "NO",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Industrial data and AI agents for asset-heavy industries",
+   "url": "https://www.cognite.com",
+   "source": "https://www.cognite.com"
+  },
+  {
+   "name": "Cognition (Devin + Windsurf)",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Devin autonomous software engineer and Windsurf AI IDE",
+   "tags": [
+    "developer",
+    "enterprise"
+   ],
+   "url": "https://cognition.ai",
+   "source": "https://runtimewire.com/article/cognition-series-e-48-billion-valuation-scott-wu",
+   "note": "Acquired Windsurf July 2025; raised >$2B at $48B valuation (Sep 2026)"
+  },
+  {
+   "name": "Comet (Perplexity)",
+   "kind": "company",
+   "subsegments": [
+    "n9.agentic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Perplexity",
+   "one_liner": "Agentic web browser that browses and completes tasks",
+   "url": "https://www.perplexity.ai/comet",
+   "source": "https://yourstory.com/ai-story/perplexity-ai-comet-browser-free-worldwide"
+  },
+  {
+   "name": "Commure",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Ambient AI and revenue-cycle automation for health systems",
+   "url": "https://www.commure.com",
+   "source": "https://www.commure.com"
+  },
+  {
+   "name": "Constructor",
+   "kind": "company",
+   "subsegments": [
+    "n9.commerce"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI product discovery and search for e-commerce, incl. AI shopping agent",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://constructor.com",
+   "source": "https://constructor.com"
+  },
+  {
+   "name": "Crescendo",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n10.bpo",
+    "n10.managed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native outsourced customer experience combining AI agents and human staff",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.crescendo.ai",
+   "source": "https://www.crescendo.ai",
+   "note": "Acquired outsourcer PartnerHero (2024); General Catalyst-backed"
+  },
+  {
+   "name": "Cresta",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI agents and real-time agent assist for contact centres",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://cresta.com",
+   "source": "https://cresta.com"
+  },
+  {
+   "name": "Cropin",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Agri-intelligence cloud and AI for crop monitoring and food supply chains",
+   "url": "https://www.cropin.com",
+   "source": "https://www.cropin.com"
+  },
+  {
+   "name": "CrowdStrike Charlotte AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "CrowdStrike",
+   "one_liner": "Agentic AI analyst on the Falcon platform",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.crowdstrike.com/platform/charlotte-ai/",
+   "source": "https://www.crowdstrike.com/platform/charlotte-ai/"
+  },
+  {
+   "name": "Cursor (Anysphere)",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "SpaceX (2026)",
+   "one_liner": "AI-native code editor with autonomous coding agents",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://cursor.com",
+   "source": "https://thenextweb.com/news/spacex-cursor-acquisition-completed-gpu-fleet",
+   "note": "SpaceX's $60B all-stock acquisition closed 14 Aug 2026; Cursor bought Graphite (Dec 2025), Firetiger (Aug 2026)"
+  },
+  {
+   "name": "Cytora",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "Applied Systems (2025)",
+   "one_liner": "AI risk-intake platform digitising commercial insurance submissions",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://cytora.com",
+   "source": "https://insurancejournal.com/news/national/2025/09/09/838445.htm",
+   "note": "Acquired by Applied Systems (Sep 2025)"
+  },
+  {
+   "name": "Darwinbox",
+   "kind": "company",
+   "subsegments": [
+    "n9.hr"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI-enabled HRMS for large enterprises in Asia",
+   "url": "https://darwinbox.com",
+   "source": "https://darwinbox.com"
+  },
+  {
+   "name": "Daydream",
+   "kind": "company",
+   "subsegments": [
+    "n9.commerce"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Conversational AI fashion shopping agent across thousands of brands",
+   "url": "https://daydream.ing",
+   "source": "https://retailboss.co/daydream-raises-50-million-to-launch-as-ai-powered-fashion-shopping-agent/",
+   "note": "Raised $50M seed"
+  },
+  {
+   "name": "Decagon",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Conversational AI agents for customer support across chat, email and voice",
+   "url": "https://decagon.ai",
+   "source": "https://news.bloomberglaw.com/artificial-intelligence/ai-customer-support-startup-decagon-valued-at-4-5-billion",
+   "note": "Valued at $4.5B (2025)"
+  },
+  {
+   "name": "DeepL",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Neural machine translation, writing assistant and voice translation for businesses",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.deepl.com",
+   "source": "https://siliconangle.com/2025/10/02/ai-translation-startup-deepl-reportedly-weighing-5b-ipo/",
+   "note": "Reported weighing ~$5B US IPO (Oct 2025)"
+  },
+  {
+   "name": "DeepSeek app",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Free chat assistant built on DeepSeek's open-weight models",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://chat.deepseek.com",
+   "source": "https://chat.deepseek.com"
+  },
+  {
+   "name": "Descript",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Text-based audio/video editor with AI agent Underlord",
+   "url": "https://www.descript.com",
+   "source": "https://www.descript.com"
+  },
+  {
+   "name": "DevRev",
+   "kind": "company",
+   "subsegments": [
+    "n9.sor",
+    "n9.support",
+    "n9.knowledge",
+    "n8.memory"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native platform 'Computer' that unifies enterprise data into a knowledge graph for support, sales and product teams",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://devrev.ai",
+   "source": "https://itbrief.news/story/devrev-expands-computer-ai-agent-platform-in-india",
+   "note": "Founded 2020 by Dheeraj Pandey and Manoj Agarwal; India among fastest-growing markets (Mar 2026)"
+  },
+  {
+   "name": "Dia (The Browser Company)",
+   "kind": "company",
+   "subsegments": [
+    "n9.agentic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Atlassian (2025)",
+   "one_liner": "AI-first browser for knowledge work",
+   "url": "https://www.diabrowser.com",
+   "source": "https://www.businesswire.com/news/home/20251021473486/en/Atlassian-Completes-Acquisition-of-The-Browser-Company-of-New-York",
+   "note": "Atlassian completed $610M acquisition Oct 2025"
+  },
+  {
+   "name": "Doubao (ByteDance)",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "parent": "ByteDance",
+   "one_liner": "ByteDance's consumer AI assistant, among China's most-used chatbots",
+   "url": "https://www.doubao.com",
+   "source": "https://www.doubao.com"
+  },
+  {
+   "name": "Dropzone AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Autonomous AI SOC analyst for alert investigation",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.dropzone.ai",
+   "source": "https://www.dropzone.ai"
+  },
+  {
+   "name": "Duolingo",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Language-learning app using generative AI for content and Max tier",
+   "url": "https://www.duolingo.com",
+   "source": "https://www.duolingo.com"
+  },
+  {
+   "name": "Dust",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Platform for building company-specific AI agents on internal data",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://dust.tt",
+   "source": "https://dust.tt"
+  },
+  {
+   "name": "Eightfold AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.hr"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI talent intelligence for recruiting and internal mobility",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://eightfold.ai",
+   "source": "https://eightfold.ai"
+  },
+  {
+   "name": "EliseAI",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI agents for property management leasing, maintenance and resident communication",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.eliseai.com",
+   "source": "https://www.fiercehealthcare.com/finance/eliseai-banks-350m-hits-4b-valuation-accelerated-new-product-development",
+   "note": "Raised $350M at $4B valuation (2026)"
+  },
+  {
+   "name": "Emergent",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian-founded agentic vibe-coding platform for building full-stack apps",
+   "url": "https://emergent.sh",
+   "source": "https://emergent.sh"
+  },
+  {
+   "name": "Espressive",
+   "kind": "company",
+   "subsegments": [
+    "n9.itops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Resolve (2025)",
+   "one_liner": "Employee self-service AI agent (Barista) for IT and HR",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.espressive.com",
+   "source": "https://resolve.io/news/resolve-acquires-espressive",
+   "note": "Acquired by Resolve (2025)"
+  },
+  {
+   "name": "Eudia",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Augmented-intelligence platform for in-house legal teams",
+   "url": "https://www.eudia.com",
+   "source": "https://www.eudia.com"
+  },
+  {
+   "name": "Even Realities",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Display smart glasses with AI assistant",
+   "url": "https://www.evenrealities.com",
+   "source": "https://www.evenrealities.com"
+  },
+  {
+   "name": "EvenUp",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI for personal-injury demand letters and case preparation",
+   "url": "https://www.evenuplaw.com",
+   "source": "https://www.evenuplaw.com"
+  },
+  {
+   "name": "Exaforce",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Agentic SOC platform combining AI agents and data analytics",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.exaforce.com",
+   "source": "https://www.exaforce.com"
+  },
+  {
+   "name": "Factory",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Enterprise coding agents ('Droids') for migration, review and incident work",
+   "tags": [
+    "enterprise",
+    "developer"
+   ],
+   "url": "https://factory.ai",
+   "source": "https://factory.ai"
+  },
+  {
+   "name": "Federato",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native underwriting platform (RiskOps) for P&C insurers",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.federato.ai",
+   "source": "https://www.federato.ai"
+  },
+  {
+   "name": "Fellou",
+   "kind": "company",
+   "subsegments": [
+    "n9.agentic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Agentic browser that runs multi-step workflows across sites",
+   "url": "https://fellou.ai",
+   "source": "https://fellou.ai"
+  },
+  {
+   "name": "Fieldguide",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI platform for audit and advisory firms",
+   "url": "https://www.fieldguide.io",
+   "source": "https://www.fieldguide.io"
+  },
+  {
+   "name": "Figma",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Collaborative design tool with Figma Make and AI features",
+   "url": "https://www.figma.com",
+   "source": "https://www.figma.com",
+   "note": "IPO July 2025; acquired Weavy (Oct 2025)"
+  },
+  {
+   "name": "Figure AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "General-purpose humanoid robots with Helix VLA model",
+   "url": "https://www.figure.ai",
+   "source": "https://www.figure.ai"
+  },
+  {
+   "name": "Fireflies.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI meeting notetaker and conversation search",
+   "url": "https://fireflies.ai",
+   "source": "https://fireflies.ai"
+  },
+  {
+   "name": "Flexport",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Tech-enabled freight forwarder rolling out AI tools for logistics",
+   "url": "https://www.flexport.com",
+   "source": "https://www.flexport.com"
+  },
+  {
+   "name": "FourKites",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Real-time supply-chain visibility with AI agents; large India operations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.fourkites.com",
+   "source": "https://www.fourkites.com"
+  },
+  {
+   "name": "Freepik",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Stock content platform with multi-model AI image/video suite",
+   "url": "https://www.freepik.com",
+   "source": "https://www.freepik.com"
+  },
+  {
+   "name": "Freshworks (Freddy AI)",
+   "kind": "company",
+   "subsegments": [
+    "n9.itops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Freddy AI agents in Freshservice ITSM; large India operations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.freshworks.com/freshservice/ai-itsm/",
+   "source": "https://www.freshworks.com/freshservice/ai-itsm/"
+  },
+  {
+   "name": "Friend",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices",
+    "n9.consumer"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Always-listening AI companion pendant",
+   "url": "https://friend.com",
+   "source": "https://friend.com"
+  },
+  {
+   "name": "Gamma",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI presentation, document and website generator",
+   "url": "https://gamma.app",
+   "source": "https://gamma.app"
+  },
+  {
+   "name": "Gauth (ByteDance)",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "ByteDance",
+   "one_liner": "AI homework helper app",
+   "url": "https://www.gauthmath.com",
+   "source": "https://www.gauthmath.com"
+  },
+  {
+   "name": "Gemini Enterprise (Google)",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Google's enterprise agent platform and work assistant (successor to Agentspace)",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://cloud.google.com/gemini-enterprise",
+   "source": "https://cloud.google.com/gemini-enterprise"
+  },
+  {
+   "name": "Genspark",
+   "kind": "company",
+   "subsegments": [
+    "n9.agentic",
+    "n9.assistant"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI agent workspace producing slides, sheets, research and calls",
+   "url": "https://www.genspark.ai",
+   "source": "https://www.genspark.ai"
+  },
+  {
+   "name": "GitHub Copilot",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "AI pair programmer and coding agent inside IDEs and GitHub",
+   "tags": [
+    "developer",
+    "enterprise"
+   ],
+   "url": "https://github.com/features/copilot",
+   "source": "https://github.com/features/copilot"
+  },
+  {
+   "name": "Glean",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Enterprise search and work-AI assistant over company data",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.glean.com",
+   "source": "https://www.glean.com"
+  },
+  {
+   "name": "Gong",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Revenue intelligence and AI agents from sales conversation data",
+   "url": "https://www.gong.io",
+   "source": "https://www.gong.io"
+  },
+  {
+   "name": "Google Antigravity / Jules",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Google's agent-first IDE and asynchronous coding agent",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://antigravity.google",
+   "source": "https://antigravity.google"
+  },
+  {
+   "name": "Google Cloud Marketplace (AI agents)",
+   "kind": "company",
+   "subsegments": [
+    "n9.store"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Marketplace for partner AI agents integrated with Gemini Enterprise",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://cloud.google.com/marketplace",
+   "source": "https://cloud.google.com/marketplace"
+  },
+  {
+   "name": "Google Gemini app",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Google's consumer AI assistant across Android, Workspace and Search (AI Mode)",
+   "url": "https://gemini.google.com",
+   "source": "https://gemini.google.com"
+  },
+  {
+   "name": "Google Security Operations (Gemini)",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "SecOps platform with Gemini triage agents",
+   "tags": [
+    "security"
+   ],
+   "url": "https://cloud.google.com/security/products/security-operations",
+   "source": "https://cloud.google.com/security/products/security-operations"
+  },
+  {
+   "name": "Google Translate",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Consumer and Cloud Translation API, Gemini-powered live speech translation",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://cloud.google.com/translate",
+   "source": "https://cloud.google.com/translate"
+  },
+  {
+   "name": "Gradient AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI for group health and P&C underwriting and claims prediction",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.gradientai.com",
+   "source": "https://www.gradientai.com"
+  },
+  {
+   "name": "Granola",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI meeting notepad that enhances user notes from transcripts",
+   "url": "https://www.granola.ai",
+   "source": "https://www.granola.ai"
+  },
+  {
+   "name": "Grok (xAI)",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant",
+    "n9.consumer"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "SpaceX (2026)",
+   "one_liner": "Chat assistant on X and standalone apps, including companion characters",
+   "url": "https://grok.com",
+   "source": "https://ecommercefastlane.com/spacex-xai-merger-grok-ai-growth/",
+   "note": "SpaceX-xAI merger finalised Feb 2026"
+  },
+  {
+   "name": "H Company",
+   "kind": "company",
+   "subsegments": [
+    "n9.agentic"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "French developer of computer-use agents (Surfer, Runner)",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.hcompany.ai",
+   "source": "https://www.hcompany.ai"
+  },
+  {
+   "name": "Harvey",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Legal AI platform for law firms and in-house teams",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.harvey.ai",
+   "source": "https://www.artificiallawyer.com/2026/10/21/legora-vs-harvey-the-multi-billion-ai-battle/",
+   "note": "~$15.5B valuation (Sep 2026); acquired Hexus (Jan 2026)"
+  },
+  {
+   "name": "Hebbia",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance",
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Multi-agent document analysis for finance and legal professionals",
+   "url": "https://www.hebbia.com",
+   "source": "https://www.hebbia.com"
+  },
+  {
+   "name": "Heidi Health",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "AI medical scribe used by clinicians across many countries",
+   "url": "https://www.heidihealth.com",
+   "source": "https://www.heidihealth.com"
+  },
+  {
+   "name": "Helsing",
+   "kind": "company",
+   "subsegments": [
+    "n9.public"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "European defence AI: battlefield software, AI-enabled strike drones and uncrewed systems",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://helsing.ai",
+   "source": "https://helsing.ai/newsroom/helsing-raises-1-8bn-in-series-e",
+   "note": "Raised $1.8B Series E at ~$18B valuation (2026)"
+  },
+  {
+   "name": "Hex",
+   "kind": "company",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Collaborative data notebooks and AI data agents for analysts and business users",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://hex.tech",
+   "source": "https://hex.tech"
+  },
+  {
+   "name": "HeyGen",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative",
+    "n9.lang"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI avatar video creation and translation",
+   "tags": [],
+   "url": "https://www.heygen.com",
+   "source": "https://www.heygen.com"
+  },
+  {
+   "name": "Higgsfield",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI video generation app with cinematic camera controls",
+   "url": "https://higgsfield.ai",
+   "source": "https://higgsfield.ai"
+  },
+  {
+   "name": "Hippocratic AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.health",
+    "n9.voice",
+    "n6.domain"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Safety-focused healthcare voice agents for non-diagnostic patient tasks",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.hippocraticai.com",
+   "source": "https://www.hippocraticai.com",
+   "note": "Raised $126M at $3.5B valuation (Nov 2025)"
+  },
+  {
+   "name": "HireVue",
+   "kind": "company",
+   "subsegments": [
+    "n9.hr"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI video interviewing and assessment",
+   "url": "https://www.hirevue.com",
+   "source": "https://www.hirevue.com"
+  },
+  {
+   "name": "Horizon3.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Autonomous pentesting platform NodeZero",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.horizon3.ai",
+   "source": "https://www.horizon3.ai"
+  },
+  {
+   "name": "HubSpot Breeze",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm",
+    "n9.sor"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "HubSpot",
+   "one_liner": "AI agents and copilot across HubSpot's marketing, sales and service CRM",
+   "tags": [],
+   "url": "https://www.hubspot.com/products/artificial-intelligence",
+   "source": "https://www.hubspot.com/products/artificial-intelligence"
+  },
+  {
+   "name": "Hugging Face Spaces",
+   "kind": "company",
+   "subsegments": [
+    "n9.store"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Hosting and discovery for AI demo apps",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://huggingface.co/spaces",
+   "source": "https://huggingface.co/spaces"
+  },
+  {
+   "name": "Humane",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "HP (2025)",
+   "one_liner": "Ai Pin device (discontinued); assets acquired by HP",
+   "url": "https://humane.com",
+   "source": "https://humane.com",
+   "note": "HP acquired assets Feb 2025; Ai Pin shut down"
+  },
+  {
+   "name": "hyperexponential",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Pricing decision platform (hx Renew) for specialty and commercial insurers",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.hyperexponential.com",
+   "source": "https://www.hyperexponential.com"
+  },
+  {
+   "name": "iFlytek",
+   "kind": "company",
+   "subsegments": [
+    "n9.public",
+    "n9.lang"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Spark LLM and speech AI for government, education and translation devices in China",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.iflytek.com/en/",
+   "source": "https://www.iflytek.com/en/"
+  },
+  {
+   "name": "Insilico Medicine",
+   "kind": "company",
+   "subsegments": [
+    "n9.industrial"
+   ],
+   "hq": "HK",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Generative AI drug discovery with clinical-stage pipeline",
+   "url": "https://insilico.com",
+   "source": "https://insilico.com",
+   "note": "Hong Kong IPO Dec 2025"
+  },
+  {
+   "name": "Intercom Fin",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Intercom",
+   "one_liner": "AI support agent resolving customer queries across channels",
+   "url": "https://fin.ai",
+   "source": "https://fin.ai"
+  },
+  {
+   "name": "Intuit Assist",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Intuit",
+   "one_liner": "AI agents in QuickBooks and TurboTax for bookkeeping and tax",
+   "url": "https://www.intuit.com/intuitassist/",
+   "source": "https://www.intuit.com/intuitassist/"
+  },
+  {
+   "name": "Inworld AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.consumer"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI character and voice engine for games and consumer apps",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://inworld.ai",
+   "source": "https://inworld.ai"
+  },
+  {
+   "name": "Ironclad",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI contract lifecycle management",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://ironcladapp.com",
+   "source": "https://ironcladapp.com"
+  },
+  {
+   "name": "Janitor AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.consumer"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Character roleplay chatbot platform",
+   "url": "https://janitorai.com",
+   "source": "https://janitorai.com"
+  },
+  {
+   "name": "Jasper",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI marketing content platform for enterprise marketing teams",
+   "url": "https://www.jasper.ai",
+   "source": "https://www.jasper.ai"
+  },
+  {
+   "name": "JetBrains Junie",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "CZ",
+   "region": "Europe",
+   "status": "private",
+   "parent": "JetBrains",
+   "one_liner": "Coding agent inside JetBrains IDEs",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.jetbrains.com/junie/",
+   "source": "https://www.jetbrains.com/junie/"
+  },
+  {
+   "name": "John Deere",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "AI precision agriculture: See & Spray, autonomy (Blue River Technology)",
+   "url": "https://www.deere.com",
+   "source": "https://www.deere.com/en/technology-products/precision-ag-technology/"
+  },
+  {
+   "name": "Juicebox",
+   "kind": "company",
+   "subsegments": [
+    "n9.hr"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI sourcing and recruiting agents (PeopleGPT)",
+   "url": "https://juicebox.ai",
+   "source": "https://juicebox.ai"
+  },
+  {
+   "name": "Julius AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI data analyst that analyses files and databases via natural language",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://julius.ai",
+   "source": "https://techcrunch.com/2025/07/28/ai-data-analyst-startup-julius-nabs-10m-seed-round/",
+   "note": "Raised $10M seed (Jul 2025)"
+  },
+  {
+   "name": "Khanmigo (Khan Academy)",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "AI tutor and teaching assistant",
+   "url": "https://www.khanmigo.ai",
+   "source": "https://www.khanmigo.ai"
+  },
+  {
+   "name": "Kimi (Moonshot AI)",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Long-context chat assistant and agent from Moonshot AI",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.kimi.com",
+   "source": "https://www.kimi.com"
+  },
+  {
+   "name": "Kinaxis",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Concurrent supply-chain planning (Maestro) with AI agents",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.kinaxis.com",
+   "source": "https://www.kinaxis.com"
+  },
+  {
+   "name": "Kiro (AWS)",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Amazon",
+   "one_liner": "Spec-driven agentic IDE from Amazon Web Services",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://kiro.dev",
+   "source": "https://kiro.dev"
+  },
+  {
+   "name": "Kling AI (Kuaishou)",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Kuaishou",
+   "one_liner": "Text/image-to-video generation app",
+   "url": "https://klingai.com",
+   "source": "https://klingai.com"
+  },
+  {
+   "name": "Krutrim (Ola)",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian AI assistant supporting Indic languages, from Ola's AI unit",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.olakrutrim.com",
+   "source": "https://www.olakrutrim.com"
+  },
+  {
+   "name": "Le Chat (Mistral AI)",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Mistral's chat assistant for consumers and enterprises, positioned as a European alternative",
+   "tags": [
+    "sovereign",
+    "enterprise"
+   ],
+   "url": "https://chat.mistral.ai",
+   "source": "https://chat.mistral.ai"
+  },
+  {
+   "name": "Leena AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.hr",
+    "n9.itops"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Agentic AI for employee service (HR, IT)",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://leena.ai",
+   "source": "https://leena.ai"
+  },
+  {
+   "name": "Legora",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "SE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Collaborative legal AI workspace for law firms",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://legora.com",
+   "source": "https://www.artificiallawyer.com/2026/10/21/legora-vs-harvey-the-multi-billion-ai-battle/",
+   "note": "$550M Series E at $8.8B (Oct 2026); acquisitions incl. Qura and Walter AI"
+  },
+  {
+   "name": "Lexis+ AI / Protégé (LexisNexis)",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "parent": "RELX",
+   "one_liner": "Legal research and drafting AI on LexisNexis content",
+   "url": "https://www.lexisnexis.com/en-us/products/protege.page",
+   "source": "https://www.lexisnexis.com/en-us/products/protege.page"
+  },
+  {
+   "name": "Lilt",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-first enterprise translation platform with human-in-the-loop review",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://lilt.com",
+   "source": "https://lilt.com"
+  },
+  {
+   "name": "Limitless",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Meta (2025)",
+   "one_liner": "AI pendant recording and summarising conversations",
+   "url": "https://www.limitless.ai",
+   "source": "https://www.limitless.ai"
+  },
+  {
+   "name": "Looker (Google Cloud)",
+   "kind": "company",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Conversational Analytics and data agents with Gemini in Looker",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://cloud.google.com/looker",
+   "source": "https://cloud.google.com/looker"
+  },
+  {
+   "name": "Lovable",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "SE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Prompt-to-app builder for full-stack web apps",
+   "url": "https://lovable.dev",
+   "source": "https://dealroom.co/news/144597-lovable-raises-400m-at-13-3b-valuation-eyes-600m-revenue-run-rate/",
+   "note": "Raised $400M at $13.3B valuation (2026)"
+  },
+  {
+   "name": "Luminance",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Legal-grade AI for contract negotiation and review",
+   "url": "https://www.luminance.com",
+   "source": "https://www.luminance.com"
+  },
+  {
+   "name": "MagicSchool",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI platform for teachers and students in schools",
+   "url": "https://www.magicschool.ai",
+   "source": "https://www.magicschool.ai"
+  },
+  {
+   "name": "Manus",
+   "kind": "company",
+   "subsegments": [
+    "n9.agentic"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "acquired",
+   "parent": "Meta (2025)",
+   "one_liner": "General-purpose autonomous agent that executes multi-step research and computer tasks",
+   "url": "https://manus.im",
+   "source": "https://finance.yahoo.com/news/meta-acquire-ai-agent-company-120839836.html",
+   "note": "Meta agreed to acquire for ~$2B+, Dec 2025 (Chinese-origin team, Singapore HQ)"
+  },
+  {
+   "name": "Meta AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Meta",
+   "one_liner": "Assistant inside WhatsApp, Instagram, Facebook, Messenger and Ray-Ban Meta glasses",
+   "url": "https://www.meta.ai",
+   "source": "https://www.meta.ai"
+  },
+  {
+   "name": "Metaview",
+   "kind": "company",
+   "subsegments": [
+    "n9.hr"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI notetaker and recruiting agents for interviews",
+   "url": "https://www.metaview.ai",
+   "source": "https://www.metaview.ai"
+  },
+  {
+   "name": "Microsoft 365 Copilot",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge",
+    "n9.store"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "AI assistant and agents across Word, Excel, Teams, Outlook; hosts Agent Store",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.microsoft.com/microsoft-365/copilot",
+   "source": "https://www.microsoft.com/microsoft-365/copilot"
+  },
+  {
+   "name": "Microsoft Copilot",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Consumer Copilot assistant integrated into Windows, Edge and Bing",
+   "url": "https://copilot.microsoft.com",
+   "source": "https://copilot.microsoft.com"
+  },
+  {
+   "name": "Microsoft Dragon Copilot",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Ambient and dictation clinical AI assistant (Nuance DAX successor)",
+   "url": "https://www.microsoft.com/health-solutions/clinical-workflow/dragon-copilot",
+   "source": "https://www.microsoft.com/health-solutions/clinical-workflow/dragon-copilot"
+  },
+  {
+   "name": "Microsoft Edge Copilot Mode",
+   "kind": "company",
+   "subsegments": [
+    "n9.agentic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Agentic browsing mode in Edge that takes actions across tabs",
+   "url": "https://www.microsoft.com/edge",
+   "source": "https://www.microsoft.com/edge"
+  },
+  {
+   "name": "Microsoft Marketplace / Agent Store",
+   "kind": "company",
+   "subsegments": [
+    "n9.store"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Marketplace for AI apps and agents for Microsoft 365 Copilot and Azure",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://marketplace.microsoft.com",
+   "source": "https://marketplace.microsoft.com"
+  },
+  {
+   "name": "Microsoft Power BI Copilot",
+   "kind": "company",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Copilot and data agents in Power BI and Microsoft Fabric",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.microsoft.com/en-us/power-platform/products/power-bi",
+   "source": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction"
+  },
+  {
+   "name": "Microsoft Security Copilot",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Generative AI assistant and agents for security teams",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.microsoft.com/security/business/ai-machine-learning/microsoft-security-copilot",
+   "source": "https://www.microsoft.com/security/business/ai-machine-learning/microsoft-security-copilot"
+  },
+  {
+   "name": "Moveworks",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge",
+    "n9.hr",
+    "n9.itops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "ServiceNow (2025)",
+   "one_liner": "AI assistant for employee IT/HR service and enterprise search",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.moveworks.com",
+   "source": "https://www.moveworks.com",
+   "note": "Acquired by ServiceNow (closed Dec 2025)"
+  },
+  {
+   "name": "Nabla",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Ambient AI assistant for clinicians",
+   "url": "https://www.nabla.com",
+   "source": "https://www.nabla.com"
+  },
+  {
+   "name": "NetEase Youdao",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "NetEase",
+   "one_liner": "Translation app, devices and Ziyue education LLM",
+   "url": "https://www.youdao.com",
+   "source": "https://ir.youdao.com"
+  },
+  {
+   "name": "Neura Robotics",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Cognitive robots and humanoids",
+   "url": "https://neura-robotics.com",
+   "source": "https://neura-robotics.com"
+  },
+  {
+   "name": "Neural Concept",
+   "kind": "company",
+   "subsegments": [
+    "n9.industrial"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI-driven engineering design and simulation",
+   "url": "https://www.neuralconcept.com",
+   "source": "https://www.neuralconcept.com"
+  },
+  {
+   "name": "Nomi",
+   "kind": "company",
+   "subsegments": [
+    "n9.consumer"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI companion app with memory",
+   "url": "https://nomi.ai",
+   "source": "https://nomi.ai"
+  },
+  {
+   "name": "Notion AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI writing, search and agents inside Notion workspace",
+   "url": "https://www.notion.com/product/ai",
+   "source": "https://www.notion.com/product/ai"
+  },
+  {
+   "name": "Numeric",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI close automation for accounting teams",
+   "url": "https://www.numeric.io",
+   "source": "https://www.numeric.io"
+  },
+  {
+   "name": "o9 Solutions",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI planning platform (Digital Brain) for supply-chain and integrated business planning",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://o9solutions.com",
+   "source": "https://o9solutions.com"
+  },
+  {
+   "name": "Official MCP Registry",
+   "kind": "company",
+   "subsegments": [
+    "n9.store",
+    "n8.orch"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Open registry of Model Context Protocol servers",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://registry.modelcontextprotocol.io",
+   "source": "https://registry.modelcontextprotocol.io"
+  },
+  {
+   "name": "OpenAI Codex",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "OpenAI",
+   "one_liner": "OpenAI's cloud and CLI coding agent",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://openai.com/codex/",
+   "source": "https://news.crunchbase.com/ma/data-openai-2023-2026-acquisitions-open-source-astral-promptfoo/",
+   "note": "Astral (Python tooling) acquisition being integrated into Codex (2026)"
+  },
+  {
+   "name": "OpenAI devices (io)",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "OpenAI (2025)",
+   "one_liner": "Jony Ive-led OpenAI hardware unit; first device planned for late 2026",
+   "url": "https://openai.com/sam-and-jony/",
+   "source": "https://axios.com/2026/01/19/openai-device-2026-lehane-jony-ive",
+   "note": "io acquired for $6.5B May 2025; first device targeted late 2026"
+  },
+  {
+   "name": "OpenClaw",
+   "kind": "company",
+   "subsegments": [
+    "n9.agentic"
+   ],
+   "hq": "AT",
+   "region": "Europe",
+   "status": "open-source",
+   "one_liner": "Open-source self-hosted personal agent that operates apps and messaging",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://openclaw.ai",
+   "source": "https://news.crunchbase.com/ma/data-openai-2023-2026-acquisitions-open-source-astral-promptfoo/",
+   "note": "Creator Peter Steinberger joined OpenAI in Feb 2026 acqui-hire; project remains open source"
+  },
+  {
+   "name": "OpenEvidence",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Medical evidence search and clinical decision support for physicians",
+   "url": "https://www.openevidence.com",
+   "source": "https://www.openevidence.com"
+  },
+  {
+   "name": "OpenSpace",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Reality capture and AI progress tracking for construction sites",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.openspace.ai",
+   "source": "https://www.openspace.ai"
+  },
+  {
+   "name": "Opera Neon",
+   "kind": "company",
+   "subsegments": [
+    "n9.agentic"
+   ],
+   "hq": "NO",
+   "region": "Europe",
+   "status": "public",
+   "parent": "Opera",
+   "one_liner": "Agentic browser from Opera that executes tasks on web pages",
+   "url": "https://www.operaneon.com",
+   "source": "https://www.operaneon.com"
+  },
+  {
+   "name": "Otter.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI meeting transcription, summaries and meeting agents",
+   "url": "https://otter.ai",
+   "source": "https://otter.ai"
+  },
+  {
+   "name": "Outreach",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Sales execution platform with AI agents for prospecting and deals",
+   "url": "https://www.outreach.io",
+   "source": "https://www.outreach.io"
+  },
+  {
+   "name": "Owkin",
+   "kind": "company",
+   "subsegments": [
+    "n9.industrial",
+    "n9.health",
+    "n6.domain"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI for biomedical research and diagnostics",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.owkin.com",
+   "source": "https://www.owkin.com"
+  },
+  {
+   "name": "Pactum",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Autonomous AI negotiation agents for procurement; Estonian-founded",
+   "tags": [
+    "cost",
+    "enterprise"
+   ],
+   "url": "https://pactum.com",
+   "source": "https://pactum.com/news-pactum-secures-54-million-in-series-c-funding-to-scale-agentic-ai-in-procurement/",
+   "note": "Raised $54M Series C (2025)"
+  },
+  {
+   "name": "Palo Alto Networks Cortex AgentiX",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Palo Alto Networks",
+   "one_liner": "Agentic security operations within Cortex XSIAM",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.paloaltonetworks.com/cortex",
+   "source": "https://www.paloaltonetworks.com/cortex"
+  },
+  {
+   "name": "Paradox",
+   "kind": "company",
+   "subsegments": [
+    "n9.hr"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Workday (2025)",
+   "one_liner": "Conversational AI recruiting assistant 'Olivia' for high-volume hiring",
+   "url": "https://www.paradox.ai",
+   "source": "https://www.paradox.ai"
+  },
+  {
+   "name": "Parloa",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.voice"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Voice-first AI agent platform for enterprise contact centres",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.parloa.com",
+   "source": "https://www.parloa.com"
+  },
+  {
+   "name": "Pentera",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Automated security validation and AI-driven pentesting",
+   "tags": [
+    "security"
+   ],
+   "url": "https://pentera.io",
+   "source": "https://pentera.io"
+  },
+  {
+   "name": "Perplexity",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant",
+    "n9.agentic",
+    "n9.finance",
+    "n8.search",
+    "n9.commerce"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI answer engine with citations, Comet agentic browser and finance research",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.perplexity.ai",
+   "source": "https://siliconvalleyinvestclub.com/2026/08/25/perplexity-in-talks-to-raise-a-new-funding-round-at-a-30-billion-valuation/",
+   "note": "Comet made free worldwide Oct 2025; reported in talks to raise at ~$30B (Aug 2026)"
+  },
+  {
+   "name": "Persado",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Generative AI for marketing language optimisation",
+   "url": "https://www.persado.com",
+   "source": "https://www.persado.com"
+  },
+  {
+   "name": "Phia",
+   "kind": "company",
+   "subsegments": [
+    "n9.commerce"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI shopping agent/browser extension comparing prices across new and resale",
+   "url": "https://phia.com",
+   "source": "https://fashionunited.com/news/business/phia-secures-35-million-dollars-in-series-a-funding-to-scale-ai-shopping-platform/2026012970299",
+   "note": "Raised $35M Series A (Jan 2026)"
+  },
+  {
+   "name": "Phrase",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "CZ",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Localisation platform (TMS, Phrase Language AI) for enterprise content",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://phrase.com",
+   "source": "https://phrase.com"
+  },
+  {
+   "name": "PhysicsWallah",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian test-prep platform with AI doubt-solving tools",
+   "url": "https://www.pw.live",
+   "source": "https://www.pw.live",
+   "note": "Listed on NSE/BSE Nov 2025"
+  },
+  {
+   "name": "PhysicsX",
+   "kind": "company",
+   "subsegments": [
+    "n9.industrial"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI engineering platform for simulation-driven design",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.physicsx.ai",
+   "source": "https://www.physicsx.ai"
+  },
+  {
+   "name": "Plaud",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "AI voice recorders (NotePin, Note) with transcription and summaries",
+   "url": "https://www.plaud.ai",
+   "source": "https://www.plaud.ai"
+  },
+  {
+   "name": "Poe (Quora)",
+   "kind": "company",
+   "subsegments": [
+    "n9.store",
+    "n9.assistant"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Quora",
+   "one_liner": "Multi-model chat app with user-created bots",
+   "url": "https://poe.com",
+   "source": "https://poe.com"
+  },
+  {
+   "name": "PolyAI",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice",
+    "n9.support"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Enterprise voice agents for customer-service phone lines",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://poly.ai",
+   "source": "https://poly.ai"
+  },
+  {
+   "name": "Pony.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Robotaxi and robotruck operator",
+   "url": "https://pony.ai",
+   "source": "https://pony.ai"
+  },
+  {
+   "name": "Praktika",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI avatar tutors for language learning",
+   "url": "https://praktika.ai",
+   "source": "https://praktika.ai"
+  },
+  {
+   "name": "Procore (Helix)",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Procore Technologies",
+   "one_liner": "Construction management platform with Helix AI agents",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.procore.com/ai",
+   "source": "https://www.procore.com/ai"
+  },
+  {
+   "name": "project44",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Supply-chain visibility platform with AI agents for freight exceptions",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.project44.com",
+   "source": "https://www.ajot.com/news/project44-achieves-first-positive-operating-free-cash-flow-quarter-with-48-new-arr-growth-in-q4"
+  },
+  {
+   "name": "Prophet Security",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Agentic AI SOC platform for triage and investigation",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.prophetsecurity.ai",
+   "source": "https://pulse2.com/prophet-security-strategic-investment-from-amex-ventures-and-citi-ventures-to-advance-agentic-ai-soc-platform"
+  },
+  {
+   "name": "Pyramid Analytics",
+   "kind": "company",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Decision intelligence platform with GenBI natural-language analytics; Israeli R&D",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.pyramidanalytics.com",
+   "source": "https://www.pyramidanalytics.com"
+  },
+  {
+   "name": "Qlik",
+   "kind": "company",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Analytics and data integration with Qlik Answers and agentic AI",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.qlik.com",
+   "source": "https://www.qlik.com"
+  },
+  {
+   "name": "Qodo",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "AI code review and test-generation agents",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.qodo.ai",
+   "source": "https://www.qodo.ai"
+  },
+  {
+   "name": "Quizlet",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Study platform with AI-generated study materials",
+   "url": "https://quizlet.com",
+   "source": "https://quizlet.com"
+  },
+  {
+   "name": "Qure.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI imaging interpretation for chest X-ray, CT and TB screening",
+   "url": "https://www.qure.ai",
+   "source": "https://www.qure.ai"
+  },
+  {
+   "name": "Qwen app (Alibaba)",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Alibaba",
+   "one_liner": "Alibaba's consumer AI assistant app built on Qwen models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.qianwen.com",
+   "source": "https://www.qianwen.com"
+  },
+  {
+   "name": "Rabbit",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "r1 handheld AI device and agent OS",
+   "url": "https://www.rabbit.tech",
+   "source": "https://www.rabbit.tech"
+  },
+  {
+   "name": "Rask AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI video localisation and dubbing for creators and media",
+   "url": "https://www.rask.ai",
+   "source": "https://www.rask.ai"
+  },
+  {
+   "name": "Ray-Ban Meta / Meta Ray-Ban Display",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Meta / EssilorLuxottica",
+   "one_liner": "AI smart glasses with Meta AI, cameras and display variant",
+   "url": "https://www.meta.com/ai-glasses/",
+   "source": "https://www.meta.com/ai-glasses/"
+  },
+  {
+   "name": "Recursion",
+   "kind": "company",
+   "subsegments": [
+    "n9.industrial"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "AI-enabled drug discovery pipeline and platform",
+   "url": "https://www.recursion.com",
+   "source": "https://www.recursion.com"
+  },
+  {
+   "name": "Replika",
+   "kind": "company",
+   "subsegments": [
+    "n9.consumer"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI companion chatbot app",
+   "url": "https://replika.com",
+   "source": "https://replika.com"
+  },
+  {
+   "name": "Replit",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Browser-based vibe-coding platform with Replit Agent for building and deploying apps",
+   "url": "https://replit.com",
+   "source": "https://www.bloomberg.com/news/articles/2026-01-15/ai-coding-startup-replit-nears-funding-at-9-billion-valuation",
+   "note": "Valued at ~$9B in 2026 round"
+  },
+  {
+   "name": "Retell AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Platform to build, test and deploy AI phone agents",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.retellai.com",
+   "source": "https://www.retellai.com"
+  },
+  {
+   "name": "Rezolve.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.itops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Agentic AI service desk in Microsoft Teams; Indian engineering base",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.rezolve.ai",
+   "source": "https://www.rezolve.ai/press-release/rezolve-ai-raises-11m-series-a-led-by-sig-venture-capital"
+  },
+  {
+   "name": "Rillet",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-native general ledger and ERP for mid-market companies",
+   "url": "https://www.rillet.com",
+   "source": "https://www.rillet.com"
+  },
+  {
+   "name": "Rogo",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI analyst for investment banks and investment firms",
+   "url": "https://rogo.ai",
+   "source": "https://rogo.ai"
+  },
+  {
+   "name": "Rokid",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "AR and AI glasses",
+   "url": "https://www.rokid.com",
+   "source": "https://www.rokid.com"
+  },
+  {
+   "name": "Rox",
+   "kind": "company",
+   "subsegments": [
+    "n9.gtm"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI agents for account research and revenue workflows",
+   "url": "https://www.rox.com",
+   "source": "https://www.rox.com"
+  },
+  {
+   "name": "RWS (Language Weaver)",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Language services plus Language Weaver MT and Trados localisation software",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.rws.com",
+   "source": "https://www.rws.com/language-weaver/"
+  },
+  {
+   "name": "Safran.AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.public"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "Safran (2024)",
+   "one_liner": "AI geospatial intelligence and imagery analysis for defence (formerly Preligens)",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.safran-group.com",
+   "source": "https://www.safran-group.com"
+  },
+  {
+   "name": "Shield AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.public"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Hivemind AI pilot autonomy software and military aircraft",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://shield.ai",
+   "source": "https://bloomberg.com/news/articles/2026-03-26/defense-startup-shield-ai-nabs-2-billion-at-12-7-billion-value",
+   "note": "Raised $2B at $12.7B valuation (Mar 2026)"
+  },
+  {
+   "name": "Shift Technology",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI for insurance claims automation, fraud detection and underwriting",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.shift-technology.com",
+   "source": "https://www.nasdaq.com/press-release/five-year-renewal-collaboration-between-shift-technology-and-axa-accelerate-ai",
+   "note": "Five-year renewal with AXA"
+  },
+  {
+   "name": "Siemens Industrial Copilot",
+   "kind": "company",
+   "subsegments": [
+    "n9.industrial"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "parent": "Siemens",
+   "one_liner": "Generative AI assistants for automation engineering and shop floor",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.siemens.com/global/en/products/automation/topic-areas/industrial-ai.html",
+   "source": "https://www.siemens.com/global/en/products/automation/topic-areas/industrial-ai.html"
+  },
+  {
+   "name": "Sierra",
+   "kind": "company",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI customer service agents for consumer brands, priced on outcomes",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://sierra.ai",
+   "source": "https://www.vktr.com/customer-experience/sierra-raises-950m-at-15b-valuation-eyes-transformation-beyond-customer-support/",
+   "note": "Raised $950M at >$15B valuation, May 2026"
+  },
+  {
+   "name": "Sigma Computing",
+   "kind": "company",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Cloud BI on the warehouse with AI assistants and AI query functions",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.sigmacomputing.com",
+   "source": "https://www.sigmacomputing.com"
+  },
+  {
+   "name": "Sixfold",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Generative AI underwriting assistant for insurers and reinsurers",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.sixfold.ai",
+   "source": "https://www.sixfold.ai"
+  },
+  {
+   "name": "Smartling",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI translation and localisation platform for enterprises",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.smartling.com",
+   "source": "https://fortune.com/press-releases/vitruvian-partners-majority-investment-smartling-2026-09-15/",
+   "note": "Vitruvian Partners took majority stake (Sep 2026)"
+  },
+  {
+   "name": "Speak",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI speaking tutor for language learning",
+   "url": "https://www.speak.com",
+   "source": "https://www.speak.com"
+  },
+  {
+   "name": "Spellbook",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI contract drafting and review in Microsoft Word",
+   "url": "https://www.spellbook.legal",
+   "source": "https://www.spellbook.legal"
+  },
+  {
+   "name": "SpotDraft",
+   "kind": "company",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI contract management for in-house legal teams",
+   "url": "https://www.spotdraft.com",
+   "source": "https://www.spotdraft.com"
+  },
+  {
+   "name": "Squirrel AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.edu"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Adaptive learning tutoring system for K-12",
+   "url": "https://squirrelai.com",
+   "source": "https://squirrelai.com"
+  },
+  {
+   "name": "Suki",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Voice AI assistant for clinical documentation",
+   "url": "https://www.suki.ai",
+   "source": "https://www.suki.ai"
+  },
+  {
+   "name": "Superhuman (ex-Grammarly)",
+   "kind": "company",
+   "subsegments": [
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI writing assistant suite; Grammarly rebranded as Superhuman after acquiring it",
+   "url": "https://superhuman.com",
+   "source": "https://superhuman.com",
+   "note": "Grammarly acquired Superhuman (2025) and adopted its name (Oct 2025)"
+  },
+  {
+   "name": "Synthesia",
+   "kind": "company",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI avatar video generation for corporate training and communications",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.synthesia.io",
+   "source": "https://www.synthesia.io"
+  },
+  {
+   "name": "Synthflow",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "No-code voice AI agents for phone calls",
+   "url": "https://synthflow.ai",
+   "source": "https://synthflow.ai"
+  },
+  {
+   "name": "Tableau",
+   "kind": "company",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Salesforce (2019)",
+   "one_liner": "Tableau Next agentic analytics with Agentforce",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.tableau.com",
+   "source": "https://www.tableau.com/products/tableau-next"
+  },
+  {
+   "name": "Tabnine",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Private, deployable AI code assistant for regulated enterprises",
+   "tags": [
+    "enterprise",
+    "security"
+   ],
+   "url": "https://www.tabnine.com",
+   "source": "https://www.tabnine.com"
+  },
+  {
+   "name": "Talkie / Xingye (MiniMax)",
+   "kind": "company",
+   "subsegments": [
+    "n9.consumer"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "MiniMax",
+   "one_liner": "AI character companion apps (Talkie globally, Xingye in China)",
+   "url": "https://www.talkie-ai.com",
+   "source": "https://www.talkie-ai.com",
+   "note": "MiniMax listed in Hong Kong Jan 2026"
+  },
+  {
+   "name": "Tempus AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.health",
+    "n9.industrial",
+    "n6.domain"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "AI-driven precision medicine: genomic testing and clinical data",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.tempus.com",
+   "source": "https://www.tempus.com",
+   "note": "Acquired Paige (2025)"
+  },
+  {
+   "name": "Tencent Yuanbao",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Tencent",
+   "one_liner": "Tencent's AI assistant integrated with WeChat, using Hunyuan and DeepSeek models",
+   "url": "https://yuanbao.tencent.com",
+   "source": "https://yuanbao.tencent.com"
+  },
+  {
+   "name": "Tesla (FSD, Robotaxi, Optimus)",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Driver-assist, robotaxi service and Optimus humanoid",
+   "url": "https://www.tesla.com",
+   "source": "https://www.tesla.com"
+  },
+  {
+   "name": "ThoughtSpot",
+   "kind": "company",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Agentic analytics platform with Spotter AI analyst agents",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.thoughtspot.com",
+   "source": "https://techtarget.com/searchbusinessanalytics/news/366636078/ThoughtSpot-automates-full-platform-with-new-Spotter-agents"
+  },
+  {
+   "name": "Tolan (Portola)",
+   "kind": "company",
+   "subsegments": [
+    "n9.consumer"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Animated alien AI friend app",
+   "url": "https://www.tolans.com",
+   "source": "https://www.tolans.com"
+  },
+  {
+   "name": "Torq",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "AI-driven hyperautomation SOC (HyperSOC)",
+   "tags": [
+    "security"
+   ],
+   "url": "https://torq.io",
+   "source": "https://torq.io/news/torq-acquires-israel-based-revrod-to-enhance-soc-capabilities",
+   "note": "Acquired Israeli startup RevRod"
+  },
+  {
+   "name": "Tractable",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Computer-vision AI assessing vehicle and property damage for insurers",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://tractable.ai",
+   "source": "https://tractable.ai"
+  },
+  {
+   "name": "Trae (ByteDance)",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "ByteDance",
+   "one_liner": "Free AI IDE and coding agent from ByteDance",
+   "tags": [
+    "cost",
+    "developer"
+   ],
+   "url": "https://www.trae.ai",
+   "source": "https://www.trae.ai"
+  },
+  {
+   "name": "TransPerfect",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Largest language services provider; GlobalLink AI translation platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.transperfect.com",
+   "source": "https://www.transperfect.com"
+  },
+  {
+   "name": "Trullion",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "AI accounting and audit automation for lease and revenue accounting",
+   "url": "https://trullion.com",
+   "source": "https://trullion.com"
+  },
+  {
+   "name": "Trunk Tools",
+   "kind": "company",
+   "subsegments": [
+    "n9.insurance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI agents that read construction documents and answer field questions",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://trunktools.com",
+   "source": "https://coverager.com/trunk-tools-raises-40-million/",
+   "note": "Raised $40M Series B (2025)"
+  },
+  {
+   "name": "UBTech",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Humanoid robots for factories and services",
+   "url": "https://www.ubtrobot.com",
+   "source": "https://www.ubtrobot.com"
+  },
+  {
+   "name": "Unbabel",
+   "kind": "company",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "PT",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI translation with quality estimation for customer service and enterprise content",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://unbabel.com",
+   "source": "https://unbabel.com"
+  },
+  {
+   "name": "Unitree Robotics",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Quadruped and humanoid robots",
+   "url": "https://www.unitree.com",
+   "source": "https://www.caixinglobal.com/2026-08-18/unitree-to-debut-at-61-billion-yuan-valuation-in-closely-watched-shanghai-ipo-102475173.html",
+   "note": "Shanghai STAR Market IPO Aug 2026 at ~$9B valuation"
+  },
+  {
+   "name": "v0 (Vercel)",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Vercel",
+   "one_liner": "Generative UI and app builder tied to Vercel deployment",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://v0.app",
+   "source": "https://v0.app"
+  },
+  {
+   "name": "Vannevar Labs",
+   "kind": "company",
+   "subsegments": [
+    "n9.public"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI for defence and intelligence analysts working with foreign-language open-source data",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.vannevarlabs.com",
+   "source": "https://www.vannevarlabs.com"
+  },
+  {
+   "name": "Vapi",
+   "kind": "company",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Developer platform for building voice AI agents",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://vapi.ai",
+   "source": "https://vapi.ai"
+  },
+  {
+   "name": "Waymo",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Driverless robotaxi service in multiple US cities",
+   "url": "https://waymo.com",
+   "source": "https://waymo.com"
+  },
+  {
+   "name": "WeRide",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Autonomous robotaxis, robobuses and robovans",
+   "url": "https://www.weride.ai",
+   "source": "https://www.weride.ai"
+  },
+  {
+   "name": "Workday Illuminate / Sana",
+   "kind": "company",
+   "subsegments": [
+    "n9.hr",
+    "n9.knowledge",
+    "n8.orch",
+    "n9.sor"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Workday",
+   "one_liner": "Workday's AI agents for HR/finance; Sana adds AI learning and enterprise search",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.workday.com/en-us/artificial-intelligence.html",
+   "source": "https://www.workday.com/en-us/artificial-intelligence.html",
+   "note": "Workday acquired Sana and Paradox (2025)"
+  },
+  {
+   "name": "Wrtn",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant",
+    "n9.consumer"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Korean consumer AI super-app combining chat, search and character features",
+   "url": "https://wrtn.ai",
+   "source": "https://wrtn.ai"
+  },
+  {
+   "name": "Xaira Therapeutics",
+   "kind": "company",
+   "subsegments": [
+    "n9.industrial"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-first drug discovery and development company",
+   "url": "https://www.xaira.com",
+   "source": "https://www.xaira.com"
+  },
+  {
+   "name": "XBOW",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Autonomous AI penetration tester",
+   "tags": [
+    "security"
+   ],
+   "url": "https://xbow.com",
+   "source": "https://xbow.com"
+  },
+  {
+   "name": "Xiaomi AI Glasses",
+   "kind": "company",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Xiaomi",
+   "one_liner": "AI camera glasses with voice assistant",
+   "url": "https://www.mi.com",
+   "source": "https://www.mi.com"
+  },
+  {
+   "name": "Yellow.ai",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.voice"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Multilingual AI agents for customer and employee service",
+   "url": "https://yellow.ai",
+   "source": "https://yellow.ai"
+  },
+  {
+   "name": "Z.ai / ChatGLM (Zhipu)",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant",
+    "n9.agentic"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Zhipu's chat assistant and AutoGLM phone/browser agent on GLM models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://chat.z.ai",
+   "source": "https://chat.z.ai",
+   "note": "Listed in Hong Kong Jan 2026"
+  },
+  {
+   "name": "Zalando",
+   "kind": "company",
+   "subsegments": [
+    "n9.commerce"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Fashion retailer with LLM-based conversational shopping assistant across its markets",
+   "url": "https://corporate.zalando.com",
+   "source": "https://corporate.zalando.com"
+  },
+  {
+   "name": "Zendesk AI agents",
+   "kind": "company",
+   "subsegments": [
+    "n9.support",
+    "n9.itops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Zendesk",
+   "one_liner": "AI agents and copilot in Zendesk's service platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.zendesk.com/service/ai/",
+   "source": "https://www.zendesk.com/service/ai/"
+  },
+  {
+   "name": "Zip",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Procurement orchestration platform with AI agents for intake-to-pay",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://ziphq.com",
+   "source": "https://ziphq.com"
+  },
+  {
+   "name": "Zoox",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Amazon (2020)",
+   "one_liner": "Purpose-built robotaxi",
+   "url": "https://zoox.com",
+   "source": "https://zoox.com"
+  },
+  {
+   "name": "Agent Payments Protocol (AP2)",
+   "kind": "standard",
+   "subsegments": [
+    "n9.commerce"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google (with payments partners)",
+   "licence": "Apache-2.0",
+   "access": "Spec and samples on GitHub; extends A2A and MCP",
+   "repo": "https://github.com/google-agentic-commerce/AP2",
+   "stars": 3300,
+   "archived": false,
+   "one_liner": "Open protocol for secure, verifiable agent-initiated payments",
+   "tags": [
+    "payments",
+    "agentic-commerce",
+    "open-standard"
+   ],
+   "url": "https://github.com/google-agentic-commerce/AP2",
+   "source": "https://github.com/google-agentic-commerce/AP2"
+  },
+  {
+   "name": "Aider",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.coding",
+    "n11.dev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Aider-AI (Paul Gauthier)",
+   "licence": "Apache-2.0",
+   "access": "pip install aider-chat; works with most LLM APIs and local models",
+   "repo": "https://github.com/Aider-AI/aider",
+   "stars": 49800,
+   "archived": false,
+   "one_liner": "Terminal AI pair programmer that edits git repos",
+   "tags": [
+    "developer-tools",
+    "open-source"
+   ],
+   "url": "https://github.com/Aider-AI/aider",
+   "source": "https://github.com/Aider-AI/aider"
+  },
+  {
+   "name": "AnythingLLM",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.assistant",
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Mintplex Labs",
+   "licence": "MIT",
+   "access": "Desktop app or Docker; local or API models",
+   "repo": "https://github.com/Mintplex-Labs/anything-llm",
+   "stars": 67500,
+   "archived": false,
+   "one_liner": "Local-first all-in-one chat, RAG over documents and agent workspace",
+   "tags": [
+    "local",
+    "rag",
+    "open-source"
+   ],
+   "url": "https://github.com/Mintplex-Labs/anything-llm",
+   "source": "https://github.com/Mintplex-Labs/anything-llm"
+  },
+  {
+   "name": "AutoGPT",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.agentic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Significant Gravitas",
+   "licence": "MIT (classic) / Polyform Shield 1.0.0 (autogpt_platform)",
+   "access": "Self-host platform via Docker or use classic agent",
+   "repo": "https://github.com/Significant-Gravitas/AutoGPT",
+   "stars": 187800,
+   "archived": false,
+   "one_liner": "Platform for building continuous AI agents; pioneer of autonomous agents",
+   "tags": [
+    "agents",
+    "source-available",
+    "open-source"
+   ],
+   "url": "https://github.com/Significant-Gravitas/AutoGPT",
+   "source": "https://github.com/Significant-Gravitas/AutoGPT",
+   "note": "New platform code is Polyform Shield (source-available, not OSI open source); only classic/ remains MIT"
+  },
+  {
+   "name": "Autoware",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "open",
+   "steward": "Autoware Foundation",
+   "licence": "Apache-2.0",
+   "access": "ROS 2-based source build or Docker",
+   "repo": "https://github.com/autowarefoundation/autoware",
+   "stars": 12200,
+   "archived": false,
+   "one_liner": "Open-source software stack for autonomous driving",
+   "tags": [
+    "autonomy",
+    "automotive",
+    "open-source"
+   ],
+   "url": "https://github.com/autowarefoundation/autoware",
+   "source": "https://github.com/autowarefoundation/autoware"
+  },
+  {
+   "name": "Bhashini (open)",
+   "kind": "public programme",
+   "subsegments": [
+    "n9.lang",
+    "n9.public",
+    "n11.public"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "Digital India Bhashini Division, MeitY",
+   "licence": "Open APIs and public model repository (per-model terms)",
+   "access": "Register at bhashini.gov.in for ASR, translation and TTS API keys",
+   "one_liner": "India's national language-AI platform for speech and translation across 22 languages",
+   "tags": [
+    "indic",
+    "sovereign",
+    "public-good",
+    "open-source"
+   ],
+   "url": "https://bhashini.gov.in",
+   "source": "https://anantamias.com/bhashini-bhasha-interface-for-india/"
+  },
+  {
+   "name": "bolt.new (open-source)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "StackBlitz",
+   "licence": "MIT",
+   "access": "Clone and run locally; hosted product at bolt.new",
+   "repo": "https://github.com/stackblitz/bolt.new",
+   "stars": 16500,
+   "archived": false,
+   "one_liner": "Open-source core of the Bolt prompt-to-full-stack-app builder",
+   "tags": [
+    "app-builder",
+    "open-source"
+   ],
+   "url": "https://github.com/stackblitz/bolt.new",
+   "source": "https://github.com/stackblitz/bolt.new"
+  },
+  {
+   "name": "CAI (Cybersecurity AI)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Alias Robotics",
+   "licence": "Mixed: MIT components plus research-only proprietary parts",
+   "access": "Archived; research use only for proprietary parts",
+   "repo": "https://github.com/aliasrobotics/cai",
+   "stars": 9800,
+   "archived": true,
+   "one_liner": "Framework for AI security agents (offensive and defensive)",
+   "tags": [
+    "security",
+    "source-available",
+    "open-source"
+   ],
+   "url": "https://github.com/aliasrobotics/cai",
+   "source": "https://github.com/aliasrobotics/cai",
+   "note": "Repo archived; paid distribution for customers; not fully open source"
+  },
+  {
+   "name": "Chatwoot",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.support"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Chatwoot Inc.",
+   "licence": "MIT (core); enterprise folder separately licensed",
+   "access": "Docker/Heroku self-host or chatwoot.com cloud",
+   "repo": "https://github.com/chatwoot/chatwoot",
+   "stars": 38500,
+   "archived": false,
+   "one_liner": "Open-source omnichannel support desk with Captain AI agent",
+   "tags": [
+    "customer-service",
+    "open-core",
+    "open-source"
+   ],
+   "url": "https://github.com/chatwoot/chatwoot",
+   "source": "https://github.com/chatwoot/chatwoot"
+  },
+  {
+   "name": "Cline",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Cline Bot Inc.",
+   "licence": "Apache-2.0",
+   "access": "VS Code/JetBrains extension, CLI or SDK; bring your own model key",
+   "repo": "https://github.com/cline/cline",
+   "stars": 70900,
+   "archived": false,
+   "one_liner": "Autonomous coding agent for IDE and terminal with human approval loop",
+   "tags": [
+    "developer-tools",
+    "open-source"
+   ],
+   "url": "https://github.com/cline/cline",
+   "source": "https://github.com/cline/cline"
+  },
+  {
+   "name": "Codex CLI",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.coding",
+    "n11.dev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenAI",
+   "licence": "Apache-2.0",
+   "access": "npm i -g @openai/codex; ChatGPT login or API key",
+   "repo": "https://github.com/openai/codex",
+   "stars": 128100,
+   "archived": false,
+   "one_liner": "OpenAI's open-source terminal coding agent (the agent is open; models are not)",
+   "tags": [
+    "developer-tools",
+    "open-source"
+   ],
+   "url": "https://github.com/openai/codex",
+   "source": "https://github.com/openai/codex"
+  },
+  {
+   "name": "ComfyUI",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Comfy Org",
+   "licence": "GPL-3.0",
+   "access": "Desktop app or git clone; runs open image/video models locally",
+   "repo": "https://github.com/Comfy-Org/ComfyUI",
+   "stars": 143500,
+   "archived": false,
+   "one_liner": "Node-graph GUI, API and backend for diffusion image and video models",
+   "tags": [
+    "image",
+    "video",
+    "open-source"
+   ],
+   "url": "https://github.com/Comfy-Org/ComfyUI",
+   "source": "https://github.com/Comfy-Org/ComfyUI"
+  },
+  {
+   "name": "Continue",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Continue Dev, Inc.",
+   "licence": "Apache-2.0",
+   "access": "VS Code/JetBrains extension (final 2.0.0 release); fork to continue",
+   "repo": "https://github.com/continuedev/continue",
+   "stars": 36300,
+   "archived": false,
+   "one_liner": "Open-source IDE coding assistant and CLI, now read-only",
+   "tags": [
+    "developer-tools",
+    "discontinued",
+    "open-source"
+   ],
+   "url": "https://github.com/continuedev/continue",
+   "source": "https://github.com/continuedev/continue",
+   "note": "2026: team stopped active maintenance after a final 2.0.0 release; README says repo is read-only"
+  },
+  {
+   "name": "DeepChem",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.industrial"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "DeepChem community",
+   "licence": "MIT",
+   "access": "pip install deepchem",
+   "repo": "https://github.com/deepchem/deepchem",
+   "stars": 7000,
+   "one_liner": "Deep learning toolkit for drug discovery, chemistry, materials and biology",
+   "tags": [
+    "science",
+    "drug-discovery",
+    "open-source"
+   ],
+   "url": "https://github.com/deepchem/deepchem",
+   "source": "https://github.com/deepchem/deepchem"
+  },
+  {
+   "name": "FinGPT",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "AI4Finance Foundation",
+   "licence": "MIT",
+   "access": "git clone; LoRA adapters on Hugging Face",
+   "repo": "https://github.com/AI4Finance-Foundation/FinGPT",
+   "stars": 21200,
+   "archived": false,
+   "one_liner": "Open-source financial LLM fine-tunes and pipelines",
+   "tags": [
+    "finance",
+    "open-source"
+   ],
+   "url": "https://github.com/AI4Finance-Foundation/FinGPT",
+   "source": "https://github.com/AI4Finance-Foundation/FinGPT"
+  },
+  {
+   "name": "Gemini CLI",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.coding",
+    "n11.dev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google",
+   "licence": "Apache-2.0",
+   "access": "npm install; free tier with Google account",
+   "repo": "https://github.com/google-gemini/gemini-cli",
+   "stars": 106600,
+   "archived": false,
+   "one_liner": "Google's open-source terminal agent for Gemini models",
+   "tags": [
+    "developer-tools",
+    "open-source"
+   ],
+   "url": "https://github.com/google-gemini/gemini-cli",
+   "source": "https://github.com/google-gemini/gemini-cli"
+  },
+  {
+   "name": "Genesis",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Genesis-Embodied-AI",
+   "licence": "Apache-2.0",
+   "access": "pip install genesis-world",
+   "repo": "https://github.com/Genesis-Embodied-AI/Genesis",
+   "stars": 30100,
+   "archived": false,
+   "one_liner": "Simulation platform for general-purpose robotics and embodied AI",
+   "tags": [
+    "simulation",
+    "robotics",
+    "open-source"
+   ],
+   "url": "https://github.com/Genesis-Embodied-AI/Genesis",
+   "source": "https://github.com/Genesis-Embodied-AI/Genesis"
+  },
+  {
+   "name": "goose",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.coding",
+    "n9.agentic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Agentic AI Foundation (Linux Foundation); originated at Block",
+   "licence": "Apache-2.0",
+   "access": "Desktop app or CLI; any LLM, MCP extensions",
+   "repo": "https://github.com/aaif-goose/goose",
+   "stars": 55900,
+   "archived": false,
+   "one_liner": "Extensible local agent that installs, executes, edits and tests with any LLM",
+   "tags": [
+    "agents",
+    "mcp",
+    "open-source"
+   ],
+   "url": "https://github.com/aaif-goose/goose",
+   "source": "https://github.com/aaif-goose/goose",
+   "note": "Block contributed goose to the Linux Foundation's Agentic AI Foundation; repo now under aaif-goose"
+  },
+  {
+   "name": "HealthBench",
+   "kind": "open dataset",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenAI",
+   "licence": "MIT",
+   "access": "Run via openai/simple-evals reference implementation",
+   "repo": "https://github.com/openai/simple-evals",
+   "stars": 4700,
+   "archived": false,
+   "one_liner": "Rubric-based benchmark of LLM performance on realistic health conversations",
+   "tags": [
+    "benchmark",
+    "medical",
+    "open-source"
+   ],
+   "url": "https://github.com/openai/simple-evals",
+   "source": "https://github.com/openai/simple-evals",
+   "note": "simple-evals repo no longer updated since July 2025; HealthBench kept as reference"
+  },
+  {
+   "name": "HolmesGPT",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.itops"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "open",
+   "steward": "HolmesGPT (CNCF sandbox; originated at Robusta)",
+   "licence": "Apache-2.0",
+   "access": "CLI, Helm or Slack bot; any LLM",
+   "repo": "https://github.com/HolmesGPT/holmesgpt",
+   "stars": 3700,
+   "archived": false,
+   "one_liner": "AI SRE agent that investigates alerts and incidents",
+   "tags": [
+    "sre",
+    "aiops",
+    "open-source"
+   ],
+   "url": "https://github.com/HolmesGPT/holmesgpt",
+   "source": "https://github.com/HolmesGPT/holmesgpt"
+  },
+  {
+   "name": "i.AI open tools (Consult, Minute, Themefinder, Parliament MCP)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.public",
+    "n11.public"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Incubator for AI (i.AI), UK Government",
+   "licence": "MIT (Consult, Minute, Themefinder, Parliament MCP)",
+   "access": "Clone from GitHub; built for UK public-sector reuse",
+   "repo": "https://github.com/i-dot-ai",
+   "one_liner": "UK government's open-source AI tools for consultations, meeting minutes and parliament data",
+   "tags": [
+    "government",
+    "open-source"
+   ],
+   "url": "https://github.com/i-dot-ai",
+   "source": "https://github.com/i-dot-ai",
+   "note": "Redbox (civil-service assistant) repo is archived"
+  },
+  {
+   "name": "IndicTrans2",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "AI4Bharat (IIT Madras)",
+   "licence": "MIT",
+   "access": "Weights on Hugging Face; run locally or via Bhashini",
+   "repo": "https://github.com/AI4Bharat/IndicTrans2",
+   "stars": 469,
+   "archived": false,
+   "one_liner": "Translation models covering all 22 scheduled Indian languages",
+   "tags": [
+    "open-weight",
+    "indic",
+    "open-source"
+   ],
+   "url": "https://github.com/AI4Bharat/IndicTrans2",
+   "source": "https://github.com/AI4Bharat/IndicTrans2"
+  },
+  {
+   "name": "InvokeAI",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Invoke",
+   "licence": "Apache-2.0 (plus 3 other licences in repo)",
+   "access": "Desktop installer or self-host web UI",
+   "repo": "https://github.com/invoke-ai/InvokeAI",
+   "stars": 28100,
+   "archived": false,
+   "one_liner": "Professional creative engine and canvas for Stable Diffusion-class models",
+   "tags": [
+    "image",
+    "open-source"
+   ],
+   "url": "https://github.com/invoke-ai/InvokeAI",
+   "source": "https://github.com/invoke-ai/InvokeAI"
+  },
+  {
+   "name": "Isaac GR00T",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "Apache-2.0 (code); NVIDIA Open Model License (weights)",
+   "access": "Weights on Hugging Face; fine-tune with repo scripts",
+   "repo": "https://github.com/NVIDIA/Isaac-GR00T",
+   "stars": 8300,
+   "archived": false,
+   "one_liner": "Open humanoid robot foundation model family (latest N1.7)",
+   "tags": [
+    "open-weight",
+    "robotics",
+    "humanoid",
+    "open-source"
+   ],
+   "url": "https://github.com/NVIDIA/Isaac-GR00T",
+   "source": "https://github.com/NVIDIA/Isaac-GR00T"
+  },
+  {
+   "name": "Isaac Lab",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "BSD-3-Clause (isaaclab_mimic Apache-2.0); needs proprietary Isaac Sim",
+   "access": "pip install on top of Isaac Sim; NVIDIA GPU",
+   "repo": "https://github.com/isaac-sim/IsaacLab",
+   "stars": 8400,
+   "archived": false,
+   "one_liner": "GPU-accelerated framework for robot learning in simulation",
+   "tags": [
+    "robotics",
+    "simulation",
+    "open-source"
+   ],
+   "url": "https://github.com/isaac-sim/IsaacLab",
+   "source": "https://github.com/isaac-sim/IsaacLab"
+  },
+  {
+   "name": "Jan (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.assistant",
+    "n11.consumer"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "open",
+   "steward": "Menlo Research (Jan HQ)",
+   "licence": "Apache-2.0",
+   "access": "Desktop download; runs open models fully offline",
+   "repo": "https://github.com/janhq/jan",
+   "stars": 45100,
+   "archived": false,
+   "one_liner": "Offline desktop ChatGPT alternative running local models",
+   "tags": [
+    "local",
+    "privacy",
+    "open-source"
+   ],
+   "url": "https://github.com/janhq/jan",
+   "source": "https://github.com/janhq/jan"
+  },
+  {
+   "name": "K8sGPT",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.itops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "K8sGPT community (CNCF sandbox)",
+   "licence": "Apache-2.0",
+   "access": "brew/binary CLI or in-cluster operator; any LLM",
+   "repo": "https://github.com/k8sgpt-ai/k8sgpt",
+   "stars": 8100,
+   "archived": false,
+   "one_liner": "Scans Kubernetes clusters and explains issues in plain language",
+   "tags": [
+    "sre",
+    "aiops",
+    "open-source"
+   ],
+   "url": "https://github.com/k8sgpt-ai/k8sgpt",
+   "source": "https://github.com/k8sgpt-ai/k8sgpt"
+  },
+  {
+   "name": "Khoj",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.assistant",
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Khoj Inc.",
+   "licence": "AGPL-3.0",
+   "access": "pip/Docker self-host or khoj.dev cloud",
+   "repo": "https://github.com/khoj-ai/khoj",
+   "stars": 37500,
+   "archived": false,
+   "one_liner": "Self-hostable AI second brain answering from web and personal docs",
+   "tags": [
+    "rag",
+    "self-host",
+    "open-source"
+   ],
+   "url": "https://github.com/khoj-ai/khoj",
+   "source": "https://github.com/khoj-ai/khoj"
+  },
+  {
+   "name": "Kilo Code",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Kilo Code",
+   "licence": "MIT",
+   "access": "VS Code/JetBrains extension and CLI; 400+ models",
+   "repo": "https://github.com/Kilo-Org/kilocode",
+   "stars": 27800,
+   "archived": false,
+   "one_liner": "Open-source agentic coding platform (fork lineage of Cline/Roo)",
+   "tags": [
+    "developer-tools",
+    "open-source"
+   ],
+   "url": "https://github.com/Kilo-Org/kilocode",
+   "source": "https://github.com/Kilo-Org/kilocode"
+  },
+  {
+   "name": "Krita AI Diffusion",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Acly (community)",
+   "licence": "GPL-3.0",
+   "access": "Krita plugin; local ComfyUI backend or cloud",
+   "repo": "https://github.com/Acly/krita-ai-diffusion",
+   "stars": 10500,
+   "archived": false,
+   "one_liner": "Generative fill, inpainting and image generation inside Krita",
+   "tags": [
+    "image",
+    "open-source"
+   ],
+   "url": "https://github.com/Acly/krita-ai-diffusion",
+   "source": "https://github.com/Acly/krita-ai-diffusion"
+  },
+  {
+   "name": "LegalBench",
+   "kind": "open dataset",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Stanford HazyResearch and collaborators",
+   "licence": "Per-task licences set by dataset creators",
+   "access": "Download tasks from GitHub/Hugging Face",
+   "repo": "https://github.com/HazyResearch/legalbench",
+   "stars": 633,
+   "archived": false,
+   "one_liner": "162-task benchmark of legal reasoning in foundation models",
+   "tags": [
+    "benchmark",
+    "legal",
+    "open-source"
+   ],
+   "url": "https://github.com/HazyResearch/legalbench",
+   "source": "https://github.com/HazyResearch/legalbench"
+  },
+  {
+   "name": "LibreChat",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "LibreChat (Danny Avila and community)",
+   "licence": "MIT",
+   "access": "Docker compose self-host; plug in any provider keys",
+   "repo": "https://github.com/danny-avila/LibreChat",
+   "stars": 46400,
+   "archived": false,
+   "one_liner": "Self-hostable multi-provider chat app with agents, MCP and enterprise SSO",
+   "tags": [
+    "self-host",
+    "sovereignty",
+    "open-source"
+   ],
+   "url": "https://github.com/danny-avila/LibreChat",
+   "source": "https://github.com/danny-avila/LibreChat"
+  },
+  {
+   "name": "LibreTranslate",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "LibreTranslate (Argos Open Tech)",
+   "licence": "AGPL-3.0",
+   "access": "Docker/pip self-host; offline capable",
+   "repo": "https://github.com/LibreTranslate/LibreTranslate",
+   "stars": 17200,
+   "archived": false,
+   "one_liner": "Free self-hosted machine translation API",
+   "tags": [
+    "self-host",
+    "open-source"
+   ],
+   "url": "https://github.com/LibreTranslate/LibreTranslate",
+   "source": "https://github.com/LibreTranslate/LibreTranslate"
+  },
+  {
+   "name": "LiveKit Agents",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "LiveKit",
+   "licence": "Apache-2.0",
+   "access": "pip install livekit-agents; self-host LiveKit server or cloud",
+   "repo": "https://github.com/livekit/agents",
+   "stars": 13000,
+   "archived": false,
+   "one_liner": "Framework for real-time voice AI agents over WebRTC and telephony",
+   "tags": [
+    "voice",
+    "realtime",
+    "open-source"
+   ],
+   "url": "https://github.com/livekit/agents",
+   "source": "https://github.com/livekit/agents"
+  },
+  {
+   "name": "LobeHub (Lobe Chat)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "LobeHub",
+   "licence": "Apache-2.0 (per repo badge)",
+   "access": "Docker/Vercel self-host or hosted lobehub.com",
+   "repo": "https://github.com/lobehub/lobe-chat",
+   "stars": 83600,
+   "archived": false,
+   "one_liner": "Multi-provider chat and agent workspace with plugin and agent marketplace",
+   "tags": [
+    "self-host",
+    "open-source"
+   ],
+   "url": "https://github.com/lobehub/lobe-chat",
+   "source": "https://github.com/lobehub/lobe-chat"
+  },
+  {
+   "name": "MIMIC-IV",
+   "kind": "open dataset",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "MIT Laboratory for Computational Physiology (PhysioNet)",
+   "licence": "PhysioNet Credentialed Health Data License 1.5.0",
+   "access": "Credentialed PhysioNet account, CITI training and signed DUA",
+   "one_liner": "De-identified EHR/ICU records for 364k patients, a staple for clinical AI research",
+   "tags": [
+    "dataset",
+    "medical",
+    "restricted-access",
+    "open-source"
+   ],
+   "url": "https://physionet.org/content/mimiciv/",
+   "source": "https://physionet.org/content/mimiciv/"
+  },
+  {
+   "name": "MONAI",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Project MONAI (NVIDIA, King's College London and community)",
+   "licence": "Apache-2.0",
+   "access": "pip install monai; PyTorch-based",
+   "repo": "https://github.com/Project-MONAI/MONAI",
+   "stars": 8700,
+   "archived": false,
+   "one_liner": "AI toolkit for healthcare imaging: training, labelling and deployment",
+   "tags": [
+    "medical-imaging",
+    "open-source"
+   ],
+   "url": "https://github.com/Project-MONAI/MONAI",
+   "source": "https://github.com/Project-MONAI/MONAI"
+  },
+  {
+   "name": "MuJoCo",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Google DeepMind",
+   "licence": "Apache-2.0",
+   "access": "pip install mujoco",
+   "repo": "https://github.com/google-deepmind/mujoco",
+   "stars": 16000,
+   "archived": false,
+   "one_liner": "General-purpose physics simulator widely used for robot learning",
+   "tags": [
+    "simulation",
+    "robotics",
+    "open-source"
+   ],
+   "url": "https://github.com/google-deepmind/mujoco",
+   "source": "https://github.com/google-deepmind/mujoco"
+  },
+  {
+   "name": "NLLB-200",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n9.lang"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Meta",
+   "licence": "CC BY-NC 4.0",
+   "access": "Hugging Face download (600M to 54B variants)",
+   "one_liner": "Machine translation model covering 200 languages; non-commercial licence",
+   "tags": [
+    "open-weight",
+    "non-commercial",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/facebook/nllb-200-distilled-600M",
+   "source": "https://huggingface.co/facebook/nllb-200-distilled-600M"
+  },
+  {
+   "name": "Omi",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.devices"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Based Hardware",
+   "licence": "MIT",
+   "access": "Buy or build the wearable; apps and firmware open",
+   "repo": "https://github.com/BasedHardware/omi",
+   "stars": 13800,
+   "archived": false,
+   "one_liner": "Open-source AI wearable and app that listens and assists",
+   "tags": [
+    "wearable",
+    "hardware",
+    "open-source"
+   ],
+   "url": "https://github.com/BasedHardware/omi",
+   "source": "https://github.com/BasedHardware/omi"
+  },
+  {
+   "name": "Onyx (formerly Danswer)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Onyx (DanswerAI, Inc.)",
+   "licence": "MIT (Community Edition); Enterprise Edition separately licensed",
+   "access": "Docker/Kubernetes self-host; connect 40+ workplace apps",
+   "repo": "https://github.com/onyx-dot-app/onyx",
+   "stars": 33100,
+   "archived": false,
+   "one_liner": "Open-source enterprise search and AI chat across company knowledge",
+   "tags": [
+    "enterprise-search",
+    "rag",
+    "open-source"
+   ],
+   "url": "https://github.com/onyx-dot-app/onyx",
+   "source": "https://github.com/onyx-dot-app/onyx"
+  },
+  {
+   "name": "OpenBB",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenBB Inc.",
+   "licence": "Apache-2.0",
+   "access": "pip install openbb; MCP servers for AI agents",
+   "repo": "https://github.com/OpenBB-finance/OpenBB",
+   "stars": 74900,
+   "archived": false,
+   "one_liner": "Open data platform for analysts, quants and AI agents",
+   "tags": [
+    "finance",
+    "mcp",
+    "open-source"
+   ],
+   "url": "https://github.com/OpenBB-finance/OpenBB",
+   "source": "https://github.com/OpenBB-finance/OpenBB"
+  },
+  {
+   "name": "OpenCode",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.coding",
+    "n11.dev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Anomaly (SST team)",
+   "licence": "MIT",
+   "access": "npm/brew install; terminal agent, any model provider",
+   "repo": "https://github.com/anomalyco/opencode",
+   "stars": 222300,
+   "archived": false,
+   "one_liner": "Open-source terminal coding agent, provider-agnostic",
+   "tags": [
+    "developer-tools",
+    "open-source"
+   ],
+   "url": "https://github.com/anomalyco/opencode",
+   "source": "https://github.com/anomalyco/opencode",
+   "note": "Repo moved from sst/opencode to anomalyco/opencode"
+  },
+  {
+   "name": "OpenManus",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.agentic"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "FoundationAgents (MetaGPT community)",
+   "licence": "MIT",
+   "access": "git clone; configure any LLM API",
+   "repo": "https://github.com/FoundationAgents/OpenManus",
+   "stars": 58100,
+   "archived": false,
+   "one_liner": "Open-source replica of the Manus general-purpose task agent",
+   "tags": [
+    "agents",
+    "open-source"
+   ],
+   "url": "https://github.com/FoundationAgents/OpenManus",
+   "source": "https://github.com/FoundationAgents/OpenManus"
+  },
+  {
+   "name": "openpi (pi0, pi0-FAST, pi0.5)",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Physical Intelligence",
+   "licence": "Apache-2.0 (code)",
+   "access": "git clone; checkpoints downloadable for fine-tuning",
+   "repo": "https://github.com/Physical-Intelligence/openpi",
+   "stars": 13300,
+   "archived": false,
+   "one_liner": "Open vision-language-action robot models from Physical Intelligence",
+   "tags": [
+    "open-weight",
+    "robotics",
+    "vla",
+    "open-source"
+   ],
+   "url": "https://github.com/Physical-Intelligence/openpi",
+   "source": "https://github.com/Physical-Intelligence/openpi"
+  },
+  {
+   "name": "openpilot",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "comma.ai",
+   "licence": "MIT",
+   "access": "Install on comma device; 300+ supported cars",
+   "repo": "https://github.com/commaai/openpilot",
+   "stars": 63900,
+   "archived": false,
+   "one_liner": "Open driver-assistance system upgrading ADAS in 300+ car models",
+   "tags": [
+    "autonomy",
+    "automotive",
+    "open-source"
+   ],
+   "url": "https://github.com/commaai/openpilot",
+   "source": "https://github.com/commaai/openpilot"
+  },
+  {
+   "name": "PandasAI",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "status": "open",
+   "steward": "Sinaptik AI",
+   "licence": "MIT (ee/ directory separately licensed)",
+   "access": "pip install pandasai",
+   "repo": "https://github.com/sinaptik-ai/pandas-ai",
+   "stars": 23900,
+   "archived": false,
+   "one_liner": "Chat with databases, CSV and parquet data using LLMs",
+   "tags": [
+    "text-to-sql",
+    "open-source"
+   ],
+   "url": "https://github.com/sinaptik-ai/pandas-ai",
+   "source": "https://github.com/sinaptik-ai/pandas-ai"
+  },
+  {
+   "name": "Penpot",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Kaleidos",
+   "licence": "MPL-2.0",
+   "access": "penpot.app cloud or Docker self-host; MCP server for AI",
+   "repo": "https://github.com/penpot/penpot",
+   "stars": 58500,
+   "archived": false,
+   "one_liner": "Open-source design platform with MCP server linking design and code agents",
+   "tags": [
+    "design",
+    "mcp",
+    "open-source"
+   ],
+   "url": "https://github.com/penpot/penpot",
+   "source": "https://github.com/penpot/penpot"
+  },
+  {
+   "name": "PentestGPT",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "open",
+   "steward": "GreyDGL (Gelei Deng, NTU)",
+   "licence": "MIT",
+   "access": "pip install; bring your own LLM key",
+   "repo": "https://github.com/GreyDGL/PentestGPT",
+   "stars": 16100,
+   "archived": false,
+   "one_liner": "Agentic LLM framework for automated penetration testing",
+   "tags": [
+    "security",
+    "open-source"
+   ],
+   "url": "https://github.com/GreyDGL/PentestGPT",
+   "source": "https://github.com/GreyDGL/PentestGPT"
+  },
+  {
+   "name": "Pile of Law",
+   "kind": "open dataset",
+   "subsegments": [
+    "n9.legal"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Pile of Law (Stanford researchers)",
+   "licence": "CC BY-NC-SA 4.0 (sources vary)",
+   "access": "Hugging Face datasets download (~44 GB compressed)",
+   "one_liner": "~290 GB corpus of US and other legal/administrative text for legal LMs",
+   "tags": [
+    "dataset",
+    "legal",
+    "non-commercial",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/pile-of-law/pile-of-law",
+   "source": "https://huggingface.co/datasets/pile-of-law/pile-of-law"
+  },
+  {
+   "name": "Pipecat",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Daily (and community)",
+   "licence": "BSD-2-Clause",
+   "access": "pip install pipecat-ai; plug in STT/LLM/TTS vendors",
+   "repo": "https://github.com/pipecat-ai/pipecat",
+   "stars": 17000,
+   "archived": false,
+   "one_liner": "Framework for real-time voice and multimodal agents",
+   "tags": [
+    "voice",
+    "realtime",
+    "open-source"
+   ],
+   "url": "https://github.com/pipecat-ai/pipecat",
+   "source": "https://github.com/pipecat-ai/pipecat"
+  },
+  {
+   "name": "Presenton",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.creative"
+   ],
+   "status": "open",
+   "steward": "Presenton",
+   "licence": "Apache-2.0",
+   "access": "Docker self-host; any LLM and image provider",
+   "repo": "https://github.com/presenton/presenton",
+   "stars": 11200,
+   "archived": false,
+   "one_liner": "Open-source AI presentation generator and API (Gamma alternative)",
+   "tags": [
+    "presentations",
+    "open-source"
+   ],
+   "url": "https://github.com/presenton/presenton",
+   "source": "https://github.com/presenton/presenton"
+  },
+  {
+   "name": "Qwen Code",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.coding",
+    "n11.dev"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Alibaba Qwen team",
+   "licence": "Apache-2.0",
+   "access": "npm install; Qwen3-Coder or OpenAI-compatible endpoints",
+   "repo": "https://github.com/QwenLM/qwen-code",
+   "stars": 27300,
+   "archived": false,
+   "one_liner": "Terminal coding agent (Gemini CLI fork) tuned for Qwen coder models",
+   "tags": [
+    "developer-tools",
+    "open-source"
+   ],
+   "url": "https://github.com/QwenLM/qwen-code",
+   "source": "https://github.com/QwenLM/qwen-code"
+  },
+  {
+   "name": "RAGFlow",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.knowledge"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "InfiniFlow",
+   "licence": "Apache-2.0",
+   "access": "Docker compose self-host",
+   "repo": "https://github.com/infiniflow/ragflow",
+   "stars": 92600,
+   "archived": false,
+   "one_liner": "RAG engine with deep document understanding and agent workflows",
+   "tags": [
+    "rag",
+    "open-source"
+   ],
+   "url": "https://github.com/infiniflow/ragflow",
+   "source": "https://github.com/infiniflow/ragflow"
+  },
+  {
+   "name": "Rasa Open Source",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.support",
+    "n9.voice"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Rasa Technologies",
+   "licence": "Apache-2.0",
+   "access": "pip install rasa (maintenance mode); newer CALM/Hello Rasa are commercial",
+   "repo": "https://github.com/RasaHQ/rasa",
+   "stars": 21300,
+   "archived": false,
+   "one_liner": "Open ML framework for text and voice conversational assistants",
+   "tags": [
+    "chatbots",
+    "open-source"
+   ],
+   "url": "https://github.com/RasaHQ/rasa",
+   "source": "https://github.com/RasaHQ/rasa",
+   "note": "README: Rasa Open Source is in maintenance mode; development moved to CALM / Hello Rasa"
+  },
+  {
+   "name": "Roo Code",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Roo Code Inc.",
+   "licence": "Apache-2.0",
+   "access": "Archived; code forkable, users pointed to Cline and forks",
+   "repo": "https://github.com/RooCodeInc/Roo-Code",
+   "stars": 24300,
+   "archived": true,
+   "one_liner": "Multi-agent VS Code coding extension, shut down May 2026",
+   "tags": [
+    "developer-tools",
+    "discontinued",
+    "open-source"
+   ],
+   "url": "https://github.com/RooCodeInc/Roo-Code",
+   "source": "https://github.com/RooCodeInc/Roo-Code",
+   "note": "Extension shut down and repo archived 15 May 2026"
+  },
+  {
+   "name": "ROS 2",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Open Source Robotics Foundation / Open Robotics",
+   "licence": "Apache-2.0",
+   "access": "apt/binary install of a ROS 2 distro",
+   "repo": "https://github.com/ros2/ros2",
+   "stars": 6200,
+   "archived": false,
+   "one_liner": "De facto open middleware 'operating system' for robots",
+   "tags": [
+    "robotics",
+    "middleware",
+    "open-source"
+   ],
+   "url": "https://github.com/ros2/ros2",
+   "source": "https://github.com/ros2/ros2"
+  },
+  {
+   "name": "SillyTavern",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.consumer"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "SillyTavern community",
+   "licence": "AGPL-3.0",
+   "access": "Node.js local install; any LLM API or local model",
+   "repo": "https://github.com/SillyTavern/SillyTavern",
+   "stars": 35100,
+   "archived": false,
+   "one_liner": "Power-user front end for character chat and role-play with LLMs",
+   "tags": [
+    "companions",
+    "open-source"
+   ],
+   "url": "https://github.com/SillyTavern/SillyTavern",
+   "source": "https://github.com/SillyTavern/SillyTavern"
+  },
+  {
+   "name": "TEN Framework",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "status": "open",
+   "steward": "TEN Framework (Agora-backed)",
+   "licence": "Apache-2.0 with additional conditions",
+   "access": "Docker playground; extensions for STT/LLM/TTS",
+   "repo": "https://github.com/TEN-framework/ten-framework",
+   "stars": 11100,
+   "archived": false,
+   "one_liner": "Framework for conversational real-time voice AI agents",
+   "tags": [
+    "voice",
+    "realtime",
+    "open-source"
+   ],
+   "url": "https://github.com/TEN-framework/ten-framework",
+   "source": "https://github.com/TEN-framework/ten-framework"
+  },
+  {
+   "name": "Twenty",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.sor",
+    "n9.gtm"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Twenty.com PBC",
+   "licence": "AGPL-3.0 (core); enterprise-marked files commercial; SDKs MIT",
+   "access": "Docker self-host or twenty.com cloud",
+   "repo": "https://github.com/twentyhq/twenty",
+   "stars": 58500,
+   "archived": false,
+   "one_liner": "Open-source Salesforce alternative CRM with built-in AI agents",
+   "tags": [
+    "crm",
+    "open-core",
+    "open-source"
+   ],
+   "url": "https://github.com/twentyhq/twenty",
+   "source": "https://github.com/twentyhq/twenty"
+  },
+  {
+   "name": "Universal Commerce Protocol (UCP)",
+   "kind": "standard",
+   "subsegments": [
+    "n9.commerce"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google with Shopify, Etsy, Wayfair, Target, Walmart",
+   "licence": "Apache-2.0",
+   "access": "Spec on GitHub; works over APIs, A2A or MCP",
+   "repo": "https://github.com/Universal-Commerce-Protocol/ucp",
+   "stars": 3400,
+   "archived": false,
+   "one_liner": "Open standard for agentic shopping from discovery to checkout (Jan 2026)",
+   "tags": [
+    "agentic-commerce",
+    "open-standard"
+   ],
+   "url": "https://github.com/Universal-Commerce-Protocol/ucp",
+   "source": "https://www.infoq.com/news/2026/01/google-ucp"
+  },
+  {
+   "name": "Vane (formerly Perplexica)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.assistant"
+   ],
+   "status": "open",
+   "steward": "ItzCrazyKns (community)",
+   "licence": "MIT",
+   "access": "Docker self-host with SearxNG and local or API models",
+   "repo": "https://github.com/ItzCrazyKns/Perplexica",
+   "stars": 37800,
+   "archived": false,
+   "one_liner": "Open-source Perplexity-style AI answer engine",
+   "tags": [
+    "search",
+    "open-source"
+   ],
+   "url": "https://github.com/ItzCrazyKns/Perplexica",
+   "source": "https://github.com/ItzCrazyKns/Perplexica",
+   "note": "Project renamed from Perplexica to Vane"
+  },
+  {
+   "name": "Vanna",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Vanna.AI",
+   "licence": "MIT",
+   "access": "pip install vanna (archived, no further updates)",
+   "repo": "https://github.com/vanna-ai/vanna",
+   "stars": 23800,
+   "archived": true,
+   "one_liner": "RAG-based text-to-SQL library; archived March 2026",
+   "tags": [
+    "text-to-sql",
+    "discontinued",
+    "open-source"
+   ],
+   "url": "https://github.com/vanna-ai/vanna",
+   "source": "https://github.com/vanna-ai/vanna",
+   "note": "Repo archived 29 Mar 2026"
+  },
+  {
+   "name": "Vocode",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Vocode",
+   "licence": "MIT",
+   "access": "pip install vocode; seeking community maintainers",
+   "repo": "https://github.com/vocodedev/vocode-core",
+   "stars": 3800,
+   "archived": false,
+   "one_liner": "Modular library for LLM phone and voice agents",
+   "tags": [
+    "voice",
+    "open-source"
+   ],
+   "url": "https://github.com/vocodedev/vocode-core",
+   "source": "https://github.com/vocodedev/vocode-core",
+   "note": "Maintainers now seeking community maintainers; activity has slowed"
+  },
+  {
+   "name": "WrenAI",
+   "kind": "open-source project",
+   "subsegments": [
+    "n9.analytics"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "open",
+   "steward": "Canner",
+   "licence": "Apache-2.0 (some AGPL-3.0 and CC-BY-4.0 files)",
+   "access": "Docker self-host or Wren cloud",
+   "repo": "https://github.com/Canner/WrenAI",
+   "stars": 18000,
+   "archived": false,
+   "one_liner": "GenBI engine turning natural-language questions into governed SQL and charts",
+   "tags": [
+    "text-to-sql",
+    "bi",
+    "open-source"
+   ],
+   "url": "https://github.com/Canner/WrenAI",
+   "source": "https://github.com/Canner/WrenAI"
+  }
+ ]
+}

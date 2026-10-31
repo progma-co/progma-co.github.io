@@ -1,0 +1,2998 @@
+{
+ "node": "n7",
+ "notes": {
+  "n7.api": "Crowded and capital-heavy: US leaders Fireworks ($17.5B, Jul 2026), Baseten ($13B, Jun 2026) and Together ($8.3B, Jul 2026) compete with chip-owning clouds (Groq, Cerebras, SambaNova) and neocloud token factories (Nebius); China has its own tier (SiliconFlow, PPIO) and India is nascent (Simplismart, E2E, Krutrim).",
+  "n7.platform": "Each hyperscaler runs a multi-model platform (Bedrock, Foundry, Vertex, OCI, watsonx); in China, ByteDance Volcano Engine, Alibaba Bailian, Baidu Qianfan and Tencent compete hard on token price.",
+  "n7.engine": "Consolidating on two open-source engines, vLLM and SGLang, each spun into a VC-backed company in Jan 2026 (Inferact $150M seed; RadixArk ~$100M seed); NVIDIA pushes TensorRT-LLM and Dynamo; HF TGI is in maintenance mode.",
+  "n7.local": "Built on llama.cpp/ggml (team joined Hugging Face Feb 2026) and Apple MLX; platform owners (Apple, Google, Qualcomm, Microsoft, Meta) control the NPU runtimes; 1-bit/compressed models (PrismML) are pushing larger models on-device.",
+  "n7.opt": "Optimisation is being absorbed by engines and chip vendors: NVIDIA bought OctoAI (2024), Deci (2024), Lepton and CentML (2025); Red Hat bought Neural Magic (Jan 2025). Independent value now sits in KV-cache reuse/offload (Tensormesh/LMCache $20M May 2026, WEKA, Pliops, Mooncake), speculative decoding (largely open-source: EAGLE, SpecForge, ArcticInference) and regional optimisation platforms (Simplismart, FriendliAI, Pruna, Doubleword).",
+  "n7.compress": "Thin, early segment: providers' own prompt/context caching (Anthropic, OpenAI, Google, DeepSeek, Bedrock) is the default; independent prompt/context-compression startups are seed-stage (The Token Company, Compresr - YC) plus Tileward, which pairs context compaction with compressed models; LLMLingua is the open-source reference.",
+  "n7.route": "Biggest 2026 consolidation: Palo Alto Networks closed Portkey (May 2026) and Stripe agreed to buy OpenRouter (Aug 2026, reported >$7B after a $1.3B Series B in May); gateways are being pulled into security (PANW, F5), API management (Kong, Solo.io) and payments (Stripe); open-source LiteLLM remains the default self-hosted proxy.",
+  "n7.obs": "LLM observability is being absorbed by data/infra platforms: Langfuse to ClickHouse (Jan 2026), Helicone to Mintlify (Mar 2026), OpenMeter to Kong (Sep 2025), W&B to CoreWeave (2025); cost attribution (CloudZero, Vantage, Pay-i, Revenium) overlaps with n4.finops.",
+  "n7.private": "Hyperscalers and Apple/Google now offer enclave-based private AI; startups (Opaque, Edgeless, Tinfoil) sell attested confidential inference; on-prem demand served by Cohere, Mistral and server OEMs.",
+  "n7.bench": "Fragmented: independent analysts (Artificial Analysis, SemiAnalysis), non-profits (MLCommons, Epoch), crowd arenas (LMArena) and Chinese leaderboards (OpenCompass, SuperCLUE)."
+ },
+ "entries": [
+  {
+   "name": "agentgateway (Solo.io)",
+   "kind": "company",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Solo.io / Linux Foundation",
+   "one_liner": "Open-source Linux Foundation gateway for LLM, MCP and A2A traffic",
+   "tags": [
+    "open-source",
+    "security"
+   ],
+   "url": "https://agentgateway.dev",
+   "source": "https://agentgateway.dev"
+  },
+  {
+   "name": "Alibaba Cloud Model Studio (Bailian)",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform",
+    "n8.platform"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Alibaba Group",
+   "one_liner": "Alibaba Cloud platform serving Qwen and third-party models via API",
+   "tags": [
+    "enterprise",
+    "sovereign"
+   ],
+   "url": "https://www.alibabacloud.com/en/product/modelstudio",
+   "source": "https://www.alibabacloud.com/en/product/modelstudio"
+  },
+  {
+   "name": "Anthropic prompt caching",
+   "kind": "company",
+   "subsegments": [
+    "n7.compress"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Anthropic",
+   "one_liner": "Claude API cache of reusable prompt prefixes, billing cached reads at a fraction of input price",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching",
+   "source": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching"
+  },
+  {
+   "name": "Apple MLX & Foundation Models framework",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Apple",
+   "one_liner": "Apple-silicon array framework (MLX) and on-device model API for apps",
+   "tags": [
+    "developer",
+    "open-source"
+   ],
+   "url": "https://github.com/ml-explore/mlx",
+   "source": "https://github.com/ml-explore/mlx"
+  },
+  {
+   "name": "Arize AI",
+   "kind": "company",
+   "subsegments": [
+    "n7.obs"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI observability and evaluation (Arize AX, open-source Phoenix) incl. token and latency tracking",
+   "tags": [
+    "enterprise",
+    "open-source"
+   ],
+   "url": "https://arize.com",
+   "source": "https://arize.com"
+  },
+  {
+   "name": "Baidu AI Cloud Qianfan",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform",
+    "n8.platform"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Baidu",
+   "one_liner": "Baidu model platform serving ERNIE and third-party models to enterprises",
+   "tags": [
+    "enterprise",
+    "sovereign"
+   ],
+   "url": "https://cloud.baidu.com/product/wenxinworkshop",
+   "source": "https://cloud.baidu.com/product/wenxinworkshop"
+  },
+  {
+   "name": "Bifrost (Maxim AI)",
+   "kind": "company",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Maxim AI",
+   "one_liner": "High-throughput open-source LLM gateway written in Go",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/maximhq/bifrost",
+   "source": "https://github.com/maximhq/bifrost"
+  },
+  {
+   "name": "Cactus",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Cross-platform on-device inference engine for mobile apps",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://cactuscompute.com",
+   "source": "https://cactuscompute.com"
+  },
+  {
+   "name": "Cerebras (Cerebras Inference)",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Wafer-scale-chip inference cloud and API for fast open-model and partner-model serving",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.cerebras.ai",
+   "source": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang",
+   "note": "Nasdaq IPO raised ~$5.55B (May 2026)"
+  },
+  {
+   "name": "Clarifai",
+   "kind": "company",
+   "subsegments": [
+    "n7.api",
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI platform with compute orchestration and model inference across clouds and on-prem",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.clarifai.com",
+   "source": "https://www.clarifai.com"
+  },
+  {
+   "name": "Cloudflare Workers AI & AI Gateway",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform",
+    "n7.route",
+    "n7.obs"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Cloudflare",
+   "one_liner": "Edge-network serverless inference plus AI Gateway for caching, rate-limiting, fallback and analytics",
+   "tags": [
+    "developer",
+    "performance"
+   ],
+   "url": "https://developers.cloudflare.com/ai-gateway/",
+   "source": "https://www.businesswire.com/news/home/20251117400765/en/Cloudflare-to-Acquire-Replicate-to-Build-the-Most-Seamless-AI-Cloud-for-Developers",
+   "note": "Acquiring Replicate (Nov 2025) to expand Workers AI catalogue"
+  },
+  {
+   "name": "Compresr",
+   "kind": "company",
+   "subsegments": [
+    "n7.compress"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Context-compression API for agents/RAG plus open-source compression proxy for coding agents",
+   "tags": [
+    "cost",
+    "developer"
+   ],
+   "url": "https://compresr.ai",
+   "source": "https://www.ycombinator.com/companies/compresr",
+   "note": "YC W26; EPFL founders; available as LiteLLM proxy guardrail"
+  },
+  {
+   "name": "Crusoe Managed Inference",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Crusoe",
+   "one_liner": "Managed open-model inference API on Crusoe's energy-first AI cloud",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.crusoe.ai",
+   "source": "https://www.crusoe.ai"
+  },
+  {
+   "name": "Databricks Mosaic AI Model Serving & AI Gateway",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform",
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Databricks",
+   "one_liner": "Serving of foundation and custom models in Databricks, with governed AI Gateway",
+   "tags": [
+    "enterprise",
+    "security"
+   ],
+   "url": "https://www.databricks.com/product/model-serving",
+   "source": "https://www.databricks.com/product/model-serving"
+  },
+  {
+   "name": "Datadog LLM Observability",
+   "kind": "company",
+   "subsegments": [
+    "n7.obs",
+    "n8.eval"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Datadog",
+   "one_liner": "LLM tracing, token cost and latency monitoring within Datadog",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.datadoghq.com/product/llm-observability/",
+   "source": "https://www.datadoghq.com/product/llm-observability/"
+  },
+  {
+   "name": "Deci",
+   "kind": "company",
+   "subsegments": [
+    "n7.opt"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "acquired",
+   "parent": "NVIDIA (2024)",
+   "one_liner": "Former neural-architecture-search and inference-acceleration company",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://deci.ai",
+   "source": "https://www.cbinsights.com/compare/deci-ai-vs-octoml",
+   "note": "Acquired by NVIDIA (2024); not re-verified in this pass"
+  },
+  {
+   "name": "DeepInfra",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Low-price pay-per-token API for open-weight LLM, embedding and image models",
+   "tags": [
+    "cost",
+    "developer"
+   ],
+   "url": "https://deepinfra.com",
+   "source": "https://deepinfra.com"
+  },
+  {
+   "name": "DeepSeek context caching",
+   "kind": "company",
+   "subsegments": [
+    "n7.compress"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "parent": "DeepSeek",
+   "one_liner": "Disk-based KV context cache on DeepSeek API, cache hits billed far below misses",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://api-docs.deepseek.com/guides/kv_cache",
+   "source": "https://api-docs.deepseek.com/guides/kv_cache"
+  },
+  {
+   "name": "Divyam.AI",
+   "kind": "company",
+   "subsegments": [
+    "n7.route",
+    "n8.eval"
+   ],
+   "status": "private",
+   "one_liner": "Evaluates agents against the customer's quality bar, then routes each request to the right model at the right price",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://divyam.ai",
+   "source": "https://divyam.ai",
+   "note": "Managed service hosted in India; also self-hosted in AWS, Azure or GCP"
+  },
+  {
+   "name": "Duality Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n7.private"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Privacy-enhancing tech (FHE, TEEs) for secure AI training and inference on sensitive data",
+   "tags": [
+    "security"
+   ],
+   "url": "https://dualitytech.com",
+   "source": "https://dualitytech.com"
+  },
+  {
+   "name": "E2E Networks (TIR)",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian GPU cloud whose TIR platform offers model endpoints and inference for open models",
+   "tags": [
+    "sovereign",
+    "cost"
+   ],
+   "url": "https://www.e2enetworks.com",
+   "source": "https://www.e2enetworks.com"
+  },
+  {
+   "name": "EAGLE (SafeAILab)",
+   "kind": "company",
+   "subsegments": [
+    "n7.opt"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Leading speculative-decoding method family (EAGLE-3/3.1) integrated in vLLM, SGLang, TensorRT-LLM",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/SafeAILab/EAGLE",
+   "source": "https://vllm.ai/blog/2026-05-26-eagle-3-1",
+   "note": "EAGLE 3.1 released with vLLM and TorchSpec (May 2026)"
+  },
+  {
+   "name": "Eden AI",
+   "kind": "company",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Unified API across AI providers (LLM, OCR, speech) with routing and cost control",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.edenai.co",
+   "source": "https://www.edenai.co"
+  },
+  {
+   "name": "Edgeless Systems (Privatemode)",
+   "kind": "company",
+   "subsegments": [
+    "n7.private"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Confidential computing stack; Privatemode serves LLMs end-to-end encrypted on confidential GPUs",
+   "tags": [
+    "security",
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://www.privatemode.ai",
+   "source": "https://www.edgeless.systems"
+  },
+  {
+   "name": "Envoy AI Gateway",
+   "kind": "company",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Envoy-based open-source gateway for routing and rate-limiting LLM traffic",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://aigateway.envoyproxy.io",
+   "source": "https://aigateway.envoyproxy.io"
+  },
+  {
+   "name": "ExecuTorch",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Meta / PyTorch",
+   "one_liner": "PyTorch on-device inference runtime for phones, wearables and embedded",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://pytorch.org/executorch",
+   "source": "https://pytorch.org/executorch"
+  },
+  {
+   "name": "Exo",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open-source",
+   "parent": "Exo Labs",
+   "one_liner": "Runs large models across a cluster of everyday devices (Macs, PCs)",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/exo-explore/exo",
+   "source": "https://github.com/exo-explore/exo"
+  },
+  {
+   "name": "F5 AI Gateway",
+   "kind": "company",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "F5",
+   "one_liner": "Enterprise gateway securing and routing AI traffic",
+   "tags": [
+    "security",
+    "enterprise"
+   ],
+   "url": "https://www.f5.com/products/ai-gateway",
+   "source": "https://www.f5.com/products/ai-gateway"
+  },
+  {
+   "name": "Featherless AI",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Flat-rate subscription serverless inference across thousands of Hugging Face open models",
+   "tags": [
+    "cost",
+    "developer"
+   ],
+   "url": "https://featherless.ai",
+   "source": "https://featherless.ai"
+  },
+  {
+   "name": "Fireworks AI",
+   "kind": "company",
+   "subsegments": [
+    "n7.api",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Inference cloud for open models with custom serving stack (FireAttention), fine-tuning and dedicated deployments",
+   "tags": [
+    "performance",
+    "developer",
+    "enterprise"
+   ],
+   "url": "https://fireworks.ai",
+   "source": "https://www.law360.com/articles/2502272",
+   "note": "Raised $1.5B Series D at $17.5B valuation (Jul 2026)"
+  },
+  {
+   "name": "FlashInfer",
+   "kind": "company",
+   "subsegments": [
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Kernel library for LLM serving (attention, sampling) used by vLLM, SGLang and TensorRT-LLM",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/flashinfer-ai/flashinfer",
+   "source": "https://github.com/flashinfer-ai/flashinfer"
+  },
+  {
+   "name": "FriendliAI",
+   "kind": "company",
+   "subsegments": [
+    "n7.api",
+    "n7.opt"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Inference platform and Friendli Engine for fast, cheap serving of open and custom models",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://friendli.ai",
+   "source": "https://friendli.ai"
+  },
+  {
+   "name": "GMI Cloud Inference Engine",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "GMI Cloud",
+   "one_liner": "GPU cloud with managed inference engine for open models; Asia-Pacific data centres",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.gmicloud.ai",
+   "source": "https://www.gmicloud.ai"
+  },
+  {
+   "name": "Google Gemini context caching",
+   "kind": "company",
+   "subsegments": [
+    "n7.compress"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Implicit and explicit caching of repeated context in Gemini API and Vertex AI",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://ai.google.dev/gemini-api/docs/caching",
+   "source": "https://ai.google.dev/gemini-api/docs/caching"
+  },
+  {
+   "name": "Google LiteRT / AI Edge",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "On-device runtime (formerly TensorFlow Lite) and LLM inference APIs for Android, web, embedded",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://ai.google.dev/edge",
+   "source": "https://ai.google.dev/edge"
+  },
+  {
+   "name": "Google Private AI Compute",
+   "kind": "company",
+   "subsegments": [
+    "n7.private"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "TPU-based secure enclave cloud running Gemini with on-device-level privacy",
+   "tags": [
+    "security"
+   ],
+   "url": "https://thehackernews.com/2025/11/google-launches-private-ai-compute.html",
+   "source": "https://thehackernews.com/2025/11/google-launches-private-ai-compute.html",
+   "note": "Launched Nov 2025"
+  },
+  {
+   "name": "Google Vertex AI",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Google Cloud managed platform serving Gemini, partner (Anthropic) and open models via Model Garden",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://cloud.google.com/vertex-ai",
+   "source": "https://cloud.google.com/vertex-ai"
+  },
+  {
+   "name": "Groq (GroqCloud)",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "LPU-based inference cloud serving open models at high tokens-per-second",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://groq.com",
+   "source": "https://noqta.tn/en/news/groq-650-million-neocloud-nvidia-inference-2026",
+   "note": "NVIDIA paid ~$20B for non-exclusive licence to Groq tech and hired CEO Jonathan Ross (Dec 2025); Groq refocused on GroqCloud, raising ~$650M (May 2026)"
+  },
+  {
+   "name": "Helicone",
+   "kind": "company",
+   "subsegments": [
+    "n7.obs",
+    "n7.route",
+    "n8.eval"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Mintlify (2026)",
+   "one_liner": "Open-source LLM observability and gateway (request logging, cost, latency)",
+   "tags": [
+    "open-source",
+    "developer",
+    "cost"
+   ],
+   "url": "https://helicone.ai",
+   "source": "https://helicone.ai/blog/joining-mintlify",
+   "note": "Team joined Mintlify (Mar 2026); product in maintenance mode"
+  },
+  {
+   "name": "Huawei Cloud ModelArts",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "parent": "Huawei",
+   "one_liner": "Huawei Cloud AI platform serving Pangu and open models on Ascend hardware",
+   "tags": [
+    "sovereign",
+    "enterprise"
+   ],
+   "url": "https://www.huaweicloud.com/product/modelarts.html",
+   "source": "https://www.huaweicloud.com/product/modelarts.html"
+  },
+  {
+   "name": "Hugging Face Inference Providers",
+   "kind": "company",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Hugging Face",
+   "one_liner": "Router giving one API/billing across partner inference providers for Hub models",
+   "tags": [
+    "developer",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/docs/inference-providers",
+   "source": "https://huggingface.co/docs/inference-providers"
+  },
+  {
+   "name": "Hugging Face TGI",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Hugging Face",
+   "one_liner": "Hugging Face's Text Generation Inference server, now in maintenance mode",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/huggingface/text-generation-inference",
+   "source": "https://huggingface.co/docs/text-generation-inference/index",
+   "note": "Maintenance mode; HF recommends vLLM, SGLang, llama.cpp or MLX for new deployments"
+  },
+  {
+   "name": "IBM watsonx.ai",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "IBM",
+   "one_liner": "IBM model platform serving Granite and third-party models across cloud and on-prem",
+   "tags": [
+    "enterprise",
+    "security"
+   ],
+   "url": "https://www.ibm.com/products/watsonx-ai",
+   "source": "https://www.ibm.com/products/watsonx-ai"
+  },
+  {
+   "name": "Inferact",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Company founded by vLLM creators to commercialise vLLM",
+   "tags": [
+    "open-source",
+    "performance",
+    "enterprise"
+   ],
+   "url": "https://inferact.ai",
+   "source": "https://techcrunch.com/2026/01/22/inference-startup-inferact-lands-150m-to-commercialize-vllm/",
+   "note": "Launched with $150M seed at $800M valuation, a16z-led (Jan 2026)"
+  },
+  {
+   "name": "Intel OpenVINO",
+   "kind": "company",
+   "subsegments": [
+    "n7.local",
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Intel",
+   "one_liner": "Toolkit to optimise and run models on Intel CPUs, GPUs and NPUs",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/openvinotoolkit/openvino",
+   "source": "https://github.com/openvinotoolkit/openvino"
+  },
+  {
+   "name": "Jan",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "open-source",
+   "parent": "Menlo Research",
+   "one_liner": "Open-source offline ChatGPT-style desktop app for local models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://jan.ai",
+   "source": "https://jan.ai"
+  },
+  {
+   "name": "Kong AI Gateway",
+   "kind": "company",
+   "subsegments": [
+    "n7.route",
+    "n7.obs"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Kong",
+   "one_liner": "Kong API gateway extended for LLM routing, governance, semantic caching and token metering",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://konghq.com/products/kong-ai-gateway",
+   "source": "https://konghq.com/company/press-room/press-release/kong-acquires-openmeter-to-unlock-ai-and-api-monetization-for-the-agentic-era",
+   "note": "Acquired OpenMeter for AI/API usage metering (Sep 2025)"
+  },
+  {
+   "name": "Krutrim Cloud",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Ola / Krutrim",
+   "one_liner": "Ola's Indian AI cloud offering model APIs for open and Krutrim models",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://cloud.olakrutrim.com",
+   "source": "https://cloud.olakrutrim.com"
+  },
+  {
+   "name": "KServe",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "CNCF Kubernetes model-serving platform for predictive and generative models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://kserve.github.io/website/",
+   "source": "https://kserve.github.io/website/"
+  },
+  {
+   "name": "KTransformers",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine",
+    "n7.local"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open-source",
+   "parent": "Tsinghua MADSys / Approaching.AI",
+   "one_liner": "CPU/GPU heterogeneous inference framework to run large MoE models on modest hardware",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/kvcache-ai/ktransformers",
+   "source": "https://github.com/kvcache-ai/ktransformers"
+  },
+  {
+   "name": "Langfuse",
+   "kind": "company",
+   "subsegments": [
+    "n7.obs",
+    "n8.eval"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "ClickHouse (2026)",
+   "one_liner": "Open-source LLM engineering platform: tracing, cost tracking, evals, prompt management",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://langfuse.com",
+   "source": "https://langfuse.com/blog/joining-clickhouse",
+   "note": "Acquired by ClickHouse (Jan 2026)"
+  },
+  {
+   "name": "LangSmith",
+   "kind": "company",
+   "subsegments": [
+    "n7.obs"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "LangChain",
+   "one_liner": "LangChain's tracing, monitoring and evals platform with cost/latency dashboards",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.langchain.com/langsmith",
+   "source": "https://www.langchain.com/langsmith"
+  },
+  {
+   "name": "Lepton AI (NVIDIA DGX Cloud Lepton)",
+   "kind": "company",
+   "subsegments": [
+    "n7.opt",
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "NVIDIA (2025)",
+   "one_liner": "Former inference platform; now NVIDIA's DGX Cloud Lepton marketplace routing workloads to partner GPU clouds",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.nvidia.com/en-us/data-center/dgx-cloud-lepton/",
+   "source": "https://technode.com/2025/04/09/nvidia-acquires-chinese-gpu-cloud-startup-lepton-ai-report/",
+   "note": "Acquired by NVIDIA (Apr 2025)"
+  },
+  {
+   "name": "Liquid AI LEAP",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Liquid AI",
+   "one_liner": "Platform to deploy Liquid's small LFM models on device",
+   "tags": [
+    "developer",
+    "performance"
+   ],
+   "url": "https://leap.liquid.ai",
+   "source": "https://leap.liquid.ai"
+  },
+  {
+   "name": "LiteLLM",
+   "kind": "company",
+   "subsegments": [
+    "n7.route",
+    "n7.obs"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "BerriAI",
+   "one_liner": "Open-source Python SDK and proxy giving one OpenAI-format API to 100+ LLM providers with spend tracking",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://www.litellm.ai",
+   "source": "https://www.litellm.ai"
+  },
+  {
+   "name": "llm-d",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Kubernetes-native distributed inference stack on vLLM: disaggregated serving, KV-cache-aware routing",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://llm-d.ai",
+   "source": "https://llm-d.ai",
+   "note": "Launched May 2025 by Red Hat with Google, IBM, CoreWeave, NVIDIA"
+  },
+  {
+   "name": "LLMLingua (Microsoft Research)",
+   "kind": "company",
+   "subsegments": [
+    "n7.compress"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Microsoft",
+   "one_liner": "Open-source prompt-compression methods (LLMLingua, LongLLMLingua, LLMLingua-2)",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/microsoft/LLMLingua",
+   "source": "https://github.com/microsoft/LLMLingua"
+  },
+  {
+   "name": "LMDeploy",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open-source",
+   "parent": "Shanghai AI Laboratory",
+   "one_liner": "Shanghai AI Lab's LLM compression and serving toolkit (TurboMind engine)",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/InternLM/lmdeploy",
+   "source": "https://github.com/InternLM/lmdeploy"
+  },
+  {
+   "name": "Martian",
+   "kind": "company",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Early LLM model-router company; 2026 site emphasises interpretability research and routing 'best execution'",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://withmartian.com",
+   "source": "https://withmartian.com",
+   "note": "Router product status unclear in 2026; site now research-led"
+  },
+  {
+   "name": "Microsoft Foundry (Azure AI Foundry)",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform",
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Azure model catalogue and serving platform (OpenAI, open and partner models) incl. Model Router",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://azure.microsoft.com/products/ai-foundry",
+   "source": "https://azure.microsoft.com/products/ai-foundry"
+  },
+  {
+   "name": "Microsoft Foundry Local / Windows ML",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "On-device model runtime for Windows and macOS using ONNX Runtime across CPU/GPU/NPU",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://learn.microsoft.com/azure/ai-foundry/foundry-local/",
+   "source": "https://learn.microsoft.com/azure/ai-foundry/foundry-local/"
+  },
+  {
+   "name": "MLC LLM",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "ML-compiler-based engine to run LLMs natively on phones, browsers (WebLLM) and GPUs",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://llm.mlc.ai",
+   "source": "https://llm.mlc.ai"
+  },
+  {
+   "name": "Modular (MAX)",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Qualcomm (pending)",
+   "one_liner": "MAX inference framework and Mojo language for portable high-performance serving across NVIDIA and AMD GPUs",
+   "tags": [
+    "performance",
+    "developer"
+   ],
+   "url": "https://www.modular.com",
+   "source": "https://noqta.tn/en/news/qualcomm-acquires-modular-mojo-cuda-challenge-2026",
+   "note": "Qualcomm agreed to acquire Modular for ~$3.9B in stock (announced Jun 2026, pending close)"
+  },
+  {
+   "name": "Mooncake",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open-source",
+   "parent": "Moonshot AI / Tsinghua University",
+   "one_liner": "KVCache-centric disaggregated serving architecture behind Moonshot's Kimi; transfer engine used by vLLM/SGLang",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/kvcache-ai/Mooncake",
+   "source": "https://github.com/kvcache-ai/Mooncake"
+  },
+  {
+   "name": "Multiverse Computing (CompactifAI API)",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Serves its compressed versions of open LLMs via API (incl. AWS) and on-device",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://multiversecomputing.com",
+   "source": "https://thequantuminsider.com/2026/07/27/multiverse-computing-announces-series-c-fundraising-targeting-up-to-570-million/",
+   "note": "Series C targeting up to $570M at ~$1.7B valuation (Jul 2026); compression itself is model-layer (n6.opt)"
+  },
+  {
+   "name": "Naver Cloud CLOVA Studio",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Naver",
+   "one_liner": "Korean cloud platform serving HyperCLOVA X models to enterprises",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.ncloud.com/product/aiService/clovaStudio",
+   "source": "https://www.ncloud.com/product/aiService/clovaStudio"
+  },
+  {
+   "name": "Nebius Token Factory",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "public",
+   "parent": "Nebius Group",
+   "one_liner": "Nebius's OpenAI-compatible inference platform for open models with dedicated endpoints, batch and post-training",
+   "tags": [
+    "cost",
+    "enterprise"
+   ],
+   "url": "https://nebius.com/token-factory",
+   "source": "https://dev.nebius.com/token-factory"
+  },
+  {
+   "name": "Not Diamond",
+   "kind": "company",
+   "subsegments": [
+    "n7.route",
+    "n8.cache"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Intelligent model router predicting best model per request; now focused on coding agents",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://www.notdiamond.ai",
+   "source": "https://notdiamond.ai"
+  },
+  {
+   "name": "Novita AI",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Low-cost model APIs and serverless GPUs for open LLM, image and video models",
+   "tags": [
+    "cost",
+    "developer"
+   ],
+   "url": "https://novita.ai",
+   "source": "https://novita.ai"
+  },
+  {
+   "name": "NVIDIA (CentML)",
+   "kind": "company",
+   "subsegments": [
+    "n7.opt"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "NVIDIA (2025)",
+   "one_liner": "Inference/training optimisation platform (compilers, deployment) acquired into NVIDIA",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://centml.ai",
+   "source": "https://betakit.com/nvidia-acquires-canadian-ai-efficiency-startup-centml/",
+   "note": "Acquired by NVIDIA (Jun/Jul 2025)"
+  },
+  {
+   "name": "NVIDIA Dynamo",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "NVIDIA",
+   "one_liner": "Datacentre-scale distributed inference framework: disaggregated prefill/decode, KV-aware routing, KV block manager, NIXL transfer",
+   "tags": [
+    "performance",
+    "open-source"
+   ],
+   "url": "https://github.com/ai-dynamo/dynamo",
+   "source": "https://docs.nvidia.com/dynamo/latest/_sections/architecture.html"
+  },
+  {
+   "name": "NVIDIA NIM & Triton Inference Server",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "NVIDIA",
+   "one_liner": "Prepackaged inference microservices and multi-framework model server for NVIDIA GPUs",
+   "tags": [
+    "performance",
+    "enterprise"
+   ],
+   "url": "https://developer.nvidia.com/nim",
+   "source": "https://developer.nvidia.com/nim"
+  },
+  {
+   "name": "NVIDIA TensorRT-LLM",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "NVIDIA",
+   "one_liner": "NVIDIA's open-source LLM inference library with optimised kernels, quantisation and speculative decoding",
+   "tags": [
+    "performance",
+    "open-source"
+   ],
+   "url": "https://github.com/NVIDIA/TensorRT-LLM",
+   "source": "https://github.com/NVIDIA/TensorRT-LLM"
+  },
+  {
+   "name": "OctoAI",
+   "kind": "company",
+   "subsegments": [
+    "n7.opt",
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "NVIDIA (2024)",
+   "one_liner": "Former model-serving/optimisation (Apache TVM) platform; service shut after acquisition",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://octo.ai",
+   "source": "https://www.geekwire.com/2024/chip-giant-nvidia-acquires-octoai-a-seattle-startup-that-helps-companies-run-ai-models/",
+   "note": "Acquired by NVIDIA Sep 2024; public service wound down"
+  },
+  {
+   "name": "ONNX Runtime (GenAI)",
+   "kind": "company",
+   "subsegments": [
+    "n7.local",
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Microsoft",
+   "one_liner": "Cross-platform inference runtime with generative-AI extensions",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://onnxruntime.ai",
+   "source": "https://onnxruntime.ai"
+  },
+  {
+   "name": "OpenAI prompt caching",
+   "kind": "company",
+   "subsegments": [
+    "n7.compress"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "OpenAI",
+   "one_liner": "Automatic discount on repeated prompt prefixes across OpenAI API models",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://platform.openai.com/docs/guides/prompt-caching",
+   "source": "https://platform.openai.com/docs/guides/prompt-caching"
+  },
+  {
+   "name": "OpenCompass",
+   "kind": "company",
+   "subsegments": [
+    "n7.bench"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open-source",
+   "parent": "Shanghai AI Laboratory",
+   "one_liner": "Open LLM evaluation platform and leaderboards from Shanghai AI Laboratory",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://opencompass.org.cn",
+   "source": "https://github.com/open-compass/opencompass"
+  },
+  {
+   "name": "OpenMeter",
+   "kind": "company",
+   "subsegments": [
+    "n7.obs"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Kong (2025)",
+   "one_liner": "Open-source usage metering and billing for AI/API tokens",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://openmeter.io",
+   "source": "https://siliconangle.com/2025/09/03/kong-acquires-openmeter-power-api-ai-monetization/",
+   "note": "Acquired by Kong (Sep 2025)"
+  },
+  {
+   "name": "Oracle OCI Generative AI",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Oracle",
+   "one_liner": "OCI managed service serving Cohere, Meta, xAI and other models with dedicated clusters",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/",
+   "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/"
+  },
+  {
+   "name": "Parasail",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Inference network aggregating GPU capacity to serve open models via serverless and dedicated endpoints",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.parasail.io",
+   "source": "https://www.parasail.io"
+  },
+  {
+   "name": "Pay-i",
+   "kind": "company",
+   "subsegments": [
+    "n7.obs"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "GenAI cost and value tracking per use case, user and model",
+   "tags": [
+    "cost",
+    "enterprise"
+   ],
+   "url": "https://www.pay-i.com",
+   "source": "https://www.pay-i.com"
+  },
+  {
+   "name": "Picovoice picoLLM",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "parent": "Picovoice",
+   "one_liner": "On-device LLM inference engine with proprietary quantisation for edge and embedded",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://picovoice.ai/platform/picollm/",
+   "source": "https://picovoice.ai/platform/picollm/"
+  },
+  {
+   "name": "Portkey",
+   "kind": "company",
+   "subsegments": [
+    "n7.route",
+    "n7.obs",
+    "n8.cache",
+    "n8.eval"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "acquired",
+   "parent": "Palo Alto Networks (2026)",
+   "one_liner": "AI gateway: unified API, routing, fallbacks, guardrails, cost and usage observability",
+   "tags": [
+    "enterprise",
+    "security",
+    "cost"
+   ],
+   "url": "https://portkey.ai",
+   "source": "https://paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-portkey-to-secure-ai-agents",
+   "note": "Acquisition closed May 2026; now core gateway of Prisma AIRS"
+  },
+  {
+   "name": "PPIO",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Distributed GPU cloud and model API platform in China",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://ppio.com",
+   "source": "https://ppio.com"
+  },
+  {
+   "name": "PrismML",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "1-bit 'Bonsai' LLM family built to run large-model capability on phones and wearables",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://prismml.com",
+   "source": "https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/",
+   "note": "Emerged from stealth Apr 2026 (Caltech spin-out), $22M seed; Bonsai 2 compresses 27B model to <6GB; reported Apple talks (Aug 2026). Model-layer (n6.small/opt) but a frequent compression reference point"
+  },
+  {
+   "name": "Qualcomm AI Hub & AI Engine Direct",
+   "kind": "company",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Qualcomm",
+   "one_liner": "Tooling and runtime to optimise and deploy models on Snapdragon NPUs",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://aihub.qualcomm.com",
+   "source": "https://aihub.qualcomm.com"
+  },
+  {
+   "name": "RadixArk",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Spin-out commercialising SGLang and open AI infrastructure",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://radixark.ai",
+   "source": "https://techcrunch.com/2026/01/21/sources-project-sglang-spins-out-as-radixark-with-400m-valuation-as-inference-market-explodes",
+   "note": "Spun out with ~$100M seed at ~$400M valuation (Jan 2026)"
+  },
+  {
+   "name": "Ray Serve / Anyscale",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Anyscale",
+   "one_liner": "Scalable Python model-serving library on Ray; Anyscale sells the managed platform",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://www.anyscale.com",
+   "source": "https://www.anyscale.com"
+  },
+  {
+   "name": "Red Hat AI Inference Server",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt",
+    "n7.private"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Red Hat / IBM (Neural Magic acquired Jan 2025)",
+   "one_liner": "Enterprise-supported vLLM distribution plus LLM Compressor and validated quantised models (Neural Magic tech)",
+   "tags": [
+    "enterprise",
+    "open-source",
+    "cost"
+   ],
+   "url": "https://www.redhat.com/en/products/ai/inference-server",
+   "source": "https://redhat.com/en/about/press-releases/red-hat-completes-acquisition-neural-magic-fuel-optimized-generative-ai-innovation-across-hybrid-cloud",
+   "note": "Red Hat completed Neural Magic acquisition Jan 2025"
+  },
+  {
+   "name": "Requesty",
+   "kind": "company",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "LLM router/gateway with cost optimisation, fallback and analytics",
+   "tags": [
+    "cost",
+    "developer"
+   ],
+   "url": "https://www.requesty.ai",
+   "source": "https://www.requesty.ai"
+  },
+  {
+   "name": "Revenium",
+   "kind": "company",
+   "subsegments": [
+    "n7.obs"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI usage metering, cost attribution and monetisation for AI products",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.revenium.io",
+   "source": "https://www.revenium.io"
+  },
+  {
+   "name": "RouteLLM (LMSYS)",
+   "kind": "company",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Open-source framework training routers between strong and weak models to cut cost",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/lm-sys/RouteLLM",
+   "source": "https://github.com/lm-sys/RouteLLM"
+  },
+  {
+   "name": "SambaNova Cloud",
+   "kind": "company",
+   "subsegments": [
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "RDU-chip inference cloud and on-prem racks serving large open models",
+   "tags": [
+    "performance",
+    "sovereign"
+   ],
+   "url": "https://sambanova.ai",
+   "source": "https://dealroom.co/news/137657-sambanova-banks-1b-series-f-first-close-at-11b-valuation/",
+   "note": "Intel takeover talks (late 2025) stalled; $1B Series F first close at ~$11B (Jul 2026)"
+  },
+  {
+   "name": "SGLang",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "High-performance open-source serving engine (RadixAttention prefix caching, PD disaggregation, SpecForge speculators)",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/sgl-project/sglang",
+   "source": "https://lmsys.org/blog/2025-12-23-spec-bundle-phase-1"
+  },
+  {
+   "name": "SiliconFlow",
+   "kind": "company",
+   "subsegments": [
+    "n7.api",
+    "n7.route"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Chinese and global model-API cloud serving DeepSeek, Qwen and other open models with own inference engine",
+   "tags": [
+    "cost",
+    "developer"
+   ],
+   "url": "https://siliconflow.cn",
+   "source": "https://siliconflow.cn"
+  },
+  {
+   "name": "Simplismart",
+   "kind": "company",
+   "subsegments": [
+    "n7.api",
+    "n7.opt"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Bengaluru inference-optimisation platform turning GPUs into tuned model endpoints for enterprises and clouds",
+   "tags": [
+    "performance",
+    "cost",
+    "enterprise"
+   ],
+   "url": "https://simplismart.ai",
+   "source": "https://inc42.com/buzz/simplismart-bags-14-mn-to-expand-ai-inference-platform/",
+   "note": "Raised $14M Series B led by Dallas Venture Capital with NVIDIA participation (Oct 2026)"
+  },
+  {
+   "name": "Snowflake ArcticInference",
+   "kind": "company",
+   "subsegments": [
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Snowflake",
+   "one_liner": "vLLM plugin with speculative decoding and Shift Parallelism for faster, cheaper serving",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/snowflakedb/ArcticInference",
+   "source": "https://github.com/snowflakedb/ArcticInference"
+  },
+  {
+   "name": "Snowflake Cortex AI",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Snowflake",
+   "one_liner": "LLM functions and model serving inside the Snowflake data cloud",
+   "tags": [
+    "enterprise",
+    "security"
+   ],
+   "url": "https://www.snowflake.com/en/product/features/cortex/",
+   "source": "https://www.snowflake.com/en/product/features/cortex/"
+  },
+  {
+   "name": "SuperCLUE",
+   "kind": "company",
+   "subsegments": [
+    "n7.bench"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Chinese-language LLM benchmark and periodic leaderboard of Chinese and global models",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.superclueai.com",
+   "source": "https://github.com/CLUEbenchmark/SuperCLUE"
+  },
+  {
+   "name": "Tencent Cloud Hunyuan / TI Platform",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Tencent",
+   "one_liner": "Tencent Cloud model APIs (Hunyuan, DeepSeek) and ML platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://cloud.tencent.com/product/hunyuan",
+   "source": "https://cloud.tencent.com/product/hunyuan"
+  },
+  {
+   "name": "Tensormesh (LMCache)",
+   "kind": "company",
+   "subsegments": [
+    "n7.opt",
+    "n7.api"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Commercial KV-cache reuse platform built on open-source LMCache; serverless and dedicated inference",
+   "tags": [
+    "cost",
+    "performance",
+    "open-source"
+   ],
+   "url": "https://www.tensormesh.ai",
+   "source": "https://siliconangle.com/2026/05/27/tensormesh-taps-nvidia-amd-coreweave-funding-fix-llm-memory-problems/",
+   "note": "$4.5M seed (2025) then $20M with NVIDIA, AMD, CoreWeave (May 2026); launched Tensormesh Inference"
+  },
+  {
+   "name": "TensorZero",
+   "kind": "company",
+   "subsegments": [
+    "n7.route",
+    "n7.obs"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Open-source LLM gateway with observability, evals and optimisation feedback loop",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://www.tensorzero.com",
+   "source": "https://www.tensorzero.com"
+  },
+  {
+   "name": "The Token Company",
+   "kind": "company",
+   "subsegments": [
+    "n7.compress"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Prompt-compression API (bear models) deleting low-signal tokens before LLM calls; priced on tokens removed",
+   "tags": [
+    "cost",
+    "developer"
+   ],
+   "url": "https://thetokencompany.com",
+   "source": "https://thetokencompany.com/about",
+   "note": "YC-backed; claims 10-50% input compression, on-prem/VPC option"
+  },
+  {
+   "name": "Tileward",
+   "kind": "company",
+   "subsegments": [
+    "n7.api",
+    "n7.opt",
+    "n7.compress"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Inference platform combining compressed open models with conversation-context distillation, governance, VPC/air-gapped deploy",
+   "tags": [
+    "cost",
+    "performance",
+    "security",
+    "sovereign",
+    "enterprise"
+   ],
+   "url": "https://tileward.com",
+   "source": "https://tileward.com",
+   "note": "Site claims models 25-78% smaller (1.3-4.5x) and 68% less context sent on agent work (3.2x); vendor-reported. Works with MCP / OpenAI-wire clients; credit-based pay-as-you-go; NVIDIA Inception member"
+  },
+  {
+   "name": "Tinfoil",
+   "kind": "company",
+   "subsegments": [
+    "n7.private"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Verifiably private cloud inference of open models inside GPU secure enclaves",
+   "tags": [
+    "security",
+    "developer"
+   ],
+   "url": "https://tinfoil.sh",
+   "source": "https://hn.nuxt.dev/item/43996555",
+   "note": "YC X25"
+  },
+  {
+   "name": "Traceloop (OpenLLMetry)",
+   "kind": "company",
+   "subsegments": [
+    "n7.obs",
+    "n8.eval",
+    "n8.gov"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "parent": "ServiceNow (2026)",
+   "one_liner": "OpenTelemetry-based LLM observability; maintains open-source OpenLLMetry",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.traceloop.com",
+   "source": "https://www.traceloop.com",
+   "note": "Acquired by ServiceNow (Mar 2026), reported $60-80M"
+  },
+  {
+   "name": "TrueFoundry AI Gateway",
+   "kind": "company",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "TrueFoundry",
+   "one_liner": "Enterprise AI gateway and MCP gateway with routing, guardrails, deployable in VPC",
+   "tags": [
+    "enterprise",
+    "security"
+   ],
+   "url": "https://www.truefoundry.com/ai-gateway",
+   "source": "https://www.truefoundry.com/ai-gateway"
+  },
+  {
+   "name": "Vercel AI Gateway",
+   "kind": "company",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Vercel",
+   "one_liner": "Single endpoint to hundreds of models with fallbacks, budgets and no token markup",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://vercel.com/ai-gateway",
+   "source": "https://vercel.com/ai-gateway"
+  },
+  {
+   "name": "vLLM",
+   "kind": "company",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Most widely used open-source LLM serving engine (PagedAttention, continuous batching, speculative decoding)",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/vllm-project/vllm",
+   "source": "https://huggingface.co/docs/text-generation-inference/index",
+   "note": "Hugging Face put TGI in maintenance mode and recommends vLLM/SGLang"
+  },
+  {
+   "name": "Volcano Engine Ark",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "parent": "ByteDance",
+   "one_liner": "ByteDance cloud model platform serving Doubao and open models, a top Chinese token seller",
+   "tags": [
+    "cost",
+    "enterprise"
+   ],
+   "url": "https://www.volcengine.com/product/ark",
+   "source": "https://www.volcengine.com/product/ark"
+  },
+  {
+   "name": "W&B Weave",
+   "kind": "company",
+   "subsegments": [
+    "n7.obs"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "CoreWeave (2025)",
+   "one_liner": "LLM tracing and evaluation toolkit from Weights & Biases",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://wandb.ai/site/weave",
+   "source": "https://wandb.ai/site/weave"
+  },
+  {
+   "name": "WEKA (Augmented Memory Grid)",
+   "kind": "company",
+   "subsegments": [
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Storage-backed KV-cache extension (NeuralMesh) to cut prefill recompute and cost per token",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://www.weka.io",
+   "source": "https://www.storagenewsletter.com/2026/03/17/nvidia-gtc-2026-weka-maximizes-token-output-with-lower-cost-per-token-on-nvidia-bluefield-4-stx/",
+   "note": "Integrated with NVIDIA BlueField-4 STX context memory (Mar 2026)"
+  },
+  {
+   "name": "Yandex Cloud AI Studio",
+   "kind": "company",
+   "subsegments": [
+    "n7.platform"
+   ],
+   "hq": "RU",
+   "region": "Europe",
+   "status": "public",
+   "parent": "Yandex",
+   "one_liner": "Yandex Cloud platform serving YandexGPT and open models",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://yandex.cloud/en/services/ai-studio",
+   "source": "https://yandex.cloud/en/services/ai-studio"
+  },
+  {
+   "name": "AIPerf",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.bench"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA (ai-dynamo org)",
+   "licence": "Apache-2.0",
+   "access": "pip install aiperf; benchmark any inference endpoint",
+   "repo": "https://github.com/ai-dynamo/aiperf",
+   "stars": 726,
+   "archived": false,
+   "one_liner": "Generative-AI inference benchmarking tool; migration path from NVIDIA GenAI-Perf.",
+   "tags": [
+    "open-source",
+    "benchmark"
+   ],
+   "url": "https://github.com/ai-dynamo/aiperf",
+   "source": "https://github.com/ai-dynamo/aiperf"
+  },
+  {
+   "name": "EAGLE (EAGLE-3)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.opt"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "open",
+   "steward": "SafeAILab (Peking Univ. / Waterloo / Microsoft / Vector Institute researchers)",
+   "licence": "Apache-2.0",
+   "access": "Train draft heads; integrated in vLLM, SGLang, TensorRT-LLM",
+   "repo": "https://github.com/SafeAILab/EAGLE",
+   "stars": 2500,
+   "archived": false,
+   "one_liner": "Feature-level speculative decoding method; EAGLE-3 is the default draft approach in major engines.",
+   "tags": [
+    "open-source",
+    "speculative-decoding",
+    "performance"
+   ],
+   "url": "https://github.com/SafeAILab/EAGLE",
+   "source": "https://github.com/SafeAILab/EAGLE"
+  },
+  {
+   "name": "Envoy AI Gateway (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Envoy project (CNCF; Tetrate, Bloomberg)",
+   "licence": "Apache-2.0",
+   "access": "Install on Kubernetes with Envoy Gateway; route to LLM providers",
+   "repo": "https://github.com/envoyproxy/ai-gateway",
+   "stars": 2300,
+   "archived": false,
+   "one_liner": "Envoy-based gateway for LLM traffic: provider routing, token rate-limits, auth, MCP support.",
+   "tags": [
+    "open-source",
+    "routing",
+    "kubernetes"
+   ],
+   "url": "https://github.com/envoyproxy/ai-gateway",
+   "source": "https://github.com/envoyproxy/ai-gateway"
+  },
+  {
+   "name": "FlashAttention",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Dao AI Lab (Tri Dao, Princeton / Together AI)",
+   "licence": "BSD-3-Clause",
+   "access": "pip install flash-attn; used under most training and inference stacks",
+   "repo": "https://github.com/Dao-AILab/flash-attention",
+   "stars": 25100,
+   "archived": false,
+   "one_liner": "IO-aware exact attention kernels (FlashAttention 2/3/4) for training and inference.",
+   "tags": [
+    "open-source",
+    "kernels",
+    "performance"
+   ],
+   "url": "https://github.com/Dao-AILab/flash-attention",
+   "source": "https://github.com/Dao-AILab/flash-attention"
+  },
+  {
+   "name": "FlashInfer (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "FlashInfer project (UW / CMU, NVIDIA-backed)",
+   "licence": "Apache-2.0",
+   "access": "pip install flashinfer; used as kernel backend by vLLM/SGLang",
+   "repo": "https://github.com/flashinfer-ai/flashinfer",
+   "stars": 6400,
+   "archived": false,
+   "one_liner": "Kernel library for LLM serving: attention, sampling, MoE and communication kernels.",
+   "tags": [
+    "open-source",
+    "kernels",
+    "performance"
+   ],
+   "url": "https://github.com/flashinfer-ai/flashinfer",
+   "source": "https://github.com/flashinfer-ai/flashinfer"
+  },
+  {
+   "name": "FlashMLA",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.opt"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "DeepSeek",
+   "licence": "MIT",
+   "access": "Build kernels; used for MLA-attention models on Hopper/Blackwell",
+   "repo": "https://github.com/deepseek-ai/FlashMLA",
+   "stars": 12900,
+   "archived": false,
+   "one_liner": "DeepSeek's optimised multi-head latent attention decoding kernels, released in Open Source Week 2025.",
+   "tags": [
+    "open-source",
+    "kernels",
+    "china"
+   ],
+   "url": "https://github.com/deepseek-ai/FlashMLA",
+   "source": "https://github.com/deepseek-ai/FlashMLA"
+  },
+  {
+   "name": "GPUStack",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.private",
+    "n7.platform"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "GPUStack (Seal Inc.)",
+   "licence": "Apache-2.0",
+   "access": "pip/Docker install; pool heterogeneous GPUs into private model service",
+   "repo": "https://github.com/gpustack/gpustack",
+   "stars": 5500,
+   "archived": false,
+   "one_liner": "GPU cluster manager that deploys vLLM/llama.cpp backends as a private model-as-a-service.",
+   "tags": [
+    "open-source",
+    "self-hosted",
+    "china"
+   ],
+   "url": "https://github.com/gpustack/gpustack",
+   "source": "https://github.com/gpustack/gpustack"
+  },
+  {
+   "name": "GuideLLM",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.bench"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "vLLM project (Red Hat-led)",
+   "licence": "Apache-2.0",
+   "access": "pip install guidellm; load-test any OpenAI-compatible endpoint",
+   "repo": "https://github.com/vllm-project/guidellm",
+   "stars": 1700,
+   "archived": false,
+   "one_liner": "Load-testing tool measuring throughput, latency and SLO adherence of LLM deployments.",
+   "tags": [
+    "open-source",
+    "benchmark"
+   ],
+   "url": "https://github.com/vllm-project/guidellm",
+   "source": "https://github.com/vllm-project/guidellm"
+  },
+  {
+   "name": "Helicone (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.obs",
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Helicone",
+   "licence": "Apache-2.0",
+   "access": "Self-host via Docker or change base_url to proxy",
+   "repo": "https://github.com/Helicone/helicone",
+   "stars": 6100,
+   "archived": false,
+   "one_liner": "LLM observability proxy logging requests, cost and latency, with caching and gateway features.",
+   "tags": [
+    "open-source",
+    "observability",
+    "cost"
+   ],
+   "url": "https://github.com/Helicone/helicone",
+   "source": "https://github.com/Helicone/helicone"
+  },
+  {
+   "name": "KServe (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.engine",
+    "n7.platform",
+    "n7.private"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "KServe project (CNCF incubating)",
+   "licence": "Apache-2.0",
+   "access": "Install on Kubernetes; InferenceService CRD wraps vLLM and other runtimes",
+   "repo": "https://github.com/kserve/kserve",
+   "stars": 5900,
+   "archived": false,
+   "one_liner": "Kubernetes-native model serving control plane with autoscaling, canary rollouts and LLM runtime support.",
+   "tags": [
+    "open-source",
+    "kubernetes",
+    "ops"
+   ],
+   "url": "https://github.com/kserve/kserve",
+   "source": "https://github.com/kserve/kserve"
+  },
+  {
+   "name": "KVPress",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.compress",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "Apache-2.0",
+   "access": "pip install kvpress; apply KV-cache compression to Hugging Face models",
+   "repo": "https://github.com/NVIDIA/kvpress",
+   "stars": 1200,
+   "archived": false,
+   "one_liner": "Library of KV-cache compression methods for long-context inference with benchmarks.",
+   "tags": [
+    "open-source",
+    "kv-cache",
+    "context"
+   ],
+   "url": "https://github.com/NVIDIA/kvpress",
+   "source": "https://github.com/NVIDIA/kvpress"
+  },
+  {
+   "name": "LiteLLM (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.route",
+    "n7.obs"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "BerriAI",
+   "licence": "MIT (enterprise/ folder under commercial licence)",
+   "access": "pip install litellm or run proxy Docker; one API for 100+ providers",
+   "repo": "https://github.com/BerriAI/litellm",
+   "stars": 61300,
+   "archived": false,
+   "one_liner": "Python SDK and proxy gateway unifying 100+ model APIs with budgets, fallbacks, logging.",
+   "tags": [
+    "open-source",
+    "routing",
+    "cost"
+   ],
+   "url": "https://github.com/BerriAI/litellm",
+   "source": "https://github.com/BerriAI/litellm"
+  },
+  {
+   "name": "LiteRT-LM",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google AI Edge",
+   "licence": "Apache-2.0",
+   "access": "Build C++ library; run Gemma-class models on Android, web, desktop",
+   "repo": "https://github.com/google-ai-edge/LiteRT-LM",
+   "stars": 6300,
+   "archived": false,
+   "one_liner": "Google's on-device LLM runtime (successor branding of TensorFlow Lite) behind Gemini Nano-style deployments.",
+   "tags": [
+    "open-source",
+    "edge",
+    "mobile"
+   ],
+   "url": "https://github.com/google-ai-edge/LiteRT-LM",
+   "source": "https://github.com/google-ai-edge/LiteRT-LM"
+  },
+  {
+   "name": "llamafile",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Mozilla.ai",
+   "licence": "Apache-2.0",
+   "access": "Download single executable; runs on most OSes without install",
+   "repo": "https://github.com/mozilla-ai/llamafile",
+   "stars": 26500,
+   "archived": false,
+   "one_liner": "Packages model weights and llama.cpp into one cross-platform executable file.",
+   "tags": [
+    "open-source",
+    "local",
+    "portable"
+   ],
+   "url": "https://github.com/mozilla-ai/llamafile",
+   "source": "https://github.com/mozilla-ai/llamafile"
+  },
+  {
+   "name": "llm-d (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "llm-d community (CNCF Sandbox; founded by Red Hat, Google, IBM, CoreWeave, NVIDIA)",
+   "licence": "Apache-2.0",
+   "access": "Helm/Kubernetes; vLLM-based distributed serving with inference-aware routing",
+   "repo": "https://github.com/llm-d/llm-d",
+   "stars": 4800,
+   "archived": false,
+   "one_liner": "Kubernetes-native distributed inference stack: KV-cache-aware scheduling, disaggregation, prefix-cache routing on vLLM.",
+   "tags": [
+    "open-source",
+    "kubernetes",
+    "scale",
+    "performance"
+   ],
+   "url": "https://github.com/llm-d/llm-d",
+   "source": "https://github.com/llm-d/llm-d",
+   "note": "Launched May 2025; accepted into CNCF Sandbox."
+  },
+  {
+   "name": "LLMLingua",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.compress"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Microsoft Research",
+   "licence": "MIT",
+   "access": "pip install llmlingua; compress prompts before calling any LLM",
+   "repo": "https://github.com/microsoft/LLMLingua",
+   "stars": 6500,
+   "archived": false,
+   "one_liner": "Prompt compression (LLMLingua, LongLLMLingua, LLMLingua-2) cutting tokens up to ~20x with small accuracy loss.",
+   "tags": [
+    "open-source",
+    "cost",
+    "context"
+   ],
+   "url": "https://github.com/microsoft/LLMLingua",
+   "source": "https://github.com/microsoft/LLMLingua"
+  },
+  {
+   "name": "LM Studio (app) + lms CLI",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Element Labs (LM Studio)",
+   "licence": "App proprietary freeware (free incl. work use); lms CLI and SDKs MIT",
+   "access": "Download desktop app free; lms CLI scripts it",
+   "repo": "https://github.com/lmstudio-ai/lms",
+   "stars": 5300,
+   "archived": false,
+   "one_liner": "Desktop GUI for discovering and running local models (llama.cpp, MLX); only CLI/SDKs are open source.",
+   "tags": [
+    "open-source",
+    "local",
+    "freeware"
+   ],
+   "url": "https://lmstudio.ai",
+   "source": "https://www.lmstudio.ai/blog/free-for-work",
+   "note": "NOT open source: app is closed-source; July 2025 dropped separate commercial licence, now free for work."
+  },
+  {
+   "name": "LMDeploy (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.engine"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "InternLM / Shanghai AI Laboratory",
+   "licence": "Apache-2.0",
+   "access": "pip install lmdeploy; TurboMind or PyTorch backend",
+   "repo": "https://github.com/InternLM/lmdeploy",
+   "stars": 8000,
+   "archived": false,
+   "one_liner": "Toolkit for compressing, deploying and serving LLMs and VLMs with the TurboMind engine.",
+   "tags": [
+    "open-source",
+    "performance",
+    "china"
+   ],
+   "url": "https://github.com/InternLM/lmdeploy",
+   "source": "https://github.com/InternLM/lmdeploy"
+  },
+  {
+   "name": "LocalAI",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.private",
+    "n7.local"
+   ],
+   "hq": "IT",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Ettore Di Giacinto (mudler) and community",
+   "licence": "MIT",
+   "access": "Docker run; drop-in OpenAI-compatible API on own hardware",
+   "repo": "https://github.com/mudler/LocalAI",
+   "stars": 50000,
+   "archived": false,
+   "one_liner": "Self-hosted OpenAI-compatible stack for text, image, audio models on CPU or GPU.",
+   "tags": [
+    "open-source",
+    "self-hosted",
+    "privacy"
+   ],
+   "url": "https://github.com/mudler/LocalAI",
+   "source": "https://github.com/mudler/LocalAI"
+  },
+  {
+   "name": "MLC LLM (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "MLC AI (CMU / OctoAI alumni community)",
+   "licence": "Apache-2.0",
+   "access": "pip install; compile models for WebGPU, iOS, Android, GPUs",
+   "repo": "https://github.com/mlc-ai/mlc-llm",
+   "stars": 23300,
+   "archived": false,
+   "one_liner": "ML-compiler-based universal LLM deployment engine, incl. in-browser WebLLM via WebGPU.",
+   "tags": [
+    "open-source",
+    "edge",
+    "compiler"
+   ],
+   "url": "https://github.com/mlc-ai/mlc-llm",
+   "source": "https://github.com/mlc-ai/mlc-llm"
+  },
+  {
+   "name": "MLPerf Inference",
+   "kind": "open dataset",
+   "subsegments": [
+    "n7.bench"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "MLCommons",
+   "licence": "Apache-2.0",
+   "access": "Run reference harness; read published results on mlcommons.org",
+   "repo": "https://github.com/mlcommons/inference",
+   "stars": 1600,
+   "archived": false,
+   "one_liner": "Industry benchmark suite for inference throughput/latency across datacentre and edge systems, incl. LLMs.",
+   "tags": [
+    "open-source",
+    "benchmark"
+   ],
+   "url": "https://mlcommons.org/benchmarks/inference-datacenter/",
+   "source": "https://github.com/mlcommons/inference"
+  },
+  {
+   "name": "MLX / mlx-lm",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Apple (ml-explore)",
+   "licence": "MIT",
+   "access": "pip install mlx-lm; run and fine-tune models on Apple silicon",
+   "repo": "https://github.com/ml-explore/mlx",
+   "stars": 28700,
+   "archived": false,
+   "one_liner": "Apple's array framework for Apple silicon with unified memory; mlx-lm runs and fine-tunes LLMs locally.",
+   "tags": [
+    "open-source",
+    "local",
+    "apple"
+   ],
+   "url": "https://github.com/ml-explore/mlx",
+   "source": "https://github.com/ml-explore/mlx"
+  },
+  {
+   "name": "NVIDIA Dynamo (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA (ai-dynamo org)",
+   "licence": "Apache-2.0",
+   "access": "pip/containers; orchestrates vLLM, SGLang or TRT-LLM across GPU clusters",
+   "repo": "https://github.com/ai-dynamo/dynamo",
+   "stars": 8300,
+   "archived": false,
+   "one_liner": "Datacentre-scale distributed inference framework: disaggregated prefill/decode, KV-aware routing, KV offload.",
+   "tags": [
+    "open-source",
+    "performance",
+    "scale"
+   ],
+   "url": "https://github.com/ai-dynamo/dynamo",
+   "source": "https://github.com/ai-dynamo/dynamo",
+   "note": "Launched GTC March 2025 as successor layer to Triton for LLM serving."
+  },
+  {
+   "name": "ONNX Runtime (+ GenAI) (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.local",
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Microsoft",
+   "licence": "MIT",
+   "access": "pip/nuget install; run ONNX models on CPU, GPU, NPU",
+   "repo": "https://github.com/microsoft/onnxruntime",
+   "stars": 22100,
+   "archived": false,
+   "one_liner": "Cross-platform inference accelerator for ONNX models; onnxruntime-genai adds LLM generation loop.",
+   "tags": [
+    "open-source",
+    "edge",
+    "cross-platform"
+   ],
+   "url": "https://github.com/microsoft/onnxruntime",
+   "source": "https://github.com/microsoft/onnxruntime"
+  },
+  {
+   "name": "Open WebUI",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.private",
+    "n7.local",
+    "n9.assistant",
+    "n9.knowledge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Open WebUI Inc.",
+   "licence": "Open WebUI License (BSD-3 base plus branding-retention clause; source-available)",
+   "access": "Docker run; front-end for Ollama or any OpenAI-compatible endpoint",
+   "repo": "https://github.com/open-webui/open-webui",
+   "stars": 157000,
+   "archived": false,
+   "one_liner": "Self-hosted ChatGPT-style interface with RAG, users, RBAC over local or private models.",
+   "tags": [
+    "open-source",
+    "self-hosted",
+    "source-available"
+   ],
+   "url": "https://github.com/open-webui/open-webui",
+   "source": "https://github.com/open-webui/open-webui",
+   "note": "Moved from BSD-3 to custom licence (2025) requiring Open WebUI branding to be kept; not OSI-approved."
+  },
+  {
+   "name": "OpenAI-compatible API (de facto)",
+   "kind": "standard",
+   "subsegments": [
+    "n7.api",
+    "n7.route",
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "De facto convention (OpenAI API shape); no formal steward",
+   "licence": "n/a (de facto interface)",
+   "access": "Point any OpenAI SDK at a different base_url",
+   "one_liner": "Chat Completions/Responses request shape that vLLM, SGLang, Ollama, gateways and most token APIs emulate.",
+   "tags": [
+    "open-standard",
+    "interoperability"
+   ],
+   "url": "https://platform.openai.com/docs/api-reference",
+   "source": "https://platform.openai.com/docs/api-reference",
+   "note": "Not a formal standard; portability layer across inference providers."
+  },
+  {
+   "name": "OpenLIT",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.obs",
+    "n8.eval"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenLIT",
+   "licence": "Apache-2.0",
+   "access": "pip install openlit; self-host dashboard via Docker",
+   "repo": "https://github.com/openlit/openlit",
+   "stars": 2900,
+   "archived": false,
+   "one_liner": "OTel-native LLM observability: traces, token cost, GPU metrics, evals and prompt management.",
+   "tags": [
+    "open-source",
+    "observability",
+    "cost"
+   ],
+   "url": "https://github.com/openlit/openlit",
+   "source": "https://github.com/openlit/openlit"
+  },
+  {
+   "name": "OpenLLMetry",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.obs",
+    "n8.eval"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Traceloop",
+   "licence": "Apache-2.0",
+   "access": "pip install traceloop-sdk; export OTel traces to any backend",
+   "repo": "https://github.com/traceloop/openllmetry",
+   "stars": 7400,
+   "archived": false,
+   "one_liner": "OpenTelemetry instrumentations for LLM providers, vector DBs and frameworks.",
+   "tags": [
+    "open-source",
+    "observability"
+   ],
+   "url": "https://github.com/traceloop/openllmetry",
+   "source": "https://github.com/traceloop/openllmetry"
+  },
+  {
+   "name": "OpenTelemetry GenAI semantic conventions",
+   "kind": "standard",
+   "subsegments": [
+    "n7.obs",
+    "n8.eval"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenTelemetry (CNCF) GenAI SIG",
+   "licence": "Apache-2.0",
+   "access": "Instrument apps with OTel SDKs using gen_ai.* attributes",
+   "one_liner": "Vendor-neutral span, metric and event schema for LLM calls, agents and MCP tool use.",
+   "tags": [
+    "open-standard",
+    "observability",
+    "interoperability"
+   ],
+   "url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
+   "source": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
+   "note": "Still in development status; conventions moved to a dedicated GenAI semconv repo in 2026."
+  },
+  {
+   "name": "Portkey AI Gateway (OSS)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Portkey",
+   "licence": "MIT",
+   "access": "npx @portkey-ai/gateway or Docker; route across providers",
+   "repo": "https://github.com/Portkey-AI/gateway",
+   "stars": 13000,
+   "archived": false,
+   "one_liner": "Lightweight open gateway: unified API, retries, fallbacks, load-balancing and guardrail hooks.",
+   "tags": [
+    "open-source",
+    "routing"
+   ],
+   "url": "https://github.com/Portkey-AI/gateway",
+   "source": "https://github.com/Portkey-AI/gateway"
+  },
+  {
+   "name": "Ray Serve",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Anyscale / Ray project (PyTorch Foundation)",
+   "licence": "Apache-2.0",
+   "access": "pip install 'ray[serve]'; Ray Serve LLM wraps vLLM",
+   "one_liner": "Python-native scalable serving library on Ray, with LLM APIs for multi-node vLLM deployments.",
+   "tags": [
+    "open-source",
+    "scale"
+   ],
+   "url": "https://docs.ray.io/en/latest/serve/index.html",
+   "source": "https://docs.ray.io/en/latest/serve/index.html",
+   "note": "Ray joined the PyTorch Foundation in Oct 2025."
+  },
+  {
+   "name": "RouteLLM",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "LMSYS",
+   "licence": "Apache-2.0",
+   "access": "pip install routellm; OpenAI-compatible server routing strong/weak models",
+   "repo": "https://github.com/lm-sys/RouteLLM",
+   "stars": 5300,
+   "archived": false,
+   "one_liner": "Framework and trained routers for cost-aware routing between strong and weak LLMs.",
+   "tags": [
+    "open-source",
+    "routing",
+    "cost",
+    "research"
+   ],
+   "url": "https://github.com/lm-sys/RouteLLM",
+   "source": "https://github.com/lm-sys/RouteLLM"
+  },
+  {
+   "name": "SGLang (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "SGLang project (LMSYS; PyTorch ecosystem)",
+   "licence": "Apache-2.0",
+   "access": "pip install sglang; launch an OpenAI-compatible server on GPUs",
+   "repo": "https://github.com/sgl-project/sglang",
+   "stars": 37100,
+   "archived": false,
+   "one_liner": "Fast serving framework with RadixAttention prefix caching, structured output and prefill/decode disaggregation.",
+   "tags": [
+    "open-source",
+    "performance",
+    "cost"
+   ],
+   "url": "https://github.com/sgl-project/sglang",
+   "source": "https://github.com/sgl-project/sglang"
+  },
+  {
+   "name": "TensorRT-LLM",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "Apache-2.0",
+   "access": "pip/NGC container; compile and serve models on NVIDIA GPUs",
+   "repo": "https://github.com/NVIDIA/TensorRT-LLM",
+   "stars": 15000,
+   "archived": false,
+   "one_liner": "NVIDIA's optimised LLM inference library: kernels, quantisation, speculative decoding, in-flight batching.",
+   "tags": [
+    "open-source",
+    "performance",
+    "nvidia"
+   ],
+   "url": "https://github.com/NVIDIA/TensorRT-LLM",
+   "source": "https://github.com/NVIDIA/TensorRT-LLM"
+  },
+  {
+   "name": "TensorZero (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.route",
+    "n8.eval"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "TensorZero",
+   "licence": "Apache-2.0",
+   "access": "Docker gateway; GitHub repo now read-only",
+   "repo": "https://github.com/tensorzero/tensorzero",
+   "stars": 11700,
+   "archived": true,
+   "one_liner": "Rust LLM gateway with observability, evals, experimentation and optimisation feedback loop.",
+   "tags": [
+    "open-source",
+    "routing",
+    "observability"
+   ],
+   "url": "https://github.com/tensorzero/tensorzero",
+   "source": "https://github.com/tensorzero/tensorzero",
+   "note": "GitHub repo archived (read-only) by owner on 12 Jun 2026; reason not verified."
+  },
+  {
+   "name": "Text Generation Inference (TGI)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Hugging Face",
+   "licence": "Apache-2.0",
+   "access": "Docker image; legacy deployments only",
+   "repo": "https://github.com/huggingface/text-generation-inference",
+   "stars": 10900,
+   "archived": true,
+   "one_liner": "Hugging Face's Rust/Python LLM serving server, now in maintenance mode.",
+   "tags": [
+    "open-source",
+    "legacy"
+   ],
+   "url": "https://github.com/huggingface/text-generation-inference",
+   "source": "https://github.com/huggingface/text-generation-inference",
+   "note": "Put in maintenance mode, then archived read-only on 21 Mar 2026; HF points users to vLLM/SGLang."
+  },
+  {
+   "name": "Triton Inference Server",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "BSD-3-Clause",
+   "access": "NGC container; serve TensorRT, PyTorch, ONNX and Python models",
+   "repo": "https://github.com/triton-inference-server/server",
+   "stars": 11000,
+   "archived": false,
+   "one_liner": "Multi-framework model server with dynamic batching, ensembles and metrics; widely used for non-LLM inference.",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/triton-inference-server/server",
+   "source": "https://github.com/triton-inference-server/server",
+   "note": "NVIDIA positions Dynamo for LLM serving; Triton continues as general model server."
+  },
+  {
+   "name": "vLLM (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.engine",
+    "n7.private"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "vLLM project (PyTorch Foundation, Linux Foundation)",
+   "licence": "Apache-2.0",
+   "access": "pip install vllm; self-host on NVIDIA, AMD, TPU and other accelerators",
+   "repo": "https://github.com/vllm-project/vllm",
+   "stars": 93700,
+   "archived": false,
+   "one_liner": "High-throughput LLM serving engine with PagedAttention, continuous batching and an OpenAI-compatible server.",
+   "tags": [
+    "open-source",
+    "performance",
+    "cost"
+   ],
+   "url": "https://vllm.ai",
+   "source": "https://github.com/vllm-project/vllm"
+  },
+  {
+   "name": "vLLM Semantic Router",
+   "kind": "open-source project",
+   "subsegments": [
+    "n7.route",
+    "n8.cache"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "vLLM project (Red Hat-led)",
+   "licence": "Apache-2.0",
+   "access": "Deploy with Envoy ext_proc in front of model endpoints",
+   "repo": "https://github.com/vllm-project/semantic-router",
+   "stars": 6100,
+   "archived": false,
+   "one_liner": "Intent-aware router picking models per request, with semantic caching and jailbreak/PII filters.",
+   "tags": [
+    "open-source",
+    "routing",
+    "cost"
+   ],
+   "url": "https://github.com/vllm-project/semantic-router",
+   "source": "https://github.com/vllm-project/semantic-router"
+  }
+ ]
+}

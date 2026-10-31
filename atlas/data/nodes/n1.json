@@ -1,0 +1,2221 @@
+{
+ "node": "n1",
+ "notes": {
+  "n1.eda": "Synopsys, Cadence and Siemens hold the large majority of the market; a funded wave of AI-native design startups emerged in 2025-26 (ChipAgents, Cognichip, Ricursive); China pushes domestic EDA.",
+  "n1.ip": "Arm dominates CPU IP; RISC-V vendors grow; interconnect/SerDes IP consolidated (Qualcomm-Alphawave, GF bought MIPS and Synopsys ARC).",
+  "n1.equip": "ASML (EUV monopoly), Applied, Lam, TEL and KLA dominate; Chinese vendors (Naura, AMEC) grow under export controls; HBM drives demand for bonders (Hanmi, Besi, ASMPT).",
+  "n1.materials": "Japanese suppliers dominate wafers, resists and ABF substrates; substrate and T-glass capacity are AI bottlenecks.",
+  "n1.foundry": "TSMC makes nearly all leading-edge AI accelerators; Samsung, Intel (14A) and Rapidus are the alternatives; SMIC serves China's domestic accelerators; India's first fab (Tata-PSMC) under construction.",
+  "n1.packaging": "TSMC CoWoS capacity is the main AI packaging bottleneck; ASE/SPIL and Amkor are the main OSAT overflow; India OSATs (CG Semi, Micron, Kaynes, Tata) started production in 2025-26.",
+  "n1.memory": "HBM is a three-player market (SK hynix leads, Samsung, Micron); CXMT is developing Chinese HBM; NAND/SSD demand rising for inference KV-cache tiers.",
+  "n1.design": "Broadcom and Marvell lead custom AI ASIC programmes for hyperscalers; Taiwanese design houses (Alchip, GUC, MediaTek) take TSMC-aligned work.",
+  "n1.masks": "Mask blanks dominated by Japanese suppliers (HOYA, AGC, Shin-Etsu); leading-edge masks largely captive at foundries",
+  "n1.yield": "KLA dominates inspection; PDF Solutions leads independent yield analytics"
+ },
+ "entries": [
+  {
+   "name": "Advantest",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.packaging"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Leading SoC and HBM automatic test equipment",
+   "url": "https://www.advantest.com",
+   "source": "https://www.advantest.com"
+  },
+  {
+   "name": "AGC",
+   "kind": "company",
+   "subsegments": [
+    "n1.masks"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "EUV mask blanks and glass substrates",
+   "url": "https://www.agc.com/en/",
+   "source": "https://semiengineering.com/euv-mask-blank-biz-heats-up"
+  },
+  {
+   "name": "Air Liquide",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Ultra-high-purity gases for fabs",
+   "url": "https://www.airliquide.com",
+   "source": "https://www.airliquide.com"
+  },
+  {
+   "name": "Ajinomoto Fine-Techno",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Ajinomoto",
+   "one_liner": "ABF build-up film, the standard dielectric for AI package substrates",
+   "url": "https://www.ajinomoto.com",
+   "source": "https://www.ajinomoto.com"
+  },
+  {
+   "name": "Alchip Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "TSMC-aligned ASIC design house for AI chips",
+   "url": "https://www.alchip.com",
+   "source": "https://www.alchip.com"
+  },
+  {
+   "name": "Alphawave Semi",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "Qualcomm (2025)",
+   "one_liner": "High-speed SerDes, chiplet and connectivity IP",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://awavesemi.com",
+   "source": "https://www.qualcomm.com/news/releases/2025/12/qualcomm-completes-acquisition-of-alphawave-semi",
+   "note": "Qualcomm completed $2.4B acquisition (Dec 2025)"
+  },
+  {
+   "name": "AMEC",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Chinese plasma etch and MOCVD tools",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.amec-inc.com",
+   "source": "https://www.amec-inc.com"
+  },
+  {
+   "name": "Amkor Technology",
+   "kind": "company",
+   "subsegments": [
+    "n1.packaging"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Second-largest OSAT; building Arizona advanced packaging plant",
+   "url": "https://amkor.com",
+   "source": "https://amkor.com"
+  },
+  {
+   "name": "Andes Technology",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "RISC-V CPU IP incl. vector cores for AI",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.andestech.com",
+   "source": "https://www.andestech.com"
+  },
+  {
+   "name": "Applied Materials",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.yield"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Largest WFE vendor: deposition, etch, CMP, implant, inspection",
+   "tags": [],
+   "url": "https://www.appliedmaterials.com",
+   "source": "https://www.appliedmaterials.com"
+  },
+  {
+   "name": "Arm",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "parent": "SoftBank Group (majority)",
+   "one_liner": "CPU ISA and Neoverse cores/CSS used in hyperscaler CPUs and AI SoCs",
+   "url": "https://www.arm.com",
+   "source": "https://www.arm.com"
+  },
+  {
+   "name": "Arteris",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Network-on-chip interconnect IP",
+   "url": "https://www.arteris.com",
+   "source": "https://www.arteris.com"
+  },
+  {
+   "name": "ASE Technology (incl. SPIL)",
+   "kind": "company",
+   "subsegments": [
+    "n1.packaging"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "World's largest OSAT; CoWoS-like and fan-out packaging and test",
+   "url": "https://www.aseglobal.com",
+   "source": "https://www.aseglobal.com"
+  },
+  {
+   "name": "ASM International",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Atomic-layer deposition and epitaxy tools",
+   "url": "https://www.asm.com",
+   "source": "https://www.asm.com"
+  },
+  {
+   "name": "ASML",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Sole supplier of EUV lithography; also DUV and metrology",
+   "url": "https://www.asml.com",
+   "source": "https://www.asml.com"
+  },
+  {
+   "name": "ASMPT",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.packaging"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Advanced packaging and TCB bonding equipment",
+   "url": "https://www.asmpt.com",
+   "source": "https://www.asmpt.com"
+  },
+  {
+   "name": "Baya Systems",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Chiplet fabric and NoC interconnect IP",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://bayasystems.com",
+   "source": "https://bayasystems.com"
+  },
+  {
+   "name": "BE Semiconductor (Besi)",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.packaging"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Hybrid-bonding and die-attach tools for 3D packaging and HBM",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.besi.com",
+   "source": "https://www.besi.com"
+  },
+  {
+   "name": "Broadcom (custom ASIC)",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Broadcom",
+   "one_liner": "Largest custom AI accelerator (XPU) partner: Google TPU, Meta, OpenAI",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.broadcom.com",
+   "source": "https://www.broadcom.com"
+  },
+  {
+   "name": "Cadence Design Systems",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda",
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "EDA, system analysis, interface IP and Cerebrus AI design optimisation",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.cadence.com",
+   "source": "https://www.cadence.com"
+  },
+  {
+   "name": "Canon",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "DUV and nanoimprint lithography",
+   "url": "https://global.canon",
+   "source": "https://global.canon"
+  },
+  {
+   "name": "CEVA",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "DSP, NPU and connectivity IP for edge devices",
+   "url": "https://www.ceva-ip.com",
+   "source": "https://www.ceva-ip.com"
+  },
+  {
+   "name": "CG Semi",
+   "kind": "company",
+   "subsegments": [
+    "n1.packaging"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "CG Power / Renesas / Stars",
+   "one_liner": "OSAT in Sanand, Gujarat",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.cgglobal.com",
+   "source": "https://swarajyamag.com/amp/story/tech/indias-semiconductor-ecosystem-expands-as-pm-modi-inaugurates-commercial-production-at-cg-semis-rs-7600-crore-osat-facility-in-sanand",
+   "note": "Commercial production inaugurated 2026"
+  },
+  {
+   "name": "ChipAgents",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Agentic AI for RTL design and verification",
+   "tags": [
+    "performance",
+    "developer"
+   ],
+   "url": "https://chipagents.ai",
+   "source": "https://convergedigest.com/chipagents-raises-21m-to-bring-agentic-ai-to-chip-design/",
+   "note": "Raised $21M Series A (Oct 2025); later round reported 2026"
+  },
+  {
+   "name": "Cognichip",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Physics-informed AI foundation model for chip design",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.cognichip.ai",
+   "source": "https://www.tamradar.com/funding-rounds/cognichip-series-a-60m",
+   "note": "Raised $60M Series A"
+  },
+  {
+   "name": "Cohu (Tignis)",
+   "kind": "company",
+   "subsegments": [
+    "n1.yield"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Cohu (2025)",
+   "one_liner": "AI process-control and fab analytics software acquired from Tignis",
+   "url": "https://www.cohu.com",
+   "source": "https://www.businesswire.com/news/home/20250107991345/en/Cohu-Completes-Acquisition-of-Tignis",
+   "note": "Cohu completed Tignis acquisition Jan 2025"
+  },
+  {
+   "name": "CXMT",
+   "kind": "company",
+   "subsegments": [
+    "n1.memory"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "China's leading DRAM maker developing HBM",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.cxmt.com",
+   "source": "https://borecraft.com/2026/01/05/china-memory-makers-ipo-line-up-cxmt-seeks-us4-2-billion-ymtc-prepares-filing/",
+   "note": "Pursuing Shanghai IPO in 2026"
+  },
+  {
+   "name": "Dai Nippon Printing (DNP)",
+   "kind": "company",
+   "subsegments": [
+    "n1.masks"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Photomasks including EUV masks; developing masks for 2nm-class",
+   "url": "https://www.global.dnp/",
+   "source": "https://www.global.dnp/"
+  },
+  {
+   "name": "Disco",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.packaging"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Dicing, grinding and polishing tools critical for HBM stacks",
+   "url": "https://www.disco.co.jp",
+   "source": "https://www.disco.co.jp"
+  },
+  {
+   "name": "Eliyan",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip",
+    "n2.net"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Die-to-die chiplet interconnect PHY IP",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://eliyan.com",
+   "source": "https://eliyan.com"
+  },
+  {
+   "name": "Empyrean Technology",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "China's largest domestic EDA vendor (analog, flat-panel, digital tools)",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.empyrean-tech.com",
+   "source": "https://www.empyrean-tech.com"
+  },
+  {
+   "name": "Entegris",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Specialty chemicals, filtration and materials handling",
+   "url": "https://www.entegris.com",
+   "source": "https://www.entegris.com"
+  },
+  {
+   "name": "Faraday Technology",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "UMC (affiliate)",
+   "one_liner": "ASIC design services and IP",
+   "url": "https://www.faraday-tech.com",
+   "source": "https://www.faraday-tech.com"
+  },
+  {
+   "name": "Global Unichip (GUC)",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "TSMC (affiliate)",
+   "one_liner": "TSMC-affiliated ASIC design services with CoWoS/HBM integration",
+   "url": "https://www.guc-asic.com",
+   "source": "https://www.guc-asic.com"
+  },
+  {
+   "name": "GlobalFoundries",
+   "kind": "company",
+   "subsegments": [
+    "n1.foundry"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Specialty and mature-node foundry incl. silicon photonics",
+   "url": "https://gf.com",
+   "source": "https://gf.com"
+  },
+  {
+   "name": "GlobalFoundries ARC IP (ex-Synopsys)",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "GlobalFoundries (2026)",
+   "one_liner": "ARC processor IP portfolio moved from Synopsys to GF",
+   "url": "https://gf.com",
+   "source": "https://evertiq.com/design/2026-06-04-gf-completes-acquisition-of-synopsys-arc-processor-ip-business",
+   "note": "Deal closed Jun 2026"
+  },
+  {
+   "name": "GlobalWafers",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Silicon wafers with plants in Taiwan, US, Europe",
+   "url": "https://www.sas-globalwafers.com",
+   "source": "https://www.sas-globalwafers.com"
+  },
+  {
+   "name": "Hanmi Semiconductor",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.packaging"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Thermo-compression bonders for HBM stacking",
+   "url": "https://www.hanmisemi.com",
+   "source": "https://www.hanmisemi.com"
+  },
+  {
+   "name": "HCLTech (semiconductor services)",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "parent": "HCLTech",
+   "one_liner": "VLSI design and verification services for chip companies",
+   "url": "https://www.hcltech.com",
+   "source": "https://www.hcltech.com"
+  },
+  {
+   "name": "Hitachi High-Tech",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.yield"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "Hitachi",
+   "one_liner": "CD-SEM metrology and etch",
+   "tags": [],
+   "url": "https://www.hitachi-hightech.com",
+   "source": "https://www.hitachi-hightech.com"
+  },
+  {
+   "name": "HOYA",
+   "kind": "company",
+   "subsegments": [
+    "n1.masks"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Leading supplier of mask blanks, including EUV blanks",
+   "url": "https://www.hoya.com",
+   "source": "https://semiengineering.com/euv-mask-blank-biz-heats-up"
+  },
+  {
+   "name": "Hua Hong Semiconductor",
+   "kind": "company",
+   "subsegments": [
+    "n1.foundry"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Chinese specialty and mature-node foundry",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.huahonggrace.com",
+   "source": "https://www.huahonggrace.com"
+  },
+  {
+   "name": "Ibiden",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "IC package substrates for GPUs and CPUs",
+   "url": "https://www.ibiden.com",
+   "source": "https://www.ibiden.com"
+  },
+  {
+   "name": "Imagination Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "GPU and AI compute IP",
+   "url": "https://www.imaginationtech.com",
+   "source": "https://www.imaginationtech.com"
+  },
+  {
+   "name": "Intel Foundry",
+   "kind": "company",
+   "subsegments": [
+    "n1.foundry",
+    "n1.packaging"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Intel",
+   "one_liner": "18A/14A logic process and EMIB/Foveros packaging services",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.intel.com/foundry",
+   "source": "https://www.techspot.com/community/topics/amazon-apple-amd-google-tesla-microsoft-nvidia-and-qualcomm-are-all-reportedly-evaluating-intels-14a-process.298937/",
+   "note": "US government equity stake (Aug 2025); 14A customers being courted in 2026"
+  },
+  {
+   "name": "JCET Group",
+   "kind": "company",
+   "subsegments": [
+    "n1.packaging"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "China's largest OSAT",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.jcetglobal.com",
+   "source": "https://www.jcetglobal.com"
+  },
+  {
+   "name": "JSR",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "JIC (Japan Investment Corp)",
+   "one_liner": "Photoresists incl. EUV (Inpria metal-oxide)",
+   "url": "https://www.jsr.co.jp",
+   "source": "https://www.jsr.co.jp"
+  },
+  {
+   "name": "Kaynes Semicon",
+   "kind": "company",
+   "subsegments": [
+    "n1.packaging"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "parent": "Kaynes Technology",
+   "one_liner": "OSAT in Sanand, Gujarat",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.kaynestechnology.co.in",
+   "source": "https://www.kaynestechnology.co.in"
+  },
+  {
+   "name": "Keysight EDA",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Keysight",
+   "one_liner": "RF/high-speed EDA; acquired Synopsys optical and Ansys PowerArtist",
+   "url": "https://www.keysight.com",
+   "source": "https://www.nafems.org/about-us/media/news/industrynews1003/keysight-completes-acquisition-of-synopsys-optical-solutions-group-and-ansys-powerartist/"
+  },
+  {
+   "name": "King Yuan Electronics (KYEC)",
+   "kind": "company",
+   "subsegments": [
+    "n1.packaging"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Testing services for AI GPUs and SoCs",
+   "url": "https://www.kyec.com.tw",
+   "source": "https://www.kyec.com.tw"
+  },
+  {
+   "name": "Kioxia",
+   "kind": "company",
+   "subsegments": [
+    "n1.memory"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "NAND flash and enterprise SSDs (listed Dec 2024)",
+   "url": "https://www.kioxia.com",
+   "source": "https://www.kioxia.com"
+  },
+  {
+   "name": "KLA",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.masks",
+    "n1.yield"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Process control, inspection and metrology",
+   "tags": [],
+   "url": "https://www.kla.com",
+   "source": "https://www.kla.com"
+  },
+  {
+   "name": "Kokusai Electric",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Batch deposition and treatment tools",
+   "url": "https://www.kokusai-electric.com",
+   "source": "https://www.kokusai-electric.com"
+  },
+  {
+   "name": "L&T Semiconductor Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Larsen & Toubro",
+   "one_liner": "Indian fabless/design unit of L&T",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.larsentoubro.com",
+   "source": "https://www.lntsemiconductors.com"
+  },
+  {
+   "name": "Lam Research",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.yield"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Etch and deposition tools, critical for 3D NAND and HBM",
+   "tags": [],
+   "url": "https://www.lamresearch.com",
+   "source": "https://www.lamresearch.com"
+  },
+  {
+   "name": "Lasertec",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.masks"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "EUV mask inspection",
+   "tags": [],
+   "url": "https://www.lasertec.co.jp",
+   "source": "https://www.lasertec.co.jp"
+  },
+  {
+   "name": "Linde",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Electronic and specialty gases",
+   "url": "https://www.linde.com",
+   "source": "https://www.linde.com"
+  },
+  {
+   "name": "Marvell Technology (custom)",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Marvell",
+   "one_liner": "Custom XPU/ASIC design for AWS and Microsoft; added Celestial AI photonic fabric",
+   "url": "https://www.marvell.com",
+   "source": "https://www.marvell.com/company/newsroom/marvell-completes-acquisition-of-celestial-ai.html",
+   "note": "Completed Celestial AI acquisition (Feb 2026)"
+  },
+  {
+   "name": "MediaTek (ASIC)",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "MediaTek",
+   "one_liner": "Custom data-centre ASIC services, incl. Google TPU work",
+   "url": "https://www.mediatek.com",
+   "source": "https://www.mediatek.com"
+  },
+  {
+   "name": "Merck KGaA (EMD Electronics)",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Specialty gases, precursors and patterning materials",
+   "url": "https://www.emdgroup.com",
+   "source": "https://www.emdgroup.com"
+  },
+  {
+   "name": "Micron India (Sanand ATMP)",
+   "kind": "company",
+   "subsegments": [
+    "n1.packaging",
+    "n1.memory"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "parent": "Micron",
+   "one_liner": "Memory assembly and test facility in Gujarat",
+   "url": "https://www.micron.com",
+   "source": "https://www.micron.com"
+  },
+  {
+   "name": "Micron Technology",
+   "kind": "company",
+   "subsegments": [
+    "n1.memory"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "DRAM, HBM and data-centre SSDs",
+   "url": "https://www.micron.com",
+   "source": "https://www.micron.com"
+  },
+  {
+   "name": "MIPS",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "GlobalFoundries (2025)",
+   "one_liner": "RISC-V CPU IP for automotive and data-centre",
+   "url": "https://mips.com",
+   "source": "https://mips.com"
+  },
+  {
+   "name": "Nanya Technology",
+   "kind": "company",
+   "subsegments": [
+    "n1.memory"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Taiwanese DRAM maker",
+   "url": "https://www.nanya.com",
+   "source": "https://www.nanya.com"
+  },
+  {
+   "name": "Naura Technology",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "China's largest WFE maker: etch, deposition, cleaning",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.naura.com",
+   "source": "https://www.naura.com"
+  },
+  {
+   "name": "Nikon",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "DUV lithography scanners",
+   "url": "https://www.nikon.com",
+   "source": "https://www.nikon.com"
+  },
+  {
+   "name": "Nittobo",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Low-CTE glass cloth (T-glass) for advanced substrates",
+   "url": "https://www.nittobo.co.jp",
+   "source": "https://www.nittobo.co.jp"
+  },
+  {
+   "name": "Nova",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "public",
+   "one_liner": "Optical and materials metrology",
+   "url": "https://www.novami.com",
+   "source": "https://www.novami.com"
+  },
+  {
+   "name": "Onto Innovation",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.yield"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Metrology/inspection incl. advanced-packaging lithography",
+   "tags": [],
+   "url": "https://ontoinnovation.com",
+   "source": "https://ontoinnovation.com"
+  },
+  {
+   "name": "PDF Solutions",
+   "kind": "company",
+   "subsegments": [
+    "n1.yield"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Exensio analytics platform for yield, test and manufacturing data across fabs and OSATs",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.pdf.com",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001120914/000143774926013942/pdfs20260429_ars.pdf"
+  },
+  {
+   "name": "Photronics",
+   "kind": "company",
+   "subsegments": [
+    "n1.masks"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Merchant photomask maker for logic, memory and displays",
+   "url": "https://www.photronics.com",
+   "source": "https://www.photronics.com"
+  },
+  {
+   "name": "Powertech Technology (PTI)",
+   "kind": "company",
+   "subsegments": [
+    "n1.packaging"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Memory and logic packaging and test",
+   "url": "https://www.pti.com.tw",
+   "source": "https://www.pti.com.tw"
+  },
+  {
+   "name": "Primarius Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Chinese EDA for device modelling, SPICE simulation and yield",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.primarius-tech.com",
+   "source": "https://www.primarius-tech.com"
+  },
+  {
+   "name": "PSMC",
+   "kind": "company",
+   "subsegments": [
+    "n1.foundry"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Taiwanese foundry; technology partner for Tata's Dholera fab",
+   "url": "https://www.psmc.com.tw",
+   "source": "https://www.psmc.com.tw"
+  },
+  {
+   "name": "Rambus",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Memory interface chips and HBM/CXL/PCIe controller IP",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.rambus.com",
+   "source": "https://www.rambus.com"
+  },
+  {
+   "name": "Rapidus",
+   "kind": "company",
+   "subsegments": [
+    "n1.foundry"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "Japanese gov't-backed consortium",
+   "one_liner": "Japanese 2nm foundry in Hokkaido targeting 2027 mass production",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.rapidus.inc",
+   "source": "https://www.trendforce.com/news/2025/11/26/news-rapidus-reportedly-gears-up-for-2029-1-4nm-production-with-second-hokkaido-fab-to-catch-foundry-giants/"
+  },
+  {
+   "name": "Resonac",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Packaging materials, CMP slurries, high-purity gases",
+   "url": "https://www.resonac.com",
+   "source": "https://www.resonac.com"
+  },
+  {
+   "name": "Ricursive Intelligence",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-driven chip design startup",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://convergedigest.com/ricursive-intelligence-raises-300m-series-a-for-ai-driven-chip-design/",
+   "source": "https://convergedigest.com/ricursive-intelligence-raises-300m-series-a-for-ai-driven-chip-design/",
+   "note": "Raised $300M Series A"
+  },
+  {
+   "name": "S&S Tech",
+   "kind": "company",
+   "subsegments": [
+    "n1.masks"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Korean photomask blank maker developing EUV blanks and pellicles",
+   "url": "https://www.snstech.co.kr",
+   "source": "https://www.snstech.co.kr"
+  },
+  {
+   "name": "Samsung Foundry",
+   "kind": "company",
+   "subsegments": [
+    "n1.foundry",
+    "n1.packaging"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Samsung Electronics",
+   "one_liner": "2nm GAA foundry and I-Cube/X-Cube packaging",
+   "url": "https://semiconductor.samsung.com/foundry",
+   "source": "https://semiconductor.samsung.com/foundry"
+  },
+  {
+   "name": "Samsung Memory",
+   "kind": "company",
+   "subsegments": [
+    "n1.memory"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Samsung Electronics",
+   "one_liner": "Largest DRAM/NAND maker; HBM3E/HBM4 supplier",
+   "url": "https://semiconductor.samsung.com",
+   "source": "https://semiconductor.samsung.com"
+  },
+  {
+   "name": "Sandisk",
+   "kind": "company",
+   "subsegments": [
+    "n1.memory"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "NAND flash and SSDs, spun off from Western Digital Feb 2025",
+   "url": "https://www.sandisk.com",
+   "source": "https://www.sandisk.com"
+  },
+  {
+   "name": "SCREEN Holdings",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Wafer cleaning equipment",
+   "url": "https://www.screen.co.jp",
+   "source": "https://www.screen.co.jp"
+  },
+  {
+   "name": "Shin-Etsu Chemical",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials",
+    "n1.masks"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Largest silicon wafer maker; photoresists",
+   "tags": [],
+   "url": "https://www.shinetsu.co.jp",
+   "source": "https://www.shinetsu.co.jp"
+  },
+  {
+   "name": "Siemens EDA",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda",
+    "n1.yield"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Siemens",
+   "one_liner": "Calibre physical verification, Questa, Aprisa; Altair simulation since 2025",
+   "tags": [],
+   "url": "https://eda.sw.siemens.com",
+   "source": "https://eda.sw.siemens.com",
+   "note": "Siemens completed Altair acquisition (Mar 2025)"
+  },
+  {
+   "name": "SiFive",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "RISC-V CPU and AI/vector IP cores",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.sifive.com",
+   "source": "https://www.sifive.com"
+  },
+  {
+   "name": "Siltronic",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Silicon wafers",
+   "url": "https://www.siltronic.com",
+   "source": "https://www.siltronic.com"
+  },
+  {
+   "name": "Silvaco",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "TCAD, analog/mixed-signal EDA and IP",
+   "url": "https://silvaco.com",
+   "source": "https://silvaco.com"
+  },
+  {
+   "name": "SK hynix",
+   "kind": "company",
+   "subsegments": [
+    "n1.memory"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "SK Group",
+   "one_liner": "HBM market leader and main HBM supplier for NVIDIA",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.skhynix.com",
+   "source": "https://www.skhynix.com"
+  },
+  {
+   "name": "SK siltron",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "SK Group",
+   "one_liner": "Silicon and SiC wafers",
+   "url": "https://www.sksiltron.com",
+   "source": "https://www.sksiltron.com"
+  },
+  {
+   "name": "SMEE",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Chinese domestic lithography scanner developer",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.smee.com.cn",
+   "source": "https://www.smee.com.cn"
+  },
+  {
+   "name": "SMIC",
+   "kind": "company",
+   "subsegments": [
+    "n1.foundry"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "China's largest foundry; 7nm-class (N+2) for domestic AI chips",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.smics.com",
+   "source": "https://www.smics.com"
+  },
+  {
+   "name": "Socionext",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Japanese custom SoC design for data centre and automotive",
+   "url": "https://www.socionext.com",
+   "source": "https://www.socionext.com"
+  },
+  {
+   "name": "Solidigm",
+   "kind": "company",
+   "subsegments": [
+    "n1.memory"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "SK hynix",
+   "one_liner": "High-capacity QLC data-centre SSDs",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.solidigm.com",
+   "source": "https://www.solidigm.com"
+  },
+  {
+   "name": "Sondrel",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "UK turnkey custom ASIC design",
+   "url": "https://www.sondrel.com",
+   "source": "https://www.sondrel.com"
+  },
+  {
+   "name": "SUMCO",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Silicon wafers",
+   "url": "https://www.sumcosi.com",
+   "source": "https://www.sumcosi.com"
+  },
+  {
+   "name": "Synopsys",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda",
+    "n1.ip",
+    "n1.yield"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "EDA tools, simulation (Ansys) and interface/foundation IP; AI-driven design (Synopsys.ai)",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.synopsys.com",
+   "source": "https://www.synopsys.com",
+   "note": "Closed Ansys acquisition (Jul 2025); sold ARC processor IP to GlobalFoundries and Optical Solutions to Keysight"
+  },
+  {
+   "name": "Taiwan Mask Corporation",
+   "kind": "company",
+   "subsegments": [
+    "n1.masks"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Taiwanese merchant photomask maker",
+   "url": "https://www.tmcnet.com.tw",
+   "source": "https://www.tmcnet.com.tw"
+  },
+  {
+   "name": "Tata Electronics",
+   "kind": "company",
+   "subsegments": [
+    "n1.foundry",
+    "n1.packaging"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Tata Group",
+   "one_liner": "India's first commercial fab (Dholera, with PSMC) and Assam OSAT",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.tataelectronics.com",
+   "source": "https://www.tataelectronics.com"
+  },
+  {
+   "name": "Tekscend Photomask",
+   "kind": "company",
+   "subsegments": [
+    "n1.masks"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Toppan (majority)",
+   "one_liner": "Merchant photomask maker spun out of Toppan",
+   "url": "https://www.tekscend.com",
+   "source": "https://news.bgov.com/private-equity/tekscend-to-debut-after-japans-second-biggest-ipo-this-year",
+   "note": "Tokyo IPO 2025 (~JPY157B, priced top of range)"
+  },
+  {
+   "name": "Tenstorrent",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip",
+    "n2.startup",
+    "n2.edge"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "RISC-V and AI accelerator IP licensing alongside own chips",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://tenstorrent.com",
+   "source": "https://tenstorrent.com",
+   "note": "Reported $1.5B raise at $6.2B valuation (2026). HQ Toronto with major US operations"
+  },
+  {
+   "name": "Teradyne",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip",
+    "n1.packaging"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Semiconductor test equipment for compute and memory",
+   "url": "https://www.teradyne.com",
+   "source": "https://www.teradyne.com"
+  },
+  {
+   "name": "Tessolve",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Hero Electronix",
+   "one_liner": "Indian semiconductor engineering, design and test services",
+   "url": "https://www.tessolve.com",
+   "source": "https://www.tessolve.com"
+  },
+  {
+   "name": "Tokyo Electron",
+   "kind": "company",
+   "subsegments": [
+    "n1.equip"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Coater/developers, etch, deposition, cleaning",
+   "url": "https://www.tel.com",
+   "source": "https://www.tel.com"
+  },
+  {
+   "name": "Tokyo Ohka Kogyo (TOK)",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Photoresists",
+   "url": "https://www.tok.co.jp",
+   "source": "https://www.tok.co.jp"
+  },
+  {
+   "name": "Tongfu Microelectronics",
+   "kind": "company",
+   "subsegments": [
+    "n1.packaging"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Chinese OSAT, major AMD packaging partner",
+   "url": "https://www.tfme.com",
+   "source": "https://www.tfme.com"
+  },
+  {
+   "name": "TSMC",
+   "kind": "company",
+   "subsegments": [
+    "n1.foundry",
+    "n1.packaging"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Dominant leading-edge foundry (N3/N2) and CoWoS packaging for AI accelerators",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.tsmc.com",
+   "source": "https://www.tsmc.com"
+  },
+  {
+   "name": "UMC",
+   "kind": "company",
+   "subsegments": [
+    "n1.foundry"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Mature-node foundry and interposer supplier",
+   "url": "https://www.umc.com",
+   "source": "https://www.umc.com"
+  },
+  {
+   "name": "Unimicron",
+   "kind": "company",
+   "subsegments": [
+    "n1.materials"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "ABF package substrates",
+   "url": "https://www.unimicron.com",
+   "source": "https://www.unimicron.com"
+  },
+  {
+   "name": "VeriSilicon",
+   "kind": "company",
+   "subsegments": [
+    "n1.ip",
+    "n1.design"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Chinese IP vendor (GPU, NPU, VPU) and ASIC design services",
+   "url": "https://www.verisilicon.com",
+   "source": "https://www.verisilicon.com"
+  },
+  {
+   "name": "yieldWerx",
+   "kind": "company",
+   "subsegments": [
+    "n1.yield"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Semiconductor yield management and test-data analytics software",
+   "url": "https://yieldwerx.com",
+   "source": "https://yieldwerx.com"
+  },
+  {
+   "name": "YMTC",
+   "kind": "company",
+   "subsegments": [
+    "n1.memory"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Chinese 3D NAND maker",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.ymtc.com",
+   "source": "https://borecraft.com/2026/01/05/china-memory-makers-ipo-line-up-cxmt-seeks-us4-2-billion-ymtc-prepares-filing/"
+  },
+  {
+   "name": "ChipIN Centre (India Semiconductor Mission / C-DAC)",
+   "kind": "public programme",
+   "subsegments": [
+    "n1.eda",
+    "n1.foundry",
+    "n1.design"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "MeitY / C-DAC",
+   "access": "Indian academia and C2S/DLI startups get EDA tools and SCL MPW",
+   "one_liner": "National chip-design facility giving EDA tool hours and 180nm MPW fabrication at SCL Mohali",
+   "tags": [
+    "sovereign",
+    "cost",
+    "public-programme"
+   ],
+   "url": "https://circuitdigest.com/news/india-democratizes-chip-fabrication-with-5-mpw-runs-over-the-past-12-months",
+   "source": "https://circuitdigest.com/news/india-democratizes-chip-fabrication-with-5-mpw-runs-over-the-past-12-months",
+   "note": "5 MPW shuttles in the 12 months to Dec 2025; 122 designs from 46 institutions; 90+ startups supported"
+  },
+  {
+   "name": "Chipyard",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.ip",
+    "n1.design"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "UC Berkeley Architecture Research",
+   "licence": "BSD-3-Clause / Apache-2.0",
+   "access": "Clone framework; generate, simulate and tape out SoCs",
+   "repo": "https://github.com/ucb-bar/chipyard",
+   "stars": 2400,
+   "archived": false,
+   "one_liner": "Agile RISC-V SoC design framework integrating Rocket, BOOM, Gemmini accelerators and tooling",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://github.com/ucb-bar/chipyard",
+   "source": "https://github.com/ucb-bar/chipyard"
+  },
+  {
+   "name": "Chisel",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.eda",
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "CHIPS Alliance (Linux Foundation)",
+   "licence": "Apache-2.0",
+   "access": "Scala library via sbt/Mill",
+   "repo": "https://github.com/chipsalliance/chisel",
+   "stars": 4800,
+   "archived": false,
+   "one_liner": "Hardware construction language embedded in Scala; basis of Rocket Chip and many RISC-V SoCs",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://github.com/chipsalliance/chisel",
+   "source": "https://github.com/chipsalliance/chisel"
+  },
+  {
+   "name": "CIRCT",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "LLVM project",
+   "licence": "Apache-2.0 with LLVM exceptions",
+   "access": "Build with LLVM; used by Chisel (firtool)",
+   "repo": "https://github.com/llvm/circt",
+   "stars": 2300,
+   "archived": false,
+   "one_liner": "MLIR-based compiler infrastructure for hardware design",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://github.com/llvm/circt",
+   "source": "https://github.com/llvm/circt"
+  },
+  {
+   "name": "cocotb",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open",
+   "steward": "FOSSi Foundation",
+   "licence": "BSD-3-Clause",
+   "access": "pip install cocotb; Python testbenches with any simulator",
+   "repo": "https://github.com/cocotb/cocotb",
+   "stars": 2500,
+   "archived": false,
+   "one_liner": "Python coroutine-based verification framework for VHDL/Verilog designs",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://github.com/cocotb/cocotb",
+   "source": "https://github.com/cocotb/cocotb"
+  },
+  {
+   "name": "CVA6",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "status": "open",
+   "steward": "OpenHW Group",
+   "access": "Clone SystemVerilog RTL; part of OpenHW CORE-V family",
+   "repo": "https://github.com/openhwgroup/cva6",
+   "stars": 3100,
+   "archived": false,
+   "one_liner": "Application-class 64-bit RISC-V core with industrial-grade verification",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/openhwgroup/cva6",
+   "source": "https://github.com/openhwgroup/cva6"
+  },
+  {
+   "name": "CXL (Compute Express Link)",
+   "kind": "standard",
+   "subsegments": [
+    "n1.memory",
+    "n2.net",
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "CXL Consortium",
+   "access": "Specification from CXL Consortium",
+   "one_liner": "Cache-coherent CPU-device-memory interconnect enabling memory expansion and pooling",
+   "tags": [
+    "open-standard",
+    "performance",
+    "cost"
+   ],
+   "url": "https://computeexpresslink.org",
+   "source": "https://www.businesswire.com/news/home/20251118275848/en/CXL-Consortium-Releases-the-Compute-Express-Link-4.0-Specification-Increasing-Speed-and-Bandwidth",
+   "note": "CXL 4.0 released Nov 2025: 128 GT/s, bundled ports, multi-rack memory pooling"
+  },
+  {
+   "name": "gdsfactory",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.eda",
+    "n2.photonic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "GDSFactory",
+   "licence": "MIT",
+   "access": "pip install gdsfactory",
+   "repo": "https://github.com/gdsfactory/gdsfactory",
+   "stars": 1100,
+   "archived": false,
+   "one_liner": "Python library for designing photonic, analog and quantum chips and generating GDS layouts",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://github.com/gdsfactory/gdsfactory",
+   "source": "https://github.com/gdsfactory/gdsfactory"
+  },
+  {
+   "name": "Gemmini",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.ip",
+    "n2.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "UC Berkeley Architecture Research",
+   "access": "Generate via Chipyard; simulate or FPGA-prototype",
+   "repo": "https://github.com/ucb-bar/gemmini",
+   "stars": 1400,
+   "archived": false,
+   "one_liner": "Systolic-array DNN accelerator generator for design-space exploration of AI chips",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/ucb-bar/gemmini",
+   "source": "https://github.com/ucb-bar/gemmini"
+  },
+  {
+   "name": "GF180MCU open PDK",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.foundry"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google & GlobalFoundries",
+   "licence": "Apache-2.0",
+   "access": "Download PDK; fabricate via MPW shuttles",
+   "repo": "https://github.com/google/gf180mcu-pdk",
+   "stars": 529,
+   "archived": false,
+   "one_liner": "Open 180nm MCU-class process design kit from GlobalFoundries",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/google/gf180mcu-pdk",
+   "source": "https://github.com/google/gf180mcu-pdk"
+  },
+  {
+   "name": "IHP SG13G2 open PDK",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.foundry"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "IHP (Leibniz Institute for High Performance Microelectronics)",
+   "licence": "Apache-2.0",
+   "access": "Download PDK; tape out on IHP open MPW runs",
+   "repo": "https://github.com/IHP-GmbH/IHP-Open-PDK",
+   "stars": 862,
+   "archived": false,
+   "one_liner": "Open 130nm SiGe BiCMOS PDK; Europe's main open-source tapeout path",
+   "tags": [
+    "open-source",
+    "cost",
+    "sovereign"
+   ],
+   "url": "https://github.com/IHP-GmbH/IHP-Open-PDK",
+   "source": "https://github.com/IHP-GmbH/IHP-Open-PDK"
+  },
+  {
+   "name": "JEDEC HBM4 (JESD270-4)",
+   "kind": "standard",
+   "subsegments": [
+    "n1.memory"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "JEDEC",
+   "access": "Download from JEDEC (free registration)",
+   "one_liner": "Industry standard for fourth-generation high-bandwidth memory stacks used in AI accelerators",
+   "tags": [
+    "open-standard",
+    "performance"
+   ],
+   "url": "https://www.jedec.org",
+   "source": "https://businesswire.com/news/home/20250416843598/en/JEDEC-and-Industry-Leaders-Collaborate-to-Release-JESD270-4-HBM4-Standard-Advancing-Bandwidth-Efficiency-and-Capacity-for-AI-and-HPC",
+   "note": "Published April 2025"
+  },
+  {
+   "name": "KLayout",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.eda",
+    "n1.masks"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "KLayout project (Matthias Köfferlein)",
+   "licence": "GPL-3.0",
+   "access": "Desktop install; Python/Ruby scripting for DRC/LVS",
+   "repo": "https://github.com/KLayout/klayout",
+   "stars": 1200,
+   "archived": false,
+   "one_liner": "GDS/OASIS layout viewer and editor with DRC/LVS used in open and commercial flows",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/KLayout/klayout",
+   "source": "https://github.com/KLayout/klayout"
+  },
+  {
+   "name": "LibreLane",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "status": "open",
+   "steward": "LibreLane community (successor to Efabless OpenLane 2)",
+   "licence": "Apache-2.0",
+   "access": "pip/Nix install; full ASIC flow on open PDKs",
+   "repo": "https://github.com/librelane/librelane",
+   "stars": 601,
+   "archived": false,
+   "one_liner": "Open ASIC implementation flow orchestrating Yosys, OpenROAD, Magic and KLayout",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/librelane/librelane",
+   "source": "https://github.com/librelane/librelane",
+   "note": "Efabless shut down March 2025; LibreLane continues OpenLane 2"
+  },
+  {
+   "name": "NVDLA",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.ip",
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "NVIDIA Open NVDLA License",
+   "access": "Clone RTL and C-model; integrate into SoC",
+   "repo": "https://github.com/nvdla/hw",
+   "stars": 2200,
+   "archived": false,
+   "one_liner": "Open deep-learning inference accelerator RTL from NVIDIA",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/nvdla/hw",
+   "source": "https://github.com/nvdla/hw",
+   "note": "Stable sustaining branch: bug fixes only, no new RTL features"
+  },
+  {
+   "name": "OpenROAD",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "The OpenROAD Project (UC San Diego-led)",
+   "licence": "BSD-3-Clause",
+   "access": "Build from source or Docker; RTL-to-GDSII flow scripts",
+   "repo": "https://github.com/The-OpenROAD-Project/OpenROAD",
+   "stars": 3100,
+   "archived": false,
+   "one_liner": "Autonomous open RTL-to-GDSII place-and-route toolchain used with open PDKs",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/The-OpenROAD-Project/OpenROAD",
+   "source": "https://github.com/The-OpenROAD-Project/OpenROAD"
+  },
+  {
+   "name": "RISC-V ISA",
+   "kind": "standard",
+   "subsegments": [
+    "n1.ip",
+    "n2.cpu",
+    "n2.edge"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "open",
+   "steward": "RISC-V International",
+   "licence": "CC-BY-4.0 (specifications)",
+   "access": "Free ratified specs; implement without royalties",
+   "repo": "https://github.com/riscv/riscv-isa-manual",
+   "one_liner": "Royalty-free open instruction-set architecture, incl. vector extension used in AI accelerators and CPUs",
+   "tags": [
+    "open-standard",
+    "cost",
+    "sovereign"
+   ],
+   "url": "https://riscv.org",
+   "source": "https://riscv.org"
+  },
+  {
+   "name": "Rocket Chip",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "CHIPS Alliance (Linux Foundation)",
+   "licence": "Apache-2.0 (plus BSD components)",
+   "access": "Chisel generator; use via Chipyard",
+   "repo": "https://github.com/chipsalliance/rocket-chip",
+   "stars": 3900,
+   "archived": false,
+   "one_liner": "Parameterised RISC-V SoC generator; origin of SiFive cores",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/chipsalliance/rocket-chip",
+   "source": "https://github.com/chipsalliance/rocket-chip"
+  },
+  {
+   "name": "SkyWater SKY130 open PDK",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.foundry"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google & SkyWater Technology",
+   "licence": "Apache-2.0",
+   "access": "Download PDK; tape out via shuttles (ChipFoundry, Tiny Tapeout)",
+   "repo": "https://github.com/google/skywater-pdk",
+   "stars": 3800,
+   "archived": false,
+   "one_liner": "First manufacturable open-source 130nm process design kit",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/google/skywater-pdk",
+   "source": "https://github.com/google/skywater-pdk"
+  },
+  {
+   "name": "Tiny Tapeout",
+   "kind": "public programme",
+   "subsegments": [
+    "n1.foundry",
+    "n1.design"
+   ],
+   "status": "open",
+   "steward": "Tiny Tapeout (community, founded by Matt Venn)",
+   "access": "Buy a tile on a shared shuttle; submit design via GitHub template",
+   "one_liner": "Low-cost shared shuttles letting anyone fabricate a small digital/analog design on real silicon",
+   "tags": [
+    "cost",
+    "developer",
+    "public-programme"
+   ],
+   "url": "https://tinytapeout.com",
+   "source": "https://www.eenewseurope.com/en/tiny-tapeout-sees-industrial-boost-as-it-recovers-from-efabless-closure/",
+   "note": "Survived Efabless closure (Mar 2025); continues on IHP 130nm and SKY130 via ChipFoundry"
+  },
+  {
+   "name": "UCIe (Universal Chiplet Interconnect Express)",
+   "kind": "standard",
+   "subsegments": [
+    "n1.packaging",
+    "n1.ip",
+    "n2.net"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "UCIe Consortium",
+   "access": "Specification from UCIe Consortium; IP from multiple vendors",
+   "one_liner": "Open die-to-die chiplet interconnect standard; UCIe 3.0 doubles data rate to 64 GT/s",
+   "tags": [
+    "open-standard",
+    "performance"
+   ],
+   "url": "https://www.uciexpress.org",
+   "source": "https://www.businesswire.com/news/home/20250805909613/en/UCIe-Consortium-Introduces-3.0-Specification-With-64-GTs-Performance-and-Enhanced-Manageability",
+   "note": "UCIe 3.0 released Aug 2025; UALink Chiplet Spec 1.0 (Apr 2026) is UCIe 3.0-compliant"
+  },
+  {
+   "name": "Verilator",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Veripool / CHIPS Alliance",
+   "licence": "LGPL-3.0 or Artistic-2.0",
+   "access": "Package managers or source build",
+   "repo": "https://github.com/verilator/verilator",
+   "stars": 3900,
+   "archived": false,
+   "one_liner": "Fastest open Verilog/SystemVerilog simulator, compiling RTL to C++",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/verilator/verilator",
+   "source": "https://github.com/verilator/verilator"
+  },
+  {
+   "name": "WM-811K wafer map dataset",
+   "kind": "open dataset",
+   "subsegments": [
+    "n1.yield"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "open",
+   "steward": "MIR Lab, National Taiwan University",
+   "access": "Free download for research",
+   "one_liner": "811k labelled wafer maps; the standard benchmark for ML-based wafer defect classification",
+   "tags": [
+    "open-data"
+   ],
+   "url": "http://mirlab.org/dataSet/public/",
+   "source": "http://mirlab.org/dataSet/public/"
+  },
+  {
+   "name": "XiangShan",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.ip",
+    "n2.cpu"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Beijing Institute of Open Source Chip / ICT, Chinese Academy of Sciences",
+   "licence": "MulanPSL-2.0",
+   "access": "Clone Chisel RTL; simulate or tape out",
+   "repo": "https://github.com/OpenXiangShan/XiangShan",
+   "stars": 7300,
+   "archived": false,
+   "one_liner": "High-performance open-source out-of-order RISC-V processor core",
+   "tags": [
+    "open-source",
+    "sovereign",
+    "performance"
+   ],
+   "url": "https://github.com/OpenXiangShan/XiangShan",
+   "source": "https://github.com/OpenXiangShan/XiangShan"
+  },
+  {
+   "name": "Yosys",
+   "kind": "open-source project",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "AT",
+   "region": "Europe",
+   "status": "open",
+   "steward": "YosysHQ",
+   "licence": "ISC",
+   "access": "Package managers or OSS CAD Suite; synthesise Verilog",
+   "repo": "https://github.com/YosysHQ/yosys",
+   "stars": 4800,
+   "archived": false,
+   "one_liner": "Open RTL synthesis framework for ASIC and FPGA flows",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/YosysHQ/yosys",
+   "source": "https://github.com/YosysHQ/yosys"
+  }
+ ]
+}

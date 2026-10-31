@@ -1,0 +1,2394 @@
+{
+ "node": "n2",
+ "notes": {
+  "n2.merchant": "NVIDIA dominates; AMD is the main merchant alternative, with Intel and Qualcomm targeting inference.",
+  "n2.custom": "Google, AWS, Microsoft, Meta and OpenAI all run in-house ASIC programmes, mostly co-designed with Broadcom, Marvell, MediaTek or Alchip.",
+  "n2.startup": "Consolidating fast: NVIDIA took Groq (licence and hires, Dec 2025) and Enfabrica, AMD took Untether AI's team (product discontinued Jun 2025), Cerebras listed (May 2026). Inference-focused challengers keep raising large rounds.",
+  "n2.china": "Export controls drove a 2025-26 IPO wave (Moore Threads, MetaX, Biren, Kunlunxin filing); Huawei Ascend and Cambricon lead.",
+  "n2.edge": "NPUs are now standard in phone/PC SoCs (Apple, Qualcomm, MediaTek, Intel, AMD); discrete edge players compete in vision, auto and industrial.",
+  "n2.cpu": "Arm-based custom CPUs (Grace, Graviton, Cobalt, Axion) are eroding x86 in AI head nodes; Ampere now owned by SoftBank.",
+  "n2.net": "Scale-up/scale-out fabrics are a battleground (NVLink vs UALink/Ultra Ethernet); photonics startups being absorbed (Celestial AI to Marvell, Enfabrica to NVIDIA).",
+  "n2.sw": "CUDA lock-in remains the main moat; ROCm, Triton, XLA and Modular push portability.",
+  "n2.photonic": "Consolidating: Marvell bought Celestial AI (closed Feb 2026), Ciena bought Nubis (2025)",
+  "n2.power": "NVIDIA 800 VDC programme lists 14 silicon partners (GTC 2026)",
+  "n2.export": "Compliance burden rose after BIS rescinded the AI Diffusion Rule and issued chip guidance (May 2025)"
+ },
+ "entries": [
+  {
+   "name": "Alibaba T-Head",
+   "kind": "company",
+   "subsegments": [
+    "n2.custom",
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Alibaba Group",
+   "one_liner": "Alibaba's chip unit: PPU AI accelerators and Yitian Arm server CPUs for Alibaba Cloud",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.t-head.cn",
+   "source": "https://www.t-head.cn"
+  },
+  {
+   "name": "Alpha and Omega Semiconductor",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Power MOSFETs and power stages for AI servers",
+   "url": "https://www.aosmd.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC silicon partner"
+  },
+  {
+   "name": "Ambarella",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "CVflow AI vision SoCs for cameras, robotics and automotive",
+   "url": "https://www.ambarella.com",
+   "source": "https://www.ambarella.com"
+  },
+  {
+   "name": "AMD",
+   "kind": "company",
+   "subsegments": [
+    "n2.merchant",
+    "n2.cpu",
+    "n2.net",
+    "n2.sw",
+    "n2.edge",
+    "n3.scaleup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Instinct MI350/MI400-series GPUs, EPYC CPUs, Pensando DPUs/NICs, ROCm software, Ryzen AI NPUs",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://www.amd.com",
+   "source": "https://www.datacenterdynamics.com/en/news/amd-extends-acquisition-run-brings-software-optimization-firm-brium-and-staff-from-recently-shuttered-untether-ai-into-the-fold/",
+   "note": "2025 acqui-hires of Untether AI team and Brium (compiler) to strengthen inference/software"
+  },
+  {
+   "name": "Ampere Computing",
+   "kind": "company",
+   "subsegments": [
+    "n2.cpu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "SoftBank Group (2025)",
+   "one_liner": "Arm-based cloud-native server CPUs (AmpereOne)",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://amperecomputing.com",
+   "source": "https://group.softbank/en/news/press/20251126",
+   "note": "SoftBank closed $6.5B acquisition Nov 2025"
+  },
+  {
+   "name": "Analog Devices",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Power management and hot-swap controllers for AI servers",
+   "url": "https://www.analog.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC silicon partner"
+  },
+  {
+   "name": "Apache TVM",
+   "kind": "company",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Open deep-learning compiler for diverse hardware backends",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://tvm.apache.org",
+   "source": "https://tvm.apache.org"
+  },
+  {
+   "name": "Apple silicon (Neural Engine)",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Apple",
+   "one_liner": "A- and M-series chips with Neural Engine for on-device AI",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.apple.com",
+   "source": "https://www.apple.com"
+  },
+  {
+   "name": "Arm (Neoverse)",
+   "kind": "company",
+   "subsegments": [
+    "n2.cpu"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "parent": "SoftBank Group (majority)",
+   "one_liner": "Licensed Neoverse CPU designs underpinning Grace, Graviton, Cobalt, Axion",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.arm.com",
+   "source": "https://www.arm.com"
+  },
+  {
+   "name": "Astera Labs",
+   "kind": "company",
+   "subsegments": [
+    "n2.net",
+    "n3.scaleup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "PCIe/CXL retimers, smart fabric switches and Scorpio connectivity for AI racks",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.asteralabs.com",
+   "source": "https://www.asteralabs.com"
+  },
+  {
+   "name": "AWS Trainium & Inferentia (Annapurna Labs)",
+   "kind": "company",
+   "subsegments": [
+    "n2.custom",
+    "n2.cpu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Amazon",
+   "one_liner": "Amazon's in-house training/inference ASICs and Graviton Arm CPUs; Nitro DPUs",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://aws.amazon.com/ai/machine-learning/trainium/",
+   "source": "https://aws.amazon.com/ai/machine-learning/trainium/"
+  },
+  {
+   "name": "Axelera AI",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge",
+    "n2.startup"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Metis edge AI inference chips and Europa accelerator using digital in-memory compute",
+   "tags": [
+    "cost",
+    "sovereign"
+   ],
+   "url": "https://www.axelera.ai",
+   "source": "https://eic.ec.europa.eu/news/congratulations-axelera-ai-securing-more-eur200-million-funding-global-commercial-growth-2026-02-24_en",
+   "note": "Raised >$250M Feb 2026, largest EU chip round to date"
+  },
+  {
+   "name": "Biren Technology",
+   "kind": "company",
+   "subsegments": [
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "BR100-series GPGPUs for AI compute",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.birentech.com",
+   "source": "https://www.scmp.com/business/banking-finance/article/3338447/biren-shares-soar-hong-kong-investors-seize-chinas-first-gpu-start-list",
+   "note": "Hong Kong IPO Jan 2026, first Chinese GPU start-up listed there"
+  },
+  {
+   "name": "Black Sesame Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge",
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Huashan automotive AI SoCs",
+   "url": "https://www.blacksesame.com",
+   "source": "https://www.blacksesame.com"
+  },
+  {
+   "name": "Blaize",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Graph streaming processors for edge AI; listed via SPAC Jan 2025",
+   "url": "https://www.blaize.com",
+   "source": "https://www.blaize.com"
+  },
+  {
+   "name": "BrainChip",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Akida neuromorphic edge AI IP and chips",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://brainchip.com",
+   "source": "https://brainchip.com"
+  },
+  {
+   "name": "Broadcom",
+   "kind": "company",
+   "subsegments": [
+    "n2.net",
+    "n2.custom",
+    "n3.scaleup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Tomahawk/Jericho Ethernet switch ASICs, NICs and custom XPU design for Google, Meta, OpenAI and others",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.broadcom.com",
+   "source": "https://www.broadcom.com",
+   "note": "Shipping Tomahawk Ultra since Jul 2025"
+  },
+  {
+   "name": "Cambricon",
+   "kind": "company",
+   "subsegments": [
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Siyuan (MLU) AI accelerators for Chinese data centres",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.cambricon.com",
+   "source": "https://www.cambricon.com"
+  },
+  {
+   "name": "Celestial AI",
+   "kind": "company",
+   "subsegments": [
+    "n2.net",
+    "n2.photonic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Marvell (2026)",
+   "one_liner": "Photonic Fabric optical interconnect for memory and compute disaggregation",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.celestial.ai",
+   "source": "https://investor.marvell.com/news-events/press-releases/detail/1005/marvell-completes-acquisition-of-celestial-ai",
+   "note": "Acquisition closed Feb 2026"
+  },
+  {
+   "name": "Cerebras",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup",
+    "n4.neo",
+    "n4.offtake"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Wafer-scale engine (WSE-3) systems and a fast inference cloud",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.cerebras.ai",
+   "source": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang",
+   "note": "Nasdaq IPO May 2026 raised ~$5.5B, largest US IPO of 2026 to that date"
+  },
+  {
+   "name": "Cisco Silicon One",
+   "kind": "company",
+   "subsegments": [
+    "n2.net"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Cisco",
+   "one_liner": "Programmable switch/router ASICs used in AI Ethernet fabrics",
+   "url": "https://www.cisco.com/site/us/en/solutions/silicon-one/index.html",
+   "source": "https://www.cisco.com/site/us/en/solutions/silicon-one/index.html"
+  },
+  {
+   "name": "Credo",
+   "kind": "company",
+   "subsegments": [
+    "n2.net"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "SerDes, active electrical cables and optical DSPs for AI interconnect",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://credosemi.com",
+   "source": "https://credosemi.com"
+  },
+  {
+   "name": "CUDA",
+   "kind": "company",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "NVIDIA",
+   "one_liner": "NVIDIA's parallel computing platform and libraries (cuDNN, NCCL, TensorRT)",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://developer.nvidia.com/cuda-toolkit",
+   "source": "https://developer.nvidia.com/cuda-toolkit"
+  },
+  {
+   "name": "d-Matrix",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Corsair digital in-memory-compute inference accelerators",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://www.d-matrix.ai",
+   "source": "https://ecvc.wsgr.com/news/wilson-sonsini-advises-d-matrix-on-oversubscribed-dollar275-million-series-c-funding",
+   "note": "$275M Series C Nov 2025 at ~$2B valuation"
+  },
+  {
+   "name": "DeepX",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Low-power on-device NPUs for embedded vision",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://deepx.ai",
+   "source": "https://deepx.ai"
+  },
+  {
+   "name": "Descartes Systems Group (Visual Compliance)",
+   "kind": "company",
+   "subsegments": [
+    "n2.export"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Denied-party screening and export classification software",
+   "url": "https://www.descartes.com",
+   "source": "https://www.descartes.com/solutions/customs-and-regulatory-compliance"
+  },
+  {
+   "name": "E2open",
+   "kind": "company",
+   "subsegments": [
+    "n2.export"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "WiseTech Global (2025)",
+   "one_liner": "Global trade compliance and supply-chain software (ex-Amber Road)",
+   "url": "https://www.e2open.com",
+   "source": "https://www.e2open.com"
+  },
+  {
+   "name": "EnCharge AI",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup",
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Analog in-memory-compute AI accelerators for client and edge devices",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.enchargeai.com",
+   "source": "https://www.enchargeai.com"
+  },
+  {
+   "name": "Enflame",
+   "kind": "company",
+   "subsegments": [
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Cloud AI training/inference accelerators, Tencent-backed",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.enflame-tech.com",
+   "source": "https://www.enflame-tech.com"
+  },
+  {
+   "name": "Etched",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Sohu transformer-specific inference ASIC",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://www.etched.com",
+   "source": "https://www.builtinsf.com/articles/etched-raises-500m-funding-20260114",
+   "note": "Raised $500M Jan 2026; further raises at higher valuations reported mid-2026"
+  },
+  {
+   "name": "Extropic",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Thermodynamic sampling hardware for probabilistic AI",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.extropic.ai",
+   "source": "https://www.extropic.ai"
+  },
+  {
+   "name": "Fractile",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "In-memory compute inference chips targeting fast LLM token generation",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.fractile.ai",
+   "source": "https://www.fractile.ai"
+  },
+  {
+   "name": "Fujitsu (MONAKA)",
+   "kind": "company",
+   "subsegments": [
+    "n2.cpu"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Arm-based MONAKA data-centre CPU for AI/HPC",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.fujitsu.com",
+   "source": "https://www.fujitsu.com"
+  },
+  {
+   "name": "FuriosaAI",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "RNGD tensor-contraction inference chips for LLM serving",
+   "tags": [
+    "cost",
+    "sovereign"
+   ],
+   "url": "https://furiosa.ai",
+   "source": "https://www.bloomberg.com/news/articles/2026-01-19/ai-chip-startup-furiosaai-plans-500-million-round-before-ipo",
+   "note": "Rejected Meta's ~$800M takeover offer 2025; ~$500M pre-IPO round Jan 2026"
+  },
+  {
+   "name": "Google Axion",
+   "kind": "company",
+   "subsegments": [
+    "n2.cpu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Google's custom Arm server CPU for Google Cloud",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://cloud.google.com/products/axion",
+   "source": "https://cloud.google.com/products/axion"
+  },
+  {
+   "name": "Google TPU",
+   "kind": "company",
+   "subsegments": [
+    "n2.custom"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "In-house Tensor Processing Units (Ironwood/v7) for Google and Google Cloud customers",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://cloud.google.com/tpu",
+   "source": "https://cloud.google.com/tpu"
+  },
+  {
+   "name": "Graphcore",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "SoftBank Group (2024)",
+   "one_liner": "IPU AI processors; developing next-gen AI compute for SoftBank",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.graphcore.ai",
+   "source": "https://www.graphcore.ai/posts/graphcore-to-invest-1bn-in-india-creating-500-semiconductor-jobs",
+   "note": "Announced up to GBP1B investment and Bengaluru engineering campus in India, Oct 2025"
+  },
+  {
+   "name": "Groq",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup",
+    "n4.neo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "LPU inference chips; now primarily GroqCloud inference service",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://groq.com",
+   "source": "https://www.pymnts.com/news/investment-tracker/2026/groq-seeks-650-million-amid-shift-to-ai-inference-neocloud-business/",
+   "note": "Dec 2025 NVIDIA licensed its tech and hired founder Jonathan Ross; remains independent under CEO Simon Edwards, pivoting to inference neocloud (2026)"
+  },
+  {
+   "name": "Hailo",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Edge AI processors (Hailo-8, Hailo-10H) for vision and genAI at the edge",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://hailo.ai",
+   "source": "https://hailo.ai"
+  },
+  {
+   "name": "Horizon Robotics",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge",
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Journey automotive AI chips and driving software",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://en.horizon.auto",
+   "source": "https://en.horizon.auto"
+  },
+  {
+   "name": "Huawei Ascend",
+   "kind": "company",
+   "subsegments": [
+    "n2.china",
+    "n2.sw",
+    "n4.hyper"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "parent": "Huawei",
+   "one_liner": "Ascend 910-series AI accelerators, CloudMatrix superpods, CANN software; also Huawei Cloud",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.huawei.com/en/ascend",
+   "source": "https://www.huawei.com/en/ascend"
+  },
+  {
+   "name": "Hygon",
+   "kind": "company",
+   "subsegments": [
+    "n2.china",
+    "n2.cpu"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "x86-derived server CPUs and DCU GPGPU accelerators",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.hygon.cn",
+   "source": "https://www.hygon.cn"
+  },
+  {
+   "name": "Iluvatar CoreX",
+   "kind": "company",
+   "subsegments": [
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "GPGPU accelerators for AI training and inference",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.iluvatar.com",
+   "source": "https://www.iluvatar.com",
+   "note": "Pursued Hong Kong listing in 2025-26; confirm current listing status"
+  },
+  {
+   "name": "Infineon",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Si, SiC and GaN power semiconductors and voltage regulators for AI racks",
+   "url": "https://www.infineon.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC silicon partner"
+  },
+  {
+   "name": "Innoscience",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "GaN-on-silicon power devices",
+   "url": "https://www.innoscience.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC silicon partner"
+  },
+  {
+   "name": "Intel",
+   "kind": "company",
+   "subsegments": [
+    "n2.merchant",
+    "n2.cpu",
+    "n2.edge",
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Xeon CPUs, Gaudi 3 accelerators, data-centre GPUs, Core Ultra NPUs, oneAPI/OpenVINO",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.intel.com",
+   "source": "https://www.jonpeddie.com/news/ok-no-wedding-but-can-we-still-date/",
+   "note": "Talks to buy SambaNova collapsed Jan 2026; instead multiyear partnership plus $350M investment Feb 2026"
+  },
+  {
+   "name": "Intel oneAPI / OpenVINO",
+   "kind": "company",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Intel",
+   "one_liner": "Cross-architecture programming model and inference toolkit for Intel hardware",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html",
+   "source": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html"
+  },
+  {
+   "name": "iPronics",
+   "kind": "company",
+   "subsegments": [
+    "n2.photonic"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Programmable photonic optical circuit switches for AI data centres",
+   "url": "https://ipronics.com",
+   "source": "https://ipronics.com"
+  },
+  {
+   "name": "Kunlunxin",
+   "kind": "company",
+   "subsegments": [
+    "n2.china",
+    "n2.custom"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "parent": "Baidu (majority)",
+   "one_liner": "Kunlun AI accelerators, spun out of Baidu and used in Baidu AI Cloud",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.kunlunxin.com",
+   "source": "https://finance.yahoo.com/news/baidu-chip-unit-kunlunxin-files-093000937.html",
+   "note": "Filed for Hong Kong IPO 2026"
+  },
+  {
+   "name": "Lumai",
+   "kind": "company",
+   "subsegments": [
+    "n2.photonic"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Optical (free-space) AI inference compute, Oxford spin-out",
+   "url": "https://www.lumai.ai",
+   "source": "https://www.lumai.ai"
+  },
+  {
+   "name": "Marvell",
+   "kind": "company",
+   "subsegments": [
+    "n2.net",
+    "n2.custom",
+    "n2.cpu",
+    "n3.scaleup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Custom AI ASICs for hyperscalers, electro-optics DSPs, Teralynx switches, OCTEON DPUs",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.marvell.com",
+   "source": "https://investor.marvell.com/news-events/press-releases/detail/1005/marvell-completes-acquisition-of-celestial-ai",
+   "note": "Completed $3.25B acquisition of Celestial AI (photonic fabric) Feb 2026"
+  },
+  {
+   "name": "MatX",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "LLM-specialised training and inference chips",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://matx.com",
+   "source": "https://matx.com"
+  },
+  {
+   "name": "MediaTek",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge",
+    "n2.custom"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Dimensity phone SoCs with NPUs; custom ASIC design for hyperscalers",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.mediatek.com",
+   "source": "https://www.mediatek.com"
+  },
+  {
+   "name": "Meta MTIA",
+   "kind": "company",
+   "subsegments": [
+    "n2.custom"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Meta",
+   "one_liner": "Meta Training and Inference Accelerator, in-house ASIC for ranking and genAI workloads",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/",
+   "source": "https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/",
+   "note": "Meta acquired RISC-V chip startup Rivos (2025) to deepen in-house silicon"
+  },
+  {
+   "name": "MetaX",
+   "kind": "company",
+   "subsegments": [
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Xiyun/MXC GPGPUs for AI training and inference",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.metax-tech.com",
+   "source": "https://m.jiemian.com/article/13773863.html",
+   "note": "Shanghai STAR Market IPO Dec 2025"
+  },
+  {
+   "name": "Microchip (PCIe switches)",
+   "kind": "company",
+   "subsegments": [
+    "n2.net"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Switchtec PCIe Gen5/Gen6 switches used in AI servers",
+   "url": "https://www.microchip.com",
+   "source": "https://www.microchip.com"
+  },
+  {
+   "name": "Microsoft Maia & Cobalt",
+   "kind": "company",
+   "subsegments": [
+    "n2.custom",
+    "n2.cpu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Microsoft's in-house Maia AI accelerators and Cobalt Arm CPUs for Azure",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://azure.microsoft.com",
+   "source": "https://azure.microsoft.com"
+  },
+  {
+   "name": "Mobileye",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge",
+    "n9.physical"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "public",
+   "parent": "Intel (majority)",
+   "one_liner": "EyeQ ADAS/autonomous-driving SoCs",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.mobileye.com",
+   "source": "https://www.mobileye.com"
+  },
+  {
+   "name": "Modular",
+   "kind": "company",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Mojo language and MAX platform for portable AI across NVIDIA, AMD and other chips",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://www.modular.com",
+   "source": "https://www.modular.com"
+  },
+  {
+   "name": "Monolithic Power Systems",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Multiphase voltage regulators and power modules feeding AI accelerators",
+   "url": "https://www.monolithicpower.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC silicon partner"
+  },
+  {
+   "name": "Moore Threads",
+   "kind": "company",
+   "subsegments": [
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "MTT general-purpose GPUs for AI and graphics",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.mthreads.com",
+   "source": "https://m.jiemian.com/article/13724679.html",
+   "note": "Shanghai STAR Market IPO Dec 2025, shares up ~468% on debut"
+  },
+  {
+   "name": "Navitas Semiconductor",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "GaN and SiC power chips for 800 VDC AI rack power",
+   "url": "https://navitassemi.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC collaboration (2025-26)"
+  },
+  {
+   "name": "NeuReality",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup",
+    "n2.cpu"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "NR1 AI-CPU/NIC head-node chips that offload inference orchestration from host CPUs",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.neureality.ai",
+   "source": "https://www.neureality.ai"
+  },
+  {
+   "name": "Nubis Communications",
+   "kind": "company",
+   "subsegments": [
+    "n2.photonic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Ciena (2025)",
+   "one_liner": "Linear optical and electrical interconnect engines for AI scale-up",
+   "url": "https://www.datacenterdynamics.com/en/news/ciena-to-buy-optical-tech-firm-nubis-in-270m-ai-data-center-push/",
+   "source": "https://www.datacenterdynamics.com/en/news/ciena-to-buy-optical-tech-firm-nubis-in-270m-ai-data-center-push/",
+   "note": "Ciena acquired for ~$270M (announced Sep 2025)"
+  },
+  {
+   "name": "NVIDIA",
+   "kind": "company",
+   "subsegments": [
+    "n2.merchant",
+    "n2.cpu",
+    "n2.net",
+    "n2.sw",
+    "n2.edge",
+    "n4.onprem",
+    "n4.orch",
+    "n4.ops",
+    "n4.finance",
+    "n2.photonic",
+    "n2.export",
+    "n3.scaleup",
+    "n4.confidential",
+    "n4.access",
+    "n5.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Dominant data-centre GPUs (Blackwell/Rubin), Grace/Vera CPUs, NVLink/InfiniBand/Spectrum-X, CUDA, DGX systems, Jetson/Thor edge",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.nvidia.com",
+   "source": "https://evertiq.com/design/2025-12-17-nvidia-acquires-slurm-developer-schedmd",
+   "note": "Acquired SchedMD (Slurm) Dec 2025; licensed Groq tech and hired its leaders Dec 2025 (~$20B reported); ~$900M Enfabrica acqui-hire Sep 2025"
+  },
+  {
+   "name": "NXP (incl. Kinara)",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Automotive/industrial processors with eIQ NPUs; Kinara discrete edge AI chips",
+   "url": "https://www.nxp.com",
+   "source": "https://www.nxp.com",
+   "note": "Acquired edge-AI chip startup Kinara (announced Feb 2025)"
+  },
+  {
+   "name": "onsemi",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "SiC and silicon power devices for AI data-centre power conversion",
+   "url": "https://www.onsemi.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC silicon partner"
+  },
+  {
+   "name": "OpenAI custom accelerator (with Broadcom)",
+   "kind": "company",
+   "subsegments": [
+    "n2.custom"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "OpenAI",
+   "one_liner": "OpenAI-designed inference accelerator co-developed with Broadcom; 10GW deployment plan announced Oct 2025",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/",
+   "source": "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/"
+  },
+  {
+   "name": "OpenXLA / JAX",
+   "kind": "company",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Google-led",
+   "one_liner": "XLA compiler and JAX framework targeting TPUs, GPUs and CPUs",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://openxla.org",
+   "source": "https://openxla.org"
+  },
+  {
+   "name": "Positron",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Energy-efficient transformer inference appliances (Atlas) built on FPGA/ASIC",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.positron.ai",
+   "source": "https://www.businesswire.com/news/home/20260204250472/en/Positron-AI-Raises-%24230-Million-Series-B-at-Over-%241-Billion-Valuation-to-Scale-Energy-Efficient-AI-Inference",
+   "note": "$230M Series B at >$1B valuation Feb 2026"
+  },
+  {
+   "name": "Power Integrations",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "High-voltage GaN power conversion ICs",
+   "url": "https://www.power.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC silicon partner"
+  },
+  {
+   "name": "Preferred Networks (MN-Core)",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "MN-Core AI accelerators alongside its own models and supercomputers",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.preferred.jp/en/",
+   "source": "https://www.preferred.jp/en/"
+  },
+  {
+   "name": "PyTorch",
+   "kind": "company",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Linux Foundation",
+   "one_liner": "Dominant deep-learning framework with torch.compile, run by the PyTorch Foundation",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://pytorch.org",
+   "source": "https://pytorch.org"
+  },
+  {
+   "name": "Q.ANT",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup",
+    "n2.photonic"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Photonic native processing units for analog AI compute",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://qant.com",
+   "source": "https://qant.com"
+  },
+  {
+   "name": "Qualcomm",
+   "kind": "company",
+   "subsegments": [
+    "n2.merchant",
+    "n2.edge",
+    "n2.net",
+    "n2.cpu"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Snapdragon NPUs for phones/PCs/auto; Cloud AI 100 and AI200/AI250 data-centre inference cards",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.qualcomm.com",
+   "source": "https://itpro.com/business/acquisition/qualcomm-the-data-center-with-usd2-4-billion-alphawave-semi-acquisition",
+   "note": "Completed $2.4B Alphawave Semi (connectivity IP) acquisition Dec 2025; acquired RISC-V CPU designer Ventana Micro Dec 2025"
+  },
+  {
+   "name": "Rebellions",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "ATOM and REBEL inference NPUs for data centres; merged with SK's Sapeon",
+   "tags": [
+    "sovereign",
+    "cost"
+   ],
+   "url": "https://rebellions.ai",
+   "source": "https://thenextweb.com:443/news/rebellions-closes-400m-pre-ipo-round-at-a-2-34b-valuation",
+   "note": "$400M pre-IPO round at ~$2.3B valuation Mar 2026; KOSPI IPO targeted"
+  },
+  {
+   "name": "Renesas",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Voltage regulators and power stages for CPU/GPU boards",
+   "url": "https://www.renesas.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC silicon partner"
+  },
+  {
+   "name": "ROCm",
+   "kind": "company",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "AMD",
+   "one_liner": "AMD's open-source GPU software stack for Instinct accelerators",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://rocm.docs.amd.com",
+   "source": "https://rocm.docs.amd.com"
+  },
+  {
+   "name": "ROHM",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "SiC power devices and power ICs",
+   "url": "https://www.rohm.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC silicon partner"
+  },
+  {
+   "name": "SambaNova",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Reconfigurable dataflow unit (RDU) chips and SambaCloud/on-prem inference systems",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://sambanova.ai",
+   "source": "https://www.jonpeddie.com/news/ok-no-wedding-but-can-we-still-date/",
+   "note": "Intel acquisition talks failed Jan 2026; Intel partnership and investment Feb 2026; ~$1B round reported Jul 2026"
+  },
+  {
+   "name": "Samsung Exynos",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Samsung Electronics",
+   "one_liner": "Exynos mobile SoCs with on-device NPUs",
+   "url": "https://semiconductor.samsung.com",
+   "source": "https://semiconductor.samsung.com"
+  },
+  {
+   "name": "SAP Global Trade Services",
+   "kind": "company",
+   "subsegments": [
+    "n2.export"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "parent": "SAP",
+   "one_liner": "Export licence management and compliance screening within SAP",
+   "url": "https://www.sap.com/products/scm/global-trade-services.html",
+   "source": "https://www.sap.com/products/scm/global-trade-services.html"
+  },
+  {
+   "name": "Sayari",
+   "kind": "company",
+   "subsegments": [
+    "n2.export"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Corporate ownership and trade data for sanctions and export-diversion screening",
+   "url": "https://sayari.com",
+   "source": "https://sayari.com"
+  },
+  {
+   "name": "SiMa.ai",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "MLSoC platform for physical-AI/edge inference",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://sima.ai",
+   "source": "https://sima.ai"
+  },
+  {
+   "name": "SiPearl",
+   "kind": "company",
+   "subsegments": [
+    "n2.cpu"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Rhea Arm-based HPC/AI CPU for European exascale and sovereign systems",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://sipearl.com",
+   "source": "https://sipearl.com"
+  },
+  {
+   "name": "Spectral Compute (SCALE)",
+   "kind": "company",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "SCALE toolkit compiling unmodified CUDA code for AMD GPUs",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://scale-lang.com",
+   "source": "https://scale-lang.com"
+  },
+  {
+   "name": "STMicroelectronics",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "SiC, GaN and silicon power devices for server power",
+   "url": "https://www.st.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC silicon partner"
+  },
+  {
+   "name": "Taalas",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Model-specific hardwired inference chips that bake model weights into silicon",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://taalas.com",
+   "source": "https://taalas.com"
+  },
+  {
+   "name": "Tesla AI silicon",
+   "kind": "company",
+   "subsegments": [
+    "n2.custom",
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Tesla",
+   "one_liner": "In-house FSD/AI5 inference chips for vehicles and robots",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.tesla.com/AI",
+   "source": "https://www.tesla.com/AI",
+   "note": "Dojo supercomputer team disbanded Aug 2025; focus moved to AI5/AI6 chips"
+  },
+  {
+   "name": "Texas Instruments",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Power management ICs and 800V-to-low-voltage reference designs",
+   "url": "https://www.ti.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "NVIDIA 800 VDC silicon partner"
+  },
+  {
+   "name": "Thomson Reuters ONESOURCE Global Trade",
+   "kind": "company",
+   "subsegments": [
+    "n2.export"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "public",
+   "parent": "Thomson Reuters",
+   "one_liner": "Global trade management and export compliance software",
+   "url": "https://tax.thomsonreuters.com/en/onesource/global-trade",
+   "source": "https://tax.thomsonreuters.com/en/onesource/global-trade"
+  },
+  {
+   "name": "tinygrad (tiny corp)",
+   "kind": "company",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Minimal deep-learning framework and compiler targeting AMD and other GPUs",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://tinygrad.org",
+   "source": "https://tinygrad.org"
+  },
+  {
+   "name": "Triton",
+   "kind": "company",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "OpenAI-led",
+   "one_liner": "Python-based GPU kernel language and compiler started by OpenAI",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://triton-lang.org",
+   "source": "https://triton-lang.org"
+  },
+  {
+   "name": "Upscale AI",
+   "kind": "company",
+   "subsegments": [
+    "n2.net",
+    "n3.scaleup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Open-standard (UALink/Ultra Ethernet) scale-up networking silicon for AI clusters",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://upscaleai.com",
+   "source": "https://upscaleai.com"
+  },
+  {
+   "name": "US Bureau of Industry and Security (BIS)",
+   "kind": "company",
+   "subsegments": [
+    "n2.export"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "government",
+   "one_liner": "US Commerce agency setting and licensing export controls on AI chips",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.bis.gov",
+   "source": "https://www.bis.gov/press-release/department-commerce-rescinds-biden-era-artificial-intelligence-diffusion-rule-strengthens-chip-related",
+   "note": "Rescinded AI Diffusion Rule (May 2025) and issued new chip guidance"
+  },
+  {
+   "name": "VSORA",
+   "kind": "company",
+   "subsegments": [
+    "n2.startup"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Jotunn inference chips for data centres",
+   "tags": [
+    "sovereign",
+    "cost"
+   ],
+   "url": "https://vsora.com",
+   "source": "https://vsora.com"
+  },
+  {
+   "name": "Xscape Photonics",
+   "kind": "company",
+   "subsegments": [
+    "n2.photonic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Multi-wavelength laser and photonic interconnect for GPU-to-GPU links",
+   "url": "https://convergedigest.com/startups/optical/",
+   "source": "https://convergedigest.com/startups/optical/"
+  },
+  {
+   "name": "Xsight Labs",
+   "kind": "company",
+   "subsegments": [
+    "n2.net",
+    "n2.cpu"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "X-series Ethernet switch chips and E1 DPU",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://xsightlabs.com",
+   "source": "https://xsightlabs.com"
+  },
+  {
+   "name": "Apache TVM (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw",
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Apache Software Foundation",
+   "licence": "Apache-2.0",
+   "access": "pip install; compile models for CPUs, GPUs and NPUs",
+   "repo": "https://github.com/apache/tvm",
+   "stars": 13900,
+   "archived": false,
+   "one_liner": "Open deep-learning compiler stack for diverse hardware backends",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/apache/tvm",
+   "source": "https://github.com/apache/tvm"
+  },
+  {
+   "name": "Caliptra",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.cpu",
+    "n4.confidential",
+    "n1.ip"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "CHIPS Alliance (Linux Foundation)",
+   "licence": "Apache-2.0",
+   "access": "Integrate RTL and firmware into SoC as root of trust",
+   "repo": "https://github.com/chipsalliance/caliptra",
+   "stars": 479,
+   "archived": false,
+   "one_liner": "Open silicon root-of-trust IP and firmware for datacentre CPUs, GPUs and accelerators",
+   "tags": [
+    "open-source",
+    "security"
+   ],
+   "url": "https://github.com/chipsalliance/caliptra",
+   "source": "https://github.com/chipsalliance/caliptra"
+  },
+  {
+   "name": "CMSIS-NN",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Arm",
+   "licence": "Apache-2.0",
+   "access": "Include library in Cortex-M firmware",
+   "repo": "https://github.com/ARM-software/CMSIS-NN",
+   "stars": 439,
+   "archived": false,
+   "one_liner": "Optimised neural-network kernels for Arm Cortex-M microcontrollers",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/ARM-software/CMSIS-NN",
+   "source": "https://github.com/ARM-software/CMSIS-NN"
+  },
+  {
+   "name": "CUTLASS",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw",
+    "n2.merchant"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "BSD-3-Clause",
+   "access": "Header-only C++ and Python CuTe DSL",
+   "repo": "https://github.com/NVIDIA/cutlass",
+   "stars": 10400,
+   "archived": false,
+   "one_liner": "CUDA templates and Python DSL for high-performance GEMM and attention kernels",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/NVIDIA/cutlass",
+   "source": "https://github.com/NVIDIA/cutlass",
+   "note": "CUTLASS 4.8.0 released Aug 2026"
+  },
+  {
+   "name": "DPDK",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.cpu",
+    "n2.net"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "DPDK project (Linux Foundation)",
+   "licence": "BSD-3-Clause (core); GPL-2.0 (kernel parts)",
+   "access": "Build or distro packages; user-space packet processing on NICs/DPUs",
+   "repo": "https://github.com/DPDK/dpdk",
+   "stars": 4500,
+   "archived": false,
+   "one_liner": "Kernel-bypass packet-processing libraries underpinning SmartNIC/DPU and network appliances",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/DPDK/dpdk",
+   "source": "https://github.com/DPDK/dpdk"
+  },
+  {
+   "name": "ExecuTorch (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.edge",
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "PyTorch (Meta-led)",
+   "licence": "BSD",
+   "access": "pip install executorch; deploy to phone and embedded NPUs",
+   "repo": "https://github.com/pytorch/executorch",
+   "stars": 4900,
+   "archived": false,
+   "one_liner": "On-device PyTorch runtime with delegates for Apple, Qualcomm, Arm and MediaTek NPUs",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/pytorch/executorch",
+   "source": "https://github.com/pytorch/executorch"
+  },
+  {
+   "name": "FlagGems / FlagOS",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.china",
+    "n2.sw"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "FlagOS project (BAAI-led)",
+   "licence": "Apache-2.0",
+   "access": "pip install; Triton operators across 10+ chip backends",
+   "repo": "https://github.com/flagos-ai/FlagGems",
+   "stars": 1100,
+   "archived": false,
+   "one_liner": "Triton-based operator library letting PyTorch run on multiple Chinese and Western AI chips",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://github.com/flagos-ai/FlagGems",
+   "source": "https://github.com/flagos-ai/FlagGems"
+  },
+  {
+   "name": "Huawei CANN (open-sourced)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.china",
+    "n2.sw"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Huawei",
+   "access": "Source on GitCode; runs on Ascend NPUs",
+   "repo": "https://gitcode.com/cann",
+   "one_liner": "Ascend NPU compute architecture (operators, Ascend C, graph engine); Huawei's CUDA counterpart",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://www.huawei.com/en/news/2025/9/hc-shengten-opensource",
+   "source": "https://www.huawei.com/en/news/2025/9/hc-shengten-opensource",
+   "note": "Operators open-sourced on GitCode Sep 2025; GE, Ascend C and MindIE committed for Dec 2025"
+  },
+  {
+   "name": "InferenceX (formerly InferenceMAX)",
+   "kind": "open dataset",
+   "subsegments": [
+    "n2.merchant",
+    "n4.neo",
+    "n7.bench"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "SemiAnalysis",
+   "licence": "Apache-2.0",
+   "access": "Public dashboard; clone repo to reproduce runs",
+   "repo": "https://github.com/SemiAnalysisAI/InferenceX",
+   "stars": 1400,
+   "archived": false,
+   "one_liner": "Continuously updated open inference benchmark comparing NVIDIA, AMD and other hardware",
+   "tags": [
+    "open-data",
+    "open-source",
+    "performance",
+    "cost"
+   ],
+   "url": "https://inferencex.semianalysis.com/about",
+   "source": "https://github.com/SemiAnalysisAI/InferenceX",
+   "note": "Launched Oct 2025 as InferenceMAX; renamed InferenceX"
+  },
+  {
+   "name": "IREE",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw",
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "LF AI & Data Foundation (sandbox)",
+   "licence": "Apache-2.0 with LLVM exceptions",
+   "access": "pip install iree-base-compiler; compile models for many targets",
+   "repo": "https://github.com/iree-org/iree",
+   "stars": 3900,
+   "archived": false,
+   "one_liner": "MLIR-based end-to-end compiler and runtime for ML across datacentre and edge hardware",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/iree-org/iree",
+   "source": "https://github.com/iree-org/iree"
+  },
+  {
+   "name": "KernelBench",
+   "kind": "open dataset",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Stanford Scaling Intelligence Lab",
+   "licence": "MIT",
+   "access": "Clone repo; evaluate LLM-written GPU kernels",
+   "repo": "https://github.com/ScalingIntelligence/KernelBench",
+   "stars": 1200,
+   "archived": false,
+   "one_liner": "Benchmark for LLMs' ability to generate correct, fast GPU kernels",
+   "tags": [
+    "open-data",
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/ScalingIntelligence/KernelBench",
+   "source": "https://github.com/ScalingIntelligence/KernelBench"
+  },
+  {
+   "name": "libfabric (OpenFabrics Interfaces)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.net",
+    "n3.network"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OFI Working Group (OpenFabrics Alliance)",
+   "licence": "BSD-2-Clause or GPL-2.0 (dual)",
+   "access": "Distro packages; providers for verbs, EFA, CXI",
+   "repo": "https://github.com/ofiwg/libfabric",
+   "stars": 819,
+   "archived": false,
+   "one_liner": "Fabric-agnostic user-space networking API used by MPI, collective libraries and HPC/AI NICs",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/ofiwg/libfabric",
+   "source": "https://github.com/ofiwg/libfabric"
+  },
+  {
+   "name": "LiteRT",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google AI Edge",
+   "licence": "Apache-2.0",
+   "access": "pip/Maven; deploy models on device",
+   "repo": "https://github.com/google-ai-edge/LiteRT",
+   "stars": 3500,
+   "archived": false,
+   "one_liner": "Google's on-device runtime (formerly TensorFlow Lite) with GPU/NPU acceleration",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/google-ai-edge/LiteRT",
+   "source": "https://github.com/google-ai-edge/LiteRT"
+  },
+  {
+   "name": "MindSpore",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.china",
+    "n2.sw"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Huawei",
+   "licence": "Apache-2.0",
+   "access": "pip install; main development on Gitee",
+   "repo": "https://github.com/mindspore-ai/mindspore",
+   "stars": 4700,
+   "archived": false,
+   "one_liner": "Deep-learning framework optimised for Huawei Ascend NPUs",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://github.com/mindspore-ai/mindspore",
+   "source": "https://github.com/mindspore-ai/mindspore"
+  },
+  {
+   "name": "MLIR",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw",
+    "n2.startup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "LLVM Foundation",
+   "licence": "Apache-2.0 with LLVM exceptions",
+   "access": "Part of llvm-project; build into compilers",
+   "repo": "https://github.com/llvm/llvm-project",
+   "stars": 41100,
+   "archived": false,
+   "one_liner": "Multi-level compiler IR underpinning most AI-chip compilers (Triton, IREE, XLA, Mojo)",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://mlir.llvm.org",
+   "source": "https://github.com/llvm/llvm-project"
+  },
+  {
+   "name": "MLPerf Inference / Training",
+   "kind": "open dataset",
+   "subsegments": [
+    "n2.merchant",
+    "n2.startup",
+    "n3.servers"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "MLCommons",
+   "licence": "Apache-2.0",
+   "access": "Run reference implementations; results public on mlcommons.org",
+   "repo": "https://github.com/mlcommons/inference",
+   "stars": 1600,
+   "archived": false,
+   "one_liner": "Industry-standard peer-reviewed benchmarks comparing AI chips and systems",
+   "tags": [
+    "open-data",
+    "open-source",
+    "performance"
+   ],
+   "url": "https://mlcommons.org",
+   "source": "https://github.com/mlcommons/inference"
+  },
+  {
+   "name": "Mojo / MAX (Modular Platform)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Modular",
+   "licence": "Apache-2.0 with LLVM exceptions (repo); MAX use under Modular Community License",
+   "access": "pip/pixi install modular; Mojo kernels on NVIDIA and AMD GPUs",
+   "repo": "https://github.com/modular/modular",
+   "stars": 29900,
+   "archived": false,
+   "one_liner": "Mojo language and MAX kernels/serving: a hardware-portable alternative to CUDA",
+   "tags": [
+    "open-source",
+    "performance",
+    "developer"
+   ],
+   "url": "https://github.com/modular/modular",
+   "source": "https://github.com/modular/modular",
+   "note": "Repo now hosts Mojo compiler, stdlib and MAX kernels; compiler contributions not yet accepted"
+  },
+  {
+   "name": "NCCL",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw",
+    "n3.network"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "BSD-3-Clause",
+   "access": "Bundled with PyTorch/CUDA; build from source",
+   "repo": "https://github.com/NVIDIA/nccl",
+   "stars": 5100,
+   "archived": false,
+   "one_liner": "Collective communication library for multi-GPU, multi-node training and inference",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/NVIDIA/nccl",
+   "source": "https://github.com/NVIDIA/nccl"
+  },
+  {
+   "name": "oneAPI specification (UXL Foundation)",
+   "kind": "standard",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "UXL Foundation (Linux Foundation)",
+   "licence": "CC-BY-4.0",
+   "access": "Spec online at UXL Foundation; implementations incl. Intel oneAPI",
+   "repo": "https://github.com/uxlfoundation/oneAPI-spec",
+   "stars": 217,
+   "archived": true,
+   "one_liner": "Open cross-vendor accelerator programming spec (SYCL-based libraries) to loosen CUDA lock-in",
+   "tags": [
+    "open-standard",
+    "cost"
+   ],
+   "url": "https://uxlfoundation.org",
+   "source": "https://github.com/uxlfoundation/oneAPI-spec",
+   "note": "GitHub spec repo archived Sep 2026; spec moved to a dynamic web version"
+  },
+  {
+   "name": "ONNX",
+   "kind": "standard",
+   "subsegments": [
+    "n2.sw",
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "LF AI & Data (Linux Foundation)",
+   "licence": "Apache-2.0",
+   "access": "pip install onnx; export from PyTorch/TensorFlow",
+   "repo": "https://github.com/onnx/onnx",
+   "stars": 21500,
+   "archived": false,
+   "one_liner": "Open model-exchange format letting models move across frameworks and chip runtimes",
+   "tags": [
+    "open-standard",
+    "developer"
+   ],
+   "url": "https://github.com/onnx/onnx",
+   "source": "https://github.com/onnx/onnx"
+  },
+  {
+   "name": "ONNX Runtime",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.edge",
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Microsoft",
+   "licence": "MIT",
+   "access": "pip install onnxruntime; execution providers per chip",
+   "repo": "https://github.com/microsoft/onnxruntime",
+   "stars": 22100,
+   "archived": false,
+   "one_liner": "Cross-platform inference engine with pluggable hardware execution providers",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/microsoft/onnxruntime",
+   "source": "https://github.com/microsoft/onnxruntime"
+  },
+  {
+   "name": "OpenVINO",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.edge",
+    "n2.cpu",
+    "n7.local",
+    "n7.engine"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Intel",
+   "licence": "Apache-2.0",
+   "access": "pip install openvino; Intel CPU/GPU/NPU",
+   "repo": "https://github.com/openvinotoolkit/openvino",
+   "stars": 10700,
+   "archived": false,
+   "one_liner": "Toolkit for optimising and deploying inference on Intel CPUs, GPUs and NPUs",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/openvinotoolkit/openvino",
+   "source": "https://github.com/openvinotoolkit/openvino"
+  },
+  {
+   "name": "OpenXLA (XLA)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw",
+    "n2.custom"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenXLA project (Google-led)",
+   "licence": "Apache-2.0",
+   "access": "Used via JAX, PyTorch/XLA, TensorFlow",
+   "repo": "https://github.com/openxla/xla",
+   "stars": 4600,
+   "archived": false,
+   "one_liner": "ML compiler targeting GPUs, CPUs and TPUs; the software path into Google TPUs",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/openxla/xla",
+   "source": "https://github.com/openxla/xla"
+  },
+  {
+   "name": "ROCm (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw",
+    "n2.merchant"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "AMD",
+   "licence": "MIT (meta-repo; components under mixed permissive licences)",
+   "access": "Install packages or build via TheRock on AMD Instinct/Radeon GPUs",
+   "repo": "https://github.com/ROCm/TheRock",
+   "stars": 1400,
+   "archived": false,
+   "one_liner": "AMD's open GPU compute stack (HIP, libraries, compilers); the main CUDA alternative",
+   "tags": [
+    "open-source",
+    "performance",
+    "cost"
+   ],
+   "url": "https://github.com/ROCm/TheRock",
+   "source": "https://github.com/ROCm/ROCm",
+   "note": "ROCm/ROCm repo (6.8k stars) archived 19 Oct 2026; since ROCm 7.14 built and released via TheRock"
+  },
+  {
+   "name": "SYCL",
+   "kind": "standard",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Khronos Group",
+   "access": "Free spec; implementations incl. AdaptiveCpp and Intel DPC++",
+   "one_liner": "Single-source C++ standard for heterogeneous accelerator programming",
+   "tags": [
+    "open-standard",
+    "cost"
+   ],
+   "url": "https://www.khronos.org/sycl/",
+   "source": "https://www.khronos.org/sycl/"
+  },
+  {
+   "name": "TileLang",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw",
+    "n2.china"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "tile-ai community",
+   "access": "pip install tilelang",
+   "repo": "https://github.com/tile-ai/tilelang",
+   "stars": 7400,
+   "archived": false,
+   "one_liner": "Tile-level DSL for writing high-performance kernels across NVIDIA, AMD and Chinese accelerators",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/tile-ai/tilelang",
+   "source": "https://github.com/tile-ai/tilelang"
+  },
+  {
+   "name": "Triton (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "triton-lang community (OpenAI-led)",
+   "licence": "MIT",
+   "access": "pip install triton; write GPU kernels in Python",
+   "repo": "https://github.com/triton-lang/triton",
+   "stars": 20300,
+   "archived": false,
+   "one_liner": "Python DSL and compiler for GPU kernels with NVIDIA, AMD and other backends",
+   "tags": [
+    "open-source",
+    "performance",
+    "developer"
+   ],
+   "url": "https://github.com/triton-lang/triton",
+   "source": "https://github.com/triton-lang/triton"
+  },
+  {
+   "name": "TT-Metalium / TT-NN",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.startup",
+    "n2.sw"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "open",
+   "steward": "Tenstorrent",
+   "licence": "Apache-2.0",
+   "access": "Clone and build; runs on Tenstorrent Wormhole/Blackhole cards",
+   "repo": "https://github.com/tenstorrent/tt-metal",
+   "stars": 1700,
+   "archived": false,
+   "one_liner": "Fully open low-level kernel SDK and NN library for Tenstorrent AI processors",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://github.com/tenstorrent/tt-metal",
+   "source": "https://github.com/tenstorrent/tt-metal"
+  },
+  {
+   "name": "UALink",
+   "kind": "standard",
+   "subsegments": [
+    "n2.net",
+    "n3.scaleup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "UALink Consortium",
+   "access": "All specs free public download from UALink Consortium",
+   "one_liner": "Open accelerator-to-accelerator scale-up interconnect; the non-NVIDIA answer to NVLink",
+   "tags": [
+    "open-standard",
+    "performance"
+   ],
+   "url": "https://ualinkconsortium.org/specification/",
+   "source": "https://www.businesswire.com/news/home/20260407620696/en/",
+   "note": "Apr 2026: Common Spec 2.0 (in-network compute), 200G DL/PL 2.0, Manageability 1.0, Chiplet 1.0"
+  },
+  {
+   "name": "Ultra Ethernet (UEC specification)",
+   "kind": "standard",
+   "subsegments": [
+    "n2.net",
+    "n3.network"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Ultra Ethernet Consortium (Linux Foundation)",
+   "access": "Spec PDFs published on ultraethernet.org",
+   "one_liner": "Ethernet transport, congestion-control and NIC spec for AI/HPC scale-out networks",
+   "tags": [
+    "open-standard",
+    "performance"
+   ],
+   "url": "https://ultraethernet.org/specification",
+   "source": "https://www.networkworld.com/article/4235340/ultra-ethernet-1-1-extends-the-specification-to-scale-up-networks-and-adds-programmable-congestion-control.html",
+   "note": "1.0 Jun 2025; 1.0.2 Jan 2026; 1.1 (12 Oct 2026) adds scale-up profile, in-network collectives, programmable congestion control"
+  },
+  {
+   "name": "US Consolidated Screening List",
+   "kind": "open dataset",
+   "subsegments": [
+    "n2.export"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "US International Trade Administration",
+   "licence": "Public domain (US government data)",
+   "access": "Free search and API on trade.gov",
+   "one_liner": "Merged US export-control screening lists (incl. BIS Entity List) for chip-sale compliance",
+   "tags": [
+    "open-data",
+    "security"
+   ],
+   "url": "https://www.trade.gov/consolidated-screening-list",
+   "source": "https://www.trade.gov/consolidated-screening-list"
+  },
+  {
+   "name": "ZLUDA",
+   "kind": "open-source project",
+   "subsegments": [
+    "n2.sw"
+   ],
+   "status": "open",
+   "steward": "ZLUDA project (independent)",
+   "licence": "Apache-2.0 / MIT",
+   "access": "Download release; run unmodified CUDA apps on non-NVIDIA GPUs",
+   "repo": "https://github.com/vosen/ZLUDA",
+   "stars": 15100,
+   "archived": false,
+   "one_liner": "Drop-in CUDA compatibility layer for non-NVIDIA GPUs",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/vosen/ZLUDA",
+   "source": "https://github.com/vosen/ZLUDA"
+  }
+ ]
+}

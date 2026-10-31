@@ -1,0 +1,1967 @@
+{
+ "node": "n3",
+ "notes": {
+  "n3.servers": "Taiwanese ODMs (Foxconn, Quanta, Wiwynn) build most hyperscaler AI racks; Dell, HPE, Supermicro and Lenovo serve enterprise, sovereign and neocloud buyers.",
+  "n3.network": "NVIDIA (InfiniBand + Spectrum-X) and Arista lead AI back-end networking, with Cisco, Celestica white-box and HPE-Juniper following; Ethernet is gaining share over InfiniBand.",
+  "n3.optics": "Chinese vendors InnoLight and Eoptolink lead 800G/1.6T transceiver volume, with Coherent, Lumentum and Fabrinet the main Western suppliers; AECs (Credo) take short in-rack links.",
+  "n3.storage": "AI-native vendors (VAST at $30B valuation in Mar 2026, WEKA, DDN) compete with Dell, NetApp, Pure and IBM; KV-cache offload is the new battleground.",
+  "n3.opt": "Liquid-cooled racks are now standard for GB200-class systems; KV-cache offload to flash (NVIDIA ICMS, Pliops, WEKA, VAST) and optical I/O are emerging efficiency levers.",
+  "n3.scaleup": "NVLink dominates; UALink and Broadcom scale-up Ethernet are the open alternatives",
+  "n3.rackpower": "Shift to 800 VDC with Delta and Lite-On supplying MGX power racks",
+  "n3.mgmt": "NVIDIA Mission Control/BCM bundled with DGX; open tools (MAAS, Slurm) elsewhere",
+  "n3.refurb": "Young market: H100/A100 resale marketplaces launched in 2026 as Blackwell displaces Hopper"
+ },
+ "entries": [
+  {
+   "name": "Accelink Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Chinese optical components and modules",
+   "url": "https://www.accelink.com",
+   "source": "https://www.accelink.com"
+  },
+  {
+   "name": "Accton / Edgecore",
+   "kind": "company",
+   "subsegments": [
+    "n3.network"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "White-box switch ODM for hyperscalers",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.accton.com",
+   "source": "https://www.accton.com"
+  },
+  {
+   "name": "Advanced Energy",
+   "kind": "company",
+   "subsegments": [
+    "n3.rackpower"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "High-density power shelves and supplies for AI servers",
+   "url": "https://www.advancedenergy.com",
+   "source": "https://www.advancedenergy.com"
+  },
+  {
+   "name": "Amphenol",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics",
+    "n3.scaleup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Copper backplane/cable assemblies for NVL racks; fibre via CommScope CCS",
+   "tags": [],
+   "url": "https://www.amphenol.com",
+   "source": "https://businesswire.com/news/home/20260112617512/en/Amphenol-Completes-Acquisition-of-CCS-Business-From-CommScope",
+   "note": "Closed CommScope CCS acquisition (Jan 2026)"
+  },
+  {
+   "name": "Applied Optoelectronics (AAOI)",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "800G datacom transceivers and lasers",
+   "url": "https://ao-inc.com",
+   "source": "https://www.zacks.com/stock/news/2904548/can-800g-transceivers-drive-aaois-revenue-growth-in-2026"
+  },
+  {
+   "name": "Arista Networks",
+   "kind": "company",
+   "subsegments": [
+    "n3.network"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "High-radix Ethernet switches for AI back-end and front-end networks",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.arista.com",
+   "source": "https://www.nextplatform.com/connect/2026/08/10/as-ai-networks-scale-in-three-directions-so-does-arista/5285500"
+  },
+  {
+   "name": "ASUS",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "AI servers and rack systems",
+   "url": "https://servers.asus.com",
+   "source": "https://servers.asus.com"
+  },
+  {
+   "name": "Ayar Labs",
+   "kind": "company",
+   "subsegments": [
+    "n3.opt",
+    "n2.net",
+    "n2.photonic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Optical I/O chiplets for low-power scale-up interconnect",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://ayarlabs.com",
+   "source": "https://ayarlabs.com"
+  },
+  {
+   "name": "Broadcom (optics)",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics",
+    "n3.opt",
+    "n2.photonic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Broadcom",
+   "one_liner": "Optical DSPs, VCSEL/EML lasers and co-packaged optics switches",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.broadcom.com",
+   "source": "https://www.broadcom.com"
+  },
+  {
+   "name": "Canonical MAAS",
+   "kind": "company",
+   "subsegments": [
+    "n3.mgmt"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open-source",
+   "parent": "Canonical",
+   "one_liner": "Open-source bare-metal provisioning (Metal as a Service)",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://maas.io",
+   "source": "https://maas.io"
+  },
+  {
+   "name": "Celestica",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers",
+    "n3.network"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "EMS/ODM for hyperscale AI racks and white-box 800G switches",
+   "url": "https://www.celestica.com",
+   "source": "https://www.celestica.com"
+  },
+  {
+   "name": "Ceph",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Ceph Foundation (Linux Foundation)",
+   "one_liner": "Open-source unified object/block/file storage",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://ceph.io",
+   "source": "https://ceph.io"
+  },
+  {
+   "name": "Ciena",
+   "kind": "company",
+   "subsegments": [
+    "n3.network",
+    "n3.optics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Coherent optical transport for DC interconnect and scale-across",
+   "url": "https://www.ciena.com",
+   "source": "https://www.ciena.com"
+  },
+  {
+   "name": "Cisco",
+   "kind": "company",
+   "subsegments": [
+    "n3.network",
+    "n3.optics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Nexus/Silicon One Ethernet switches and optics for AI fabrics",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.cisco.com",
+   "source": "https://www.cisco.com"
+  },
+  {
+   "name": "Cloudian",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "S3-compatible object storage with GPUDirect for AI",
+   "url": "https://cloudian.com",
+   "source": "https://cloudian.com"
+  },
+  {
+   "name": "Coherent",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Datacom transceivers, lasers and optical components",
+   "url": "https://www.coherent.com",
+   "source": "https://www.coherent.com"
+  },
+  {
+   "name": "Compute Exchange",
+   "kind": "company",
+   "subsegments": [
+    "n3.refurb"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Marketplace for reserved GPU capacity plus used and refurbished GPUs",
+   "url": "https://siliconangle.com/2026/07/17/compute-exchange-opens-secondary-market-used-nvidia-h100-a100-gpus/",
+   "source": "https://siliconangle.com/2026/07/17/compute-exchange-opens-secondary-market-used-nvidia-h100-a100-gpus/",
+   "note": "Jul 2026: launched used/refurbished H100/A100 marketplace"
+  },
+  {
+   "name": "Cornelis Networks",
+   "kind": "company",
+   "subsegments": [
+    "n3.network",
+    "n2.net"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Omni-Path high-performance fabric for AI/HPC",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.cornelisnetworks.com",
+   "source": "https://www.cornelisnetworks.com"
+  },
+  {
+   "name": "Corning",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Optical fibre and high-density connectivity for AI DCs",
+   "url": "https://www.corning.com",
+   "source": "https://www.corning.com"
+  },
+  {
+   "name": "Credo Technology",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics",
+    "n3.scaleup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Active electrical cables (AECs) and SerDes for AI racks",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://credosemi.com",
+   "source": "https://credosemi.com"
+  },
+  {
+   "name": "DDN",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "EXAScaler (Lustre) and Infinia storage for large AI clusters",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.ddn.com",
+   "source": "https://www.ddn.com"
+  },
+  {
+   "name": "Dell Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers",
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "PowerEdge AI servers, rack-scale 'AI Factory' and PowerScale storage",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.dell.com",
+   "source": "https://www.dell.com"
+  },
+  {
+   "name": "DriveNets",
+   "kind": "company",
+   "subsegments": [
+    "n3.network"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Disaggregated scheduled-fabric networking software for AI clusters",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://drivenets.com",
+   "source": "https://drivenets.com"
+  },
+  {
+   "name": "Enfabrica",
+   "kind": "company",
+   "subsegments": [
+    "n3.opt",
+    "n2.net"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "NVIDIA (2025)",
+   "one_liner": "Accelerated compute fabric/memory pooling chips; team and IP acquired by NVIDIA",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://enfabrica.net",
+   "source": "https://enfabrica.net",
+   "note": "NVIDIA acqui-hire and licence, ~$900M (Sep 2025)"
+  },
+  {
+   "name": "Eoptolink",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "800G/1.6T transceivers incl. LPO",
+   "url": "https://www.eoptolink.com",
+   "source": "https://www.eoptolink.com"
+  },
+  {
+   "name": "Eviden / Bull",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "government",
+   "parent": "French State (2026)",
+   "one_liner": "BullSequana supercomputers and AI systems",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.eviden.com",
+   "source": "https://www.theregister.com/2026/04/01/france_bull_purchase/",
+   "note": "French state completed purchase of Bull from Atos (Mar/Apr 2026)"
+  },
+  {
+   "name": "Fabrinet",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "TH",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Contract manufacturer of optical transceivers (major NVIDIA supplier)",
+   "url": "https://www.fabrinet.com",
+   "source": "https://www.fabrinet.com"
+  },
+  {
+   "name": "Flex",
+   "kind": "company",
+   "subsegments": [
+    "n3.rackpower"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Rack power shelves, busbars and integrated power pods for data centres",
+   "url": "https://flex.com",
+   "source": "https://flex.com"
+  },
+  {
+   "name": "Foxconn (Hon Hai)",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Largest ODM for NVIDIA GB200/GB300 rack assembly",
+   "url": "https://www.foxconn.com",
+   "source": "https://www.foxconn.com"
+  },
+  {
+   "name": "Fujikura",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "High-density optical fibre and cables",
+   "url": "https://www.fujikura.co.jp",
+   "source": "https://www.fujikura.co.jp"
+  },
+  {
+   "name": "Fujitsu",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers",
+    "n10.si"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Supercomputers and AI servers",
+   "tags": [
+    "sovereign",
+    "enterprise"
+   ],
+   "url": "https://www.fujitsu.com",
+   "source": "https://www.fujitsu.com"
+  },
+  {
+   "name": "Gigabyte (Giga Computing)",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "GPU servers and rack-scale systems",
+   "url": "https://www.gigabyte.com",
+   "source": "https://www.gigabyte.com"
+  },
+  {
+   "name": "H3C",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers",
+    "n3.network"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "parent": "Unisplendour",
+   "one_liner": "Chinese servers, switches and storage",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.h3c.com",
+   "source": "https://www.h3c.com"
+  },
+  {
+   "name": "Hammerspace",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage",
+    "n3.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Global data orchestration and Tier 0 GPU-local storage",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://hammerspace.com",
+   "source": "https://nand-research.com/research-note-hammerspace-100m-series-b-to-accelerate-ai-infrastructure-growth/2/",
+   "note": "Raised $100M Series B (2025)"
+  },
+  {
+   "name": "Hedgehog",
+   "kind": "company",
+   "subsegments": [
+    "n3.network",
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Open-source SONiC-based AI network fabric software",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://hedgehog.cloud",
+   "source": "https://hedgehog.cloud"
+  },
+  {
+   "name": "Hewlett Packard Enterprise",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers",
+    "n3.network",
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Cray supercomputers, ProLiant AI servers, Juniper networking and Alletra storage",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.hpe.com",
+   "source": "https://www.hpe.com",
+   "note": "Closed Juniper Networks acquisition (Jul 2025)"
+  },
+  {
+   "name": "Hisense Broadband",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "parent": "Hisense",
+   "one_liner": "Optical transceivers and components",
+   "url": "https://www.hisense-broadband.com",
+   "source": "https://www.hisense-broadband.com"
+  },
+  {
+   "name": "Hitachi Vantara",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Hitachi",
+   "one_liner": "Enterprise storage and Hitachi iQ AI infrastructure",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.hitachivantara.com",
+   "source": "https://www.hitachivantara.com"
+  },
+  {
+   "name": "Huawei",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers",
+    "n3.network",
+    "n3.storage",
+    "n3.optics",
+    "n3.scaleup"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Ascend SuperPoD clusters, CloudEngine switches, OceanStor AI storage",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.huawei.com",
+   "source": "https://www.huawei.com"
+  },
+  {
+   "name": "IBM Storage Scale",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "IBM",
+   "one_liner": "Parallel file system (GPFS) for AI/HPC",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.ibm.com/products/storage-scale",
+   "source": "https://www.ibm.com/products/storage-scale"
+  },
+  {
+   "name": "InnoLight (Zhongji Innolight)",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Largest supplier of 800G/1.6T datacom transceivers",
+   "url": "https://www.innolight.com",
+   "source": "https://www.trendforce.com/presscenter/news/20260420-13017.html"
+  },
+  {
+   "name": "Inspur Information",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "China's largest server vendor",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.ieisystem.com",
+   "source": "https://www.ieisystem.com"
+  },
+  {
+   "name": "Inventec",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Server ODM for hyperscalers",
+   "url": "https://www.inventec.com",
+   "source": "https://www.inventec.com"
+  },
+  {
+   "name": "Iron Mountain Asset Lifecycle Management",
+   "kind": "company",
+   "subsegments": [
+    "n3.refurb"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Iron Mountain",
+   "one_liner": "Data-centre ITAD and hardware resale (incl. ITRenew)",
+   "url": "https://www.ironmountain.com",
+   "source": "https://www.ironmountain.com"
+  },
+  {
+   "name": "Jabil",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Manufacturing services for cloud and AI data-centre hardware",
+   "url": "https://www.jabil.com",
+   "source": "https://www.jabil.com"
+  },
+  {
+   "name": "JuiceFS (Juicedata)",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open-source",
+   "one_liner": "Open-source distributed file system on object storage, used for AI training data",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://juicefs.com",
+   "source": "https://juicefs.com"
+  },
+  {
+   "name": "Juniper Networks",
+   "kind": "company",
+   "subsegments": [
+    "n3.network"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "HPE (2025)",
+   "one_liner": "QFX/PTX switching and routing for AI data centres",
+   "url": "https://www.juniper.net",
+   "source": "https://www.juniper.net"
+  },
+  {
+   "name": "Lenovo ISG",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Lenovo",
+   "one_liner": "ThinkSystem AI servers and Neptune liquid-cooled systems",
+   "url": "https://www.lenovo.com",
+   "source": "https://www.lenovo.com"
+  },
+  {
+   "name": "Lightbits Labs",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "NVMe/TCP software-defined block storage",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.lightbitslabs.com",
+   "source": "https://www.lightbitslabs.com"
+  },
+  {
+   "name": "Lightmatter",
+   "kind": "company",
+   "subsegments": [
+    "n3.opt",
+    "n2.startup",
+    "n2.net",
+    "n2.photonic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Photonic interconnect (Passage) for power-efficient AI fabrics",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://lightmatter.co",
+   "source": "https://lightmatter.co"
+  },
+  {
+   "name": "Lite-On Technology",
+   "kind": "company",
+   "subsegments": [
+    "n3.rackpower"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "800 VDC power racks and 110 kW power shelves (MGX)",
+   "url": "https://www.liteon.com",
+   "source": "https://www.powerelectronicsnews.com/nvidia-gtc-2026-800-vdc-power-partnerships-from-grid-to-processor",
+   "note": "MGX 800 VDC power rack (GTC 2026)"
+  },
+  {
+   "name": "LMCache",
+   "kind": "company",
+   "subsegments": [
+    "n3.opt",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Open-source KV-cache layer for vLLM sharing caches across GPU, CPU and storage",
+   "tags": [
+    "open-source",
+    "cost",
+    "performance"
+   ],
+   "url": "https://lmcache.ai",
+   "source": "https://lmcache.ai",
+   "note": "Originated at University of Chicago; maintained with Tensormesh"
+  },
+  {
+   "name": "Lumentum",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "EML/CW lasers, transceivers and optical circuit switches",
+   "url": "https://www.lumentum.com",
+   "source": "https://www.lumentum.com"
+  },
+  {
+   "name": "Marvell (optical DSPs)",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Marvell",
+   "one_liner": "PAM4 DSPs powering 800G/1.6T optics and AECs",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.marvell.com",
+   "source": "https://www.marvell.com"
+  },
+  {
+   "name": "MinIO",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "High-performance S3-compatible object storage (AIStor)",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://min.io",
+   "source": "https://min.io"
+  },
+  {
+   "name": "Mirantis",
+   "kind": "company",
+   "subsegments": [
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "k0rdent open-source platform for GPU infrastructure management",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.mirantis.com",
+   "source": "https://www.mirantis.com"
+  },
+  {
+   "name": "MiTAC Computing",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "MiTAC",
+   "one_liner": "Tyan/Intel-lineage server systems",
+   "url": "https://www.mitaccomputing.com",
+   "source": "https://www.mitaccomputing.com"
+  },
+  {
+   "name": "NetApp",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Enterprise unified storage and AFX AI data platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.netapp.com",
+   "source": "https://www.netapp.com"
+  },
+  {
+   "name": "Netweb Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers",
+    "n4.onprem"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian maker of GPU servers and HPC systems (Tyrone)",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://netwebindia.com",
+   "source": "https://netwebindia.com"
+  },
+  {
+   "name": "Nokia",
+   "kind": "company",
+   "subsegments": [
+    "n3.network",
+    "n3.optics"
+   ],
+   "hq": "FI",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "DC switching, IP routing and coherent optics (Infinera)",
+   "url": "https://www.nokia.com",
+   "source": "https://www.nokia.com",
+   "note": "Completed Infinera acquisition (Feb 2025)"
+  },
+  {
+   "name": "NVIDIA (DGX / MGX / NVL racks)",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers",
+    "n3.network"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Reference rack-scale systems (GB200/GB300 NVL72) plus InfiniBand, Spectrum-X Ethernet and NVLink switches",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.nvidia.com",
+   "source": "https://www.nvidia.com"
+  },
+  {
+   "name": "NVIDIA Dynamo / ICMS",
+   "kind": "company",
+   "subsegments": [
+    "n3.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "NVIDIA",
+   "one_liner": "Open-source inference framework with KV-cache tiering to NVMe (Inference Context Memory Storage)",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://developer.nvidia.com/dynamo",
+   "source": "https://www.blocksandfiles.com/ai-ml/2026/01/06/nvidia-pushes-ai-inference-context-out-to-nvme-ssds/4090444",
+   "note": "ICMS platform announced Jan 2026 (BlueField-4 based)"
+  },
+  {
+   "name": "Penguin Solutions",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers",
+    "n4.onprem",
+    "n4.ops",
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "AI cluster design, build and managed services (formerly SGH)",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.penguinsolutions.com",
+   "source": "https://www.penguinsolutions.com"
+  },
+  {
+   "name": "Pliops",
+   "kind": "company",
+   "subsegments": [
+    "n3.opt",
+    "n7.opt"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "XDP LightningAI KV-cache offload accelerator for LLM inference",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://pliops.com",
+   "source": "https://www.blocksandfiles.com/ai-ml/2026/03/30/nvidia-and-its-partners-kv-cache-extenders/5209284"
+  },
+  {
+   "name": "Prysmian",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "IT",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Optical fibre and power cables",
+   "url": "https://www.prysmian.com",
+   "source": "https://www.prysmian.com"
+  },
+  {
+   "name": "Pure Storage",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "All-flash arrays; FlashBlade//EXA for AI",
+   "url": "https://www.purestorage.com",
+   "source": "https://www.purestorage.com"
+  },
+  {
+   "name": "Quanta Computer (QCT)",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "ODM building AI racks for hyperscalers",
+   "url": "https://www.qct.io",
+   "source": "https://www.qct.io"
+  },
+  {
+   "name": "Qumulo",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Scale-out file storage across on-prem and cloud",
+   "url": "https://qumulo.com",
+   "source": "https://qumulo.com"
+  },
+  {
+   "name": "Ruijie Networks",
+   "kind": "company",
+   "subsegments": [
+    "n3.network"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Chinese DC switches for hyperscale AI",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.ruijienetworks.com",
+   "source": "https://www.ruijienetworks.com"
+  },
+  {
+   "name": "Sanmina (ZT Systems)",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Rack-scale AI system manufacturing via former ZT Systems plants; AMD partner",
+   "url": "https://www.sanmina.com",
+   "source": "https://pulse2.com/sanmina-completes-acquisition-of-amds-zt-systems-data-center-manufacturing-business",
+   "note": "Acquired ZT manufacturing from AMD (Oct 2025)"
+  },
+  {
+   "name": "ServNet",
+   "kind": "company",
+   "subsegments": [
+    "n3.refurb"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "UK reseller of refurbished servers and GPUs",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.servnetuk.com",
+   "source": "https://www.servnetuk.com/insights/refurbished-h100-h200-secondary-market-2026-uk"
+  },
+  {
+   "name": "Sims Lifecycle Services",
+   "kind": "company",
+   "subsegments": [
+    "n3.refurb"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Sims Limited",
+   "one_liner": "IT asset disposition and hardware reuse for hyperscalers",
+   "url": "https://www.simslifecycle.com",
+   "source": "https://www.simslifecycle.com"
+  },
+  {
+   "name": "Source Photonics",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Datacom transceivers",
+   "url": "https://www.sourcephotonics.com",
+   "source": "https://www.sourcephotonics.com"
+  },
+  {
+   "name": "Spectro Cloud",
+   "kind": "company",
+   "subsegments": [
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Palette Kubernetes and bare-metal fleet management incl. AI edge",
+   "url": "https://www.spectrocloud.com",
+   "source": "https://www.spectrocloud.com"
+  },
+  {
+   "name": "Sterlite Technologies (STL)",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian optical fibre and cable maker serving DCs",
+   "url": "https://www.stl.tech",
+   "source": "https://www.stl.tech"
+  },
+  {
+   "name": "Sumitomo Electric",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Optical fibre, connectors and devices",
+   "url": "https://sumitomoelectric.com",
+   "source": "https://sumitomoelectric.com"
+  },
+  {
+   "name": "Supermicro",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers",
+    "n3.opt",
+    "n4.onprem"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "GPU servers and direct-liquid-cooled rack-scale systems",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.supermicro.com",
+   "source": "https://www.supermicro.com"
+  },
+  {
+   "name": "TE Connectivity",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "High-speed copper interconnect and cable assemblies",
+   "url": "https://www.te.com",
+   "source": "https://www.te.com"
+  },
+  {
+   "name": "TES",
+   "kind": "company",
+   "subsegments": [
+    "n3.refurb"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "acquired",
+   "parent": "SK ecoplant",
+   "one_liner": "IT lifecycle services and ITAD",
+   "url": "https://www.tes-amm.com",
+   "source": "https://www.tes-amm.com"
+  },
+  {
+   "name": "UALink Consortium",
+   "kind": "company",
+   "subsegments": [
+    "n3.scaleup"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Industry body for the open Ultra Accelerator Link scale-up standard",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://ualinkconsortium.org",
+   "source": "https://ualinkconsortium.org"
+  },
+  {
+   "name": "VAST Data",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage",
+    "n3.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI data platform: all-flash disaggregated storage, database and KV-cache tier",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.vastdata.com",
+   "source": "https://www.blocksandfiles.com/flash/2026/03/11/vast-data-raises-1b-at-30b-valuation-as-ai-storage-demand-surges/5208106",
+   "note": "Raised $1B at $30B valuation (Mar 2026)"
+  },
+  {
+   "name": "Vdura",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Parallel file system (ex-Panasas) for AI/HPC",
+   "url": "https://www.vdura.com",
+   "source": "https://www.vdura.com"
+  },
+  {
+   "name": "WEKA",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage",
+    "n3.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "NeuralMesh parallel file system; Augmented Memory Grid for KV cache",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.weka.io",
+   "source": "https://www.weka.io/blog/ai-ml/nvidia-signals-an-infrastructure-shift-for-inference-systems-at-scale/"
+  },
+  {
+   "name": "Wistron",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "GPU baseboard and server ODM",
+   "url": "https://www.wistron.com",
+   "source": "https://www.wistron.com"
+  },
+  {
+   "name": "Wiwynn",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Wistron",
+   "one_liner": "Hyperscale ODM for rack-scale AI systems",
+   "url": "https://www.wiwynn.com",
+   "source": "https://www.wiwynn.com"
+  },
+  {
+   "name": "xFusion",
+   "kind": "company",
+   "subsegments": [
+    "n3.servers"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Server business spun out of Huawei",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.xfusion.com",
+   "source": "https://www.xfusion.com"
+  },
+  {
+   "name": "YOFC",
+   "kind": "company",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Chinese optical fibre and cable maker",
+   "url": "https://en.yofc.com",
+   "source": "https://en.yofc.com"
+  },
+  {
+   "name": "YRCloudFile / YanRong Tech",
+   "kind": "company",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Chinese parallel file system for AI training",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.yanrongtech.com",
+   "source": "https://www.yanrongtech.com"
+  },
+  {
+   "name": "3FS (Fire-Flyer File System)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.storage",
+    "n3.opt"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "DeepSeek",
+   "licence": "MIT",
+   "access": "Build and deploy on NVMe + RDMA clusters",
+   "repo": "https://github.com/deepseek-ai/3FS",
+   "stars": 10100,
+   "archived": false,
+   "one_liner": "Disaggregated parallel file system for AI training data and KV-cache",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/deepseek-ai/3FS",
+   "source": "https://github.com/deepseek-ai/3FS"
+  },
+  {
+   "name": "Ceph (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Ceph Foundation (Linux Foundation)",
+   "licence": "LGPL-2.1 / LGPL-3.0",
+   "access": "Deploy via cephadm or Rook on Kubernetes",
+   "repo": "https://github.com/ceph/ceph",
+   "stars": 17100,
+   "archived": false,
+   "one_liner": "Unified distributed object, block and file storage",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/ceph/ceph",
+   "source": "https://github.com/ceph/ceph"
+  },
+  {
+   "name": "DAOS",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "DAOS Foundation (Linux Foundation project)",
+   "licence": "BSD-2-Clause-Patent",
+   "access": "Build or packages; NVMe-based storage servers",
+   "repo": "https://github.com/daos-stack/daos",
+   "stars": 988,
+   "archived": false,
+   "one_liner": "High-performance distributed object/file storage for AI and HPC on NVMe",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/daos-stack/daos",
+   "source": "https://github.com/daos-stack/daos"
+  },
+  {
+   "name": "FBOSS",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.network"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Meta",
+   "access": "Build from source for supported switch platforms",
+   "repo": "https://github.com/facebook/fboss",
+   "stars": 987,
+   "archived": false,
+   "one_liner": "Meta's open switch software stack used in its datacentre and AI fabrics",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/facebook/fboss",
+   "source": "https://github.com/facebook/fboss"
+  },
+  {
+   "name": "JuiceFS",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Juicedata",
+   "licence": "Apache-2.0",
+   "access": "Install client; back with object storage + metadata DB",
+   "repo": "https://github.com/juicedata/juicefs",
+   "stars": 14400,
+   "archived": false,
+   "one_liner": "POSIX file system on top of object storage, used for AI training data",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/juicedata/juicefs",
+   "source": "https://github.com/juicedata/juicefs"
+  },
+  {
+   "name": "LMCache (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.opt",
+    "n3.storage",
+    "n7.opt",
+    "n7.compress"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "PyTorch Foundation (Tensormesh-backed)",
+   "licence": "Apache-2.0",
+   "access": "pip install lmcache; plug into vLLM/SGLang",
+   "repo": "https://github.com/LMCache/LMCache",
+   "stars": 12200,
+   "archived": false,
+   "one_liner": "KV-cache layer offloading and sharing LLM cache across GPU, CPU, disk and remote storage",
+   "tags": [
+    "open-source",
+    "performance",
+    "cost"
+   ],
+   "url": "https://github.com/LMCache/LMCache",
+   "source": "https://github.com/LMCache/LMCache",
+   "note": "Joined PyTorch Foundation Oct 2025"
+  },
+  {
+   "name": "Lustre",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenSFS / Whamcloud (DDN)",
+   "licence": "GPL-2.0",
+   "access": "Download from Whamcloud; deploy on storage servers",
+   "repo": "https://github.com/lustre/lustre-release",
+   "stars": 321,
+   "archived": false,
+   "one_liner": "Parallel file system behind most large HPC and AI training clusters",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://www.lustre.org",
+   "source": "https://github.com/lustre/lustre-release",
+   "note": "GitHub repo is a mirror of git.whamcloud.com"
+  },
+  {
+   "name": "Metal3",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "CNCF",
+   "licence": "Apache-2.0",
+   "access": "Kubernetes operator + Cluster API provider",
+   "repo": "https://github.com/metal3-io/baremetal-operator",
+   "stars": 760,
+   "archived": false,
+   "one_liner": "Kubernetes-native bare-metal host management built on Ironic",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/metal3-io/baremetal-operator",
+   "source": "https://github.com/metal3-io/baremetal-operator"
+  },
+  {
+   "name": "MinIO (community edition)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "MinIO Inc",
+   "licence": "AGPL-3.0",
+   "access": "Source only; no community binaries; AIStor is the commercial product",
+   "repo": "https://github.com/minio/minio",
+   "stars": 61300,
+   "archived": true,
+   "one_liner": "S3-compatible object store; community repo now archived and unmaintained",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/minio/minio",
+   "source": "https://github.com/minio/minio",
+   "note": "Repo archived 25 Apr 2026 and marked 'no longer maintained'; community binaries ended; users pointed to AIStor Free/Enterprise"
+  },
+  {
+   "name": "Mooncake (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.opt",
+    "n3.storage",
+    "n7.opt"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "kvcache-ai (Moonshot AI & Tsinghua University)",
+   "licence": "Apache-2.0",
+   "access": "pip install; transfer engine for vLLM/SGLang",
+   "repo": "https://github.com/kvcache-ai/Mooncake",
+   "stars": 6500,
+   "archived": false,
+   "one_liner": "KV-cache-centric disaggregated serving architecture and transfer engine behind Kimi",
+   "tags": [
+    "open-source",
+    "performance",
+    "cost"
+   ],
+   "url": "https://github.com/kvcache-ai/Mooncake",
+   "source": "https://github.com/kvcache-ai/Mooncake",
+   "note": "Joined PyTorch Ecosystem Feb 2026"
+  },
+  {
+   "name": "NIXL",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.opt",
+    "n3.network",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA (Dynamo project)",
+   "licence": "Apache-2.0",
+   "access": "pip or source; used by Dynamo, vLLM, SGLang",
+   "repo": "https://github.com/ai-dynamo/nixl",
+   "stars": 1300,
+   "archived": false,
+   "one_liner": "Inference transfer library moving KV-cache between GPUs, CPU memory and storage",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/ai-dynamo/nixl",
+   "source": "https://github.com/ai-dynamo/nixl"
+  },
+  {
+   "name": "OCP Accelerator Module (OAM) / UBB",
+   "kind": "standard",
+   "subsegments": [
+    "n3.servers",
+    "n2.merchant"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Open Compute Project (Open Accelerator Infrastructure)",
+   "access": "Free spec from OCP",
+   "one_liner": "Common accelerator module and baseboard form factor used by non-NVIDIA accelerators such as AMD Instinct",
+   "tags": [
+    "open-standard",
+    "cost"
+   ],
+   "url": "https://www.opencompute.org",
+   "source": "https://www.opencompute.org"
+  },
+  {
+   "name": "OCP ESUN (Ethernet for Scale-Up Networking)",
+   "kind": "standard",
+   "subsegments": [
+    "n3.scaleup",
+    "n2.net"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Open Compute Project (led by Meta & Microsoft)",
+   "access": "Spec published by OCP",
+   "one_liner": "Lossless Ethernet scale-up spec with a compact 4-byte header replacing IP/UDP",
+   "tags": [
+    "open-standard",
+    "performance"
+   ],
+   "url": "https://www.opencompute.org/news/the-ocp-esun-10-specification-has-been-released/",
+   "source": "https://www.opencompute.org/news/the-ocp-esun-10-specification-has-been-released/",
+   "note": "ESUN 1.0 released Mar 2026; 175+ participating companies"
+  },
+  {
+   "name": "OCP Mt Diablo (disaggregated ±400 VDC power rack)",
+   "kind": "standard",
+   "subsegments": [
+    "n3.rackpower",
+    "n2.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Open Compute Project (Meta, Microsoft, Google)",
+   "access": "Free spec from OCP",
+   "one_liner": "Side-car power rack design moving to high-voltage DC to feed 1MW-class AI racks",
+   "tags": [
+    "open-standard",
+    "performance"
+   ],
+   "url": "https://www.opencompute.org",
+   "source": "https://www.opencompute.org"
+  },
+  {
+   "name": "OCP Open Rack v3 / Open Rack Wide",
+   "kind": "standard",
+   "subsegments": [
+    "n3.servers",
+    "n3.rackpower"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Open Compute Project Foundation",
+   "access": "Free specs from OCP; built by multiple ODMs",
+   "one_liner": "Open rack, busbar and power-shelf standards; Open Rack Wide (Meta) underpins AMD Helios",
+   "tags": [
+    "open-standard",
+    "cost"
+   ],
+   "url": "https://www.opencompute.org",
+   "source": "https://amd.com/en/blogs/2025/amd-helios-ai-rack-built-on-metas-2025-ocp-design.html",
+   "note": "Open Rack Wide introduced by Meta at OCP Global Summit Oct 2025"
+  },
+  {
+   "name": "OpenBMC",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenBMC project (Linux Foundation)",
+   "access": "Build firmware image for server BMCs",
+   "repo": "https://github.com/openbmc/openbmc",
+   "stars": 2600,
+   "archived": false,
+   "one_liner": "Open firmware stack for baseboard management controllers in OCP and AI servers",
+   "tags": [
+    "open-source",
+    "security"
+   ],
+   "url": "https://github.com/openbmc/openbmc",
+   "source": "https://github.com/openbmc/openbmc"
+  },
+  {
+   "name": "OpenConfig",
+   "kind": "standard",
+   "subsegments": [
+    "n3.network",
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenConfig operator working group (Google-led)",
+   "access": "YANG models and gNMI specs on GitHub",
+   "repo": "https://github.com/openconfig/public",
+   "one_liner": "Vendor-neutral YANG models and gNMI streaming telemetry for network devices",
+   "tags": [
+    "open-standard",
+    "cost"
+   ],
+   "url": "https://www.openconfig.net",
+   "source": "https://www.openconfig.net"
+  },
+  {
+   "name": "OpenStack Ironic",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenInfra Foundation (Linux Foundation)",
+   "licence": "Apache-2.0",
+   "access": "Deploy standalone or within OpenStack",
+   "repo": "https://github.com/openstack/ironic",
+   "stars": 567,
+   "archived": false,
+   "one_liner": "Bare-metal provisioning service for fleet-scale server lifecycle",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://opendev.org/openstack/ironic",
+   "source": "https://github.com/openstack/ironic",
+   "note": "GitHub repo is a mirror of opendev.org"
+  },
+  {
+   "name": "OSFP MSA",
+   "kind": "standard",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OSFP Multi-Source Agreement group",
+   "access": "Spec download from osfpmsa.org",
+   "one_liner": "Pluggable optical-module form-factor spec used for 800G/1.6T AI optics",
+   "tags": [
+    "open-standard",
+    "performance"
+   ],
+   "url": "https://osfpmsa.org",
+   "source": "https://osfpmsa.org"
+  },
+  {
+   "name": "QSFP-DD MSA",
+   "kind": "standard",
+   "subsegments": [
+    "n3.optics"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "QSFP-DD Multi-Source Agreement group",
+   "access": "Spec download from qsfp-dd.com",
+   "one_liner": "Double-density QSFP pluggable form factor for 400G/800G datacentre optics",
+   "tags": [
+    "open-standard",
+    "performance"
+   ],
+   "url": "http://www.qsfp-dd.com",
+   "source": "http://www.qsfp-dd.com"
+  },
+  {
+   "name": "Redfish",
+   "kind": "standard",
+   "subsegments": [
+    "n3.mgmt",
+    "n0.ops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "DMTF",
+   "access": "Free spec and schemas from DMTF",
+   "one_liner": "RESTful standard for managing servers, power and cooling hardware",
+   "tags": [
+    "open-standard",
+    "cost"
+   ],
+   "url": "https://www.dmtf.org/standards/redfish",
+   "source": "https://www.dmtf.org/standards/redfish"
+  },
+  {
+   "name": "SAI (Switch Abstraction Interface)",
+   "kind": "standard",
+   "subsegments": [
+    "n3.network",
+    "n2.net"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Open Compute Project",
+   "licence": "Apache-2.0",
+   "access": "Vendor SAI implementations for switch ASICs",
+   "repo": "https://github.com/opencomputeproject/SAI",
+   "stars": 621,
+   "archived": false,
+   "one_liner": "Vendor-neutral API between network OS and switch silicon; foundation of SONiC",
+   "tags": [
+    "open-standard",
+    "cost"
+   ],
+   "url": "https://github.com/opencomputeproject/SAI",
+   "source": "https://github.com/opencomputeproject/SAI"
+  },
+  {
+   "name": "SeaweedFS",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.storage"
+   ],
+   "status": "open",
+   "steward": "SeaweedFS project",
+   "licence": "Apache-2.0",
+   "access": "Single binary; S3/FUSE/WebDAV interfaces",
+   "repo": "https://github.com/seaweedfs/seaweedfs",
+   "stars": 34100,
+   "archived": false,
+   "one_liner": "Scalable distributed object and file store; a common MinIO alternative",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/seaweedfs/seaweedfs",
+   "source": "https://github.com/seaweedfs/seaweedfs"
+  },
+  {
+   "name": "SONiC",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.network"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "SONiC Foundation (Linux Foundation); Microsoft-originated",
+   "licence": "Apache-2.0",
+   "access": "Build image or buy from vendors; runs on many switch ASICs",
+   "repo": "https://github.com/sonic-net/sonic-buildimage",
+   "stars": 1000,
+   "archived": false,
+   "one_liner": "Open network OS for datacentre switches, widely used in AI back-end fabrics",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/sonic-net/sonic-buildimage",
+   "source": "https://github.com/sonic-net/sonic-buildimage"
+  },
+  {
+   "name": "SUE-T (Scale-Up Ethernet Transport)",
+   "kind": "standard",
+   "subsegments": [
+    "n3.scaleup",
+    "n2.net"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Open Compute Project (Broadcom-originated SUE)",
+   "access": "Public PDF on opencompute.org",
+   "one_liner": "Scale-up Ethernet transport spec derived from Broadcom's SUE framework, now hosted at OCP",
+   "tags": [
+    "open-standard",
+    "performance"
+   ],
+   "url": "https://www.opencompute.org/wiki/Networking/SUE-T",
+   "source": "https://www.opencompute.org/wiki/Networking/SUE-T",
+   "note": "SUE-T Base Specification v1.0.0 posted at OCP in 2026"
+  },
+  {
+   "name": "Tinkerbell",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.mgmt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "CNCF",
+   "licence": "Apache-2.0",
+   "access": "Deploy on Kubernetes; PXE/iPXE provisioning workflows",
+   "repo": "https://github.com/tinkerbell/tinkerbell",
+   "stars": 308,
+   "archived": false,
+   "one_liner": "Bare-metal provisioning engine originally from Equinix Metal",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/tinkerbell/tinkerbell",
+   "source": "https://github.com/tinkerbell/tinkerbell"
+  },
+  {
+   "name": "Warewulf",
+   "kind": "open-source project",
+   "subsegments": [
+    "n3.mgmt"
+   ],
+   "status": "open",
+   "steward": "Warewulf project",
+   "access": "Install packages; stateless node-image provisioning",
+   "repo": "https://github.com/warewulf/warewulf",
+   "stars": 673,
+   "archived": false,
+   "one_liner": "Stateless cluster provisioning for HPC and GPU clusters",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/warewulf/warewulf",
+   "source": "https://github.com/warewulf/warewulf"
+  }
+ ]
+}

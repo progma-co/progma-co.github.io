@@ -1,0 +1,1107 @@
+{
+ "layers": [
+  {
+   "id": "core",
+   "name": "Core offering",
+   "desc": "What this node sells to the next node in the chain"
+  },
+  {
+   "id": "inputs",
+   "name": "Critical inputs",
+   "desc": "What this node cannot exist without (materials, IP, capital, talent, data)"
+  },
+  {
+   "id": "optimisation",
+   "name": "Optimisation",
+   "desc": "Products/services that raise performance or cut cost of this node's core offering"
+  },
+  {
+   "id": "ops",
+   "name": "Ops & governance",
+   "desc": "Running it safely and reliably: observability, security, evals, compliance"
+  },
+  {
+   "id": "distribution",
+   "name": "Distribution & marketplaces",
+   "desc": "How the core offering reaches buyers: marketplaces, brokers, aggregators, resellers"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "n0",
+   "name": "Energy & Data Centres",
+   "short": "Energy & DC",
+   "desc": "Power, land, cooling and the buildings that house AI compute. The binding constraint of the 2025-26 build-out.",
+   "subsegments": [
+    {
+     "id": "n0.power",
+     "layer": "core",
+     "name": "Power generation for AI",
+     "desc": "Utilities, IPPs, nuclear/SMR, gas turbines, renewables PPAs and behind-the-meter generation sold to data centres"
+    },
+    {
+     "id": "n0.dcdev",
+     "layer": "core",
+     "name": "Data centre developers & colocation",
+     "desc": "Hyperscale/wholesale DC developers and colocation operators"
+    },
+    {
+     "id": "n0.grid",
+     "layer": "inputs",
+     "name": "Grid & electrical equipment",
+     "desc": "Transformers, switchgear, UPS, power distribution, gensets"
+    },
+    {
+     "id": "n0.cooling",
+     "layer": "inputs",
+     "name": "Thermal & liquid cooling",
+     "desc": "Direct-to-chip liquid cooling, CDUs, immersion, chillers"
+    },
+    {
+     "id": "n0.build",
+     "layer": "inputs",
+     "name": "DC engineering & construction",
+     "desc": "Design-build firms, modular/prefab DC, EPC"
+    },
+    {
+     "id": "n0.capital",
+     "layer": "inputs",
+     "name": "Infrastructure capital",
+     "desc": "Infra funds, sovereign funds and project finance backing campuses"
+    },
+    {
+     "id": "n0.opt",
+     "layer": "optimisation",
+     "name": "Energy & PUE optimisation",
+     "desc": "DCIM, power capping, grid-interactive/flexible load, heat reuse"
+    },
+    {
+     "id": "n0.ops",
+     "layer": "ops",
+     "name": "DC operations & monitoring",
+     "desc": "DCIM, physical security, uptime certification"
+    },
+    {
+     "id": "n0.water",
+     "layer": "inputs",
+     "name": "Water supply & treatment",
+     "desc": "Water rights, treatment and reuse; a permitting constraint in its own right"
+    },
+    {
+     "id": "n0.storage",
+     "layer": "inputs",
+     "name": "Energy storage & bridge power",
+     "desc": "Battery storage and bridge power that give grid flexibility and speed-to-power"
+    },
+    {
+     "id": "n0.fuel",
+     "layer": "inputs",
+     "name": "Fuel supply: gas & nuclear fuel",
+     "desc": "Gas pipelines for on-site generation; uranium, enrichment and HALEU for SMR deals"
+    },
+    {
+     "id": "n0.land",
+     "layer": "distribution",
+     "name": "Powered land & capacity brokerage",
+     "desc": "Powered-land developers, site brokers and marketplaces for powered shells"
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "name": "Semiconductor Manufacturing",
+   "short": "Fab & supply",
+   "desc": "The supply chain that turns chip designs into silicon: EDA, IP, equipment, foundry, packaging, memory.",
+   "subsegments": [
+    {
+     "id": "n1.eda",
+     "layer": "inputs",
+     "name": "EDA & chip design software",
+     "desc": "Electronic design automation, incl. AI-driven chip design"
+    },
+    {
+     "id": "n1.ip",
+     "layer": "inputs",
+     "name": "Silicon IP & architectures",
+     "desc": "CPU/accelerator IP cores, ISAs (Arm, RISC-V), interconnect IP"
+    },
+    {
+     "id": "n1.equip",
+     "layer": "inputs",
+     "name": "Wafer fab equipment",
+     "desc": "Lithography, deposition, etch, metrology"
+    },
+    {
+     "id": "n1.materials",
+     "layer": "inputs",
+     "name": "Wafers & materials",
+     "desc": "Silicon wafers, photoresists, specialty gases, substrates"
+    },
+    {
+     "id": "n1.foundry",
+     "layer": "core",
+     "name": "Foundry (leading-edge logic)",
+     "desc": "Contract manufacturing of logic dies at advanced nodes"
+    },
+    {
+     "id": "n1.packaging",
+     "layer": "core",
+     "name": "Advanced packaging & test",
+     "desc": "2.5D/3D packaging (CoWoS-class), OSAT, chiplet integration"
+    },
+    {
+     "id": "n1.memory",
+     "layer": "core",
+     "name": "Memory & HBM",
+     "desc": "High-bandwidth memory, DRAM, NAND for AI systems"
+    },
+    {
+     "id": "n1.design",
+     "layer": "distribution",
+     "name": "Custom-silicon design services",
+     "desc": "Design houses that build ASICs for hyperscalers and labs"
+    },
+    {
+     "id": "n1.masks",
+     "layer": "inputs",
+     "name": "Photomasks & mask blanks",
+     "desc": "Masks and blanks for leading-edge lithography"
+    },
+    {
+     "id": "n1.yield",
+     "layer": "optimisation",
+     "name": "Fab yield & process analytics",
+     "desc": "Yield management, process control and AI for fabs"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "name": "AI Chips",
+   "short": "AI chips",
+   "desc": "The accelerators that run training and inference, plus the networking silicon that ties them together.",
+   "subsegments": [
+    {
+     "id": "n2.merchant",
+     "layer": "core",
+     "name": "Merchant GPUs & accelerators",
+     "desc": "Accelerators sold on the open market"
+    },
+    {
+     "id": "n2.custom",
+     "layer": "core",
+     "name": "Hyperscaler / lab custom silicon",
+     "desc": "In-house ASICs (TPU, Trainium, Maia, MTIA, lab chips)"
+    },
+    {
+     "id": "n2.startup",
+     "layer": "core",
+     "name": "AI chip challengers",
+     "desc": "Inference/training chip startups: wafer-scale, LPU, transformer ASICs, in-memory, photonic"
+    },
+    {
+     "id": "n2.china",
+     "layer": "core",
+     "name": "China domestic accelerators",
+     "desc": "Accelerators built for the export-controlled Chinese market"
+    },
+    {
+     "id": "n2.edge",
+     "layer": "core",
+     "name": "Edge & on-device AI silicon",
+     "desc": "NPUs in phones/PCs, automotive and embedded AI chips"
+    },
+    {
+     "id": "n2.cpu",
+     "layer": "core",
+     "name": "Data-centre CPUs & DPUs",
+     "desc": "Host CPUs, DPUs/SmartNICs paired with accelerators"
+    },
+    {
+     "id": "n2.net",
+     "layer": "inputs",
+     "name": "Networking & interconnect silicon",
+     "desc": "Switch ASICs, NICs, retimers, PCIe/CXL, co-packaged and silicon photonics"
+    },
+    {
+     "id": "n2.sw",
+     "layer": "optimisation",
+     "name": "Accelerator software stacks & compilers",
+     "desc": "CUDA, ROCm, XLA, Triton, compilers that make chips usable and fast"
+    },
+    {
+     "id": "n2.photonic",
+     "layer": "core",
+     "name": "Photonic compute & optical I/O",
+     "desc": "Optical interconnect chiplets and photonic computing"
+    },
+    {
+     "id": "n2.power",
+     "layer": "inputs",
+     "name": "Power-delivery silicon",
+     "desc": "Voltage regulators, GaN/SiC power stages, 800V DC conversion for AI racks"
+    },
+    {
+     "id": "n2.export",
+     "layer": "ops",
+     "name": "Export controls & chip compliance",
+     "desc": "Export-control compliance, licence tracking and chip location verification"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "name": "Systems, Networking & Storage",
+   "short": "Systems",
+   "desc": "Turning chips into racks and clusters: servers, rack-scale systems, fabrics and AI storage.",
+   "subsegments": [
+    {
+     "id": "n3.servers",
+     "layer": "core",
+     "name": "AI servers & rack-scale systems",
+     "desc": "OEMs and ODMs building GPU servers and full racks"
+    },
+    {
+     "id": "n3.network",
+     "layer": "core",
+     "name": "Data-centre networking systems",
+     "desc": "Ethernet/InfiniBand switches, optics, scale-out and scale-across fabrics"
+    },
+    {
+     "id": "n3.optics",
+     "layer": "inputs",
+     "name": "Optical transceivers & cables",
+     "desc": "Pluggable optics, AECs, fibre"
+    },
+    {
+     "id": "n3.storage",
+     "layer": "core",
+     "name": "AI storage & data platforms",
+     "desc": "High-throughput storage for training and inference (parallel file, object, KV-cache tiers)"
+    },
+    {
+     "id": "n3.opt",
+     "layer": "optimisation",
+     "name": "Cluster efficiency",
+     "desc": "Liquid-cooled racks, power-efficient fabrics, storage-side KV cache offload"
+    },
+    {
+     "id": "n3.scaleup",
+     "layer": "core",
+     "name": "Scale-up interconnect systems",
+     "desc": "NVLink/UALink switch trays, copper spines that make a rack one computer"
+    },
+    {
+     "id": "n3.rackpower",
+     "layer": "inputs",
+     "name": "In-rack power & 800V DC",
+     "desc": "Power shelves, busbars, battery backup units inside the rack"
+    },
+    {
+     "id": "n3.mgmt",
+     "layer": "ops",
+     "name": "Cluster provisioning & management software",
+     "desc": "Bare-metal provisioning, fleet management, health checks"
+    },
+    {
+     "id": "n3.refurb",
+     "layer": "distribution",
+     "name": "Refurbished & secondary GPU hardware",
+     "desc": "Used GPU trading, refurbishment and IT asset disposition"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "name": "Compute & Cloud",
+   "short": "Compute",
+   "desc": "Where GPU capacity is rented or run: hyperscalers, neoclouds, sovereign clouds, marketplaces and the orchestration on top.",
+   "subsegments": [
+    {
+     "id": "n4.hyper",
+     "layer": "core",
+     "name": "Hyperscale clouds",
+     "desc": "General-purpose clouds with AI compute"
+    },
+    {
+     "id": "n4.neo",
+     "layer": "core",
+     "name": "GPU neoclouds",
+     "desc": "AI-specialist clouds renting GPU clusters"
+    },
+    {
+     "id": "n4.sovereign",
+     "layer": "core",
+     "name": "Sovereign & national AI clouds",
+     "desc": "Country-backed or in-country AI compute"
+    },
+    {
+     "id": "n4.serverless",
+     "layer": "core",
+     "name": "Serverless & developer GPU clouds",
+     "desc": "Per-second GPU for developers, notebooks, serverless functions"
+    },
+    {
+     "id": "n4.onprem",
+     "layer": "core",
+     "name": "On-prem / private AI factories",
+     "desc": "Turnkey private AI infrastructure for enterprises"
+    },
+    {
+     "id": "n4.market",
+     "layer": "distribution",
+     "name": "GPU marketplaces, brokers & decentralised compute",
+     "desc": "Spot/forward markets, aggregators and DePIN compute"
+    },
+    {
+     "id": "n4.finance",
+     "layer": "inputs",
+     "name": "GPU financing",
+     "desc": "GPU-backed debt, leasing, compute-for-equity"
+    },
+    {
+     "id": "n4.orch",
+     "layer": "optimisation",
+     "name": "Cluster orchestration & GPU utilisation",
+     "desc": "Schedulers, GPU sharing, autoscaling, workload placement"
+    },
+    {
+     "id": "n4.finops",
+     "layer": "optimisation",
+     "name": "Compute FinOps & cost optimisation",
+     "desc": "Cloud/GPU cost visibility, rightsizing, spot management"
+    },
+    {
+     "id": "n4.ops",
+     "layer": "ops",
+     "name": "Cluster reliability & observability",
+     "desc": "GPU health, failure detection, cluster monitoring"
+    },
+    {
+     "id": "n4.offtake",
+     "layer": "distribution",
+     "name": "Long-term compute offtake",
+     "desc": "Multi-year, gigawatt-scale capacity contracts between labs and clouds"
+    },
+    {
+     "id": "n4.confidential",
+     "layer": "ops",
+     "name": "Confidential computing & sovereign compliance",
+     "desc": "GPU enclaves, attestation, data-residency controls"
+    },
+    {
+     "id": "n4.access",
+     "layer": "distribution",
+     "name": "Compute access programmes & credits",
+     "desc": "Startup credits, national research compute, academic access"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "name": "Data",
+   "short": "Data",
+   "desc": "The raw material for models: human expert data, licensed content, web data, synthetic data and RL environments.",
+   "subsegments": [
+    {
+     "id": "n5.label",
+     "layer": "core",
+     "name": "Human & expert data (labelling, RLHF)",
+     "desc": "Annotation, preference data, expert-generated training data"
+    },
+    {
+     "id": "n5.license",
+     "layer": "core",
+     "name": "Licensed content & data marketplaces",
+     "desc": "Publishers, platforms and brokers licensing data for training"
+    },
+    {
+     "id": "n5.web",
+     "layer": "core",
+     "name": "Web data & crawling",
+     "desc": "Crawl corpora, scraping/proxy infrastructure, open datasets"
+    },
+    {
+     "id": "n5.synth",
+     "layer": "core",
+     "name": "Synthetic data",
+     "desc": "Generated data for training, testing and privacy"
+    },
+    {
+     "id": "n5.rlenv",
+     "layer": "core",
+     "name": "RL environments & post-training data",
+     "desc": "Environments, tasks and graders for reinforcement learning"
+    },
+    {
+     "id": "n5.curation",
+     "layer": "optimisation",
+     "name": "Data curation & quality",
+     "desc": "Dedup, filtering, data selection to cut training cost"
+    },
+    {
+     "id": "n5.gov",
+     "layer": "ops",
+     "name": "Data provenance, consent & licensing compliance",
+     "desc": "Provenance tracking, opt-out, attribution, copyright clearance"
+    },
+    {
+     "id": "n5.evaldata",
+     "layer": "core",
+     "name": "Evaluation & benchmark datasets",
+     "desc": "Expert-built eval sets, private holdouts, benchmark providers"
+    },
+    {
+     "id": "n5.physical",
+     "layer": "core",
+     "name": "Physical-world & robotics data",
+     "desc": "Egocentric video, teleoperation and robot demonstration data"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "name": "Models",
+   "short": "Models",
+   "desc": "Foundation and specialised models: closed frontier, open-weight, modality-specific, domain and sovereign.",
+   "subsegments": [
+    {
+     "id": "n6.frontier",
+     "layer": "core",
+     "name": "Frontier closed models",
+     "desc": "Labs selling the most capable proprietary models"
+    },
+    {
+     "id": "n6.open",
+     "layer": "core",
+     "name": "Open-weight model labs",
+     "desc": "Labs releasing downloadable weights"
+    },
+    {
+     "id": "n6.enterprise",
+     "layer": "core",
+     "name": "Enterprise-focused model companies",
+     "desc": "Model makers built around enterprise deployment"
+    },
+    {
+     "id": "n6.small",
+     "layer": "core",
+     "name": "Small & on-device models",
+     "desc": "Compact models for edge, phones, low-cost inference"
+    },
+    {
+     "id": "n6.image",
+     "layer": "core",
+     "name": "Image & video generation models",
+     "desc": "Text-to-image/video and visual generation"
+    },
+    {
+     "id": "n6.audio",
+     "layer": "core",
+     "name": "Speech & audio models",
+     "desc": "TTS, STT, voice, music"
+    },
+    {
+     "id": "n6.code",
+     "layer": "core",
+     "name": "Code-specialised models",
+     "desc": "Models built for software engineering"
+    },
+    {
+     "id": "n6.science",
+     "layer": "core",
+     "name": "Science & bio models",
+     "desc": "Protein, chemistry, materials, weather, genomics"
+    },
+    {
+     "id": "n6.world",
+     "layer": "core",
+     "name": "World models & robotics foundation models",
+     "desc": "Physical-AI, embodied and spatial models"
+    },
+    {
+     "id": "n6.sovereign",
+     "layer": "core",
+     "name": "Sovereign & regional-language models",
+     "desc": "Models built for a country or language group"
+    },
+    {
+     "id": "n6.embed",
+     "layer": "core",
+     "name": "Embedding & reranking models",
+     "desc": "Models powering retrieval and search"
+    },
+    {
+     "id": "n6.train",
+     "layer": "inputs",
+     "name": "Training frameworks & fine-tuning platforms",
+     "desc": "Distributed training stacks, fine-tuning/RL-as-a-service"
+    },
+    {
+     "id": "n6.opt",
+     "layer": "optimisation",
+     "name": "Model compression & efficiency",
+     "desc": "Quantisation, distillation, pruning, sparsity, efficient architectures"
+    },
+    {
+     "id": "n6.safety",
+     "layer": "ops",
+     "name": "Model evals, red-teaming & safety",
+     "desc": "Capability/safety evaluation, third-party red teaming, interpretability"
+    },
+    {
+     "id": "n6.hub",
+     "layer": "distribution",
+     "name": "Model hubs & catalogues",
+     "desc": "Where weights and model cards are distributed"
+    },
+    {
+     "id": "n6.domain",
+     "layer": "core",
+     "name": "Domain & vertical models",
+     "desc": "Models built for legal, finance, health and other verticals"
+    },
+    {
+     "id": "n6.weights",
+     "layer": "ops",
+     "name": "Model licensing, IP indemnity & weight security",
+     "desc": "Licence terms, indemnity, protection of weights"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "name": "Inference & Serving",
+   "short": "Inference",
+   "desc": "Turning models into tokens at scale: inference APIs, serving engines, gateways and the optimisation stack around them.",
+   "subsegments": [
+    {
+     "id": "n7.api",
+     "layer": "core",
+     "name": "Independent inference providers",
+     "desc": "Token APIs serving open (and some closed) models"
+    },
+    {
+     "id": "n7.platform",
+     "layer": "core",
+     "name": "Hyperscaler model platforms",
+     "desc": "Managed multi-model platforms inside the big clouds"
+    },
+    {
+     "id": "n7.engine",
+     "layer": "inputs",
+     "name": "Serving engines & runtimes",
+     "desc": "Open-source and commercial inference engines"
+    },
+    {
+     "id": "n7.local",
+     "layer": "core",
+     "name": "Local & on-device inference",
+     "desc": "Runtimes for laptops, phones and edge"
+    },
+    {
+     "id": "n7.opt",
+     "layer": "optimisation",
+     "name": "Inference optimisation",
+     "desc": "Speculative decoding, KV-cache management, kernel tuning, disaggregated serving"
+    },
+    {
+     "id": "n7.compress",
+     "layer": "optimisation",
+     "name": "Token & context compression",
+     "desc": "Prompt/context compression, memory-based context reduction, prompt caching"
+    },
+    {
+     "id": "n7.route",
+     "layer": "distribution",
+     "name": "Model routers & AI gateways",
+     "desc": "Unified APIs, routing, fallback, cost-aware model selection"
+    },
+    {
+     "id": "n7.obs",
+     "layer": "ops",
+     "name": "Inference observability & cost tracking",
+     "desc": "Token spend, latency, usage analytics"
+    },
+    {
+     "id": "n7.private",
+     "layer": "core",
+     "name": "Private, air-gapped & confidential inference",
+     "desc": "Inference inside a VPC, on-prem or secure enclave for regulated buyers"
+    },
+    {
+     "id": "n7.bench",
+     "layer": "ops",
+     "name": "Inference benchmarking & price-performance data",
+     "desc": "Independent speed, quality and price benchmarks of models and providers"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "name": "Dev Tooling & Agent Infrastructure",
+   "short": "Tooling",
+   "desc": "The middleware developers build on: frameworks, retrieval, memory, tools/MCP, sandboxes, evals, security and governance.",
+   "subsegments": [
+    {
+     "id": "n8.framework",
+     "layer": "core",
+     "name": "Agent & LLM app frameworks",
+     "desc": "Libraries and SDKs for building agents and LLM apps"
+    },
+    {
+     "id": "n8.vector",
+     "layer": "core",
+     "name": "Vector databases & retrieval",
+     "desc": "Vector search, hybrid search, retrieval infra"
+    },
+    {
+     "id": "n8.ingest",
+     "layer": "core",
+     "name": "Document parsing & data ingestion for AI",
+     "desc": "Parsing, extraction, web-to-LLM data"
+    },
+    {
+     "id": "n8.memory",
+     "layer": "core",
+     "name": "Agent memory & context layers",
+     "desc": "Persistent memory, context management for agents"
+    },
+    {
+     "id": "n8.tools",
+     "layer": "core",
+     "name": "Tool integration & MCP",
+     "desc": "Connectors, MCP servers/registries, auth for tool use"
+    },
+    {
+     "id": "n8.sandbox",
+     "layer": "core",
+     "name": "Agent runtimes, sandboxes & browsers",
+     "desc": "Code sandboxes, headless browsers, computer-use infra"
+    },
+    {
+     "id": "n8.platform",
+     "layer": "core",
+     "name": "Enterprise AI & data platforms",
+     "desc": "Platforms enterprises build AI on top of their data"
+    },
+    {
+     "id": "n8.lowcode",
+     "layer": "core",
+     "name": "Low-code agent builders & automation",
+     "desc": "Visual agent/workflow builders"
+    },
+    {
+     "id": "n8.payments",
+     "layer": "inputs",
+     "name": "Agent payments & commerce rails",
+     "desc": "Agentic payment protocols, checkout and wallets for agents"
+    },
+    {
+     "id": "n8.cache",
+     "layer": "optimisation",
+     "name": "Semantic caching & prompt optimisation",
+     "desc": "Caching LLM responses, automatic prompt tuning"
+    },
+    {
+     "id": "n8.eval",
+     "layer": "ops",
+     "name": "LLM evals & observability",
+     "desc": "Tracing, evaluation, prompt management"
+    },
+    {
+     "id": "n8.security",
+     "layer": "ops",
+     "name": "AI security & guardrails",
+     "desc": "Prompt-injection defence, model/agent security, AI-SPM"
+    },
+    {
+     "id": "n8.gov",
+     "layer": "ops",
+     "name": "AI governance, risk & compliance",
+     "desc": "AI inventories, policy, EU AI Act / ISO 42001 compliance"
+    },
+    {
+     "id": "n8.orch",
+     "layer": "core",
+     "name": "Agent orchestration & registries",
+     "desc": "Multi-agent control planes, agent registries and directories"
+    },
+    {
+     "id": "n8.search",
+     "layer": "core",
+     "name": "Web search & retrieval APIs for agents",
+     "desc": "Search APIs built for LLMs and agents"
+    },
+    {
+     "id": "n8.identity",
+     "layer": "ops",
+     "name": "Agent identity & authorisation",
+     "desc": "Identity, credentials and access control for AI agents"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "name": "Applications",
+   "short": "Apps",
+   "desc": "Products end users touch: general assistants, horizontal function tools and vertical AI.",
+   "subsegments": [
+    {
+     "id": "n9.sor",
+     "layer": "core",
+     "name": "AI-native systems of record",
+     "desc": "CRM, support and work platforms rebuilt around agents and a shared knowledge graph"
+    },
+    {
+     "id": "n9.assistant",
+     "layer": "core",
+     "name": "General assistants & AI search",
+     "desc": "Chat assistants and answer engines"
+    },
+    {
+     "id": "n9.coding",
+     "layer": "core",
+     "name": "Coding agents & AI app builders",
+     "desc": "AI IDEs, coding agents, vibe-coding platforms"
+    },
+    {
+     "id": "n9.agentic",
+     "layer": "core",
+     "name": "General-purpose agents & AI browsers",
+     "desc": "Autonomous task agents and agentic browsers"
+    },
+    {
+     "id": "n9.knowledge",
+     "layer": "core",
+     "name": "Enterprise search & knowledge work",
+     "desc": "Work assistants, enterprise search, writing/docs"
+    },
+    {
+     "id": "n9.support",
+     "layer": "core",
+     "name": "Customer service agents",
+     "desc": "AI agents for support and CX"
+    },
+    {
+     "id": "n9.voice",
+     "layer": "core",
+     "name": "Voice agents",
+     "desc": "Phone/voice agent platforms"
+    },
+    {
+     "id": "n9.gtm",
+     "layer": "core",
+     "name": "Sales & marketing AI",
+     "desc": "AI SDRs, GTM data, marketing content"
+    },
+    {
+     "id": "n9.creative",
+     "layer": "core",
+     "name": "Creative, design & media",
+     "desc": "Design, video editing, presentations, music"
+    },
+    {
+     "id": "n9.legal",
+     "layer": "core",
+     "name": "Legal AI",
+     "desc": "Legal research, drafting, contract AI"
+    },
+    {
+     "id": "n9.health",
+     "layer": "core",
+     "name": "Healthcare AI",
+     "desc": "Ambient scribes, clinical decision support, RCM"
+    },
+    {
+     "id": "n9.finance",
+     "layer": "core",
+     "name": "Finance & accounting AI",
+     "desc": "Research, analyst copilots, accounting automation"
+    },
+    {
+     "id": "n9.hr",
+     "layer": "core",
+     "name": "HR & talent AI",
+     "desc": "Recruiting, interviewing, HR service delivery"
+    },
+    {
+     "id": "n9.secops",
+     "layer": "core",
+     "name": "Security operations AI",
+     "desc": "AI SOC analysts, AI pentesting"
+    },
+    {
+     "id": "n9.edu",
+     "layer": "core",
+     "name": "Education AI",
+     "desc": "Tutoring, learning platforms"
+    },
+    {
+     "id": "n9.industrial",
+     "layer": "core",
+     "name": "Industrial, engineering & science R&D AI",
+     "desc": "AI for engineering, manufacturing, drug discovery, materials"
+    },
+    {
+     "id": "n9.physical",
+     "layer": "core",
+     "name": "Robotics & autonomy",
+     "desc": "Humanoids, autonomous vehicles, robot fleets"
+    },
+    {
+     "id": "n9.consumer",
+     "layer": "core",
+     "name": "Consumer companions & entertainment",
+     "desc": "Character/companion apps, AI games"
+    },
+    {
+     "id": "n9.devices",
+     "layer": "core",
+     "name": "AI devices & wearables",
+     "desc": "AI-first hardware for consumers"
+    },
+    {
+     "id": "n9.store",
+     "layer": "distribution",
+     "name": "App & agent marketplaces",
+     "desc": "GPT/agent stores, cloud AI marketplaces, plugin directories"
+    },
+    {
+     "id": "n9.public",
+     "layer": "core",
+     "name": "Public sector & defence AI",
+     "desc": "AI platforms for government, intelligence and defence"
+    },
+    {
+     "id": "n9.commerce",
+     "layer": "core",
+     "name": "Retail & commerce agents",
+     "desc": "Shopping assistants, agentic checkout, retail AI"
+    },
+    {
+     "id": "n9.itops",
+     "layer": "core",
+     "name": "IT & internal service agents",
+     "desc": "ITSM agents, employee service desks"
+    },
+    {
+     "id": "n9.analytics",
+     "layer": "core",
+     "name": "Data analytics & BI agents",
+     "desc": "Natural-language analytics, AI data analysts"
+    },
+    {
+     "id": "n9.lang",
+     "layer": "core",
+     "name": "Translation & localisation",
+     "desc": "Machine translation, dubbing, localisation"
+    },
+    {
+     "id": "n9.insurance",
+     "layer": "core",
+     "name": "Insurance, real estate & construction AI",
+     "desc": "Claims, underwriting, property and construction AI"
+    },
+    {
+     "id": "n9.supply",
+     "layer": "core",
+     "name": "Logistics, supply chain & agriculture AI",
+     "desc": "Freight, procurement, supply-chain planning, agritech AI"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "name": "Services & Adoption",
+   "short": "Services",
+   "desc": "The people layer between technology and outcomes: integrators, consultancies, transformation boutiques and skilling.",
+   "subsegments": [
+    {
+     "id": "n10.si",
+     "layer": "core",
+     "name": "Global systems integrators & IT services",
+     "desc": "Large SIs delivering AI implementation at scale"
+    },
+    {
+     "id": "n10.consult",
+     "layer": "core",
+     "name": "Strategy & transformation consultancies",
+     "desc": "AI strategy, operating model and org transformation"
+    },
+    {
+     "id": "n10.native",
+     "layer": "core",
+     "name": "AI-native services & forward-deployed engineering",
+     "desc": "AI-first consultancies, FDE teams, specialist boutiques"
+    },
+    {
+     "id": "n10.bpo",
+     "layer": "core",
+     "name": "AI-enabled BPO & managed agents",
+     "desc": "Outsourcers reinventing delivery with agents; service-as-software"
+    },
+    {
+     "id": "n10.skill",
+     "layer": "inputs",
+     "name": "AI skilling & certification",
+     "desc": "Training, academies, certification for workforce AI fluency"
+    },
+    {
+     "id": "n10.change",
+     "layer": "ops",
+     "name": "Responsible AI & assurance services",
+     "desc": "Audit, assurance and AI risk advisory"
+    },
+    {
+     "id": "n10.lab",
+     "layer": "core",
+     "name": "Lab-owned deployment arms",
+     "desc": "Services arms owned by model labs, tied to one model vendor"
+    },
+    {
+     "id": "n10.org",
+     "layer": "core",
+     "name": "Org change & workforce transition",
+     "desc": "Operating-model and role redesign, workforce transition for AI"
+    },
+    {
+     "id": "n10.managed",
+     "layer": "core",
+     "name": "Managed AI operations",
+     "desc": "Running, monitoring and improving deployed agents as a service"
+    },
+    {
+     "id": "n10.insure",
+     "layer": "ops",
+     "name": "AI insurance & risk transfer",
+     "desc": "Insurance and warranties covering AI failures and liability"
+    },
+    {
+     "id": "n10.partner",
+     "layer": "distribution",
+     "name": "Partner ecosystems & channels",
+     "desc": "Hyperscaler and lab partner programmes, resellers, marketplace-led services"
+    }
+   ]
+  },
+  {
+   "id": "n11",
+   "name": "Users",
+   "short": "Users",
+   "desc": "Who consumes AI and how they buy it.",
+   "subsegments": [
+    {
+     "id": "n11.ent",
+     "layer": "core",
+     "name": "Large enterprises",
+     "desc": "Buy via platforms, SIs and direct API contracts; care about governance and ROI"
+    },
+    {
+     "id": "n11.mid",
+     "layer": "core",
+     "name": "Mid-market & SMB",
+     "desc": "Buy SaaS with embedded AI; self-serve and channel"
+    },
+    {
+     "id": "n11.public",
+     "layer": "core",
+     "name": "Governments & public sector",
+     "desc": "Sovereign compute, citizen services, defence"
+    },
+    {
+     "id": "n11.startup",
+     "layer": "core",
+     "name": "AI-native startups",
+     "desc": "Build on APIs and inference providers; token spend is COGS"
+    },
+    {
+     "id": "n11.dev",
+     "layer": "core",
+     "name": "Individual developers",
+     "desc": "Use coding agents, APIs, local models; adopt bottom-up"
+    },
+    {
+     "id": "n11.consumer",
+     "layer": "core",
+     "name": "Consumers & prosumers",
+     "desc": "Assistants, creative tools, devices; freemium subscriptions"
+    }
+   ]
+  }
+ ],
+ "transitions": [
+  {
+   "from": "n0",
+   "to": "n3",
+   "name": "Powered, cooled floor space",
+   "needs": "Grid interconnection, liquid-cooling-ready halls, 100kW+ rack density, permits; lead time is now measured in years"
+  },
+  {
+   "from": "n1",
+   "to": "n2",
+   "name": "Design to silicon",
+   "needs": "Leading-edge node capacity, CoWoS-class packaging allocation, HBM supply; capacity is booked years ahead"
+  },
+  {
+   "from": "n2",
+   "to": "n3",
+   "name": "Chip to rack",
+   "needs": "Reference designs, scale-up interconnect (NVLink/UALink), power delivery, OCP-style rack standards"
+  },
+  {
+   "from": "n3",
+   "to": "n4",
+   "name": "Rack to rentable cluster",
+   "needs": "DC capacity, capital (GPU-backed debt), cluster bring-up, orchestration, SLAs"
+  },
+  {
+   "from": "n4",
+   "to": "n6",
+   "name": "Compute to trained model",
+   "needs": "Distributed training stack, data, research talent, multi-thousand-GPU clusters, failure tolerance"
+  },
+  {
+   "from": "n5",
+   "to": "n6",
+   "name": "Data to model",
+   "needs": "Licensing rights, quality filters, expert-data pipelines, RL environments"
+  },
+  {
+   "from": "n6",
+   "to": "n7",
+   "name": "Weights to tokens",
+   "needs": "Serving engine, quantisation, model licence terms, autoscaling, GPU capacity"
+  },
+  {
+   "from": "n7",
+   "to": "n8",
+   "name": "Tokens to building blocks",
+   "needs": "Standard APIs (OpenAI-compatible), tool-calling, MCP, retrieval, memory"
+  },
+  {
+   "from": "n8",
+   "to": "n9",
+   "name": "Blocks to product",
+   "needs": "Workflow understanding, evals, UX, distribution, unit economics where token cost is COGS"
+  },
+  {
+   "from": "n9",
+   "to": "n10",
+   "name": "Product to deployment",
+   "needs": "Integration with enterprise data/systems, security reviews, change management"
+  },
+  {
+   "from": "n10",
+   "to": "n11",
+   "name": "Deployment to outcomes",
+   "needs": "Operating-model redesign, skilling, governance, measurable ROI"
+  },
+  {
+   "from": "n9",
+   "to": "n11",
+   "name": "Direct product-led adoption",
+   "needs": "Self-serve onboarding, freemium, bottom-up developer and prosumer pull"
+  }
+ ]
+}

@@ -1,0 +1,2526 @@
+{
+ "node": "n10",
+ "notes": {
+  "n10.si": "Crowded and consolidating: Accenture leads; Indian majors (TCS reported ~$1.8B annualised AI revenue in FY26) are buying AI and engineering firms (Indian IT spent ~$4.5B on acquisitions in H1 2026).",
+  "n10.consult": "Strategy firms are shifting to outcome-linked fees and AI-agent leverage, and are co-investing in lab-backed services firms (Bain, McKinsey and Capgemini invested in OpenAI's Deployment Company).",
+  "n10.native": "Fastest-moving segment in 2026: labs went downstream (OpenAI Deployment Company, $4B+, May 2026; Ode with Anthropic, Jul 2026) and SIs bought boutiques (Accenture-Faculty, Jan 2026).",
+  "n10.bpo": "Incumbent CX/BPM outsourcers are repricing around AI agents while AI-native outsourcers (Crescendo) and SI-BPO combinations (Capgemini-WNS, $3.3B, Oct 2025) compete on outcome pricing.",
+  "n10.skill": "Platform consolidation (Coursera-Udemy, May 2026) alongside free vendor academies from labs and hyperscalers that double as ecosystem lock-in.",
+  "n10.change": "ISO/IEC 42001 certification is becoming the baseline (BSI, Schellman accredited), and AI-specific insurance (AIUC, Armilla, Munich Re) is emerging as a new assurance layer.",
+  "n10.lab": "Created in 2026: OpenAI Deployment Company (OpenAI-controlled, >$4B, May 2026) and Ode with Anthropic (Anthropic minority, launched Jul 2026), both growing by acquiring boutiques (Tomoro, Fractional AI, Casper Studios).",
+  "n10.org": "Led by HR consultancies (Mercer, Korn Ferry, WTW, Aon) and the strategy firms; the work is role and work redesign rather than technology build.",
+  "n10.managed": "SIs and BPOs are repackaging application and process outsourcing as ongoing agent operations, often priced on outcomes.",
+  "n10.insure": "Early market: specialist MGAs (Armilla, Testudo, AIUC) on Lloyd's or reinsurer capacity, with Munich Re's aiSure the longest-running cover.",
+  "n10.partner": "Lab and hyperscaler partner programmes now steer services demand; Anthropic committed $100M to its Claude Partner Network in 2026."
+ },
+ "entries": [
+  {
+   "name": "4Paradigm",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Hong Kong-listed enterprise AI platform and solutions provider",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.4paradigm.com",
+   "source": "https://www.4paradigm.com/"
+  },
+  {
+   "name": "A-LIGN",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Compliance audit firm offering ISO 42001 certification",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.a-lign.com",
+   "source": "https://www.a-lign.com/"
+  },
+  {
+   "name": "ABEJA",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Tokyo-listed AI platform and DX services firm",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.abejainc.com",
+   "source": "https://www.abejainc.com/"
+  },
+  {
+   "name": "Accenture",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.consult",
+    "n10.native",
+    "n10.bpo",
+    "n10.skill",
+    "n10.change",
+    "n10.org",
+    "n10.managed",
+    "n10.partner"
+   ],
+   "hq": "IE",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Largest IT services and consulting firm; AI implementation, operations, LearnVantage skilling and responsible-AI advisory",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.accenture.com",
+   "source": "https://newsroom.accenture.com/news/2026/accenture-to-acquire-faculty-to-scale-ai-capabilities",
+   "note": "Agreed Jan 2026 to acquire UK applied-AI firm Faculty (reported >$1B); owns Udacity (2024)"
+  },
+  {
+   "name": "Advai",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "UK AI robustness testing and assurance for defence and enterprise",
+   "tags": [
+    "security",
+    "enterprise"
+   ],
+   "url": "https://www.advai.co.uk",
+   "source": "https://www.advai.co.uk/"
+  },
+  {
+   "name": "AI Singapore",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "government",
+   "one_liner": "National AI programme running AI Apprenticeship and AI for Everyone",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://aisingapore.org",
+   "source": "https://aisingapore.org/"
+  },
+  {
+   "name": "AIUC (Artificial Intelligence Underwriting Company)",
+   "kind": "company",
+   "subsegments": [
+    "n10.insure"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AIUC-1 agent security standard, audits and insurance for AI agents",
+   "tags": [
+    "security",
+    "enterprise"
+   ],
+   "url": "https://aiuc.com",
+   "source": "https://fintech.global/2026/09/17/aiuc-raises-40m-to-police-risk-in-frontier-ai-agents/",
+   "note": "Raised $40M Series A (Sep 2026)"
+  },
+  {
+   "name": "Alorica",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "CX outsourcer adding AI agents to contact-centre services",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.alorica.com",
+   "source": "https://www.alorica.com/"
+  },
+  {
+   "name": "Anthropic Academy",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Anthropic",
+   "one_liner": "Anthropic's free AI Fluency and Claude developer courses",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.anthropic.com/learn",
+   "source": "https://www.anthropic.com/learn"
+  },
+  {
+   "name": "Aon (Human Capital)",
+   "kind": "company",
+   "subsegments": [
+    "n10.org"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "parent": "Aon",
+   "one_liner": "Talent assessment, workforce and rewards advisory",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.aon.com",
+   "source": "https://www.aon.com/"
+  },
+  {
+   "name": "Artefact",
+   "kind": "company",
+   "subsegments": [
+    "n10.native",
+    "n10.consult"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Paris-based data and AI consultancy",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.artefact.com",
+   "source": "https://www.artefact.com/"
+  },
+  {
+   "name": "Atos / Eviden",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "French IT services group post-restructuring; AI, HPC and sovereign cloud services",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://atos.net",
+   "source": "https://atos.net/en/"
+  },
+  {
+   "name": "AWS Partner Network",
+   "kind": "company",
+   "subsegments": [
+    "n10.partner"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Amazon",
+   "one_liner": "AWS partner programme incl. Generative AI Competency and Marketplace co-sell",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://aws.amazon.com/partners/",
+   "source": "https://aws.amazon.com/partners/"
+  },
+  {
+   "name": "AWS Skill Builder",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Amazon",
+   "one_liner": "AWS training and certifications incl. AI Practitioner and ML Engineer",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://skillbuilder.aws",
+   "source": "https://aws.amazon.com/certification/"
+  },
+  {
+   "name": "BABL AI",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Independent algorithmic auditing firm (e.g. NYC bias audits)",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://babl.ai",
+   "source": "https://babl.ai/"
+  },
+  {
+   "name": "Bain & Company",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Strategy consultancy with OpenAI services alliance and AI transformation practice",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.bain.com",
+   "source": "https://openai.com/index/openai-launches-the-deployment-company",
+   "note": "Investor in OpenAI Deployment Company (May 2026)"
+  },
+  {
+   "name": "Booz Allen Hamilton",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult",
+    "n10.si",
+    "n9.public"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "US government consultancy; defence and civil AI engineering",
+   "tags": [
+    "enterprise",
+    "sovereign"
+   ],
+   "url": "https://www.boozallen.com",
+   "source": "https://www.boozallen.com/expertise/artificial-intelligence.html"
+  },
+  {
+   "name": "Boston Consulting Group (BCG X)",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult",
+    "n10.native",
+    "n10.org"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Strategy consultancy; BCG X tech build and AI transformation unit",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.bcg.com/x",
+   "source": "https://www.bcg.com/x"
+  },
+  {
+   "name": "BSI",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "non-profit",
+   "one_liner": "Standards body and certifier; ISO/IEC 42001 AI management system certification",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.bsigroup.com",
+   "source": "https://www.bsigroup.com/en-US/insights-and-media/media-center/press-releases/2025/november/bsi-becomes-the-first-certification-body-accredited-by-ukas-and-rva-to-deliver-certification-for-isoiec-42001/",
+   "note": "First UKAS/RvA-accredited ISO 42001 certifier (Nov 2025); ANAB accreditation Mar 2026"
+  },
+  {
+   "name": "Capgemini",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.consult",
+    "n10.bpo"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "European IT services group; Capgemini Invent consulting; agentic intelligent operations via WNS",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.capgemini.com",
+   "source": "https://www.capgemini.com/news/press-releases/capgemini-completes-the-acquisition-of-wns-and-creates-a-global-leader-in-agentic-ai-powered-intelligent-operations/",
+   "note": "Completed $3.3B WNS acquisition Oct 2025; investor in OpenAI Deployment Company (May 2026)"
+  },
+  {
+   "name": "Casper Studios",
+   "kind": "company",
+   "subsegments": [
+    "n10.lab"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Ode with Anthropic (2026)",
+   "one_liner": "AI build studio acquired to expand Ode's corporate deployments",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.casperstudios.xyz",
+   "source": "https://pymnts.com/news/acquiring/2026/anthropic-backed-ode-acquires-casper-studios-to-expand-corporate-ai-deployments"
+  },
+  {
+   "name": "CGI",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.consult"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Canadian IT and business consulting firm; AI integration for government and enterprise",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.cgi.com",
+   "source": "https://www.cgi.com/en/artificial-intelligence"
+  },
+  {
+   "name": "Chinasoft International",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Chinese IT services firm; Huawei-ecosystem AI and cloud integration",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.chinasofti.com",
+   "source": "https://www.chinasofti.com/"
+  },
+  {
+   "name": "Coforge",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Mid-tier Indian IT services firm; expanding AI engineering via Encora acquisition",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.coforge.com",
+   "source": "https://www.angelone.in/news/market-updates/indian-it-firms-spend-4-5-billion-on-acquisitions-in-h1-2026-ai-and-cybersecurity-drive-deal-activity",
+   "note": "Agreed $2.35B acquisition of Encora (2026)"
+  },
+  {
+   "name": "Cognizant",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.managed",
+    "n10.partner"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "US-listed IT services firm with large India delivery; AI agent engineering and Neuro platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.cognizant.com",
+   "source": "https://www.cognizant.com/us/en/ai"
+  },
+  {
+   "name": "Concentrix",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo",
+    "n10.managed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "CX outsourcing giant (incl. Webhelp) selling agentic AI-plus-human customer operations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.concentrix.com",
+   "source": "https://www.concentrix.com/"
+  },
+  {
+   "name": "Coursera (incl. Udemy)",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Online learning platform for AI courses, certificates and enterprise skilling",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.coursera.org",
+   "source": "https://letsdatascience.com/news/coursera-and-udemy-complete-25b-merger-creating-skills-platf-f913e24a",
+   "note": "Closed ~$2.5B all-stock combination with Udemy, May 2026"
+  },
+  {
+   "name": "DataCamp",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Data and AI skills platform for individuals and enterprises",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.datacamp.com",
+   "source": "https://www.datacamp.com/"
+  },
+  {
+   "name": "Datatonic",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "UK data and AI consultancy, Google Cloud specialist",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://datatonic.com",
+   "source": "https://datatonic.com/"
+  },
+  {
+   "name": "DeepLearning.AI",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Andrew Ng's AI education company: short courses and specialisations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.deeplearning.ai",
+   "source": "https://www.deeplearning.ai/"
+  },
+  {
+   "name": "Deloitte",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.consult",
+    "n10.change",
+    "n10.org",
+    "n10.partner"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Big Four professional-services network; AI implementation, strategy and Trustworthy AI assurance",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.deloitte.com",
+   "source": "https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence.html"
+  },
+  {
+   "name": "Distyl AI",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Forward-deployed AI engineering plus licensed software for enterprise process automation",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://distyl.ai",
+   "source": "https://www.shopifreaks.com/distyl-ai-raises-175m-at-1-8b-valuation-to-expand-ai-consulting-services/",
+   "note": "Raised $175M at $1.8B (Sep 2025)"
+  },
+  {
+   "name": "DNV",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "NO",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Assurance firm offering AI management system certification and AI assurance",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.dnv.com",
+   "source": "https://www.dnv.com/"
+  },
+  {
+   "name": "DXC Technology",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Enterprise IT services firm; AI-enabled application and infrastructure services",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://dxc.com",
+   "source": "https://dxc.com/us/en/offerings/ai"
+  },
+  {
+   "name": "Ekimetrics",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "French data science and AI consultancy",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.ekimetrics.com",
+   "source": "https://www.ekimetrics.com/"
+  },
+  {
+   "name": "Elements of AI",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "FI",
+   "region": "Europe",
+   "status": "non-profit",
+   "one_liner": "Free AI literacy course from University of Helsinki and MinnaLearn",
+   "tags": [
+    "enterprise",
+    "open-source"
+   ],
+   "url": "https://www.elementsofai.com",
+   "source": "https://www.elementsofai.com/"
+  },
+  {
+   "name": "Emeritus",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Executive and professional education with universities, incl. AI programmes",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://emeritus.org",
+   "source": "https://emeritus.org/"
+  },
+  {
+   "name": "Endava",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "UK digital engineering firm; AI-native software delivery",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.endava.com",
+   "source": "https://www.endava.com/"
+  },
+  {
+   "name": "EPAM Systems",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Engineering services firm with Eastern Europe/India delivery; AI/Run agentic engineering",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.epam.com",
+   "source": "https://www.epam.com/services/artificial-intelligence"
+  },
+  {
+   "name": "EXL",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo",
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Data, AI and operations firm (India delivery); EXLerate.AI agentic platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.exlservice.com",
+   "source": "https://www.exlservice.com/"
+  },
+  {
+   "name": "EY",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult",
+    "n10.si",
+    "n10.change"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Big Four network; EY.ai platform, AI consulting and assurance",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.ey.com",
+   "source": "https://www.ey.com/en_gl/ai"
+  },
+  {
+   "name": "Faculty",
+   "kind": "company",
+   "subsegments": [
+    "n10.native",
+    "n10.change",
+    "n9.public"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "Accenture (2026)",
+   "one_liner": "UK applied-AI firm: decision intelligence, public-sector AI and AI safety work",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://faculty.ai",
+   "source": "https://faculty.ai/insights/articles/accenture-to-acquire-faculty-to-scale-ai-capabilities"
+  },
+  {
+   "name": "Firstsource",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "RP-Sanjiv Goenka group BPM firm with AI-first operations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.firstsource.com",
+   "source": "https://www.firstsource.com/"
+  },
+  {
+   "name": "Foundever",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo"
+   ],
+   "hq": "LU",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Global CX outsourcer (formerly Sitel) deploying AI agents with human teams",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://foundever.com",
+   "source": "https://foundever.com/"
+  },
+  {
+   "name": "Fractal Analytics",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian enterprise AI and analytics services firm with own products",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://fractal.ai",
+   "source": "https://www.outlookmoney.com/invest/fractal-analytics-ipo-listing-today-ai-firm-muted-debut-share-price-list-at-discount",
+   "note": "Listed in India Feb 2026 (IPO ~Rs 2,834 cr)"
+  },
+  {
+   "name": "Fractional AI",
+   "kind": "company",
+   "subsegments": [
+    "n10.lab"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Ode with Anthropic (May 2026)",
+   "one_liner": "Applied AI engineering firm whose team became Ode's core",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.fractional.ai",
+   "source": "https://www.cxodigitalpulse.com/anthropic-blackstone-and-hellman-friedman-launch-enterprise-ai-services-firm-ode/"
+  },
+  {
+   "name": "General Assembly",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Adecco Group",
+   "one_liner": "Bootcamps and corporate AI training",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://generalassemb.ly",
+   "source": "https://generalassemb.ly/"
+  },
+  {
+   "name": "Genpact",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo",
+    "n10.si",
+    "n10.managed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Process-outsourcing firm repositioned around agentic AI-run operations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.genpact.com",
+   "source": "https://www.nasdaq.com/articles/genpact-q1-earnings-call-highlights"
+  },
+  {
+   "name": "Globant",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.native"
+   ],
+   "hq": "LU",
+   "region": "Latin America",
+   "status": "public",
+   "one_liner": "Latin America-rooted digital engineering firm; AI Pods subscription delivery model",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.globant.com",
+   "source": "https://www.globant.com/ai-pods",
+   "note": "Sells token-based 'AI Pods' subscriptions instead of headcount"
+  },
+  {
+   "name": "Google AI skilling (Grow with Google)",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Google AI Essentials and Career Certificates for workforce AI skills",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://grow.google/ai-essentials/",
+   "source": "https://grow.google/ai-essentials/"
+  },
+  {
+   "name": "Google Cloud Partner Network",
+   "kind": "company",
+   "subsegments": [
+    "n10.partner"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Google Cloud partner programme and AI agent marketplace co-sell",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://cloud.google.com/partners",
+   "source": "https://cloud.google.com/partners"
+  },
+  {
+   "name": "Great Learning",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian professional learning provider for AI and data science",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.mygreatlearning.com",
+   "source": "https://www.mygreatlearning.com/"
+  },
+  {
+   "name": "HCLTech",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian IT and engineering services firm; AI Force platform and AI engineering services",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.hcltech.com",
+   "source": "https://www.angelone.in/news/market-updates/indian-it-firms-spend-4-5-billion-on-acquisitions-in-h1-2026-ai-and-cybersecurity-drive-deal-activity",
+   "note": "2026 deals incl. Finergic and HPE telecom solutions business"
+  },
+  {
+   "name": "Hexaware",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian IT services firm (Carlyle-backed, listed 2025) with agentic AI services",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://hexaware.com",
+   "source": "https://hexaware.com/ai/"
+  },
+  {
+   "name": "IBM Consulting",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.consult"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "IBM",
+   "one_liner": "IBM's services arm delivering AI integration on watsonx and partner models",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.ibm.com/consulting",
+   "source": "https://www.ibm.com/consulting/artificial-intelligence"
+  },
+  {
+   "name": "IBM SkillsBuild",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "IBM",
+   "one_liner": "IBM free AI skills programme",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://skillsbuild.org",
+   "source": "https://skillsbuild.org/"
+  },
+  {
+   "name": "IndiaAI FutureSkills",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "government",
+   "one_liner": "IndiaAI Mission pillar funding AI education and labs",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://indiaai.gov.in",
+   "source": "https://indiaai.gov.in/"
+  },
+  {
+   "name": "Infosys",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.bpo",
+    "n10.consult",
+    "n10.managed",
+    "n10.partner"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian IT major; Topaz AI services, Infosys BPM and Infosys Consulting",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.infosys.com",
+   "source": "https://www.angelone.in/news/market-updates/indian-it-firms-spend-4-5-billion-on-acquisitions-in-h1-2026-ai-and-cybersecurity-drive-deal-activity",
+   "note": "H1 2026 acquisitions incl. Stratus Global and Optimum"
+  },
+  {
+   "name": "Ingram Micro",
+   "kind": "company",
+   "subsegments": [
+    "n10.partner"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "IT distributor and cloud marketplace for resellers incl. AI offerings",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.ingrammicro.com",
+   "source": "https://www.ingrammicro.com/"
+  },
+  {
+   "name": "Kearney",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Strategy and operations consultancy with AI-enabled operating-model work",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.kearney.com",
+   "source": "https://www.kearney.com/service/digital-analytics"
+  },
+  {
+   "name": "Korn Ferry",
+   "kind": "company",
+   "subsegments": [
+    "n10.org"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Org consultancy on org design, leadership and workforce for AI-era roles",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.kornferry.com",
+   "source": "https://www.kornferry.com/"
+  },
+  {
+   "name": "KPMG",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult",
+    "n10.si",
+    "n10.change"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Big Four network; AI advisory and Trusted AI assurance",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://kpmg.com",
+   "source": "https://kpmg.com/xx/en/what-we-do/services/ai.html"
+  },
+  {
+   "name": "Kyndryl",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.managed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Infrastructure services spun out of IBM; agentic AI for IT operations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.kyndryl.com",
+   "source": "https://www.kyndryl.com/us/en/services/ai"
+  },
+  {
+   "name": "LatentView Analytics",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian-listed analytics and AI services firm",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.latentview.com",
+   "source": "https://www.latentview.com/"
+  },
+  {
+   "name": "LG CNS",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Korean IT services firm; agentic AI and sovereign cloud integration",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.lgcns.com",
+   "source": "https://www.lgcns.com/en"
+  },
+  {
+   "name": "Lloyd's of London",
+   "kind": "company",
+   "subsegments": [
+    "n10.insure"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Insurance market providing capacity for AI-malfunction cover (e.g. Armilla, Testudo)",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.lloyds.com",
+   "source": "https://www.freevacy.com/news/financial-times/lloyds-of-london-launches-insurance-product-for-malfunctioning-ai/6380"
+  },
+  {
+   "name": "LTIMindtree",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "parent": "Larsen & Toubro",
+   "one_liner": "Larsen & Toubro's IT services arm; AI and data engineering services",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.ltimindtree.com",
+   "source": "https://www.ltimindtree.com/ai/"
+  },
+  {
+   "name": "McKinsey & Company (QuantumBlack)",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult",
+    "n10.native",
+    "n10.org"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Strategy consultancy; QuantumBlack AI arm builds and deploys AI; operating-model redesign",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.mckinsey.com/capabilities/quantumblack",
+   "source": "https://www.fanaticalfuturist.com/2026/04/mckinsey-now-has-60-000-employees-25-000-of-them-are-ai-agents/",
+   "note": "CEO said 2026 workforce includes ~25,000 AI agents; investor in OpenAI Deployment Company"
+  },
+  {
+   "name": "Mercer",
+   "kind": "company",
+   "subsegments": [
+    "n10.org"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Marsh McLennan",
+   "one_liner": "HR consultancy (Marsh) on work redesign, skills-based org and workforce transition for AI",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.mercer.com",
+   "source": "https://www.mercer.com/about/newsroom/as-organizations-race-to-adopt-ai-in-2026-marsh-s-mercer-says-empower-talent-and-redesign-work-to-achieve-meaningful-gains/"
+  },
+  {
+   "name": "Microsoft AI Cloud Partner Program",
+   "kind": "company",
+   "subsegments": [
+    "n10.partner"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Microsoft partner programme with AI designations and Marketplace co-sell",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://partner.microsoft.com",
+   "source": "https://partner.microsoft.com/"
+  },
+  {
+   "name": "Microsoft Elevate / LinkedIn Learning",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Microsoft's AI skilling programme and LinkedIn Learning courses",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.microsoft.com/en-us/corporate-responsibility/elevate",
+   "source": "https://learn.microsoft.com/en-us/training/"
+  },
+  {
+   "name": "Mphasis",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian IT services firm focused on banking; AI-led application modernisation",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.mphasis.com",
+   "source": "https://www.mphasis.com/home/services/ai.html"
+  },
+  {
+   "name": "Multiverse",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Apprenticeship-based AI and data upskilling for employers",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.multiverse.io",
+   "source": "https://www.multiverse.io/"
+  },
+  {
+   "name": "Munich Re aiSure",
+   "kind": "company",
+   "subsegments": [
+    "n10.insure"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "public",
+   "parent": "Munich Re",
+   "one_liner": "Insurance guaranteeing AI model performance",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.munichre.com/en/solutions/for-industry-clients/insure-ai.html",
+   "source": "https://www.munichre.com/en/solutions/for-industry-clients/insure-ai.html"
+  },
+  {
+   "name": "NCC Group",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Cyber security consultancy with AI/ML security assessments",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.nccgroup.com",
+   "source": "https://www.nccgroup.com/"
+  },
+  {
+   "name": "NEC",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Japanese IT and network services firm; cotomi LLM and AI integration",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.nec.com",
+   "source": "https://www.nec.com/en/global/solutions/ai/"
+  },
+  {
+   "name": "NTT DATA",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "parent": "NTT",
+   "one_liner": "Japanese global IT services group; GenAI implementation, data centres via NTT",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.nttdata.com",
+   "source": "https://www.nttdata.com/global/en/services/data-and-intelligence"
+  },
+  {
+   "name": "NVIDIA Deep Learning Institute",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "NVIDIA",
+   "one_liner": "NVIDIA hands-on AI training and certifications",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.nvidia.com/en-us/training/",
+   "source": "https://www.nvidia.com/en-us/training/"
+  },
+  {
+   "name": "NVIDIA Partner Network",
+   "kind": "company",
+   "subsegments": [
+    "n10.partner"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "NVIDIA",
+   "one_liner": "NVIDIA's reseller, SI and cloud partner programme for AI factories",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.nvidia.com/en-us/about-nvidia/partners/",
+   "source": "https://www.nvidia.com/en-us/about-nvidia/partners/"
+  },
+  {
+   "name": "Ode with Anthropic",
+   "kind": "company",
+   "subsegments": [
+    "n10.native",
+    "n10.lab"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Anthropic (minority) / Blackstone / Hellman & Friedman",
+   "one_liner": "Enterprise AI services firm deploying Claude-based systems for mid-sized companies",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.businesswire.com/news/home/20260715205134/en/",
+   "source": "https://www.cxodigitalpulse.com/anthropic-blackstone-and-hellman-friedman-launch-enterprise-ai-services-firm-ode/",
+   "note": "Announced May 2026, launched Jul 2026; absorbed Fractional AI and acquired Casper Studios"
+  },
+  {
+   "name": "Oliver Wyman",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Marsh McLennan",
+   "one_liner": "Strategy consultancy (Marsh McLennan) with AI practice for financial services",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.oliverwyman.com",
+   "source": "https://www.oliverwyman.com/"
+  },
+  {
+   "name": "OpenAI Academy & Certifications",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "OpenAI",
+   "one_liner": "OpenAI's free AI literacy courses and certifications linked to its jobs platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://academy.openai.com",
+   "source": "https://openai.com/blog/expanding-economic-opportunity-with-ai",
+   "note": "Target: certify 10M Americans by 2030"
+  },
+  {
+   "name": "OpenAI Deployment Company",
+   "kind": "company",
+   "subsegments": [
+    "n10.native",
+    "n10.lab"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "OpenAI (majority)",
+   "one_liner": "OpenAI-controlled services firm placing forward-deployed engineers to build production AI in enterprises",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://openai.com/index/openai-launches-the-deployment-company",
+   "source": "https://openai.com/index/openai-launches-the-deployment-company",
+   "note": "Launched May 2026 with >$4B; TPG-led; agreed to acquire Tomoro (~150 FDEs)"
+  },
+  {
+   "name": "ORCAA",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Cathy O'Neil's algorithmic auditing consultancy",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://orcaarisk.com",
+   "source": "https://orcaarisk.com/"
+  },
+  {
+   "name": "Persistent Systems",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian digital engineering firm; GenAI and agent engineering for software and BFSI clients",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.persistent.com",
+   "source": "https://www.persistent.com/services/ai/"
+  },
+  {
+   "name": "PKSHA Technology",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Tokyo-listed AI solutions and agent developer for Japanese enterprises",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.pkshatech.com",
+   "source": "https://www.pkshatech.com/"
+  },
+  {
+   "name": "Pluralsight",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Tech skills platform for developers and IT teams incl. AI paths",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.pluralsight.com",
+   "source": "https://www.pluralsight.com/"
+  },
+  {
+   "name": "Presight",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "AE",
+   "region": "Middle East",
+   "status": "public",
+   "parent": "G42",
+   "one_liner": "G42's ADX-listed applied AI and big-data services firm for government and enterprise",
+   "tags": [
+    "enterprise",
+    "sovereign"
+   ],
+   "url": "https://www.presight.ai",
+   "source": "https://www.presight.ai/"
+  },
+  {
+   "name": "Prosci",
+   "kind": "company",
+   "subsegments": [
+    "n10.org"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Change-management methodology (ADKAR), training and certification",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.prosci.com",
+   "source": "https://www.prosci.com/"
+  },
+  {
+   "name": "PwC",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult",
+    "n10.si",
+    "n10.change",
+    "n10.org"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Big Four network; AI consulting, agent OS and responsible AI assurance",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.pwc.com",
+   "source": "https://www.pwc.com/gx/en/issues/artificial-intelligence.html"
+  },
+  {
+   "name": "Quantiphi",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-first engineering services firm with large India delivery; Google/AWS/NVIDIA partner",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://quantiphi.com",
+   "source": "https://quantiphi.com/"
+  },
+  {
+   "name": "Rackspace Technology",
+   "kind": "company",
+   "subsegments": [
+    "n10.managed",
+    "n10.partner"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Multicloud managed-services provider running AI workloads and agents for clients",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.rackspace.com",
+   "source": "https://www.rackspace.com/"
+  },
+  {
+   "name": "Redington",
+   "kind": "company",
+   "subsegments": [
+    "n10.partner"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian/emerging-market IT distributor for cloud and AI solutions",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.redingtongroup.com",
+   "source": "https://www.redingtongroup.com/"
+  },
+  {
+   "name": "Roland Berger",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "German strategy consultancy with AI transformation advisory",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.rolandberger.com",
+   "source": "https://www.rolandberger.com/"
+  },
+  {
+   "name": "Samsung SDS",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Samsung Group",
+   "one_liner": "Samsung's IT services arm; Brity Copilot and FabriX enterprise GenAI platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.samsungsds.com",
+   "source": "https://www.samsungsds.com/en/"
+  },
+  {
+   "name": "Scale AI (GenAI Platform & Public Sector)",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Builds custom AI applications and agents for enterprises and US government",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://scale.com",
+   "source": "https://scale.com/genai-platform",
+   "note": "Meta took 49% stake (Jun 2025)"
+  },
+  {
+   "name": "Scaler",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian tech upskilling and AI/ML programmes",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.scaler.com",
+   "source": "https://www.scaler.com/"
+  },
+  {
+   "name": "Schellman",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Attestation firm and ANAB-accredited ISO 42001 certification body",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.schellman.com",
+   "source": "https://www.schellman.com/services/ai-governance/iso-42001"
+  },
+  {
+   "name": "Section",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI upskilling programmes for enterprise workforces",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.sectionai.com",
+   "source": "https://www.sectionai.com/"
+  },
+  {
+   "name": "Sigmoid",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Data engineering and AI services firm with India delivery",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.sigmoid.com",
+   "source": "https://www.sigmoid.com/"
+  },
+  {
+   "name": "Simplilearn",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Blackstone",
+   "one_liner": "Indian bootcamp and certification provider (Blackstone-owned)",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.simplilearn.com",
+   "source": "https://www.simplilearn.com/"
+  },
+  {
+   "name": "Skillsoft",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Corporate learning provider with AI coaching and AI skilling content",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.skillsoft.com",
+   "source": "https://www.skillsoft.com/"
+  },
+  {
+   "name": "Slalom",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.consult"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "US consultancy delivering AI, data and cloud implementation",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.slalom.com",
+   "source": "https://www.slalom.com/us/en/services/artificial-intelligence"
+  },
+  {
+   "name": "Softtek",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "MX",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Mexican IT services firm; GenAI-enabled application services",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.softtek.com",
+   "source": "https://www.softtek.com/"
+  },
+  {
+   "name": "SoftwareOne",
+   "kind": "company",
+   "subsegments": [
+    "n10.partner"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Software and cloud reseller (merged with Crayon 2025) selling Copilot and AI services",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.softwareone.com",
+   "source": "https://www.softwareone.com/"
+  },
+  {
+   "name": "Sopra Steria",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "European IT services firm; AI integration for public sector and banking",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.soprasteria.com",
+   "source": "https://www.soprasteria.com/"
+  },
+  {
+   "name": "Stefanini",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "BR",
+   "region": "Latin America",
+   "status": "private",
+   "one_liner": "Brazilian IT services group with AI and automation practices",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://stefanini.com",
+   "source": "https://stefanini.com/en"
+  },
+  {
+   "name": "Sutherland",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Process transformation and BPO firm with AI-led operations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.sutherlandglobal.com",
+   "source": "https://www.sutherlandglobal.com/"
+  },
+  {
+   "name": "TaskUs",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Outsourcer for tech firms; trust & safety, AI data services and agentic AI consulting",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.taskus.com",
+   "source": "https://www.silicon.co.uk/press-release/taskus-launches-agentic-ai-consulting-practice-to-lead-businesses-through-the-ai-era"
+  },
+  {
+   "name": "Tata Consultancy Services (TCS)",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.bpo",
+    "n10.managed"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "parent": "Tata Sons",
+   "one_liner": "India's largest IT services firm; AI services, BPS, and building HyperVault AI data centres",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.tcs.com",
+   "source": "https://letsdatascience.com/news/tcs-posts-18b-annualised-ai-revenue-beb9ded9",
+   "note": "Reported ~$1.8B annualised AI services revenue (FY26)"
+  },
+  {
+   "name": "TD SYNNEX",
+   "kind": "company",
+   "subsegments": [
+    "n10.partner"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "IT distributor running AI-solution channel programmes for resellers",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.tdsynnex.com",
+   "source": "https://www.tdsynnex.com/"
+  },
+  {
+   "name": "Tech Mahindra",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.bpo"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian IT and BPS firm; telecom-heavy, Orion agentic platform and Indic LLM work",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.techmahindra.com",
+   "source": "https://www.techmahindra.com/ai/"
+  },
+  {
+   "name": "Teleperformance (TP)",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Largest CX BPO; integrating AI agents into contact-centre delivery",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.tp.com",
+   "source": "https://www.tp.com/"
+  },
+  {
+   "name": "Testudo",
+   "kind": "company",
+   "subsegments": [
+    "n10.insure"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Lloyd's-backed GenAI liability insurance with litigation-risk underwriting data",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.testudo.co",
+   "source": "https://www.theinsurer.com/cyber-risk/news/exclusive-testudo-to-launch-lloyds-capacity-backed-genai-liability-offering-as-2026-01-15",
+   "note": "Launched Lloyd's-capacity GenAI liability product (Jan 2026); added Atrium and QBE capacity"
+  },
+  {
+   "name": "The Josh Bersin Company",
+   "kind": "company",
+   "subsegments": [
+    "n10.org"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "HR research and advisory on 'superworker' org and role redesign",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://joshbersin.com",
+   "source": "https://hrexecutive.com/the-rise-of-the-superworker-redesigning-work-jobs-and-roles-in-the-age-of-ai/"
+  },
+  {
+   "name": "Thoughtworks",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Software consultancy (Apax-owned) with AI-first engineering practice",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.thoughtworks.com",
+   "source": "https://www.thoughtworks.com/what-we-do/ai"
+  },
+  {
+   "name": "Tiger Analytics",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI and analytics services firm with India delivery",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.tigeranalytics.com",
+   "source": "https://www.tigeranalytics.com/"
+  },
+  {
+   "name": "Tomoro",
+   "kind": "company",
+   "subsegments": [
+    "n10.native",
+    "n10.lab"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "OpenAI Deployment Company (agreed May 2026)",
+   "one_liner": "Applied AI consulting and engineering firm",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://tomoro.ai",
+   "source": "https://openai.com/index/openai-launches-the-deployment-company"
+  },
+  {
+   "name": "Trail of Bits",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Security research firm auditing AI/ML systems",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.trailofbits.com",
+   "source": "https://www.trailofbits.com/"
+  },
+  {
+   "name": "Tredence",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Data science and AI services firm (India delivery) focused on retail/CPG",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.tredence.com",
+   "source": "https://www.tredence.com/"
+  },
+  {
+   "name": "Tribe AI",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Network of senior AI engineers delivering enterprise AI projects",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.tribe.ai",
+   "source": "https://www.tribe.ai/"
+  },
+  {
+   "name": "TripleTen",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Nebius",
+   "one_liner": "Online tech bootcamp owned by Nebius",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://tripleten.com",
+   "source": "https://nebius.com/"
+  },
+  {
+   "name": "TTEC",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "CX technology and outsourcing firm",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.ttec.com",
+   "source": "https://www.ttec.com/"
+  },
+  {
+   "name": "TÜV SÜD",
+   "kind": "company",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Testing and certification group offering AI assurance and ISO 42001",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.tuvsud.com",
+   "source": "https://www.tuvsud.com/en/themes/artificial-intelligence"
+  },
+  {
+   "name": "Udacity",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Accenture (2024)",
+   "one_liner": "Online tech nanodegrees, now part of Accenture LearnVantage",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.udacity.com",
+   "source": "https://www.udacity.com/"
+  },
+  {
+   "name": "upGrad",
+   "kind": "company",
+   "subsegments": [
+    "n10.skill"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian online higher-ed and AI/data upskilling platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.upgrad.com",
+   "source": "https://www.upgrad.com/"
+  },
+  {
+   "name": "Wipro",
+   "kind": "company",
+   "subsegments": [
+    "n10.si",
+    "n10.consult"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian IT services firm; ai360 AI services, Capco consulting",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.wipro.com",
+   "source": "https://www.wipro.com/ai/"
+  },
+  {
+   "name": "WNS",
+   "kind": "company",
+   "subsegments": [
+    "n10.bpo"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "acquired",
+   "parent": "Capgemini (Oct 2025)",
+   "one_liner": "BPM firm for insurance, travel and finance operations",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.wns.com",
+   "source": "https://www.capgemini.com/news/press-releases/capgemini-completes-the-acquisition-of-wns-and-creates-a-global-leader-in-agentic-ai-powered-intelligent-operations/"
+  },
+  {
+   "name": "World Wide Technology",
+   "kind": "company",
+   "subsegments": [
+    "n10.si"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "US technology integrator; AI Proving Ground and NVIDIA-based AI factory deployments",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.wwt.com",
+   "source": "https://www.wwt.com/ai-proving-ground"
+  },
+  {
+   "name": "WTW",
+   "kind": "company",
+   "subsegments": [
+    "n10.org"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "one_liner": "Advisory firm on work and rewards redesign and workforce planning",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.wtwco.com",
+   "source": "https://www.wtwco.com/"
+  },
+  {
+   "name": "ZS Associates",
+   "kind": "company",
+   "subsegments": [
+    "n10.consult"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Management consultancy focused on pharma/life sciences commercial AI",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.zs.com",
+   "source": "https://www.zs.com/"
+  },
+  {
+   "name": "Elements of AI (open)",
+   "kind": "public programme",
+   "subsegments": [
+    "n10.skill",
+    "n11.consumer"
+   ],
+   "hq": "FI",
+   "region": "Europe",
+   "status": "open",
+   "steward": "University of Helsinki and MinnaLearn",
+   "licence": "Free course",
+   "access": "Free online at elementsofai.com in many EU languages",
+   "one_liner": "Free non-technical AI literacy course taken by 2M+ people in 170+ countries",
+   "tags": [
+    "education",
+    "ai-literacy",
+    "open-source"
+   ],
+   "url": "https://www.elementsofai.com/",
+   "source": "https://www.elementsofai.com/"
+  },
+  {
+   "name": "EU Code of Practice on Transparency of AI-generated Content",
+   "kind": "standard",
+   "subsegments": [
+    "n10.change",
+    "n11.ent"
+   ],
+   "hq": "BE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "European Commission AI Office",
+   "licence": "Free public document",
+   "access": "Download and sign via EU digital-strategy site",
+   "one_liner": "Voluntary code for marking and labelling AI-generated content under the AI Act",
+   "tags": [
+    "governance",
+    "eu-ai-act",
+    "labelling",
+    "open-standard"
+   ],
+   "url": "https://digital-strategy.ec.europa.eu/en/news/strong-backing-code-practice-transparency-ai-generated-content",
+   "source": "https://digital-strategy.ec.europa.eu/en/news/strong-backing-code-practice-transparency-ai-generated-content",
+   "note": "Published 31 July 2026; ~190 signatories incl. Google, Meta, OpenAI, Anthropic; obligations from 2 Aug 2026"
+  },
+  {
+   "name": "fast.ai (Practical Deep Learning + fastbook)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n10.skill",
+    "n11.dev"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "open",
+   "steward": "fast.ai (Jeremy Howard, Rachel Thomas)",
+   "licence": "GPL-3.0 (code); prose not redistributable",
+   "access": "Free course at course.fast.ai; notebooks on GitHub",
+   "repo": "https://github.com/fastai/fastbook",
+   "stars": 25300,
+   "archived": false,
+   "one_liner": "Free top-down practical deep-learning course and book",
+   "tags": [
+    "education",
+    "open-source"
+   ],
+   "url": "https://github.com/fastai/fastbook",
+   "source": "https://github.com/fastai/fastbook"
+  },
+  {
+   "name": "Generative AI for Beginners",
+   "kind": "open-source project",
+   "subsegments": [
+    "n10.skill",
+    "n11.dev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Microsoft Cloud Advocates",
+   "licence": "MIT",
+   "access": "Free on GitHub; 21 lessons with code",
+   "repo": "https://github.com/microsoft/generative-ai-for-beginners",
+   "stars": 122000,
+   "archived": false,
+   "one_liner": "21-lesson open curriculum for building generative AI apps",
+   "tags": [
+    "education",
+    "open-source"
+   ],
+   "url": "https://github.com/microsoft/generative-ai-for-beginners",
+   "source": "https://github.com/microsoft/generative-ai-for-beginners"
+  },
+  {
+   "name": "Hugging Face courses (LLM, Agents)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n10.skill",
+    "n11.dev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Hugging Face",
+   "licence": "Apache-2.0",
+   "access": "Free at huggingface.co/learn; notebooks on GitHub",
+   "repo": "https://github.com/huggingface/agents-course",
+   "stars": 32500,
+   "archived": false,
+   "one_liner": "Free open courses on transformers/LLMs and on building agents",
+   "tags": [
+    "education",
+    "open-source"
+   ],
+   "url": "https://github.com/huggingface/agents-course",
+   "source": "https://github.com/huggingface/agents-course",
+   "note": "LLM course repo huggingface/course: Apache-2.0, ~4.3k stars"
+  },
+  {
+   "name": "India AI Governance Guidelines",
+   "kind": "standard",
+   "subsegments": [
+    "n10.change",
+    "n11.public",
+    "n11.ent"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "MeitY (IndiaAI Mission)",
+   "licence": "Free public document",
+   "access": "Download from MeitY / IndiaAI; non-statutory guidance",
+   "one_liner": "Seven 'sutras' and six pillars for principle-based AI governance in India (Nov 2025)",
+   "tags": [
+    "governance",
+    "india",
+    "open-standard"
+   ],
+   "url": "https://indiaai.gov.in",
+   "source": "https://www.scconline.com/blog/post/2025/11/06/meity-launches-india-ai-governance-guidelines-under-indiaai-mission-2025/"
+  },
+  {
+   "name": "IndiaAI FutureSkills (open)",
+   "kind": "public programme",
+   "subsegments": [
+    "n10.skill",
+    "n11.public"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "IndiaAI Mission, MeitY",
+   "access": "Through participating institutes, FutureSkills Prime and IndiaAI fellowships",
+   "one_liner": "IndiaAI pillar funding AI fellowships, Data & AI Labs in tier-2/3 cities and courses",
+   "tags": [
+    "education",
+    "india",
+    "open-source"
+   ],
+   "url": "https://indiaai.gov.in",
+   "source": "https://indiaai.gov.in/article/indiaai-data-ai-labs-empowering-india-s-youth-for-jobs-in-data-economy"
+  },
+  {
+   "name": "ISO/IEC 42001 (AI management system)",
+   "kind": "standard",
+   "subsegments": [
+    "n10.change",
+    "n11.ent"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "open",
+   "steward": "ISO / IEC JTC 1/SC 42",
+   "licence": "Proprietary, paid standard (not open)",
+   "access": "Purchase from ISO or national standards bodies; certify via accredited auditors",
+   "one_liner": "Certifiable management-system standard for AI governance (published Dec 2023)",
+   "tags": [
+    "governance",
+    "certification",
+    "not-open",
+    "open-standard"
+   ],
+   "url": "https://www.iso.org/standard/42001",
+   "source": "https://www.iso.org/standard/42001",
+   "note": "Included for contrast: widely used but NOT openly available"
+  },
+  {
+   "name": "MLCommons AILuminate (open)",
+   "kind": "open dataset",
+   "subsegments": [
+    "n10.change"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "MLCommons",
+   "access": "Public practice prompt set; official graded runs via MLCommons",
+   "one_liner": "Standardised AI risk and reliability benchmark across 12 hazard categories",
+   "tags": [
+    "benchmark",
+    "safety",
+    "open-source"
+   ],
+   "url": "https://mlcommons.org/ailuminate/",
+   "source": "https://www.silicon.co.uk/press-release/mlcommons-releases-ailuminate-llm-v1-1-adding-french-language-capabilities-to-industry-leading-ai-safety-benchmark"
+  },
+  {
+   "name": "Neural Networks: Zero to Hero",
+   "kind": "open-source project",
+   "subsegments": [
+    "n10.skill",
+    "n11.dev"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Andrej Karpathy",
+   "licence": "MIT",
+   "access": "Free YouTube lectures plus notebooks",
+   "repo": "https://github.com/karpathy/nn-zero-to-hero",
+   "stars": 25000,
+   "archived": false,
+   "one_liner": "Build neural nets and GPT from scratch, lecture by lecture",
+   "tags": [
+    "education",
+    "open-source"
+   ],
+   "url": "https://github.com/karpathy/nn-zero-to-hero",
+   "source": "https://github.com/karpathy/nn-zero-to-hero"
+  },
+  {
+   "name": "OECD AI Principles and Hiroshima AI Process Reporting Framework",
+   "kind": "standard",
+   "subsegments": [
+    "n10.change",
+    "n11.ent",
+    "n11.mid"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "open",
+   "steward": "OECD",
+   "licence": "Free public framework",
+   "access": "Submit voluntary reports via oecd.ai/transparency",
+   "one_liner": "Intergovernmental AI principles plus a voluntary corporate reporting framework (HAIP 2.0)",
+   "tags": [
+    "governance",
+    "transparency",
+    "open-standard"
+   ],
+   "url": "https://oecd.ai/en/transparency",
+   "source": "https://www.oecd.org/en/about/news/press-releases/2026/05/oecd-launches-streamlined-hiroshima-ai-process-reporting-framework-to-help-small-and-medium-sized-enterprises-participate.html",
+   "note": "HAIP 2.0 streamlined version launched May 2026 to let SMEs participate"
+  },
+  {
+   "name": "OWASP Top 10 for LLM Applications",
+   "kind": "standard",
+   "subsegments": [
+    "n10.change",
+    "n11.ent",
+    "n9.secops"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OWASP Gen AI Security Project (OWASP Foundation)",
+   "licence": "CC BY-SA 4.0",
+   "access": "Free at genai.owasp.org",
+   "one_liner": "Community list of top security risks for LLM apps (2025 edition)",
+   "tags": [
+    "security",
+    "governance",
+    "open-standard"
+   ],
+   "url": "https://genai.owasp.org/llm-top-10/",
+   "source": "https://genai.owasp.org/llm-top-10/"
+  },
+  {
+   "name": "YUVA AI for ALL",
+   "kind": "public programme",
+   "subsegments": [
+    "n10.skill",
+    "n11.consumer"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "IndiaAI Mission, MeitY",
+   "licence": "Free course",
+   "access": "Free on FutureSkills Prime and iGOT Karmayogi; government certificate",
+   "one_liner": "4.5-hour free AI literacy course aiming to reach 10 million Indians (Nov 2025)",
+   "tags": [
+    "education",
+    "ai-literacy",
+    "india",
+    "open-source"
+   ],
+   "url": "https://www.futureskillsprime.in",
+   "source": "https://www.businesstoday.in/technology/news/story/government-launches-free-ai-course-with-certification-502930-2025-11-21"
+  }
+ ]
+}

@@ -1,0 +1,5522 @@
+{
+ "node": "n6",
+ "notes": {
+  "n6.frontier": "An oligopoly of OpenAI, Anthropic and Google DeepMind, with xAI (now within SpaceX), Meta, Microsoft and Amazon; well-funded new labs (Thinking Machines, SSI) have not yet shipped frontier-scale public models.",
+  "n6.open": "Chinese labs (DeepSeek, Qwen, Moonshot, Zhipu, MiniMax) lead open-weight downloads and benchmarks; US response includes Reflection AI, gpt-oss, Nemotron and Ai2; Zhipu and MiniMax listed in Hong Kong in Jan 2026.",
+  "n6.enterprise": "Consolidating: Cohere and Aleph Alpha agreed to merge (2026) to build a transatlantic sovereign enterprise vendor; others (AI21, Writer) bundle models with agent platforms.",
+  "n6.small": "Driven by on-device and cost: big labs' small lines (Gemma, Phi, Qwen, Apple) compete with efficiency specialists (Liquid AI, Zyphra, Multiverse).",
+  "n6.image": "Crowded and global: US (Midjourney, Runway, Luma), Germany (Black Forest Labs) and China (Kling, Hailuo, Seedance, Vidu, Wan) compete; licensing settlements and studio deals are now differentiators.",
+  "n6.audio": "ElevenLabs leads voice; STT is contested by Deepgram, AssemblyAI, Speechmatics and big-lab models; music generation moved from litigation to label settlements (Suno-WMG, Udio-UMG, 2025).",
+  "n6.code": "Frontier general models dominate coding; tool makers (Cursor, Cognition) now train their own models, and open coders (Qwen-Coder, Kimi, Devstral) compete on cost.",
+  "n6.science": "Mix of Alphabet/NVIDIA/Microsoft platforms and heavily funded startups; 2025-26 trend is 'AI scientist' labs pairing models with autonomous wet labs (Periodic, Lila).",
+  "n6.world": "Pre-commercial but heavily funded: robotics foundation models (Physical Intelligence, Skild) and world models (World Labs, AMI Labs $1.03B seed Mar 2026, Genie, Cosmos).",
+  "n6.sovereign": "Government-backed programmes in India (IndiaAI Mission), Korea (national foundation-model teams), UAE, Saudi, Japan, Switzerland and the EU fund local-language models; India's Sarvam open-sourced 30B/105B models in Feb 2026.",
+  "n6.embed": "Consolidated into data platforms: Voyage to MongoDB and Jina to Elastic (2025); Cohere, OpenAI, Google and open Qwen/BGE models dominate.",
+  "n6.train": "Open-source frameworks (PyTorch, JAX, Megatron, TRL, verl) are the base; fine-tuning-as-a-service is being absorbed by clouds (OpenPipe to CoreWeave, Predibase to Rubrik) while Thinking Machines' Tinker targets RL fine-tuning.",
+  "n6.opt": "Compression startups are being acquired by chip/platform owners (Neural Magic to Red Hat, Deci to NVIDIA, Edge Impulse to Qualcomm); independent players are Multiverse, Pruna, Nota, Embedl.",
+  "n6.safety": "Split between government institutes (UK AISI, US CAISI), non-profit evaluators (METR, Apollo) and commercial red-teaming/interpretability; enterprise AI-security startups mostly acquired by cybersecurity firms in 2025.",
+  "n6.hub": "Hugging Face is the default open hub (ModelScope in China); cloud catalogues (Bedrock, Foundry, Vertex) and routers (OpenRouter) are the commercial distribution channels.",
+  "n6.domain": "Splits into frontier-lab health releases (MedGemma) and specialist labs in bio, health and legal; most value sits in biology models with proprietary data.",
+  "n6.weights": "No standalone market yet: indemnity is bundled by model vendors, weight security by model-security and confidential-computing vendors, licensing norms by Hugging Face and OSI."
+ },
+ "entries": [
+  {
+   "name": "Adaptive ML",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Reinforcement fine-tuning platform to specialise open models for enterprise tasks",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.adaptive-ml.com",
+   "source": "https://www.adaptive-ml.com"
+  },
+  {
+   "name": "Adobe Firefly",
+   "kind": "company",
+   "subsegments": [
+    "n6.image",
+    "n9.creative",
+    "n6.weights"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Adobe",
+   "one_liner": "Commercially-safe image, video and audio generation trained on licensed content",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.adobe.com/products/firefly.html",
+   "source": "https://www.adobe.com/products/firefly.html"
+  },
+  {
+   "name": "AgiBot",
+   "kind": "company",
+   "subsegments": [
+    "n6.world",
+    "n6.open",
+    "n9.physical",
+    "n5.physical"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Humanoid robots and GO-1 embodied foundation model",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.agibot.com",
+   "source": "https://www.agibot.com"
+  },
+  {
+   "name": "AI Singapore (SEA-LION)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "government",
+   "one_liner": "Open LLMs for Southeast Asian languages",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://sea-lion.ai",
+   "source": "https://sea-lion.ai"
+  },
+  {
+   "name": "AI Verify Foundation",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n8.gov",
+    "n10.change"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "government",
+   "one_liner": "Singapore-backed open AI testing toolkits and assurance standards",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://aiverifyfoundation.sg",
+   "source": "https://aiverifyfoundation.sg"
+  },
+  {
+   "name": "Ai2 (Allen Institute for AI)",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.science",
+    "n5.web"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Fully open OLMo/Molmo models with open data, code and training recipes",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://allenai.org",
+   "source": "https://allenai.org"
+  },
+  {
+   "name": "AI21 Labs",
+   "kind": "company",
+   "subsegments": [
+    "n6.enterprise",
+    "n6.open"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Jamba hybrid SSM-Transformer models and Maestro enterprise agent system",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.ai21.com",
+   "source": "https://www.ai21.com"
+  },
+  {
+   "name": "AIKosh (IndiaAI)",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub",
+    "n5.license"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "government",
+   "one_liner": "India's government platform for datasets and models under IndiaAI Mission",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://aikosh.indiaai.gov.in",
+   "source": "https://aikosh.indiaai.gov.in"
+  },
+  {
+   "name": "Aleph Alpha",
+   "kind": "company",
+   "subsegments": [
+    "n6.enterprise",
+    "n6.sovereign"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "German sovereign AI stack (PhariaAI) for government and regulated enterprises",
+   "tags": [
+    "sovereign",
+    "enterprise"
+   ],
+   "url": "https://aleph-alpha.com",
+   "source": "https://siliconangle.com/2026/09/16/cohere-and-aleph-alpha-agree-to-merge-in-reported-20b-deal/",
+   "note": "Merging into Cohere (agreement Sep 2026, pending regulators); Heidelberg to become research centre"
+  },
+  {
+   "name": "Alibaba Qwen",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.frontier",
+    "n6.small",
+    "n6.code",
+    "n6.image",
+    "n6.audio",
+    "n6.embed"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Alibaba",
+   "one_liner": "Qwen open-weight LLM, coder, vision, audio and embedding families; Wan video models",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://qwen.ai",
+   "source": "https://qwen.ai"
+  },
+  {
+   "name": "Amazon Bedrock",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub",
+    "n7.platform",
+    "n7.compress"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Amazon",
+   "one_liner": "Managed catalogue of first- and third-party foundation models on AWS",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://aws.amazon.com/bedrock/",
+   "source": "https://aws.amazon.com/bedrock/"
+  },
+  {
+   "name": "Amazon Nova (AGI SF / Amazon AGI)",
+   "kind": "company",
+   "subsegments": [
+    "n6.frontier",
+    "n6.image",
+    "n6.audio",
+    "n6.embed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Amazon",
+   "one_liner": "Nova family of text, multimodal, speech and creative models on Bedrock",
+   "tags": [
+    "cost",
+    "enterprise"
+   ],
+   "url": "https://aws.amazon.com/ai/generative-ai/nova/",
+   "source": "https://aws.amazon.com/ai/generative-ai/nova/"
+  },
+  {
+   "name": "AMI Labs",
+   "kind": "company",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Yann LeCun's lab building JEPA-style world models for robotics and industry",
+   "url": "https://amilabs.xyz",
+   "source": "https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/",
+   "note": "Raised $1.03B seed at ~$3.5B (Mar 2026)"
+  },
+  {
+   "name": "Anjuna",
+   "kind": "company",
+   "subsegments": [
+    "n6.weights",
+    "n7.private"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Confidential computing platform to run AI workloads and models in secure enclaves",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.anjuna.io",
+   "source": "https://www.anjuna.io"
+  },
+  {
+   "name": "Anthropic",
+   "kind": "company",
+   "subsegments": [
+    "n6.frontier",
+    "n6.code",
+    "n6.safety",
+    "n4.offtake",
+    "n6.weights",
+    "n10.lab",
+    "n10.partner"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Claude frontier models, strong in coding and agents; interpretability and safety research",
+   "tags": [
+    "performance",
+    "enterprise",
+    "security"
+   ],
+   "url": "https://www.anthropic.com",
+   "source": "https://www.anthropic.com",
+   "note": "Azure $30B/1 GW (Nov 2025); Google TPUs up to 1 GW (Oct 2025); xAI/SpaceX >$40B (May 2026); Nscale $45B, Lambda $35B (Aug 2026, reported)"
+  },
+  {
+   "name": "Anysphere (Cursor Composer)",
+   "kind": "company",
+   "subsegments": [
+    "n6.code"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Cursor IDE maker training in-house agentic coding models (Composer)",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://cursor.com",
+   "source": "https://cursor.com",
+   "note": "Launched Composer model (Oct 2025)"
+  },
+  {
+   "name": "Apollo Research",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "non-profit",
+   "one_liner": "Evaluations for deceptive behaviour and scheming in frontier models",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.apolloresearch.ai",
+   "source": "https://www.apolloresearch.ai"
+  },
+  {
+   "name": "Apple Foundation Models",
+   "kind": "company",
+   "subsegments": [
+    "n6.small",
+    "n7.private"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Apple",
+   "one_liner": "On-device ~3B model exposed to developers via Foundation Models framework",
+   "tags": [
+    "security"
+   ],
+   "url": "https://developer.apple.com/documentation/foundationmodels",
+   "source": "https://developer.apple.com/documentation/foundationmodels",
+   "note": "Framework opened to developers (Jun 2025)"
+  },
+  {
+   "name": "Arc Institute (Evo 2)",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Evo 2 open genomic foundation model across all domains of life",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://arcinstitute.org",
+   "source": "https://arcinstitute.org"
+  },
+  {
+   "name": "Arcee AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.small",
+    "n6.enterprise"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Small and mid-size open-weight models (AFM, Trinity) trained in the US",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://www.arcee.ai",
+   "source": "https://www.arcee.ai"
+  },
+  {
+   "name": "Artificial Analysis",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n6.hub",
+    "n5.evaldata",
+    "n7.bench"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Independent benchmarking of model intelligence, speed and price",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://artificialanalysis.ai",
+   "source": "https://artificialanalysis.ai"
+  },
+  {
+   "name": "AssemblyAI",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Speech recognition and audio understanding APIs",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.assemblyai.com",
+   "source": "https://www.assemblyai.com"
+  },
+  {
+   "name": "Axolotl",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Open-source config-driven LLM fine-tuning toolkit",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://axolotl.ai",
+   "source": "https://axolotl.ai"
+  },
+  {
+   "name": "BAAI (BGE)",
+   "kind": "company",
+   "subsegments": [
+    "n6.embed",
+    "n6.open"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "non-profit",
+   "one_liner": "Beijing Academy of AI's open BGE embedding/reranker models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.baai.ac.cn",
+   "source": "https://www.baai.ac.cn"
+  },
+  {
+   "name": "Baidu ERNIE",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.frontier"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Baidu",
+   "one_liner": "ERNIE models; ERNIE 4.5 family open-sourced in 2025",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://yiyan.baidu.com",
+   "source": "https://yiyan.baidu.com",
+   "note": "Open-sourced ERNIE 4.5 (Jun 2025)"
+  },
+  {
+   "name": "BharatGen",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.audio"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "government",
+   "parent": "DST / IndiaAI Mission",
+   "one_liner": "IIT Bombay-led government consortium building multilingual, speech and vision models for 22 Indian languages",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://bharatgen.com",
+   "source": "https://explainx.ai/blog/india-independence-day-2026-ai-progress-top-15-startups",
+   "note": "Launched four model families (Jun 2026); selected for IndiaAI Mission phase 2"
+  },
+  {
+   "name": "Bielik (SpeakLeash)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "PL",
+   "region": "Europe",
+   "status": "non-profit",
+   "one_liner": "Open Polish-language LLMs",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://bielik.ai",
+   "source": "https://bielik.ai"
+  },
+  {
+   "name": "Bioptimus",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n6.domain"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Biology foundation models (H-Optimus pathology, M-Optimus multiscale)",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.bioptimus.com",
+   "source": "https://www.bioptimus.com"
+  },
+  {
+   "name": "Black Forest Labs",
+   "kind": "company",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "FLUX open-weight and commercial image generation and editing models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://bfl.ai",
+   "source": "https://bfl.ai",
+   "note": "FLUX.2 released Nov 2025; $300M raise at $3.25B (Dec 2025)"
+  },
+  {
+   "name": "ByteDance Seed (Doubao)",
+   "kind": "company",
+   "subsegments": [
+    "n6.frontier",
+    "n6.open",
+    "n6.image",
+    "n6.audio",
+    "n6.code"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "parent": "ByteDance",
+   "one_liner": "Doubao frontier models, Seedance video, Seedream image, open Seed-OSS models",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://seed.bytedance.com",
+   "source": "https://seed.bytedance.com"
+  },
+  {
+   "name": "ByteDance verl",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open-source",
+   "parent": "ByteDance",
+   "one_liner": "Open-source RL post-training framework for LLMs",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/volcengine/verl",
+   "source": "https://github.com/volcengine/verl"
+  },
+  {
+   "name": "CalypsoAI",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n8.security"
+   ],
+   "hq": "IE",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "F5 (2025)",
+   "one_liner": "AI red-teaming and runtime guardrails for enterprise",
+   "tags": [
+    "security"
+   ],
+   "url": "https://calypsoai.com",
+   "source": "https://calypsoai.com",
+   "note": "Acquired by F5 (announced Sep 2025; secondary source dates completion Jan 2026)"
+  },
+  {
+   "name": "Cartesia",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio",
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Low-latency state-space-model voice (Sonic) for real-time agents",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://cartesia.ai",
+   "source": "https://cartesia.ai"
+  },
+  {
+   "name": "Chai Discovery",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n9.industrial"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Chai models for molecular structure and de novo antibody design",
+   "tags": [],
+   "url": "https://www.chaidiscovery.com",
+   "source": "https://www.chaidiscovery.com"
+  },
+  {
+   "name": "Civitai",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Community hub for image/video model fine-tunes and LoRAs",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://civitai.com",
+   "source": "https://civitai.com"
+  },
+  {
+   "name": "Cognition (SWE-1.5)",
+   "kind": "company",
+   "subsegments": [
+    "n6.code"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Devin and Windsurf maker training SWE-series coding models",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://cognition.ai",
+   "source": "https://cognition.ai",
+   "note": "Acquired Windsurf (Jul 2025)"
+  },
+  {
+   "name": "Cohere",
+   "kind": "company",
+   "subsegments": [
+    "n6.enterprise",
+    "n6.embed",
+    "n6.sovereign",
+    "n7.private",
+    "n9.public",
+    "n10.lab"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Command enterprise LLMs, Embed and Rerank, North agent platform, private deployments",
+   "tags": [
+    "enterprise",
+    "security",
+    "sovereign"
+   ],
+   "url": "https://cohere.com",
+   "source": "https://siliconangle.com/2026/09/16/cohere-and-aleph-alpha-agree-to-merge-in-reported-20b-deal/",
+   "note": "Agreed to combine with Aleph Alpha (announced Apr 2026, merger agreement Sep 2026, reported ~$20B combined; pending regulatory clearance); dual HQ Berlin/Toronto planned"
+  },
+  {
+   "name": "Contextual AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.enterprise",
+    "n6.embed",
+    "n8.vector"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Grounded RAG agents and rerankers for enterprise knowledge",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://contextual.ai",
+   "source": "https://contextual.ai"
+  },
+  {
+   "name": "CoRover (BharatGPT)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "BharatGPT conversational models for Indian languages and government services",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://corover.ai",
+   "source": "https://corover.ai"
+  },
+  {
+   "name": "CuspAI",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n9.industrial"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Generative AI for materials discovery (e.g. carbon capture)",
+   "tags": [],
+   "url": "https://www.cusp.ai",
+   "source": "https://www.cusp.ai"
+  },
+  {
+   "name": "Databricks Mosaic AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.enterprise",
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Databricks",
+   "one_liner": "Enterprise model training, fine-tuning and serving on the Databricks platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.databricks.com/product/artificial-intelligence",
+   "source": "https://www.databricks.com/product/artificial-intelligence"
+  },
+  {
+   "name": "Decart",
+   "kind": "company",
+   "subsegments": [
+    "n6.world",
+    "n6.image"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Real-time interactive video and world generation models",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://decart.ai",
+   "source": "https://decart.ai"
+  },
+  {
+   "name": "Deep Cogito",
+   "kind": "company",
+   "subsegments": [
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Open-weight hybrid reasoning models trained with iterated distillation",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.deepcogito.com",
+   "source": "https://www.deepcogito.com"
+  },
+  {
+   "name": "Deepgram",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Speech-to-text, text-to-speech and voice-agent APIs",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://deepgram.com",
+   "source": "https://deepgram.com"
+  },
+  {
+   "name": "DeepSeek",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.code"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Low-cost open-weight reasoning and MoE language models (V3, R1, V3.x)",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://www.deepseek.com",
+   "source": "https://www.trendingtopics.eu/after-kimi-k3-coup-moonshot-ai-aims-for-hong-kong-ipo-within-six-months/",
+   "note": "Reported IPO preparation for 2027 and large 2026 funding (secondary source, unconfirmed)"
+  },
+  {
+   "name": "Docker Model Runner / Hub",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Distributes and runs models as OCI artifacts via Docker Hub",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.docker.com/products/model-runner/",
+   "source": "https://www.docker.com/products/model-runner/"
+  },
+  {
+   "name": "Doubleword (ex-TitanML)",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt",
+    "n7.engine",
+    "n7.opt"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Self-hosted inference optimisation for enterprises",
+   "tags": [
+    "cost",
+    "enterprise",
+    "sovereign"
+   ],
+   "url": "https://www.doubleword.ai",
+   "source": "https://www.doubleword.ai",
+   "note": "Rebranded from TitanML and raised $12M Series A (May 2025)"
+  },
+  {
+   "name": "Edison Scientific (FutureHouse)",
+   "kind": "company",
+   "subsegments": [
+    "n6.science"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI scientist agents (Kosmos) spun out of FutureHouse",
+   "url": "https://edisonscientific.com",
+   "source": "https://edisonscientific.com",
+   "note": "Spun out of FutureHouse (Nov 2025)"
+  },
+  {
+   "name": "ElevenLabs",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio",
+    "n9.voice",
+    "n9.creative",
+    "n9.lang"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Text-to-speech, voice cloning, speech-to-text, dubbing and music models",
+   "tags": [],
+   "url": "https://elevenlabs.io",
+   "source": "https://elevenlabs.io",
+   "note": "Valuation ~$6.6B (2025 tender); larger 2026 round reported"
+  },
+  {
+   "name": "Embedl",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt"
+   ],
+   "hq": "SE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Model compression and hardware-aware optimisation for edge devices",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.embedl.com",
+   "source": "https://www.embedl.com"
+  },
+  {
+   "name": "Epoch AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n5.evaldata",
+    "n7.bench"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Benchmarks (FrontierMath) and data on AI compute and capability trends",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://epoch.ai",
+   "source": "https://epoch.ai"
+  },
+  {
+   "name": "Essential AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Open research lab building open-weight foundation models (Rnj)",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.essential.ai",
+   "source": "https://www.essential.ai"
+  },
+  {
+   "name": "EvolutionaryScale",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n6.open",
+    "n6.domain"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "ESM protein language models for protein design",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.evolutionaryscale.ai",
+   "source": "https://www.evolutionaryscale.ai"
+  },
+  {
+   "name": "FAR.AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Frontier AI safety research and red-teaming",
+   "tags": [
+    "security"
+   ],
+   "url": "https://far.ai",
+   "source": "https://far.ai"
+  },
+  {
+   "name": "Field AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Field Foundation Models for autonomous robots in unstructured environments",
+   "url": "https://fieldai.com",
+   "source": "https://fieldai.com"
+  },
+  {
+   "name": "Figure AI (Helix)",
+   "kind": "company",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Humanoid robot maker with in-house Helix vision-language-action model",
+   "url": "https://www.figure.ai",
+   "source": "https://www.figure.ai"
+  },
+  {
+   "name": "Fireworks AI (RFT)",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Supervised and reinforcement fine-tuning service on its inference platform",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://fireworks.ai",
+   "source": "https://fireworks.ai"
+  },
+  {
+   "name": "Fish Audio",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio",
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Open and commercial multilingual TTS and voice cloning",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://fish.audio",
+   "source": "https://fish.audio"
+  },
+  {
+   "name": "Fractal Analytics (Fathom)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "one_liner": "Indian reasoning models (Fathom-R1); IndiaAI Mission phase 2 grantee",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://fractal.ai",
+   "source": "https://analyticsindiamag.com/ai-news-updates/bharatgen-tech-mahindra-and-fractal-selected-for-phase-2-of-indiaai-mission/"
+  },
+  {
+   "name": "G42 / Inception (Jais)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "AE",
+   "region": "Middle East",
+   "status": "private",
+   "parent": "G42",
+   "one_liner": "Jais Arabic-English open LLMs and enterprise AI for the UAE",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://www.inceptionai.ai",
+   "source": "https://www.inceptionai.ai"
+  },
+  {
+   "name": "Galbot",
+   "kind": "company",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Generalist humanoid robots with embodied VLA models",
+   "url": "https://www.galbot.com",
+   "source": "https://www.galbot.com"
+  },
+  {
+   "name": "General Intuition",
+   "kind": "company",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Agents and world models trained on gameplay video",
+   "url": "https://www.generalintuition.com",
+   "source": "https://www.generalintuition.com",
+   "note": "$133.7M seed (Oct 2025)"
+  },
+  {
+   "name": "Generate Biomedicines",
+   "kind": "company",
+   "subsegments": [
+    "n6.science"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Generative protein models (Chroma) for drug candidates",
+   "url": "https://generatebiomedicines.com",
+   "source": "https://generatebiomedicines.com"
+  },
+  {
+   "name": "Genesis AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Physics simulation and robotics foundation models",
+   "url": "https://genesis-ai.company",
+   "source": "https://genesis-ai.company",
+   "note": "$105M seed (Jul 2025)"
+  },
+  {
+   "name": "Genmo",
+   "kind": "company",
+   "subsegments": [
+    "n6.image",
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Mochi open-weight video generation models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.genmo.ai",
+   "source": "https://www.genmo.ai"
+  },
+  {
+   "name": "Gensyn",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Decentralised compute protocol for model training (RL Swarm)",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.gensyn.ai",
+   "source": "https://www.gensyn.ai"
+  },
+  {
+   "name": "GitHub Models",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Model catalogue and playground integrated into GitHub",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://github.com/marketplace/models",
+   "source": "https://github.com/marketplace/models"
+  },
+  {
+   "name": "Gladia",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Real-time multilingual speech-to-text API",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.gladia.io",
+   "source": "https://www.gladia.io"
+  },
+  {
+   "name": "Gnani.ai",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio",
+    "n6.sovereign",
+    "n9.voice"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indic voice-first models and voice agents; IndiaAI Mission foundation-model grantee",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.gnani.ai",
+   "source": "https://www.gnani.ai"
+  },
+  {
+   "name": "Goodfire",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Mechanistic interpretability tools for understanding and editing models",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.goodfire.ai",
+   "source": "https://www.goodfire.ai"
+  },
+  {
+   "name": "Google DeepMind",
+   "kind": "company",
+   "subsegments": [
+    "n6.frontier",
+    "n6.open",
+    "n6.small",
+    "n6.image",
+    "n6.audio",
+    "n6.science",
+    "n6.world",
+    "n6.embed",
+    "n6.domain"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Gemini frontier models, Gemma open models, Veo/Imagen, AlphaFold, Genie world models, Gemini Robotics",
+   "tags": [
+    "performance",
+    "open-source"
+   ],
+   "url": "https://deepmind.google",
+   "source": "https://deepmind.google"
+  },
+  {
+   "name": "Google Vertex AI Model Garden",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Catalogue of Google, partner and open models on Google Cloud",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://cloud.google.com/model-garden",
+   "source": "https://cloud.google.com/model-garden"
+  },
+  {
+   "name": "GoTo / Indosat (Sahabat-AI)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "ID",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Open Indonesian-language LLMs",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://sahabat-ai.com",
+   "source": "https://sahabat-ai.com"
+  },
+  {
+   "name": "Gray Swan",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI red-teaming arena and security evaluations",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.grayswan.ai",
+   "source": "https://www.grayswan.ai"
+  },
+  {
+   "name": "Haize Labs",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Automated red-teaming and judge-based evaluation",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.haizelabs.com",
+   "source": "https://www.haizelabs.com"
+  },
+  {
+   "name": "Holistic AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n8.gov",
+    "n10.change"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI governance, risk and red-teaming platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.holisticai.com",
+   "source": "https://www.holisticai.com"
+  },
+  {
+   "name": "Hugging Face Hub",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub",
+    "n5.web",
+    "n6.weights"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Largest public hub of open model weights, datasets and Spaces",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://huggingface.co",
+   "source": "https://huggingface.co"
+  },
+  {
+   "name": "Hugging Face SmolLM",
+   "kind": "company",
+   "subsegments": [
+    "n6.small",
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Hugging Face",
+   "one_liner": "Fully open small language and vision models (SmolLM, SmolVLM)",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://huggingface.co/HuggingFaceTB",
+   "source": "https://huggingface.co/HuggingFaceTB"
+  },
+  {
+   "name": "Hugging Face TRL / PEFT",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Hugging Face",
+   "one_liner": "Open libraries for SFT, preference optimisation, RL and parameter-efficient fine-tuning",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://huggingface.co/docs/trl",
+   "source": "https://huggingface.co/docs/trl"
+  },
+  {
+   "name": "HUMAIN (ALLaM)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "SA",
+   "region": "Middle East",
+   "status": "government",
+   "parent": "Public Investment Fund",
+   "one_liner": "Saudi PIF-owned AI company with Arabic ALLaM models and HUMAIN Chat",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.humain.ai",
+   "source": "https://www.humain.ai"
+  },
+  {
+   "name": "Hume AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio",
+    "n9.voice"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Emotionally expressive voice models (EVI, Octave)",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.hume.ai",
+   "source": "https://www.hume.ai"
+  },
+  {
+   "name": "IBM Granite",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.enterprise",
+    "n6.small",
+    "n6.embed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "IBM",
+   "one_liner": "Apache-licensed Granite models for enterprise, with ISO 42001 certification",
+   "tags": [
+    "open-source",
+    "enterprise"
+   ],
+   "url": "https://www.ibm.com/granite",
+   "source": "https://www.ibm.com/granite"
+  },
+  {
+   "name": "Ideogram",
+   "kind": "company",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Image generation models known for accurate in-image typography",
+   "url": "https://ideogram.ai",
+   "source": "https://ideogram.ai"
+  },
+  {
+   "name": "Inception Labs",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt",
+    "n6.code"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Diffusion-based LLMs (Mercury) generating text and code far faster",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://www.inceptionlabs.ai",
+   "source": "https://www.inceptionlabs.ai"
+  },
+  {
+   "name": "InstaDeep",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n6.domain"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "BioNTech (2023)",
+   "one_liner": "Genomics and protein models (Nucleotide Transformer) and decision AI",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.instadeep.com",
+   "source": "https://www.instadeep.com"
+  },
+  {
+   "name": "Intel OpenVINO / NNCF",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Intel",
+   "one_liner": "Open toolkit for model compression and optimised inference on Intel hardware",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/openvinotoolkit/nncf",
+   "source": "https://github.com/openvinotoolkit/nncf"
+  },
+  {
+   "name": "Irregular (ex-Pattern Labs)",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n8.security",
+    "n6.weights"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Frontier-model security and cyber-capability evaluations for labs",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.irregular.com",
+   "source": "https://www.irregular.com",
+   "note": "Rebranded and raised $80M (Sep 2025)"
+  },
+  {
+   "name": "Isaacus",
+   "kind": "company",
+   "subsegments": [
+    "n6.embed",
+    "n6.domain"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Legal-domain embedding and classification models",
+   "tags": [
+    "enterprise",
+    "developer"
+   ],
+   "url": "https://isaacus.com",
+   "source": "https://isaacus.com"
+  },
+  {
+   "name": "Isomorphic Labs",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n9.industrial"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "parent": "Alphabet",
+   "one_liner": "AlphaFold-derived drug-design models; Alphabet spin-out",
+   "tags": [],
+   "url": "https://www.isomorphiclabs.com",
+   "source": "https://www.isomorphiclabs.com",
+   "note": "Raised $600M first external round (Mar 2025)"
+  },
+  {
+   "name": "ISSAI (KazLLM)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "KZ",
+   "region": "Asia-Pacific",
+   "status": "government",
+   "one_liner": "Kazakh-language LLMs from Nazarbayev University institute",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://issai.nu.edu.kz",
+   "source": "https://issai.nu.edu.kz"
+  },
+  {
+   "name": "JAX / XLA",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Alphabet",
+   "one_liner": "Google's accelerator-native training framework (with MaxText)",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/jax-ml/jax",
+   "source": "https://github.com/jax-ml/jax"
+  },
+  {
+   "name": "JetBrains Mellum",
+   "kind": "company",
+   "subsegments": [
+    "n6.code",
+    "n6.open",
+    "n6.small"
+   ],
+   "hq": "CZ",
+   "region": "Europe",
+   "status": "private",
+   "parent": "JetBrains",
+   "one_liner": "Small focused code-completion LLM, open-sourced",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.jetbrains.com/mellum/",
+   "source": "https://www.jetbrains.com/mellum/"
+  },
+  {
+   "name": "Jina AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.embed",
+    "n5.web",
+    "n8.vector",
+    "n8.ingest",
+    "n8.search"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "Elastic (2025)",
+   "one_liner": "Multilingual embedding, reranker and Reader web-to-text models",
+   "tags": [
+    "open-source",
+    "performance",
+    "developer"
+   ],
+   "url": "https://jina.ai",
+   "source": "https://jina.ai",
+   "note": "Acquired by Elastic (Oct 2025)"
+  },
+  {
+   "name": "Kaggle Models",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Google's model and dataset hub tied to Kaggle community",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.kaggle.com/models",
+   "source": "https://www.kaggle.com/models"
+  },
+  {
+   "name": "Krea",
+   "kind": "company",
+   "subsegments": [
+    "n6.image",
+    "n9.creative"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Real-time image/video generation and in-house Krea models",
+   "tags": [],
+   "url": "https://www.krea.ai",
+   "source": "https://www.krea.ai"
+  },
+  {
+   "name": "Krutrim",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Ola group",
+   "one_liner": "Ola-backed Indic LLMs (Krutrim-2/3) and Indian GPU cloud",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.olakrutrim.com",
+   "source": "https://www.olakrutrim.com"
+  },
+  {
+   "name": "Kuaishou Kling",
+   "kind": "company",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Kuaishou",
+   "one_liner": "Kling text- and image-to-video generation models",
+   "url": "https://klingai.com",
+   "source": "https://klingai.com"
+  },
+  {
+   "name": "Kyutai",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio",
+    "n6.open"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "non-profit",
+   "one_liner": "Open speech models (Moshi, Unmute, Kyutai TTS/STT)",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://kyutai.org",
+   "source": "https://kyutai.org"
+  },
+  {
+   "name": "Lakera",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n8.security"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "Check Point (2025)",
+   "one_liner": "Prompt-injection defence and AI red-teaming",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.lakera.ai",
+   "source": "https://www.lakera.ai",
+   "note": "Acquired by Check Point (Sep 2025)"
+  },
+  {
+   "name": "Latam-GPT (CENIA)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "CL",
+   "region": "Latin America",
+   "status": "non-profit",
+   "one_liner": "Open LLM for Latin American languages and contexts led by Chile's CENIA",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://www.latamgpt.org",
+   "source": "https://www.latamgpt.org"
+  },
+  {
+   "name": "Latent AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Edge model compression and deployment, strong in defence",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://latentai.com",
+   "source": "https://latentai.com"
+  },
+  {
+   "name": "Latent Labs",
+   "kind": "company",
+   "subsegments": [
+    "n6.science"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Generative protein design models (Latent-X)",
+   "url": "https://latentlabs.com",
+   "source": "https://latentlabs.com"
+  },
+  {
+   "name": "Lelapa AI (InkubaLM)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.small"
+   ],
+   "hq": "ZA",
+   "region": "Africa",
+   "status": "private",
+   "one_liner": "Small language models for African languages",
+   "tags": [
+    "sovereign",
+    "cost"
+   ],
+   "url": "https://lelapa.ai",
+   "source": "https://lelapa.ai"
+  },
+  {
+   "name": "LG AI Research (EXAONE)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "LG",
+   "one_liner": "EXAONE open-weight reasoning models; Korean national foundation-model team",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://www.lgresearch.ai",
+   "source": "https://www.lgresearch.ai"
+  },
+  {
+   "name": "Lightricks LTX",
+   "kind": "company",
+   "subsegments": [
+    "n6.image",
+    "n6.open"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "LTX open-weight video generation models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.lightricks.com",
+   "source": "https://www.lightricks.com"
+  },
+  {
+   "name": "Lila Sciences",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n9.industrial"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Scientific superintelligence with autonomous labs for life and materials science",
+   "tags": [],
+   "url": "https://www.lila.ai",
+   "source": "https://www.lila.ai"
+  },
+  {
+   "name": "Liquid AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.small",
+    "n6.opt",
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Liquid Foundation Models (LFM2) efficient non-transformer models for on-device use",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://www.liquid.ai",
+   "source": "https://www.liquid.ai",
+   "note": "$250M Series A led by AMD (Dec 2024)"
+  },
+  {
+   "name": "LLaMA-Factory",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open-source",
+   "one_liner": "Popular open-source unified fine-tuning framework for 100+ LLMs",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/hiyouga/LLaMA-Factory",
+   "source": "https://github.com/hiyouga/LLaMA-Factory"
+  },
+  {
+   "name": "llama.cpp / ggml",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt",
+    "n6.hub",
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Hugging Face (ggml.ai team joined Feb 2026)",
+   "one_liner": "GGUF quantisation and CPU/edge inference library behind local LLM tools",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://github.com/ggml-org/llama.cpp",
+   "source": "https://github.com/ggml-org/llama.cpp",
+   "note": "ggml.ai team joined Hugging Face (Feb 2026)"
+  },
+  {
+   "name": "LM Studio",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub",
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Desktop app to discover, download and run local models",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://lmstudio.ai",
+   "source": "https://lmstudio.ai"
+  },
+  {
+   "name": "LMArena",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n5.evaldata",
+    "n7.bench"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Crowdsourced head-to-head model leaderboard and evaluation service",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://lmarena.ai",
+   "source": "https://lmarena.ai",
+   "note": "Spun out of UC Berkeley; $100M seed (May 2025)"
+  },
+  {
+   "name": "Luma AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.image",
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Ray video and multimodal world models",
+   "url": "https://lumalabs.ai",
+   "source": "https://lumalabs.ai",
+   "note": "$900M Series C led by HUMAIN (Nov 2025)"
+  },
+  {
+   "name": "Magic",
+   "kind": "company",
+   "subsegments": [
+    "n6.code"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Long-context code models aimed at automated software engineering",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://magic.dev",
+   "source": "https://magic.dev"
+  },
+  {
+   "name": "MBZUAI (K2)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "AE",
+   "region": "Middle East",
+   "status": "government",
+   "one_liner": "University lab releasing fully open K2 reasoning models",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://mbzuai.ac.ae",
+   "source": "https://mbzuai.ac.ae"
+  },
+  {
+   "name": "Meituan LongCat",
+   "kind": "company",
+   "subsegments": [
+    "n6.open"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Meituan",
+   "one_liner": "Open-weight LongCat MoE language models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/meituan-longcat",
+   "source": "https://github.com/meituan-longcat"
+  },
+  {
+   "name": "Meta Superintelligence Labs (Llama)",
+   "kind": "company",
+   "subsegments": [
+    "n6.frontier",
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Meta",
+   "one_liner": "Meta's AI lab building Llama open-weight and frontier models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://ai.meta.com",
+   "source": "https://ai.meta.com",
+   "note": "Reorganised as Meta Superintelligence Labs under Alexandr Wang (Jun 2025)"
+  },
+  {
+   "name": "METR",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n5.evaldata"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Third-party evaluations of frontier model autonomy and dangerous capabilities",
+   "tags": [
+    "security"
+   ],
+   "url": "https://metr.org",
+   "source": "https://metr.org"
+  },
+  {
+   "name": "Microsoft AI (MAI)",
+   "kind": "company",
+   "subsegments": [
+    "n6.frontier",
+    "n6.small",
+    "n6.audio",
+    "n6.science"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "In-house MAI models plus Phi small models; Aurora weather foundation model",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://microsoft.ai",
+   "source": "https://microsoft.ai",
+   "note": "Launched MAI-1 and MAI-Voice-1 (Aug 2025) and a superintelligence team (Nov 2025)"
+  },
+  {
+   "name": "Microsoft Azure AI Foundry",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Microsoft",
+   "one_liner": "Model catalogue of 11,000+ models with enterprise deployment",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://ai.azure.com",
+   "source": "https://ai.azure.com"
+  },
+  {
+   "name": "Microsoft DeepSpeed",
+   "kind": "company",
+   "subsegments": [
+    "n6.train",
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Distributed training and memory optimisation library (ZeRO)",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://www.deepspeed.ai",
+   "source": "https://www.deepspeed.ai"
+  },
+  {
+   "name": "Midjourney",
+   "kind": "company",
+   "subsegments": [
+    "n6.image",
+    "n9.creative"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Subscription image and video generation models",
+   "tags": [],
+   "url": "https://www.midjourney.com",
+   "source": "https://www.midjourney.com",
+   "note": "Launched video model (Jun 2025); licensing partnership with Meta (Aug 2025)"
+  },
+  {
+   "name": "MiniMax",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.image",
+    "n6.audio"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Open-weight MiniMax-M LLMs, Hailuo video and speech models",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://www.minimax.io",
+   "source": "https://restofworld.org/2026/zhipu-ai-minimax-ipo/",
+   "note": "Listed on Hong Kong Stock Exchange 9 Jan 2026"
+  },
+  {
+   "name": "Mistral AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.frontier",
+    "n6.enterprise",
+    "n6.small",
+    "n6.code",
+    "n6.sovereign",
+    "n6.audio",
+    "n6.train",
+    "n7.private",
+    "n9.public",
+    "n10.lab"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "European open-weight and commercial LLMs, coding, voice and on-prem enterprise deployments",
+   "tags": [
+    "open-source",
+    "sovereign",
+    "enterprise"
+   ],
+   "url": "https://mistral.ai",
+   "source": "https://mistral.ai",
+   "note": "€1.7B Series C led by ASML at €11.7B valuation (Sep 2025)"
+  },
+  {
+   "name": "Mixedbread",
+   "kind": "company",
+   "subsegments": [
+    "n6.embed"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Open embedding and reranking models and search API",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.mixedbread.com",
+   "source": "https://www.mixedbread.com"
+  },
+  {
+   "name": "MLCommons (AILuminate)",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n5.evaldata",
+    "n7.bench"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Industry consortium for AI benchmarks incl. AILuminate safety benchmark",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://mlcommons.org",
+   "source": "https://mlcommons.org"
+  },
+  {
+   "name": "ModelScope",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Alibaba",
+   "one_liner": "Alibaba's Chinese open-model hub and community",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.modelscope.cn",
+   "source": "https://www.modelscope.cn"
+  },
+  {
+   "name": "Moonshot AI (Kimi)",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.code"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Kimi open-weight trillion-parameter MoE models strong at agents and coding",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.moonshot.ai",
+   "source": "https://www.trendingtopics.eu/after-kimi-k3-coup-moonshot-ai-aims-for-hong-kong-ipo-within-six-months/",
+   "note": "Kimi K2 (Jul 2025); Kimi K3 unveiled Jul 2026; reported HK IPO plan (secondary source)"
+  },
+  {
+   "name": "Moonvalley",
+   "kind": "company",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Marey video model trained on licensed footage for studios",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.moonvalley.com",
+   "source": "https://www.moonvalley.com"
+  },
+  {
+   "name": "Multiverse Computing",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt",
+    "n6.small"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "CompactifAI tensor-network compression shrinking LLMs for cheaper, on-device inference",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://multiversecomputing.com",
+   "source": "https://multiversecomputing.com",
+   "note": "Raised $215M (Jun 2025)"
+  },
+  {
+   "name": "Naver HyperCLOVA X",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.enterprise"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "Naver",
+   "one_liner": "Korean-centric LLMs for Naver services and enterprises; national foundation-model team",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://clova.ai/hyperclova",
+   "source": "https://clova.ai/hyperclova"
+  },
+  {
+   "name": "Nexa AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.small",
+    "n6.opt",
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "On-device model SDK and small multimodal models for phones and PCs",
+   "tags": [
+    "cost",
+    "developer",
+    "performance"
+   ],
+   "url": "https://nexa.ai",
+   "source": "https://nexa.ai"
+  },
+  {
+   "name": "Nota AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt",
+    "n7.opt",
+    "n7.local"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "NetsPresso model compression and on-device optimisation platform",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://www.nota.ai",
+   "source": "https://www.nota.ai",
+   "note": "Listed on KOSDAQ (2025)"
+  },
+  {
+   "name": "Nous Research",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Hermes open models and Psyche decentralised training network",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://nousresearch.com",
+   "source": "https://nousresearch.com"
+  },
+  {
+   "name": "NTT (tsuzumi)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.small"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "NTT",
+   "one_liner": "Lightweight Japanese LLM tsuzumi for on-prem enterprise",
+   "tags": [
+    "sovereign",
+    "cost"
+   ],
+   "url": "https://www.rd.ntt/e/research/LLM_tsuzumi.html",
+   "source": "https://www.rd.ntt/e/research/LLM_tsuzumi.html"
+  },
+  {
+   "name": "NVIDIA BioNeMo & Earth-2",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n6.domain"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "NVIDIA",
+   "one_liner": "Biology foundation models and climate/weather AI platforms",
+   "tags": [
+    "performance",
+    "open-source"
+   ],
+   "url": "https://www.nvidia.com/en-us/clara/biopharma/",
+   "source": "https://www.nvidia.com/en-us/clara/biopharma/"
+  },
+  {
+   "name": "NVIDIA Cosmos & GR00T",
+   "kind": "company",
+   "subsegments": [
+    "n6.world",
+    "n5.synth",
+    "n5.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "NVIDIA",
+   "one_liner": "Open world foundation models (Cosmos) and humanoid robot foundation models (GR00T)",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.nvidia.com/en-us/ai/cosmos/",
+   "source": "https://www.nvidia.com/en-us/ai/cosmos/"
+  },
+  {
+   "name": "NVIDIA NeMo / Megatron",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "NVIDIA",
+   "one_liner": "Large-scale distributed training and RL post-training frameworks",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://github.com/NVIDIA/Megatron-LM",
+   "source": "https://github.com/NVIDIA/Megatron-LM"
+  },
+  {
+   "name": "NVIDIA Nemotron",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.small",
+    "n6.embed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "NVIDIA",
+   "one_liner": "Open Nemotron LLMs, datasets and retrieval models optimised for NVIDIA hardware",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://developer.nvidia.com/nemotron",
+   "source": "https://developer.nvidia.com/nemotron"
+  },
+  {
+   "name": "NVIDIA NGC / NIM catalogue",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "NVIDIA",
+   "one_liner": "Catalogue of optimised models packaged as NIM microservices",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://build.nvidia.com",
+   "source": "https://build.nvidia.com"
+  },
+  {
+   "name": "NVIDIA TensorRT Model Optimizer",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "NVIDIA",
+   "one_liner": "Quantisation, pruning, distillation and sparsity toolkit (incl. ex-Deci tech)",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://github.com/NVIDIA/TensorRT-Model-Optimizer",
+   "source": "https://github.com/NVIDIA/TensorRT-Model-Optimizer"
+  },
+  {
+   "name": "Odyssey",
+   "kind": "company",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Interactive generative world models for video",
+   "url": "https://odyssey.world",
+   "source": "https://odyssey.world"
+  },
+  {
+   "name": "Ollama",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub",
+    "n7.local"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Local model runner and model library for open-weight LLMs",
+   "tags": [
+    "open-source",
+    "developer"
+   ],
+   "url": "https://ollama.com",
+   "source": "https://ollama.com"
+  },
+  {
+   "name": "Open Source Initiative",
+   "kind": "company",
+   "subsegments": [
+    "n6.weights"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Steward of the Open Source AI Definition (OSAID 1.0) for model licensing",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://opensource.org/ai",
+   "source": "https://opensource.org/ai/open-source-ai-definition"
+  },
+  {
+   "name": "OpenAI",
+   "kind": "company",
+   "subsegments": [
+    "n6.frontier",
+    "n6.open",
+    "n6.image",
+    "n6.audio",
+    "n6.code",
+    "n6.embed",
+    "n6.train",
+    "n4.offtake",
+    "n6.weights"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "GPT and o-series frontier models, Sora video, speech, embeddings, fine-tuning; gpt-oss open weights",
+   "tags": [
+    "performance",
+    "enterprise"
+   ],
+   "url": "https://openai.com",
+   "source": "https://openai.com",
+   "note": "Released gpt-oss open-weight models (Aug 2025); restructured into a public benefit corporation (Oct 2025)"
+  },
+  {
+   "name": "OpenEuroLLM",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "CZ",
+   "region": "Europe",
+   "status": "non-profit",
+   "one_liner": "EU-funded consortium building open LLMs for all EU languages",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://openeurollm.eu",
+   "source": "https://openeurollm.eu"
+  },
+  {
+   "name": "OpenPipe",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "CoreWeave (2025)",
+   "one_liner": "RL fine-tuning (ART) for agent reliability",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://openpipe.ai",
+   "source": "https://openpipe.ai",
+   "note": "Acquired by CoreWeave (Sep 2025)"
+  },
+  {
+   "name": "OpenRouter",
+   "kind": "company",
+   "subsegments": [
+    "n6.hub",
+    "n7.route",
+    "n7.obs",
+    "n7.bench"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Stripe (agreed Aug 2026)",
+   "one_liner": "Unified API and marketplace routing to hundreds of models",
+   "tags": [
+    "developer",
+    "cost"
+   ],
+   "url": "https://openrouter.ai",
+   "source": "https://openrouter.ai",
+   "note": "$113M Series B at $1.3B (May 2026); Stripe agreed to acquire, reported >$7B (announced 19 Aug 2026)"
+  },
+  {
+   "name": "Orbital Materials",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n6.open"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Open materials foundation models (Orb) for materials and data-centre cooling",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.orbitalmaterials.com",
+   "source": "https://www.orbitalmaterials.com"
+  },
+  {
+   "name": "Patronus AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n8.eval"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "LLM evaluation and hallucination detection for enterprises",
+   "tags": [
+    "enterprise",
+    "performance"
+   ],
+   "url": "https://www.patronus.ai",
+   "source": "https://www.patronus.ai"
+  },
+  {
+   "name": "Periodic Labs",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n9.industrial"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI scientist models with autonomous labs for materials and physics discovery",
+   "tags": [],
+   "url": "https://periodic.com",
+   "source": "https://periodic.com",
+   "note": "$300M seed (Sep 2025)"
+  },
+  {
+   "name": "Physical Intelligence",
+   "kind": "company",
+   "subsegments": [
+    "n6.world",
+    "n6.open",
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "General-purpose robot foundation models (π0, π0.5), partly open-sourced",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.physicalintelligence.company",
+   "source": "https://www.physicalintelligence.company",
+   "note": "Raised $600M at $5.6B (Nov 2025)"
+  },
+  {
+   "name": "Pika",
+   "kind": "company",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Consumer video generation and effects models",
+   "url": "https://pika.art",
+   "source": "https://pika.art"
+  },
+  {
+   "name": "Poolside",
+   "kind": "company",
+   "subsegments": [
+    "n6.code"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Code-specialised foundation models for enterprise and defence software teams",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://poolside.ai",
+   "source": "https://poolside.ai"
+  },
+  {
+   "name": "Predibase",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Rubrik (2025)",
+   "one_liner": "Fine-tuning and serving platform for small open models (LoRAX)",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://predibase.com",
+   "source": "https://predibase.com",
+   "note": "Acquired by Rubrik (Jun 2025)"
+  },
+  {
+   "name": "Preferred Networks (PLaMo)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.small"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Japanese PLaMo LLMs and own MN-Core AI chips",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.preferred.jp",
+   "source": "https://www.preferred.jp"
+  },
+  {
+   "name": "Profluent",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n6.open",
+    "n6.domain"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Protein language models (ProGen3, OpenCRISPR) for gene editing and therapeutics",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.profluent.bio",
+   "source": "https://www.profluent.bio"
+  },
+  {
+   "name": "Protect AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n8.security",
+    "n6.weights"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Palo Alto Networks (2025)",
+   "one_liner": "Model scanning, AI supply-chain and runtime security",
+   "tags": [
+    "security"
+   ],
+   "url": "https://protectai.com",
+   "source": "https://protectai.com",
+   "note": "Acquired by Palo Alto Networks (2025), folded into Prisma AIRS"
+  },
+  {
+   "name": "Pruna AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt",
+    "n7.opt"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Model optimisation engine combining quantisation, pruning and caching; open-sourced",
+   "tags": [
+    "cost",
+    "open-source",
+    "performance"
+   ],
+   "url": "https://www.pruna.ai",
+   "source": "https://www.pruna.ai",
+   "note": "Open-sourced framework Mar 2025; $6.5M seed"
+  },
+  {
+   "name": "PyTorch (PyTorch Foundation)",
+   "kind": "company",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Linux Foundation",
+   "one_liner": "Dominant deep-learning framework with distributed training (FSDP, TorchTitan)",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://pytorch.org",
+   "source": "https://pytorch.org"
+  },
+  {
+   "name": "Qualcomm AI Hub (Edge Impulse)",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt",
+    "n6.hub"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Qualcomm",
+   "one_liner": "Optimised on-device models and quantisation/compilation tools for Snapdragon and edge",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://aihub.qualcomm.com",
+   "source": "https://aihub.qualcomm.com",
+   "note": "Edge Impulse acquired by Qualcomm (2025)"
+  },
+  {
+   "name": "Recraft",
+   "kind": "company",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Image and vector generation models for designers and brands",
+   "url": "https://www.recraft.ai",
+   "source": "https://www.recraft.ai"
+  },
+  {
+   "name": "Red Hat AI (Neural Magic)",
+   "kind": "company",
+   "subsegments": [
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "IBM / Red Hat (Neural Magic acquired Jan 2025)",
+   "one_liner": "LLM Compressor quantisation/sparsity tools and optimised vLLM models",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://www.redhat.com/en/products/ai",
+   "source": "https://www.redhat.com/en/products/ai"
+  },
+  {
+   "name": "Reflection AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "US lab building frontier open-weight models positioned against Chinese open models",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://reflection.ai",
+   "source": "https://techcrunch.com/2025/10/09/reflection-raises-2b-to-be-americas-open-frontier-ai-lab-challenging-deepseek",
+   "note": "Raised $2B led by NVIDIA at $8B (Oct 2025); reported talks at >$20B (2026); first open-weight model launch reported 2026"
+  },
+  {
+   "name": "Reka AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.enterprise",
+    "n6.small"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Multimodal models for enterprise and edge deployment",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://reka.ai",
+   "source": "https://reka.ai"
+  },
+  {
+   "name": "Resemble AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio",
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Voice cloning plus deepfake audio detection and watermarking",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.resemble.ai",
+   "source": "https://www.resemble.ai"
+  },
+  {
+   "name": "RLWRLD",
+   "kind": "company",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Robotics foundation models for dexterous industrial manipulation",
+   "url": "https://rlwrld.ai",
+   "source": "https://rlwrld.ai"
+  },
+  {
+   "name": "Runway",
+   "kind": "company",
+   "subsegments": [
+    "n6.image",
+    "n6.world",
+    "n9.creative"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Gen video generation models and General World Models for media and robotics",
+   "tags": [],
+   "url": "https://runwayml.com",
+   "source": "https://runwayml.com"
+  },
+  {
+   "name": "Safe Superintelligence (SSI)",
+   "kind": "company",
+   "subsegments": [
+    "n6.frontier"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Ilya Sutskever's lab pursuing safe superintelligence; no public product yet",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://ssi.inc",
+   "source": "https://www.startuphub.ai/news/figure-ilya-sutskever-ssi-first-model-2026-08-14",
+   "note": "$32B valuation (Apr 2025); Sutskever CEO after Daniel Gross left for Meta (Jul 2025); no public model as of Aug 2026"
+  },
+  {
+   "name": "Sakana AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.enterprise",
+    "n6.sovereign",
+    "n6.science"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Nature-inspired model research and Japanese enterprise/finance AI",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://sakana.ai",
+   "source": "https://sakana.ai",
+   "note": "Raised ~¥20B at ~$2.6B valuation (Nov 2025)"
+  },
+  {
+   "name": "Sarvam AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open",
+    "n6.audio",
+    "n9.voice",
+    "n9.assistant",
+    "n9.lang"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Indian full-stack sovereign LLMs and Indic speech models built under IndiaAI Mission",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://www.sarvam.ai",
+   "source": "https://explainx.ai/blog/india-independence-day-2026-ai-progress-top-15-startups",
+   "note": "Open-sourced Sarvam 30B and 105B (Apache 2.0, Feb 2026); reported unicorn status (Jun 2026)"
+  },
+  {
+   "name": "Sesame",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Conversational speech models and voice companion hardware",
+   "url": "https://www.sesame.com",
+   "source": "https://www.sesame.com",
+   "note": "Raised $250M Series B (Oct 2025)"
+  },
+  {
+   "name": "Shengshu Technology (Vidu)",
+   "kind": "company",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Vidu video generation models built with Tsinghua researchers",
+   "url": "https://www.vidu.com",
+   "source": "https://www.vidu.com"
+  },
+  {
+   "name": "Silo AI (Viking/Poro)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "FI",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "AMD (2024)",
+   "one_liner": "Open Nordic-language LLMs and custom model services",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://www.silo.ai",
+   "source": "https://www.silo.ai"
+  },
+  {
+   "name": "SK Telecom (A.X)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "SK Group",
+   "one_liner": "A.X Korean LLMs; Korean national foundation-model team",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.sktelecom.com",
+   "source": "https://www.sktelecom.com"
+  },
+  {
+   "name": "Skild AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.world",
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Skild Brain general robot foundation model across embodiments",
+   "tags": [],
+   "url": "https://www.skild.ai",
+   "source": "https://www.skild.ai"
+  },
+  {
+   "name": "Smallest.ai",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio",
+    "n6.small"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Low-latency small TTS and voice-agent models (Lightning, Electron)",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://smallest.ai",
+   "source": "https://smallest.ai"
+  },
+  {
+   "name": "Snowflake Arctic Embed",
+   "kind": "company",
+   "subsegments": [
+    "n6.embed",
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Snowflake",
+   "one_liner": "Open text-embedding models from Snowflake",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.snowflake.com/en/engineering-blog/",
+   "source": "https://www.snowflake.com/en/engineering-blog/"
+  },
+  {
+   "name": "SoftBank SB Intuitions (Sarashina)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "parent": "SoftBank",
+   "one_liner": "Japanese-language Sarashina LLMs",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.sbintuitions.co.jp",
+   "source": "https://www.sbintuitions.co.jp"
+  },
+  {
+   "name": "Soket AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Building EKA open multilingual Indic foundation models under IndiaAI Mission",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://soket.ai",
+   "source": "https://soket.ai"
+  },
+  {
+   "name": "Speechmatics",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Multilingual speech recognition and voice AI",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.speechmatics.com",
+   "source": "https://www.speechmatics.com"
+  },
+  {
+   "name": "Stability AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.image",
+    "n6.audio",
+    "n6.open"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Stable Diffusion open image, 3D and audio models with enterprise licensing",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://stability.ai",
+   "source": "https://stability.ai"
+  },
+  {
+   "name": "StepFun",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.audio",
+    "n6.image"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Step open multimodal, reasoning and audio models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.stepfun.com",
+   "source": "https://www.stepfun.com"
+  },
+  {
+   "name": "Suno",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio",
+    "n9.creative"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Text-to-music generation",
+   "tags": [],
+   "url": "https://suno.com",
+   "source": "https://suno.com",
+   "note": "Raised $250M at $2.45B and settled with Warner Music Group (Nov 2025)"
+  },
+  {
+   "name": "Swiss AI Initiative (Apertus)",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.sovereign"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "non-profit",
+   "one_liner": "EPFL/ETH fully open multilingual Apertus model trained on Alps supercomputer",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://www.swiss-ai.org",
+   "source": "https://www.swiss-ai.org",
+   "note": "Apertus released Sep 2025"
+  },
+  {
+   "name": "Taiwan TAIDE",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "TW",
+   "region": "Asia-Pacific",
+   "status": "government",
+   "one_liner": "Government-backed open LLMs for Traditional Chinese",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://taide.tw",
+   "source": "https://taide.tw"
+  },
+  {
+   "name": "Tech Mahindra (Project Indus)",
+   "kind": "company",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "public",
+   "parent": "Tech Mahindra",
+   "one_liner": "Hindi and Indic-dialect LLMs; IndiaAI Mission phase 2 grantee",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.techmahindra.com",
+   "source": "https://analyticsindiamag.com/ai-news-updates/bharatgen-tech-mahindra-and-fractal-selected-for-phase-2-of-indiaai-mission/"
+  },
+  {
+   "name": "Tencent Hunyuan",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.image",
+    "n6.world"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Tencent",
+   "one_liner": "Hunyuan LLMs, open image, video and 3D world generation models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://hunyuan.tencent.com",
+   "source": "https://hunyuan.tencent.com"
+  },
+  {
+   "name": "Thinking Machines Lab",
+   "kind": "company",
+   "subsegments": [
+    "n6.frontier",
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Mira Murati's lab; Tinker fine-tuning API and in-house models",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://thinkingmachines.ai",
+   "source": "https://runtimewire.com/article/thinking-machines-1b-funding-talks-40b-valuation",
+   "note": "$2B seed at $12B (Jul 2025); Tinker launched Oct 2025; co-founder departures to OpenAI; in talks at >$40B (Sep 2026)"
+  },
+  {
+   "name": "TII Falcon",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.sovereign",
+    "n6.small"
+   ],
+   "hq": "AE",
+   "region": "Middle East",
+   "status": "government",
+   "parent": "Advanced Technology Research Council, Abu Dhabi",
+   "one_liner": "Abu Dhabi's Technology Innovation Institute releasing open Falcon LLMs incl. Falcon-H hybrids",
+   "tags": [
+    "open-source",
+    "sovereign"
+   ],
+   "url": "https://falconllm.tii.ae",
+   "source": "https://falconllm.tii.ae"
+  },
+  {
+   "name": "Together AI (fine-tuning)",
+   "kind": "company",
+   "subsegments": [
+    "n6.train",
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Fine-tuning and training clusters for open models; releases open research models",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.together.ai",
+   "source": "https://www.together.ai"
+  },
+  {
+   "name": "Transluce",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Open interpretability and AI oversight tooling",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://transluce.org",
+   "source": "https://transluce.org"
+  },
+  {
+   "name": "Udio",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Music generation, repositioning as licensed platform",
+   "url": "https://www.udio.com",
+   "source": "https://www.udio.com",
+   "note": "Settled with Universal Music Group (Oct 2025)"
+  },
+  {
+   "name": "UK AI Security Institute",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety",
+    "n5.evaldata"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "government",
+   "one_liner": "UK government body testing frontier models for national-security risks",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.aisi.gov.uk",
+   "source": "https://www.aisi.gov.uk"
+  },
+  {
+   "name": "Unsloth",
+   "kind": "company",
+   "subsegments": [
+    "n6.train",
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Open-source fast, low-memory fine-tuning and dynamic quantised model releases",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://unsloth.ai",
+   "source": "https://unsloth.ai"
+  },
+  {
+   "name": "Upstage",
+   "kind": "company",
+   "subsegments": [
+    "n6.enterprise",
+    "n6.sovereign",
+    "n6.small"
+   ],
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Solar LLMs and document AI for enterprises; Korean sovereign-model team",
+   "tags": [
+    "enterprise",
+    "sovereign"
+   ],
+   "url": "https://www.upstage.ai",
+   "source": "https://www.upstage.ai"
+  },
+  {
+   "name": "US CAISI (NIST)",
+   "kind": "company",
+   "subsegments": [
+    "n6.safety"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "government",
+   "one_liner": "Center for AI Standards and Innovation evaluating frontier models (ex-US AISI)",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.nist.gov/caisi",
+   "source": "https://www.nist.gov/caisi"
+  },
+  {
+   "name": "Voyage AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.embed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "MongoDB (2025)",
+   "one_liner": "Embedding and reranking models for retrieval",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.voyageai.com",
+   "source": "https://www.voyageai.com",
+   "note": "Acquired by MongoDB (Feb 2025)"
+  },
+  {
+   "name": "Wayve",
+   "kind": "company",
+   "subsegments": [
+    "n6.world",
+    "n9.physical"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Embodied AI driving models and GAIA generative world models",
+   "tags": [],
+   "url": "https://wayve.ai",
+   "source": "https://wayve.ai"
+  },
+  {
+   "name": "World Labs",
+   "kind": "company",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Spatial intelligence models generating 3D worlds (Marble)",
+   "url": "https://www.worldlabs.ai",
+   "source": "https://www.worldlabs.ai",
+   "note": "Launched Marble (Nov 2025)"
+  },
+  {
+   "name": "Writer",
+   "kind": "company",
+   "subsegments": [
+    "n6.enterprise",
+    "n8.platform",
+    "n9.knowledge",
+    "n9.gtm",
+    "n6.domain"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Palmyra enterprise LLMs with an agent-building platform",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://writer.com",
+   "source": "https://writer.com"
+  },
+  {
+   "name": "xAI",
+   "kind": "company",
+   "subsegments": [
+    "n6.frontier",
+    "n6.code",
+    "n4.offtake"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "SpaceX (2026)",
+   "one_liner": "Grok frontier models served via X, apps and API",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://x.ai",
+   "source": "https://www.bloomberg.com/news/articles/2026-01-29/spacex-in-merger-talks-with-xai-ahead-of-ipo-reuters-reports",
+   "note": "Combined with SpaceX in early 2026 ahead of SpaceX IPO (merger talks reported Jan 29 2026, deal announced Feb 2026)"
+  },
+  {
+   "name": "Xiaomi MiMo",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.small"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "parent": "Xiaomi",
+   "one_liner": "Open MiMo reasoning and multimodal models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/XiaomiMiMo",
+   "source": "https://github.com/XiaomiMiMo"
+  },
+  {
+   "name": "ZeroEntropy",
+   "kind": "company",
+   "subsegments": [
+    "n6.embed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Rerankers and retrieval models for high-precision search",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.zeroentropy.dev",
+   "source": "https://www.zeroentropy.dev"
+  },
+  {
+   "name": "Zhipu AI (Z.ai)",
+   "kind": "company",
+   "subsegments": [
+    "n6.open",
+    "n6.code",
+    "n6.sovereign"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "GLM open-weight language, vision and agent models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://z.ai",
+   "source": "https://restofworld.org/2026/zhipu-ai-minimax-ipo/",
+   "note": "Listed on Hong Kong Stock Exchange 8 Jan 2026"
+  },
+  {
+   "name": "Zyphra",
+   "kind": "company",
+   "subsegments": [
+    "n6.small",
+    "n6.open",
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Efficient hybrid SSM models (Zamba) for on-device and low-cost inference",
+   "tags": [
+    "open-source",
+    "cost"
+   ],
+   "url": "https://www.zyphra.com",
+   "source": "https://www.zyphra.com"
+  },
+  {
+   "name": "AlphaFold 3",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.science",
+    "n9.industrial"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Google DeepMind",
+   "licence": "Apache-2.0 code; weights under AlphaFold 3 Model Parameters Terms",
+   "access": "Code on GitHub; weights obtained directly from Google",
+   "repo": "https://github.com/google-deepmind/alphafold3",
+   "stars": 8500,
+   "one_liner": "Structure prediction for proteins, DNA, RNA and ligands",
+   "tags": [
+    "bio",
+    "restricted-weights",
+    "open-source"
+   ],
+   "url": "https://github.com/google-deepmind/alphafold3",
+   "source": "https://github.com/google-deepmind/alphafold3"
+  },
+  {
+   "name": "Apertus",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.open"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Swiss AI Initiative (EPFL, ETH Zurich, CSCS)",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "Fully open 8B/70B multilingual models honouring opt-outs",
+   "tags": [
+    "sovereign",
+    "fully-open",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/swiss-ai/Apertus-70B-2509",
+   "source": "https://huggingface.co/swiss-ai/Apertus-70B-2509"
+  },
+  {
+   "name": "Aurora",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.science"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Microsoft Research",
+   "licence": "MIT",
+   "access": "pip install microsoft-aurora",
+   "repo": "https://github.com/microsoft/aurora",
+   "stars": 1000,
+   "archived": false,
+   "one_liner": "Foundation model for weather and Earth-system forecasting",
+   "tags": [
+    "weather",
+    "open-source"
+   ],
+   "url": "https://github.com/microsoft/aurora",
+   "source": "https://github.com/microsoft/aurora"
+  },
+  {
+   "name": "AutoAWQ",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.opt"
+   ],
+   "hq": "DK",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Casper Hansen (community)",
+   "licence": "MIT",
+   "access": "Archived; use LLM Compressor instead",
+   "repo": "https://github.com/casper-hansen/AutoAWQ",
+   "stars": 2300,
+   "archived": true,
+   "one_liner": "4-bit activation-aware weight quantisation",
+   "tags": [
+    "compression",
+    "open-source"
+   ],
+   "url": "https://github.com/casper-hansen/AutoAWQ",
+   "source": "https://github.com/casper-hansen/AutoAWQ",
+   "note": "Deprecated and archived 11 May 2025; AWQ support moved to vLLM LLM Compressor"
+  },
+  {
+   "name": "Axolotl (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Axolotl AI",
+   "licence": "Apache-2.0",
+   "access": "pip install axolotl; YAML configs",
+   "repo": "https://github.com/axolotl-ai-cloud/axolotl",
+   "stars": 12600,
+   "archived": false,
+   "one_liner": "Config-driven fine-tuning framework for many model families",
+   "tags": [
+    "training",
+    "open-source"
+   ],
+   "url": "https://github.com/axolotl-ai-cloud/axolotl",
+   "source": "https://github.com/axolotl-ai-cloud/axolotl"
+  },
+  {
+   "name": "BGE-M3",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.embed"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Beijing Academy of AI (BAAI)",
+   "licence": "MIT",
+   "access": "Download from Hugging Face",
+   "one_liner": "Multilingual dense, sparse and multi-vector embedding model",
+   "tags": [
+    "retrieval",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/BAAI/bge-m3",
+   "source": "https://huggingface.co/BAAI/bge-m3"
+  },
+  {
+   "name": "BharatGen Param",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.sovereign",
+    "n6.domain"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "BharatGen (IIT Bombay-led, DST/MeitY)",
+   "licence": "BharatGen Non-Commercial License",
+   "access": "Download from Hugging Face",
+   "one_liner": "Indian-language models (Param2 17B MoE) plus Ayur, Finance, Legal, Agri domain models",
+   "tags": [
+    "india",
+    "sovereign",
+    "non-commercial",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/bharatgenai/Param2-17B-A2.4B-Thinking",
+   "source": "https://huggingface.co/bharatgenai/Param2-17B-A2.4B-Thinking",
+   "note": "Licence checked on Param2-17B; domain models may differ"
+  },
+  {
+   "name": "bitsandbytes",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "bitsandbytes Foundation",
+   "licence": "MIT",
+   "access": "pip install bitsandbytes",
+   "repo": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+   "stars": 8500,
+   "archived": false,
+   "one_liner": "8-bit and 4-bit (QLoRA) quantisation for PyTorch",
+   "tags": [
+    "compression",
+    "cost",
+    "open-source"
+   ],
+   "url": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+   "source": "https://github.com/bitsandbytes-foundation/bitsandbytes"
+  },
+  {
+   "name": "Boltz-2",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.science",
+    "n9.industrial"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Boltz (MIT Jameel Clinic spin-out)",
+   "licence": "MIT",
+   "access": "pip install boltz",
+   "repo": "https://github.com/jwohlwend/boltz",
+   "stars": 4200,
+   "archived": false,
+   "one_liner": "Biomolecular structure and binding-affinity prediction",
+   "tags": [
+    "bio",
+    "open-source"
+   ],
+   "url": "https://github.com/jwohlwend/boltz",
+   "source": "https://github.com/jwohlwend/boltz"
+  },
+  {
+   "name": "Chai-1",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.science"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Chai Discovery",
+   "licence": "Apache-2.0 (code and weights)",
+   "access": "pip install chai_lab",
+   "repo": "https://github.com/chaidiscovery/chai-lab",
+   "stars": 2000,
+   "one_liner": "Multimodal biomolecular structure prediction",
+   "tags": [
+    "bio",
+    "open-source"
+   ],
+   "url": "https://github.com/chaidiscovery/chai-lab",
+   "source": "https://github.com/chaidiscovery/chai-lab"
+  },
+  {
+   "name": "Chatterbox",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.audio"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Resemble AI",
+   "licence": "MIT",
+   "access": "pip install chatterbox-tts; Hugging Face",
+   "one_liner": "0.5B TTS with voice cloning in 23 languages",
+   "tags": [
+    "speech",
+    "tts",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/ResembleAI/chatterbox",
+   "source": "https://huggingface.co/ResembleAI/chatterbox"
+  },
+  {
+   "name": "DeepSeek V4 / V4.1",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.open"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "DeepSeek",
+   "licence": "MIT",
+   "access": "Download from Hugging Face",
+   "one_liner": "MoE multimodal models with 1M-token context (Flash and Pro tiers)",
+   "tags": [
+    "llm",
+    "cost",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+   "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+  },
+  {
+   "name": "DeepSpeed",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.train",
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "DeepSpeed (LF AI & Data Foundation; originated at Microsoft)",
+   "licence": "Apache-2.0",
+   "access": "pip install deepspeed",
+   "repo": "https://github.com/deepspeedai/DeepSpeed",
+   "stars": 43300,
+   "archived": false,
+   "one_liner": "Distributed training and ZeRO memory optimisation library",
+   "tags": [
+    "training",
+    "cost",
+    "open-source"
+   ],
+   "url": "https://github.com/deepspeedai/DeepSpeed",
+   "source": "https://github.com/deepspeedai/DeepSpeed",
+   "note": "Moved from microsoft to independent deepspeedai org under LF AI & Data"
+  },
+  {
+   "name": "Devstral 2",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.code"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Mistral AI",
+   "licence": "Modified MIT License",
+   "access": "Download from Hugging Face",
+   "one_liner": "123B agentic software-engineering model, 72.2% SWE-bench Verified",
+   "tags": [
+    "code",
+    "agents",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512",
+   "source": "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512"
+  },
+  {
+   "name": "EmbeddingGemma 2",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.embed",
+    "n6.small"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google DeepMind",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "740M multimodal embedding model (text, image, video, audio)",
+   "tags": [
+    "retrieval",
+    "on-device",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/google/embeddinggemma-2",
+   "source": "https://huggingface.co/google/embeddinggemma-2"
+  },
+  {
+   "name": "ESM (ESM3 / ESM C)",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.science"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "EvolutionaryScale",
+   "licence": "MIT (per repo README)",
+   "access": "pip install esm; Forge API for larger models",
+   "repo": "https://github.com/evolutionaryscale/esm",
+   "stars": 3000,
+   "archived": false,
+   "one_liner": "Protein language and generative models",
+   "tags": [
+    "bio",
+    "open-source"
+   ],
+   "url": "https://github.com/evolutionaryscale/esm",
+   "source": "https://github.com/evolutionaryscale/esm",
+   "note": "Earlier ESM3-open/ESM C weights shipped under non-commercial Cambrian terms; repo now states MIT - verify per checkpoint"
+  },
+  {
+   "name": "Evo 2",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.science"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Arc Institute (with NVIDIA)",
+   "licence": "Apache-2.0",
+   "access": "pip install; weights on Hugging Face",
+   "repo": "https://github.com/ArcInstitute/evo2",
+   "stars": 4200,
+   "one_liner": "Genome language model across all domains of life",
+   "tags": [
+    "bio",
+    "genomics",
+    "open-source"
+   ],
+   "url": "https://github.com/ArcInstitute/evo2",
+   "source": "https://github.com/ArcInstitute/evo2"
+  },
+  {
+   "name": "Falcon-H1",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "AE",
+   "region": "Middle East",
+   "status": "open",
+   "steward": "Technology Innovation Institute (TII)",
+   "licence": "Falcon-LLM License",
+   "access": "Download from Hugging Face",
+   "one_liner": "Hybrid Mamba-attention models from Abu Dhabi",
+   "tags": [
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
+   "source": "https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct"
+  },
+  {
+   "name": "FLUX 3 Image Klein",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Black Forest Labs",
+   "licence": "FLUX Kommunity License v1.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "5.6B text-to-image and editing model with Qwen3-VL text encoder",
+   "tags": [
+    "image",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+   "source": "https://huggingface.co/black-forest-labs/flux-3-image-klein"
+  },
+  {
+   "name": "FLUX.2 [dev]",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Black Forest Labs",
+   "licence": "FLUX Non-Commercial License",
+   "access": "Download from Hugging Face; commercial self-hosting needs paid licence",
+   "one_liner": "High-end open-weight text-to-image and editing model",
+   "tags": [
+    "image",
+    "non-commercial",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/black-forest-labs/FLUX.2-dev",
+   "source": "https://huggingface.co/black-forest-labs/FLUX.2-dev"
+  },
+  {
+   "name": "garak",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.safety",
+    "n8.security",
+    "n9.secops",
+    "n10.change"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "Apache-2.0",
+   "access": "pip install garak",
+   "repo": "https://github.com/NVIDIA/garak",
+   "stars": 9700,
+   "archived": false,
+   "one_liner": "LLM vulnerability scanner probing jailbreaks, injection, leakage",
+   "tags": [
+    "red-teaming",
+    "security",
+    "open-source"
+   ],
+   "url": "https://github.com/NVIDIA/garak",
+   "source": "https://github.com/NVIDIA/garak"
+  },
+  {
+   "name": "Gemma 4",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.open",
+    "n6.small"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google DeepMind",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face / Kaggle",
+   "one_liner": "Google's open multimodal family (31B dense, 26B-A4B MoE and smaller)",
+   "tags": [
+    "llm",
+    "on-device",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/google/gemma-4-31B-it",
+   "source": "https://huggingface.co/google/gemma-4-31B-it",
+   "note": "Gemma 4 moved to Apache-2.0 from the restrictive Gemma Terms of Use"
+  },
+  {
+   "name": "GLM-5.3",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.open",
+    "n6.code"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Z.ai (Zhipu)",
+   "licence": "GLM-5.3 licence (custom)",
+   "access": "Download from Hugging Face",
+   "one_liner": "753B model tuned for coding and long-horizon agentic tasks",
+   "tags": [
+    "llm",
+    "code",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/zai-org/GLM-5.3",
+   "source": "https://huggingface.co/zai-org/GLM-5.3"
+  },
+  {
+   "name": "gpt-oss",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenAI",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face; runs on vLLM, Ollama",
+   "one_liner": "OpenAI's open-weight reasoning models (120B and 20B)",
+   "tags": [
+    "llm",
+    "reasoning",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/openai/gpt-oss-120b",
+   "source": "https://huggingface.co/openai/gpt-oss-120b"
+  },
+  {
+   "name": "GPTQModel",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "ModelCloud",
+   "licence": "Apache-2.0",
+   "access": "pip install gptqmodel",
+   "repo": "https://github.com/ModelCloud/GPTQModel",
+   "stars": 1300,
+   "archived": false,
+   "one_liner": "GPTQ and related quantisation toolkit (successor to AutoGPTQ)",
+   "tags": [
+    "compression",
+    "open-source"
+   ],
+   "url": "https://github.com/ModelCloud/GPTQModel",
+   "source": "https://github.com/ModelCloud/GPTQModel"
+  },
+  {
+   "name": "GR00T N1.7",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "Apache-2.0 code; NVIDIA Open Model License weights",
+   "access": "Clone Isaac-GR00T; weights on Hugging Face",
+   "repo": "https://github.com/NVIDIA/Isaac-GR00T",
+   "stars": 8300,
+   "one_liner": "Open humanoid robot foundation model (3B)",
+   "tags": [
+    "robotics",
+    "open-source"
+   ],
+   "url": "https://github.com/NVIDIA/Isaac-GR00T",
+   "source": "https://github.com/NVIDIA/Isaac-GR00T"
+  },
+  {
+   "name": "HELM",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.safety"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Stanford CRFM",
+   "licence": "Apache-2.0",
+   "access": "pip install crfm-helm",
+   "repo": "https://github.com/stanford-crfm/helm",
+   "stars": 2900,
+   "archived": false,
+   "one_liner": "Holistic evaluation framework and public leaderboards",
+   "tags": [
+    "evaluation",
+    "open-source"
+   ],
+   "url": "https://github.com/stanford-crfm/helm",
+   "source": "https://github.com/stanford-crfm/helm",
+   "note": "Entered maintenance mode 1 Jun 2026"
+  },
+  {
+   "name": "Hugging Face Hub (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.hub"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Hugging Face",
+   "licence": "Apache-2.0 (client library); hosted service",
+   "access": "pip install huggingface_hub; free public hosting",
+   "repo": "https://github.com/huggingface/huggingface_hub",
+   "stars": 3900,
+   "archived": false,
+   "one_liner": "Default hub for open weights, datasets and model cards",
+   "tags": [
+    "distribution",
+    "open-source"
+   ],
+   "url": "https://github.com/huggingface/huggingface_hub",
+   "source": "https://github.com/huggingface/huggingface_hub"
+  },
+  {
+   "name": "HunyuanVideo 1.5",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Tencent Hunyuan",
+   "licence": "Tencent Hunyuan Community License",
+   "access": "Download from Hugging Face",
+   "one_liner": "Open text/image-to-video model",
+   "tags": [
+    "video",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/tencent/HunyuanVideo-1.5",
+   "source": "https://huggingface.co/tencent/HunyuanVideo-1.5",
+   "note": "Earlier Hunyuan community licences excluded EU, UK and South Korea; check current text"
+  },
+  {
+   "name": "IBM Granite 4.x",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.enterprise",
+    "n6.small"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "IBM",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face; watsonx",
+   "one_liner": "Enterprise reasoning/tool-calling models (3B-30B) with 128K-512K context",
+   "tags": [
+    "llm",
+    "enterprise",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+   "source": "https://huggingface.co/ibm-granite/granite-4.2-8b"
+  },
+  {
+   "name": "Indic Parler-TTS",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.audio",
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "AI4Bharat (IIT Madras) with Hugging Face",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "TTS for ~20 Indian languages plus English",
+   "tags": [
+    "speech",
+    "india",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/ai4bharat/indic-parler-tts",
+   "source": "https://huggingface.co/ai4bharat/indic-parler-tts"
+  },
+  {
+   "name": "Inspect",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.safety",
+    "n8.eval",
+    "n10.change"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open",
+   "steward": "UK AI Security Institute",
+   "licence": "MIT",
+   "access": "pip install inspect-ai",
+   "repo": "https://github.com/UKGovernmentBEIS/inspect_ai",
+   "stars": 3100,
+   "archived": false,
+   "one_liner": "Framework for LLM capability and safety evaluations, incl. agentic evals",
+   "tags": [
+    "evaluation",
+    "safety",
+    "open-source"
+   ],
+   "url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+   "source": "https://github.com/UKGovernmentBEIS/inspect_ai"
+  },
+  {
+   "name": "JAX",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google",
+   "licence": "Apache-2.0",
+   "access": "pip install jax",
+   "repo": "https://github.com/jax-ml/jax",
+   "stars": 36500,
+   "archived": false,
+   "one_liner": "Composable transformations for accelerated numerical computing on TPU/GPU",
+   "tags": [
+    "training",
+    "tpu",
+    "open-source"
+   ],
+   "url": "https://github.com/jax-ml/jax",
+   "source": "https://github.com/jax-ml/jax"
+  },
+  {
+   "name": "jina-embeddings-v4",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.embed"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Jina AI (Elastic)",
+   "licence": "Qwen Research License (non-commercial)",
+   "access": "Download from Hugging Face; commercial via API",
+   "one_liner": "Multimodal multilingual embeddings for visual documents",
+   "tags": [
+    "retrieval",
+    "non-commercial",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/jinaai/jina-embeddings-v4",
+   "source": "https://huggingface.co/jinaai/jina-embeddings-v4",
+   "note": "Initially tagged CC-BY-NC-4.0 in error; corrected to Qwen Research License"
+  },
+  {
+   "name": "Kimi K3",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.open",
+    "n6.code"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Moonshot AI",
+   "licence": "Kimi K3 License (custom)",
+   "access": "Download from Hugging Face",
+   "one_liner": "2.8T-param native multimodal agentic model with 1M context",
+   "tags": [
+    "llm",
+    "agents",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/moonshotai/Kimi-K3",
+   "source": "https://huggingface.co/moonshotai/Kimi-K3"
+  },
+  {
+   "name": "Kokoro-82M",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.audio",
+    "n6.small"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "hexgrad (community)",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face; pip install kokoro",
+   "one_liner": "Tiny 82M-parameter high-quality TTS",
+   "tags": [
+    "speech",
+    "tts",
+    "on-device",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+   "source": "https://huggingface.co/hexgrad/Kokoro-82M"
+  },
+  {
+   "name": "LFM2",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.small"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Liquid AI",
+   "licence": "LFM Open License v1.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "Hybrid on-device models built for edge latency",
+   "tags": [
+    "on-device",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/LiquidAI/LFM2-2.6B",
+   "source": "https://huggingface.co/LiquidAI/LFM2-2.6B"
+  },
+  {
+   "name": "Llama 3.2 1B/3B",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.small"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Meta",
+   "licence": "Llama 3.2 Community License",
+   "access": "Gated download from Hugging Face",
+   "one_liner": "Small text models for phones and edge",
+   "tags": [
+    "on-device",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
+   "source": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
+   "note": "Multimodal Llama 3.2 rights not granted to EU-domiciled entities under AUP"
+  },
+  {
+   "name": "Llama 4",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Meta",
+   "licence": "Llama 4 Community License (700M MAU cap; 'Built with Llama')",
+   "access": "Gated download from Hugging Face / llama.com",
+   "one_liner": "Meta's MoE multimodal open-weight family (Scout, Maverick)",
+   "tags": [
+    "llm",
+    "multimodal",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+   "source": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"
+  },
+  {
+   "name": "Llama Guard 4",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.safety",
+    "n8.security"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Meta",
+   "licence": "Llama 4 Community License",
+   "access": "Gated download from Hugging Face",
+   "one_liner": "12B multimodal safety classifier for prompts and responses",
+   "tags": [
+    "safety",
+    "guardrails",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/meta-llama/Llama-Guard-4-12B",
+   "source": "https://huggingface.co/meta-llama/Llama-Guard-4-12B"
+  },
+  {
+   "name": "LLaMA-Factory (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "hiyouga (community, Beihang University origin)",
+   "licence": "Apache-2.0",
+   "access": "pip install; web UI or CLI",
+   "repo": "https://github.com/hiyouga/LLaMA-Factory",
+   "stars": 75700,
+   "archived": false,
+   "one_liner": "Unified no-code fine-tuning for 100+ LLMs and VLMs",
+   "tags": [
+    "training",
+    "open-source"
+   ],
+   "url": "https://github.com/hiyouga/LLaMA-Factory",
+   "source": "https://github.com/hiyouga/LLaMA-Factory"
+  },
+  {
+   "name": "llama.cpp / GGUF",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.opt",
+    "n6.small",
+    "n7.local",
+    "n7.private"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "ggml-org (Hugging Face since Feb 2026)",
+   "licence": "MIT",
+   "access": "Build from source or brew install llama.cpp",
+   "repo": "https://github.com/ggml-org/llama.cpp",
+   "stars": 132500,
+   "archived": false,
+   "one_liner": "CPU/GPU local inference and GGUF quantised model format",
+   "tags": [
+    "compression",
+    "on-device",
+    "open-source"
+   ],
+   "url": "https://github.com/ggml-org/llama.cpp",
+   "source": "https://huggingface.co/blog/ggml-joins-hf",
+   "note": "ggml.ai team joined Hugging Face 20 Feb 2026; project stays open source with autonomy"
+  },
+  {
+   "name": "LLM Compressor",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.opt",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "vLLM project (Red Hat-led)",
+   "licence": "Apache-2.0",
+   "access": "pip install llmcompressor",
+   "repo": "https://github.com/vllm-project/llm-compressor",
+   "stars": 3900,
+   "archived": false,
+   "one_liner": "Quantisation and sparsity (GPTQ, AWQ, FP8, NVFP4) for vLLM deployment",
+   "tags": [
+    "compression",
+    "cost",
+    "open-source"
+   ],
+   "url": "https://github.com/vllm-project/llm-compressor",
+   "source": "https://github.com/vllm-project/llm-compressor"
+  },
+  {
+   "name": "lm-evaluation-harness",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.safety",
+    "n8.eval"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "EleutherAI",
+   "licence": "MIT",
+   "access": "pip install lm-eval",
+   "repo": "https://github.com/EleutherAI/lm-evaluation-harness",
+   "stars": 14300,
+   "archived": false,
+   "one_liner": "Standard harness running hundreds of LLM benchmarks",
+   "tags": [
+    "evaluation",
+    "open-source"
+   ],
+   "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+   "source": "https://github.com/EleutherAI/lm-evaluation-harness"
+  },
+  {
+   "name": "LTX-2",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.image",
+    "n6.audio"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "open",
+   "steward": "Lightricks",
+   "licence": "LTX-2 Community License Agreement",
+   "access": "Download from Hugging Face",
+   "one_liner": "Open audio-video generation model with distilled and upscaler variants",
+   "tags": [
+    "video",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/Lightricks/LTX-2",
+   "source": "https://huggingface.co/Lightricks/LTX-2"
+  },
+  {
+   "name": "MedGemma",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.domain",
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google Health AI",
+   "licence": "Health AI Developer Foundations terms",
+   "access": "Gated download from Hugging Face",
+   "one_liner": "Medical text and imaging models built on Gemma",
+   "tags": [
+    "health",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/google/medgemma-27b-it",
+   "source": "https://huggingface.co/google/medgemma-27b-it"
+  },
+  {
+   "name": "Megatron-LM / Megatron Core",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "Apache-2.0",
+   "access": "pip install megatron-core",
+   "repo": "https://github.com/NVIDIA/Megatron-LM",
+   "stars": 18100,
+   "archived": false,
+   "one_liner": "GPU-optimised large-scale transformer training with 3D/5D parallelism",
+   "tags": [
+    "training",
+    "performance",
+    "open-source"
+   ],
+   "url": "https://github.com/NVIDIA/Megatron-LM",
+   "source": "https://github.com/NVIDIA/Megatron-LM"
+  },
+  {
+   "name": "MiniMax-M3",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.open"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "MiniMax",
+   "licence": "MiniMax Community License",
+   "access": "Download from Hugging Face",
+   "one_liner": "428B (23B active) multimodal MoE with 1M context",
+   "tags": [
+    "llm",
+    "agents",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+   "source": "https://huggingface.co/MiniMaxAI/MiniMax-M3"
+  },
+  {
+   "name": "Mistral Large 4",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.open",
+    "n6.enterprise"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Mistral AI",
+   "licence": "Mistral Ecosystem Open-Weight License",
+   "access": "Download from Hugging Face",
+   "one_liner": "~1T-param (52B active) natively multimodal MoE",
+   "tags": [
+    "llm",
+    "sovereign-eu",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+   "source": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+   "note": "New custom licence, not Apache-2.0 as used for Mistral Large 3 / Small releases"
+  },
+  {
+   "name": "ModelScope (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.hub"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Alibaba",
+   "licence": "Apache-2.0",
+   "access": "pip install modelscope; modelscope.cn",
+   "repo": "https://github.com/modelscope/modelscope",
+   "stars": 9200,
+   "archived": false,
+   "one_liner": "China's main model hub and SDK",
+   "tags": [
+    "distribution",
+    "open-source"
+   ],
+   "url": "https://github.com/modelscope/modelscope",
+   "source": "https://github.com/modelscope/modelscope"
+  },
+  {
+   "name": "Nemotron 3 / 3.5",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.open",
+    "n6.enterprise",
+    "n6.embed",
+    "n6.audio"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "NVIDIA Nemotron Open Model License",
+   "access": "Download from Hugging Face; NIM containers",
+   "one_liner": "Hybrid Mamba-MoE LLMs plus embed, rerank, ASR and safety models",
+   "tags": [
+    "llm",
+    "enterprise",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+   "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+  },
+  {
+   "name": "Nomic Embed v2",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.embed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Nomic AI",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "Fully open MoE multilingual text embedder with open training data",
+   "tags": [
+    "retrieval",
+    "fully-open",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe",
+   "source": "https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe"
+  },
+  {
+   "name": "NVIDIA Cosmos",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "NVIDIA Open Model License",
+   "access": "Download from Hugging Face",
+   "one_liner": "World foundation models generating video for robotics and AV simulation",
+   "tags": [
+    "physical-ai",
+    "simulation",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/nvidia/Cosmos-Predict2.5-2B",
+   "source": "https://huggingface.co/nvidia/Cosmos-Predict2.5-2B"
+  },
+  {
+   "name": "NVIDIA Model Optimizer",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.opt",
+    "n7.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "Apache-2.0",
+   "access": "pip install nvidia-modelopt",
+   "repo": "https://github.com/NVIDIA/Model-Optimizer",
+   "stars": 5500,
+   "archived": false,
+   "one_liner": "Quantisation, pruning, distillation and speculative decoding for TensorRT/vLLM/SGLang",
+   "tags": [
+    "compression",
+    "performance",
+    "open-source"
+   ],
+   "url": "https://github.com/NVIDIA/Model-Optimizer",
+   "source": "https://github.com/NVIDIA/Model-Optimizer",
+   "note": "Renamed from TensorRT Model Optimizer (Dec 2025)"
+  },
+  {
+   "name": "Ollama (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.hub",
+    "n6.small",
+    "n7.local",
+    "n7.private"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Ollama",
+   "licence": "MIT",
+   "access": "Install app; ollama pull <model>",
+   "repo": "https://github.com/ollama/ollama",
+   "stars": 184700,
+   "archived": false,
+   "one_liner": "Local model runner with public model library",
+   "tags": [
+    "distribution",
+    "on-device",
+    "open-source"
+   ],
+   "url": "https://github.com/ollama/ollama",
+   "source": "https://github.com/ollama/ollama"
+  },
+  {
+   "name": "OLMo 3.1",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.open"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Allen Institute for AI (Ai2)",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face; data and recipes open",
+   "one_liner": "Fully open LMs with weights, data, code and checkpoints",
+   "tags": [
+    "llm",
+    "fully-open",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/allenai/Olmo-3.1-32B-Think",
+   "source": "https://huggingface.co/allenai/Olmo-3.1-32B-Think"
+  },
+  {
+   "name": "OpenFold3",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.science"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenFold consortium (AlQuraishi Lab, Columbia)",
+   "licence": "Apache-2.0",
+   "access": "pip install; weights downloadable",
+   "repo": "https://github.com/aqlaboratory/openfold-3",
+   "stars": 817,
+   "one_liner": "Fully open AlphaFold3-style biomolecular structure model",
+   "tags": [
+    "bio",
+    "fully-open",
+    "open-source"
+   ],
+   "url": "https://github.com/aqlaboratory/openfold-3",
+   "source": "https://github.com/aqlaboratory/openfold-3"
+  },
+  {
+   "name": "OpenMDW License",
+   "kind": "standard",
+   "subsegments": [
+    "n6.weights"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Linux Foundation",
+   "licence": "OpenMDW-1.1 (permissive)",
+   "access": "Apply to model releases; submitted to OSI",
+   "one_liner": "Permissive licence covering weights, data, code and docs together",
+   "tags": [
+    "licensing",
+    "open-standard"
+   ],
+   "url": "https://huggingface.co/blog/linuxfoundation/openmdw",
+   "source": "https://lists.opensource.org/pipermail/license-review_lists.opensource.org/2026-August/006125.html",
+   "note": "v1.1 submitted for OSI approval 13 Aug 2026"
+  },
+  {
+   "name": "openpi (pi0 / pi0.5)",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Physical Intelligence",
+   "licence": "Apache-2.0 (plus Gemma terms for PaliGemma base)",
+   "access": "Clone openpi; JAX or PyTorch",
+   "repo": "https://github.com/Physical-Intelligence/openpi",
+   "stars": 13300,
+   "archived": false,
+   "one_liner": "Open vision-language-action robot policies and fine-tuned checkpoints",
+   "tags": [
+    "robotics",
+    "vla",
+    "open-source"
+   ],
+   "url": "https://github.com/Physical-Intelligence/openpi",
+   "source": "https://github.com/Physical-Intelligence/openpi"
+  },
+  {
+   "name": "OpenSSF Model Signing (model-transparency)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.weights"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Sigstore / OpenSSF",
+   "licence": "Apache-2.0",
+   "access": "pip install model-signing",
+   "repo": "https://github.com/sigstore/model-transparency",
+   "stars": 249,
+   "archived": false,
+   "one_liner": "Sign and verify ML model artefacts for supply-chain security",
+   "tags": [
+    "security",
+    "open-source"
+   ],
+   "url": "https://github.com/sigstore/model-transparency",
+   "source": "https://github.com/sigstore/model-transparency"
+  },
+  {
+   "name": "Parakeet / Canary",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.audio"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "CC-BY-4.0",
+   "access": "Download from Hugging Face; NeMo toolkit",
+   "one_liner": "Fast FastConformer ASR (25 European languages) and speech translation",
+   "tags": [
+    "speech",
+    "stt",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+   "source": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3"
+  },
+  {
+   "name": "Phi-4",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.small"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Microsoft",
+   "licence": "MIT",
+   "access": "Download from Hugging Face / Azure AI Foundry",
+   "one_liner": "Small language model family focused on reasoning quality per parameter",
+   "tags": [
+    "on-device",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/microsoft/phi-4",
+   "source": "https://huggingface.co/microsoft/phi-4"
+  },
+  {
+   "name": "promptfoo (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.safety",
+    "n8.eval",
+    "n10.change"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenAI (acquired Promptfoo)",
+   "licence": "MIT",
+   "access": "npx promptfoo; CLI and CI",
+   "repo": "https://github.com/promptfoo/promptfoo",
+   "stars": 26500,
+   "archived": false,
+   "one_liner": "Eval and red-teaming CLI for prompts, agents and RAG",
+   "tags": [
+    "red-teaming",
+    "evaluation",
+    "open-source"
+   ],
+   "url": "https://github.com/promptfoo/promptfoo",
+   "source": "https://github.com/promptfoo/promptfoo",
+   "note": "Promptfoo is now part of OpenAI; remains MIT open source"
+  },
+  {
+   "name": "PyRIT",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.safety"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Microsoft AI Red Team",
+   "licence": "MIT",
+   "access": "pip install pyrit",
+   "repo": "https://github.com/microsoft/PyRIT",
+   "one_liner": "Python risk identification toolkit for automated red teaming",
+   "tags": [
+    "red-teaming",
+    "open-source"
+   ],
+   "url": "https://github.com/microsoft/PyRIT",
+   "source": "https://github.com/microsoft/PyRIT",
+   "note": "Azure/PyRIT archived 27 Mar 2026; project continues at microsoft/PyRIT"
+  },
+  {
+   "name": "PyTorch (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "PyTorch Foundation (Linux Foundation)",
+   "licence": "BSD-3-Clause",
+   "access": "pip install torch",
+   "repo": "https://github.com/pytorch/pytorch",
+   "stars": 102000,
+   "archived": false,
+   "one_liner": "Dominant deep-learning framework for training and research",
+   "tags": [
+    "training",
+    "open-source"
+   ],
+   "url": "https://github.com/pytorch/pytorch",
+   "source": "https://github.com/pytorch/pytorch"
+  },
+  {
+   "name": "Qwen-Image 2.1",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Alibaba Qwen",
+   "licence": "Qwen Research License (non-commercial)",
+   "access": "Download from Hugging Face",
+   "one_liner": "7B unified text-to-image and image-editing model",
+   "tags": [
+    "image",
+    "non-commercial",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+   "source": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+   "note": "Tightened from Apache-2.0 used for original Qwen-Image (2025)"
+  },
+  {
+   "name": "Qwen3-Coder",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.code"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Alibaba Qwen",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "480B-A35B agentic coding model",
+   "tags": [
+    "code",
+    "agents",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+   "source": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct"
+  },
+  {
+   "name": "Qwen3-Embedding",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.embed"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Alibaba Qwen",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "Multilingual text embedding and reranking models (0.6B-8B)",
+   "tags": [
+    "retrieval",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
+   "source": "https://huggingface.co/Qwen/Qwen3-Embedding-8B"
+  },
+  {
+   "name": "Qwen3.8",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.open",
+    "n6.small"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Alibaba Qwen",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face / ModelScope",
+   "one_liner": "Alibaba's latest family from 27B dense VLM to 2.4T-A95B MoE",
+   "tags": [
+    "llm",
+    "multimodal",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+   "source": "https://huggingface.co/Qwen/Qwen3.8-27B",
+   "note": "Checked licence on Qwen3.8-27B; confirm per size"
+  },
+  {
+   "name": "safetensors",
+   "kind": "standard",
+   "subsegments": [
+    "n6.weights"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Hugging Face",
+   "licence": "Apache-2.0",
+   "access": "pip install safetensors",
+   "repo": "https://github.com/huggingface/safetensors",
+   "stars": 3900,
+   "archived": false,
+   "one_liner": "Safe, zero-copy tensor format replacing pickle for weight distribution",
+   "tags": [
+    "security",
+    "open-standard"
+   ],
+   "url": "https://github.com/huggingface/safetensors",
+   "source": "https://github.com/huggingface/safetensors"
+  },
+  {
+   "name": "Sarvam-105B / 30B",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "Sarvam AI",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "Indian MoE reasoning models (105B-A10B, 30B) strong in Indian languages",
+   "tags": [
+    "india",
+    "sovereign",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/sarvamai/sarvam-105b",
+   "source": "https://huggingface.co/sarvamai/sarvam-105b",
+   "note": "Built under the IndiaAI Mission foundation-model programme"
+  },
+  {
+   "name": "SEA-LION",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.sovereign"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "open",
+   "steward": "AI Singapore",
+   "access": "Download from Hugging Face",
+   "one_liner": "Southeast Asian language models and guard models built on Gemma/Nemotron bases",
+   "tags": [
+    "sovereign",
+    "multilingual",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/aisingapore",
+   "source": "https://huggingface.co/aisingapore"
+  },
+  {
+   "name": "SmolLM3",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.small"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Hugging Face",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "Fully open 3B multilingual reasoning model",
+   "tags": [
+    "on-device",
+    "fully-open",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+   "source": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B"
+  },
+  {
+   "name": "Stable Diffusion 3.5",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Stability AI",
+   "licence": "Stability AI Community License (free under $1M revenue)",
+   "access": "Gated download from Hugging Face",
+   "one_liner": "Open-weight text-to-image family (Large, Medium)",
+   "tags": [
+    "image",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
+   "source": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large"
+  },
+  {
+   "name": "StarCoder2",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.code"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "BigCode (Hugging Face, ServiceNow)",
+   "licence": "BigCode OpenRAIL-M v1",
+   "access": "Download from Hugging Face",
+   "one_liner": "Transparent code models trained on The Stack v2",
+   "tags": [
+    "code",
+    "provenance",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/bigcode/starcoder2-15b",
+   "source": "https://huggingface.co/bigcode/starcoder2-15b"
+  },
+  {
+   "name": "torchtitan",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "PyTorch (Meta)",
+   "licence": "BSD-3-Clause",
+   "access": "Clone repo; torchrun",
+   "repo": "https://github.com/pytorch/torchtitan",
+   "stars": 5900,
+   "archived": false,
+   "one_liner": "PyTorch-native platform for large-scale generative model pretraining",
+   "tags": [
+    "training",
+    "open-source"
+   ],
+   "url": "https://github.com/pytorch/torchtitan",
+   "source": "https://github.com/pytorch/torchtitan"
+  },
+  {
+   "name": "TransformerLens",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.safety"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "open",
+   "steward": "TransformerLensOrg (community)",
+   "licence": "MIT",
+   "access": "pip install transformer-lens",
+   "repo": "https://github.com/TransformerLensOrg/TransformerLens",
+   "stars": 4000,
+   "archived": false,
+   "one_liner": "Mechanistic interpretability library for transformer internals",
+   "tags": [
+    "interpretability",
+    "open-source"
+   ],
+   "url": "https://github.com/TransformerLensOrg/TransformerLens",
+   "source": "https://github.com/TransformerLensOrg/TransformerLens"
+  },
+  {
+   "name": "TRL",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Hugging Face",
+   "licence": "Apache-2.0",
+   "access": "pip install trl",
+   "repo": "https://github.com/huggingface/trl",
+   "stars": 19600,
+   "archived": false,
+   "one_liner": "Post-training library: SFT, DPO, GRPO and reward modelling",
+   "tags": [
+    "training",
+    "rl",
+    "open-source"
+   ],
+   "url": "https://github.com/huggingface/trl",
+   "source": "https://github.com/huggingface/trl"
+  },
+  {
+   "name": "Unsloth (open)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.train",
+    "n6.opt"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Unsloth AI",
+   "licence": "Apache-2.0 (core); AGPL-3.0 (Studio UI)",
+   "access": "pip install unsloth; single-GPU fine-tuning",
+   "repo": "https://github.com/unslothai/unsloth",
+   "stars": 78700,
+   "archived": false,
+   "one_liner": "Fast, memory-efficient fine-tuning and RL for open models",
+   "tags": [
+    "training",
+    "cost",
+    "open-source"
+   ],
+   "url": "https://github.com/unslothai/unsloth",
+   "source": "https://github.com/unslothai/unsloth"
+  },
+  {
+   "name": "V-JEPA 2",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Meta FAIR",
+   "licence": "MIT (some files Apache-2.0)",
+   "access": "Clone repo; weights downloadable",
+   "repo": "https://github.com/facebookresearch/vjepa2",
+   "stars": 4700,
+   "one_liner": "Self-supervised video world model for understanding and planning",
+   "tags": [
+    "world-model",
+    "open-source"
+   ],
+   "url": "https://github.com/facebookresearch/vjepa2",
+   "source": "https://github.com/facebookresearch/vjepa2",
+   "note": "V-JEPA 2.1 released Mar 2026"
+  },
+  {
+   "name": "verl",
+   "kind": "open-source project",
+   "subsegments": [
+    "n6.train"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "ByteDance Seed (volcengine) and community",
+   "licence": "Apache-2.0",
+   "access": "pip install verl",
+   "repo": "https://github.com/volcengine/verl",
+   "stars": 24000,
+   "archived": false,
+   "one_liner": "Scalable RL post-training framework for LLMs (PPO, GRPO)",
+   "tags": [
+    "training",
+    "rl",
+    "open-source"
+   ],
+   "url": "https://github.com/volcengine/verl",
+   "source": "https://github.com/volcengine/verl"
+  },
+  {
+   "name": "Voxtral",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.audio"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Mistral AI",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "Speech understanding and transcription models incl. realtime variants",
+   "tags": [
+    "speech",
+    "stt",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
+   "source": "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507"
+  },
+  {
+   "name": "Wan 2.2",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.image"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Alibaba Tongyi Wan",
+   "licence": "Apache-2.0",
+   "access": "Download from Hugging Face; ComfyUI/Diffusers",
+   "one_liner": "Open video generation (T2V, I2V, speech-to-video, animate) MoE models",
+   "tags": [
+    "video",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B",
+   "source": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B"
+  },
+  {
+   "name": "Whisper",
+   "kind": "open-weight model",
+   "subsegments": [
+    "n6.audio"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "OpenAI",
+   "licence": "MIT",
+   "access": "Download from Hugging Face; pip install openai-whisper",
+   "one_liner": "Multilingual speech recognition and translation (large-v3-turbo)",
+   "tags": [
+    "speech",
+    "stt",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+   "source": "https://huggingface.co/openai/whisper-large-v3-turbo"
+  }
+ ]
+}

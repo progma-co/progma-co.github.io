@@ -1,0 +1,1960 @@
+{
+ "cross": [
+  {
+   "name": "NVIDIA",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.nvidia.com",
+   "summary": "Full-stack 'AI factory' vendor: chips, networking, reference racks, software, models and now the main open-model hub.",
+   "roles": [
+    {
+     "subsegment": "n2.merchant",
+     "offering": "Blackwell Ultra / Rubin GPUs"
+    },
+    {
+     "subsegment": "n2.cpu",
+     "offering": "Grace / Vera CPUs, BlueField DPUs"
+    },
+    {
+     "subsegment": "n2.net",
+     "offering": "NVLink, ConnectX SuperNICs, co-packaged optics"
+    },
+    {
+     "subsegment": "n3.network",
+     "offering": "Spectrum-X Ethernet and Quantum InfiniBand switches"
+    },
+    {
+     "subsegment": "n3.servers",
+     "offering": "DGX and GB300 NVL72 reference rack systems"
+    },
+    {
+     "subsegment": "n2.sw",
+     "offering": "CUDA, cuDNN, TensorRT"
+    },
+    {
+     "subsegment": "n2.edge",
+     "offering": "Jetson Thor, DRIVE Thor"
+    },
+    {
+     "subsegment": "n4.market",
+     "offering": "DGX Cloud Lepton compute marketplace"
+    },
+    {
+     "subsegment": "n4.orch",
+     "offering": "Run:ai and KAI Scheduler"
+    },
+    {
+     "subsegment": "n5.synth",
+     "offering": "Cosmos world-model synthetic data, Gretel"
+    },
+    {
+     "subsegment": "n6.open",
+     "offering": "Nemotron open models"
+    },
+    {
+     "subsegment": "n6.world",
+     "offering": "Cosmos world models, Isaac GR00T"
+    },
+    {
+     "subsegment": "n7.engine",
+     "offering": "Dynamo, TensorRT-LLM, NIM microservices"
+    },
+    {
+     "subsegment": "n6.hub",
+     "offering": "Hugging Face (acquisition announced Sep 2026), NGC catalogue"
+    },
+    {
+     "subsegment": "n10.skill",
+     "offering": "Deep Learning Institute"
+    }
+   ],
+   "source": "https://www.crn.com.au/news/2026/ai/nvidia-acquires-hugging-face-us12-billion-mega-deal",
+   "note": "Agreed ~$12.9B Hugging Face acquisition (Sep 2026); $2B investment in CoreWeave (Jan 2026); Groq technology licensing and team hire (Dec 2025)"
+  },
+  {
+   "name": "Alphabet / Google",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://cloud.google.com",
+   "summary": "Only player owning custom chips, a hyperscale cloud, frontier models and billions of consumer endpoints; now buying its own power.",
+   "roles": [
+    {
+     "subsegment": "n0.power",
+     "offering": "Intersect Power (acquisition announced Dec 2025)"
+    },
+    {
+     "subsegment": "n2.custom",
+     "offering": "TPU (Ironwood), also offered to outside labs"
+    },
+    {
+     "subsegment": "n2.edge",
+     "offering": "Tensor G-series phone SoC"
+    },
+    {
+     "subsegment": "n4.hyper",
+     "offering": "Google Cloud"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "offering": "Gemini"
+    },
+    {
+     "subsegment": "n6.open",
+     "offering": "Gemma open models"
+    },
+    {
+     "subsegment": "n6.image",
+     "offering": "Veo, Imagen / Nano Banana"
+    },
+    {
+     "subsegment": "n6.science",
+     "offering": "AlphaFold, WeatherNext, Isomorphic Labs"
+    },
+    {
+     "subsegment": "n6.world",
+     "offering": "Genie world models, Gemini Robotics"
+    },
+    {
+     "subsegment": "n7.platform",
+     "offering": "Vertex AI"
+    },
+    {
+     "subsegment": "n8.framework",
+     "offering": "Agent Development Kit, A2A protocol"
+    },
+    {
+     "subsegment": "n8.payments",
+     "offering": "Agent Payments Protocol (AP2)"
+    },
+    {
+     "subsegment": "n8.platform",
+     "offering": "Gemini Enterprise, BigQuery"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Gemini app, AI Mode in Search"
+    },
+    {
+     "subsegment": "n9.coding",
+     "offering": "Antigravity, Jules"
+    },
+    {
+     "subsegment": "n9.physical",
+     "offering": "Waymo"
+    },
+    {
+     "subsegment": "n9.devices",
+     "offering": "Pixel"
+    },
+    {
+     "subsegment": "n10.skill",
+     "offering": "Google AI Essentials / Career Certificates"
+    }
+   ],
+   "source": "https://cloud.google.com/tpu",
+   "note": "Apple chose Gemini to power next-gen Siri (Jan 2026)"
+  },
+  {
+   "name": "Microsoft",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://azure.microsoft.com",
+   "summary": "Hyperscaler that pairs OpenAI access with in-house chips and MAI models, monetised through Copilot across its software base.",
+   "roles": [
+    {
+     "subsegment": "n2.custom",
+     "offering": "Maia 200 accelerator, Cobalt CPU"
+    },
+    {
+     "subsegment": "n4.hyper",
+     "offering": "Azure"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "offering": "MAI models (MAI-1, MAI-Voice, MAI-Image)"
+    },
+    {
+     "subsegment": "n6.small",
+     "offering": "Phi small models"
+    },
+    {
+     "subsegment": "n7.platform",
+     "offering": "Microsoft Foundry (Azure AI Foundry)"
+    },
+    {
+     "subsegment": "n8.framework",
+     "offering": "Microsoft Agent Framework"
+    },
+    {
+     "subsegment": "n8.lowcode",
+     "offering": "Copilot Studio"
+    },
+    {
+     "subsegment": "n8.platform",
+     "offering": "Microsoft Fabric"
+    },
+    {
+     "subsegment": "n8.security",
+     "offering": "Defender / Purview for AI"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Copilot"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "offering": "Microsoft 365 Copilot"
+    },
+    {
+     "subsegment": "n9.coding",
+     "offering": "GitHub Copilot"
+    },
+    {
+     "subsegment": "n9.store",
+     "offering": "Azure Marketplace / Agent Store"
+    },
+    {
+     "subsegment": "n10.skill",
+     "offering": "LinkedIn Learning, Microsoft Elevate"
+    }
+   ],
+   "source": "https://azure.microsoft.com/en-us/products/ai-foundry",
+   "note": "New OpenAI agreement (Oct 2025) kept IP rights; Anthropic models on Azure (Nov 2025)"
+  },
+  {
+   "name": "Amazon",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://aws.amazon.com",
+   "summary": "Biggest cloud plus Trainium silicon and Anthropic partnership; sells models, agent runtime and marketplaces.",
+   "roles": [
+    {
+     "subsegment": "n2.custom",
+     "offering": "Trainium3, Inferentia"
+    },
+    {
+     "subsegment": "n2.cpu",
+     "offering": "Graviton CPU, Nitro"
+    },
+    {
+     "subsegment": "n4.hyper",
+     "offering": "AWS"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "offering": "Amazon Nova models"
+    },
+    {
+     "subsegment": "n6.train",
+     "offering": "SageMaker HyperPod"
+    },
+    {
+     "subsegment": "n7.platform",
+     "offering": "Amazon Bedrock"
+    },
+    {
+     "subsegment": "n8.sandbox",
+     "offering": "Bedrock AgentCore runtime"
+    },
+    {
+     "subsegment": "n8.framework",
+     "offering": "Strands Agents SDK"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Alexa+"
+    },
+    {
+     "subsegment": "n9.coding",
+     "offering": "Kiro, Amazon Q Developer"
+    },
+    {
+     "subsegment": "n9.store",
+     "offering": "AWS Marketplace AI agents and tools"
+    },
+    {
+     "subsegment": "n9.physical",
+     "offering": "Zoox robotaxis"
+    },
+    {
+     "subsegment": "n10.skill",
+     "offering": "AWS Skill Builder, AI certifications"
+    }
+   ],
+   "source": "https://aws.amazon.com/ai/machine-learning/trainium/",
+   "note": "Project Rainier Trainium cluster for Anthropic; Trainium3 GA (Dec 2025)"
+  },
+  {
+   "name": "Meta",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://ai.meta.com",
+   "summary": "Builds own DCs, chips and open models to power consumer AI across its apps and glasses; bought into data and agents.",
+   "roles": [
+    {
+     "subsegment": "n2.custom",
+     "offering": "MTIA accelerators (plus Rivos team)"
+    },
+    {
+     "subsegment": "n5.label",
+     "offering": "49% stake in Scale AI (Jun 2025)"
+    },
+    {
+     "subsegment": "n6.open",
+     "offering": "Llama models"
+    },
+    {
+     "subsegment": "n6.train",
+     "offering": "PyTorch"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Meta AI app and in-app assistant"
+    },
+    {
+     "subsegment": "n9.agentic",
+     "offering": "Manus general agent (acquired Dec 2025)"
+    },
+    {
+     "subsegment": "n9.devices",
+     "offering": "Ray-Ban Meta and Meta Ray-Ban Display glasses"
+    },
+    {
+     "subsegment": "n6.enterprise",
+     "offering": "Enterprise AI JV with Reliance (Reliance Intelligence)"
+    }
+   ],
+   "source": "https://www.fortune.com/2025/12/30/meta-manus-acquisition-claims-no-chinese-ownership-singapore",
+   "note": "Building Prometheus and Hyperion gigawatt campuses for own use"
+  },
+  {
+   "name": "Oracle",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.oracle.com/cloud/",
+   "summary": "Turned database/apps vendor into a GPU cloud anchored by Stargate contracts, with AI built into its database and SaaS.",
+   "roles": [
+    {
+     "subsegment": "n4.hyper",
+     "offering": "OCI (incl. Stargate Abilene capacity for OpenAI)"
+    },
+    {
+     "subsegment": "n4.sovereign",
+     "offering": "OCI sovereign and Dedicated Region clouds"
+    },
+    {
+     "subsegment": "n4.onprem",
+     "offering": "Cloud@Customer / Dedicated Region"
+    },
+    {
+     "subsegment": "n7.platform",
+     "offering": "OCI Generative AI"
+    },
+    {
+     "subsegment": "n8.platform",
+     "offering": "Oracle AI Database 26ai"
+    },
+    {
+     "subsegment": "n9.finance",
+     "offering": "Fusion Applications AI agents (ERP)"
+    },
+    {
+     "subsegment": "n9.hr",
+     "offering": "Fusion HCM AI agents"
+    }
+   ],
+   "source": "https://www.oracle.com/cloud/",
+   "note": "Partner in Stargate (with OpenAI, SoftBank); AMD MI450 cluster planned"
+  },
+  {
+   "name": "Apple",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.apple.com/apple-intelligence/",
+   "summary": "Vertically integrated on-device AI: own silicon, OS-level models and devices, buying frontier capability (Gemini) for Siri.",
+   "roles": [
+    {
+     "subsegment": "n2.edge",
+     "offering": "A- and M-series Neural Engine"
+    },
+    {
+     "subsegment": "n6.small",
+     "offering": "Apple Foundation Models (on-device)"
+    },
+    {
+     "subsegment": "n7.local",
+     "offering": "Core ML, MLX, Foundation Models framework"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Siri / Apple Intelligence"
+    },
+    {
+     "subsegment": "n9.devices",
+     "offering": "iPhone, Mac, Vision Pro, AirPods"
+    },
+    {
+     "subsegment": "n9.store",
+     "offering": "App Store"
+    }
+   ],
+   "source": "https://www.apple.com/apple-intelligence/",
+   "note": "Multi-year deal to use Google Gemini for next-gen Siri (Jan 2026); Private Cloud Compute on Apple silicon servers"
+  },
+  {
+   "name": "OpenAI",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://openai.com",
+   "summary": "Moving from model lab to full stack: Stargate data centres, custom chips with Broadcom, consumer super-app, browser, devices and services.",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "offering": "Stargate campuses (with Oracle, SoftBank/SB Energy)"
+    },
+    {
+     "subsegment": "n2.custom",
+     "offering": "Custom accelerator co-developed with Broadcom"
+    },
+    {
+     "subsegment": "n4.sovereign",
+     "offering": "OpenAI for Countries / Stargate UAE"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "offering": "GPT-5 series"
+    },
+    {
+     "subsegment": "n6.open",
+     "offering": "gpt-oss open-weight models"
+    },
+    {
+     "subsegment": "n6.image",
+     "offering": "Sora 2, GPT Image"
+    },
+    {
+     "subsegment": "n6.audio",
+     "offering": "gpt-realtime voice models"
+    },
+    {
+     "subsegment": "n8.framework",
+     "offering": "Agents SDK / AgentKit"
+    },
+    {
+     "subsegment": "n8.payments",
+     "offering": "Agentic Commerce Protocol, Instant Checkout"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "ChatGPT"
+    },
+    {
+     "subsegment": "n9.agentic",
+     "offering": "ChatGPT Atlas browser, ChatGPT agent"
+    },
+    {
+     "subsegment": "n9.coding",
+     "offering": "Codex"
+    },
+    {
+     "subsegment": "n9.store",
+     "offering": "ChatGPT apps directory (Apps SDK)"
+    },
+    {
+     "subsegment": "n9.devices",
+     "offering": "io hardware team (first device in development)"
+    },
+    {
+     "subsegment": "n10.native",
+     "offering": "OpenAI Deployment Company (May 2026)"
+    },
+    {
+     "subsegment": "n10.skill",
+     "offering": "OpenAI Academy and Certifications"
+    }
+   ],
+   "source": "https://openai.com/index/openai-launches-the-deployment-company",
+   "note": "SoftBank stake ~13% after 2026 tranche; Broadcom 10GW and AMD 6GW compute deals (Oct 2025)"
+  },
+  {
+   "name": "Anthropic",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.anthropic.com",
+   "summary": "Frontier lab integrating forward into coding agents, agent standards (MCP) and services, while staying multi-cloud for compute.",
+   "roles": [
+    {
+     "subsegment": "n6.frontier",
+     "offering": "Claude Opus / Sonnet / Haiku"
+    },
+    {
+     "subsegment": "n6.code",
+     "offering": "Claude models for software engineering"
+    },
+    {
+     "subsegment": "n6.safety",
+     "offering": "Interpretability and alignment research, Frontier Red Team"
+    },
+    {
+     "subsegment": "n8.tools",
+     "offering": "Model Context Protocol (donated to Linux Foundation AAIF, Dec 2025)"
+    },
+    {
+     "subsegment": "n8.framework",
+     "offering": "Claude Agent SDK"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Claude apps"
+    },
+    {
+     "subsegment": "n9.coding",
+     "offering": "Claude Code"
+    },
+    {
+     "subsegment": "n9.agentic",
+     "offering": "Claude in Chrome, Cowork"
+    },
+    {
+     "subsegment": "n10.native",
+     "offering": "Applied AI team; minority partner in Ode with Anthropic"
+    },
+    {
+     "subsegment": "n10.skill",
+     "offering": "Anthropic Academy / AI Fluency"
+    }
+   ],
+   "source": "https://www.cxodigitalpulse.com/anthropic-blackstone-and-hellman-friedman-launch-enterprise-ai-services-firm-ode/",
+   "note": "Acquired Bun JS runtime (Dec 2025); compute across Google TPUs, AWS Trainium and Azure/NVIDIA"
+  },
+  {
+   "name": "SpaceXAI (xAI / SpaceX)",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://x.ai",
+   "summary": "Musk's merged SpaceX-xAI owns its Colossus compute, Grok models, X distribution and, since 2026, Cursor.",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "offering": "Colossus supercomputer campuses, Memphis (in-house)"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "offering": "Grok 4.x models"
+    },
+    {
+     "subsegment": "n6.image",
+     "offering": "Grok Imagine"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Grok app and in X"
+    },
+    {
+     "subsegment": "n9.coding",
+     "offering": "Cursor (acquired, ~$60B, closed Aug 2026)"
+    }
+   ],
+   "source": "https://www.engadget.com/2237655/spacex-officially-acquired-ai-coding-startup-cursor/",
+   "note": "xAI merged into SpaceX early 2026 and was renamed SpaceXAI in Jul 2026"
+  },
+  {
+   "name": "Alibaba",
+   "hq": "CN",
+   "region": "China",
+   "url": "https://www.alibabacloud.com",
+   "summary": "China's most integrated stack: in-house accelerators, largest Chinese cloud, the leading open-weight model family and consumer apps.",
+   "roles": [
+    {
+     "subsegment": "n2.china",
+     "offering": "T-Head PPU accelerators"
+    },
+    {
+     "subsegment": "n4.hyper",
+     "offering": "Alibaba Cloud"
+    },
+    {
+     "subsegment": "n6.open",
+     "offering": "Qwen models"
+    },
+    {
+     "subsegment": "n6.image",
+     "offering": "Wan video models"
+    },
+    {
+     "subsegment": "n7.platform",
+     "offering": "Model Studio (Bailian)"
+    },
+    {
+     "subsegment": "n6.train",
+     "offering": "PAI platform"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Qwen app, Quark"
+    }
+   ],
+   "source": "https://www.alibabacloud.com/en/product/modelstudio",
+   "note": "Committed RMB 380B+ to AI infrastructure over three years (Feb 2025)"
+  },
+  {
+   "name": "Huawei",
+   "hq": "CN",
+   "region": "China",
+   "url": "https://www.huawei.com",
+   "summary": "China's NVIDIA substitute: Ascend chips, SuperPoD racks, CANN software, cloud and Pangu models.",
+   "roles": [
+    {
+     "subsegment": "n2.china",
+     "offering": "Ascend 910C / 950 accelerators"
+    },
+    {
+     "subsegment": "n2.cpu",
+     "offering": "Kunpeng CPUs"
+    },
+    {
+     "subsegment": "n2.sw",
+     "offering": "CANN (open-sourced 2025), MindSpore"
+    },
+    {
+     "subsegment": "n3.servers",
+     "offering": "Atlas SuperPoD / CloudMatrix 384"
+    },
+    {
+     "subsegment": "n3.network",
+     "offering": "CloudEngine data-centre switches"
+    },
+    {
+     "subsegment": "n4.hyper",
+     "offering": "Huawei Cloud"
+    },
+    {
+     "subsegment": "n6.enterprise",
+     "offering": "Pangu models"
+    },
+    {
+     "subsegment": "n2.edge",
+     "offering": "Kirin SoCs"
+    }
+   ],
+   "source": "https://www.huawei.com/en/news",
+   "note": "Published multi-year Ascend roadmap (Sep 2025)"
+  },
+  {
+   "name": "ByteDance",
+   "hq": "CN",
+   "region": "China",
+   "url": "https://www.volcengine.com",
+   "summary": "Largest Chinese consumer-AI user base (Doubao) backed by its own cloud (Volcano Engine) and Seed models.",
+   "roles": [
+    {
+     "subsegment": "n4.hyper",
+     "offering": "Volcano Engine"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "offering": "Doubao / Seed models"
+    },
+    {
+     "subsegment": "n6.open",
+     "offering": "Seed-OSS open models"
+    },
+    {
+     "subsegment": "n6.image",
+     "offering": "Seedream, Seedance"
+    },
+    {
+     "subsegment": "n7.platform",
+     "offering": "Volcano Ark model platform"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Doubao app"
+    },
+    {
+     "subsegment": "n9.coding",
+     "offering": "Trae IDE"
+    },
+    {
+     "subsegment": "n9.creative",
+     "offering": "CapCut"
+    }
+   ],
+   "source": "https://seed.bytedance.com",
+   "note": ""
+  },
+  {
+   "name": "Tencent",
+   "hq": "CN",
+   "region": "China",
+   "url": "https://cloud.tencent.com",
+   "summary": "Cloud plus Hunyuan models distributed through WeChat-scale consumer apps.",
+   "roles": [
+    {
+     "subsegment": "n4.hyper",
+     "offering": "Tencent Cloud"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "offering": "Hunyuan models"
+    },
+    {
+     "subsegment": "n6.open",
+     "offering": "Hunyuan open models, Hunyuan3D"
+    },
+    {
+     "subsegment": "n7.platform",
+     "offering": "Tencent Cloud model platform"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Yuanbao"
+    },
+    {
+     "subsegment": "n9.coding",
+     "offering": "CodeBuddy"
+    }
+   ],
+   "source": "https://hunyuan.tencent.com",
+   "note": ""
+  },
+  {
+   "name": "Baidu",
+   "hq": "CN",
+   "region": "China",
+   "url": "https://cloud.baidu.com",
+   "summary": "Own Kunlunxin chips, AI cloud, ERNIE models, search assistant and Apollo Go robotaxis.",
+   "roles": [
+    {
+     "subsegment": "n2.china",
+     "offering": "Kunlunxin P800 accelerators"
+    },
+    {
+     "subsegment": "n4.hyper",
+     "offering": "Baidu AI Cloud"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "offering": "ERNIE 5"
+    },
+    {
+     "subsegment": "n6.open",
+     "offering": "ERNIE 4.5 open weights"
+    },
+    {
+     "subsegment": "n7.platform",
+     "offering": "Qianfan"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "ERNIE Bot / Baidu AI search"
+    },
+    {
+     "subsegment": "n9.physical",
+     "offering": "Apollo Go robotaxi"
+    }
+   ],
+   "source": "https://www.caixinglobal.com/2026-01-02/baidus-chip-unit-kunlunxin-files-for-hong-kong-ipo-to-tap-ai-investment-boom-102399601.html",
+   "note": "Kunlunxin filed for Hong Kong IPO (Jan 2026)"
+  },
+  {
+   "name": "Samsung",
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "url": "https://semiconductor.samsung.com",
+   "summary": "Memory, foundry and packaging under one roof, plus device NPUs, Gauss models and IT services.",
+   "roles": [
+    {
+     "subsegment": "n1.memory",
+     "offering": "HBM3E / HBM4, DRAM"
+    },
+    {
+     "subsegment": "n1.foundry",
+     "offering": "Samsung Foundry (SF2), incl. Tesla AI chip contract"
+    },
+    {
+     "subsegment": "n1.packaging",
+     "offering": "I-Cube / SAINT advanced packaging"
+    },
+    {
+     "subsegment": "n2.edge",
+     "offering": "Exynos NPUs"
+    },
+    {
+     "subsegment": "n6.small",
+     "offering": "Samsung Gauss"
+    },
+    {
+     "subsegment": "n9.devices",
+     "offering": "Galaxy AI phones"
+    },
+    {
+     "subsegment": "n10.si",
+     "offering": "Samsung SDS"
+    }
+   ],
+   "source": "https://semiconductor.samsung.com/dram/hbm/",
+   "note": "Tesla AI6 foundry contract (Jul 2025)"
+  },
+  {
+   "name": "Broadcom",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.broadcom.com",
+   "summary": "The custom-accelerator and Ethernet supplier behind hyperscaler and lab chips, plus VMware private AI.",
+   "roles": [
+    {
+     "subsegment": "n1.design",
+     "offering": "Custom XPU design for Google, Meta, OpenAI and others"
+    },
+    {
+     "subsegment": "n2.custom",
+     "offering": "Co-developer of hyperscaler/lab ASICs"
+    },
+    {
+     "subsegment": "n2.net",
+     "offering": "Tomahawk 6 / Jericho switch silicon, Thor NICs"
+    },
+    {
+     "subsegment": "n3.optics",
+     "offering": "Co-packaged optics"
+    },
+    {
+     "subsegment": "n4.onprem",
+     "offering": "VMware Private AI Foundation"
+    }
+   ],
+   "source": "https://www.broadcom.com/products/ethernet-connectivity/switching",
+   "note": "10GW custom accelerator deal with OpenAI (Oct 2025)"
+  },
+  {
+   "name": "AMD",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.amd.com",
+   "summary": "Number-two merchant GPU vendor moving to full racks (Helios) and open software, with CPU and NPU franchises.",
+   "roles": [
+    {
+     "subsegment": "n2.merchant",
+     "offering": "Instinct MI355X / MI450"
+    },
+    {
+     "subsegment": "n2.cpu",
+     "offering": "EPYC CPUs, Pensando DPUs"
+    },
+    {
+     "subsegment": "n2.net",
+     "offering": "Pensando Pollara AI NIC, UALink"
+    },
+    {
+     "subsegment": "n2.sw",
+     "offering": "ROCm"
+    },
+    {
+     "subsegment": "n3.servers",
+     "offering": "Helios rack-scale system (ZT Systems design team)"
+    },
+    {
+     "subsegment": "n2.edge",
+     "offering": "Ryzen AI NPUs"
+    },
+    {
+     "subsegment": "n4.serverless",
+     "offering": "AMD Developer Cloud"
+    }
+   ],
+   "source": "https://www.amd.com/en/products/accelerators/instinct.html",
+   "note": "6GW OpenAI supply deal with warrants (Oct 2025); ZT manufacturing sold to Sanmina"
+  },
+  {
+   "name": "Intel",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.intel.com",
+   "summary": "CPU incumbent and US foundry trying to rebuild an AI accelerator line, backed by US government, NVIDIA and SoftBank capital.",
+   "roles": [
+    {
+     "subsegment": "n1.foundry",
+     "offering": "Intel Foundry (18A)"
+    },
+    {
+     "subsegment": "n1.packaging",
+     "offering": "EMIB / Foveros packaging"
+    },
+    {
+     "subsegment": "n2.merchant",
+     "offering": "Gaudi 3; Crescent Island inference GPU (announced)"
+    },
+    {
+     "subsegment": "n2.cpu",
+     "offering": "Xeon 6"
+    },
+    {
+     "subsegment": "n2.edge",
+     "offering": "Core Ultra NPUs"
+    },
+    {
+     "subsegment": "n2.sw",
+     "offering": "oneAPI"
+    },
+    {
+     "subsegment": "n7.local",
+     "offering": "OpenVINO"
+    }
+   ],
+   "source": "https://kfgo.com/2026/09/24/factbox-softbanks-growing-bets-on-ai-and-semiconductor-assets-2/",
+   "note": "US government ~10% stake and NVIDIA $5B investment (2025); SambaNova takeover talks reported 2025-26, outcome not confirmed"
+  },
+  {
+   "name": "IBM",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.ibm.com/watsonx",
+   "summary": "Hybrid-cloud and consulting firm selling open Granite models, watsonx data/governance and the services to deploy them.",
+   "roles": [
+    {
+     "subsegment": "n4.hyper",
+     "offering": "IBM Cloud"
+    },
+    {
+     "subsegment": "n3.storage",
+     "offering": "IBM Storage Scale"
+    },
+    {
+     "subsegment": "n6.enterprise",
+     "offering": "Granite models"
+    },
+    {
+     "subsegment": "n6.small",
+     "offering": "Granite small models"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "offering": "Docling document parsing (open source)"
+    },
+    {
+     "subsegment": "n8.platform",
+     "offering": "watsonx.data"
+    },
+    {
+     "subsegment": "n8.lowcode",
+     "offering": "watsonx Orchestrate"
+    },
+    {
+     "subsegment": "n8.gov",
+     "offering": "watsonx.governance"
+    },
+    {
+     "subsegment": "n8.security",
+     "offering": "Guardium AI Security"
+    },
+    {
+     "subsegment": "n4.finops",
+     "offering": "Apptio / Kubecost, Turbonomic"
+    },
+    {
+     "subsegment": "n10.si",
+     "offering": "IBM Consulting"
+    },
+    {
+     "subsegment": "n10.skill",
+     "offering": "IBM SkillsBuild"
+    }
+   ],
+   "source": "https://www.ibm.com/granite",
+   "note": "Agreed to acquire Confluent (Dec 2025)"
+  },
+  {
+   "name": "Databricks",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.databricks.com",
+   "summary": "Data lakehouse expanding up into model training, serving, agents and operational databases.",
+   "roles": [
+    {
+     "subsegment": "n8.platform",
+     "offering": "Data Intelligence Platform, Lakebase (Neon)"
+    },
+    {
+     "subsegment": "n6.train",
+     "offering": "Mosaic AI training and fine-tuning"
+    },
+    {
+     "subsegment": "n8.vector",
+     "offering": "Mosaic AI Vector Search"
+    },
+    {
+     "subsegment": "n8.lowcode",
+     "offering": "Agent Bricks"
+    },
+    {
+     "subsegment": "n7.route",
+     "offering": "Mosaic AI Gateway"
+    },
+    {
+     "subsegment": "n8.eval",
+     "offering": "MLflow"
+    },
+    {
+     "subsegment": "n8.gov",
+     "offering": "Unity Catalog"
+    }
+   ],
+   "source": "https://www.databricks.com/product/artificial-intelligence",
+   "note": ""
+  },
+  {
+   "name": "Snowflake",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.snowflake.com",
+   "summary": "Data cloud adding LLM functions, search, agents and observability around customer data.",
+   "roles": [
+    {
+     "subsegment": "n8.platform",
+     "offering": "AI Data Cloud, Cortex AI, Postgres (Crunchy Data)"
+    },
+    {
+     "subsegment": "n8.vector",
+     "offering": "Cortex Search"
+    },
+    {
+     "subsegment": "n6.embed",
+     "offering": "Arctic Embed models"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "offering": "Openflow, Document AI"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "offering": "Snowflake Intelligence"
+    },
+    {
+     "subsegment": "n8.eval",
+     "offering": "Observe AI-powered observability (acquired 2026)"
+    }
+   ],
+   "source": "https://www.snowflake.com/en/blog/observe-acquisition-ai-powered-observability/",
+   "note": "Closed Observe acquisition (announced Jan 2026)"
+  },
+  {
+   "name": "Hugging Face",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://huggingface.co",
+   "summary": "The open-model hub spanning libraries, inference routing, local runtimes and open robotics; being acquired by NVIDIA.",
+   "roles": [
+    {
+     "subsegment": "n6.hub",
+     "offering": "Hugging Face Hub"
+    },
+    {
+     "subsegment": "n6.train",
+     "offering": "Transformers, TRL"
+    },
+    {
+     "subsegment": "n7.route",
+     "offering": "Inference Providers"
+    },
+    {
+     "subsegment": "n7.local",
+     "offering": "ggml / llama.cpp (joined HF)"
+    },
+    {
+     "subsegment": "n6.small",
+     "offering": "SmolLM"
+    },
+    {
+     "subsegment": "n5.web",
+     "offering": "FineWeb datasets"
+    },
+    {
+     "subsegment": "n6.world",
+     "offering": "LeRobot, SmolVLA"
+    },
+    {
+     "subsegment": "n9.physical",
+     "offering": "Reachy Mini robots (Pollen Robotics)"
+    }
+   ],
+   "source": "https://www.crn.com.au/news/2026/ai/nvidia-acquires-hugging-face-us12-billion-mega-deal",
+   "note": "NVIDIA agreed to acquire for ~$12.9B (Sep 2026); closing not confirmed as of Oct 2026"
+  },
+  {
+   "name": "CoreWeave",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.coreweave.com",
+   "summary": "Largest neocloud moving up-stack into developer tools via Weights & Biases and RL fine-tuning.",
+   "roles": [
+    {
+     "subsegment": "n4.neo",
+     "offering": "CoreWeave GPU cloud"
+    },
+    {
+     "subsegment": "n4.orch",
+     "offering": "SUNK (Slurm on Kubernetes)"
+    },
+    {
+     "subsegment": "n4.ops",
+     "offering": "Mission Control cluster health"
+    },
+    {
+     "subsegment": "n3.storage",
+     "offering": "CoreWeave AI Object Storage"
+    },
+    {
+     "subsegment": "n8.eval",
+     "offering": "Weights & Biases"
+    },
+    {
+     "subsegment": "n6.train",
+     "offering": "OpenPipe RL fine-tuning, W&B Models"
+    }
+   ],
+   "source": "https://finviz.com/news/46437/coreweave-completes-acquisition-of-weights-biases",
+   "note": "Core Scientific deal rejected by its shareholders (Oct 2025); NVIDIA $2B investment (Jan 2026)"
+  },
+  {
+   "name": "Nebius",
+   "hq": "NL",
+   "region": "Europe",
+   "url": "https://nebius.com",
+   "summary": "Neocloud building its own DCs and adding inference, optimisation and agentic search up the stack.",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "offering": "Own-build data centres (Finland, US)"
+    },
+    {
+     "subsegment": "n4.neo",
+     "offering": "Nebius AI Cloud"
+    },
+    {
+     "subsegment": "n7.api",
+     "offering": "Token Factory inference"
+    },
+    {
+     "subsegment": "n7.opt",
+     "offering": "Eigen AI (acquired Jun 2026)"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "offering": "Tavily agentic search API (acquired Feb 2026)"
+    },
+    {
+     "subsegment": "n9.physical",
+     "offering": "Avride autonomous driving"
+    },
+    {
+     "subsegment": "n10.skill",
+     "offering": "TripleTen bootcamp"
+    }
+   ],
+   "source": "https://nebius.com/newsroom/nebius-completes-acquisition-of-eigen-ai",
+   "note": "Multi-billion capacity deals with Microsoft and Meta (2025)"
+  },
+  {
+   "name": "Together AI",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.together.ai",
+   "summary": "'AI acceleration cloud' combining GPU clusters, open-model inference, fine-tuning and agent sandboxes.",
+   "roles": [
+    {
+     "subsegment": "n7.api",
+     "offering": "Serverless inference for open models"
+    },
+    {
+     "subsegment": "n4.neo",
+     "offering": "Instant and reserved GPU clusters"
+    },
+    {
+     "subsegment": "n6.train",
+     "offering": "Fine-tuning service"
+    },
+    {
+     "subsegment": "n7.opt",
+     "offering": "Kernel collection, speculative decoding research"
+    },
+    {
+     "subsegment": "n8.sandbox",
+     "offering": "Together Code Sandbox (CodeSandbox)"
+    },
+    {
+     "subsegment": "n5.curation",
+     "offering": "Refuel.ai data cleaning (acquired)"
+    }
+   ],
+   "source": "https://lasvegassun.com/news/2026/jul/01/together-ai-raises-800-million-at-83-billion-valua/",
+   "note": "Raised $800M at $8.3B valuation (Jul 2026)"
+  },
+  {
+   "name": "Cloudflare",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.cloudflare.com",
+   "summary": "Edge network turned AI platform: GPU inference, gateway, vector DB, agent runtimes, and the pay-per-crawl data market.",
+   "roles": [
+    {
+     "subsegment": "n4.serverless",
+     "offering": "Workers AI GPUs"
+    },
+    {
+     "subsegment": "n7.api",
+     "offering": "Workers AI model inference"
+    },
+    {
+     "subsegment": "n6.hub",
+     "offering": "Replicate (acquired)"
+    },
+    {
+     "subsegment": "n7.route",
+     "offering": "AI Gateway"
+    },
+    {
+     "subsegment": "n8.vector",
+     "offering": "Vectorize"
+    },
+    {
+     "subsegment": "n8.framework",
+     "offering": "Agents SDK"
+    },
+    {
+     "subsegment": "n8.tools",
+     "offering": "Remote MCP server hosting"
+    },
+    {
+     "subsegment": "n8.sandbox",
+     "offering": "Browser Rendering, Sandbox SDK"
+    },
+    {
+     "subsegment": "n8.security",
+     "offering": "Firewall for AI"
+    },
+    {
+     "subsegment": "n8.payments",
+     "offering": "Web Bot Auth, x402 Foundation (with Coinbase)"
+    },
+    {
+     "subsegment": "n5.license",
+     "offering": "Pay per crawl, Human Native data marketplace (acquired Jan 2026)"
+    }
+   ],
+   "source": "https://letsdatascience.com/news/cloudflare-acquires-astro-and-human-native-976d3907",
+   "note": "Replicate acquisition announced Nov 2025"
+  },
+  {
+   "name": "Mistral AI",
+   "hq": "FR",
+   "region": "Europe",
+   "url": "https://mistral.ai",
+   "summary": "Europe's sovereign full-stack bet: open and enterprise models, own compute, assistant and deployment engineers.",
+   "roles": [
+    {
+     "subsegment": "n4.sovereign",
+     "offering": "Mistral Compute (Paris-region DC)"
+    },
+    {
+     "subsegment": "n6.open",
+     "offering": "Mistral open-weight models"
+    },
+    {
+     "subsegment": "n6.enterprise",
+     "offering": "AI Studio, on-prem deployment"
+    },
+    {
+     "subsegment": "n6.code",
+     "offering": "Codestral / Devstral"
+    },
+    {
+     "subsegment": "n6.audio",
+     "offering": "Voxtral"
+    },
+    {
+     "subsegment": "n8.ingest",
+     "offering": "Mistral OCR"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Le Chat"
+    },
+    {
+     "subsegment": "n10.native",
+     "offering": "Applied AI / forward-deployed engineers"
+    }
+   ],
+   "source": "https://thenextweb.com/news/mistral-ai-830m-debt-data-centre-paris",
+   "note": "$830M debt for own data centre (Mar 2026); ASML-led Series C (Sep 2025)"
+  },
+  {
+   "name": "Reliance (Jio)",
+   "hq": "IN",
+   "region": "India",
+   "url": "https://www.ril.com",
+   "summary": "Pairing green energy, Jamnagar AI data centres and Jio's distribution with Meta and Google partnerships.",
+   "roles": [
+    {
+     "subsegment": "n0.power",
+     "offering": "Reliance New Energy renewables for AI DCs"
+    },
+    {
+     "subsegment": "n0.dcdev",
+     "offering": "Jamnagar AI-ready data centre campus"
+    },
+    {
+     "subsegment": "n4.sovereign",
+     "offering": "Reliance Intelligence AI infrastructure with Google Cloud"
+    },
+    {
+     "subsegment": "n6.enterprise",
+     "offering": "Enterprise AI JV with Meta (Llama-based)"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "JioBrain / Gemini distribution to Jio users"
+    }
+   ],
+   "source": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/reliance-goes-the-ai-way-unveils-meta-jv-google-cloud-pact-launch-of-reliance-intelligence",
+   "note": "Reliance Intelligence launched Aug 2025; Jio IPO planned 2026"
+  },
+  {
+   "name": "Tata group",
+   "hq": "IN",
+   "region": "India",
+   "url": "https://www.tata.com",
+   "summary": "India's attempt at an end-to-end chain: fab and OSAT, data centres, AI cloud, power and the largest IT services firm.",
+   "roles": [
+    {
+     "subsegment": "n1.foundry",
+     "offering": "Tata Electronics Dholera fab (with PSMC, under construction)"
+    },
+    {
+     "subsegment": "n1.packaging",
+     "offering": "Tata Electronics Assam OSAT"
+    },
+    {
+     "subsegment": "n0.power",
+     "offering": "Tata Power renewables"
+    },
+    {
+     "subsegment": "n0.dcdev",
+     "offering": "TCS HyperVault AI data centres"
+    },
+    {
+     "subsegment": "n4.sovereign",
+     "offering": "Tata Communications AI cloud (NVIDIA GPUs)"
+    },
+    {
+     "subsegment": "n10.si",
+     "offering": "TCS"
+    },
+    {
+     "subsegment": "n10.bpo",
+     "offering": "TCS business process services"
+    }
+   ],
+   "source": "https://www.tcs.com",
+   "note": ""
+  },
+  {
+   "name": "SoftBank Group",
+   "hq": "JP",
+   "region": "Asia-Pacific",
+   "url": "https://group.softbank",
+   "summary": "Capital-led integration: Arm IP, Ampere CPUs, Stargate data centres, OpenAI stake, robotics and Japanese sovereign AI.",
+   "roles": [
+    {
+     "subsegment": "n1.ip",
+     "offering": "Arm"
+    },
+    {
+     "subsegment": "n2.cpu",
+     "offering": "Ampere Computing; Arm data-centre chip"
+    },
+    {
+     "subsegment": "n2.startup",
+     "offering": "Graphcore"
+    },
+    {
+     "subsegment": "n0.dcdev",
+     "offering": "SB Energy / Stargate Texas campus"
+    },
+    {
+     "subsegment": "n0.capital",
+     "offering": "Stargate funding; DigitalBridge (announced Dec 2025)"
+    },
+    {
+     "subsegment": "n4.sovereign",
+     "offering": "SoftBank Corp. Japanese AI compute"
+    },
+    {
+     "subsegment": "n6.sovereign",
+     "offering": "SB Intuitions Sarashina Japanese LLMs"
+    },
+    {
+     "subsegment": "n9.physical",
+     "offering": "ABB Robotics (agreed Oct 2025)"
+    }
+   ],
+   "source": "https://kfgo.com/2026/09/24/factbox-softbanks-growing-bets-on-ai-and-semiconductor-assets-2/",
+   "note": "~13% OpenAI stake after 2026 tranche; $2B Intel investment"
+  },
+  {
+   "name": "G42",
+   "hq": "AE",
+   "region": "Middle East",
+   "url": "https://www.g42.ai",
+   "summary": "Abu Dhabi's sovereign AI group spanning data centres, cloud, Arabic models and applied AI services.",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "offering": "Khazna Data Centers; Stargate UAE campus"
+    },
+    {
+     "subsegment": "n4.sovereign",
+     "offering": "Core42 sovereign cloud"
+    },
+    {
+     "subsegment": "n6.sovereign",
+     "offering": "Jais Arabic models (Inception/MBZUAI)"
+    },
+    {
+     "subsegment": "n10.native",
+     "offering": "Presight applied AI services"
+    },
+    {
+     "subsegment": "n9.health",
+     "offering": "M42 health"
+    }
+   ],
+   "source": "https://www.g42.ai",
+   "note": "Stargate UAE 1GW cluster with OpenAI, Oracle, NVIDIA, Cisco, SoftBank; first 200MW due 2026"
+  },
+  {
+   "name": "Qualcomm",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.qualcomm.com",
+   "summary": "Edge-AI leader now entering data-centre inference racks.",
+   "roles": [
+    {
+     "subsegment": "n2.edge",
+     "offering": "Snapdragon NPUs (phones, PCs, auto)"
+    },
+    {
+     "subsegment": "n2.merchant",
+     "offering": "AI200 / AI250 data-centre inference accelerators"
+    },
+    {
+     "subsegment": "n2.net",
+     "offering": "Alphawave Semi connectivity IP"
+    },
+    {
+     "subsegment": "n7.local",
+     "offering": "Qualcomm AI Hub / AI Engine Direct"
+    }
+   ],
+   "source": "https://www.qualcomm.com/news",
+   "note": "AI200/AI250 announced Oct 2025 with HUMAIN as first customer"
+  },
+  {
+   "name": "Cerebras",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.cerebras.ai",
+   "summary": "Wafer-scale chip maker that monetises mainly through its own inference cloud and sovereign systems.",
+   "roles": [
+    {
+     "subsegment": "n2.startup",
+     "offering": "WSE-3 wafer-scale engine"
+    },
+    {
+     "subsegment": "n3.servers",
+     "offering": "CS-3 systems"
+    },
+    {
+     "subsegment": "n7.api",
+     "offering": "Cerebras Inference cloud"
+    },
+    {
+     "subsegment": "n4.sovereign",
+     "offering": "Condor Galaxy / G42 and national deployments"
+    }
+   ],
+   "source": "https://www.cerebras.ai",
+   "note": ""
+  },
+  {
+   "name": "Groq",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://groq.com",
+   "summary": "LPU chip company running its own inference cloud; core tech licensed to NVIDIA in Dec 2025.",
+   "roles": [
+    {
+     "subsegment": "n2.startup",
+     "offering": "LPU inference chips"
+    },
+    {
+     "subsegment": "n7.api",
+     "offering": "GroqCloud"
+    }
+   ],
+   "source": "https://groq.com",
+   "note": "NVIDIA technology licence and hire of leadership (Dec 2025); GroqCloud continues independently"
+  },
+  {
+   "name": "Cisco",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.cisco.com",
+   "summary": "Networking incumbent adding AI silicon, security for models and agents, and observability via Splunk.",
+   "roles": [
+    {
+     "subsegment": "n2.net",
+     "offering": "Silicon One switch ASICs"
+    },
+    {
+     "subsegment": "n3.network",
+     "offering": "Nexus / 8000 AI fabrics"
+    },
+    {
+     "subsegment": "n3.optics",
+     "offering": "Acacia coherent optics"
+    },
+    {
+     "subsegment": "n8.security",
+     "offering": "AI Defense (Robust Intelligence)"
+    },
+    {
+     "subsegment": "n7.obs",
+     "offering": "Splunk observability"
+    }
+   ],
+   "source": "https://www.cisco.com/site/us/en/solutions/artificial-intelligence/index.html",
+   "note": ""
+  },
+  {
+   "name": "Dell Technologies",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.dell.com",
+   "summary": "Largest AI server OEM selling turnkey on-prem AI factories with storage and deployment services.",
+   "roles": [
+    {
+     "subsegment": "n3.servers",
+     "offering": "PowerEdge XE AI servers / IR racks"
+    },
+    {
+     "subsegment": "n3.storage",
+     "offering": "PowerScale, ObjectScale"
+    },
+    {
+     "subsegment": "n4.onprem",
+     "offering": "Dell AI Factory with NVIDIA"
+    },
+    {
+     "subsegment": "n10.si",
+     "offering": "Dell professional services for AI"
+    }
+   ],
+   "source": "https://www.dell.com/en-us/lp/dell-ai-factory",
+   "note": ""
+  },
+  {
+   "name": "HPE",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.hpe.com",
+   "summary": "Servers, Juniper networking and private-cloud AI bundles.",
+   "roles": [
+    {
+     "subsegment": "n3.servers",
+     "offering": "ProLiant / Cray AI systems"
+    },
+    {
+     "subsegment": "n3.network",
+     "offering": "Juniper Networks (acquired Jul 2025)"
+    },
+    {
+     "subsegment": "n3.storage",
+     "offering": "HPE Alletra / Cray storage"
+    },
+    {
+     "subsegment": "n4.onprem",
+     "offering": "HPE Private Cloud AI"
+    }
+   ],
+   "source": "https://www.hpe.com/us/en/private-cloud-ai.html",
+   "note": ""
+  },
+  {
+   "name": "Salesforce",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.salesforce.com",
+   "summary": "CRM giant layering agents (Agentforce) on its data cloud and Informatica.",
+   "roles": [
+    {
+     "subsegment": "n8.platform",
+     "offering": "Data Cloud, Informatica"
+    },
+    {
+     "subsegment": "n8.lowcode",
+     "offering": "Agentforce builder"
+    },
+    {
+     "subsegment": "n9.support",
+     "offering": "Agentforce Service"
+    },
+    {
+     "subsegment": "n9.gtm",
+     "offering": "Agentforce Sales / Marketing"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "offering": "Slack AI"
+    },
+    {
+     "subsegment": "n9.store",
+     "offering": "AgentExchange"
+    }
+   ],
+   "source": "https://www.salesforce.com/agentforce/",
+   "note": "Closed Informatica acquisition (Nov 2025)"
+  },
+  {
+   "name": "ServiceNow",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.servicenow.com",
+   "summary": "Workflow platform with agent builder, enterprise search and AI governance.",
+   "roles": [
+    {
+     "subsegment": "n8.lowcode",
+     "offering": "AI Agent Studio"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "offering": "Moveworks enterprise assistant"
+    },
+    {
+     "subsegment": "n9.support",
+     "offering": "Customer Service AI agents"
+    },
+    {
+     "subsegment": "n8.gov",
+     "offering": "AI Control Tower"
+    }
+   ],
+   "source": "https://www.servicenow.com/products/ai-agents.html",
+   "note": "Moveworks acquisition closed 2025"
+  },
+  {
+   "name": "Palantir",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.palantir.com",
+   "summary": "Data platform plus forward-deployed delivery model; AIP sits between models and enterprise operations.",
+   "roles": [
+    {
+     "subsegment": "n8.platform",
+     "offering": "Foundry / AIP"
+    },
+    {
+     "subsegment": "n8.gov",
+     "offering": "AIP governance and access controls"
+    },
+    {
+     "subsegment": "n10.native",
+     "offering": "Forward-deployed engineers, AIP bootcamps"
+    }
+   ],
+   "source": "https://www.palantir.com/platforms/aip/",
+   "note": ""
+  },
+  {
+   "name": "Scale AI",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://scale.com",
+   "summary": "Data-labelling leader also selling evals, agent building and government AI programmes.",
+   "roles": [
+    {
+     "subsegment": "n5.label",
+     "offering": "Human expert data, RLHF"
+    },
+    {
+     "subsegment": "n5.rlenv",
+     "offering": "RL environments and post-training data"
+    },
+    {
+     "subsegment": "n6.safety",
+     "offering": "Evaluation and red-teaming (SEAL)"
+    },
+    {
+     "subsegment": "n10.native",
+     "offering": "GenAI Platform / public sector delivery"
+    }
+   ],
+   "source": "https://scale.com",
+   "note": "Meta 49% stake and CEO move to Meta (Jun 2025)"
+  },
+  {
+   "name": "Cohere",
+   "hq": "CA",
+   "region": "North America",
+   "url": "https://cohere.com",
+   "summary": "Enterprise-only model company selling models, retrieval and a work-agent platform with deployment engineers.",
+   "roles": [
+    {
+     "subsegment": "n6.enterprise",
+     "offering": "Command models"
+    },
+    {
+     "subsegment": "n6.embed",
+     "offering": "Embed and Rerank"
+    },
+    {
+     "subsegment": "n9.knowledge",
+     "offering": "North agent platform"
+    },
+    {
+     "subsegment": "n6.sovereign",
+     "offering": "Sovereign deployments (e.g. Canada, Japan via Fujitsu Takane)"
+    },
+    {
+     "subsegment": "n10.native",
+     "offering": "Forward-deployed engineering"
+    }
+   ],
+   "source": "https://cohere.com",
+   "note": ""
+  },
+  {
+   "name": "Perplexity",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.perplexity.ai",
+   "summary": "Answer engine expanding into a browser, developer search APIs and commerce.",
+   "roles": [
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Perplexity answer engine"
+    },
+    {
+     "subsegment": "n9.agentic",
+     "offering": "Comet browser"
+    },
+    {
+     "subsegment": "n7.api",
+     "offering": "Sonar API / Search API"
+    }
+   ],
+   "source": "https://www.perplexity.ai",
+   "note": ""
+  },
+  {
+   "name": "SK Group",
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "url": "https://www.sk.com",
+   "summary": "HBM leader (SK hynix) plus telecom-led AI data centres and Korean sovereign models.",
+   "roles": [
+    {
+     "subsegment": "n1.memory",
+     "offering": "SK hynix HBM3E / HBM4"
+    },
+    {
+     "subsegment": "n0.dcdev",
+     "offering": "SK Telecom AI data centres (with AWS in Ulsan)"
+    },
+    {
+     "subsegment": "n6.sovereign",
+     "offering": "SK Telecom A.X models"
+    }
+   ],
+   "source": "https://www.skhynix.com",
+   "note": ""
+  },
+  {
+   "name": "Naver",
+   "hq": "KR",
+   "region": "Asia-Pacific",
+   "url": "https://www.navercorp.com",
+   "summary": "Korea's search giant running its own cloud and HyperCLOVA X sovereign models.",
+   "roles": [
+    {
+     "subsegment": "n4.sovereign",
+     "offering": "Naver Cloud"
+    },
+    {
+     "subsegment": "n6.sovereign",
+     "offering": "HyperCLOVA X"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "offering": "Naver AI search / CLOVA X"
+    }
+   ],
+   "source": "https://clova.ai/en/hyperclova",
+   "note": ""
+  },
+  {
+   "name": "Tesla",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.tesla.com",
+   "summary": "Designs its own AI chips and trains world models for vehicles and humanoids, and sells storage to data centres.",
+   "roles": [
+    {
+     "subsegment": "n2.custom",
+     "offering": "AI5 / AI6 chips (Samsung, TSMC fabbed)"
+    },
+    {
+     "subsegment": "n0.grid",
+     "offering": "Megapack storage for data centres"
+    },
+    {
+     "subsegment": "n6.world",
+     "offering": "FSD end-to-end driving models"
+    },
+    {
+     "subsegment": "n9.physical",
+     "offering": "Robotaxi, Optimus humanoid"
+    }
+   ],
+   "source": "https://www.tesla.com/AI",
+   "note": ""
+  },
+  {
+   "name": "Crusoe",
+   "hq": "US",
+   "region": "North America",
+   "url": "https://www.crusoe.ai",
+   "summary": "Energy-first developer that builds and powers campuses (Stargate Abilene) and runs its own AI cloud.",
+   "roles": [
+    {
+     "subsegment": "n0.power",
+     "offering": "Behind-the-meter power for AI campuses"
+    },
+    {
+     "subsegment": "n0.dcdev",
+     "offering": "Abilene Stargate campus developer"
+    },
+    {
+     "subsegment": "n4.neo",
+     "offering": "Crusoe Cloud"
+    },
+    {
+     "subsegment": "n7.api",
+     "offering": "Crusoe Managed Inference"
+    }
+   ],
+   "source": "https://www.crusoe.ai",
+   "note": ""
+  },
+  {
+   "name": "Yotta Data Services",
+   "hq": "IN",
+   "region": "India",
+   "url": "https://yotta.com",
+   "summary": "Hiranandani-backed Indian DC operator running a large NVIDIA GPU cloud for IndiaAI Mission.",
+   "roles": [
+    {
+     "subsegment": "n0.dcdev",
+     "offering": "Yotta NM1 / D1 data centres"
+    },
+    {
+     "subsegment": "n4.sovereign",
+     "offering": "Shakti Cloud (IndiaAI GPU provider)"
+    }
+   ],
+   "source": "https://yotta.com",
+   "note": ""
+  },
+  {
+   "name": "Sarvam AI",
+   "hq": "IN",
+   "region": "India",
+   "url": "https://www.sarvam.ai",
+   "summary": "IndiaAI-selected sovereign model builder also selling voice agents and APIs.",
+   "roles": [
+    {
+     "subsegment": "n6.sovereign",
+     "offering": "Sarvam Indic LLMs (IndiaAI Mission)"
+    },
+    {
+     "subsegment": "n6.audio",
+     "offering": "Indic speech models"
+    },
+    {
+     "subsegment": "n9.voice",
+     "offering": "Samvaad voice agents"
+    }
+   ],
+   "source": "https://www.sarvam.ai",
+   "note": ""
+  },
+  {
+   "name": "Accenture",
+   "hq": "IE",
+   "region": "Europe",
+   "url": "https://www.accenture.com",
+   "summary": "Services giant spanning integration, strategy, AI-native FDE (Faculty), operations, skilling and assurance.",
+   "roles": [
+    {
+     "subsegment": "n10.si",
+     "offering": "Accenture Technology"
+    },
+    {
+     "subsegment": "n10.consult",
+     "offering": "Accenture Strategy / Song"
+    },
+    {
+     "subsegment": "n10.native",
+     "offering": "Faculty (2026)"
+    },
+    {
+     "subsegment": "n10.bpo",
+     "offering": "Accenture Operations"
+    },
+    {
+     "subsegment": "n10.skill",
+     "offering": "LearnVantage, Udacity"
+    },
+    {
+     "subsegment": "n10.change",
+     "offering": "Responsible AI advisory"
+    }
+   ],
+   "source": "https://newsroom.accenture.com/news/2026/accenture-to-acquire-faculty-to-scale-ai-capabilities",
+   "note": ""
+  },
+  {
+   "name": "Capgemini",
+   "hq": "FR",
+   "region": "Europe",
+   "url": "https://www.capgemini.com",
+   "summary": "Integrator plus consulting plus agentic BPO via WNS.",
+   "roles": [
+    {
+     "subsegment": "n10.si",
+     "offering": "Capgemini engineering and IT services"
+    },
+    {
+     "subsegment": "n10.consult",
+     "offering": "Capgemini Invent"
+    },
+    {
+     "subsegment": "n10.bpo",
+     "offering": "WNS intelligent operations (Oct 2025)"
+    }
+   ],
+   "source": "https://www.capgemini.com/news/press-releases/capgemini-completes-the-acquisition-of-wns-and-creates-a-global-leader-in-agentic-ai-powered-intelligent-operations/",
+   "note": ""
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "asof": "31 Oct 2026",
+ "personas": [
+  {
+   "id": "inference",
+   "name": "An inference provider",
+   "self": [
+    "n7.api"
+   ],
+   "buys": [
+    "n2.merchant",
+    "n2.startup",
+    "n2.sw",
+    "n3.servers",
+    "n3.storage",
+    "n4.neo",
+    "n4.hyper",
+    "n4.market",
+    "n4.finance",
+    "n4.orch",
+    "n4.finops",
+    "n4.ops",
+    "n6.open",
+    "n6.hub",
+    "n6.opt",
+    "n7.engine",
+    "n7.opt",
+    "n7.compress",
+    "n7.route",
+    "n7.obs"
+   ],
+   "blurb": "you sell tokens. Your margin is GPU cost per token, so the optimisation and compute boxes are your stack, and routers are your distribution."
+  },
+  {
+   "id": "aiproduct",
+   "name": "An AI product company",
+   "self": [
+    "n9.coding",
+    "n9.support",
+    "n9.knowledge",
+    "n9.agentic",
+    "n9.voice",
+    "n9.gtm",
+    "n9.legal",
+    "n9.health",
+    "n9.finance"
+   ],
+   "buys": [
+    "n6.frontier",
+    "n6.open",
+    "n6.embed",
+    "n6.audio",
+    "n7.api",
+    "n7.platform",
+    "n7.route",
+    "n7.compress",
+    "n7.opt",
+    "n7.obs",
+    "n8.framework",
+    "n8.vector",
+    "n8.ingest",
+    "n8.memory",
+    "n8.tools",
+    "n8.sandbox",
+    "n8.cache",
+    "n8.eval",
+    "n8.security",
+    "n4.serverless"
+   ],
+   "blurb": "token spend is your COGS. Model choice, routing, compression and caching decide gross margin; evals and memory decide quality."
+  },
+  {
+   "id": "enterprise",
+   "name": "A large enterprise adopting AI",
+   "self": [
+    "n11.ent"
+   ],
+   "buys": [
+    "n9.assistant",
+    "n9.knowledge",
+    "n9.support",
+    "n9.coding",
+    "n9.hr",
+    "n9.finance",
+    "n9.legal",
+    "n10.si",
+    "n10.consult",
+    "n10.native",
+    "n10.skill",
+    "n10.change",
+    "n8.platform",
+    "n8.lowcode",
+    "n8.security",
+    "n8.gov",
+    "n8.tools",
+    "n7.platform",
+    "n6.enterprise",
+    "n4.hyper",
+    "n4.onprem"
+   ],
+   "blurb": "you buy outcomes. Most value flows through apps, platforms and services partners; governance and security are the gate."
+  },
+  {
+   "id": "neocloud",
+   "name": "A GPU cloud / neocloud",
+   "self": [
+    "n4.neo"
+   ],
+   "buys": [
+    "n0.power",
+    "n0.dcdev",
+    "n0.cooling",
+    "n0.grid",
+    "n0.capital",
+    "n2.merchant",
+    "n2.net",
+    "n2.cpu",
+    "n3.servers",
+    "n3.network",
+    "n3.optics",
+    "n3.storage",
+    "n4.finance",
+    "n4.orch",
+    "n4.ops",
+    "n4.market",
+    "n7.engine"
+   ],
+   "blurb": "you turn capital and power into rentable clusters. Power, financing and allocation of GPUs are the constraints; marketplaces are a channel."
+  },
+  {
+   "id": "lab",
+   "name": "A model lab",
+   "self": [
+    "n6.frontier",
+    "n6.open"
+   ],
+   "buys": [
+    "n2.merchant",
+    "n2.custom",
+    "n4.hyper",
+    "n4.neo",
+    "n3.storage",
+    "n5.label",
+    "n5.license",
+    "n5.web",
+    "n5.synth",
+    "n5.rlenv",
+    "n5.curation",
+    "n5.gov",
+    "n6.train",
+    "n6.safety",
+    "n6.hub",
+    "n7.engine"
+   ],
+   "blurb": "compute and data are your inputs. Expert data and RL environments are now as contested as GPUs."
+  },
+  {
+   "id": "dev",
+   "name": "An individual developer",
+   "self": [
+    "n11.dev"
+   ],
+   "buys": [
+    "n9.coding",
+    "n9.assistant",
+    "n7.api",
+    "n7.route",
+    "n7.local",
+    "n6.open",
+    "n6.small",
+    "n6.hub",
+    "n8.framework",
+    "n8.vector",
+    "n8.sandbox",
+    "n8.tools",
+    "n8.eval",
+    "n4.serverless"
+   ],
+   "blurb": "you adopt bottom-up. Coding agents, open models, local runtimes and pay-as-you-go APIs are your stack."
+  },
+  {
+   "id": "chip",
+   "name": "An AI chip company",
+   "self": [
+    "n2.merchant",
+    "n2.startup"
+   ],
+   "buys": [
+    "n1.eda",
+    "n1.ip",
+    "n1.foundry",
+    "n1.packaging",
+    "n1.memory",
+    "n1.design",
+    "n2.net",
+    "n2.sw",
+    "n3.servers"
+   ],
+   "blurb": "you live on foundry, packaging and HBM allocation. The software stack decides whether anyone can use your silicon."
+  },
+  {
+   "id": "consultancy",
+   "name": "An AI services / transformation firm",
+   "self": [
+    "n10.consult",
+    "n10.native"
+   ],
+   "buys": [
+    "n9.assistant",
+    "n9.knowledge",
+    "n9.coding",
+    "n8.platform",
+    "n8.lowcode",
+    "n8.framework",
+    "n8.eval",
+    "n8.gov",
+    "n7.platform",
+    "n6.frontier",
+    "n10.skill"
+   ],
+   "blurb": "you sit between technology and outcomes. Your leverage is knowing which boxes a client actually needs."
+  }
+ ],
+ "changelog": [
+  {
+   "date": "31 Oct 2026",
+   "text": "Atlas published: 12 nodes, 151 sub-segments, 1,634 companies, 468 open projects, standards and public programmes, 0 investors."
+  }
+ ]
+}

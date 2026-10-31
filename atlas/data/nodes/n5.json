@@ -1,0 +1,2699 @@
+{
+ "node": "n5",
+ "notes": {
+  "n5.label": "Concentrated at the top: Scale AI, Surge AI, Mercor and Handshake each report roughly $1B+ gross annualised revenue (2025-26, mostly third-party estimates); Meta's 49% Scale stake (Jun 2025) pushed labs to neutral vendors; mix shifted from crowd labelling to PhD/professional experts.",
+  "n5.license": "Fragmented: large publishers and UGC platforms sign bilateral deals with labs, while marketplaces/brokers (Defined.ai, Protege, Human Native) and pay-per-crawl intermediaries (TollBit, Cloudflare) try to standardise pricing.",
+  "n5.web": "Common Crawl remains the open base layer; commercial proxy/scraping vendors (Bright Data, Oxylabs) plus a newer wave of agent-oriented search/crawl APIs (Exa, Firecrawl, Parallel, Tavily) consolidating into cloud platforms.",
+  "n5.synth": "Tabular/privacy synthetic-data vendors are consolidating into larger platforms (Gretel to NVIDIA, Hazy to SAS); LLM-generated synthetic text is now mostly produced in-house by labs or via open tooling (NeMo, distilabel).",
+  "n5.rlenv": "Fastest-growing data category in 2025-26: labs (Anthropic reportedly discussed >$1B/yr) buy RL environments and graders from startups (Mechanize, Prime Intellect) and from repositioned data vendors (Surge, Mercor, Scale, Turing).",
+  "n5.curation": "Small, technical segment; DatologyAI is the main independent pretraining-curation specialist, others are labelling/data-ops platforms or open tools (NeMo Curator, datatrove).",
+  "n5.gov": "Early and standards-driven: opt-out registries, content credentials (C2PA), machine-readable licensing (RSL) and crawler controls (Cloudflare); litigation and EU AI Act training-data transparency rules drive demand.",
+  "n5.evaldata": "Labs buy private holdouts from data vendors; public leaderboards run by non-profits and startups",
+  "n5.physical": "Egocentric-video vendors raising fast in 2025-26 (Mecka $60M Series B, Oct 2026)"
+ },
+ "entries": [
+  {
+   "name": "Apify",
+   "kind": "company",
+   "subsegments": [
+    "n5.web",
+    "n8.ingest"
+   ],
+   "hq": "CZ",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Platform and marketplace of web scrapers ('Actors') and crawling tools for AI",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://apify.com",
+   "source": "https://apify.com"
+  },
+  {
+   "name": "Appen",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.license"
+   ],
+   "hq": "AU",
+   "region": "Asia-Pacific",
+   "status": "public",
+   "one_liner": "Crowd-sourced data annotation, collection and LLM evaluation services; ASX-listed",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.appen.com",
+   "source": "https://www.appen.com"
+  },
+  {
+   "name": "Argilla / distilabel",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth",
+    "n5.curation"
+   ],
+   "hq": "ES",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "Hugging Face (2024)",
+   "one_liner": "Open-source synthetic-data pipelines and human feedback curation tools",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/argilla-io/distilabel",
+   "source": "https://github.com/argilla-io/distilabel"
+  },
+  {
+   "name": "Associated Press",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "News cooperative licensing its text archive to AI developers (OpenAI, Google)",
+   "url": "https://www.ap.org",
+   "source": "https://www.ap.org"
+  },
+  {
+   "name": "AWS Data Exchange",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Amazon",
+   "one_liner": "Marketplace for third-party datasets delivered into AWS",
+   "url": "https://aws.amazon.com/data-exchange/",
+   "source": "https://aws.amazon.com/data-exchange/"
+  },
+  {
+   "name": "Axel Springer",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "German publisher licensing Politico, Business Insider, Bild content to AI firms",
+   "url": "https://www.axelspringer.com",
+   "source": "https://www.axelspringer.com"
+  },
+  {
+   "name": "Bespoke Labs",
+   "kind": "company",
+   "subsegments": [
+    "n5.curation",
+    "n5.synth"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Curator library and services for synthetic data curation and post-training datasets",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.bespokelabs.ai",
+   "source": "https://www.bespokelabs.ai"
+  },
+  {
+   "name": "Bifrost AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "SG",
+   "region": "Asia-Pacific",
+   "status": "private",
+   "one_liner": "Synthetic 3D imagery for training vision models in defence, maritime and space",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.bifrost.ai",
+   "source": "https://www.bifrost.ai"
+  },
+  {
+   "name": "Bright Data",
+   "kind": "company",
+   "subsegments": [
+    "n5.web",
+    "n8.ingest",
+    "n8.sandbox"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Proxy network, web-scraping APIs and ready-made web datasets for AI training",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://brightdata.com",
+   "source": "https://brightdata.com"
+  },
+  {
+   "name": "Browserbase",
+   "kind": "company",
+   "subsegments": [
+    "n5.web",
+    "n8.sandbox"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Headless browser infrastructure for agents and web data collection",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.browserbase.com",
+   "source": "https://www.browserbase.com",
+   "note": "Raised $40M Series B (Jun 2025)"
+  },
+  {
+   "name": "Build AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Egocentric factory-worker video datasets (Egocentric-100K)",
+   "url": "https://www.humanoidsdaily.com/news/build-ai-scales-to-100-000-hours-as-data-scaling-becomes-robotics-new-frontier",
+   "source": "https://www.humanoidsdaily.com/news/build-ai-scales-to-100-000-hours-as-data-scaling-becomes-robotics-new-frontier",
+   "note": "Dec 2025: 100K-hour dataset; $15M raised"
+  },
+  {
+   "name": "C2PA / Content Authenticity Initiative",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Open standard for content credentials recording origin and edits of media",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://c2pa.org",
+   "source": "https://c2pa.org"
+  },
+  {
+   "name": "Calliope Networks",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Licenses film and TV video libraries for AI training",
+   "url": "https://calliope.network",
+   "source": "https://calliope.network"
+  },
+  {
+   "name": "Centaur Labs",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Gamified medical-expert network labelling clinical and scientific data",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://centaur.ai",
+   "source": "https://centaur.ai"
+  },
+  {
+   "name": "Center for AI Safety",
+   "kind": "company",
+   "subsegments": [
+    "n5.evaldata"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Non-profit co-creator of Humanity's Last Exam benchmark",
+   "url": "https://safe.ai",
+   "source": "https://scale.com/blog/humanitys-last-exam"
+  },
+  {
+   "name": "Cleanlab",
+   "kind": "company",
+   "subsegments": [
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Detects label errors and low-quality data; trustworthiness scoring for LLM outputs",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://cleanlab.ai",
+   "source": "https://cleanlab.ai"
+  },
+  {
+   "name": "CloudFactory",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Managed workforce for data labelling and human-in-the-loop AI operations (Nepal, Kenya)",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.cloudfactory.com",
+   "source": "https://www.cloudfactory.com"
+  },
+  {
+   "name": "Cloudflare AI Crawl Control",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov",
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Cloudflare",
+   "one_liner": "Blocks AI crawlers by default and enables pay-per-crawl licensing for publishers",
+   "url": "https://www.cloudflare.com/ai-crawl-control/",
+   "source": "https://www.cloudflare.com/ai-crawl-control/",
+   "note": "Default AI-crawler blocking and pay-per-crawl launched Jul 2025"
+  },
+  {
+   "name": "Cogito Tech",
+   "kind": "company",
+   "subsegments": [
+    "n5.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Teleoperation and multimodal robot data capture services",
+   "url": "https://www.cogitotech.com",
+   "source": "https://www.labellerr.com/blog/top-teleoperation-companies-humanoid-robotics/"
+  },
+  {
+   "name": "Common Crawl",
+   "kind": "company",
+   "subsegments": [
+    "n5.web"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Free petabyte-scale open web crawl corpus underpinning most LLM pretraining",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://commoncrawl.org",
+   "source": "https://commoncrawl.org"
+  },
+  {
+   "name": "Copyright Clearance Center",
+   "kind": "company",
+   "subsegments": [
+    "n5.license",
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Collective licences covering use of published works in internal AI systems",
+   "url": "https://www.copyright.com",
+   "source": "https://www.copyright.com"
+  },
+  {
+   "name": "Crawl4AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.web",
+    "n8.ingest"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "one_liner": "Open-source LLM-friendly web crawler and scraper",
+   "tags": [
+    "open-source",
+    "developer",
+    "cost"
+   ],
+   "url": "https://github.com/unclecode/crawl4ai",
+   "source": "https://github.com/unclecode/crawl4ai"
+  },
+  {
+   "name": "Created by Humans",
+   "kind": "company",
+   "subsegments": [
+    "n5.license",
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Licensing platform for authors to license books to AI companies",
+   "url": "https://www.createdbyhumans.ai",
+   "source": "https://www.createdbyhumans.ai"
+  },
+  {
+   "name": "Data Provenance Initiative",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Audits licences and provenance of AI training datasets (Data Provenance Explorer)",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.dataprovenance.org",
+   "source": "https://www.dataprovenance.org"
+  },
+  {
+   "name": "Datacurve",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.rlenv"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Bounty-based platform where software engineers create coding training data for labs",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://datacurve.ai",
+   "source": "https://datacurve.ai"
+  },
+  {
+   "name": "Datarade",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Data marketplace connecting buyers with AI training-data and commercial data providers",
+   "url": "https://datarade.ai",
+   "source": "https://datarade.ai"
+  },
+  {
+   "name": "Datatang",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.license"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "private",
+   "one_liner": "Chinese provider of off-the-shelf and custom speech, vision and text training datasets",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.datatang.ai",
+   "source": "https://www.datatang.ai"
+  },
+  {
+   "name": "DatologyAI",
+   "kind": "company",
+   "subsegments": [
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Automated data curation that selects pretraining data to train better models with less compute",
+   "tags": [
+    "cost",
+    "performance"
+   ],
+   "url": "https://www.datologyai.com",
+   "source": "https://www.datologyai.com"
+  },
+  {
+   "name": "Deccan AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Expert post-training data and evaluation services for AI labs, Indian talent network",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://deccan.ai",
+   "source": "https://deccan.ai"
+  },
+  {
+   "name": "Deeptune",
+   "kind": "company",
+   "subsegments": [
+    "n5.rlenv"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Mercor (Jul 2026)",
+   "one_liner": "RL environment builder for AI agent training",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.herohunt.ai/blog/mercor-vs-surge-vs-scale-ai-2026-buyer-guide/",
+   "source": "https://www.herohunt.ai/blog/mercor-vs-surge-vs-scale-ai-2026-buyer-guide/",
+   "note": "Acquired by Mercor Jul 2026 (secondary source)"
+  },
+  {
+   "name": "Defined.ai",
+   "kind": "company",
+   "subsegments": [
+    "n5.license",
+    "n5.label"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Ethically sourced AI training-data marketplace for speech, text, image and video",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.defined.ai",
+   "source": "https://www.defined.ai"
+  },
+  {
+   "name": "Diffbot",
+   "kind": "company",
+   "subsegments": [
+    "n5.web",
+    "n8.ingest"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Web-scale knowledge graph and AI extraction of structured web data",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.diffbot.com",
+   "source": "https://www.diffbot.com"
+  },
+  {
+   "name": "Duality Robotics",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Digital-twin simulation (Falcon) producing synthetic data for robotics and vision",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.duality.ai",
+   "source": "https://www.duality.ai"
+  },
+  {
+   "name": "EleutherAI",
+   "kind": "company",
+   "subsegments": [
+    "n5.web",
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Open research collective releasing open/licensed training corpora (The Pile, Common Pile)",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.eleuther.ai",
+   "source": "https://www.eleuther.ai"
+  },
+  {
+   "name": "Encord",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.curation",
+    "n5.physical"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Multimodal data management, curation and annotation platform for AI teams",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://encord.com",
+   "source": "https://encord.com",
+   "note": "Feb 2026: $60M Series C, physical-AI focus"
+  },
+  {
+   "name": "Exa",
+   "kind": "company",
+   "subsegments": [
+    "n5.web",
+    "n8.ingest",
+    "n8.search"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Neural web search and crawling API built for AI agents and dataset building",
+   "tags": [
+    "developer",
+    "performance"
+   ],
+   "url": "https://exa.ai",
+   "source": "https://exa.ai",
+   "note": "Raised $250M at $2.2B valuation (May 2026)"
+  },
+  {
+   "name": "Extend Robotics",
+   "kind": "company",
+   "subsegments": [
+    "n5.physical"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "XR teleoperation software that captures robot training data",
+   "url": "https://www.extendrobotics.com",
+   "source": "https://www.labellerr.com/blog/top-teleoperation-companies-humanoid-robotics/"
+  },
+  {
+   "name": "Fairly Trained",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov",
+    "n6.weights"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Certifies generative AI models trained only on licensed or consented data",
+   "tags": [],
+   "url": "https://www.fairlytrained.org",
+   "source": "https://www.fairlytrained.org"
+  },
+  {
+   "name": "Farama Foundation (Gymnasium)",
+   "kind": "company",
+   "subsegments": [
+    "n5.rlenv"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Maintains Gymnasium and other open-source RL environment standards",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://farama.org",
+   "source": "https://farama.org"
+  },
+  {
+   "name": "Firecrawl",
+   "kind": "company",
+   "subsegments": [
+    "n5.web",
+    "n8.ingest",
+    "n8.search"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "API turning websites into LLM-ready markdown and structured data",
+   "tags": [
+    "developer",
+    "open-source"
+   ],
+   "url": "https://www.firecrawl.dev",
+   "source": "https://www.firecrawl.dev"
+  },
+  {
+   "name": "Getty Images",
+   "kind": "company",
+   "subsegments": [
+    "n5.license",
+    "n6.weights"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Licenses curated visual content for AI training and runs a commercially-safe generator",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.gettyimages.com",
+   "source": "https://www.gettyimages.com",
+   "note": "Merger with Shutterstock announced Jan 2025"
+  },
+  {
+   "name": "Google SynthID",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov",
+    "n6.safety"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Watermarking and detection for AI-generated text, images, audio and video",
+   "tags": [
+    "security"
+   ],
+   "url": "https://deepmind.google/models/synthid/",
+   "source": "https://deepmind.google/models/synthid/"
+  },
+  {
+   "name": "Gretel",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "NVIDIA (2025)",
+   "one_liner": "Synthetic data generation APIs for tabular, text and privacy-safe training data",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://gretel.ai",
+   "source": "https://gretel.ai",
+   "note": "Acquired by NVIDIA (Mar 2025), folded into NeMo"
+  },
+  {
+   "name": "Haitian Ruisheng (SpeechOcean)",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.license"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "public",
+   "one_liner": "Shanghai STAR-listed supplier of speech, vision and NLP training datasets",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.speechocean.com",
+   "source": "https://www.speechocean.com"
+  },
+  {
+   "name": "Halluminate",
+   "kind": "company",
+   "subsegments": [
+    "n5.rlenv"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Realistic simulated software environments for training and evaluating computer-use agents",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://halluminate.ai",
+   "source": "https://halluminate.ai"
+  },
+  {
+   "name": "Handshake AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Student/graduate jobs network turned expert AI-training-data supplier using its PhD and graduate talent pool",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://joinhandshake.com",
+   "source": "https://dealroom.co/news/127345-handshakes-arr-crosses-1b-as-ai-training-revenue-surges/",
+   "note": "AI-training gross annualised revenue near $1B by Apr 2026, up from $550M in Jan 2026"
+  },
+  {
+   "name": "Hazy",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "SAS (2024)",
+   "one_liner": "Synthetic data for regulated enterprises",
+   "tags": [
+    "security"
+   ],
+   "url": "https://hazy.com",
+   "source": "https://hazy.com"
+  },
+  {
+   "name": "HUD",
+   "kind": "company",
+   "subsegments": [
+    "n5.rlenv",
+    "n6.safety"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Environments and evaluation platform for computer-use and browser agents",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.hud.so",
+   "source": "https://www.hud.so"
+  },
+  {
+   "name": "Hugging Face FineWeb / datasets",
+   "kind": "company",
+   "subsegments": [
+    "n5.web",
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Hugging Face",
+   "one_liner": "Open curated web pretraining corpora (FineWeb, FineWeb-Edu, FineWeb2) and dataset tooling",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+   "source": "https://huggingface.co/datasets/HuggingFaceFW/fineweb"
+  },
+  {
+   "name": "Human Archive",
+   "kind": "company",
+   "subsegments": [
+    "n5.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Egocentric video and motion data recorded by Indian gig workers",
+   "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
+   "source": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
+   "note": "May 2026: $8.2M raise (Wing VC, YC)"
+  },
+  {
+   "name": "Human Native AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.license",
+    "n5.gov"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "acquired",
+   "parent": "Cloudflare (2026)",
+   "one_liner": "Marketplace brokering rights-cleared content licences between creators and AI developers",
+   "url": "https://www.humannative.ai",
+   "source": "https://www.humannative.ai",
+   "note": "Acquired by Cloudflare (early 2026; not re-verified this session)"
+  },
+  {
+   "name": "IMATAG",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Invisible watermarking to track images and prove provenance",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.imatag.com",
+   "source": "https://www.imatag.com"
+  },
+  {
+   "name": "iMerit",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Expert annotation and RLHF services, strong in medical, autonomous driving and geospatial data",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://imerit.net",
+   "source": "https://imerit.net",
+   "note": "Operations centred in India; corporate HQ also in US"
+  },
+  {
+   "name": "Invisible Technologies",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n10.native",
+    "n10.bpo"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Managed AI-training data and RLHF services plus enterprise AI process operations",
+   "tags": [
+    "performance",
+    "enterprise"
+   ],
+   "url": "https://invisibletech.ai",
+   "source": "https://news.bloombergtax.com/daily-tax-report-international/scale-ai-rival-invisible-technologies-valued-at-over-2-billion",
+   "note": "Raised $100M at >$2B valuation (Sep/Oct 2025)"
+  },
+  {
+   "name": "Karya",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "non-profit",
+   "one_liner": "Ethical data work platform paying rural Indians to create Indic-language training data",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://karya.in",
+   "source": "https://karya.in"
+  },
+  {
+   "name": "Labelbox",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Data labelling platform and Alignerr expert network for RLHF and evaluation data",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://labelbox.com",
+   "source": "https://enterprisedna.co/resources/ai-map/company/labelbox"
+  },
+  {
+   "name": "Lightly",
+   "kind": "company",
+   "subsegments": [
+    "n5.curation"
+   ],
+   "hq": "CH",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Data selection and active learning to choose the most valuable training images",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.lightly.ai",
+   "source": "https://www.lightly.ai"
+  },
+  {
+   "name": "Lilac",
+   "kind": "company",
+   "subsegments": [
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Databricks (2024)",
+   "one_liner": "Dataset exploration and quality tooling for LLM data",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.databricks.com/blog/lilac-joins-databricks",
+   "source": "https://www.databricks.com/blog/lilac-joins-databricks"
+  },
+  {
+   "name": "Loti AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Detects and removes unauthorised AI deepfakes and likeness misuse",
+   "tags": [
+    "security"
+   ],
+   "url": "https://loti.ai",
+   "source": "https://loti.ai"
+  },
+  {
+   "name": "Mechanize",
+   "kind": "company",
+   "subsegments": [
+    "n5.rlenv"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Builds high-fidelity RL environments, starting with software-engineering tasks, for AI labs",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.mechanize.work",
+   "source": "https://techcrunch.com/2025/09/21/silicon-valley-bets-big-on-environments-to-train-ai-agents/"
+  },
+  {
+   "name": "Mecka AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Egocentric human motion and video data (EgoVerse) for robot learning",
+   "url": "https://dealroom.co/news/160699-mecka-raises-60m-series-b-to-turn-human-motion-into-robot-training-data/",
+   "source": "https://dealroom.co/news/160699-mecka-raises-60m-series-b-to-turn-human-motion-into-robot-training-data/",
+   "note": "Oct 2026: $60M Series B led by Sequoia; >$100M run-rate (Jun 2026)"
+  },
+  {
+   "name": "Mercor",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.rlenv",
+    "n9.hr",
+    "n5.evaldata"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Marketplace of vetted domain experts producing training data, rubrics and RL environments for AI labs",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://mercor.com",
+   "source": "https://valueaddvc.com/blog/how-does-mercor-make-money-2b-arr-20b-valuation-and-the-expert-data-marketplace-explained",
+   "note": "$350M Series C at $10B (Oct 2025); ~$2B gross annualised revenue by Jun 2026; reported talks at $20B (Jul 2026); Mar 2026 data breach led Meta to pause work; acquired Deeptune (Jul 2026)"
+  },
+  {
+   "name": "micro1",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n9.hr"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "AI-recruited expert network producing human data for model training and evaluation",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.micro1.ai",
+   "source": "https://finder.techleap.nl/news/feed/micro1-raises-funds-at-500m-valuation",
+   "note": "Raised at $500M valuation (2025); reported ~$500M gross annualised revenue in 2026 (third-party estimate)"
+  },
+  {
+   "name": "MOSTLY AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "AT",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Privacy-safe synthetic tabular data platform and open-source SDK",
+   "tags": [
+    "open-source",
+    "security"
+   ],
+   "url": "https://mostly.ai",
+   "source": "https://mostly.ai"
+  },
+  {
+   "name": "NetNut",
+   "kind": "company",
+   "subsegments": [
+    "n5.web"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "public",
+   "parent": "Alarum Technologies",
+   "one_liner": "Residential and ISP proxy network used for large-scale web data collection",
+   "url": "https://netnut.io",
+   "source": "https://netnut.io"
+  },
+  {
+   "name": "News Corp",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Publisher licensing news archives (WSJ, The Times, etc.) to OpenAI and others",
+   "url": "https://newscorp.com",
+   "source": "https://newscorp.com"
+  },
+  {
+   "name": "NextWealth",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Distributed small-town Indian workforce for data annotation and AI ops",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.nextwealth.com",
+   "source": "https://www.nextwealth.com"
+  },
+  {
+   "name": "Nomic Atlas",
+   "kind": "company",
+   "subsegments": [
+    "n5.curation",
+    "n6.embed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Atlas platform to map, explore and clean unstructured datasets; open embedding models",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.nomic.ai",
+   "source": "https://www.nomic.ai"
+  },
+  {
+   "name": "Nous Research Atropos",
+   "kind": "company",
+   "subsegments": [
+    "n5.rlenv",
+    "n6.train"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open-source",
+   "parent": "Nous Research",
+   "one_liner": "Open-source framework for collecting and running LLM RL environments",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://github.com/NousResearch/atropos",
+   "source": "https://github.com/NousResearch/atropos"
+  },
+  {
+   "name": "NVIDIA NeMo / Nemotron synthetic data",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth",
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "NVIDIA",
+   "one_liner": "Synthetic-data generation (Nemotron, NeMo Data Designer, Cosmos) and NeMo Curator for training data",
+   "tags": [
+    "open-source",
+    "performance"
+   ],
+   "url": "https://developer.nvidia.com/nemo-curator",
+   "source": "https://developer.nvidia.com/nemo-curator"
+  },
+  {
+   "name": "Oxylabs",
+   "kind": "company",
+   "subsegments": [
+    "n5.web"
+   ],
+   "hq": "LT",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Proxy and web-scraping infrastructure with AI-training data offerings",
+   "url": "https://oxylabs.io",
+   "source": "https://oxylabs.io"
+  },
+  {
+   "name": "Parallel Domain",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Synthetic sensor data and simulation for autonomous-vehicle and robotics perception",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://paralleldomain.com",
+   "source": "https://paralleldomain.com"
+  },
+  {
+   "name": "Parallel Web Systems",
+   "kind": "company",
+   "subsegments": [
+    "n5.web",
+    "n8.ingest",
+    "n8.search"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Web search and research APIs designed for AI agents",
+   "tags": [
+    "developer",
+    "performance"
+   ],
+   "url": "https://parallel.ai",
+   "source": "https://parallel.ai",
+   "note": "Raised $100M Series B at $2B valuation led by Sequoia (Apr 2026)"
+  },
+  {
+   "name": "Prolific",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Verified participant pool for human feedback, preference data and AI evaluation studies",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.prolific.com",
+   "source": "https://www.prolific.com"
+  },
+  {
+   "name": "ProRata.ai",
+   "kind": "company",
+   "subsegments": [
+    "n5.license",
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Attribution-based revenue-sharing for publishers whose content powers AI answers (Gist)",
+   "url": "https://prorata.ai",
+   "source": "https://prorata.ai"
+  },
+  {
+   "name": "Protege",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Data platform licensing healthcare and multimodal datasets to AI developers",
+   "url": "https://www.withprotege.ai",
+   "source": "https://www.withprotege.ai"
+  },
+  {
+   "name": "Reddit",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Licenses user-generated conversation data to AI labs (Google, OpenAI deals)",
+   "url": "https://www.redditinc.com",
+   "source": "https://www.redditinc.com"
+  },
+  {
+   "name": "Rendered.ai",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Physics-based synthetic data PaaS for satellite and sensor imagery",
+   "url": "https://rendered.ai",
+   "source": "https://rendered.ai"
+  },
+  {
+   "name": "Rightsify",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Licenses music catalogues and datasets for AI training",
+   "url": "https://rightsify.com",
+   "source": "https://rightsify.com"
+  },
+  {
+   "name": "RSL Collective",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov",
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "non-profit",
+   "one_liner": "Really Simple Licensing standard for machine-readable AI content licence terms",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://rslstandard.org",
+   "source": "https://rslstandard.org",
+   "note": "Launched Sep 2025 with Reddit, Yahoo, Medium and others"
+  },
+  {
+   "name": "Sama",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Impact-sourcing data annotation and model-validation workforce in East Africa and Asia",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.sama.com",
+   "source": "https://www.sama.com"
+  },
+  {
+   "name": "Scale AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.rlenv",
+    "n6.safety",
+    "n5.evaldata",
+    "n5.physical",
+    "n7.bench",
+    "n9.public"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Meta holds 49% (Jun 2025)",
+   "one_liner": "Expert and crowd training data, RLHF, evaluations and agent environments for labs, enterprises and government",
+   "tags": [
+    "performance",
+    "enterprise"
+   ],
+   "url": "https://scale.com",
+   "source": "https://www.herohunt.ai/blog/mercor-vs-surge-vs-scale-ai-2026-buyer-guide/",
+   "note": "Meta bought 49% for $14.3B (Jun 2025); founder Alexandr Wang left for Meta; Google, OpenAI, xAI pulled back; ~14% layoffs Jul 2025; pivot to enterprise, defence and government; Outlier/Remotasks are its labour brands"
+  },
+  {
+   "name": "Shutterstock",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Licenses image, video, music and 3D libraries as AI training data",
+   "url": "https://www.shutterstock.com",
+   "source": "https://www.shutterstock.com",
+   "note": "Merger with Getty Images announced Jan 2025; check closing status"
+  },
+  {
+   "name": "Snorkel AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.curation",
+    "n5.rlenv"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Programmatic labelling platform and expert-data services for frontier labs and enterprises",
+   "tags": [
+    "performance",
+    "enterprise"
+   ],
+   "url": "https://snorkel.ai",
+   "source": "https://enterprisedna.co/resources/ai-map/company/snorkel-ai",
+   "note": "Raised $100M Series D (May 2025) and pivoted towards expert data-as-a-service for labs"
+  },
+  {
+   "name": "Spawning",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Do-Not-Train registry and opt-out tools for creators' work in AI datasets",
+   "url": "https://spawning.ai",
+   "source": "https://spawning.ai"
+  },
+  {
+   "name": "Stack Overflow",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "Prosus",
+   "one_liner": "Licenses developer Q&A data to AI labs via OverflowAPI",
+   "url": "https://stackoverflow.co",
+   "source": "https://stackoverflow.co"
+  },
+  {
+   "name": "Story Protocol",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Blockchain registry for programmable IP licensing including AI training rights",
+   "url": "https://www.story.foundation",
+   "source": "https://www.story.foundation"
+  },
+  {
+   "name": "SuperAnnotate",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Annotation and data-management platform for building SFT, RLHF and evaluation datasets",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.superannotate.com",
+   "source": "https://www.superannotate.com"
+  },
+  {
+   "name": "Surge AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.rlenv",
+    "n5.evaldata"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "High-skill human data, RLHF and RL environments for frontier labs; operates DataAnnotation workforce",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://surgehq.ai",
+   "source": "https://techcrunch.com/2025/09/21/silicon-valley-bets-big-on-environments-to-train-ai-agents/",
+   "note": "Bootstrapped; ~$1.2B revenue in 2024; reported funding talks at $15-25B valuation (Jul 2025); set up internal RL-environments organisation"
+  },
+  {
+   "name": "Synthesis AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Synthetic human and face data for computer vision",
+   "url": "https://synthesis.ai",
+   "source": "https://synthesis.ai"
+  },
+  {
+   "name": "Syntho",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "AI-generated synthetic data for privacy-compliant test and analytics data",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.syntho.ai",
+   "source": "https://www.syntho.ai"
+  },
+  {
+   "name": "Tavily",
+   "kind": "company",
+   "subsegments": [
+    "n5.web",
+    "n8.ingest",
+    "n8.search"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "acquired",
+   "parent": "Nebius (2026)",
+   "one_liner": "Search and extraction API giving LLMs and agents real-time web data",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.tavily.com",
+   "source": "https://www.tavily.com",
+   "note": "Acquired by Nebius (early 2026; not re-verified this session)"
+  },
+  {
+   "name": "Taylor & Francis (Informa)",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "GB",
+   "region": "Europe",
+   "status": "public",
+   "parent": "Informa",
+   "one_liner": "Academic publisher licensing scholarly content to AI developers",
+   "url": "https://taylorandfrancis.com",
+   "source": "https://taylorandfrancis.com"
+  },
+  {
+   "name": "TELUS Digital",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "parent": "TELUS (2025)",
+   "one_liner": "Data annotation and AI training-data services (formerly TELUS International AI Data Solutions)",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.telusdigital.com",
+   "source": "https://www.telusdigital.com",
+   "note": "TELUS bought out minority shareholders and delisted TELUS Digital (2025)"
+  },
+  {
+   "name": "TollBit",
+   "kind": "company",
+   "subsegments": [
+    "n5.license",
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Lets publishers charge AI bots and agents per crawl or content access",
+   "url": "https://tollbit.com",
+   "source": "https://tollbit.com"
+  },
+  {
+   "name": "Toloka",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "NL",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Expert and crowd human data for LLM training, evaluation and red-teaming",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://toloka.ai",
+   "source": "https://toloka.ai",
+   "note": "Separated from Nebius control after $72M round led by Bezos Expeditions (May 2025)"
+  },
+  {
+   "name": "Tonic.ai",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Synthetic and de-identified data for testing, development and AI training",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.tonic.ai",
+   "source": "https://www.tonic.ai"
+  },
+  {
+   "name": "Truepic",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Content provenance and authenticity infrastructure based on C2PA",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.truepic.com",
+   "source": "https://www.truepic.com"
+  },
+  {
+   "name": "Turing",
+   "kind": "company",
+   "subsegments": [
+    "n5.label",
+    "n5.rlenv",
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Engineering talent cloud supplying coding/reasoning post-training data and agent environments to frontier labs",
+   "tags": [
+    "performance",
+    "enterprise"
+   ],
+   "url": "https://www.turing.com",
+   "source": "https://sacra.com/research/turing-revenue-growth-valuation/"
+  },
+  {
+   "name": "Uber AI Solutions",
+   "kind": "company",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Uber",
+   "one_liner": "Uber's global gig workforce offered for data labelling, RLHF and AI testing",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.uber.com/us/en/ai-solutions/",
+   "source": "https://www.uber.com/us/en/ai-solutions/"
+  },
+  {
+   "name": "Vals AI",
+   "kind": "company",
+   "subsegments": [
+    "n5.evaldata",
+    "n7.bench"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Independent industry-specific (legal, finance) model benchmarks",
+   "tags": [
+    "performance",
+    "enterprise"
+   ],
+   "url": "https://www.vals.ai",
+   "source": "https://www.kucoin.com/blog/vals-ai-40m-series-a-real-world-benchmarks",
+   "note": "Raised $40M Series A led by a16z (2026)"
+  },
+  {
+   "name": "Vermillio",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "TraceID tracks and licenses use of artists' likeness and IP in AI outputs",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.vermill.io",
+   "source": "https://www.vermill.io"
+  },
+  {
+   "name": "Visual Layer",
+   "kind": "company",
+   "subsegments": [
+    "n5.curation"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Visual dataset deduplication and quality cleanup (fastdup)",
+   "tags": [
+    "cost"
+   ],
+   "url": "https://www.visual-layer.com",
+   "source": "https://www.visual-layer.com"
+  },
+  {
+   "name": "Voxel51",
+   "kind": "company",
+   "subsegments": [
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "FiftyOne platform for visual dataset curation and model analysis",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://voxel51.com",
+   "source": "https://voxel51.com"
+  },
+  {
+   "name": "Wiley",
+   "kind": "company",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Academic publisher licensing books and journals for LLM training",
+   "url": "https://www.wiley.com",
+   "source": "https://www.wiley.com"
+  },
+  {
+   "name": "YData",
+   "kind": "company",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "PT",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Synthetic data generation and data-quality profiling (ydata-sdk, ydata-profiling)",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://ydata.ai",
+   "source": "https://ydata.ai"
+  },
+  {
+   "name": "Zyte",
+   "kind": "company",
+   "subsegments": [
+    "n5.web"
+   ],
+   "hq": "IE",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Web-scraping API and data extraction services (Scrapy maintainers)",
+   "tags": [
+    "open-source"
+   ],
+   "url": "https://www.zyte.com",
+   "source": "https://www.zyte.com"
+  },
+  {
+   "name": "AgiBot World Beta",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.physical"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "AgiBot",
+   "licence": "CC-BY-NC-SA-4.0 (non-commercial)",
+   "access": "Gated Hugging Face download",
+   "one_liner": "1M+ real-robot trajectories, ~2,976 hours from 100 robots",
+   "tags": [
+    "robotics",
+    "non-commercial",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta",
+   "source": "https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta"
+  },
+  {
+   "name": "AIKosh (IndiaAI Datasets Platform)",
+   "kind": "public programme",
+   "subsegments": [
+    "n5.license",
+    "n6.hub",
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "IndiaAI Mission, MeitY",
+   "access": "Register at aikosh.indiaai.gov.in; download datasets and models",
+   "one_liner": "National repository of Indian datasets, models and tools; passed 1,000 datasets in Sep 2025",
+   "tags": [
+    "sovereign",
+    "india",
+    "datasets",
+    "open-source"
+   ],
+   "url": "https://aikosh.indiaai.gov.in",
+   "source": "https://yourstory.com/2025/09/ai-kosh-1000-datasets-open-data-india"
+  },
+  {
+   "name": "Arena-Hard-Auto",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.evaldata"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "LMArena",
+   "licence": "Apache-2.0",
+   "access": "Clone repo; LLM-judge pipeline",
+   "repo": "https://github.com/lmarena/arena-hard-auto",
+   "stars": 1100,
+   "archived": false,
+   "one_liner": "Automatic LLM-judge benchmark approximating Chatbot Arena rankings",
+   "tags": [
+    "evaluation",
+    "open-source"
+   ],
+   "url": "https://github.com/lmarena/arena-hard-auto",
+   "source": "https://github.com/lmarena/arena-hard-auto"
+  },
+  {
+   "name": "Argilla",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.label",
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Hugging Face (Argilla team)",
+   "licence": "Apache-2.0",
+   "access": "pip install argilla; deploy as Hugging Face Space",
+   "repo": "https://github.com/argilla-io/argilla",
+   "stars": 5200,
+   "archived": false,
+   "one_liner": "Collaborative feedback and annotation platform for LLM datasets",
+   "tags": [
+    "labelling",
+    "rlhf",
+    "open-source"
+   ],
+   "url": "https://github.com/argilla-io/argilla",
+   "source": "https://github.com/argilla-io/argilla",
+   "note": "README (2026): original authors moved on; feature-frozen, bug-fix only, seeking community owners"
+  },
+  {
+   "name": "Bhashini datasets",
+   "kind": "public programme",
+   "subsegments": [
+    "n5.web",
+    "n6.sovereign",
+    "n6.audio"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "Digital India Bhashini Division, MeitY",
+   "access": "Access via bhashini.gov.in and its dataset/model portals",
+   "one_liner": "National Indian-language speech, text and translation data and models programme",
+   "tags": [
+    "india",
+    "multilingual",
+    "speech",
+    "open-source"
+   ],
+   "url": "https://bhashini.gov.in",
+   "source": "https://bhashini.gov.in"
+  },
+  {
+   "name": "C2PA Content Credentials",
+   "kind": "standard",
+   "subsegments": [
+    "n5.gov",
+    "n6.weights"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Coalition for Content Provenance and Authenticity (Linux Foundation JDF)",
+   "access": "Implement open spec; open-source SDKs available",
+   "one_liner": "Open specification for cryptographically signed provenance of media and AI outputs",
+   "tags": [
+    "provenance",
+    "open-standard"
+   ],
+   "url": "https://c2pa.org",
+   "source": "https://c2pa.org"
+  },
+  {
+   "name": "Common Corpus",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.license",
+    "n5.web"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Pleias (with partners)",
+   "licence": "Per-document: public domain, CC0, CC-BY(-SA), MIT etc.",
+   "access": "Download from Hugging Face; filter by licence tag",
+   "one_liner": "~2.27T-token corpus of only public-domain or openly licensed text, with per-document licence metadata",
+   "tags": [
+    "licensed-data",
+    "provenance",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/PleIAs/common_corpus",
+   "source": "https://huggingface.co/datasets/PleIAs/common_corpus"
+  },
+  {
+   "name": "Common Crawl (open)",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.web"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Common Crawl Foundation",
+   "licence": "Common Crawl Terms of Use (limited non-exclusive licence; source content keeps owners' rights)",
+   "access": "Free download from AWS S3 / HTTPS; monthly snapshots",
+   "one_liner": "Petabyte-scale monthly open web crawl; raw input to most LLM pretraining corpora",
+   "tags": [
+    "web-data",
+    "pretraining",
+    "open-source"
+   ],
+   "url": "https://commoncrawl.org",
+   "source": "https://commoncrawl.org/terms-of-use"
+  },
+  {
+   "name": "Common Pile v0.1",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.license"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "EleutherAI and collaborators",
+   "licence": "Public domain and openly licensed sources",
+   "access": "Download from Hugging Face (common-pile org)",
+   "one_liner": "8TB public-domain/openly licensed text; trained Comma v0.1 7B models",
+   "tags": [
+    "licensed-data",
+    "provenance",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/common-pile/comma_v0.1_training_dataset",
+   "source": "https://arxiv.org/abs/2506.05209"
+  },
+  {
+   "name": "CVAT",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.label",
+    "n5.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "CVAT.ai",
+   "licence": "MIT",
+   "access": "Docker self-host or cvat.ai cloud",
+   "repo": "https://github.com/cvat-ai/cvat",
+   "stars": 17000,
+   "archived": false,
+   "one_liner": "Computer-vision annotation for images, video and 3D point clouds",
+   "tags": [
+    "labelling",
+    "vision",
+    "open-source"
+   ],
+   "url": "https://github.com/cvat-ai/cvat",
+   "source": "https://github.com/cvat-ai/cvat",
+   "note": "Community edition MIT; serverless auto-annotation may pull non-commercial third-party models"
+  },
+  {
+   "name": "Data Provenance Collection",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Data Provenance Initiative (MIT Media Lab-led volunteers)",
+   "licence": "Apache-2.0",
+   "access": "Clone repo; filter datasets by licence and source",
+   "repo": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection",
+   "stars": 281,
+   "archived": false,
+   "one_liner": "Audits and filters training datasets by licence, source and terms",
+   "tags": [
+    "provenance",
+    "compliance",
+    "open-source"
+   ],
+   "url": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection",
+   "source": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection"
+  },
+  {
+   "name": "Data-Juicer",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.curation"
+   ],
+   "hq": "CN",
+   "region": "China",
+   "status": "open",
+   "steward": "Alibaba (ModelScope)",
+   "licence": "Apache-2.0",
+   "access": "pip install py-data-juicer",
+   "repo": "https://github.com/modelscope/data-juicer",
+   "stars": 7200,
+   "archived": false,
+   "one_liner": "100+ operators for multimodal data cleaning, filtering and synthesis",
+   "tags": [
+    "quality",
+    "multimodal",
+    "open-source"
+   ],
+   "url": "https://github.com/modelscope/data-juicer",
+   "source": "https://github.com/modelscope/data-juicer"
+  },
+  {
+   "name": "datatrove",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Hugging Face",
+   "licence": "Apache-2.0",
+   "access": "pip install datatrove",
+   "repo": "https://github.com/huggingface/datatrove",
+   "stars": 3300,
+   "archived": false,
+   "one_liner": "Large-scale data filtering, dedup and processing pipelines (built FineWeb)",
+   "tags": [
+    "quality",
+    "cost",
+    "open-source"
+   ],
+   "url": "https://github.com/huggingface/datatrove",
+   "source": "https://github.com/huggingface/datatrove"
+  },
+  {
+   "name": "distilabel",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Hugging Face (Argilla team), community-maintained",
+   "licence": "Apache-2.0",
+   "access": "pip install distilabel",
+   "repo": "https://github.com/argilla-io/distilabel",
+   "stars": 3400,
+   "archived": false,
+   "one_liner": "Pipeline framework for synthetic data and AI feedback generation with LLMs",
+   "tags": [
+    "synthetic",
+    "rlhf",
+    "open-source"
+   ],
+   "url": "https://github.com/argilla-io/distilabel",
+   "source": "https://github.com/argilla-io/distilabel",
+   "note": "Original authors moved on; maintained by community collaborators"
+  },
+  {
+   "name": "Dolma",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.web"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Allen Institute for AI (Ai2)",
+   "licence": "ODC-By (plus source terms)",
+   "access": "Download from Hugging Face",
+   "one_liner": "Open pretraining corpus (v1.7 ~1.7T tokens) used to train OLMo",
+   "tags": [
+    "web-data",
+    "pretraining",
+    "fully-open",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/allenai/dolma",
+   "source": "https://huggingface.co/datasets/allenai/dolma"
+  },
+  {
+   "name": "DROID",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "DROID team (Stanford, UC Berkeley, TRI and 13 institutions)",
+   "access": "Download from project site",
+   "one_liner": "76k teleoperated robot trajectories, ~350 hours across 564 scenes",
+   "tags": [
+    "robotics",
+    "open-source"
+   ],
+   "url": "https://droid-dataset.github.io/",
+   "source": "https://droid-dataset.github.io/"
+  },
+  {
+   "name": "Ego4D / Ego-Exo4D",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Meta FAIR with university consortium",
+   "licence": "Ego4D licence agreement (application required)",
+   "access": "Sign licence at ego4d-data.org; AWS download",
+   "one_liner": "Large egocentric video dataset for embodied perception",
+   "tags": [
+    "egocentric-video",
+    "robotics",
+    "open-source"
+   ],
+   "url": "https://ego4d-data.org/",
+   "source": "https://ego4d-data.org/docs/start-here/"
+  },
+  {
+   "name": "FineWeb",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.web",
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Hugging Face",
+   "licence": "ODC-By-1.0",
+   "access": "Stream via Hugging Face datasets library",
+   "one_liner": "18.5T-token deduplicated, filtered English web corpus from Common Crawl",
+   "tags": [
+    "web-data",
+    "pretraining",
+    "quality",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+   "source": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+   "note": "Grown from 15T to 18.5T tokens; FineWeb-Edu and multilingual FineWeb-2 are sibling sets"
+  },
+  {
+   "name": "Gymnasium",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.rlenv"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Farama Foundation",
+   "licence": "MIT",
+   "access": "pip install gymnasium",
+   "repo": "https://github.com/Farama-Foundation/Gymnasium",
+   "stars": 12500,
+   "archived": false,
+   "one_liner": "Standard single-agent RL environment API (successor to OpenAI Gym)",
+   "tags": [
+    "rl",
+    "standard-api",
+    "open-source"
+   ],
+   "url": "https://github.com/Farama-Foundation/Gymnasium",
+   "source": "https://github.com/Farama-Foundation/Gymnasium"
+  },
+  {
+   "name": "Humanity's Last Exam (HLE)",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.evaldata"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Center for AI Safety with Scale AI",
+   "licence": "MIT (gated)",
+   "access": "Accept conditions on Hugging Face",
+   "one_liner": "2,500 expert-written frontier questions across disciplines",
+   "tags": [
+    "evaluation",
+    "frontier",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/cais/hle",
+   "source": "https://huggingface.co/datasets/cais/hle"
+  },
+  {
+   "name": "IETF AI Preferences (aipref)",
+   "kind": "standard",
+   "subsegments": [
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "IETF aipref working group",
+   "access": "Implement vocabulary in robots.txt / HTTP headers",
+   "one_liner": "Draft standard vocabulary for publishers to express AI training/use preferences",
+   "tags": [
+    "consent",
+    "opt-out",
+    "open-standard"
+   ],
+   "url": "https://datatracker.ietf.org/wg/aipref/about/",
+   "source": "https://datatracker.ietf.org/doc/html/draft-ietf-aipref-vocab-08",
+   "note": "Still an Internet-Draft (vocab draft -08) in 2026"
+  },
+  {
+   "name": "Label Studio",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.label"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "HumanSignal (Heartex)",
+   "licence": "Apache-2.0",
+   "access": "pip install label-studio; self-host annotation UI",
+   "repo": "https://github.com/HumanSignal/label-studio",
+   "stars": 28200,
+   "archived": false,
+   "one_liner": "Multi-modal data labelling tool for text, image, audio and LLM preference/RLHF tasks",
+   "tags": [
+    "labelling",
+    "rlhf",
+    "open-source"
+   ],
+   "url": "https://github.com/HumanSignal/label-studio",
+   "source": "https://github.com/HumanSignal/label-studio"
+  },
+  {
+   "name": "LeRobot",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.physical",
+    "n6.world",
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Hugging Face",
+   "licence": "Apache-2.0",
+   "access": "pip install lerobot; datasets on Hugging Face Hub",
+   "repo": "https://github.com/huggingface/lerobot",
+   "stars": 28500,
+   "archived": false,
+   "one_liner": "Robotics library, LeRobotDataset format and SmolVLA policies; thousands of community datasets",
+   "tags": [
+    "robotics",
+    "open-source"
+   ],
+   "url": "https://github.com/huggingface/lerobot",
+   "source": "https://github.com/huggingface/lerobot"
+  },
+  {
+   "name": "LMArena human-preference datasets",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.label",
+    "n5.evaldata"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "LMArena",
+   "access": "Download from Hugging Face (lmarena-ai org)",
+   "one_liner": "Released crowd votes, e.g. arena-human-preference-140k, webdev and search arena preference sets",
+   "tags": [
+    "rlhf",
+    "evaluation",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/lmarena-ai",
+   "source": "https://huggingface.co/lmarena-ai"
+  },
+  {
+   "name": "MMLU-Pro",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.evaldata"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "open",
+   "steward": "TIGER-Lab (University of Waterloo)",
+   "licence": "MIT",
+   "access": "Download from Hugging Face",
+   "one_liner": "12k harder 10-option multitask knowledge/reasoning questions",
+   "tags": [
+    "evaluation",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro",
+   "source": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro"
+  },
+  {
+   "name": "MTEB",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.evaldata",
+    "n6.embed"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "MTEB community (embeddings-benchmark)",
+   "licence": "Apache-2.0",
+   "access": "pip install mteb; public leaderboard on Hugging Face",
+   "repo": "https://github.com/embeddings-benchmark/mteb",
+   "stars": 3400,
+   "archived": false,
+   "one_liner": "Massive Text Embedding Benchmark and leaderboard",
+   "tags": [
+    "evaluation",
+    "retrieval",
+    "open-source"
+   ],
+   "url": "https://github.com/embeddings-benchmark/mteb",
+   "source": "https://github.com/embeddings-benchmark/mteb"
+  },
+  {
+   "name": "NeMo Curator",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "Apache-2.0",
+   "access": "pip install nemo-curator; GPU-accelerated on Ray",
+   "repo": "https://github.com/NVIDIA-NeMo/Curator",
+   "stars": 1800,
+   "archived": false,
+   "one_liner": "GPU-accelerated curation for text, image and video training data",
+   "tags": [
+    "quality",
+    "cost",
+    "open-source"
+   ],
+   "url": "https://github.com/NVIDIA-NeMo/Curator",
+   "source": "https://github.com/NVIDIA-NeMo/Curator"
+  },
+  {
+   "name": "NeMo Data Designer",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "Apache-2.0",
+   "access": "pip install; run locally or via NeMo microservice",
+   "repo": "https://github.com/NVIDIA-NeMo/DataDesigner",
+   "stars": 2300,
+   "archived": false,
+   "one_liner": "Generate synthetic datasets from scratch or seed data with schema and validation",
+   "tags": [
+    "synthetic",
+    "open-source"
+   ],
+   "url": "https://github.com/NVIDIA-NeMo/DataDesigner",
+   "source": "https://github.com/NVIDIA-NeMo/DataDesigner"
+  },
+  {
+   "name": "NeMo Gym",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.rlenv"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "Apache-2.0",
+   "access": "pip install; pairs with NeMo RL",
+   "repo": "https://github.com/NVIDIA-NeMo/Gym",
+   "stars": 1200,
+   "archived": false,
+   "one_liner": "Build environments to evaluate and RL-train models and agents",
+   "tags": [
+    "rl",
+    "agents",
+    "open-source"
+   ],
+   "url": "https://github.com/NVIDIA-NeMo/Gym",
+   "source": "https://github.com/NVIDIA-NeMo/Gym"
+  },
+  {
+   "name": "Nemotron-CC v2",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.web",
+    "n5.synth"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "NVIDIA",
+   "licence": "NVIDIA Data Agreement for Model Training (gated)",
+   "access": "Accept agreement on Hugging Face",
+   "one_liner": "Multi-trillion-token Common Crawl corpus with LLM-rephrased synthetic variants",
+   "tags": [
+    "web-data",
+    "synthetic",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/nvidia/Nemotron-CC-v2",
+   "source": "https://huggingface.co/datasets/nvidia/Nemotron-CC-v2",
+   "note": "Training-only terms; synthetic parts may carry Qwen/DeepSeek licence obligations. NVIDIA also released Indic CC pretraining sets in 2026"
+  },
+  {
+   "name": "Open X-Embodiment",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.physical",
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Google DeepMind and 20+ institutions",
+   "licence": "CC-BY-4.0 (data); Apache-2.0 (code)",
+   "access": "Download RLDS datasets via TFDS / GCS",
+   "repo": "https://github.com/google-deepmind/open_x_embodiment",
+   "stars": 2000,
+   "one_liner": "Pooled robot demonstration data across 20+ robot embodiments",
+   "tags": [
+    "robotics",
+    "open-source"
+   ],
+   "url": "https://github.com/google-deepmind/open_x_embodiment",
+   "source": "https://github.com/google-deepmind/open_x_embodiment"
+  },
+  {
+   "name": "OpenEnv",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.rlenv"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Meta PyTorch with technical committee (Hugging Face, Prime Intellect, NVIDIA, Unsloth, others)",
+   "licence": "BSD-3-Clause",
+   "access": "pip install; environments shared on Hugging Face Hub",
+   "repo": "https://github.com/meta-pytorch/OpenEnv",
+   "stars": 2800,
+   "archived": false,
+   "one_liner": "Standard interface library for RL post-training environments",
+   "tags": [
+    "rl",
+    "agents",
+    "open-source"
+   ],
+   "url": "https://github.com/meta-pytorch/OpenEnv",
+   "source": "https://github.com/meta-pytorch/OpenEnv",
+   "note": "Launched late 2025; now under a multi-company technical committee"
+  },
+  {
+   "name": "Re-LAION-5B",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.web"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "LAION e.V.",
+   "licence": "Apache-2.0 (gated)",
+   "access": "Gated Hugging Face access; research use advised",
+   "one_liner": "5.5B image-text link pairs, cleaned re-release of LAION-5B",
+   "tags": [
+    "multimodal",
+    "web-data",
+    "safety",
+    "open-source"
+   ],
+   "url": "https://laion.ai/blog/relaion-5b/",
+   "source": "https://laion.ai/blog/relaion-5b/",
+   "note": "LAION-5B withdrawn Dec 2023 after CSAM-link findings; Re-LAION-5B (Aug 2024) removed ~2,236 flagged links; LAION advises against industrial use"
+  },
+  {
+   "name": "Reasoning Gym",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.rlenv"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "open",
+   "steward": "Open-Thought community",
+   "licence": "Apache-2.0",
+   "access": "pip install reasoning-gym",
+   "repo": "https://github.com/open-thought/reasoning-gym",
+   "stars": 1500,
+   "archived": false,
+   "one_liner": "100+ procedurally generated reasoning environments with verifiable rewards",
+   "tags": [
+    "rl",
+    "reasoning",
+    "open-source"
+   ],
+   "url": "https://github.com/open-thought/reasoning-gym",
+   "source": "https://github.com/open-thought/reasoning-gym"
+  },
+  {
+   "name": "RedPajama-Data-V2",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.web",
+    "n5.curation"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Together AI",
+   "licence": "Common Crawl Terms of Use (data); Apache-2.0 (code)",
+   "access": "Download from Hugging Face; ~1TB per snapshot",
+   "one_liner": "100B+ web documents from 84 Common Crawl snapshots with quality signals; ~30T deduplicated tokens",
+   "tags": [
+    "web-data",
+    "pretraining",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/togethercomputer/RedPajama-Data-V2",
+   "source": "https://huggingface.co/datasets/togethercomputer/RedPajama-Data-V2"
+  },
+  {
+   "name": "Robots Exclusion Protocol (RFC 9309)",
+   "kind": "standard",
+   "subsegments": [
+    "n5.gov",
+    "n5.web"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "IETF",
+   "access": "Publish robots.txt; crawlers honour per user-agent",
+   "one_liner": "Standard robots.txt rules, the main opt-out lever against AI crawlers",
+   "tags": [
+    "consent",
+    "opt-out",
+    "open-standard"
+   ],
+   "url": "https://www.rfc-editor.org/rfc/rfc9309",
+   "source": "https://www.rfc-editor.org/rfc/rfc9309"
+  },
+  {
+   "name": "Sangraha",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.web",
+    "n6.sovereign"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "open",
+   "steward": "AI4Bharat (IIT Madras)",
+   "licence": "CC-BY-4.0",
+   "access": "Download from Hugging Face",
+   "one_liner": "251B-token Indic pretraining corpus across 22 Indian languages (verified, synthetic, unverified splits)",
+   "tags": [
+    "india",
+    "multilingual",
+    "pretraining",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/ai4bharat/sangraha",
+   "source": "https://huggingface.co/datasets/ai4bharat/sangraha"
+  },
+  {
+   "name": "SWE-bench",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.evaldata",
+    "n6.code",
+    "n8.sandbox",
+    "n8.eval",
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "SWE-bench team (Princeton / Stanford)",
+   "licence": "MIT",
+   "access": "pip install; Docker harness; datasets on Hugging Face",
+   "repo": "https://github.com/SWE-bench/SWE-bench",
+   "stars": 6100,
+   "archived": false,
+   "one_liner": "Real GitHub issues as coding-agent benchmark; Verified (500), Multimodal, Multilingual variants",
+   "tags": [
+    "evaluation",
+    "code",
+    "open-source"
+   ],
+   "url": "https://github.com/SWE-bench/SWE-bench",
+   "source": "https://github.com/SWE-bench/SWE-bench",
+   "note": "SWE-bench Multimodal v2 fully open sourced Sep 2026 (480 tasks)"
+  },
+  {
+   "name": "Synthetic Data Vault (SDV)",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.synth"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "DataCebo",
+   "licence": "Business Source License (source-available, not OSI open source)",
+   "access": "pip install sdv; commercial production use needs licence",
+   "repo": "https://github.com/sdv-dev/SDV",
+   "stars": 3600,
+   "archived": false,
+   "one_liner": "Tabular, relational and time-series synthetic data generation",
+   "tags": [
+    "synthetic",
+    "privacy",
+    "source-available",
+    "open-source"
+   ],
+   "url": "https://github.com/sdv-dev/SDV",
+   "source": "https://github.com/sdv-dev/SDV",
+   "note": "Moved from MIT to Business Source License; listed honestly as source-available"
+  },
+  {
+   "name": "The Stack v2",
+   "kind": "open dataset",
+   "subsegments": [
+    "n5.web",
+    "n5.gov"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "BigCode (Hugging Face, ServiceNow) with Software Heritage",
+   "licence": "Gated terms of use; per-file original licences apply",
+   "access": "Accept terms on Hugging Face; fetch contents from Software Heritage S3",
+   "one_liner": "67.5TB source code in 600+ languages with per-file provenance and opt-out",
+   "tags": [
+    "code",
+    "web-data",
+    "provenance",
+    "open-source"
+   ],
+   "url": "https://huggingface.co/datasets/bigcode/the-stack-v2",
+   "source": "https://huggingface.co/datasets/bigcode/the-stack-v2",
+   "note": "v2.2.0 removed repos that opted out before 2026-07-29 via 'Am I in the Stack'"
+  },
+  {
+   "name": "verifiers + Environments Hub",
+   "kind": "open-source project",
+   "subsegments": [
+    "n5.rlenv"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "open",
+   "steward": "Prime Intellect",
+   "licence": "MIT",
+   "access": "pip install verifiers; browse/publish on Prime Intellect Environments Hub",
+   "repo": "https://github.com/PrimeIntellect-ai/verifiers",
+   "stars": 4700,
+   "archived": false,
+   "one_liner": "Library and public hub for RL environments and graders",
+   "tags": [
+    "rl",
+    "agents",
+    "open-source"
+   ],
+   "url": "https://github.com/PrimeIntellect-ai/verifiers",
+   "source": "https://github.com/PrimeIntellect-ai/verifiers"
+  }
+ ]
+}
