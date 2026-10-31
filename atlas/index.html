@@ -761,6 +761,7 @@ function renderFit(sub) {
     ${sub.persona ? "" : `<div class="notfound" style="padding-top:14px"><p style="font-size:13px;color:var(--muted)">Is this wrong or out of date? <a href="${esc(issueURL("atlas-correct.yml", "[Atlas] Correction: " + sub.name))}" target="_blank" rel="noopener">Suggest a correction</a> or <a href="${esc(issueURL("atlas-claim.yml", "[Atlas] Claim: " + sub.name))}" target="_blank" rel="noopener">claim this listing</a>.</p></div>`}`;
   st.fitSubject = sub;
   renderEgo($("#fitEgo"), {title: sub.name, sub: "", segs: sub.segs, root: true, url: sub.url});
+  writeHash();
 }
 /* ---------- ecosystem diagram ---------- */
 const EGO_STYLE = {sells: {c: "var(--ink)", d: ""}, optimises: {c: "var(--violet)", d: ""}, secures: {c: "var(--ink)", d: "5 4"}, channels: {c: "var(--peri)", d: ""}, implements: {c: "var(--muted)", d: "2 3"}, complements: {c: "var(--fine)", d: "2 3"}, finances: {c: "var(--peri)", d: "6 3"}, owns: {c: "var(--muted)", d: ""}};
