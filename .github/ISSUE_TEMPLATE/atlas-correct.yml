@@ -1,0 +1,23 @@
+name: "Atlas: correct a listing"
+description: Something is wrong, outdated or in the wrong box
+title: "[Atlas] Correction: "
+labels: ["atlas", "atlas:correction"]
+body:
+  - type: input
+    id: name
+    attributes: {label: Listing}
+    validations: {required: true}
+  - type: dropdown
+    id: what
+    attributes:
+      label: What changed
+      options: [Acquired or merged, Shut down or archived, Wrong box, Wrong description, Funding stage, Licence, Other]
+    validations: {required: true}
+  - type: textarea
+    id: detail
+    attributes: {label: What should it say}
+    validations: {required: true}
+  - type: input
+    id: source
+    attributes: {label: Source}
+    validations: {required: true}

@@ -1,0 +1,18 @@
+name: "Atlas: claim your listing"
+description: For companies that want to keep their own listing accurate
+title: "[Atlas] Claim: "
+labels: ["atlas", "atlas:claim"]
+body:
+  - type: markdown
+    attributes: {value: "Open this from a GitHub account that belongs to the company's organisation, or add a contact on the company's email domain. Claimed listings get a badge; edits still need a source and are reviewed."}
+  - type: input
+    id: name
+    attributes: {label: Listing}
+    validations: {required: true}
+  - type: input
+    id: who
+    attributes: {label: Your role and company email}
+    validations: {required: true}
+  - type: textarea
+    id: edits
+    attributes: {label: Changes you want (optional)}

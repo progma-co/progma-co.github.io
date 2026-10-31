@@ -1,0 +1,34 @@
+name: "Atlas: add a company or project"
+description: Suggest a company, open project, standard or investor for the AI Value Chain Atlas
+title: "[Atlas] Add: "
+labels: ["atlas", "atlas:add"]
+body:
+  - type: input
+    id: name
+    attributes: {label: Name, placeholder: "e.g. Divyam.AI"}
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes: {label: Website or repository}
+    validations: {required: true}
+  - type: input
+    id: box
+    attributes: {label: "Which box? (name or id, e.g. Model routers & AI gateways / n7.route)"}
+    validations: {required: true}
+  - type: textarea
+    id: oneliner
+    attributes: {label: What it sells or does, description: "One factual line, 20 words or fewer. No marketing language."}
+    validations: {required: true}
+  - type: input
+    id: hq
+    attributes: {label: Headquarters country}
+  - type: input
+    id: source
+    attributes: {label: Source, description: "A link that backs the description (product page, docs, filing or news)."}
+    validations: {required: true}
+  - type: checkboxes
+    id: rel
+    attributes:
+      label: Disclosure
+      options:
+        - label: I work for or represent this company (fine, just say so)

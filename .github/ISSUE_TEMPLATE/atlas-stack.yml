@@ -1,0 +1,16 @@
+name: "Atlas: submit a stack"
+description: Share the stack you run on for the community gallery
+title: "[Atlas] Stack: "
+labels: ["atlas", "atlas:stack"]
+body:
+  - type: input
+    id: title
+    attributes: {label: Stack title, placeholder: "e.g. Inference provider cost stack, Bengaluru"}
+    validations: {required: true}
+  - type: input
+    id: by
+    attributes: {label: Who runs it (optional)}
+  - type: textarea
+    id: json
+    attributes: {label: Stack, description: "Pasted automatically from Build my stack.", render: json}
+    validations: {required: true}
