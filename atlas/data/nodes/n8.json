@@ -311,7 +311,10 @@
     "security"
    ],
    "url": "https://www.arcade.dev",
-   "source": "https://www.arcade.dev"
+   "source": "https://www.arcade.dev/blog/arcade-series-a/",
+   "stage": "Series A",
+   "last_round": "$60M Series A, Jun 2026 (led by SYN Ventures)",
+   "round_source": "https://www.arcade.dev/blog/arcade-series-a/"
   },
   {
    "name": "Armilla AI",
@@ -875,8 +878,8 @@
    "region": "North America",
    "status": "private",
    "stage": "Series B",
-   "last_round": "$60M Series B, Aug 2026 (FirstMark, Bain Capital Ventures, Samsung NEXT, Qualcomm Ventures)",
-   "round_source": "https://www.cbinsights.com/company/daytona/financials",
+   "last_round": "$60M Series B at $1B valuation, Oct 2026 (led by FirstMark)",
+   "round_source": "https://www.therecursive.com/daytona-series-b-valuation-croatias-third-unicorn/",
    "one_liner": "Fast-start secure sandbox infrastructure for AI-generated code",
    "tags": [
     "performance"
@@ -1995,6 +1998,32 @@
    "source": "https://mindgard.ai"
   },
   {
+   "name": "Mintive",
+   "aka": [
+    "MintMCP"
+   ],
+   "kind": "company",
+   "subsegments": [
+    "n8.mcpgw",
+    "n8.identity",
+    "n8.security",
+    "n7.route"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$7M seed, Oct 2026 (led by Cowboy Ventures)",
+   "round_source": "https://techcrunch.com/2026/10/29/agent-identity-startup-mintive-lands-cowboy-ventures-coatue-angels-jeff-dean-andrej-karpathy/",
+   "one_liner": "MCP and LLM gateway with guardrails giving enterprise agents identity, permissions and tracing",
+   "url": "https://www.mintive.com",
+   "source": "https://www.businesswire.com/news/home/20261029787855/en/Mintive-Tops-2.5-Million-Daily-Agent-Calls-as-Enterprises-Make-AI-Agent-Identity-a-Security-Priority",
+   "tags": [
+    "security",
+    "enterprise"
+   ]
+  },
+  {
    "name": "ModelOp",
    "kind": "company",
    "subsegments": [
@@ -2527,13 +2556,14 @@
    "hq": "US",
    "region": "North America",
    "status": "open-source",
-   "parent": "Daily",
+   "parent": "Daily (Deepgram agreed to acquire Daily, Oct 2026)",
    "one_liner": "Open-source framework for real-time voice and multimodal agents",
    "tags": [
     "open-source"
    ],
    "url": "https://www.pipecat.ai",
-   "source": "https://www.pipecat.ai"
+   "source": "https://deepgram.com/blog/daily-pipecat-deepgram",
+   "note": "Deepgram is acquiring Daily (announced Oct 2026, pending); Pipecat to move to an independent Pipecat Foundation and stay open source"
   },
   {
    "name": "Pipedream",
@@ -2791,7 +2821,10 @@
     "open-source"
    ],
    "url": "https://restate.dev",
-   "source": "https://presenc.ai/research/ai-agent-infrastructure-startups-2026"
+   "source": "https://thenextweb.com/news/restate-20m-series-a-singular-durable-execution-ai-agents",
+   "stage": "Series A",
+   "last_round": "$20M Series A, Oct 2026 (led by Singular)",
+   "round_source": "https://thenextweb.com/news/restate-20m-series-a-singular-durable-execution-ai-agents"
   },
   {
    "name": "Runlayer",
@@ -3019,13 +3052,14 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "private",
+   "status": "acquired",
    "one_liner": "Registry and hosting platform for MCP servers",
    "tags": [
     "developer"
    ],
    "url": "https://smithery.ai",
-   "source": "https://smithery.ai"
+   "source": "https://www.forbes.com/sites/janakirammsv/2026/08/10/arcade-acquires-smithery-to-own-the-agent-tool-supply-chain/",
+   "parent": "Arcade.dev (Aug 2026)"
   },
   {
    "name": "Snowflake (Cortex AI, Snowflake Intelligence)",

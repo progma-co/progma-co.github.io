@@ -1,5 +1,5 @@
 {
- "asof": "31 Oct 2026",
+ "asof": "1 Nov 2026",
  "personas": [
   {
    "id": "inference",
@@ -223,11 +223,16 @@
  ],
  "changelog": [
   {
+   "date": "1 Nov 2026",
+   "text": "8 additions, 5 acquisitions/mergers, 1 shutdown, 11 corrections, 18 funding updates. Highlights: Qualcomm bought RISC-V CPU designer Akeana and Infineon completed C2i Semiconductors; Tenstorrent ($1.5B Series E), FuriosaAI (KRW 820B Series D) and Labelbox (Series E) raised; Deepgram agreed to buy Daily, steward of Pipecat; Google is folding Jules into Antigravity; LMArena is now Arena and Intercom is now Fin; new listings include General Compute, Akamai's inference service, Mintive, Town, Serval, Greptile, AISLE and AuxoAI."
+  },
+  {
    "date": "31 Oct 2026",
    "text": "Atlas published: 12 links in the chain, 171 segments, 1,860 companies, 453 open projects, standards and public programmes, 67 investors."
   }
  ],
  "analytics": {
   "goatcounter": ""
- }
+ },
+ "recheck_cursor": 0
 }
