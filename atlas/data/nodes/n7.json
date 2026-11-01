@@ -33,6 +33,28 @@
    "source": "https://agentgateway.dev"
   },
   {
+   "name": "Akamai",
+   "aka": [
+    "Akamai Inference Cloud",
+    "Akamai agent sandbox"
+   ],
+   "kind": "company",
+   "subsegments": [
+    "n7.api",
+    "n8.sandbox"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Managed OpenAI-compatible inference for open-weight models and a WebAssembly sandbox for agent code (beta)",
+   "url": "https://www.akamai.com",
+   "source": "https://www.infobae.com/america/agencias/2026/10/30/google-anuncia-el-cierre-de-su-agente-de-codificacion-jules-que-se-unificara-con-la-plataforma-antigravity/",
+   "tags": [
+    "developer",
+    "security"
+   ]
+  },
+  {
    "name": "Apheris",
    "kind": "company",
    "subsegments": [
@@ -1201,7 +1223,10 @@
    ],
    "url": "https://trustedrouter.com",
    "source": "https://dealroom.co/news/163714-ai-router-trustedrouter-raises-6m-seed-to-keep-prompts-private/",
-   "note": "$6M seed led by Sierra Ventures, Oct 2026"
+   "note": "$6M seed led by Sierra Ventures, Oct 2026",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$6M seed, Oct 2026 (led by Sierra Ventures)",
+   "round_source": "https://finance.yahoo.com/technology/ai/articles/openrouter-challenger-closes-seed-round-163331577.html"
   },
   {
    "name": "Turiyam.ai",

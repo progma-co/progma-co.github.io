@@ -155,14 +155,15 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "private",
+   "status": "acquired",
    "one_liner": "AI 'digital twin' for each sales rep: captures calls, email, Slack and CRM, flags deal risk, drafts follow-ups",
    "tags": [
     "enterprise"
    ],
    "url": "https://getaida.com",
-   "source": "https://getaida.com",
-   "note": "Offices in Palo Alto and Gurugram"
+   "source": "https://legaltechnology.com/harvey-makes-fifth-acquisition-of-2026-with-aida",
+   "note": "Acquired by Harvey (Oct 2026); offices in Palo Alto and Gurugram",
+   "parent": "Harvey (Oct 2026)"
   },
   {
    "name": "Aidoc",
@@ -193,6 +194,23 @@
    ],
    "url": "https://aisera.com",
    "source": "https://aisera.com"
+  },
+  {
+   "name": "AISLE",
+   "kind": "company",
+   "subsegments": [
+    "n9.secops"
+   ],
+   "hq": "CZ",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Autonomous AI that finds, validates and helps patch unknown vulnerabilities in production software",
+   "url": "https://aisle.com",
+   "source": "https://evertiq.com/news/2026-10-16-cohere-to-acquire-aisle-to-advance-cyber-resilient-sovereign-ai",
+   "tags": [
+    "security"
+   ],
+   "note": "Cohere announced a proposed acquisition (Oct 2026), not yet closed"
   },
   {
    "name": "Alef Education",
@@ -944,7 +962,7 @@
    "one_liner": "Legal practice management with vLex's Vincent AI legal research",
    "url": "https://www.clio.com",
    "source": "https://www.clio.com",
-   "note": "Completed $1B vLex acquisition (2025)"
+   "note": "Completed $1B vLex acquisition (2025); acquired Page, AI regulatory horizon-scanning (Oct 2026)"
   },
   {
    "name": "CoCounsel (Thomson Reuters)",
@@ -1016,7 +1034,7 @@
    ],
    "url": "https://cognition.ai",
    "source": "https://runtimewire.com/article/cognition-series-e-48-billion-valuation-scott-wu",
-   "note": "Acquired Windsurf July 2025; raised >$2B at $48B valuation (Sep 2026)"
+   "note": "Acquired Windsurf July 2025; raised >$2B at $48B valuation (Sep 2026); acquiring Corridor, AI code security (Oct 2026)"
   },
   {
    "name": "Common Room",
@@ -2002,12 +2020,13 @@
    "region": "North America",
    "status": "public",
    "parent": "Alphabet",
-   "one_liner": "Google's agent-first IDE and asynchronous coding agent",
+   "one_liner": "Google's agent-first IDE; the Jules asynchronous coding agent is being folded into it",
    "tags": [
     "developer"
    ],
    "url": "https://antigravity.google",
-   "source": "https://antigravity.google"
+   "source": "https://www.infobae.com/america/agencias/2026/10/30/google-anuncia-el-cierre-de-su-agente-de-codificacion-jules-que-se-unificara-con-la-plataforma-antigravity/",
+   "note": "Google announced on 30 Oct 2026 that Jules will shut down and its capabilities move into Antigravity"
   },
   {
    "name": "Google Cloud Marketplace (AI agents)",
@@ -2124,6 +2143,25 @@
    "note": "$13.3M Series A (Sep 2026); seed from Bessemer"
   },
   {
+   "name": "Greptile",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "stage": "Series B",
+   "last_round": "$50M Series B at $750M valuation, Oct 2026 (Menlo Ventures)",
+   "round_source": "https://roundos.ai/funding/deals/greptile-series-b-2026-10-19",
+   "one_liner": "AI code review agent that reviews pull requests against the full codebase",
+   "url": "https://www.greptile.com",
+   "source": "https://roundos.ai/funding/deals/greptile-series-b-2026-10-19",
+   "tags": [
+    "developer"
+   ]
+  },
+  {
    "name": "Grok (xAI)",
    "kind": "company",
    "subsegments": [
@@ -2223,7 +2261,7 @@
    ],
    "url": "https://www.harvey.ai",
    "source": "https://www.artificiallawyer.com/2026/10/21/legora-vs-harvey-the-multi-billion-ai-battle/",
-   "note": "~$15.5B valuation (Sep 2026); acquired Hexus (Jan 2026)"
+   "note": "~$15.5B valuation (Sep 2026); acquired Hexus (Jan 2026) and Aida (Oct 2026)"
   },
   {
    "name": "Hebbia",
@@ -2534,7 +2572,7 @@
    "note": "$12.5M Series A (Sep 2025); Egypt/Saudi"
   },
   {
-   "name": "Intercom Fin",
+   "name": "Fin",
    "kind": "company",
    "subsegments": [
     "n9.support"
@@ -2542,10 +2580,14 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
-   "parent": "Intercom",
    "one_liner": "AI support agent resolving customer queries across channels",
    "url": "https://fin.ai",
-   "source": "https://fin.ai"
+   "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Signs-Definitive-Agreement-to-Acquire-Fin/default.aspx",
+   "aka": [
+    "Intercom",
+    "Intercom Fin"
+   ],
+   "note": "Intercom renamed itself Fin; Salesforce signed a definitive agreement to acquire it for ~$3.6B (Jun 2026), pending close"
   },
   {
    "name": "Intron Health",
@@ -3691,7 +3733,9 @@
    "status": "private",
    "one_liner": "AI meeting transcription, summaries and meeting agents",
    "url": "https://otter.ai",
-   "source": "https://otter.ai"
+   "source": "https://www.businesswire.com/news/home/20261020026393/en/General-Catalyst-Backs-Otter.ais-Voice-AI-Ambitions-with-$320M-Growth-Investment",
+   "last_round": "$320M growth financing from General Catalyst's Customer Value Fund, Oct 2026",
+   "round_source": "https://www.businesswire.com/news/home/20261020026393/en/General-Catalyst-Backs-Otter.ais-Voice-AI-Ambitions-with-$320M-Growth-Investment"
   },
   {
    "name": "Outreach",
@@ -3968,7 +4012,10 @@
    "status": "private",
    "one_liner": "AI planning and FP&A platform with planning agents",
    "url": "https://www.pigment.com",
-   "source": "https://www.pigment.com"
+   "source": "https://www.pigment.com/newsroom/pigment-raises-250m-series-e",
+   "stage": "Series C+",
+   "last_round": "$250M Series E at $2.3B valuation, Oct 2026 (led by Scaleup Europe Fund)",
+   "round_source": "https://www.pigment.com/newsroom/pigment-raises-250m-series-e"
   },
   {
    "name": "Plaud",
@@ -4496,6 +4543,26 @@
    ],
    "url": "https://www.safran-group.com",
    "source": "https://www.safran-group.com"
+  },
+  {
+   "name": "Serval",
+   "kind": "company",
+   "subsegments": [
+    "n9.itops",
+    "n9.agentic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "stage": "Series C+",
+   "last_round": "$150M Series C at $3B valuation, Oct 2026 (Sequoia)",
+   "round_source": "https://finance.yahoo.com/technology/ai/articles/serval-raises-150m-series-c-130000509.html",
+   "one_liner": "AI service-management platform letting IT, HR and finance teams build automations without engineers",
+   "url": "https://www.serval.com",
+   "source": "https://finance.yahoo.com/technology/ai/articles/serval-raises-150m-series-c-130000509.html",
+   "tags": [
+    "enterprise"
+   ]
   },
   {
    "name": "Shield AI",
@@ -5049,6 +5116,26 @@
    "url": "https://torq.io",
    "source": "https://torq.io/news/torq-acquires-israel-based-revrod-to-enhance-soc-capabilities",
    "note": "Acquired Israeli startup RevRod"
+  },
+  {
+   "name": "Town",
+   "kind": "company",
+   "subsegments": [
+    "n9.assistant",
+    "n9.agentic"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "stage": "Series B",
+   "last_round": "$108M Series B at $1B valuation, Oct 2026 (Forerunner, Menlo)",
+   "round_source": "https://www.town.com/press/series-b",
+   "one_liner": "Personal AI assistants for every employee that connect to work tools and collaborate across teams",
+   "url": "https://www.town.com",
+   "source": "https://www.town.com/press/series-b",
+   "tags": [
+    "enterprise"
+   ]
   },
   {
    "name": "Tractable",

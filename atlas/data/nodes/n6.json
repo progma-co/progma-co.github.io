@@ -280,7 +280,7 @@
    ],
    "url": "https://www.anthropic.com",
    "source": "https://www.anthropic.com",
-   "note": "Azure $30B/1 GW (Nov 2025); Google TPUs up to 1 GW (Oct 2025); xAI/SpaceX >$40B (May 2026); Nscale $45B, Lambda $35B (Aug 2026, reported)"
+   "note": "Azure $30B/1 GW (Nov 2025); Google TPUs up to 1 GW (Oct 2025); xAI/SpaceX >$40B (May 2026); Nscale $45B, Lambda $35B (Aug 2026, reported); filed S-1 to list on Nasdaq as ANT (Oct 2026, not yet priced)"
   },
   {
    "name": "Apollo Research",
@@ -372,7 +372,10 @@
     "cost"
    ],
    "url": "https://www.arcee.ai",
-   "source": "https://www.arcee.ai"
+   "source": "https://fortune.com/2026/09/16/arcee-ai-trained-four-models-for-20-million-now-its-worth-1-billion/",
+   "stage": "Series B",
+   "last_round": "Series B at $1B pre-money, Sep 2026 (led by Vista Equity, Cambium, Emergence; amount undisclosed)",
+   "round_source": "https://fortune.com/2026/09/16/arcee-ai-trained-four-models-for-20-million-now-its-worth-1-billion/"
   },
   {
    "name": "Artificial Analysis",
@@ -693,7 +696,7 @@
    ],
    "url": "https://cohere.com",
    "source": "https://siliconangle.com/2026/09/16/cohere-and-aleph-alpha-agree-to-merge-in-reported-20b-deal/",
-   "note": "Agreed to combine with Aleph Alpha (announced Apr 2026, merger agreement Sep 2026, reported ~$20B combined; pending regulatory clearance); dual HQ Berlin/Toronto planned"
+   "note": "Agreed to combine with Aleph Alpha (announced Apr 2026, merger agreement Sep 2026, reported ~$20B combined; pending regulatory clearance); dual HQ Berlin/Toronto planned; proposed acquisition of AISLE, AI vulnerability discovery (Oct 2026)"
   },
   {
    "name": "Contextual AI",
@@ -801,7 +804,8 @@
     "enterprise"
    ],
    "url": "https://deepgram.com",
-   "source": "https://deepgram.com"
+   "source": "https://deepgram.com",
+   "note": "Agreed to acquire Daily, steward of Pipecat (Oct 2026, pending)"
   },
   {
    "name": "DeepSeek",
@@ -826,7 +830,7 @@
    ],
    "url": "https://www.deepseek.com",
    "source": "https://www.trendingtopics.eu/after-kimi-k3-coup-moonshot-ai-aims-for-hong-kong-ipo-within-six-months/",
-   "note": "Reported IPO preparation for 2027 and large 2026 funding (secondary source, unconfirmed)"
+   "note": "Reported ~$15B raise at ~$74B pre-money (Oct 2026; press reports, not confirmed by DeepSeek); reported IPO preparation for 2027"
   },
   {
    "name": "Distil Labs",
@@ -1912,7 +1916,7 @@
    "note": "NOT open source: app is closed-source; July 2025 dropped separate commercial licence, now free for work."
   },
   {
-   "name": "LMArena",
+   "name": "Arena",
    "kind": "company",
    "subsegments": [
     "n6.safety",
@@ -1922,16 +1926,19 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
-   "stage": "Pre-seed/Seed",
-   "last_round": "$100M seed, May 2025",
-   "round_source": "https://lmarena.ai",
+   "stage": "Series B",
+   "last_round": "$200M Series B at $3.1B valuation, Oct 2026 (led by Lightspeed, Khosla)",
+   "round_source": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
    "one_liner": "Crowdsourced head-to-head model leaderboard and evaluation service",
    "tags": [
     "performance"
    ],
    "url": "https://lmarena.ai",
-   "source": "https://lmarena.ai",
-   "note": "Spun out of UC Berkeley; $100M seed (May 2025)"
+   "source": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+   "note": "Spun out of UC Berkeley; renamed from LMArena; $100M seed (May 2025)",
+   "aka": [
+    "LMArena"
+   ]
   },
   {
    "name": "Luma AI",
@@ -2143,8 +2150,8 @@
    "region": "Europe",
    "status": "private",
    "stage": "Series C+",
-   "last_round": "EUR1.7B Series C led by ASML at EUR11.7B valuation, Sep 2025",
-   "round_source": "https://mistral.ai",
+   "last_round": "EUR3B Series D at >EUR21B post-money, Sep 2026 (led by Samsung Electronics)",
+   "round_source": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
    "one_liner": "European open-weight and commercial LLMs, coding, voice and on-prem enterprise deployments",
    "tags": [
     "open-source",
@@ -2152,8 +2159,8 @@
     "enterprise"
    ],
    "url": "https://mistral.ai",
-   "source": "https://mistral.ai",
-   "note": "€1.7B Series C led by ASML at €11.7B valuation (Sep 2025)"
+   "source": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
+   "note": "€3B Series D led by Samsung at >€21B post-money (Sep 2026); €1.7B Series C led by ASML (Sep 2025)"
   },
   {
    "name": "Mixedbread",
@@ -2368,7 +2375,10 @@
     "open-source"
    ],
    "url": "https://nousresearch.com",
-   "source": "https://nousresearch.com"
+   "source": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+   "stage": "Series B",
+   "last_round": "$90M Series B at $1.5B valuation, Oct 2026 (led by Robot Ventures)",
+   "round_source": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/"
   },
   {
    "name": "NTT (tsuzumi)",

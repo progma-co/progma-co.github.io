@@ -379,14 +379,15 @@
    ],
    "hq": "IN",
    "region": "India",
-   "status": "private",
+   "status": "acquired",
    "one_liner": "Power-management silicon for AI data-centre racks",
    "tags": [
     "cost"
    ],
    "url": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
-   "source": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
-   "note": "Raised >$10M in Jan-May 2026"
+   "source": "https://www.infineon.com/press-release/2026/infpr202610-002",
+   "note": "Acquisition by Infineon completed Oct 2026",
+   "parent": "Infineon (Oct 2026)"
   },
   {
    "name": "Calligo Technologies",
@@ -691,8 +692,11 @@
     "sovereign"
    ],
    "url": "https://furiosa.ai",
-   "source": "https://www.bloomberg.com/news/articles/2026-01-19/ai-chip-startup-furiosaai-plans-500-million-round-before-ipo",
-   "note": "Rejected Meta's ~$800M takeover offer 2025; ~$500M pre-IPO round Jan 2026"
+   "source": "https://www.thelec.net/news/articleView.html?idxno=15054",
+   "note": "Rejected Meta's ~$800M takeover offer 2025; largest Series D investor is Korea's National Growth Fund",
+   "stage": "Series C+",
+   "last_round": "KRW 820B (~$600M) Series D at ~KRW 3.8T post-money, Oct 2026",
+   "round_source": "https://www.thelec.net/news/articleView.html?idxno=15054"
   },
   {
    "name": "Google Axion",
@@ -1657,7 +1661,10 @@
    ],
    "url": "https://www.salience-labs.com",
    "source": "https://www.datacenterdynamics.com/en/news/optical-switching-startup-salience-labs-raises-125m-with-amd-and-intel-participating-in-round/",
-   "note": "$125M Series B with AMD and Intel participating (2026)"
+   "note": "$125M Series B with AMD and Intel participating (2026)",
+   "stage": "Series B",
+   "last_round": "$125M Series B, Oct 2026 (led by Bullhound Capital)",
+   "round_source": "https://tech.eu/2026/10/14/salience-labs-secures-125m-to-scale-photonic-chips-for-ai-data-centres/"
   },
   {
    "name": "SambaNova",
