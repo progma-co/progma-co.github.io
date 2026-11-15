@@ -110,6 +110,25 @@
    "source": "https://cactuscompute.com"
   },
   {
+   "name": "CentML",
+   "kind": "company",
+   "subsegments": [
+    "n7.opt",
+    "n2.sw"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "NVIDIA (2025)",
+   "one_liner": "Compiler and serving optimisation to cut model training and inference cost on GPUs",
+   "tags": [
+    "performance",
+    "cost"
+   ],
+   "url": "https://centml.ai",
+   "source": "https://www.privsource.com/acquisitions/deal/e4S5Gd"
+  },
+  {
    "name": "Clarifai",
    "kind": "company",
    "subsegments": [

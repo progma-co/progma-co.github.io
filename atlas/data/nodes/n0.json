@@ -2144,6 +2144,20 @@
    "note": "Committed capital above $380M (2026)"
   },
   {
+   "name": "Redwood Materials",
+   "kind": "company",
+   "subsegments": [
+    "n0.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "note": "NVentures in 50M Series E (Oct 2025)",
+   "one_liner": "Battery recycling and second-life battery storage systems, including bridge power for AI data centres",
+   "url": "https://www.redwoodmaterials.com",
+   "source": "https://www.latitudemedia.com/news/nvidia-is-investing-in-battery-recycler-redwood-materials/"
+  },
+  {
    "name": "ReNew",
    "kind": "company",
    "subsegments": [
