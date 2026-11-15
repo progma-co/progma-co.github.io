@@ -1125,7 +1125,8 @@
     "enterprise"
    ],
    "url": "https://cresta.com",
-   "source": "https://cresta.com"
+   "source": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-cresta/",
+   "parent": "Salesforce (agreed Nov 2026)"
   },
   {
    "name": "Cropin",
@@ -1802,7 +1803,8 @@
    "status": "private",
    "one_liner": "AI agents for support triage, resolution and agent assist",
    "url": "https://forethought.ai",
-   "source": "https://forethought.ai"
+   "source": "https://techcrunch.com/2026/03/11/zendesk-acquires-agentic-customer-service-startup-forethought",
+   "parent": "Zendesk (agreed Mar 2026)"
   },
   {
    "name": "FourKites",
@@ -2534,7 +2536,7 @@
    "note": "$12.5M Series A (Sep 2025); Egypt/Saudi"
   },
   {
-   "name": "Intercom Fin",
+   "name": "Fin",
    "kind": "company",
    "subsegments": [
     "n9.support"
@@ -2542,10 +2544,14 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
-   "parent": "Intercom",
+   "parent": "Salesforce (agreed Jun 2026)",
    "one_liner": "AI support agent resolving customer queries across channels",
    "url": "https://fin.ai",
-   "source": "https://fin.ai"
+   "source": "https://martech.org/salesforce-acquires-fin-formerly-known-as-intercom/",
+   "aka": [
+    "Intercom Fin",
+    "Intercom"
+   ]
   },
   {
    "name": "Intron Health",

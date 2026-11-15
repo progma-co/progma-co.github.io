@@ -27,7 +27,7 @@
    "tags": [
     "sovereign"
    ],
-   "url": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
+   "url": "https://agranilabs.com",
    "source": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/"
   },
   {
@@ -47,6 +47,20 @@
    ],
    "url": "https://www.t-head.cn",
    "source": "https://www.t-head.cn"
+  },
+  {
+   "name": "Alif Semiconductor",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "acquired",
+   "parent": "Analog Devices (2026)",
+   "one_liner": "Microcontrollers and fusion processors with integrated NPUs for on-device AI",
+   "url": "https://alifsemi.com",
+   "source": "https://www.analog.com/en/newsroom/press-releases/2026/11-3-2026-ad-completes-acquisition-of-alif-semiconductor.html"
   },
   {
    "name": "Alpha and Omega Semiconductor",
@@ -162,7 +176,7 @@
    "tags": [
     "cost"
    ],
-   "url": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in",
+   "url": "https://www.arago.inc",
    "source": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in"
   },
   {
@@ -266,7 +280,7 @@
    "tags": [
     "sovereign"
    ],
-   "url": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
+   "url": "https://bigendiansemi.com",
    "source": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/"
   },
   {
@@ -384,7 +398,7 @@
    "tags": [
     "cost"
    ],
-   "url": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
+   "url": "https://c2isemi.com",
    "source": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
    "note": "Raised >$10M in Jan-May 2026"
   },
@@ -401,7 +415,7 @@
    "tags": [
     "performance"
    ],
-   "url": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/",
+   "url": "https://calligotech.com",
    "source": "https://indianinfrastructure.com/2026/06/02/indian-semiconductor-startups-raise-92-million-in-first-five-months-of-2026/"
   },
   {
@@ -640,7 +654,7 @@
     "performance",
     "sovereign"
    ],
-   "url": "https://dealroom.co/news/150767-samsung-backs-nvidia-rival-euclyd-in-230m-series-a/",
+   "url": "https://www.euclyd.ai",
    "source": "https://dealroom.co/news/150767-samsung-backs-nvidia-rival-euclyd-in-230m-series-a/",
    "note": "~$230M Series A with Samsung participating (Sep 2026)"
   },
@@ -661,6 +675,24 @@
    "source": "https://www.extropic.ai"
   },
   {
+   "name": "Ferric",
+   "kind": "company",
+   "subsegments": [
+    "n2.power"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "parent": "onsemi (agreed Nov 2026)",
+   "one_liner": "Integrated voltage regulator chiplets that deliver power close to AI and high-performance processors",
+   "tags": [
+    "performance"
+   ],
+   "url": "https://www.ferricsemi.com",
+   "source": "https://www.credenceresearch.com/news/onsemi-acquire-ferric-775-million-integrated-voltage-regulators-ai-processors",
+   "note": "onsemi agreed to acquire for $600M cash plus up to $175M milestones (Nov 2026); close expected Q4 2026"
+  },
+  {
    "name": "Fractile",
    "kind": "company",
    "subsegments": [
@@ -674,7 +706,10 @@
     "performance"
    ],
    "url": "https://www.fractile.ai",
-   "source": "https://www.fractile.ai"
+   "source": "https://siliconangle.com/2026/11/11/inference-chip-developer-fractile-raises-720m-in-funding/",
+   "stage": "Series C+",
+   "last_round": "$720M Series C at $7B valuation, Nov 2026 (Thrive, Founders Fund, Lightspeed, Redpoint)",
+   "round_source": "https://siliconangle.com/2026/11/11/inference-chip-developer-fractile-raises-720m-in-funding/"
   },
   {
    "name": "FuriosaAI",
@@ -1081,8 +1116,8 @@
    "tags": [
     "cost"
    ],
-   "url": "https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/",
-   "source": "https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/",
+   "url": "https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/",
+   "source": "https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/",
    "note": "Meta acquired RISC-V chip startup Rivos (2025) to deepen in-house silicon"
   },
   {
@@ -1260,7 +1295,7 @@
    "tags": [
     "sovereign"
    ],
-   "url": "https://apacnewsnetwork.com/2025/07/chip-design-startups-gain-momentum-netrasemi-secures-rs-107-cr-investment/amp",
+   "url": "https://www.netrasemi.com",
    "source": "https://apacnewsnetwork.com/2025/07/chip-design-startups-gain-momentum-netrasemi-secures-rs-107-cr-investment/amp",
    "note": "Rs 107 crore raise (Jul 2025)"
   },
@@ -1405,18 +1440,22 @@
    "name": "Olix Computing",
    "kind": "company",
    "subsegments": [
-    "n2.startup"
+    "n2.startup",
+    "n2.photonic"
    ],
    "hq": "GB",
    "region": "Europe",
    "status": "private",
-   "one_liner": "UK AI chip startup (formerly Flux Computing) building accelerators for AI workloads",
+   "one_liner": "UK AI chip startup (formerly Flux Computing) building photonic inference systems that avoid HBM",
    "tags": [
     "performance"
    ],
-   "url": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in",
-   "source": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in",
-   "note": "Rebranded from Flux Computing and raised $220M (Jan 2026)"
+   "url": "https://olix.com",
+   "source": "https://olix.com/news/company-raises-series-b",
+   "note": "Rebranded from Flux Computing; raised ~$220M (early 2026) and $312M Series B (Aug 2026)",
+   "stage": "Series B",
+   "last_round": "$312M Series B at $3.3B valuation, Aug 2026",
+   "round_source": "https://olix.com/news/company-raises-series-b"
   },
   {
    "name": "onsemi",
@@ -1912,8 +1951,8 @@
    "status": "public",
    "parent": "Thomson Reuters",
    "one_liner": "Global trade management and export compliance software",
-   "url": "https://tax.thomsonreuters.com/en/onesource/global-trade",
-   "source": "https://tax.thomsonreuters.com/en/onesource/global-trade"
+   "url": "https://tax.thomsonreuters.com/onesource/global-trade-management",
+   "source": "https://tax.thomsonreuters.com/onesource/global-trade-management"
   },
   {
    "name": "tinygrad (tiny corp)",
@@ -1997,7 +2036,7 @@
    "tags": [
     "cost"
    ],
-   "url": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in",
+   "url": "https://vaire.co",
    "source": "https://ai2.work/blog/ai-chip-startups-raise-8-3b-as-investors-bet-against-nvidia-gpu-lock-in"
   },
   {
@@ -2242,7 +2281,7 @@
     "open-source",
     "sovereign"
    ],
-   "url": "https://www.huawei.com/en/news/2025/9/hc-shengten-opensource",
+   "url": "https://www.hiascend.com/eng/cann",
    "source": "https://www.huawei.com/en/news/2025/9/hc-shengten-opensource",
    "note": "Operators open-sourced on GitCode Sep 2025; GE, Ascend C and MindIE committed for Dec 2025"
   },

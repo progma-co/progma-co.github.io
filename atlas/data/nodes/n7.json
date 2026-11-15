@@ -61,7 +61,7 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "private",
+   "status": "acquired",
    "stage": "Series C+",
    "last_round": "$70M Series C, Feb 2025",
    "round_source": "https://arize.com/blog/arize-ai-raises-70m-series-c-to-build-the-gold-standard-for-ai-evaluation-observability",
@@ -71,8 +71,9 @@
     "open-source"
    ],
    "url": "https://arize.com",
-   "source": "https://arize.com",
-   "note": "Raised $70M Series C (Feb 2025)"
+   "source": "https://dynatrace.com/news/press-release/dynatrace-completes-acquisition-of-arize",
+   "note": "Raised $70M Series C (Feb 2025)",
+   "parent": "Dynatrace (2026)"
   },
   {
    "name": "Bifrost (Maxim AI)",
@@ -401,8 +402,11 @@
     "cost"
    ],
    "url": "https://gimletlabs.com",
-   "source": "https://aifunding.me/companies/gimlet-labs",
-   "note": "$80M Series A Mar 2026; reported $300M at $3B Sep 2026"
+   "source": "https://siliconangle.com/2026/09/04/gimlet-labs-nabs-300m-for-its-disaggregated-inference-platform/",
+   "note": "$80M Series A Mar 2026; $300M Series B Sep 2026",
+   "stage": "Series B",
+   "last_round": "$300M Series B led by a16z at $3B valuation, Sep 2026",
+   "round_source": "https://siliconangle.com/2026/09/04/gimlet-labs-nabs-300m-for-its-disaggregated-inference-platform/"
   },
   {
    "name": "Google LiteRT / AI Edge",
@@ -1078,7 +1082,10 @@
    ],
    "url": "https://www.tensormesh.ai",
    "source": "https://siliconangle.com/2026/05/27/tensormesh-taps-nvidia-amd-coreweave-funding-fix-llm-memory-problems/",
-   "note": "$4.5M seed (2025) then $20M with NVIDIA, AMD, CoreWeave (May 2026); launched Tensormesh Inference"
+   "note": "$4.5M seed (2025) then $20M with NVIDIA, AMD, CoreWeave (May 2026); launched Tensormesh Inference",
+   "stage": "Pre-seed/Seed",
+   "last_round": "$20M seed extension, May 2026 (AMD Ventures, CoreWeave, NVentures)",
+   "round_source": "https://pulse2.com/tensormesh-20-million-raised-to-scale-kv-caching-infrastructure-for-enterprise-ai-inference/"
   },
   {
    "name": "The Token Company",

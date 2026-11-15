@@ -274,7 +274,7 @@
    "status": "private",
    "one_liner": "Marketplace for reserved GPU capacity plus used and refurbished GPUs",
    "tags": [],
-   "url": "https://siliconangle.com/2026/07/17/compute-exchange-opens-secondary-market-used-nvidia-h100-a100-gpus/",
+   "url": "https://compute.exchange",
    "source": "https://siliconangle.com/2026/07/17/compute-exchange-opens-secondary-market-used-nvidia-h100-a100-gpus/",
    "note": "Jul 2026: launched used/refurbished H100/A100 marketplace"
   },
@@ -880,7 +880,9 @@
    "status": "public",
    "one_liner": "EML/CW lasers, transceivers and optical circuit switches",
    "url": "https://www.lumentum.com",
-   "source": "https://www.lumentum.com"
+   "source": "https://www.tomshardware.com/tech-industry/semiconductors/marvell-to-buy-lumentum-in-usd115-billion-all-stock-deal-combined-company-to-supply-scale-up-and-scale-in-optics-for-ai-data-centers",
+   "parent": "Marvell (agreed Nov 2026)",
+   "note": "Marvell agreed to acquire in an all-stock deal, Nov 2026; close expected H1 2028"
   },
   {
    "name": "MinIO",
@@ -1752,7 +1754,7 @@
     "open-standard",
     "performance"
    ],
-   "url": "https://www.opencompute.org/news/the-ocp-esun-10-specification-has-been-released/",
+   "url": "https://www.opencompute.org/projects/semi-private-workstreams/ethernet-for-scale-up-networking/",
    "source": "https://www.opencompute.org/news/the-ocp-esun-10-specification-has-been-released/",
    "note": "ESUN 1.0 released Mar 2026; 175+ participating companies"
   },
