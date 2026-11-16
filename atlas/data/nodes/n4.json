@@ -1032,7 +1032,7 @@
    "tags": [
     "sovereign"
    ],
-   "url": "https://internet.gmo/en/news/article/26/",
+   "url": "https://gpucloud.gmo/services/",
    "source": "https://internet.gmo/en/news/article/26/"
   },
   {
@@ -1146,8 +1146,11 @@
    "tags": [
     "sovereign"
    ],
-   "url": "https://www.spheron.network/blog/gpu-cloud-providers-japan-2026/",
-   "source": "https://www.spheron.network/blog/gpu-cloud-providers-japan-2026/"
+   "url": "https://highreso.jp/en/",
+   "source": "https://thebridge.jp/en/2026/02/gpu-cloud-gpusoroban-by-highreso-secures-funding-from-mitsubishi-ufj-capital",
+   "aka": [
+    "GPUSOROBAN"
+   ]
   },
   {
    "name": "Hivenet",
@@ -2030,7 +2033,10 @@
    ],
    "url": "https://netris.io",
    "source": "https://thenextweb.com/news/netris-15m-series-a-a16z-neocloud-gpu-network-automation",
-   "note": "$15M Series A led by Andreessen Horowitz (June 2026)"
+   "note": "$15M Series A led by Andreessen Horowitz (June 2026)",
+   "stage": "Series A",
+   "last_round": "$15M Series A from a16z, Jun 2026",
+   "round_source": "https://thenextweb.com/news/netris-15m-series-a-a16z-neocloud-gpu-network-automation"
   },
   {
    "name": "Neysa",
@@ -2368,7 +2374,8 @@
    "kind": "company",
    "subsegments": [
     "n4.neo",
-    "n4.sovereign"
+    "n4.sovereign",
+    "n0.dcdev"
    ],
    "hq": "DE",
    "region": "Europe",
@@ -2377,7 +2384,7 @@
    "tags": [
     "sovereign"
    ],
-   "url": "https://www.macquarie.com/de/en/about/news/2026/polarise-and-macquarie-announce-up-to-117-million-euros-financing-deal-for-european-ai-ambitions.html",
+   "url": "https://polarise.eu",
    "source": "https://www.macquarie.com/de/en/about/news/2026/polarise-and-macquarie-announce-up-to-117-million-euros-financing-deal-for-european-ai-ambitions.html",
    "note": "Up to EUR117M Macquarie financing; further debt raise (Aug 2026)"
   },
@@ -3200,7 +3207,10 @@
     "cost"
    ],
    "url": "https://verda.com",
-   "source": "https://verda.com"
+   "source": "https://verda.com",
+   "stage": "Series B",
+   "last_round": "$189M Series B led by Emergence Capital, Sep 2026",
+   "round_source": "https://siliconangle.com/2026/09/22/european-neocloud-verda-raises-189m-to-build-the-ai-infrastructure-of-tomorrow/"
   },
   {
    "name": "VirtAI Technology (OrionX)",

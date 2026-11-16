@@ -1117,7 +1117,8 @@
     "enterprise"
    ],
    "url": "https://www.fiddler.ai",
-   "source": "https://www.fiddler.ai"
+   "source": "https://www.csoonline.com/article/4244500/crowdstrike-to-acquire-fiddler-dreadnode-to-extend-ai-security-across-agent-lifecycle.html",
+   "parent": "CrowdStrike (agreed Nov 2026)"
   },
   {
    "name": "Future AGI",
@@ -1268,6 +1269,26 @@
    ],
    "url": "https://cloud.google.com/gemini-enterprise",
    "source": "https://cloud.google.com/gemini-enterprise"
+  },
+  {
+   "name": "Graphon Labs",
+   "kind": "company",
+   "subsegments": [
+    "n8.memory"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "stage": "Series A",
+   "last_round": "$35M Series A, Nov 2026 (RRE Ventures)",
+   "round_source": "https://thenextweb.com/news/graphon-labs-35m-series-a-ai-agent-memory",
+   "one_liner": "Graph-based memory layer for AI agents across documents, video and images, including on-device",
+   "tags": [
+    "enterprise",
+    "developer"
+   ],
+   "url": "https://graphonlabs.ai",
+   "source": "https://thenextweb.com/news/graphon-labs-35m-series-a-ai-agent-memory"
   },
   {
    "name": "Gumloop",
@@ -3943,7 +3964,7 @@
    "hq": "US",
    "region": "North America",
    "status": "open",
-   "steward": "Arize AI",
+   "steward": "Arize AI (Dynatrace)",
    "licence": "Elastic License 2.0 (source-available)",
    "access": "pip install arize-phoenix; self-host",
    "repo": "https://github.com/Arize-ai/phoenix",
@@ -3957,7 +3978,7 @@
     "source-available"
    ],
    "url": "https://github.com/Arize-ai/phoenix",
-   "source": "https://github.com/Arize-ai/phoenix",
+   "source": "https://dynatrace.com/news/press-release/dynatrace-completes-acquisition-of-arize",
    "note": "Source-available ELv2, not OSI open source: bars offering it as a managed service."
   },
   {
