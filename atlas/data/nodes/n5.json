@@ -1213,7 +1213,10 @@
     "performance"
    ],
    "url": "https://labelbox.com",
-   "source": "https://enterprisedna.co/resources/ai-map/company/labelbox"
+   "source": "https://labelbox.com/blog/labelbox-series-e/",
+   "stage": "Series C+",
+   "last_round": "$100M+ Series E (equity and credit) at $1.25B pre-money, Oct 2026 (led by Infinitum Partners)",
+   "round_source": "https://labelbox.com/blog/labelbox-series-e/"
   },
   {
    "name": "Labellerr",
@@ -2692,7 +2695,10 @@
     "open-source"
    ],
    "url": "https://www.firecrawl.dev",
-   "source": "https://www.firecrawl.dev"
+   "source": "https://www.firecrawl.dev",
+   "stage": "Series B",
+   "last_round": "$75M Series B, Sep 2026 (led by Smash Capital)",
+   "round_source": "https://dealroom.co/news/155341-firecrawl-raises-75m-series-b-to-build-a-knowledge-library-for-ai-agents/"
   },
   {
    "name": "Gymnasium",

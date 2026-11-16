@@ -304,6 +304,25 @@
    "source": "https://atos.net/en/"
   },
   {
+   "name": "AuxoAI",
+   "kind": "company",
+   "subsegments": [
+    "n10.native"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "stage": "Series A",
+   "last_round": "$20.7M Series A, Oct 2026 (NTTVC)",
+   "round_source": "https://www.auxoai.com/newsroom/series-a-announcement",
+   "one_liner": "Forward-deployed AI services firm building production AI systems for Global 2000 workflows",
+   "url": "https://www.auxoai.com",
+   "source": "https://www.auxoai.com/newsroom/series-a-announcement",
+   "tags": [
+    "enterprise"
+   ]
+  },
+  {
    "name": "Avanade",
    "kind": "company",
    "subsegments": [

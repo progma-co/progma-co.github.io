@@ -88,14 +88,15 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "private",
+   "status": "acquired",
    "one_liner": "High-performance RISC-V CPU IP for data-centre, automotive and edge chips",
    "tags": [
     "performance"
    ],
    "url": "https://www.akeana.com",
-   "source": "https://www.datacenterdynamics.com/en/news/risc-v-startup-akeana-raises-100m-exits-stealth-mode-and-launches-processor-and-ip-portfolios/",
-   "note": "$100M raised on exiting stealth"
+   "source": "https://dealroom.co/news/164707-qualcomm-buys-risc-v-startup-akeana-to-push-into-ai-and-data-center-chip/",
+   "note": "Acquired by Qualcomm (Oct 2026, terms undisclosed); $100M raised on exiting stealth",
+   "parent": "Qualcomm (Oct 2026)"
   },
   {
    "name": "Alchip Technologies",
@@ -1466,7 +1467,10 @@
     "open-source"
    ],
    "url": "https://www.sifive.com",
-   "source": "https://www.sifive.com"
+   "source": "https://www.eetimes.com/sifive-400m-round-highlights-new-cpu-battleground-for-agentic-ai-demand/",
+   "stage": "Series C+",
+   "last_round": "$400M Series G at $3.65B valuation, Apr 2026 (led by Atreides)",
+   "round_source": "https://www.eetimes.com/sifive-400m-round-highlights-new-cpu-battleground-for-agentic-ai-demand/"
   },
   {
    "name": "Siltronic",
@@ -1695,8 +1699,11 @@
     "cost"
    ],
    "url": "https://tenstorrent.com",
-   "source": "https://tenstorrent.com",
-   "note": "Reported $1.5B raise at $6.2B valuation (2026). HQ Toronto with major US operations"
+   "source": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e",
+   "note": "HQ Toronto with major US operations",
+   "stage": "Series C+",
+   "last_round": "$1.5B Series E at $6.2B post-money, Oct 2026 (co-led by Trace Capital, Innovation X)",
+   "round_source": "https://tenstorrent.com/en/newsroom/tenstorrent-announces-series-e"
   },
   {
    "name": "Teradyne",
