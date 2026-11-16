@@ -372,7 +372,10 @@
     "cost"
    ],
    "url": "https://www.arcee.ai",
-   "source": "https://www.arcee.ai"
+   "source": "https://www.arcee.ai",
+   "stage": "Series B",
+   "last_round": "$150M Series B at $1B pre-money valuation, Sep 2026",
+   "round_source": "https://dealroom.co/news/151200-arcee-raises-150m-series-b-at-1b-valuation-to-chase-china-on-open-weight/"
   },
   {
    "name": "Artificial Analysis",
@@ -1191,6 +1194,21 @@
    "note": "$105M seed (Jul 2025)"
   },
   {
+   "name": "Genesis Therapeutics",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "note": "NVentures investor (2023, 2024)",
+   "one_liner": "AI molecular-simulation platform for small-molecule drug discovery",
+   "url": "https://genesistherapeutics.ai",
+   "source": "https://hitconsultant.net/2024/11/13/nventures-invests-in-genesis-therapeutics-ai-platform-for-drug-development"
+  },
+  {
    "name": "Genloop",
    "kind": "company",
    "subsegments": [
@@ -1423,6 +1441,23 @@
    "source": "https://www.hume.ai"
   },
   {
+   "name": "Iambic Therapeutics",
+   "kind": "company",
+   "subsegments": [
+    "n6.science",
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "stage": "Series B",
+   "last_round": "00M Series B, Oct 2023 (NVIDIA)",
+   "round_source": "https://www.businesswire.com/news/home/20231003865353/en/Iambic-Therapeutics-Announces-Close-of-Oversubscribed-100-Million-Series-B-Financing-to-Advance-AI-Discovered-Therapeutics-into-Clinical-Development-and-Enters-Collaboration-with-NVIDIA",
+   "one_liner": "AI-designed drug discovery and clinical pipeline; NVIDIA collaboration",
+   "url": "https://www.iambic.ai",
+   "source": "https://www.businesswire.com/news/home/20231003865353/en/Iambic-Therapeutics-Announces-Close-of-Oversubscribed-100-Million-Series-B-Financing-to-Advance-AI-Discovered-Therapeutics-into-Clinical-Development-and-Enters-Collaboration-with-NVIDIA"
+  },
+  {
    "name": "IBM Granite",
    "kind": "company",
    "subsegments": [
@@ -1490,6 +1525,24 @@
    ],
    "url": "https://www.inceptionlabs.ai",
    "source": "https://www.inceptionlabs.ai"
+  },
+  {
+   "name": "Inflection AI",
+   "kind": "company",
+   "subsegments": [
+    "n6.enterprise",
+    "n9.assistant"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "note": ".3B round led by Microsoft and NVIDIA (Jun 2023)",
+   "one_liner": "Enterprise AI models and agents; maker of the Pi assistant",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://inflection.ai",
+   "source": "https://www.businesswire.com/news/home/20230629810313/en/Inflection-AI-Announces-1.3-Billion-of-Funding-Led-by-Current-Investors-Microsoft-and-NVIDIA"
   },
   {
    "name": "InstaDeep",

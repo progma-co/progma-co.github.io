@@ -1197,47 +1197,163 @@
    "hq": "US",
    "region": "North America",
    "url": "https://www.nvidia.com/en-us/about-nvidia/nventures/",
-   "summary": "Most prolific AI strategic: labs, neoclouds, inference clouds and sovereign AI, often paired with GPU supply.",
+   "summary": "Most prolific AI strategic: stakes across all links of the chain, from fusion and photonics to labs, neoclouds and robotics; often paired with GPU supply or capacity deals.",
    "roles": [
     {
-     "subsegment": "n7.api",
-     "portfolio": "Crusoe, DeepInfra, Simplismart, Tensormesh"
+     "subsegment": "n0.power",
+     "portfolio": "Commonwealth Fusion Systems, TerraPower"
     },
     {
-     "subsegment": "n6.open",
-     "portfolio": "Reflection AI, Mistral AI, Sarvam AI, EvolutionaryScale"
+     "subsegment": "n0.dcdev",
+     "portfolio": "Crusoe, Nscale"
     },
     {
-     "subsegment": "n4.neo",
-     "portfolio": "Nscale, Crusoe, Lambda"
-    },
-    {
-     "subsegment": "n6.enterprise",
-     "portfolio": "Cohere, Sakana AI"
-    },
-    {
-     "subsegment": "n9.assistant",
-     "portfolio": "Mistral AI, Perplexity"
-    },
-    {
-     "subsegment": "n9.physical",
-     "portfolio": "Skild AI"
-    },
-    {
-     "subsegment": "n9.voice",
-     "portfolio": "PolyAI"
-    },
-    {
-     "subsegment": "n6.audio",
-     "portfolio": "Cartesia"
+     "subsegment": "n0.land",
+     "portfolio": "Cloverleaf Infrastructure"
     },
     {
      "subsegment": "n0.opt",
      "portfolio": "Emerald AI"
     },
     {
-     "subsegment": "n0.land",
-     "portfolio": "Cloverleaf Infrastructure"
+     "subsegment": "n0.storage",
+     "portfolio": "Redwood Materials"
+    },
+    {
+     "subsegment": "n1.eda",
+     "portfolio": "Synopsys"
+    },
+    {
+     "subsegment": "n2.photonic",
+     "portfolio": "Ayar Labs, Xscape Photonics"
+    },
+    {
+     "subsegment": "n2.merchant",
+     "portfolio": "Intel"
+    },
+    {
+     "subsegment": "n2.net",
+     "portfolio": "Marvell"
+    },
+    {
+     "subsegment": "n3.optics",
+     "portfolio": "Coherent, Lumentum, Point2 Technology"
+    },
+    {
+     "subsegment": "n3.storage",
+     "portfolio": "VAST Data, WEKA"
+    },
+    {
+     "subsegment": "n3.network",
+     "portfolio": "Nokia"
+    },
+    {
+     "subsegment": "n4.neo",
+     "portfolio": "CoreWeave, Firmus, Lambda, Nebius, Together AI"
+    },
+    {
+     "subsegment": "n4.stack",
+     "portfolio": "Hydra Host"
+    },
+    {
+     "subsegment": "n4.serverless",
+     "portfolio": "Baseten"
+    },
+    {
+     "subsegment": "n5.label",
+     "portfolio": "Scale AI"
+    },
+    {
+     "subsegment": "n5.physical",
+     "portfolio": "Mecka AI"
+    },
+    {
+     "subsegment": "n6.enterprise",
+     "portfolio": "AI21 Labs, Cohere, Contextual AI, Inflection AI, Reka AI, Sakana AI, Writer"
+    },
+    {
+     "subsegment": "n6.frontier",
+     "portfolio": "Anthropic, OpenAI, Safe Superintelligence (SSI), Thinking Machines Lab, xAI"
+    },
+    {
+     "subsegment": "n6.world",
+     "portfolio": "Decart, Field AI, Skild AI, Wayve, World Labs"
+    },
+    {
+     "subsegment": "n6.science",
+     "portfolio": "EvolutionaryScale, Generate Biomedicines, Lila Sciences, Periodic Labs"
+    },
+    {
+     "subsegment": "n6.open",
+     "portfolio": "Essential AI, Mistral AI, Reflection AI"
+    },
+    {
+     "subsegment": "n6.code",
+     "portfolio": "Imbue, Poolside"
+    },
+    {
+     "subsegment": "n6.image",
+     "portfolio": "Black Forest Labs, Runway"
+    },
+    {
+     "subsegment": "n6.audio",
+     "portfolio": "Cartesia, ElevenLabs"
+    },
+    {
+     "subsegment": "n6.sovereign",
+     "portfolio": "Sarvam AI"
+    },
+    {
+     "subsegment": "n6.embed",
+     "portfolio": "Twelve Labs"
+    },
+    {
+     "subsegment": "n7.api",
+     "portfolio": "DeepInfra, Fireworks AI, Simplismart"
+    },
+    {
+     "subsegment": "n7.opt",
+     "portfolio": "Tensormesh (LMCache)"
+    },
+    {
+     "subsegment": "n8.lowcode",
+     "portfolio": "Kore.ai"
+    },
+    {
+     "subsegment": "n9.physical",
+     "portfolio": "Agile Robots, Dyna Robotics, Figure AI, Neura Robotics, Nuro, Waabi, WeRide"
+    },
+    {
+     "subsegment": "n9.industrial",
+     "portfolio": "Genesis Therapeutics, Iambic Therapeutics, PhysicsX, Recursion"
+    },
+    {
+     "subsegment": "n9.health",
+     "portfolio": "Abridge, Hippocratic AI, Verily"
+    },
+    {
+     "subsegment": "n9.coding",
+     "portfolio": "Cursor (Anysphere), Lovable"
+    },
+    {
+     "subsegment": "n9.assistant",
+     "portfolio": "Perplexity"
+    },
+    {
+     "subsegment": "n9.support",
+     "portfolio": "Uniphore"
+    },
+    {
+     "subsegment": "n9.voice",
+     "portfolio": "PolyAI"
+    },
+    {
+     "subsegment": "n9.creative",
+     "portfolio": "Synthesia"
+    },
+    {
+     "subsegment": "n9.finance",
+     "portfolio": "Samaya AI"
     }
    ],
    "source": "https://techcrunch.com/2025/10/09/reflection-raises-2b-to-be-americas-open-frontier-ai-lab-challenging-deepsee"

@@ -161,9 +161,9 @@
    "hq": "US",
    "region": "North America",
    "status": "public",
-   "one_liner": "Builds and leases high-density AI DC campuses in North Dakota",
+   "one_liner": "Builds and leases high-density AI data-centre campuses (Polaris Forge, North Dakota; Delta Forge, US South) to CoreWeave and hyperscalers",
    "url": "https://www.applieddigital.com",
-   "source": "https://www.applieddigital.com"
+   "source": "https://ir.applieddigital.com/news-events/press-releases/detail/144"
   },
   {
    "name": "Ascenty",
@@ -200,11 +200,11 @@
    ],
    "hq": "IS",
    "region": "Europe",
-   "status": "private",
-   "parent": "Partners Group",
+   "status": "acquired",
+   "parent": "CPP Investments and Equinix (2026)",
    "one_liner": "Nordic DC operator for HPC/AI in Iceland, Sweden, Finland, Denmark",
    "url": "https://www.atnorth.com",
-   "source": "https://www.atnorth.com"
+   "source": "https://datacenterdynamics.com/en/news/equinix-cpp-close-acquisition-of-atnorth"
   },
   {
    "name": "Auras Technology",
@@ -379,9 +379,9 @@
    "hq": "US",
    "region": "North America",
    "status": "public",
-   "one_liner": "Chillers, CRAH units and Nlyte DCIM software",
+   "one_liner": "Chillers, CRAHs, CDUs (QuantumLeap data-centre suite) and Nlyte DCIM software",
    "url": "https://www.carrier.com",
-   "source": "https://www.carrier.com"
+   "source": "https://www.carrier.com/commercial/en/us/news/news-article/carrier-introduces-quantumleap--a-comprehensive-suite-of-innovative--energy-efficient-solutions-for-data-center-thermal-management.html"
   },
   {
    "name": "Caterpillar",
@@ -487,14 +487,14 @@
    ],
    "hq": "CN",
    "region": "China",
-   "status": "private",
-   "parent": "Bain Capital",
+   "status": "acquired",
+   "parent": "HEC-led consortium (2026)",
    "one_liner": "Chinese hyperscale DC operator focused on ByteDance demand",
    "url": "https://www.chindatagroup.com",
-   "source": "https://www.chindatagroup.com"
+   "source": "https://www.baincapital.com/news/bain-capital-successfully-completes-4-billion-strategic-sale-wintrixs-china-business"
   },
   {
-   "name": "Cipher Mining",
+   "name": "Cipher Digital",
    "kind": "company",
    "subsegments": [
     "n0.dcdev"
@@ -502,9 +502,12 @@
    "hq": "US",
    "region": "North America",
    "status": "public",
-   "one_liner": "Bitcoin miner leasing powered sites for AI/HPC tenants",
-   "url": "https://www.ciphermining.com",
-   "source": "https://www.ciphermining.com"
+   "one_liner": "Former bitcoin miner building AI/HPC data centres leased to AWS and Fluidstack/Google",
+   "url": "https://investors.cipherdigital.com",
+   "source": "https://investors.cipherdigital.com/news-releases/news-release-details/cipher-digital-provides-fourth-quarter-and-full-year-2025/",
+   "aka": [
+    "Cipher Mining"
+   ]
   },
   {
    "name": "Cloverleaf Infrastructure",
@@ -516,7 +519,7 @@
    "region": "North America",
    "status": "private",
    "one_liner": "Powered-land developer securing utility power and land for AI data-centre campuses",
-   "url": "https://www.datacenterdynamics.com/en/news/nvidia-backs-data-center-powered-land-company-cloverleaf/",
+   "url": "https://www.cloverleafinfra.com",
    "source": "https://www.datacenterdynamics.com/en/news/nvidia-backs-data-center-powered-land-company-cloverleaf/",
    "note": "NVIDIA invested (2026); ~$300M raised; sites in Wisconsin, Oklahoma, Missouri"
   },
@@ -714,9 +717,9 @@
    "region": "Asia-Pacific",
    "status": "public",
    "parent": "Daikin",
-   "one_liner": "Chillers and air handling for hyperscale DCs",
+   "one_liner": "Chillers, air handling and (via Chilldyne) direct-to-chip liquid cooling for hyperscale data centres",
    "url": "https://www.daikinapplied.com",
-   "source": "https://www.daikinapplied.com"
+   "source": "https://daikinapplied.com/news/news/daikin-applied-expands-data-center-offering-with-acquisition-of-chilldyne"
   },
   {
    "name": "Damac Edgnex",
@@ -834,9 +837,9 @@
    "region": "India",
    "status": "private",
    "parent": "Reliance / Brookfield / Digital Realty JV",
-   "one_liner": "Indian hyperscale DC JV with Chennai and Mumbai campuses",
+   "one_liner": "Reliance, Brookfield and Digital Realty Indian DC JV; Chennai and Mumbai campuses, planned 1 GW Visakhapatnam AI campus",
    "url": "https://www.digitalconnexion.com",
-   "source": "https://www.digitalconnexion.com"
+   "source": "https://www.datacenterdynamics.com/en/news/digital-connexion-signs-mou-to-build-1gw-campus-in-andhra-pradesh-india/"
   },
   {
    "name": "Digital Realty",
@@ -1069,10 +1072,10 @@
    ],
    "hq": "US",
    "region": "North America",
-   "status": "private",
+   "status": "public",
    "one_liner": "Enhanced geothermal developer supplying clean firm power, incl. Google deal",
    "url": "https://fervoenergy.com",
-   "source": "https://fervoenergy.com"
+   "source": "https://www.renaissancecapital.com/IPO-Center/News/118998/Geothermal-energy-developer-Fervo-Energy-prices-upsized-IPO-at-$27-above-th"
   },
   {
    "name": "Fluence",
@@ -1097,9 +1100,9 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
-   "one_liner": "Iron-air multi-day battery storage for utilities",
+   "one_liner": "Iron-air multi-day battery storage for utilities and AI data centres, e.g. 30 GWh for Google's Minnesota project",
    "url": "https://formenergy.com",
-   "source": "https://formenergy.com"
+   "source": "https://www.energy-storage.news/google-minnesota-data-centre-energy-deal-includes-30gwh-multi-day-iron-air-batteries-from-form-energy/"
   },
   {
    "name": "Galaxy Digital (Helios)",
@@ -1420,7 +1423,8 @@
    "kind": "company",
    "subsegments": [
     "n0.land",
-    "n0.intel"
+    "n0.intel",
+    "n4.market"
    ],
    "hq": "US",
    "region": "North America",
@@ -1430,7 +1434,7 @@
     "cost"
    ],
    "url": "https://inflect.com",
-   "source": "https://inflect.com"
+   "source": "https://business.mammothtimes.com/mammothtimes/article/abnewswire-2026-3-13-1legion-joins-inflect-marketplace-with-nvidia-rtx-5090-and-rtx-pro-6000-blackwell-bare-metal-gpu-cloud-servers"
   },
   {
    "name": "IREN",
@@ -1506,7 +1510,7 @@
     "performance"
    ],
    "url": "https://jetcool.com",
-   "source": "https://jetcool.com"
+   "source": "https://investors.flex.com/news/news-details/2024/Flex-Acquires-JetCool-to-Expand-Data-Center-and-Power-Portfolio/"
   },
   {
    "name": "JLL",
@@ -1604,9 +1608,9 @@
    "hq": "US",
    "region": "North America",
    "status": "public",
-   "one_liner": "Infra investor; co-owns CyrusOne and STT GDC",
+   "one_liner": "Infra investor; co-owns CyrusOne and, with Singtel, took full ownership of STT GDC in 2026",
    "url": "https://www.kkr.com",
-   "source": "https://www.kkr.com"
+   "source": "https://www.businesswire.com/news/home/20260202441025/en/KKR-Led-Consortium-with-Singtel-Group-to-Fully-Acquire-ST-Telemedia-Global-Data-Centres-at-S%2413.8-Billion-Enterprise-Value"
   },
   {
    "name": "Kurita Water Industries",
@@ -1735,8 +1739,8 @@
    "region": "Europe",
    "status": "private",
    "one_liner": "Irish mechanical/electrical contractor for European hyperscale builds",
-   "url": "https://www.mercury.ie",
-   "source": "https://www.mercury.ie"
+   "url": "https://www.mercuryeng.com",
+   "source": "https://www.mercuryeng.com/2025/11/23/how-mercury-is-designing-data-centres-for-ai-readiness/"
   },
   {
    "name": "MGX",
@@ -1851,10 +1855,10 @@
    "hq": "US",
    "region": "North America",
    "status": "acquired",
-   "parent": "Carrier",
+   "parent": "Carrier (2021)",
    "one_liner": "DCIM software for asset and capacity management",
    "url": "https://www.nlyte.com",
-   "source": "https://www.nlyte.com"
+   "source": "https://www.carrier.com/carrier/en/worldwide/news/news-article/carrier-completes-acquisition-of-nlyte-software-a-leader-in-data-center-infrastructure-management-software.html"
   },
   {
    "name": "NRG Energy",
@@ -2062,12 +2066,12 @@
    "hq": "SA",
    "region": "Middle East",
    "status": "government",
-   "one_liner": "Saudi sovereign fund behind HUMAIN",
+   "one_liner": "Saudi sovereign fund; owns HUMAIN jointly with Aramco since Nov 2026",
    "tags": [
     "sovereign"
    ],
    "url": "https://www.pif.gov.sa",
-   "source": "https://www.pif.gov.sa"
+   "source": "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humain-global-growth/"
   },
   {
    "name": "QTS Data Centers",
@@ -2138,6 +2142,20 @@
    "url": "https://raxiogroup.com",
    "source": "https://www.connectingafrica.com/data-centers/raxio-raises-more-capital-as-africa-data-center-demand-surges",
    "note": "Committed capital above $380M (2026)"
+  },
+  {
+   "name": "Redwood Materials",
+   "kind": "company",
+   "subsegments": [
+    "n0.storage"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "note": "NVentures in 50M Series E (Oct 2025)",
+   "one_liner": "Battery recycling and second-life battery storage systems, including bridge power for AI data centres",
+   "url": "https://www.redwoodmaterials.com",
+   "source": "https://www.latitudemedia.com/news/nvidia-is-investing-in-battery-recycler-redwood-materials/"
   },
   {
    "name": "ReNew",
@@ -2371,10 +2389,10 @@
    "hq": "SG",
    "region": "Asia-Pacific",
    "status": "private",
-   "parent": "KKR / Singtel",
+   "parent": "KKR-led consortium with Singtel (2026)",
    "one_liner": "Singapore-based DC operator with large India footprint (STT GDC India)",
    "url": "https://www.sttelemediagdc.com",
-   "source": "https://www.sttelemediagdc.com"
+   "source": "https://www.businesswire.com/news/home/20260202441025/en/KKR-Led-Consortium-with-Singtel-Group-to-Fully-Acquire-ST-Telemedia-Global-Data-Centres-at-S%2413.8-Billion-Enterprise-Value"
   },
   {
    "name": "Stulz",
@@ -2564,7 +2582,7 @@
    "region": "North America",
    "status": "private",
    "one_liner": "Master-planned land and infrastructure developer of data-centre parks",
-   "url": "https://www.datacenterfrontier.com/site-selection/article/55308975/scaling-up-tracts-master-planned-land-and-infrastructure-approach-to-data-center-development",
+   "url": "https://www.tract.com",
    "source": "https://www.datacenterfrontier.com/site-selection/article/55308975/scaling-up-tracts-master-planned-land-and-infrastructure-approach-to-data-center-development"
   },
   {

@@ -122,6 +122,20 @@
    "source": "https://www.adcreative.ai"
   },
   {
+   "name": "Agile Robots",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "DE",
+   "region": "Europe",
+   "status": "private",
+   "note": "NVIDIA-backed late-stage round (2026)",
+   "one_liner": "AI-driven robotic arms, hands and humanoids for industrial automation",
+   "url": "https://www.agile-robots.com",
+   "source": "https://dealroom.co/news/164126-nvidia-backs-germanys-agile-robots-in-late-stage-round/"
+  },
+  {
    "name": "Agility Robotics",
    "kind": "company",
    "subsegments": [
@@ -1125,7 +1139,8 @@
     "enterprise"
    ],
    "url": "https://cresta.com",
-   "source": "https://cresta.com"
+   "source": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-cresta/",
+   "parent": "Salesforce (agreed Nov 2026)"
   },
   {
    "name": "Cropin",
@@ -1472,6 +1487,23 @@
    "source": "https://dust.tt"
   },
   {
+   "name": "Dyna Robotics",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical",
+    "n6.world"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "stage": "Series A",
+   "last_round": "20M Series A, Sep 2025 (NVIDIA, Amazon)",
+   "round_source": "https://www.tipranks.com/news/the-fly/private-markets-dyna-robotics-raises-120m-from-nvidia-amazon-thefly",
+   "one_liner": "Robot foundation models and arms for commercial manipulation tasks",
+   "url": "https://www.dyna.co",
+   "source": "https://www.tipranks.com/news/the-fly/private-markets-dyna-robotics-raises-120m-from-nvidia-amazon-thefly"
+  },
+  {
    "name": "Eightfold AI",
    "kind": "company",
    "subsegments": [
@@ -1802,7 +1834,8 @@
    "status": "private",
    "one_liner": "AI agents for support triage, resolution and agent assist",
    "url": "https://forethought.ai",
-   "source": "https://forethought.ai"
+   "source": "https://techcrunch.com/2026/03/11/zendesk-acquires-agentic-customer-service-startup-forethought",
+   "parent": "Zendesk (agreed Mar 2026)"
   },
   {
    "name": "FourKites",
@@ -2459,6 +2492,24 @@
    "source": "https://www.iflytek.com/en/"
   },
   {
+   "name": "Imbue",
+   "kind": "company",
+   "subsegments": [
+    "n9.coding",
+    "n6.code"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "note": "NVIDIA in 00M Series B (Sep 2023)",
+   "one_liner": "AI research lab building coding agents and tools for reliable software",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://imbue.com",
+   "source": "https://techcrunch.com/2023/09/07/imbue-raises-200m-to-build-ai-models-that-can-robustly-reason"
+  },
+  {
    "name": "Infinitus",
    "kind": "company",
    "subsegments": [
@@ -2534,7 +2585,7 @@
    "note": "$12.5M Series A (Sep 2025); Egypt/Saudi"
   },
   {
-   "name": "Intercom Fin",
+   "name": "Fin",
    "kind": "company",
    "subsegments": [
     "n9.support"
@@ -2542,10 +2593,14 @@
    "hq": "US",
    "region": "North America",
    "status": "private",
-   "parent": "Intercom",
+   "parent": "Salesforce (agreed Jun 2026)",
    "one_liner": "AI support agent resolving customer queries across channels",
    "url": "https://fin.ai",
-   "source": "https://fin.ai"
+   "source": "https://martech.org/salesforce-acquires-fin-formerly-known-as-intercom/",
+   "aka": [
+    "Intercom Fin",
+    "Intercom"
+   ]
   },
   {
    "name": "Intron Health",
@@ -3509,6 +3564,22 @@
    "url": "https://www.nurix.ai",
    "source": "https://inc42.com/buzz/prosus-joins-mukesh-bansal-led-nurix-ais-cap-table-with-fresh-capital-infusion/",
    "note": "$27.5M seed (Accel, General Catalyst, 2024); Prosus joined cap table (2026)"
+  },
+  {
+   "name": "Nuro",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "stage": "Series C+",
+   "last_round": "03M Series E at B, Aug 2025 (NVIDIA, Uber)",
+   "round_source": "https://electrek.co/2025/08/21/nuro-inc-snags-203m-funding-6-billion-valuation-nvidia/",
+   "one_liner": "Autonomous driving software licensed to automakers and robotaxi fleets",
+   "url": "https://www.nuro.ai",
+   "source": "https://electrek.co/2025/08/21/nuro-inc-snags-203m-funding-6-billion-valuation-nvidia/"
   },
   {
    "name": "NyAI",
@@ -4498,6 +4569,23 @@
    "source": "https://www.safran-group.com"
   },
   {
+   "name": "Samaya AI",
+   "kind": "company",
+   "subsegments": [
+    "n9.finance"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "note": "NVentures backing (Feb 2026)",
+   "one_liner": "Knowledge agents for financial-services research and analysis",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://samaya.ai",
+   "source": "https://fintech.global/2026/02/11/fintech-samaya-ai-wins-backing-from-nventures/"
+  },
+  {
    "name": "Shield AI",
    "kind": "company",
    "subsegments": [
@@ -5335,6 +5423,20 @@
    "note": "$1.5M (Oct 2025)"
   },
   {
+   "name": "Verily",
+   "kind": "company",
+   "subsegments": [
+    "n9.health"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "note": "New NVIDIA investment (Sep 2026)",
+   "one_liner": "Health data platform and AI tools for clinical research and care",
+   "url": "https://verily.com",
+   "source": "https://verily.com/newsroom/verily-health-secures-new-investment-from-nvidia-and-cu-healthcare-innovation-fund"
+  },
+  {
    "name": "Verloop.io",
    "kind": "company",
    "subsegments": [
@@ -5360,6 +5462,22 @@
    "url": "https://www.vuno.co",
    "source": "https://www.vuno.co",
    "note": "KOSDAQ listed"
+  },
+  {
+   "name": "Waabi",
+   "kind": "company",
+   "subsegments": [
+    "n9.physical"
+   ],
+   "hq": "CA",
+   "region": "North America",
+   "status": "private",
+   "stage": "Series B",
+   "last_round": "00M Series B, Jun 2024 (Uber, Khosla, NVIDIA)",
+   "round_source": "https://nbcnewyork.com/news/business/money-report/uber-khosla-nvidia-invest-in-200-million-funding-round-for-autonomous-trucking-startup-waabi/5517113",
+   "one_liner": "Generative-AI autonomous trucking software and simulator",
+   "url": "https://waabi.ai",
+   "source": "https://nbcnewyork.com/news/business/money-report/uber-khosla-nvidia-invest-in-200-million-funding-round-for-autonomous-trucking-startup-waabi/5517113"
   },
   {
    "name": "Waymo",
