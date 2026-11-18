@@ -5670,6 +5670,23 @@
    ],
    "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
    "source": "https://huggingface.co/openai/whisper-large-v3-turbo"
+  },
+  {
+   "name": "Vaani AI Research",
+   "kind": "company",
+   "subsegments": [
+    "n6.audio",
+    "n9.voice"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Bengaluru company building Indian-language speech models, speech infrastructure and voice agents",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://vaaniresearch.com",
+   "source": "https://vaaniresearch.com"
   }
  ]
 }

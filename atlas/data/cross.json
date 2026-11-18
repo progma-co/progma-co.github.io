@@ -149,6 +149,10 @@
     {
      "subsegment": "n10.skill",
      "offering": "Google AI Essentials / Career Certificates"
+    },
+    {
+     "subsegment": "n2.quantum",
+     "offering": "Google Quantum AI (Willow)"
     }
    ],
    "source": "https://cloud.google.com/tpu",
@@ -959,6 +963,10 @@
     {
      "subsegment": "n10.skill",
      "offering": "IBM SkillsBuild"
+    },
+    {
+     "subsegment": "n2.quantum",
+     "offering": "IBM Quantum (Heron processors, Quantum System Two)"
     }
    ],
    "source": "https://www.ibm.com/granite",

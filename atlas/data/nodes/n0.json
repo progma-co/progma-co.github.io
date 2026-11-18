@@ -3202,6 +3202,20 @@
    ],
    "url": "https://github.com/hubblo-org/scaphandre",
    "source": "https://github.com/hubblo-org/scaphandre"
+  },
+  {
+   "name": "Datasamudra (Teleindia Datacenter)",
+   "kind": "company",
+   "subsegments": [
+    "n0.dcdev"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "parent": "Teleindia Networks",
+   "one_liner": "Greenfield hyperscale data centre in Bengaluru, partnering to host AI workloads",
+   "url": "https://www.datasamudra.com",
+   "source": "https://techobserver.in/news/enterprise-it/data-center/teleindia-networks-launches-greenfield-hyperscale-data-center-datasamudra-in-bengaluru-256557/"
   }
  ]
 }

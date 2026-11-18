@@ -11765,6 +11765,30 @@
    "to": "n11.mid",
    "type": "sells",
    "flow": "Vendor products bundled with services and billing"
+  },
+  {
+   "from": "n2.quantum",
+   "to": "n4.hyper",
+   "type": "sells",
+   "flow": "Quantum processors offered as cloud services next to AI compute"
+  },
+  {
+   "from": "n2.quantum",
+   "to": "n4.sovereign",
+   "type": "sells",
+   "flow": "On-prem quantum systems for national missions and research centres"
+  },
+  {
+   "from": "n1.equip",
+   "to": "n2.quantum",
+   "type": "sells",
+   "flow": "Lithography, deposition and cryogenic test equipment for qubit chips"
+  },
+  {
+   "from": "n0.capital",
+   "to": "n2.quantum",
+   "type": "finances",
+   "flow": "Venture and national-mission funding for quantum hardware"
   }
  ]
 }

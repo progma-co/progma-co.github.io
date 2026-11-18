@@ -1,5 +1,5 @@
 {
- "asof": "15 Nov 2026",
+ "asof": "18 Nov 2026",
  "personas": [
   {
    "id": "inference",
@@ -222,6 +222,10 @@
   }
  ],
  "changelog": [
+  {
+   "date": "18 Nov 2026",
+   "text": "Out-of-cycle update. New box: Quantum processors & systems, with QpiAI (India's full-stack superconducting quantum computer and its own Bengaluru chip foundry), IBM Quantum, Google Quantum AI, Quantinuum, IonQ, PsiQuantum, IQM, Pasqal, Rigetti, D-Wave, QuEra, Classiq and QNu Labs. Also added companies seen at Bengaluru Tech Summit 2026: Vicharak, Sensesemi, SignOff Semiconductors, Mettlesemi, PragyanAI, NeevSemi, Datasamudra, IndicStack AI, Vaani AI Research, TrustFabric, KavachAI, SatSure and Fivetran."
+  },
   {
    "date": "15 Nov 2026",
    "text": "3 additions, 11 acquisitions/mergers, 0 shutdowns, 33 corrections, 8 funding updates. Highlights: Marvell agreed to buy Lumentum (~$115B, all stock); Salesforce agreed to buy Cresta and CrowdStrike to buy Fiddler AI; onsemi agreed to buy Ferric and Analog Devices closed Alif Semiconductor; Fractile raised $720M at $7B and Mercor $750M at $20B; Graphon Labs added to agent memory; ownership catch-ups for Arize AI (Dynatrace), Fin (formerly Intercom), atNorth, Chindata and STT GDC."

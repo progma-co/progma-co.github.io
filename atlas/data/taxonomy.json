@@ -264,6 +264,12 @@
      "layer": "ops",
      "name": "Export controls & chip compliance",
      "desc": "Export-control compliance, licence tracking and chip location verification"
+    },
+    {
+     "id": "n2.quantum",
+     "layer": "core",
+     "name": "Quantum processors & systems",
+     "desc": "Quantum processors and full-stack quantum computers (superconducting, trapped-ion, photonic, neutral-atom, annealing), sold as systems or cloud access and increasingly paired with AI compute"
     }
    ]
   },

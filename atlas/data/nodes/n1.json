@@ -2422,6 +2422,58 @@
    ],
    "url": "https://github.com/YosysHQ/yosys",
    "source": "https://github.com/YosysHQ/yosys"
+  },
+  {
+   "name": "Mettlesemi",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Silicon design, verification and validation services plus custom FPGA and embedded products",
+   "url": "https://www.mettlesemi.com",
+   "source": "https://www.mettlesemi.com"
+  },
+  {
+   "name": "NeevSemi",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI agents that run design, validation and deployment workflows for semiconductor teams",
+   "url": "https://neevsemi.com",
+   "source": "https://neevsemi.com"
+  },
+  {
+   "name": "PragyanAI (Pragyan SmartAI)",
+   "kind": "company",
+   "subsegments": [
+    "n1.eda"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI-driven chip and PCB design tools: spec-to-RTL, UVM verification and PCB review",
+   "url": "https://pragyansiliconai.com",
+   "source": "https://pragyansiliconai.com"
+  },
+  {
+   "name": "SignOff Semiconductors",
+   "kind": "company",
+   "subsegments": [
+    "n1.design"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "ASIC and SoC design services from RTL to GDSII, plus a RISC-V microcontroller platform",
+   "url": "https://signoffsemiconductors.com",
+   "source": "https://signoffsemiconductors.com"
   }
  ]
 }

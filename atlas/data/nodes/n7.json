@@ -2368,6 +2368,24 @@
    ],
    "url": "https://github.com/vllm-project/semantic-router",
    "source": "https://github.com/vllm-project/semantic-router"
+  },
+  {
+   "name": "IndicStack AI",
+   "kind": "company",
+   "subsegments": [
+    "n7.route",
+    "n7.api"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "OpenAI-compatible gateway to 300+ models with cost testing, routing and rupee billing; hosts some open models in India",
+   "tags": [
+    "sovereign",
+    "cost"
+   ],
+   "url": "https://indicstack.ai",
+   "source": "https://indicstack.ai"
   }
  ]
 }

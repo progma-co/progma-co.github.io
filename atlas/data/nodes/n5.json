@@ -3238,6 +3238,22 @@
    ],
    "url": "https://github.com/PrimeIntellect-ai/verifiers",
    "source": "https://github.com/PrimeIntellect-ai/verifiers"
+  },
+  {
+   "name": "TrustFabric",
+   "kind": "company",
+   "subsegments": [
+    "n5.gov"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Consent management for India's DPDP Act: consent collection, data subject requests, records and breach notification",
+   "tags": [
+    "security"
+   ],
+   "url": "https://www.trustfabric.in",
+   "source": "https://www.trustfabric.in"
   }
  ]
 }
