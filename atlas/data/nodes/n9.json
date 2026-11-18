@@ -7350,6 +7350,33 @@
    ],
    "url": "https://github.com/Canner/WrenAI",
    "source": "https://github.com/Canner/WrenAI"
+  },
+  {
+   "name": "KavachAI",
+   "kind": "company",
+   "subsegments": [
+    "n9.public"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI video intelligence on existing CCTV: alerts, plain-language search and early warning for retail, campuses, public safety",
+   "url": "https://kavachai.in",
+   "source": "https://kavachai.in"
+  },
+  {
+   "name": "SatSure",
+   "kind": "company",
+   "subsegments": [
+    "n9.supply",
+    "n9.insurance"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "AI decision intelligence from satellite, aerial and LiDAR data for agriculture, banking, insurance and infrastructure",
+   "url": "https://www.satsure.co",
+   "source": "https://www.satsure.co"
   }
  ]
 }

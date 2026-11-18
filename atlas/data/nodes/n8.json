@@ -5796,6 +5796,22 @@
    "url": "https://x402.org",
    "source": "https://github.com/x402-foundation/x402",
    "note": "Moved from coinbase/x402 to x402 Foundation org."
+  },
+  {
+   "name": "Fivetran",
+   "kind": "company",
+   "subsegments": [
+    "n8.ingest"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Automated data movement for analytics and AI, with a context layer connecting assistants and agents to company data",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.fivetran.com",
+   "source": "https://www.fivetran.com"
   }
  ]
 }

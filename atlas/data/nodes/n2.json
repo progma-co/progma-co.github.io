@@ -11,7 +11,8 @@
   "n2.sw": "CUDA lock-in remains the main moat; ROCm, Triton, XLA and Modular push portability.",
   "n2.photonic": "Consolidating: Marvell bought Celestial AI (closed Feb 2026), Ciena bought Nubis (2025)",
   "n2.power": "NVIDIA 800 VDC programme lists 14 silicon partners (GTC 2026)",
-  "n2.export": "Compliance burden rose after BIS rescinded the AI Diffusion Rule and issued chip guidance (May 2025)"
+  "n2.export": "Compliance burden rose after BIS rescinded the AI Diffusion Rule and issued chip guidance (May 2025)",
+  "n2.quantum": "New box (18 Nov 2026). Superconducting leads (IBM, Google, Rigetti, IQM, India's QpiAI with its own Bengaluru chip foundry); trapped-ion (Quantinuum, listed Jun 2026; IonQ), photonic (PsiQuantum) and neutral-atom (Pasqal, QuEra) compete. Vendors increasingly pitch quantum alongside AI compute."
  },
  "entries": [
   {
@@ -2832,6 +2833,229 @@
    ],
    "url": "https://github.com/vosen/ZLUDA",
    "source": "https://github.com/vosen/ZLUDA"
+  },
+  {
+   "name": "Classiq",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "IL",
+   "region": "Middle East",
+   "status": "private",
+   "one_liner": "Quantum software platform that synthesises optimised quantum circuits from high-level models",
+   "tags": [
+    "developer"
+   ],
+   "url": "https://www.classiq.io",
+   "source": "https://www.classiq.io"
+  },
+  {
+   "name": "D-Wave Quantum",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Quantum annealing and gate-model systems with cloud access for optimisation workloads",
+   "url": "https://www.dwavequantum.com",
+   "source": "https://www.dwavequantum.com"
+  },
+  {
+   "name": "Google Quantum AI",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "Alphabet",
+   "one_liner": "Superconducting quantum processors (Willow) and error-correction research from Google",
+   "url": "https://quantumai.google",
+   "source": "https://quantumai.google"
+  },
+  {
+   "name": "IBM Quantum",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "parent": "IBM",
+   "one_liner": "Superconducting quantum processors and systems (Heron, Quantum System Two) with Qiskit software and cloud access",
+   "tags": [
+    "enterprise"
+   ],
+   "url": "https://www.ibm.com/quantum",
+   "source": "https://www.ibm.com/quantum"
+  },
+  {
+   "name": "IonQ",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Trapped-ion quantum computers sold as systems and through major clouds",
+   "url": "https://ionq.com",
+   "source": "https://ionq.com"
+  },
+  {
+   "name": "IQM Quantum Computers",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "FI",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Superconducting quantum computers for on-prem installation at HPC and research centres",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.meetiqm.com",
+   "source": "https://www.meetiqm.com"
+  },
+  {
+   "name": "Pasqal",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "FR",
+   "region": "Europe",
+   "status": "private",
+   "one_liner": "Neutral-atom quantum processors for simulation and optimisation, on-prem and via cloud",
+   "url": "https://www.pasqal.com",
+   "source": "https://www.pasqal.com"
+  },
+  {
+   "name": "PsiQuantum",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Photonic quantum computers built on standard semiconductor fabs, targeting utility-scale fault tolerance",
+   "url": "https://www.psiquantum.com",
+   "source": "https://www.psiquantum.com"
+  },
+  {
+   "name": "QNu Labs",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "Quantum key distribution and quantum-safe security systems; supplies India's national QKD network",
+   "tags": [
+    "security",
+    "sovereign"
+   ],
+   "url": "https://www.qnulabs.com",
+   "source": "https://www.eetimes.com/indias-quantum-journey-goes-beyond-the-qubit/"
+  },
+  {
+   "name": "QpiAI",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum",
+    "n1.foundry"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "stage": "Series A",
+   "last_round": "$32M Series A (2025), led by Avataar Ventures and the National Quantum Mission",
+   "round_source": "https://thequantuminsider.com/2026/08/17/qpiai-opens-quantum-chip-foundry-in-india-targets-10000-qubit-processors/",
+   "one_liner": "Full-stack superconducting quantum computers (25-qubit Indus, 64-qubit Kaveri) made in its own Bengaluru quantum chip foundry; pairs quantum with AI",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://www.qpiai.tech",
+   "source": "https://thequantuminsider.com/2026/08/17/qpiai-opens-quantum-chip-foundry-in-india-targets-10000-qubit-processors/"
+  },
+  {
+   "name": "Quantinuum",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Trapped-ion quantum computers and software; listed on Nasdaq (QNT) in 2026, Honeywell-backed",
+   "url": "https://www.quantinuum.com",
+   "source": "https://nand-research.com/quantinuums-1-68-billion-ipo-the-race-to-quantum-commercialization/"
+  },
+  {
+   "name": "QuEra Computing",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "private",
+   "one_liner": "Neutral-atom quantum computers sold on-prem and through cloud access",
+   "url": "https://www.quera.com",
+   "source": "https://www.quera.com"
+  },
+  {
+   "name": "Rigetti Computing",
+   "kind": "company",
+   "subsegments": [
+    "n2.quantum"
+   ],
+   "hq": "US",
+   "region": "North America",
+   "status": "public",
+   "one_liner": "Superconducting quantum processors and systems, with its own chip fab",
+   "url": "https://www.rigetti.com",
+   "source": "https://www.rigetti.com"
+  },
+  {
+   "name": "Sensesemi",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "SenseSoC system-on-chip for IoT and medical devices with an on-chip accelerator for edge AI inference",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://sensesemi.com",
+   "source": "https://sensesemi.com"
+  },
+  {
+   "name": "Vicharak",
+   "kind": "company",
+   "subsegments": [
+    "n2.edge"
+   ],
+   "hq": "IN",
+   "region": "India",
+   "status": "private",
+   "one_liner": "FPGA-based reconfigurable computers (AXON AI single-board computer) and Gati, which compiles ONNX AI models into FPGA logic",
+   "tags": [
+    "sovereign"
+   ],
+   "url": "https://vicharak.in",
+   "source": "https://vicharak.in"
   }
  ]
 }
